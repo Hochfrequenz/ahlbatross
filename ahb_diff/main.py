@@ -3,8 +3,8 @@ functions to handle csv imports, comparison and exports.
 """
 
 import logging
-import os
 import sys
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
@@ -14,18 +14,74 @@ from xlsxwriter.format import Format  # type: ignore
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
+BASE_DIR = Path("data/machine-readable_anwendungshandbuecher")
+OUTPUT_DIR = Path("data/output")
 
-def get_csv() -> tuple[DataFrame, DataFrame]:
+
+def get_nachrichtentyp_dirs(fv_dir: Path) -> list[Path]:
+    """
+    get all <nachrichtentyp> directories that contain a csv subdirectory.
+    """
+    if not fv_dir.exists():
+        logger.warning("❌formatversion directory not found: %s", fv_dir)
+        return []
+
+    return [d for d in fv_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
+
+
+def get_ahb_files(csv_dir: Path) -> list[Path]:
+    """
+    get all ahb/<pruefid>.csv files in a given directory.
+    """
+    if not csv_dir.exists():
+        return []
+    return sorted(csv_dir.glob("*.csv"))
+
+
+# pylint:disable=too-many-locals
+def get_matching_files(old_fv: str, new_fv: str) -> list[tuple[Path, Path, str, str]]:
+    """
+    find matching ahb/<pruefid>.csv files across <formatversion> and <nachrichtentyp> directories.
+    """
+    old_fv_dir = BASE_DIR / old_fv
+    new_fv_dir = BASE_DIR / new_fv
+
+    if not all(d.exists() for d in [old_fv_dir, new_fv_dir]):
+        logger.error("❌at least one formatversion directory does not exist.")
+        return []
+
+    matching_files = []
+
+    old_msg_dirs = get_nachrichtentyp_dirs(old_fv_dir)
+    new_msg_dirs = get_nachrichtentyp_dirs(new_fv_dir)
+
+    old_msg_names = {d.name: d for d in old_msg_dirs}
+    new_msg_names = {d.name: d for d in new_msg_dirs}
+
+    common_msg_types = set(old_msg_names.keys()) & set(new_msg_names.keys())
+
+    for msg_type in sorted(common_msg_types):
+        old_csv_dir = old_msg_names[msg_type] / "csv"
+        new_csv_dir = new_msg_names[msg_type] / "csv"
+
+        old_files = {f.stem: f for f in get_ahb_files(old_csv_dir)}
+        new_files = {f.stem: f for f in get_ahb_files(new_csv_dir)}
+
+        common_ahbs = set(old_files.keys()) & set(new_files.keys())
+
+        for pruefid in sorted(common_ahbs):
+            matching_files.append((old_files[pruefid], new_files[pruefid], msg_type, pruefid))
+
+    return matching_files
+
+
+def get_csv(old_path: Path, new_path: Path) -> tuple[DataFrame, DataFrame]:
     """
     read csv input files.
     """
-    pruefid_old: DataFrame = pd.read_csv(
-        "data/machine-readable_anwendungshandbuecher/FV2410/UTILMD/csv/55003.csv", dtype=str
-    )
-    pruefid_new: DataFrame = pd.read_csv(
-        "data/machine-readable_anwendungshandbuecher/FV2504/UTILMD/csv/55003.csv", dtype=str
-    )
-    return pruefid_old, pruefid_new
+    ahb_old: DataFrame = pd.read_csv(old_path, dtype=str)
+    ahb_new: DataFrame = pd.read_csv(new_path, dtype=str)
+    return ahb_old, ahb_new
 
 
 def create_row(
@@ -150,14 +206,6 @@ def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
     return result_df[column_order]
 
 
-def merge_csv() -> DataFrame:
-    """
-    merges content of both input files into a single aligned dataframe.
-    """
-    df_old, df_new = get_csv()
-    return align_columns(df_old, df_new)
-
-
 # pylint:disable=too-many-locals
 def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
@@ -171,13 +219,32 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
         workbook = writer.book
         worksheet = writer.sheets["AHB-Diff"]
 
-        header_format = workbook.add_format({"bold": True, "bg_color": "#D9D9D9", "border": 1})
+        # header formatting.
+        header_format = workbook.add_format(
+            {
+                "bold": True,
+                "bg_color": "#D9D9D9",
+                "border": 1,
+            }
+        )
         base_format = workbook.add_format({"border": 1})
 
+        # cell formatting for changed content.
         diff_formats: dict[str, Format] = {
-            "NEW": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1}),
-            "REMOVED": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1}),
+            "NEW": workbook.add_format({"bg_color": "#C6EFCE", "border": 1}),
+            "REMOVED": workbook.add_format({"bg_color": "#FFC7CE", "border": 1}),
             "": workbook.add_format({"border": 1}),
+        }
+
+        # diff column formatting.
+        diff_text_formats: dict[str, Format] = {
+            "NEW": workbook.add_format(
+                {"bold": True, "color": "#7AAB8A", "border": 1, "bg_color": "#D9D9D9", "align": "center"}
+            ),
+            "REMOVED": workbook.add_format(
+                {"bold": True, "color": "#E94C74", "border": 1, "bg_color": "#D9D9D9", "align": "center"}
+            ),
+            "": workbook.add_format({"border": 1, "bg_color": "#D9D9D9", "align": "center"}),
         }
 
         for col_num, value in enumerate(df_filtered.columns.values):
@@ -196,12 +263,6 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             except ValueError:
                 return cell
 
-        diff_text_formats: dict[str, Format] = {
-            "NEW": workbook.add_format({"bold": True, "color": "#7AAB8A", "border": 1}),
-            "REMOVED": workbook.add_format({"bold": True, "color": "#E94C74", "border": 1}),
-            "": workbook.add_format({"border": 1}),
-        }
-
         for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
             row_data = list(row)
             diff_value = str(row_data[diff_idx])
@@ -219,18 +280,51 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                     worksheet.write(row_num, col_num, converted_value, base_format)
 
         for col_num in range(len(df_filtered.columns)):
-            worksheet.set_column(col_num, col_num, min(150 / 7, 21))
+            worksheet.set_column(col_num, col_num, min(150 / 7, 21))  # width = 150 px.
+
         logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
 
 
+def process_files(old_fv: str, new_fv: str) -> None:
+    """
+    process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
+    """
+    matching_files = get_matching_files(old_fv, new_fv)
+
+    if not matching_files:
+        logger.warning("No matching files found to compare")
+        return
+
+    output_base = OUTPUT_DIR / f"{new_fv}_{old_fv}"
+
+    for old_file, new_file, msg_type, pruefid in matching_files:
+        logger.info("Processing %s - %s", msg_type, pruefid)
+
+        try:
+            df_old, df_new = get_csv(old_file, new_file)
+            merged_df = align_columns(df_old, df_new)
+
+            output_dir = output_base / msg_type
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            csv_path = output_dir / f"{pruefid}.csv"
+            xlsx_path = output_dir / f"{pruefid}.xlsx"
+
+            merged_df.to_csv(csv_path, index=False)
+            export_to_excel(merged_df, str(xlsx_path))
+
+            logger.info("✅successfully processed %s/%s", msg_type, pruefid)
+
+        except pd.errors.EmptyDataError:
+            logger.error("❌empty or corrupted CSV file for %s/%s", msg_type, pruefid)
+        except OSError as e:
+            logger.error("❌file system error for %s/%s: %s", msg_type, pruefid, str(e))
+        except ValueError as e:
+            logger.error("❌data processing error for %s/%s: %s", msg_type, pruefid, str(e))
+
+
 if __name__ == "__main__":
-    pruefid_merged = merge_csv()
+    OLD_FV = "FV2410"
+    NEW_FV = "FV2504"
 
-    os.makedirs("data/output", exist_ok=True)
-
-    OUTPUT_PATH_CSV = "data/output/ahb-diff.csv"
-    pruefid_merged.to_csv(OUTPUT_PATH_CSV, index=False)
-    logger.info("✅successfully exported CSV file to: %s", {OUTPUT_PATH_CSV})
-
-    OUTPUT_PATH_XLSX = "data/output/ahb-diff.xlsx"
-    export_to_excel(pruefid_merged, OUTPUT_PATH_XLSX)
+    process_files(OLD_FV, NEW_FV)
