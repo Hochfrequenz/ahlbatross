@@ -2,12 +2,17 @@
 functions to handle csv imports, comparison and exports.
 """
 
+import logging
 import os
+import sys
 from typing import Any
 
 import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type: ignore
+
+logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
+logger = logging.getLogger(__name__)
 
 
 def get_csv() -> tuple[DataFrame, DataFrame]:
@@ -154,13 +159,13 @@ def merge_csv() -> DataFrame:
 
 
 # pylint:disable=too-many-locals
-def export_to_excel(df: DataFrame, output_path: str) -> None:
+def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     exports the merged dataframe to .xlsx with highlighted differences.
     """
     df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:")]]
 
-    with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
+    with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
         df_filtered.to_excel(writer, sheet_name="AHB-Diff", index=False)
 
         workbook = writer.book
@@ -215,11 +220,17 @@ def export_to_excel(df: DataFrame, output_path: str) -> None:
 
         for col_num in range(len(df_filtered.columns)):
             worksheet.set_column(col_num, col_num, min(150 / 7, 21))
+        logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
 
 
 if __name__ == "__main__":
     pruefid_merged = merge_csv()
 
     os.makedirs("data/output", exist_ok=True)
-    pruefid_merged.to_csv("data/output/ahb-diff.csv", index=False)
-    export_to_excel(pruefid_merged, "data/output/ahb-diff.xlsx")
+
+    OUTPUT_PATH_CSV = "data/output/ahb-diff.csv"
+    pruefid_merged.to_csv(OUTPUT_PATH_CSV, index=False)
+    logger.info("✅successfully exported CSV file to: %s", {OUTPUT_PATH_CSV})
+
+    OUTPUT_PATH_XLSX = "data/output/ahb-diff.xlsx"
+    export_to_excel(pruefid_merged, OUTPUT_PATH_XLSX)
