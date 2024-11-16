@@ -1,0 +1,283 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S2.1,X,
+Nachrichten-Kopfsegment,7,,UNH,0068,00003,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden,,Nachrichten-Kopfsegment,7,,UNH,0068,00003,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden
+Nachrichten-Kopfsegment,8,,UNH,0070,00003,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden,,Nachrichten-Kopfsegment,8,,UNH,0070,00003,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden
+Nachrichten-Kopfsegment,9,,UNH,0073,00003,C,,Beginn,M [2],,,Nachrichten-Kopfsegment,9,,UNH,0073,00003,C,,Beginn,M [2],
+Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer",,Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer"
+Beginn der Nachricht,11,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,11,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,12,,BGM,1001,00004,Z37,,DZÜ-Liste,X,,,Beginn der Nachricht,12,,BGM,1001,00004,Z37,,DZÜ-Liste,X,
+Beginn der Nachricht,13,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,13,,BGM,1004,00004,,,Dokumentennummer,X,
+Nachrichtendatum,14,,DTM,,00005,,,,Muss,,,Nachrichtendatum,14,,DTM,,00005,,,,Muss,
+Nachrichtendatum,15,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,15,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,16,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,16,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,17,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,17,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+"Gültigkeit, Beginndatum",18,,DTM,,00006,,,,Muss,,,"Gültigkeit, Beginndatum",18,,DTM,,00006,,,,Muss,
+"Gültigkeit, Beginndatum",19,,DTM,2005,00006,157,,"Gültigkeit, Beginndatum",X,,,"Gültigkeit, Beginndatum",19,,DTM,2005,00006,157,,"Gültigkeit, Beginndatum",X,
+"Gültigkeit, Beginndatum",20,,DTM,2380,00006,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,"Gültigkeit, Beginndatum",20,,DTM,2380,00006,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+"Gültigkeit, Beginndatum",21,,DTM,2379,00006,610,,CCYYMM,X,,,"Gültigkeit, Beginndatum",21,,DTM,2379,00006,610,,CCYYMM,X,
+MP-ID Absender,22,SG2,,,,,,,Muss,,,MP-ID Absender,22,SG2,,,,,,,Muss,
+MP-ID Absender,23,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,23,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,24,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,24,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,25,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,25,SG2,NAD,3039,00008,,,MP-ID,X,
+MP-ID Absender,26,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,26,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,28,SG3,,,,,,,Kann,,,Ansprechpartner,28,SG3,,,,,,,Kann,
+Ansprechpartner,29,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,29,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,30,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,30,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
+Ansprechpartner,31,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,31,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,32,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,32,SG3,COM,,00010,,,,Muss,
+Kommunikationsverbindung,33,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,33,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,34,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,34,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,35,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,35,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,36,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,36,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,37,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,37,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,38,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,38,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,39,SG2,,,,,,,Muss,,,MP-ID Empfänger,39,SG2,,,,,,,Muss,
+MP-ID Empfänger,40,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,40,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,41,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,41,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,42,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,42,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,43,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,43,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,44,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,44,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Identifikation einer Liste,45,SG4,,,,,,,Muss,,,Identifikation einer Liste,45,SG4,,,,,,,Muss,
+Identifikation einer Liste,46,SG4,IDE,,00012,,,,Muss,,,Identifikation einer Liste,46,SG4,IDE,,00012,,,,Muss,
+Identifikation einer Liste,47,SG4,IDE,7495,00012,Z01,,Liste,X,,,Identifikation einer Liste,47,SG4,IDE,7495,00012,Z01,,Liste,X,
+Identifikation einer Liste,48,SG4,IDE,7402,00012,,,Listennummer,X,,,Identifikation einer Liste,48,SG4,IDE,7402,00012,,,Listennummer,X,
+MaBiS-Zählpunkt,49,SG5,,,,,,,Muss,,,MaBiS-Zählpunkt,49,SG5,,,,,,,Muss,
+MaBiS-Zählpunkt,50,SG5,LOC,,00014,,,,Muss,,,MaBiS-Zählpunkt,50,SG5,LOC,,00014,,,,Muss,
+MaBiS-Zählpunkt,51,SG5,LOC,3227,00014,Z15,,MaBiS-Zählpunkt,X,,,MaBiS-Zählpunkt,51,SG5,LOC,3227,00014,Z15,,MaBiS-Zählpunkt,X,
+MaBiS-Zählpunkt,52,SG5,LOC,3225,00014,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,,MaBiS-Zählpunkt,52,SG5,LOC,3225,00014,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung
+Prüfidentifikator,53,SG6,,,,,,,Muss,,,Prüfidentifikator,53,SG6,,,,,,,Muss,
+Prüfidentifikator,54,SG6,RFF,,00015,,,,Muss,,,Prüfidentifikator,54,SG6,RFF,,00015,,,,Muss,
+Prüfidentifikator,55,SG6,RFF,1153,00015,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,55,SG6,RFF,1153,00015,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,56,SG6,RFF,1154,00015,55223,,MaBiS / DZÜ Liste,X,,,Prüfidentifikator,56,SG6,RFF,1154,00015,55223,,MaBiS / DZÜ Liste,X,
+Daten der Summenzeitreihe,57,SG8,,,,,,,Muss,,,Daten der Summenzeitreihe,57,SG8,,,,,,,Muss,
+Daten der Summenzeitreihe,58,SG8,SEQ,,00017,,,,Muss,,,Daten der Summenzeitreihe,58,SG8,SEQ,,00017,,,,Muss,
+Daten der Summenzeitreihe,59,SG8,SEQ,1229,00017,Z22,,Daten der Summenzeitreihe,X,,,Daten der Summenzeitreihe,59,SG8,SEQ,1229,00017,Z22,,Daten der Summenzeitreihe,X,
+Versionsangabe der Summenzeitreihe,60,SG8,RFF,,00018,,,,Muss,,,Versionsangabe der Summenzeitreihe,60,SG8,RFF,,00018,,,,Muss,
+Versionsangabe der Summenzeitreihe,61,SG8,RFF,1153,00018,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,61,SG8,RFF,1153,00018,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,62,SG8,RFF,1154,00018,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,62,SG8,RFF,1154,00018,,,Version der Zeitreihe,X,
+Vorgang,63,SG4,,,,,,,Soll [2344] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde",,Vorgang,63,SG4,,,,,,,Soll [2344] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde"
+Vorgang,64,SG4,IDE,,00020,,,,Muss,,,Vorgang,64,SG4,IDE,,00020,,,,Muss,
+Vorgang,65,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,65,SG4,IDE,7495,00020,24,,Transaktion,X,
+Vorgang,66,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,66,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
+Transaktionsgrund,67,SG4,STS,,00037,,,,Muss,,REMOVED,,,,,,,,,,,
+Transaktionsgrund,68,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,REMOVED,,,,,,,,,,,
+Transaktionsgrund,69,SG4,STS,9013,00037,ZP3,,Stammdaten,X,,REMOVED,,,,,,,,,,,
+Transaktionsgrund,70,SG4,STS,9013,,ZP4,,Werte,X,,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,67,SG4,STS,,00035,,,,Muss,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,68,SG4,STS,9015,00035,7,,Transaktionsgrund,X,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,69,SG4,STS,9013,00035,ZP3,,Stammdaten,X,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,70,SG4,STS,9013,,ZP4,,Werte,X,
+Marktlokation,71,SG5,,,,,,,Muss [2061] ∧ [348] ∧ [659],"[348] Wenn SG5 LOC+Z21 (Tranche) nicht vorhanden
+[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Marktlokation,71,SG5,,,,,,,Muss [2061] ∧ [348] ∧ [659],"[348] Wenn SG5 LOC+Z21 (Tranche) nicht vorhanden
+[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Marktlokation,72,SG5,LOC,,00051,,,,Muss,,,Marktlokation,72,SG5,LOC,,00049,,,,Muss,
+Marktlokation,73,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,,Marktlokation,73,SG5,LOC,3227,00049,Z16,,Marktlokation,X,
+Marktlokation,74,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",,Marktlokation,74,SG5,LOC,3225,00049,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID"
+Tranche,75,SG5,,,,,,,Muss [2061] ∧ [347] ∧ [659],"[347] Wenn SG5 LOC+Z16 (Marktlokation) nicht vorhanden
+[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Tranche,75,SG5,,,,,,,Muss [2061] ∧ [347] ∧ [659],"[347] Wenn SG5 LOC+Z16 (Marktlokation) nicht vorhanden
+[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Tranche,76,SG5,LOC,,00054,,,,Muss,,,Tranche,76,SG5,LOC,,00053,,,,Muss,
+Tranche,77,SG5,LOC,3227,00054,Z21,,Tranche,X,,,Tranche,77,SG5,LOC,3227,00053,Z21,,Tranche,X,
+Tranche,78,SG5,LOC,3225,00054,,,ID der Tranche,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",,Tranche,78,SG5,LOC,3225,00053,,,ID der Tranche,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID"
+Datenstand des ÜNB,79,SG8,,,,,,,Soll [166] ∧ [667],"[166] Wenn vorhanden
+[667] Hinweis: Für Zeiten die bilanziert wurden, aber inzwischen keine Aggregationsverantwortung beim ÜNB vorliegt, ist eine SG8 mit SG8 - SG10 CCI+6=ZA8 oder SG 10 CCI+6 = ZA9 CAV=ZG4 und SG8 - SG9 QTY+Z45 = 0 zu bilden",,Datenstand des ÜNB,79,SG8,,,,,,,Soll [166] ∧ [667],"[166] Wenn vorhanden
+[667] Hinweis: Für Zeiten die bilanziert wurden, aber inzwischen keine Aggregationsverantwortung beim ÜNB vorliegt, ist eine SG8 mit SG8 - SG10 CCI+6=ZA8 oder SG 10 CCI+6 = ZA9 CAV=ZG4 und SG8 - SG9 QTY+Z45 = 0 zu bilden"
+Datenstand des ÜNB,80,SG8,SEQ,,00461,,,,Muss,,,Datenstand des ÜNB,80,SG8,SEQ,,00437,,,,Muss,
+Datenstand des ÜNB,81,SG8,SEQ,1229,00461,Z47,,Datenstand des ÜNB,X,,,Datenstand des ÜNB,81,SG8,SEQ,1229,00437,Z47,,Datenstand des ÜNB,X,
+Veranschlagte Jahresmenge gesamt,82,SG9,,,,,,,Muss [449] ∧ [107],"[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden",,Veranschlagte Jahresmenge gesamt,82,SG9,,,,,,,Muss [449] ∧ [107],"[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden"
+Veranschlagte Jahresmenge gesamt,83,SG9,QTY,,00462,,,,Muss,,,Veranschlagte Jahresmenge gesamt,83,SG9,QTY,,00438,,,,Muss,
+Veranschlagte Jahresmenge gesamt,84,SG9,QTY,6063,00462,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,84,SG9,QTY,6063,00438,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,85,SG9,QTY,6060,00462,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,85,SG9,QTY,6060,00438,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,86,SG9,QTY,6411,00462,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,86,SG9,QTY,6411,00438,KWH,,Kilowattstunde,X,
+Energiemenge DZÜ Anteil,87,SG9,,,,,,,Muss,,,Energiemenge DZÜ Anteil,87,SG9,,,,,,,Muss,
+Energiemenge DZÜ Anteil,88,SG9,QTY,,00463,,,,Muss,,,Energiemenge DZÜ Anteil,88,SG9,QTY,,00439,,,,Muss,
+Energiemenge DZÜ Anteil,89,SG9,QTY,6063,00463,Z36,,Energiemenge: DZÜ- Anteil,X,,,Energiemenge DZÜ Anteil,89,SG9,QTY,6063,00439,Z36,,Energiemenge: DZÜ- Anteil,X,
+Energiemenge DZÜ Anteil,90,SG9,QTY,6060,00463,,,Mengenangabe,X,,,Energiemenge DZÜ Anteil,90,SG9,QTY,6060,00439,,,Mengenangabe,X,
+Energiemenge DZÜ Anteil,91,SG9,QTY,6411,00463,KWH,,Kilowattstunde,X,,,Energiemenge DZÜ Anteil,91,SG9,QTY,6411,00439,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,92,SG9,DTM,,00464,,,,Muss,,,Bilanzierungsbeginn,92,SG9,DTM,,00440,,,,Muss,
+Bilanzierungsbeginn,93,SG9,DTM,2005,00464,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,93,SG9,DTM,2005,00440,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,94,SG9,DTM,2380,00464,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,94,SG9,DTM,2380,00440,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,95,SG9,DTM,2379,00464,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,95,SG9,DTM,2379,00440,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,96,SG9,DTM,,00465,,,,Muss,,,Bilanzierungsende,96,SG9,DTM,,00441,,,,Muss,
+Bilanzierungsende,97,SG9,DTM,2005,00465,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,97,SG9,DTM,2005,00441,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,98,SG9,DTM,2380,00465,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,98,SG9,DTM,2380,00441,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,99,SG9,DTM,2379,00465,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,99,SG9,DTM,2379,00441,303,,CCYYMMDDHHMMZZZ,X,
+Zu bilanzierende Energiemenge,100,SG9,,,,,,,Muss,,,Zu bilanzierende Energiemenge,100,SG9,,,,,,,Muss,
+Zu bilanzierende Energiemenge,101,SG9,QTY,,00466,,,,Muss,,,Zu bilanzierende Energiemenge,101,SG9,QTY,,00442,,,,Muss,
+Zu bilanzierende Energiemenge,102,SG9,QTY,6063,00466,Z45,,Zu bilanzierende Energiemenge,X,,,Zu bilanzierende Energiemenge,102,SG9,QTY,6063,00442,Z45,,Zu bilanzierende Energiemenge,X,
+Zu bilanzierende Energiemenge,103,SG9,QTY,6060,00466,,,Mengenangabe,X,,,Zu bilanzierende Energiemenge,103,SG9,QTY,6060,00442,,,Mengenangabe,X,
+Zu bilanzierende Energiemenge,104,SG9,QTY,6411,00466,KWH,,Kilowattstunde,X,,,Zu bilanzierende Energiemenge,104,SG9,QTY,6411,00442,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,105,SG9,DTM,,00467,,,,Muss,,,Bilanzierungsbeginn,105,SG9,DTM,,00443,,,,Muss,
+Bilanzierungsbeginn,106,SG9,DTM,2005,00467,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,106,SG9,DTM,2005,00443,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,107,SG9,DTM,2380,00467,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,107,SG9,DTM,2380,00443,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,108,SG9,DTM,2379,00467,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,108,SG9,DTM,2379,00443,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,109,SG9,DTM,,00468,,,,Muss,,,Bilanzierungsende,109,SG9,DTM,,00444,,,,Muss,
+Bilanzierungsende,110,SG9,DTM,2005,00468,159,,Bilanzierungsende,X,,,Bilanzierungsende,110,SG9,DTM,2005,00444,159,,Bilanzierungsende,X,
+Bilanzierungsende,111,SG9,DTM,2380,00468,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,111,SG9,DTM,2380,00444,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,112,SG9,DTM,2379,00468,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,112,SG9,DTM,2379,00444,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzkreis,113,SG10,,,,,,,Soll [166] ∧ [449],"[166] Wenn vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden",,Bilanzkreis,113,SG10,,,,,,,Soll [166] ∧ [449],"[166] Wenn vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden"
+Bilanzkreis,114,SG10,CCI,,00469,,,,Muss,,,Bilanzkreis,114,SG10,CCI,,00445,,,,Muss,
+Bilanzkreis,115,SG10,CCI,7059,00469,Z19,,Bilanzkreis,X,,,Bilanzkreis,115,SG10,CCI,7059,00445,Z19,,Bilanzkreis,X,
+Bilanzkreis,116,SG10,CCI,7037,00469,,,Bilanzkreis,X,,,Bilanzkreis,116,SG10,CCI,7037,00445,,,Bilanzkreis,X,
+Bilanzierungsgebiet,117,SG10,,,,,,,Muss [449],[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden,,Bilanzierungsgebiet,117,SG10,,,,,,,Muss [449],[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden
+Bilanzierungsgebiet,118,SG10,CCI,,00470,,,,Muss,,,Bilanzierungsgebiet,118,SG10,CCI,,00446,,,,Muss,
+Bilanzierungsgebiet,119,SG10,CCI,7059,00470,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,119,SG10,CCI,7059,00446,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,120,SG10,CCI,7037,00470,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,120,SG10,CCI,7037,00446,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,121,SG10,,,,,,,Muss [449],[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden,,Zeitreihentyp,121,SG10,,,,,,,Muss [449],[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden
+Zeitreihentyp,122,SG10,CCI,,00471,,,,Muss,,,Zeitreihentyp,122,SG10,CCI,,00447,,,,Muss,
+Zeitreihentyp,123,SG10,CCI,7059,00471,15,,Struktur,X,,,Zeitreihentyp,123,SG10,CCI,7059,00447,15,,Struktur,X,
+Zeitreihentyp,124,SG10,CCI,7037,00471,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,124,SG10,CCI,7037,00447,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,125,SG10,CAV,,00472,,,,Muss,,,Zeitreihentyp,125,SG10,CAV,,00448,,,,Muss,
+Zeitreihentyp,126,SG10,CAV,7111,00472,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,126,SG10,CAV,7111,00448,,,Code des Zeitreihentyps,X,
+Normiertes Profil,127,SG10,,,,,,,Muss [449] ∧ [107],"[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden",,Normiertes Profil,127,SG10,,,,,,,Muss [449] ∧ [107],"[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+[449] Wenn in derselben SG8 das SG10 CCI+6++ZA9 CAV=ZG3 (Aggreg.verantw. ÜNB und Lokation im Regelbetrieb) vorhanden"
+Normiertes Profil,128,SG10,CCI,,00473,,,,Muss,,,Normiertes Profil,128,SG10,CCI,,00449,,,,Muss,
+Normiertes Profil,129,SG10,CCI,7059,00473,Z02,,Standardlastprofil,X,,,Normiertes Profil,129,SG10,CCI,7059,00449,Z02,,Standardlastprofil,X,
+Normiertes Profil,130,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil,130,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil,131,SG10,CAV,,00474,,,,Muss,,,Normiertes Profil,131,SG10,CAV,,00450,,,,Muss,
+Normiertes Profil,132,SG10,CAV,7111,00474,,,Code des Normierten Profils,X,,,Normiertes Profil,132,SG10,CAV,7111,00450,,,Code des Normierten Profils,X,
+Aggregationsverantwortung in MaBiS,133,SG10,,,,,,,Muss,,,Aggregationsverantwortung in MaBiS,133,SG10,,,,,,,Muss,
+Aggregationsverantwortung in MaBiS,134,SG10,CCI,,00475,,,,Muss,,,Aggregationsverantwortung in MaBiS,134,SG10,CCI,,00451,,,,Muss,
+Aggregationsverantwortung in MaBiS,135,SG10,CCI,7059,00475,6,,Verantwortlicher,X,,,Aggregationsverantwortung in MaBiS,135,SG10,CCI,7059,00451,6,,Verantwortlicher,X,
+Aggregationsverantwortung in MaBiS,136,SG10,CCI,7037,00475,ZA8,,NB,X,,,Aggregationsverantwortung in MaBiS,136,SG10,CCI,7037,00451,ZA8,,NB,X,
+Aggregationsverantwortung in MaBiS,137,SG10,CCI,7037,,ZA9,,ÜNB,X,,,Aggregationsverantwortung in MaBiS,137,SG10,CCI,7037,,ZA9,,ÜNB,X,
+Betriebssituation der Lokation,138,SG10,CAV,,00476,,,,Muss,,,Betriebssituation der Lokation,138,SG10,CAV,,00452,,,,Muss,
+Betriebssituation der Lokation,139,SG10,CAV,7111,00476,ZG3,,Lokation im Regelbetrieb,X,,,Betriebssituation der Lokation,139,SG10,CAV,7111,00452,ZG3,,Lokation im Regelbetrieb,X,
+Betriebssituation der Lokation,140,SG10,CAV,7111,,ZG4,,Lokation außerhalb des Regelbetriebs (Stilllegung),X,,,Betriebssituation der Lokation,140,SG10,CAV,7111,,ZG4,,Lokation außerhalb des Regelbetriebs (Stilllegung),X,
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,141,SG8,,,,,,,Soll [166] ∧ [2351],"[166] Wenn vorhanden
+[2351] Einmal je ZP einer BK- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufgenommen wurde",,Abgerechnete Daten der Bilanzkreissummenzeitreihe,141,SG8,,,,,,,Soll [166] ∧ [2351],"[166] Wenn vorhanden
+[2351] Einmal je ZP einer BK- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufgenommen wurde"
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,142,SG8,SEQ,,00490,,,,Muss,,,Abgerechnete Daten der Bilanzkreissummenzeitreihe,142,SG8,SEQ,,00466,,,,Muss,
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,143,SG8,SEQ,1229,00490,Z48,,Abgerechnete Daten der Bilanzkreissummenzeitre ihe des ÜNB,X,,,Abgerechnete Daten der Bilanzkreissummenzeitreihe,143,SG8,SEQ,1229,00466,Z48,,Abgerechnete Daten der Bilanzkreissummenzeitre ihe des ÜNB,X,
+Referenz auf die ID der Bilanzkreissummenzeitreihe,144,SG8,RFF,,00491,,,,Muss [660],[660] Hinweis: Es ist die ID der BK-Summenzeitreihe Aggregationsebene BG anzugeben,,Referenz auf die ID der Bilanzkreissummenzeitreihe,144,SG8,RFF,,00467,,,,Muss [660],[660] Hinweis: Es ist die ID der BK-Summenzeitreihe Aggregationsebene BG anzugeben
+Referenz auf die ID der Bilanzkreissummenzeitreihe,145,SG8,RFF,1153,00491,AVE,,Meldepunkt,X,,,Referenz auf die ID der Bilanzkreissummenzeitreihe,145,SG8,RFF,1153,00467,AVE,,Meldepunkt,X,
+Referenz auf die ID der Bilanzkreissummenzeitreihe,146,SG8,RFF,1154,00491,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Bilanzkreissummenzeitreihe,146,SG8,RFF,1154,00467,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung
+Versionsangabe der Summenzeitreihe,147,SG8,RFF,,00492,,,,Muss,,,Versionsangabe der Summenzeitreihe,147,SG8,RFF,,00468,,,,Muss,
+Versionsangabe der Summenzeitreihe,148,SG8,RFF,1153,00492,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,148,SG8,RFF,1153,00468,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,149,SG8,RFF,1154,00492,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,149,SG8,RFF,1154,00468,,,Version der Zeitreihe,X,
+Veranschlagte Jahresmenge gesamt,150,SG9,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden,,Veranschlagte Jahresmenge gesamt,150,SG9,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+Veranschlagte Jahresmenge gesamt,151,SG9,QTY,,00493,,,,Muss,,,Veranschlagte Jahresmenge gesamt,151,SG9,QTY,,00469,,,,Muss,
+Veranschlagte Jahresmenge gesamt,152,SG9,QTY,6063,00493,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,152,SG9,QTY,6063,00469,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,153,SG9,QTY,6060,00493,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,153,SG9,QTY,6060,00469,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,154,SG9,QTY,6411,00493,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,154,SG9,QTY,6411,00469,KWH,,Kilowattstunde,X,
+Tatsächlich bilanzierte Energiemenge,155,SG9,,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,155,SG9,,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,156,SG9,QTY,,00494,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,156,SG9,QTY,,00470,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,157,SG9,QTY,6063,00494,Z07,,Tatsächlich bilanzierte Energiemenge,X,,,Tatsächlich bilanzierte Energiemenge,157,SG9,QTY,6063,00470,Z07,,Tatsächlich bilanzierte Energiemenge,X,
+Tatsächlich bilanzierte Energiemenge,158,SG9,QTY,6060,00494,,,Mengenangabe,X,,,Tatsächlich bilanzierte Energiemenge,158,SG9,QTY,6060,00470,,,Mengenangabe,X,
+Tatsächlich bilanzierte Energiemenge,159,SG9,QTY,6411,00494,KWH,,Kilowattstunde,X,,,Tatsächlich bilanzierte Energiemenge,159,SG9,QTY,6411,00470,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,160,SG9,DTM,,00495,,,,Muss,,,Bilanzierungsbeginn,160,SG9,DTM,,00471,,,,Muss,
+Bilanzierungsbeginn,161,SG9,DTM,2005,00495,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,161,SG9,DTM,2005,00471,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,162,SG9,DTM,2380,00495,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [454],"[454] Das Bilanzierungsbeginn Datum muss kleiner sein als das Bilanzierungsende Datum in der SG8 „Datenstand des ÜNB“, SG 9 Energiemenge DZÜ Anteil",,Bilanzierungsbeginn,162,SG9,DTM,2380,00471,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [454],"[454] Das Bilanzierungsbeginn Datum muss kleiner sein als das Bilanzierungsende Datum in der SG8 „Datenstand des ÜNB“, SG 9 Energiemenge DZÜ Anteil"
+Bilanzierungsbeginn,163,SG9,DTM,2379,00495,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,163,SG9,DTM,2379,00471,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,164,SG9,DTM,,00496,,,,Muss,,,Bilanzierungsende,164,SG9,DTM,,00472,,,,Muss,
+Bilanzierungsende,165,SG9,DTM,2005,00496,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,165,SG9,DTM,2005,00472,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,166,SG9,DTM,2380,00496,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [455],"[455] Das Bilanzierungsende- Datum muss größer sein, als das Bilanzierungsbeginn Datum in der SG8 „Datenstand des ÜNB“ , SG 9 Energiemenge DZÜ Anteil",,Bilanzierungsende,166,SG9,DTM,2380,00472,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [455],"[455] Das Bilanzierungsende- Datum muss größer sein, als das Bilanzierungsbeginn Datum in der SG8 „Datenstand des ÜNB“ , SG 9 Energiemenge DZÜ Anteil"
+Bilanzierungsende,167,SG9,DTM,2379,00496,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,167,SG9,DTM,2379,00472,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzkreis,168,SG10,,,,,,,Muss,,,Bilanzkreis,168,SG10,,,,,,,Muss,
+Bilanzkreis,169,SG10,CCI,,00497,,,,Muss,,,Bilanzkreis,169,SG10,CCI,,00473,,,,Muss,
+Bilanzkreis,170,SG10,CCI,7059,00497,Z19,,Bilanzkreis,X,,,Bilanzkreis,170,SG10,CCI,7059,00473,Z19,,Bilanzkreis,X,
+Bilanzkreis,171,SG10,CCI,7037,00497,,,Bilanzkreis,X,,,Bilanzkreis,171,SG10,CCI,7037,00473,,,Bilanzkreis,X,
+Bilanzierungsgebiet,172,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,172,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,173,SG10,CCI,,00498,,,,Muss,,,Bilanzierungsgebiet,173,SG10,CCI,,00474,,,,Muss,
+Bilanzierungsgebiet,174,SG10,CCI,7059,00498,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,174,SG10,CCI,7059,00474,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,175,SG10,CCI,7037,00498,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,175,SG10,CCI,7037,00474,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,176,SG10,,,,,,,Muss,,,Zeitreihentyp,176,SG10,,,,,,,Muss,
+Zeitreihentyp,177,SG10,CCI,,00499,,,,Muss,,,Zeitreihentyp,177,SG10,CCI,,00475,,,,Muss,
+Zeitreihentyp,178,SG10,CCI,7059,00499,15,,Struktur,X,,,Zeitreihentyp,178,SG10,CCI,7059,00475,15,,Struktur,X,
+Zeitreihentyp,179,SG10,CCI,7037,00499,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,179,SG10,CCI,7037,00475,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,180,SG10,CAV,,00500,,,,Muss,,,Zeitreihentyp,180,SG10,CAV,,00476,,,,Muss,
+Zeitreihentyp,181,SG10,CAV,7111,00500,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,181,SG10,CAV,7111,00476,,,Code des Zeitreihentyps,X,
+Normiertes Profil,182,SG10,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden,,Normiertes Profil,182,SG10,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+Normiertes Profil,183,SG10,CCI,,00501,,,,Muss,,,Normiertes Profil,183,SG10,CCI,,00477,,,,Muss,
+Normiertes Profil,184,SG10,CCI,7059,00501,Z02,,Standardlastprofil,X,,,Normiertes Profil,184,SG10,CCI,7059,00477,Z02,,Standardlastprofil,X,
+Normiertes Profil,185,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil,185,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil,186,SG10,CAV,,00502,,,,Muss,,,Normiertes Profil,186,SG10,CAV,,00478,,,,Muss,
+Normiertes Profil,187,SG10,CAV,7111,00502,,,Code des Normierten Profils,X,,,Normiertes Profil,187,SG10,CAV,7111,00478,,,Code des Normierten Profils,X,
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,188,SG8,,,,,,,Soll [166] ∧ [2352],"[166] Wenn vorhanden
+[2352] Einmal je ZP einer BG- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufge- nommen wurde",,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,188,SG8,,,,,,,Soll [166] ∧ [2352],"[166] Wenn vorhanden
+[2352] Einmal je ZP einer BG- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufge- nommen wurde"
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,189,SG8,SEQ,,00503,,,,Muss,,,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,189,SG8,SEQ,,00479,,,,Muss,
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,190,SG8,SEQ,1229,00503,Z49,,Abgerechnete Daten der Bilanzierungsgebietssum menzeitreihe des ÜNB,X,,,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,190,SG8,SEQ,1229,00479,Z49,,Abgerechnete Daten der Bilanzierungsgebietssum menzeitreihe des ÜNB,X,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,191,SG8,RFF,,00504,,,,Muss,,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,191,SG8,RFF,,00480,,,,Muss,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,192,SG8,RFF,1153,00504,AVE,,Meldepunkt,X,,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,192,SG8,RFF,1153,00480,AVE,,Meldepunkt,X,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,193,SG8,RFF,1154,00504,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,193,SG8,RFF,1154,00480,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung
+Versionsangabe der Summenzeitreihe,194,SG8,RFF,,00505,,,,Muss,,,Versionsangabe der Summenzeitreihe,194,SG8,RFF,,00481,,,,Muss,
+Versionsangabe der Summenzeitreihe,195,SG8,RFF,1153,00505,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,195,SG8,RFF,1153,00481,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,196,SG8,RFF,1154,00505,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,196,SG8,RFF,1154,00481,,,Version der Zeitreihe,X,
+Veranschlagte Jahresmenge gesamt,197,SG9,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden,,Veranschlagte Jahresmenge gesamt,197,SG9,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+Veranschlagte Jahresmenge gesamt,198,SG9,QTY,,00506,,,,Muss,,,Veranschlagte Jahresmenge gesamt,198,SG9,QTY,,00482,,,,Muss,
+Veranschlagte Jahresmenge gesamt,199,SG9,QTY,6063,00506,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,199,SG9,QTY,6063,00482,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,200,SG9,QTY,6060,00506,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,200,SG9,QTY,6060,00482,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,201,SG9,QTY,6411,00506,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,201,SG9,QTY,6411,00482,KWH,,Kilowattstunde,X,
+Tatsächlich bilanzierte Energiemenge,202,SG9,,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,202,SG9,,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,203,SG9,QTY,,00507,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,203,SG9,QTY,,00483,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,204,SG9,QTY,6063,00507,Z07,,Tatsächlich bilanzierte Energiemenge,X,,,Tatsächlich bilanzierte Energiemenge,204,SG9,QTY,6063,00483,Z07,,Tatsächlich bilanzierte Energiemenge,X,
+Tatsächlich bilanzierte Energiemenge,205,SG9,QTY,6060,00507,,,Mengenangabe,X,,,Tatsächlich bilanzierte Energiemenge,205,SG9,QTY,6060,00483,,,Mengenangabe,X,
+Tatsächlich bilanzierte Energiemenge,206,SG9,QTY,6411,00507,KWH,,Kilowattstunde,X,,,Tatsächlich bilanzierte Energiemenge,206,SG9,QTY,6411,00483,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,207,SG9,DTM,,00508,,,,Muss,,,Bilanzierungsbeginn,207,SG9,DTM,,00484,,,,Muss,
+Bilanzierungsbeginn,208,SG9,DTM,2005,00508,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,208,SG9,DTM,2005,00484,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,209,SG9,DTM,2380,00508,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [454],"[454] Das Bilanzierungsbeginn Datum muss kleiner sein als das Bilanzierungsende Datum in der SG8 „Datenstand des ÜNB“, SG 9 Energiemenge DZÜ Anteil",,Bilanzierungsbeginn,209,SG9,DTM,2380,00484,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [454],"[454] Das Bilanzierungsbeginn Datum muss kleiner sein als das Bilanzierungsende Datum in der SG8 „Datenstand des ÜNB“, SG 9 Energiemenge DZÜ Anteil"
+Bilanzierungsbeginn,210,SG9,DTM,2379,00508,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,210,SG9,DTM,2379,00484,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,211,SG9,DTM,,00509,,,,Muss,,,Bilanzierungsende,211,SG9,DTM,,00485,,,,Muss,
+Bilanzierungsende,212,SG9,DTM,2005,00509,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,212,SG9,DTM,2005,00485,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,213,SG9,DTM,2380,00509,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [455],"[455] Das Bilanzierungsende- Datum muss größer sein, als das Bilanzierungsbeginn Datum in der SG8 „Datenstand des ÜNB“ , SG 9 Energiemenge DZÜ Anteil",,Bilanzierungsende,213,SG9,DTM,2380,00485,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [455],"[455] Das Bilanzierungsende- Datum muss größer sein, als das Bilanzierungsbeginn Datum in der SG8 „Datenstand des ÜNB“ , SG 9 Energiemenge DZÜ Anteil"
+Bilanzierungsende,214,SG9,DTM,2379,00509,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,214,SG9,DTM,2379,00485,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsgebiet,215,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,215,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,216,SG10,CCI,,00510,,,,Muss,,,Bilanzierungsgebiet,216,SG10,CCI,,00486,,,,Muss,
+Bilanzierungsgebiet,217,SG10,CCI,7059,00510,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,217,SG10,CCI,7059,00486,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,218,SG10,CCI,7037,00510,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,218,SG10,CCI,7037,00486,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,219,SG10,,,,,,,Muss,,,Zeitreihentyp,219,SG10,,,,,,,Muss,
+Zeitreihentyp,220,SG10,CCI,,00511,,,,Muss,,,Zeitreihentyp,220,SG10,CCI,,00487,,,,Muss,
+Zeitreihentyp,221,SG10,CCI,7059,00511,15,,Struktur,X,,,Zeitreihentyp,221,SG10,CCI,7059,00487,15,,Struktur,X,
+Zeitreihentyp,222,SG10,CCI,7037,00511,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,222,SG10,CCI,7037,00487,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,223,SG10,CAV,,00512,,,,Muss,,,Zeitreihentyp,223,SG10,CAV,,00488,,,,Muss,
+Zeitreihentyp,224,SG10,CAV,7111,00512,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,224,SG10,CAV,7111,00488,,,Code des Zeitreihentyps,X,
+Normiertes Profil,225,SG10,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden,,Normiertes Profil,225,SG10,,,,,,,Muss [107],[107] Wenn in derselben SG8 das SG10 CAV+SLS/ SES/ BIP/ GEP/ GAP/ SOP/ WNP/ WFP/ WAP vorhanden
+Normiertes Profil,226,SG10,CCI,,00513,,,,Muss,,,Normiertes Profil,226,SG10,CCI,,00489,,,,Muss,
+Normiertes Profil,227,SG10,CCI,7059,00513,Z02,,Standardlastprofil,X,,,Normiertes Profil,227,SG10,CCI,7059,00489,Z02,,Standardlastprofil,X,
+Normiertes Profil,228,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil,228,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil,229,SG10,CAV,,00514,,,,Muss,,,Normiertes Profil,229,SG10,CAV,,00490,,,,Muss,
+Normiertes Profil,230,SG10,CAV,7111,00514,,,Code des Normierten Profils,X,,,Normiertes Profil,230,SG10,CAV,7111,00490,,,Code des Normierten Profils,X,
+Nachrichten-Endesegment,231,,UNT,,00540,,,,Muss,,,Nachrichten-Endesegment,231,,UNT,,00526,,,,Muss,
+Nachrichten-Endesegment,232,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,232,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,233,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,233,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,

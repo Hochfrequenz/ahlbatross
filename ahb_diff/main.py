@@ -227,8 +227,8 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
         # formatting highlighted/changed cells
         diff_formats: dict[str, Format] = {
-            "NEW": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
-            "REMOVED": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
+            "NEW": workbook.add_format({"bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
+            "REMOVED": workbook.add_format({"bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
             "": workbook.add_format({"border": 1, "text_wrap": True}),
         }
 

@@ -1,0 +1,86 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S2.1,X,
+Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00004,Z17,,Zuordnungsermächtigung,X,,,Beginn der Nachricht,8,,BGM,1001,00004,Z17,,Zuordnungsermächtigung,X,
+Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
+Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
+Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
+Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
+MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
+Vorgang,38,SG4,IDE,,00020,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
+Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
+Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
+Bilanzierungsende,41,SG4,DTM,,00030,,,,Muss,,,Bilanzierungsende,41,SG4,DTM,,00029,,,,Muss,
+Bilanzierungsende,42,SG4,DTM,2005,00030,159,,Bilanzierungsende,X,,,Bilanzierungsende,42,SG4,DTM,2005,00029,159,,Bilanzierungsende,X,
+Bilanzierungsende,43,SG4,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,43,SG4,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,44,SG4,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,44,SG4,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,45,SG6,,,,,,,Muss,,,Prüfidentifikator,45,SG6,,,,,,,Muss,
+Prüfidentifikator,46,SG6,RFF,,00057,,,,Muss,,,Prüfidentifikator,46,SG6,RFF,,00056,,,,Muss,
+Prüfidentifikator,47,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,47,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,48,SG6,RFF,1154,,55072,,MaBiS / Deaktivierung der Zuordnungsermächtigung,X,,,Prüfidentifikator,48,SG6,RFF,1154,,55072,,MaBiS / Deaktivierung der Zuordnungsermächtigung,X,
+Daten der Summenzeitreihe,49,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Daten der Summenzeitreihe,49,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Daten der Summenzeitreihe,50,SG8,SEQ,,00422,,,,Muss,,,Daten der Summenzeitreihe,50,SG8,SEQ,,00398,,,,Muss,
+Daten der Summenzeitreihe,51,SG8,SEQ,1229,00422,Z22,,Daten der Summenzeitreihe,X,,,Daten der Summenzeitreihe,51,SG8,SEQ,1229,00398,Z22,,Daten der Summenzeitreihe,X,
+Bilanzierungsgebiet,52,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,52,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,53,SG10,CCI,,00429,,,,Muss,,,Bilanzierungsgebiet,53,SG10,CCI,,00405,,,,Muss,
+Bilanzierungsgebiet,54,SG10,CCI,7059,00429,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,54,SG10,CCI,7059,00405,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,55,SG10,CCI,7037,00429,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,55,SG10,CCI,7037,00405,,,Bilanzierungsgebiet,X,
+Bilanzkreis,56,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Bilanzkreis,56,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Bilanzkreis,57,SG10,CCI,,00430,,,,Muss,,,Bilanzkreis,57,SG10,CCI,,00406,,,,Muss,
+Bilanzkreis,58,SG10,CCI,7059,00430,Z19,,Bilanzkreis,X,,,Bilanzkreis,58,SG10,CCI,7059,00406,Z19,,Bilanzkreis,X,
+Bilanzkreis,59,SG10,CCI,7037,00430,,,Bilanzkreis,X,,,Bilanzkreis,59,SG10,CCI,7037,00406,,,Bilanzkreis,X,
+Zeitreihentyp,60,SG10,,,,,,,Muss,,,Zeitreihentyp,60,SG10,,,,,,,Muss,
+Zeitreihentyp,61,SG10,CCI,,00431,,,,Muss,,,Zeitreihentyp,61,SG10,CCI,,00407,,,,Muss,
+Zeitreihentyp,62,SG10,CCI,7059,00431,15,,Struktur,X,,,Zeitreihentyp,62,SG10,CCI,7059,00407,15,,Struktur,X,
+Zeitreihentyp,63,SG10,CCI,7037,00431,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,63,SG10,CCI,7037,00407,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,64,SG10,CAV,,00432,,,,Muss,,,Zeitreihentyp,64,SG10,CAV,,00408,,,,Muss,
+Zeitreihentyp,65,SG10,CAV,7111,00432,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,65,SG10,CAV,7111,00408,,,Code des Zeitreihentyps,X,
+Beteiligter Marktpartner MP-ID,66,SG12,,,,,,,Muss [569],[569] Hinweis: Dritter Nutzer,,Beteiligter Marktpartner MP-ID,66,SG12,,,,,,,Muss [569],[569] Hinweis: Dritter Nutzer
+Beteiligter Marktpartner MP-ID,67,SG12,NAD,,00533,,,,Muss,,,Beteiligter Marktpartner MP-ID,67,SG12,NAD,,00516,,,,Muss,
+Beteiligter Marktpartner MP-ID,68,SG12,NAD,3035,00533,VY,,andere zugehörige Partei,X,,,Beteiligter Marktpartner MP-ID,68,SG12,NAD,3035,00516,VY,,andere zugehörige Partei,X,
+Beteiligter Marktpartner MP-ID,69,SG12,NAD,3039,00533,,,MP-ID,X [533],[533] Hinweis: Es ist die MP-ID des Lieferanten anzugeben,,Beteiligter Marktpartner MP-ID,69,SG12,NAD,3039,00516,,,MP-ID,X [533],[533] Hinweis: Es ist die MP-ID des Lieferanten anzugeben
+Beteiligter Marktpartner MP-ID,70,SG12,NAD,3055,00533,9,,GS1,X,,,Beteiligter Marktpartner MP-ID,70,SG12,NAD,3055,00516,9,,GS1,X,
+Beteiligter Marktpartner MP-ID,71,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Beteiligter Marktpartner MP-ID,71,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Nachrichten-Endesegment,72,,UNT,,00540,,,,Muss,,,Nachrichten-Endesegment,72,,UNT,,00526,,,,Muss,
+Nachrichten-Endesegment,73,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,73,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,74,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,74,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,
