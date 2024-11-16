@@ -17,71 +17,67 @@ def get_csv() -> tuple[DataFrame, DataFrame]:
     return pruefid_old, pruefid_new
 
 
-def align_columns(merged_df: DataFrame) -> DataFrame:
+def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
     """
-    aligns "Segmentname" columns by adding empty cells each time the cell values do not match.
+    adds suffixes to `Segmentname` columns and aligns them by adding empty cells each time the cell values do not match.
     """
-    old_col = "Segmentname_old"
-    new_col = "Segmentname_new"
+    # add suffixes to columns
+    df_old = pruefid_old.add_suffix("_old")
+    df_new = pruefid_new.add_suffix("_new")
 
-    # create lists comprising the content for both columns, respectively.
-    old_segments = merged_df[old_col].tolist()
-    new_segments = merged_df[new_col].tolist()
+    # get segments as lists
+    segments_old = df_old["Segmentname_old"].tolist()
+    segments_new = df_new["Segmentname_new"].tolist()
 
-    aligned_old = []
-    aligned_new = []
+    aligned_column_old = []
+    aligned_column_new = []
     i = 0
     j = 0
 
     # iterate through both lists until reaching their ends.
-    while i < len(old_segments) or j < len(new_segments):
-        if i >= len(old_segments):
-            aligned_old.append("")
-            aligned_new.append(new_segments[j])
+    while i < len(segments_old) or j < len(segments_new):
+        if i >= len(segments_old):
+            aligned_column_old.append("")
+            aligned_column_new.append(segments_new[j])
             j += 1
-        elif j >= len(new_segments):
-            aligned_old.append(old_segments[i])
-            aligned_new.append("")
+        elif j >= len(segments_new):
+            aligned_column_old.append(segments_old[i])
+            aligned_column_new.append("")
             i += 1
-        elif old_segments[i] == new_segments[j]:
-            aligned_old.append(old_segments[i])
-            aligned_new.append(new_segments[j])
+        elif segments_old[i] == segments_new[j]:
+            aligned_column_old.append(segments_old[i])
+            aligned_column_new.append(segments_new[j])
             i += 1
             j += 1
         else:
             # try to find next matching value.
             try:
-                next_match_new = new_segments[j:].index(old_segments[i])
+                next_match_new = segments_new[j:].index(segments_old[i])
                 for _ in range(next_match_new):
-                    aligned_old.append("")
-                    aligned_new.append(new_segments[j])
+                    aligned_column_old.append("")
+                    aligned_column_new.append(segments_new[j])
                     j += 1
+            # no match found: add old value and empty new cell.
             except ValueError:
-                # no match found: add old value and empty new cell.
-                aligned_old.append(old_segments[i])
-                aligned_new.append("")
+                aligned_column_old.append(segments_old[i])
+                aligned_column_new.append("")
                 i += 1
 
-    aligned_df = pd.DataFrame({old_col: aligned_old, "diff": [""] * len(aligned_old), new_col: aligned_new})
-
-    return aligned_df
+    return pd.DataFrame(
+        {
+            "Segmentname_old": aligned_column_old,
+            "diff": [""] * len(aligned_column_old),
+            "Segmentname_new": aligned_column_new,
+        }
+    )
 
 
 def merge_csv() -> DataFrame:
     """
-    merges content of both input files into a single dataFrame.
+    merges content of both input files into a single aligned DataFrame.
     """
-    pruefid_old, pruefid_new = get_csv()
-
-    pruefid_old = pruefid_old.add_suffix("_old")
-    pruefid_new = pruefid_new.add_suffix("_new")
-
-    pruefid_diff = pd.DataFrame({"diff": [""] * len(pruefid_old)})
-
-    merged_df: DataFrame = pd.concat([pruefid_old, pruefid_diff, pruefid_new], axis=1)
-    aligned_df = align_columns(merged_df)
-
-    return aligned_df
+    df_old, df_new = get_csv()
+    return align_columns(df_old, df_new)
 
 
 if __name__ == "__main__":
