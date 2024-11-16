@@ -34,3 +34,15 @@ def test_export() -> None:
         assert os.path.getsize(xlsx_path) > 0
 
     assert not os.path.exists(temp_dir_path)
+
+
+def test_empty_dataframe_export() -> None:
+    """Test exporting an empty dataframe."""
+    df = pd.DataFrame(columns=["Segmentname_old", "diff", "Segmentname_new"])
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        xlsx_path = Path(temp_dir) / "test.xlsx"
+        export_to_excel(df, str(xlsx_path))
+
+        assert os.path.exists(xlsx_path)
+        assert os.path.getsize(xlsx_path) > 0
