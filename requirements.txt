@@ -4,3 +4,21 @@
 #
 #    pip-compile pyproject.toml
 #
+numpy==2.1.3
+    # via
+    #   pandas
+    #   pandas-stubs
+pandas==2.2.3
+    # via ahb-diff (pyproject.toml)
+pandas-stubs==2.2.3.241009
+    # via ahb-diff (pyproject.toml)
+python-dateutil==2.9.0.post0
+    # via pandas
+pytz==2024.2
+    # via pandas
+six==1.16.0
+    # via python-dateutil
+types-pytz==2024.2.0.20241003
+    # via pandas-stubs
+tzdata==2024.2
+    # via pandas
