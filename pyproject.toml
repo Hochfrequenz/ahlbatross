@@ -3,7 +3,7 @@ name = "ahb-diff"
 description = ""
 version = "0.1.0"
 license = { text = "MIT" }
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 authors = [{ name = "Hochfrequenz Unternehmensberatung GmbH", email = "info@hochfrequenz.de" }]
 keywords = ["ahb"]
 readme = "README.md"
@@ -15,6 +15,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
