@@ -219,32 +219,42 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
         workbook = writer.book
         worksheet = writer.sheets["AHB-Diff"]
 
-        # header formatting.
+        # base formatting
         header_format = workbook.add_format(
-            {
-                "bold": True,
-                "bg_color": "#D9D9D9",
-                "border": 1,
-            }
+            {"bold": True, "bg_color": "#D9D9D9", "border": 1, "align": "center", "text_wrap": True}
         )
-        base_format = workbook.add_format({"border": 1})
+        base_format = workbook.add_format({"border": 1, "text_wrap": True})
 
-        # cell formatting for changed content.
+        # formatting highlighted/changed cells
         diff_formats: dict[str, Format] = {
-            "NEW": workbook.add_format({"bg_color": "#C6EFCE", "border": 1}),
-            "REMOVED": workbook.add_format({"bg_color": "#FFC7CE", "border": 1}),
-            "": workbook.add_format({"border": 1}),
+            "NEW": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
+            "REMOVED": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
+            "": workbook.add_format({"border": 1, "text_wrap": True}),
         }
 
-        # diff column formatting.
+        # formatting diff column.
         diff_text_formats: dict[str, Format] = {
             "NEW": workbook.add_format(
-                {"bold": True, "color": "#7AAB8A", "border": 1, "bg_color": "#D9D9D9", "align": "center"}
+                {
+                    "bold": True,
+                    "color": "#7AAB8A",
+                    "border": 1,
+                    "bg_color": "#D9D9D9",
+                    "align": "center",
+                    "text_wrap": True,
+                }
             ),
             "REMOVED": workbook.add_format(
-                {"bold": True, "color": "#E94C74", "border": 1, "bg_color": "#D9D9D9", "align": "center"}
+                {
+                    "bold": True,
+                    "color": "#E94C74",
+                    "border": 1,
+                    "bg_color": "#D9D9D9",
+                    "align": "center",
+                    "text_wrap": True,
+                }
             ),
-            "": workbook.add_format({"border": 1, "bg_color": "#D9D9D9", "align": "center"}),
+            "": workbook.add_format({"border": 1, "bg_color": "#D9D9D9", "align": "center", "text_wrap": True}),
         }
 
         for col_num, value in enumerate(df_filtered.columns.values):
@@ -280,7 +290,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                     worksheet.write(row_num, col_num, converted_value, base_format)
 
         for col_num in range(len(df_filtered.columns)):
-            worksheet.set_column(col_num, col_num, min(150 / 7, 21))  # width = 150 px.
+            worksheet.set_column(col_num, col_num, min(150 / 7, 21))  # cell width = 150 px.
 
         logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
 
