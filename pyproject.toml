@@ -1,0 +1,82 @@
+[project]
+name = "ahb-diff"
+description = ""
+version = "0.1.0"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Hochfrequenz Unternehmensberatung GmbH", email = "info@hochfrequenz.de" }]
+keywords = ["ahb"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.optional-dependencies]
+tests = [
+    "pytest==8.3.3"
+]
+linting = [
+    "pylint==3.3.1"
+]
+type_check = [
+    "mypy==1.13.0"
+]
+spell_check = [
+    "codespell==2.3.0"
+]
+coverage = [
+    "coverage==7.6.4"
+]
+formatting = [
+    "black==24.10.0",
+    "isort==5.13.2"
+]
+packaging = [
+    "build==1.2.2.post1",
+    "twine==5.1.1"
+]
+dev = [
+    "pip-tools"
+]
+
+[project.urls]
+Changelog = "https://github.com/Hochfrequenz/ahb-diff/releases"
+Homepage = "https://github.com/Hochfrequenz/ahb-diff"
+
+[tool.black]
+line-length = 120
+target_version = ["py312", "py313"]
+
+[tool.isort]
+line_length = 120
+profile = "black"
+
+[tool.pylint."MESSAGES CONTROL"]
+max-line-length = 120
+
+[mypy]
+truethy-bool = true
+
+[tool.mypy]
+disable_error_code = []
+
+[build-system]
+requires = ["hatchling>=1.8.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/unittests"]
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src"]
+sources = ["src"]
