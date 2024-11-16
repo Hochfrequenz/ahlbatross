@@ -11,14 +11,13 @@ class TestSingleColumnDataframes:
     """
 
     def test_align_columns(self) -> None:
-
         old_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"]})
         new_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
                 "Segmentname_old": ["1", "2", "3", "4", "5", "6", "", "", "9", "10"],
-                "diff": [""] * 10,
+                "diff": ["", "", "", "REMOVED", "", "", "NEW", "NEW", "", ""],
                 "Segmentname_new": ["1", "2", "3", "", "5", "6", "7", "8", "9", "10"],
             }
         )
@@ -42,14 +41,13 @@ class TestSingleColumnDataframes:
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_one_empty_dataframe(self) -> None:
-
         old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
         new_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
 
         expected_output: DataFrame = pd.DataFrame(
             {
                 "Segmentname_old": ["1", "2", "3"],
-                "diff": [""] * 3,
+                "diff": ["REMOVED", "REMOVED", "REMOVED"],
                 "Segmentname_new": ["", "", ""],
             }
         )
@@ -58,14 +56,13 @@ class TestSingleColumnDataframes:
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_full_offset(self) -> None:
-
         old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
         new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
                 "Segmentname_old": ["1", "2", "3", "", "", ""],
-                "diff": [""] * 6,
+                "diff": ["REMOVED", "REMOVED", "REMOVED", "NEW", "NEW", "NEW"],
                 "Segmentname_new": ["", "", "", "4", "5", "6"],
             }
         )
@@ -74,14 +71,13 @@ class TestSingleColumnDataframes:
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_duplicate_segments(self) -> None:
-
         old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"]})
         new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
                 "Segmentname_old": ["1", "2", "2", ""],
-                "diff": [""] * 4,
+                "diff": ["", "", "REMOVED", "NEW"],
                 "Segmentname_new": ["1", "2", "", "4"],
             }
         )
@@ -90,14 +86,13 @@ class TestSingleColumnDataframes:
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_repeating_segments(self) -> None:
-
         old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "3", "2"]})
         new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "4"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
                 "Segmentname_old": ["1", "2", "3", "3", "2", ""],
-                "diff": [""] * 6,
+                "diff": ["", "", "", "REMOVED", "REMOVED", "NEW"],
                 "Segmentname_new": ["1", "2", "3", "", "", "4"],
             }
         )
@@ -129,7 +124,7 @@ class TestMultiColumnDataFrames:
             {
                 "Segmentname_old": ["1", "2", "3", "4", "5", "6", "", "", "9", "10"],
                 "Segmentgruppe_old": ["a", "b", "c", "", "e", "f", "", "", "g", "h"],
-                "diff": [""] * 10,
+                "diff": ["", "", "", "REMOVED", "", "", "NEW", "NEW", "", ""],
                 "Segmentname_new": ["1", "2", "3", "", "5", "6", "7", "8", "9", "10"],
                 "Segmentgruppe_new": ["a", "b", "d", "", "d", "d", "e", "f", "a", "b"],
             }
@@ -157,7 +152,7 @@ class TestMultiColumnDataFrames:
             {
                 "Segmentname_old": ["1", "2", "3"],
                 "Segmentgruppe_old": ["a", "b", "c"],
-                "diff": [""] * 3,
+                "diff": ["REMOVED", "REMOVED", "REMOVED"],
                 "Segmentname_new": ["", "", ""],
                 "Segmentgruppe_new": ["", "", ""],
             }
@@ -174,7 +169,7 @@ class TestMultiColumnDataFrames:
             {
                 "Segmentname_old": ["1", "2", "3", "", "", ""],
                 "Segmentgruppe_old": ["a", "b", "c", "", "", ""],
-                "diff": [""] * 6,
+                "diff": ["REMOVED", "REMOVED", "REMOVED", "NEW", "NEW", "NEW"],
                 "Segmentname_new": ["", "", "", "4", "5", "6"],
                 "Segmentgruppe_new": ["", "", "", "d", "e", "f"],
             }
@@ -191,7 +186,7 @@ class TestMultiColumnDataFrames:
             {
                 "Segmentname_old": ["1", "2", "2", ""],
                 "Segmentgruppe_old": ["a", "b", "c", ""],
-                "diff": [""] * 4,
+                "diff": ["", "", "REMOVED", "NEW"],
                 "Segmentname_new": ["1", "2", "", "4"],
                 "Segmentgruppe_new": ["a", "b", "", "d"],
             }
@@ -212,7 +207,7 @@ class TestMultiColumnDataFrames:
             {
                 "Segmentname_old": ["1", "2", "3", "3", "2", ""],
                 "Segmentgruppe_old": ["a", "b", "c", "d", "e", ""],
-                "diff": [""] * 6,
+                "diff": ["", "", "", "REMOVED", "REMOVED", "NEW"],
                 "Segmentname_new": ["1", "2", "3", "", "", "4"],
                 "Segmentgruppe_new": ["a", "b", "c", "", "", "d"],
             }
@@ -245,7 +240,7 @@ class TestMultiColumnDataFrames:
                 "Segmentgruppe_old": ["a", "b", ""],
                 "Datenelement_old": ["x", "y", ""],
                 "Qualifier_old": ["XY", "YZ", ""],
-                "diff": [""] * 3,
+                "diff": ["REMOVED", "", "NEW"],
                 "Segmentname_new": ["", "2", "3"],
                 "Segmentgruppe_new": ["", "b", "c"],
                 "Datenelement_new": ["", "m", "n"],

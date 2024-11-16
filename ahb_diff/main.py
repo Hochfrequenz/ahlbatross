@@ -13,8 +13,12 @@ def get_csv() -> tuple[DataFrame, DataFrame]:
     """
     read csv input files.
     """
-    pruefid_old: DataFrame = pd.read_csv("unittests/test_data/pruefid_00011.csv", dtype=str)
-    pruefid_new: DataFrame = pd.read_csv("unittests/test_data/pruefid_00022.csv", dtype=str)
+    pruefid_old: DataFrame = pd.read_csv(
+        "data/machine-readable_anwendungshandbuecher/FV2410/UTILMD/csv/55003.csv", dtype=str
+    )
+    pruefid_new: DataFrame = pd.read_csv(
+        "data/machine-readable_anwendungshandbuecher/FV2504/UTILMD/csv/55003.csv", dtype=str
+    )
     return pruefid_old, pruefid_new
 
 
@@ -53,6 +57,7 @@ def create_row(
     return row
 
 
+# pylint:disable=too-many-statements
 def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
     """
     aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
@@ -80,11 +85,15 @@ def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
 
     if df_new.empty:
         result_rows = [create_row(old_df=df_old, new_df=df_new, i=i) for i in range(len(df_old))]
+        for row in result_rows:
+            row["diff"] = "REMOVED"
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
     if df_old.empty:
         result_rows = [create_row(old_df=df_old, new_df=df_new, j=j) for j in range(len(df_new))]
+        for row in result_rows:
+            row["diff"] = "NEW"
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
@@ -98,13 +107,19 @@ def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
     # iterate through both lists until reaching their ends.
     while i < len(segments_old) or j < len(segments_new):
         if i >= len(segments_old):
-            result_rows.append(create_row(old_df=df_old, new_df=df_new, j=j))
+            row = create_row(old_df=df_old, new_df=df_new, j=j)
+            row["diff"] = "NEW"
+            result_rows.append(row)
             j += 1
         elif j >= len(segments_new):
-            result_rows.append(create_row(old_df=df_old, new_df=df_new, i=i))
+            row = create_row(old_df=df_old, new_df=df_new, i=i)
+            row["diff"] = "REMOVED"
+            result_rows.append(row)
             i += 1
         elif segments_old[i] == segments_new[j]:
-            result_rows.append(create_row(old_df=df_old, new_df=df_new, i=i, j=j))
+            row = create_row(old_df=df_old, new_df=df_new, i=i, j=j)
+            row["diff"] = ""
+            result_rows.append(row)
             i += 1
             j += 1
         else:
@@ -112,12 +127,16 @@ def align_columns(pruefid_old: DataFrame, pruefid_new: DataFrame) -> DataFrame:
             try:
                 next_match_new = segments_new[j:].index(segments_old[i])
                 for _ in range(next_match_new):
-                    result_rows.append(create_row(old_df=df_old, new_df=df_new, j=j))
+                    row = create_row(old_df=df_old, new_df=df_new, j=j)
+                    row["diff"] = "NEW"
+                    result_rows.append(row)
                     j += 1
                 continue
             except ValueError:
                 # no match found: add old value and empty new cell.
-                result_rows.append(create_row(old_df=df_old, new_df=df_new, i=i))
+                row = create_row(old_df=df_old, new_df=df_new, i=i)
+                row["diff"] = "REMOVED"  # Segment only in old file
+                result_rows.append(row)
                 i += 1
 
     # create dataframe with string dtype and replace NaN with empty strings.
