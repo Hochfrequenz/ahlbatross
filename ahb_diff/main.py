@@ -7,6 +7,7 @@ from typing import Any
 
 import pandas as pd
 from pandas.core.frame import DataFrame
+from xlsxwriter.format import Format  # type: ignore
 
 
 def get_csv() -> tuple[DataFrame, DataFrame]:
@@ -152,8 +153,73 @@ def merge_csv() -> DataFrame:
     return align_columns(df_old, df_new)
 
 
+# pylint:disable=too-many-locals
+def export_to_excel(df: DataFrame, output_path: str) -> None:
+    """
+    exports the merged dataframe to .xlsx with highlighted differences.
+    """
+    df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:")]]
+
+    with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
+        df_filtered.to_excel(writer, sheet_name="AHB-Diff", index=False)
+
+        workbook = writer.book
+        worksheet = writer.sheets["AHB-Diff"]
+
+        header_format = workbook.add_format({"bold": True, "bg_color": "#D9D9D9", "border": 1})
+        base_format = workbook.add_format({"border": 1})
+
+        diff_formats: dict[str, Format] = {
+            "NEW": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1}),
+            "REMOVED": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1}),
+            "": workbook.add_format({"border": 1}),
+        }
+
+        for col_num, value in enumerate(df_filtered.columns.values):
+            worksheet.write(0, col_num, value, header_format)
+
+        diff_idx = df_filtered.columns.get_loc("diff")
+
+        def _try_convert_to_number(cell: str) -> int | float | str:
+            """
+            tries to format cell values to numbers where appropriate.
+            """
+            try:
+                if cell.isdigit():
+                    return int(cell)
+                return float(cell)
+            except ValueError:
+                return cell
+
+        diff_text_formats: dict[str, Format] = {
+            "NEW": workbook.add_format({"bold": True, "color": "#7AAB8A", "border": 1}),
+            "REMOVED": workbook.add_format({"bold": True, "color": "#E94C74", "border": 1}),
+            "": workbook.add_format({"border": 1}),
+        }
+
+        for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
+            row_data = list(row)
+            diff_value = str(row_data[diff_idx])
+
+            for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
+                converted_value = _try_convert_to_number(str(value)) if value != "" else ""
+
+                if col_name == "diff":
+                    worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
+                elif diff_value == "REMOVED" and col_name.endswith("_old"):
+                    worksheet.write(row_num, col_num, converted_value, diff_formats["REMOVED"])
+                elif diff_value == "NEW" and col_name.endswith("_new"):
+                    worksheet.write(row_num, col_num, converted_value, diff_formats["NEW"])
+                else:
+                    worksheet.write(row_num, col_num, converted_value, base_format)
+
+        for col_num in range(len(df_filtered.columns)):
+            worksheet.set_column(col_num, col_num, min(150 / 7, 21))
+
+
 if __name__ == "__main__":
     pruefid_merged = merge_csv()
 
     os.makedirs("data/output", exist_ok=True)
     pruefid_merged.to_csv("data/output/ahb-diff.csv", index=False)
+    export_to_excel(pruefid_merged, "data/output/ahb-diff.xlsx")

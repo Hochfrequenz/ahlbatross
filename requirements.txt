@@ -22,3 +22,5 @@ types-pytz==2024.2.0.20241003
     # via pandas-stubs
 tzdata==2024.2
     # via pandas
+xlsxwriter==3.2.0
+    # via ahb-diff (pyproject.toml)
