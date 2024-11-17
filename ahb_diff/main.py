@@ -351,7 +351,7 @@ def align_columns(
     return result_df[column_order]
 
 
-# pylint:disable=too-many-locals
+# pylint:disable=too-many-branches, too-many-locals
 def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     exports the merged dataframe to .xlsx with highlighted differences.
@@ -364,13 +364,22 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
         workbook = writer.book
         worksheet = writer.sheets["AHB-Diff"]
 
+        # sticky table header
+        worksheet.freeze_panes(1, 0)
+        if not df_filtered.empty:
+            table_options = {
+                "style": "None",
+                "columns": [{"header": col} for col in df_filtered.columns],
+            }
+            worksheet.add_table(0, 0, len(df_filtered), len(df_filtered.columns) - 1, table_options)
+
         # base formatting
         header_format = workbook.add_format(
             {"bold": True, "bg_color": "#D9D9D9", "border": 1, "align": "center", "text_wrap": True}
         )
         base_format = workbook.add_format({"border": 1, "text_wrap": True})
 
-        # formatting highlighted/changed cells
+        # formatting highlighted/changed cells.
         diff_formats: dict[str, Format] = {
             "NEW": workbook.add_format({"bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
             "REMOVED": workbook.add_format({"bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
@@ -418,6 +427,17 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             except ValueError:
                 return cell
 
+        previous_formatversion = None
+        subsequent_formatversion = None
+        for col in df_filtered.columns:
+            if col.startswith("Segmentname_"):
+                suffix = col.split("Segmentname_")[1]
+                if previous_formatversion is None:
+                    previous_formatversion = suffix
+                else:
+                    subsequent_formatversion = suffix
+                    break
+
         for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
             row_data = list(row)
             diff_value = str(row_data[diff_idx])
@@ -427,9 +447,9 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
                 if col_name == "diff":
                     worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
-                elif diff_value == "REMOVED" and col_name.endswith("_old"):
+                elif diff_value == "REMOVED" and previous_formatversion and col_name.endswith(previous_formatversion):
                     worksheet.write(row_num, col_num, converted_value, diff_formats["REMOVED"])
-                elif diff_value == "NEW" and col_name.endswith("_new"):
+                elif diff_value == "NEW" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
                     worksheet.write(row_num, col_num, converted_value, diff_formats["NEW"])
                 else:
                     worksheet.write(row_num, col_num, converted_value, base_format)
