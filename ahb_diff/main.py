@@ -1,11 +1,11 @@
 """
-functions to handle csv imports, comparison and exports.
+AHB data fetching and parsing as well as csv imports, processing and exports.
 """
 
 import logging
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Tuple
 
 import pandas as pd
 from pandas.core.frame import DataFrame
@@ -14,8 +14,69 @@ from xlsxwriter.format import Format  # type: ignore
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
-BASE_DIR = Path("data/machine-readable_anwendungshandbuecher")
+SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 OUTPUT_DIR = Path("data/output")
+
+
+def parse_formatversions(fv: str) -> Tuple[int, int]:
+    """
+    parse <formatversion> string (e.g., "FV2504") into year and month
+    """
+    if not fv.startswith("FV") or len(fv) != 6:
+        raise ValueError(f"Invalid format version: {fv}")
+
+    year = int(fv[2:4])
+    month = int(fv[4:6])
+    year = 2000 + year
+
+    return year, month
+
+
+def get_available_formatversions() -> list[str]:
+    """
+    get all available <formatversion> directories in SUBMODULE, sorted from newest to oldest.
+    """
+    if not SUBMODULE.exists():
+        logger.error("❌Base directory does not exist: %s", SUBMODULE)
+        return []
+
+    fv_dirs = [d.name for d in SUBMODULE.iterdir() if d.is_dir() and d.name.startswith("FV") and len(d.name) == 6]
+
+    fv_dirs.sort(key=parse_formatversions, reverse=True)
+
+    return fv_dirs
+
+
+def is_fv_empty(fv: str) -> bool:
+    """
+    check if a <formatversion> directory does not contain any <nachrichtentyp> directories.
+    """
+    fv_dir = SUBMODULE / fv
+    if not fv_dir.exists():
+        return True
+
+    return len(get_nachrichtentyp_dirs(fv_dir)) == 0
+
+
+def determine_consecutive_formatversions() -> list[Tuple[str, str]]:
+    """
+    generate pairs of <formatversion> directories to compare and skip empty directories.
+    """
+    fv_list = get_available_formatversions()
+    pairs = []
+
+    for i in range(len(fv_list) - 1):
+        new_fv = fv_list[i]
+        old_fv = fv_list[i + 1]
+
+        # skip if either directory is empty.
+        if is_fv_empty(new_fv) or is_fv_empty(old_fv):
+            logger.warning("⚠️skipping empty consecutive formatversions: %s -> %s", new_fv, old_fv)
+            continue
+
+        pairs.append((new_fv, old_fv))
+
+    return pairs
 
 
 def get_nachrichtentyp_dirs(fv_dir: Path) -> list[Path]:
@@ -43,8 +104,8 @@ def get_matching_files(old_fv: str, new_fv: str) -> list[tuple[Path, Path, str, 
     """
     find matching ahb/<pruefid>.csv files across <formatversion> and <nachrichtentyp> directories.
     """
-    old_fv_dir = BASE_DIR / old_fv
-    new_fv_dir = BASE_DIR / new_fv
+    old_fv_dir = SUBMODULE / old_fv
+    new_fv_dir = SUBMODULE / new_fv
 
     if not all(d.exists() for d in [old_fv_dir, new_fv_dir]):
         logger.error("❌at least one formatversion directory does not exist.")
@@ -333,8 +394,24 @@ def process_files(old_fv: str, new_fv: str) -> None:
             logger.error("❌data processing error for %s/%s: %s", msg_type, pruefid, str(e))
 
 
-if __name__ == "__main__":
-    OLD_FV = "FV2410"
-    NEW_FV = "FV2504"
+def process_submodule() -> None:
+    """
+    processes all valid consecutive <formatversion> subdirectories.
+    """
+    consecutive_formatversions = determine_consecutive_formatversions()
 
-    process_files(OLD_FV, NEW_FV)
+    if not consecutive_formatversions:
+        logger.warning("⚠️no valid consecutive formatversion subdirectories found to compare")
+        return
+
+    for new_fv, old_fv in consecutive_formatversions:
+        logger.info("⌛processing format version pair: %s -> %s", new_fv, old_fv)
+        try:
+            process_files(old_fv, new_fv)
+        except (OSError, pd.errors.EmptyDataError, ValueError) as e:
+            logger.error("❌error processing formatversions %s -> %s: %s", new_fv, old_fv, str(e))
+            continue
+
+
+if __name__ == "__main__":
+    process_submodule()
