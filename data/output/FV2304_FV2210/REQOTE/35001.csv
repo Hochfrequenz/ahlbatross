@@ -1,4 +1,4 @@
-Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
 Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
 Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
 Nachrichten-Kopfsegment,2,,UNH,0065,,REQOTE,,Anfrage,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,REQOTE,,Anfrage,X,
