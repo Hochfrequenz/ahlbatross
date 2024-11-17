@@ -1,0 +1,115 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss [12],"[12] je UNB ist nur eine Nachricht mit BGM+Z04 in der Übertragungsdatei erlaubt (nur eine Nachricht je Übertragungsdatei)
+[14] je UNB ist maximal je Code aus DE1001 eine Nachricht in der Übertragungsdatei erlaubt",,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss [12],"[12] je UNB ist nur eine Nachricht mit BGM+Z04 in der Übertragungsdatei erlaubt (nur eine Nachricht je Übertragungsdatei)
+[14] je UNB ist maximal je Code aus DE1001 eine Nachricht in der Übertragungsdatei erlaubt"
+Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00001,PRICAT,,Preisliste/Katalog,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,PRICAT,,Preisliste/Katalog,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00001,20B,,Ausgabe 2020 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,20B,,Ausgabe 2020 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,x,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,x,
+Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00002,Z04,,Ausgleichsenergiepreis,X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z04,,Ausgleichsenergiepreis,X,
+Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Betrachtungszeitintervall,10,,DTM,,00003,,,,Muss,,,Betrachtungszeitintervall,10,,DTM,,00003,,,,Muss,
+Betrachtungszeitintervall,11,,DTM,2005,00003,492,,"Bilanzierungsdatum, - zeit, -periode",X,,,Betrachtungszeitintervall,11,,DTM,2005,00003,492,,"Bilanzierungsdatum, - zeit, -periode",X,
+Betrachtungszeitintervall,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Betrachtungszeitintervall,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Betrachtungszeitintervall,13,,DTM,2379,00003,610,,CCYYMM,X,,,Betrachtungszeitintervall,13,,DTM,2379,00003,610,,CCYYMM,X,
+Nachrichtendatum,14,,DTM,,00004,,,,Muss,,,Nachrichtendatum,14,,DTM,,00004,,,,Muss,
+Nachrichtendatum,15,,DTM,2005,00004,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,15,,DTM,2005,00004,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,16,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,16,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,17,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,17,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,18,SG1,,,,,,,Muss,,,Prüfidentifikator,18,SG1,,,,,,,Muss,
+Prüfidentifikator,19,SG1,RFF,,00007,,,,Muss,,,Prüfidentifikator,19,SG1,RFF,,00007,,,,Muss,
+Prüfidentifikator,20,SG1,RFF,1153,00007,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,20,SG1,RFF,1153,00007,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,21,SG1,RFF,1154,00007,27001,,Übermittlung der Ausgleichsenergiepreise,X,,,Prüfidentifikator,21,SG1,RFF,1154,00007,27001,,Übermittlung der Ausgleichsenergiepreise,X,
+Empfänger-ID,22,SG2,,,,,,,Muss,,,Empfänger-ID,22,SG2,,,,,,,Muss,
+Empfänger-ID,23,SG2,NAD,,00008,,,,Muss,,,Empfänger-ID,23,SG2,NAD,,00008,,,,Muss,
+Empfänger-ID,24,SG2,NAD,3035,00008,MR,,Nachrichtenempfänger,X,,,Empfänger-ID,24,SG2,NAD,3035,00008,MR,,Nachrichtenempfänger,X,
+Empfänger-ID,25,SG2,NAD,3039,00008,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom,,Empfänger-ID,25,SG2,NAD,3039,00008,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom
+Empfänger-ID,26,SG2,NAD,3055,00008,9,,GS1,X,,,Empfänger-ID,26,SG2,NAD,3055,00008,9,,GS1,X,
+Empfänger-ID,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Empfänger-ID,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Sender-ID,28,SG2,,,,,,,Muss,,,Sender-ID,28,SG2,,,,,,,Muss,
+Sender-ID,29,SG2,NAD,,00009,,,,Muss,,,Sender-ID,29,SG2,NAD,,00009,,,,Muss,
+Sender-ID,30,SG2,NAD,3035,00009,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,Sender-ID,30,SG2,NAD,3035,00009,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+Sender-ID,31,SG2,NAD,3039,00009,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom,,Sender-ID,31,SG2,NAD,3039,00009,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom
+Sender-ID,32,SG2,NAD,3055,00009,9,,GS1,X,,,Sender-ID,32,SG2,NAD,3055,00009,9,,GS1,X,
+Sender-ID,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Sender-ID,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Regelzone,34,SG2,LOC,,00010,,,,Muss,,,Regelzone,34,SG2,LOC,,00010,,,,Muss,
+Regelzone,35,SG2,LOC,3227,00010,231,,Regelzone,X,,,Regelzone,35,SG2,LOC,3227,00010,231,,Regelzone,X,
+Regelzone,36,SG2,LOC,3225,00010,,,"Ortsangabe, Nummer",X,,,Regelzone,36,SG2,LOC,3225,00010,,,"Ortsangabe, Nummer",X,
+Ansprechpartner,37,SG4,,,,,,,Kann,,,Ansprechpartner,37,SG4,,,,,,,Kann,
+Ansprechpartner,38,SG4,CTA,,00011,,,,Muss,,,Ansprechpartner,38,SG4,CTA,,00011,,,,Muss,
+Ansprechpartner,39,SG4,CTA,3139,00011,IC,,Informationskontakt,X,,,Ansprechpartner,39,SG4,CTA,3139,00011,IC,,Informationskontakt,X,
+Ansprechpartner,40,SG4,CTA,3412,00011,,,Kontakt,X,,,Ansprechpartner,40,SG4,CTA,3412,00011,,,Kontakt,X,
+Kommunikationsverbindung,41,SG4,COM,,00012,,,,Muss,,,Kommunikationsverbindung,41,SG4,COM,,00012,,,,Muss,
+Kommunikationsverbindung,42,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939][37]) ∨ ([940][38])) ∧ [519],"[37] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[38] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[519] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,42,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939][37]) ∨ ([940][38])) ∧ [519],"[37] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[38] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[519] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,43,SG4,COM,3155,00012,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,43,SG4,COM,3155,00012,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,44,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,44,SG4,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,45,SG4,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,45,SG4,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,46,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,46,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,47,SG4,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,47,SG4,COM,3155,,AL,,Handy,X [1P0..1],
+Währungsangaben,48,SG6,,,,,,,Muss,[9] Wenn BGM DE1373 =11 nicht vorhanden,,Währungsangaben,48,SG6,,,,,,,Muss,[9] Wenn BGM DE1373 =11 nicht vorhanden
+Währungsangaben,49,SG6,CUX,,00013,,,,Muss,,,Währungsangaben,49,SG6,CUX,,00013,,,,Muss,
+Währungsangaben,50,SG6,CUX,6347,00013,2,,Referenzwährung,X,,,Währungsangaben,50,SG6,CUX,6347,00013,2,,Referenzwährung,X,
+Währungsangaben,51,SG6,CUX,6345,00013,EUR,,Euro,X,,,Währungsangaben,51,SG6,CUX,6345,00013,EUR,,Euro,X,
+Währungsangaben,52,SG6,CUX,6343,00013,8,,Währung der Preisliste,X,,,Währungsangaben,52,SG6,CUX,6343,00013,8,,Währung der Preisliste,X,
+Produktgruppen- Information,53,SG17,,,,,,,Muss,[9] Wenn BGM DE1373 =11 nicht vorhanden,,Produktgruppen- Information,53,SG17,,,,,,,Muss,[9] Wenn BGM DE1373 =11 nicht vorhanden
+Produktgruppen- Information,54,SG17,PGI,,00014,,,,Muss,,,Produktgruppen- Information,54,SG17,PGI,,00014,,,,Muss,
+Produktgruppen- Information,55,SG17,PGI,5379,00014,9,,keine Gruppe genutzt,X,,,Produktgruppen- Information,55,SG17,PGI,5379,00014,9,,keine Gruppe genutzt,X,
+Positionsdaten,56,SG36,,,,,,,Muss,,,Positionsdaten,56,SG36,,,,,,,Muss,
+Positionsdaten,57,SG36,LIN,,00015,,,,Muss,,,Positionsdaten,57,SG36,LIN,,00015,,,,Muss,
+Positionsdaten,58,SG36,LIN,1082,00015,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Positionsdaten,58,SG36,LIN,1082,00015,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
+Positionsdaten,59,SG36,LIN,7140,00015,,,Produkt-/Leistungsnummer,X [941] ∧ [39],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77
+[39] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte MaBiS ein X haben
+[40] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte H ein X haben
+[45] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Abrechnung Messstellenbetrieb für die Sparte Strom"" genannt sind
+[46] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Artikel-ID für den Universalbestellprozess für die Sparte Strom"" genannt sind
+[941] Format: Artikelnummer
+[942] Format: n1-n2-n1-n3
+[959] Format: n13-n2",,Positionsdaten,59,SG36,LIN,7140,00015,,,Produkt-/Leistungsnummer,X [941] ∧ [39],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77
+[39] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte MaBiS ein X haben
+[40] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte H ein X haben
+[45] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Abrechnung Messstellenbetrieb für die Sparte Strom"" genannt sind
+[46] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Artikel-ID für den Universalbestellprozess für die Sparte Strom"" genannt sind
+[941] Format: Artikelnummer
+[942] Format: n1-n2-n1-n3
+[959] Format: n13-n2"
+Positionsdaten,60,SG36,LIN,7143,00015,Z01,,Artikelnummer,X,,,Positionsdaten,60,SG36,LIN,7143,00015,Z01,,Artikelnummer,X,
+Preisangaben,61,SG40,,,,,,,Muss,,,Preisangaben,61,SG40,,,,,,,Muss,
+Preisangaben,62,SG40,PRI,,00018,,,,Muss,,,Preisangaben,62,SG40,PRI,,00018,,,,Muss,
+Preisangaben,63,SG40,PRI,5125,00018,CAL,,Berechnungspreis,X,,,Preisangaben,63,SG40,PRI,5125,00018,CAL,,Berechnungspreis,X,
+Preisangaben,64,SG40,PRI,5118,00018,,,"Preis, Betrag",X [912] [502],"[502] Hinweis: Preis in Euro je MWh
+[513] Hinweis: Die zum Preis gehörende Einheit ist in der Codeliste definiert
+[912] Format: max. 6 Nachkommastellen",,Preisangaben,64,SG40,PRI,5118,00018,,,"Preis, Betrag",X [912] [502],"[502] Hinweis: Preis in Euro je MWh
+[513] Hinweis: Die zum Preis gehörende Einheit ist in der Codeliste definiert
+[912] Format: max. 6 Nachkommastellen"
+Preisangaben,65,SG40,PRI,5284,00018,,,"Einzelpreisbasis, Menge",X [929] [503],"[503] Hinweis: Hier ist immer der Wert 1000 einzutragen, da in DE5118 der Preis in €/MWh angegeben wird.
+[929] Format: Möglicher Wert: 1000",,Preisangaben,65,SG40,PRI,5284,00018,,,"Einzelpreisbasis, Menge",X [929] [503],"[503] Hinweis: Hier ist immer der Wert 1000 einzutragen, da in DE5118 der Preis in €/MWh angegeben wird.
+[929] Format: Möglicher Wert: 1000"
+Datum/Uhrzeit/Zeitspanne,66,SG40,DTM,,00019,,,,Muss,,,Datum/Uhrzeit/Zeitspanne,66,SG40,DTM,,00019,,,,Muss,
+Datum/Uhrzeit/Zeitspanne,67,SG40,DTM,2005,00019,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Datum/Uhrzeit/Zeitspanne,67,SG40,DTM,2005,00019,163,,"Verarbeitung, Beginndatum/-zeit",X,
+Datum/Uhrzeit/Zeitspanne,68,SG40,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,,,Datum/Uhrzeit/Zeitspanne,68,SG40,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,
+Datum/Uhrzeit/Zeitspanne,69,SG40,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",,Datum/Uhrzeit/Zeitspanne,69,SG40,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00"
+Datum/Uhrzeit/Zeitspanne,70,SG40,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,,,Datum/Uhrzeit/Zeitspanne,70,SG40,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,
+Nachrichten-Endesegment,71,,UNT,,00024,,,,Muss,,,Nachrichten-Endesegment,71,,UNT,,00024,,,,Muss,
+Nachrichten-Endesegment,72,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,72,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,73,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,73,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,

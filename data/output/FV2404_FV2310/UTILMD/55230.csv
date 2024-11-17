@@ -1,0 +1,94 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
+Ansprechpartner,21,SG3,CTA,,,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,22,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
+Ansprechpartner,23,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,24,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
+Kommunikationsverbindung,25,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,26,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
+MP-ID Empfänger,32,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,34,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,35,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
+Vorgang,38,SG4,IDE,,,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
+Vorgang,39,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
+Vorgang,40,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
+Beginn zum,41,SG4,DTM,,,,,,Muss,,,Beginn zum,41,SG4,DTM,,00024,,,,Muss,
+Beginn zum,42,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,,Beginn zum,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,
+Beginn zum,43,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [956] [UB1],[956] Format: ≥ 202212312300?+00,,Beginn zum,43,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [956] [UB1],[956] Format: ≥ 202212312300?+00
+Beginn zum,44,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,
+"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,
+"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,
+"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,
+Transaktionsgrund,49,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Transaktionsgrund,50,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,
+Transaktionsgrund,51,SG4,STS,9013,,ZS7,,Nicht bila.rel. Änderung Abrechnung Blindarbeit vom LF,X,,,Transaktionsgrund,51,SG4,STS,9013,00037,ZS7,,Nicht bila.rel. Änderung Abrechnung Blindarbeit vom LF,X,
+Netzlokation,52,SG5,,,,,,,Muss [2061] ∧ [343],"[343] Wenn DTM+157 (Änderung zum) im DE2380 ≥ 202312312300?+00
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Netzlokation,52,SG5,,,,,,,Muss [2061] ∧ [343],"[343] Wenn DTM+157 (Änderung zum) im DE2380 ≥ 202312312300?+00
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Netzlokation,53,SG5,LOC,,,,,,Muss,,,Netzlokation,53,SG5,LOC,,00050,,,,Muss,
+Netzlokation,54,SG5,LOC,3227,,Z18,,Netzlokation,X,,,Netzlokation,54,SG5,LOC,3227,00050,Z18,,Netzlokation,X,
+Netzlokation,55,SG5,LOC,3225,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID,,Netzlokation,55,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID
+Marktlokation,56,SG5,,,,,,,Muss [2061] ∧ [464],"[464] Wenn DTM+157 (Änderung zum) im DE2380 < 202312312300?+00
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Marktlokation,56,SG5,,,,,,,Muss [2061] ∧ [464],"[464] Wenn DTM+157 (Änderung zum) im DE2380 < 202312312300?+00
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Marktlokation,57,SG5,LOC,,,,,,Muss,,,Marktlokation,57,SG5,LOC,,00051,,,,Muss,
+Marktlokation,58,SG5,LOC,3227,,Z16,,Marktlokation,X,,,Marktlokation,58,SG5,LOC,3227,00051,Z16,,Marktlokation,X,
+Marktlokation,59,SG5,LOC,3225,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Marktlokation,59,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
+Prüfidentifikator,60,SG6,,,,,,,Muss,,,Prüfidentifikator,60,SG6,,,,,,,Muss,
+Prüfidentifikator,61,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,61,SG6,RFF,,00057,,,,Muss,
+Prüfidentifikator,62,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,62,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,63,SG6,RFF,1154,,55230,,SDÄ Strom / Nicht bila. rel. Änderung Abrechnung Blindarbeit vom LF,X,,,Prüfidentifikator,63,SG6,RFF,1154,00057,55230,,SDÄ Strom / Nicht bila. rel. Änderung Abrechnung Blindarbeit vom LF,X,
+Abrechnungsdaten der Netzlokation,64,SG8,,,,,,,Muss [294],[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden,,Abrechnungsdaten der Netzlokation,64,SG8,,,,,,,Muss [294],[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden
+Abrechnungsdaten der Netzlokation,65,SG8,SEQ,,,,,,Muss,,,Abrechnungsdaten der Netzlokation,65,SG8,SEQ,,00083,,,,Muss,
+Abrechnungsdaten der Netzlokation,66,SG8,SEQ,1229,,Z71,,Abrechnungsdaten der Netzlokation,X,,,Abrechnungsdaten der Netzlokation,66,SG8,SEQ,1229,00083,Z71,,Abrechnungsdaten der Netzlokation,X,
+Zahlung der Blindarbeit durch Lieferanten,67,SG10,,,,,,,Muss,,,Zahlung der Blindarbeit durch Lieferanten,67,SG10,,,,,,,Muss,
+Zahlung der Blindarbeit durch Lieferanten,68,SG10,CCI,,,,,,Muss,,,Zahlung der Blindarbeit durch Lieferanten,68,SG10,CCI,,00087,,,,Muss,
+Zahlung der Blindarbeit durch Lieferanten,69,SG10,CCI,7059,,Z46,,Zahlung der Blindarbeit durch Lieferanten,X,,,Zahlung der Blindarbeit durch Lieferanten,69,SG10,CCI,7059,00087,Z46,,Zahlung der Blindarbeit durch Lieferanten,X,
+Zahlung der Blindarbeit durch Lieferanten,70,SG10,CCI,7037,,ZE1,,Zahlung der Blindarbeit durch Lieferanten mit Anschlussnutzer vereinbart,X,,,Zahlung der Blindarbeit durch Lieferanten,70,SG10,CCI,7037,00087,ZE1,,Zahlung der Blindarbeit durch Lieferanten mit Anschlussnutzer vereinbart,X,
+Zahlung der Blindarbeit durch Lieferanten,71,SG10,CCI,7037,,ZE2,,Zahlung der Blindarbeit erfolgt nicht durch Lieferanten,X,,,Zahlung der Blindarbeit durch Lieferanten,71,SG10,CCI,7037,,ZE2,,Zahlung der Blindarbeit erfolgt nicht durch Lieferanten,X,
+Weitere Abrechnungsdaten der Marktlokation,72,SG8,,,,,,,Muss [25],[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden,,Weitere Abrechnungsdaten der Marktlokation,72,SG8,,,,,,,Muss [25],[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden
+Weitere Abrechnungsdaten der Marktlokation,73,SG8,SEQ,,,,,,Muss,,,Weitere Abrechnungsdaten der Marktlokation,73,SG8,SEQ,,00183,,,,Muss,
+Weitere Abrechnungsdaten der Marktlokation,74,SG8,SEQ,1229,,Z46,,Weitere Abrechnungsdaten der Marktlokation,X,,,Weitere Abrechnungsdaten der Marktlokation,74,SG8,SEQ,1229,00183,Z46,,Weitere Abrechnungsdaten der Marktlokation,X,
+Zahlung der Blindarbeit durch Lieferanten,75,SG10,,,,,,,Muss,,,Zahlung der Blindarbeit durch Lieferanten,75,SG10,,,,,,,Muss,
+Zahlung der Blindarbeit durch Lieferanten,76,SG10,CCI,,,,,,Muss,,,Zahlung der Blindarbeit durch Lieferanten,76,SG10,CCI,,00187,,,,Muss,
+Zahlung der Blindarbeit durch Lieferanten,77,SG10,CCI,7059,,Z46,,Zahlung der Blindarbeit durch Lieferanten,X,,,Zahlung der Blindarbeit durch Lieferanten,77,SG10,CCI,7059,00187,Z46,,Zahlung der Blindarbeit durch Lieferanten,X,
+Zahlung der Blindarbeit durch Lieferanten,78,SG10,CCI,7037,,ZE1,,Zahlung der Blindarbeit durch Lieferanten mit Anschlussnutzer vereinbart,X,,,Zahlung der Blindarbeit durch Lieferanten,78,SG10,CCI,7037,00187,ZE1,,Zahlung der Blindarbeit durch Lieferanten mit Anschlussnutzer vereinbart,X,
+Zahlung der Blindarbeit durch Lieferanten,79,SG10,CCI,7037,,ZE2,,Zahlung der Blindarbeit erfolgt nicht durch Lieferanten,X,,,Zahlung der Blindarbeit durch Lieferanten,79,SG10,CCI,7037,,ZE2,,Zahlung der Blindarbeit erfolgt nicht durch Lieferanten,X,
+Nachrichten-Endesegment,80,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,80,,UNT,,00540,,,,Muss,
+Nachrichten-Endesegment,81,,UNT,0074,,,,Anzahl der Segmente in einer,X,,,Nachrichten-Endesegment,81,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,82,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,82,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,

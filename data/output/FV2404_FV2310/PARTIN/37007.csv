@@ -1,0 +1,87 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,PARTIN,,Partnerstammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,PARTIN,,Partnerstammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,20B,,Ausgabe 2020 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,20B,,Ausgabe 2020 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.0d,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z75,,Kommunikationsparameter,X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z87,,Kommunikationsparameter API Steuerbefehl,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Beginn der Nachricht,10,,BGM,1373,,,,,11,[9] Wenn die Kommunikationsdaten vom Absender nicht mehr aktiv sind.,,Beginn der Nachricht,10,,BGM,1373,00002,,,,11,[9] Wenn die Kommunikationsdaten vom Absender nicht mehr aktiv sind.
+Nachrichtendatum,11,,DTM,,,,,,Muss,,,Nachrichtendatum,11,,DTM,,00003,,,,Muss,
+Nachrichtendatum,12,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,12,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,13,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,13,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,14,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,14,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,15,SG1,,,,,,,Muss,,,Prüfidentifikator,15,SG1,,,,,,,Muss,
+Prüfidentifikator,16,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,16,SG1,RFF,,00004,,,,Muss,
+Prüfidentifikator,17,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,17,SG1,RFF,1153,00004,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,18,SG1,RFF,1154,,37007,,Übermittlung Kommunikationsparameter,X,,,Prüfidentifikator,18,SG1,RFF,1154,00004,37007,,Übermittlung Kommunikationsparameter,X,
+Versionsnummer,19,SG1,,,,,,,Muss,,,Versionsnummer,19,SG1,,,,,,,Muss,
+Versionsnummer,20,SG1,RFF,,,,,,Muss,,,Versionsnummer,20,SG1,RFF,,00005,,,,Muss,
+Versionsnummer,21,SG1,RFF,1153,,AGK,,Anwendungsreferenznum mer,X,,,Versionsnummer,21,SG1,RFF,1153,00005,AGK,,Anwendungsreferenznum mer,X,
+Versionsnummer,22,SG1,RFF,1056,,,,Versionsnummer,X [908][505],"[505] Wenn eine Vorgängerversion (RFF+ACW) angegeben ist, so muss der Wert in diesem DE1056 mindestens um 1 höher sein, als der Wert aus DE1056 der Vorgängerversion (RFF+ACW).
+[908] Format: Mögliche Werte: 1 bis n",,Versionsnummer,22,SG1,RFF,1056,00005,,,Versionsnummer,X [908][505],"[505] Wenn eine Vorgängerversion (RFF+ACW) angegeben ist, so muss der Wert in diesem DE1056 mindestens um 1 höher sein, als der Wert aus DE1056 der Vorgängerversion (RFF+ACW).
+[908] Format: Mögliche Werte: 1 bis n"
+Gültig Ab,23,SG1,DTM,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden,,Gültig Ab,23,SG1,DTM,,00006,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden
+Gültig Ab,24,SG1,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,Gültig Ab,24,SG1,DTM,2005,00006,157,,"Gültigkeit, Beginndatum",X,
+Gültig Ab,25,SG1,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Gültig Ab,25,SG1,DTM,2380,00006,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Gültig Ab,26,SG1,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Gültig Ab,26,SG1,DTM,2379,00006,303,,CCYYMMDDHHMMZZZ,X,
+Vorgängerversion,27,SG1,,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden,,Vorgängerversion,27,SG1,,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden
+Vorgängerversion,28,SG1,RFF,,,,,,Muss,,,Vorgängerversion,28,SG1,RFF,,00007,,,,Muss,
+Vorgängerversion,29,SG1,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Vorgängerversion,29,SG1,RFF,1153,00007,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+Vorgängerversion,30,SG1,RFF,1056,,,,Versionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,Vorgängerversion,30,SG1,RFF,1056,00007,,,Versionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n
+MP-ID Absender,31,SG2,,,,,,,Muss,,,MP-ID Absender,31,SG2,,,,,,,Muss,
+MP-ID Absender,32,SG2,NAD,,,,,,Muss,,,MP-ID Absender,32,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,33,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,33,SG2,NAD,3035,00008,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,34,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Absender,34,SG2,NAD,3039,00008,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Absender,35,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,35,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,37,SG3,,,,,,,Kann,,,Ansprechpartner,37,SG3,,,,,,,Kann,
+Ansprechpartner,38,SG3,CTA,,,,,,Muss,,,Ansprechpartner,38,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,39,SG3,CTA,3139,,,,,IC,,,Ansprechpartner,39,SG3,CTA,3139,00009,,,,IC,
+Ansprechpartner,40,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,40,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,41,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,41,SG3,COM,,00010,,,,Muss,
+Kommunikationsverbindung,42,SG3,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][7])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[7] wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,42,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939][6]) ∨ ([940][7])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[7] wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,43,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,43,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,44,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,44,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,45,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,45,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,46,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,46,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,47,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,47,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,48,SG2,,,,,,,Muss,,,MP-ID Empfänger,48,SG2,,,,,,,Muss,
+MP-ID Empfänger,49,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,49,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,50,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,50,SG2,NAD,3035,00011,,,,MR,
+MP-ID Empfänger,51,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,51,SG2,NAD,3039,00011,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,52,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,52,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,53,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,53,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Abschnitts-Kontrollsegment,54,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,54,,UNS,,00012,,,,Muss,
+Abschnitts-Kontrollsegment,55,,UNS,0081,,Positionsteil,,,D,,,Abschnitts-Kontrollsegment,55,,UNS,0081,00012,Positionsteil,,,D,
+Name und Adresse des Unternehmens,56,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,REMOVED,,,,,,,,,,,
+Name und Adresse des Unternehmens,57,SG4,NAD,,,,,,Muss,,REMOVED,,,,,,,,,,,
+Name und Adresse des Unternehmens,58,SG4,NAD,3035,,,,,SU DDM DEB Z31 Z34 Z35 Z36,,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Kommunikationsparameter für die Information zu einem Steuerbefehl (API),56,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+,,,,,,,,,,,NEW,Kommunikationsparameter für die Information zu einem Steuerbefehl (API),57,SG4,NAD,,00057,,,,Muss,
+,,,,,,,,,,,NEW,Kommunikationsparameter für die Information zu einem Steuerbefehl (API),58,SG4,NAD,3035,00057,für die Information zu einem Steuerbefehl (API),,,Z38,
+,,,,,,,,,,,NEW,Zieladresse URI,59,SG4,FTX,,00058,,,,Muss [507],[507] Hinweis: Für den Empfang der Information über die erfolgreiche Einrichtung eines Steuerbefehls
+,,,,,,,,,,,NEW,Zieladresse URI,60,SG4,FTX,4451,00058,,,,Z17,
+,,,,,,,,,,,NEW,Zieladresse URI,61,SG4,FTX,4440,00058,,,Zieladresse URI für Kommunikation Steuerbefehl,X,
+Zertifikatsaussteller (Issuer),59,SG4,FTX,,,,,,Muss,,,Zertifikatsaussteller (Issuer),62,SG4,FTX,,00059,,,,Muss [507],[507] Hinweis: Für den Empfang der Information über die erfolgreiche Einrichtung eines Steuerbefehls
+Zertifikatsaussteller (Issuer),60,SG4,FTX,4451,,,,,Z24,,,Zertifikatsaussteller (Issuer),63,SG4,FTX,4451,00059,,,,Z24,
+Zertifikatsaussteller (Issuer),61,SG4,FTX,4440,,,,Zertifikatsaussteller,X,,,Zertifikatsaussteller (Issuer),64,SG4,FTX,4440,00059,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4"
+Zertifikatsnutzer (Subject),62,SG4,FTX,,,,,,Muss,,,Zertifikatsnutzer (Subject),65,SG4,FTX,,00060,,,,Muss [507],[507] Hinweis: Für den Empfang der Information über die erfolgreiche Einrichtung eines Steuerbefehls
+Zertifikatsnutzer (Subject),63,SG4,FTX,4451,,,,,Z23,,,Zertifikatsnutzer (Subject),66,SG4,FTX,4451,00060,,,,Z23,
+Zertifikatsnutzer (Subject),64,SG4,FTX,4440,,,,Zertifikatsnutzer,X,,,Zertifikatsnutzer (Subject),67,SG4,FTX,4440,00060,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4"
+Nachrichten-Endesegment,65,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,68,,UNT,,00061,,,,Muss,
+Nachrichten-Endesegment,66,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,69,,UNT,0074,00061,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,67,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,70,,UNT,0062,00061,,,Nachrichten-Referenznummer,X,

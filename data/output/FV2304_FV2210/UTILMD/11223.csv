@@ -1,0 +1,240 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Nachrichten-Kopfsegment,7,,UNH,0068,,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden,,Nachrichten-Kopfsegment,7,,UNH,0068,,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden
+Nachrichten-Kopfsegment,8,,UNH,0070,,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden,,Nachrichten-Kopfsegment,8,,UNH,0070,,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden
+Nachrichten-Kopfsegment,9,,UNH,0073,,C,,Beginn,M [2],,,Nachrichten-Kopfsegment,9,,UNH,0073,,C,,Beginn,M [2],
+Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE 0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer",,Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE 0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer"
+Beginn der Nachricht,11,,BGM,,,,,,Muss,,,Beginn der Nachricht,11,,BGM,,,,,,Muss,
+Beginn der Nachricht,12,,BGM,1001,,Z37,,DZÜ-Liste,X,,,Beginn der Nachricht,12,,BGM,1001,,Z37,,DZÜ-Liste,X,
+Beginn der Nachricht,13,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,13,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,14,,DTM,,,,,,Muss,,,Nachrichtendatum,14,,DTM,,,,,,Muss,
+Nachrichtendatum,15,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,15,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,18,SG2,,,,,,,Muss,,,MP-ID Absender,18,SG2,,,,,,,Muss,
+MP-ID Absender,19,SG2,NAD,,,,,,Muss,,,MP-ID Absender,19,SG2,NAD,,,,,,Muss,
+MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,23,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,23,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,24,SG3,,,,,,,Kann,,,Ansprechpartner,24,SG3,,,,,,,Kann,
+Ansprechpartner,25,SG3,CTA,,,,,,Muss,,,Ansprechpartner,25,SG3,CTA,,,,,,Muss,
+Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,
+Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,35,SG2,,,,,,,Muss,,,MP-ID Empfänger,35,SG2,,,,,,,Muss,
+MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,40,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,40,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Identifikation einer Liste,41,SG4,,,,,,,Muss,,,Identifikation einer Liste,41,SG4,,,,,,,Muss,
+Identifikation einer Liste,42,SG4,IDE,,,,,,Muss,,,Identifikation einer Liste,42,SG4,IDE,,,,,,Muss,
+Identifikation einer Liste,43,SG4,IDE,7495,,Z01,,Liste,X,,,Identifikation einer Liste,43,SG4,IDE,7495,,Z01,,Liste,X,
+Identifikation einer Liste,44,SG4,IDE,7402,,,,Listennummer,X,,,Identifikation einer Liste,44,SG4,IDE,7402,,,,Listennummer,X,
+Meldepunkt,45,SG5,,,,,,,Muss,,,Meldepunkt,45,SG5,,,,,,,Muss,
+Meldepunkt,46,SG5,LOC,,,,,,Muss,,,Meldepunkt,46,SG5,LOC,,,,,,Muss,
+Meldepunkt,47,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,47,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,48,SG5,LOC,3225,,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,,Meldepunkt,48,SG5,LOC,3225,,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung
+Prüfidentifikator,49,SG6,,,,,,,Muss,,,Prüfidentifikator,49,SG6,,,,,,,Muss,
+Prüfidentifikator,50,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,50,SG6,RFF,,,,,,Muss,
+Prüfidentifikator,51,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,51,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,52,SG6,RFF,1154,,11223,,MaBiS / DZÜ Liste,X,,,Prüfidentifikator,52,SG6,RFF,1154,,11223,,MaBiS / DZÜ Liste,X,
+Daten der Summenzeitreihe,53,SG8,,,,,,,Muss,,,Daten der Summenzeitreihe,53,SG8,,,,,,,Muss,
+Daten der Summenzeitreihe,54,SG8,SEQ,,,,,,Muss,,,Daten der Summenzeitreihe,54,SG8,SEQ,,,,,,Muss,
+Daten der Summenzeitreihe,55,SG8,SEQ,1229,,Z22,,Daten der Summenzeitreihe,X,,,Daten der Summenzeitreihe,55,SG8,SEQ,1229,,Z22,,Daten der Summenzeitreihe,X,
+Versionsangabe der Summenzeitreihe,56,SG8,RFF,,,,,,Muss,,,Versionsangabe der Summenzeitreihe,56,SG8,RFF,,,,,,Muss,
+Versionsangabe der Summenzeitreihe,57,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,57,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,58,SG8,RFF,1154,,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,58,SG8,RFF,1154,,,,Version der Zeitreihe,X,
+Vorgang,59,SG4,,,,,,,Soll [2344] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde",,Vorgang,59,SG4,,,,,,,Soll [2344] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2055] Einmal für jede Marktlokation bzw. Tranche, für die der NB nicht die gemeldete Ansicht des ÜNB teilt
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde"
+Vorgang,60,SG4,IDE,,,,,,Muss,,,Vorgang,60,SG4,IDE,,,,,,Muss,
+Vorgang,61,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,61,SG4,IDE,7495,,24,,Transaktion,X,
+Vorgang,62,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,62,SG4,IDE,7402,,,,Vorgangsnummer,X,
+Transaktionsgrund,63,SG4,STS,,,,,,Muss,,,Transaktionsgrund,63,SG4,STS,,,,,,Muss,
+Transaktionsgrund,64,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,64,SG4,STS,9015,,7,,Transaktionsgrund,X,
+Transaktionsgrund,65,SG4,STS,9013,,ZP3,,Stammdaten,X,,,Transaktionsgrund,65,SG4,STS,9013,,ZP3,,Stammdaten,X,
+Transaktionsgrund,66,SG4,STS,9013,,ZP4,,Werte,X,,,Transaktionsgrund,66,SG4,STS,9013,,ZP4,,Werte,X,
+Meldepunkt,67,SG5,,,,,,,Muss [2061] ∧ [659],"[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Meldepunkt,67,SG5,,,,,,,Muss [2061] ∧ [659],"[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Meldepunkt,68,SG5,LOC,,,,,,Muss,,,Meldepunkt,68,SG5,LOC,,,,,,Muss,
+Meldepunkt,69,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,69,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,70,SG5,LOC,3225,,,,Identifikator,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",,Meldepunkt,70,SG5,LOC,3225,,,,Identifikator,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID"
+Datenstand des ÜNB,71,SG8,,,,,,,Soll [166],[166] Wenn vorhanden,,Datenstand des ÜNB,71,SG8,,,,,,,Soll [166],[166] Wenn vorhanden
+Datenstand des ÜNB,72,SG8,SEQ,,,,,,Muss,,,Datenstand des ÜNB,72,SG8,SEQ,,,,,,Muss,
+Datenstand des ÜNB,73,SG8,SEQ,1229,,Z47,,Datenstand des ÜNB,X,,,Datenstand des ÜNB,73,SG8,SEQ,1229,,Z47,,Datenstand des ÜNB,X,
+Veranschlagte Jahresmenge gesamt,74,SG9,,,,,,,Soll [165],[165] Wenn bekannt,,Veranschlagte Jahresmenge gesamt,74,SG9,,,,,,,Soll [165],[165] Wenn bekannt
+Veranschlagte Jahresmenge gesamt,75,SG9,QTY,,,,,,Muss,,,Veranschlagte Jahresmenge gesamt,75,SG9,QTY,,,,,,Muss,
+Veranschlagte Jahresmenge gesamt,76,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,76,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,77,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,77,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,78,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,78,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Tatsächlich bilanzierte Energiemenge,79,SG9,,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,79,SG9,,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,80,SG9,QTY,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,80,SG9,QTY,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,81,SG9,QTY,6063,,Z36,,Energiemenge: DZÜ- Anteil,X,,,Tatsächlich bilanzierte Energiemenge,81,SG9,QTY,6063,,Z36,,Energiemenge: DZÜ- Anteil,X,
+Tatsächlich bilanzierte Energiemenge,82,SG9,QTY,6060,,,,Mengenangabe,X,,,Tatsächlich bilanzierte Energiemenge,82,SG9,QTY,6060,,,,Mengenangabe,X,
+Tatsächlich bilanzierte Energiemenge,83,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Tatsächlich bilanzierte Energiemenge,83,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,84,SG9,DTM,,,,,,Muss,,,Bilanzierungsbeginn,84,SG9,DTM,,,,,,Muss,
+Bilanzierungsbeginn,85,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,85,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,86,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,86,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,87,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,87,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,88,SG9,DTM,,,,,,Muss,,,Bilanzierungsende,88,SG9,DTM,,,,,,Muss,
+Bilanzierungsende,89,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,89,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,90,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,90,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,91,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,91,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Zu bilanzierende Energiemenge,92,SG9,,,,,,,Muss,,,Zu bilanzierende Energiemenge,92,SG9,,,,,,,Muss,
+Zu bilanzierende Energiemenge,93,SG9,QTY,,,,,,Muss,,,Zu bilanzierende Energiemenge,93,SG9,QTY,,,,,,Muss,
+Zu bilanzierende Energiemenge,94,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,,,Zu bilanzierende Energiemenge,94,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,
+Zu bilanzierende Energiemenge,95,SG9,QTY,6060,,,,Mengenangabe,X,,,Zu bilanzierende Energiemenge,95,SG9,QTY,6060,,,,Mengenangabe,X,
+Zu bilanzierende Energiemenge,96,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Zu bilanzierende Energiemenge,96,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,97,SG9,DTM,,,,,,Muss,,,Bilanzierungsbeginn,97,SG9,DTM,,,,,,Muss,
+Bilanzierungsbeginn,98,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,98,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,99,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,99,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,100,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,100,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,101,SG9,DTM,,,,,,Muss,,,Bilanzierungsende,101,SG9,DTM,,,,,,Muss,
+Bilanzierungsende,102,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,102,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,103,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,103,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,104,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,104,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzkreis,105,SG10,,,,,,,Soll [166],[166] Wenn vorhanden,,Bilanzkreis,105,SG10,,,,,,,Soll [166],[166] Wenn vorhanden
+Bilanzkreis,106,SG10,CCI,,,,,,Muss,,,Bilanzkreis,106,SG10,CCI,,,,,,Muss,
+Bilanzkreis,107,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,,Bilanzkreis,107,SG10,CCI,7059,,Z19,,Bilanzkreis,X,
+Bilanzkreis,108,SG10,CCI,7037,,,,Bilanzkreis,X,,,Bilanzkreis,108,SG10,CCI,7037,,,,Bilanzkreis,X,
+Bilanzierungsgebiet,109,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,109,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,110,SG10,CCI,,,,,,Muss,,,Bilanzierungsgebiet,110,SG10,CCI,,,,,,Muss,
+Bilanzierungsgebiet,111,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,111,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,112,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,112,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,113,SG10,,,,,,,Muss,,,Zeitreihentyp,113,SG10,,,,,,,Muss,
+Zeitreihentyp,114,SG10,CCI,,,,,,Muss,,,Zeitreihentyp,114,SG10,CCI,,,,,,Muss,
+Zeitreihentyp,115,SG10,CCI,7059,,15,,Struktur,X,,,Zeitreihentyp,115,SG10,CCI,7059,,15,,Struktur,X,
+Zeitreihentyp,116,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,116,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,117,SG10,CAV,,,,,,Muss,,,Zeitreihentyp,117,SG10,CAV,,,,,,Muss,
+Zeitreihentyp,118,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,118,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,
+Normiertes Profil (Strom),119,SG10,,,,,,,Soll [165],[165] Wenn bekannt,,Normiertes Profil (Strom),119,SG10,,,,,,,Soll [165],[165] Wenn bekannt
+Normiertes Profil (Strom),120,SG10,CCI,,,,,,Muss,,,Normiertes Profil (Strom),120,SG10,CCI,,,,,,Muss,
+Normiertes Profil (Strom),121,SG10,CCI,7059,,Z02,,Standardlastprofil,X,,,Normiertes Profil (Strom),121,SG10,CCI,7059,,Z02,,Standardlastprofil,X,
+Normiertes Profil (Strom),122,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil (Strom),122,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil (Strom),123,SG10,CAV,,,,,,Muss,,,Normiertes Profil (Strom),123,SG10,CAV,,,,,,Muss,
+Normiertes Profil (Strom),124,SG10,CAV,7111,,,,Code des Normierten Profils,X,,,Normiertes Profil (Strom),124,SG10,CAV,7111,,,,Code des Normierten Profils,X,
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,125,SG8,,,,,,,Soll [166] ∧ [2351],"[166] Wenn vorhanden
+[2351] Einmal je ZP einer BK- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufgenommen wurde",,Abgerechnete Daten der Bilanzkreissummenzeitreihe,125,SG8,,,,,,,Soll [166] ∧ [2351],"[166] Wenn vorhanden
+[2351] Einmal je ZP einer BK- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufgenommen wurde"
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,126,SG8,SEQ,,,,,,Muss,,,Abgerechnete Daten der Bilanzkreissummenzeitreihe,126,SG8,SEQ,,,,,,Muss,
+Abgerechnete Daten der Bilanzkreissummenzeitreihe,127,SG8,SEQ,1229,,Z48,,Abgerechnete Daten der Bilanzkreissummenzeitre ihe des ÜNB,X,,,Abgerechnete Daten der Bilanzkreissummenzeitreihe,127,SG8,SEQ,1229,,Z48,,Abgerechnete Daten der Bilanzkreissummenzeitre ihe des ÜNB,X,
+Referenz auf die ID der Bilanzkreissummenzeitreihe,128,SG8,RFF,,,,,,Muss [660],[660] Hinweis: Es ist die ID der BK-Summenzeitreihe Aggregationsebene BG anzugeben,,Referenz auf die ID der Bilanzkreissummenzeitreihe,128,SG8,RFF,,,,,,Muss [660],[660] Hinweis: Es ist die ID der BK-Summenzeitreihe Aggregationsebene BG anzugeben
+Referenz auf die ID der Bilanzkreissummenzeitreihe,129,SG8,RFF,1153,,AVE,,Meldepunkt,X,,,Referenz auf die ID der Bilanzkreissummenzeitreihe,129,SG8,RFF,1153,,AVE,,Meldepunkt,X,
+Referenz auf die ID der Bilanzkreissummenzeitreihe,130,SG8,RFF,1154,,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Bilanzkreissummenzeitreihe,130,SG8,RFF,1154,,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung
+Versionsangabe der Summenzeitreihe,131,SG8,RFF,,,,,,Muss,,,Versionsangabe der Summenzeitreihe,131,SG8,RFF,,,,,,Muss,
+Versionsangabe der Summenzeitreihe,132,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,132,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,133,SG8,RFF,1154,,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,133,SG8,RFF,1154,,,,Version der Zeitreihe,X,
+Veranschlagte Jahresmenge gesamt,134,SG9,,,,,,,Soll [165],[165] Wenn bekannt,,Veranschlagte Jahresmenge gesamt,134,SG9,,,,,,,Soll [165],[165] Wenn bekannt
+Veranschlagte Jahresmenge gesamt,135,SG9,QTY,,,,,,Muss,,,Veranschlagte Jahresmenge gesamt,135,SG9,QTY,,,,,,Muss,
+Veranschlagte Jahresmenge gesamt,136,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,136,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,137,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,137,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,138,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,138,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Tatsächlich bilanzierte Energiemenge,139,SG9,,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,139,SG9,,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,140,SG9,QTY,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,140,SG9,QTY,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,141,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,,,Tatsächlich bilanzierte Energiemenge,141,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,
+Tatsächlich bilanzierte Energiemenge,142,SG9,QTY,6060,,,,Mengenangabe,X,,,Tatsächlich bilanzierte Energiemenge,142,SG9,QTY,6060,,,,Mengenangabe,X,
+Tatsächlich bilanzierte Energiemenge,143,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Tatsächlich bilanzierte Energiemenge,143,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,144,SG9,DTM,,,,,,Muss,,,Bilanzierungsbeginn,144,SG9,DTM,,,,,,Muss,
+Bilanzierungsbeginn,145,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,145,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,146,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,146,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,147,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,147,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,148,SG9,DTM,,,,,,Muss,,,Bilanzierungsende,148,SG9,DTM,,,,,,Muss,
+Bilanzierungsende,149,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,149,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,150,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,150,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,151,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,151,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzkreis,152,SG10,,,,,,,Muss,,,Bilanzkreis,152,SG10,,,,,,,Muss,
+Bilanzkreis,153,SG10,CCI,,,,,,Muss,,,Bilanzkreis,153,SG10,CCI,,,,,,Muss,
+Bilanzkreis,154,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,,Bilanzkreis,154,SG10,CCI,7059,,Z19,,Bilanzkreis,X,
+Bilanzkreis,155,SG10,CCI,7037,,,,Bilanzkreis,X,,,Bilanzkreis,155,SG10,CCI,7037,,,,Bilanzkreis,X,
+Bilanzierungsgebiet,156,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,156,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,157,SG10,CCI,,,,,,Muss,,,Bilanzierungsgebiet,157,SG10,CCI,,,,,,Muss,
+Bilanzierungsgebiet,158,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,158,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,159,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,159,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,160,SG10,,,,,,,Muss,,,Zeitreihentyp,160,SG10,,,,,,,Muss,
+Zeitreihentyp,161,SG10,CCI,,,,,,Muss,,,Zeitreihentyp,161,SG10,CCI,,,,,,Muss,
+Zeitreihentyp,162,SG10,CCI,7059,,15,,Struktur,X,,,Zeitreihentyp,162,SG10,CCI,7059,,15,,Struktur,X,
+Zeitreihentyp,163,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,163,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,164,SG10,CAV,,,,,,Muss,,,Zeitreihentyp,164,SG10,CAV,,,,,,Muss,
+Zeitreihentyp,165,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,165,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,
+Normiertes Profil (Strom),166,SG10,,,,,,,Soll [165],[165] Wenn bekannt,,Normiertes Profil (Strom),166,SG10,,,,,,,Soll [165],[165] Wenn bekannt
+Normiertes Profil (Strom),167,SG10,CCI,,,,,,Muss,,,Normiertes Profil (Strom),167,SG10,CCI,,,,,,Muss,
+Normiertes Profil (Strom),168,SG10,CCI,7059,,Z02,,Standardlastprofil,X,,,Normiertes Profil (Strom),168,SG10,CCI,7059,,Z02,,Standardlastprofil,X,
+Normiertes Profil (Strom),169,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil (Strom),169,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil (Strom),170,SG10,CAV,,,,,,Muss,,,Normiertes Profil (Strom),170,SG10,CAV,,,,,,Muss,
+Normiertes Profil (Strom),171,SG10,CAV,7111,,,,Code des Normierten Profils,X,,,Normiertes Profil (Strom),171,SG10,CAV,7111,,,,Code des Normierten Profils,X,
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,172,SG8,,,,,,,Soll [166] ∧ [2352],"[166] Wenn vorhanden
+[2352] Einmal je ZP einer BG- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufge- nommen wurde",,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,172,SG8,,,,,,,Soll [166] ∧ [2352],"[166] Wenn vorhanden
+[2352] Einmal je ZP einer BG- SZR, in der die Marktlokation in die Berechnung der abgerechneten Summenzeitreihe aufge- nommen wurde"
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,173,SG8,SEQ,,,,,,Muss,,,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,173,SG8,SEQ,,,,,,Muss,
+Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,174,SG8,SEQ,1229,,Z49,,Abgerechnete Daten der Bilanzierungsgebietssum menzeitreihe des ÜNB,X,,,Abgerechnete Daten der Bilanzierungsgebietssumme nzeitreihe,174,SG8,SEQ,1229,,Z49,,Abgerechnete Daten der Bilanzierungsgebietssum menzeitreihe des ÜNB,X,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,175,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,175,SG8,RFF,,,,,,Muss,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,176,SG8,RFF,1153,,AVE,,Meldepunkt,X,,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,176,SG8,RFF,1153,,AVE,,Meldepunkt,X,
+Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,177,SG8,RFF,1154,,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Bilanzierungsgebietssumme nzeitreihe,177,SG8,RFF,1154,,,,ID der Summenzeitreihe,X [951],[951] Format: Zählpunktbezeichnung
+Versionsangabe der Summenzeitreihe,178,SG8,RFF,,,,,,Muss,,,Versionsangabe der Summenzeitreihe,178,SG8,RFF,,,,,,Muss,
+Versionsangabe der Summenzeitreihe,179,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,179,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,180,SG8,RFF,1154,,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,180,SG8,RFF,1154,,,,Version der Zeitreihe,X,
+Veranschlagte Jahresmenge gesamt,181,SG9,,,,,,,Soll [165],[165] Wenn bekannt,,Veranschlagte Jahresmenge gesamt,181,SG9,,,,,,,Soll [165],[165] Wenn bekannt
+Veranschlagte Jahresmenge gesamt,182,SG9,QTY,,,,,,Muss,,,Veranschlagte Jahresmenge gesamt,182,SG9,QTY,,,,,,Muss,
+Veranschlagte Jahresmenge gesamt,183,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,183,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,184,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,184,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,185,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,185,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Tatsächlich bilanzierte Energiemenge,186,SG9,,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,186,SG9,,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,187,SG9,QTY,,,,,,Muss,,,Tatsächlich bilanzierte Energiemenge,187,SG9,QTY,,,,,,Muss,
+Tatsächlich bilanzierte Energiemenge,188,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,,,Tatsächlich bilanzierte Energiemenge,188,SG9,QTY,6063,,Z07,,Tatsächlich bilanzierte Energiemenge,X,
+Tatsächlich bilanzierte Energiemenge,189,SG9,QTY,6060,,,,Mengenangabe,X,,,Tatsächlich bilanzierte Energiemenge,189,SG9,QTY,6060,,,,Mengenangabe,X,
+Tatsächlich bilanzierte Energiemenge,190,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Tatsächlich bilanzierte Energiemenge,190,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Bilanzierungsbeginn,191,SG9,DTM,,,,,,Muss,,,Bilanzierungsbeginn,191,SG9,DTM,,,,,,Muss,
+Bilanzierungsbeginn,192,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,192,SG9,DTM,2005,,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,193,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsbeginn,193,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsbeginn,194,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,194,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,195,SG9,DTM,,,,,,Muss,,,Bilanzierungsende,195,SG9,DTM,,,,,,Muss,
+Bilanzierungsende,196,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,,,Bilanzierungsende,196,SG9,DTM,2005,,159,,Bilanzierungsende,Muss,
+Bilanzierungsende,197,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Bilanzierungsende,197,SG9,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Bilanzierungsende,198,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,198,SG9,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsgebiet,199,SG10,,,,,,,Muss,,,Bilanzierungsgebiet,199,SG10,,,,,,,Muss,
+Bilanzierungsgebiet,200,SG10,CCI,,,,,,Muss,,,Bilanzierungsgebiet,200,SG10,CCI,,,,,,Muss,
+Bilanzierungsgebiet,201,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,201,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,
+Bilanzierungsgebiet,202,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,202,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,
+Zeitreihentyp,203,SG10,,,,,,,Muss,,,Zeitreihentyp,203,SG10,,,,,,,Muss,
+Zeitreihentyp,204,SG10,CCI,,,,,,Muss,,,Zeitreihentyp,204,SG10,CCI,,,,,,Muss,
+Zeitreihentyp,205,SG10,CCI,7059,,15,,Struktur,X,,,Zeitreihentyp,205,SG10,CCI,7059,,15,,Struktur,X,
+Zeitreihentyp,206,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,206,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,
+Zeitreihentyp,207,SG10,CAV,,,,,,Muss,,,Zeitreihentyp,207,SG10,CAV,,,,,,Muss,
+Zeitreihentyp,208,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,208,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,
+Normiertes Profil (Strom),209,SG10,,,,,,,Soll [165],[165] Wenn bekannt,,Normiertes Profil (Strom),209,SG10,,,,,,,Soll [165],[165] Wenn bekannt
+Normiertes Profil (Strom),210,SG10,CCI,,,,,,Muss,,,Normiertes Profil (Strom),210,SG10,CCI,,,,,,Muss,
+Normiertes Profil (Strom),211,SG10,CCI,7059,,Z02,,Standardlastprofil,X,,,Normiertes Profil (Strom),211,SG10,CCI,7059,,Z02,,Standardlastprofil,X,
+Normiertes Profil (Strom),212,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,,,Normiertes Profil (Strom),212,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X,
+Normiertes Profil (Strom),213,SG10,CAV,,,,,,Muss,,,Normiertes Profil (Strom),213,SG10,CAV,,,,,,Muss,
+Normiertes Profil (Strom),214,SG10,CAV,7111,,,,Code des Normierten Profils,X,,,Normiertes Profil (Strom),214,SG10,CAV,7111,,,,Code des Normierten Profils,X,
+Nachrichten-Endesegment,215,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,215,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,216,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,216,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,217,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,217,,UNT,0062,,,,Nachrichten-Referenznummer,X,

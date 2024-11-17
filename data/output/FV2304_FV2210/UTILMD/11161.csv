@@ -1,0 +1,78 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,21,SG3,,,,,,,Kann,,,Ansprechpartner,21,SG3,,,,,,,Kann,
+Ansprechpartner,22,SG3,CTA,,,,,,Muss,,,Ansprechpartner,22,SG3,CTA,,,,,,Muss,
+Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,
+Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,32,SG2,,,,,,,Muss,,,MP-ID Empfänger,32,SG2,,,,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Vorgang,39,SG4,,,,,,,Muss,,,Vorgang,39,SG4,,,,,,,Muss,
+Vorgang,40,SG4,IDE,,,,,,Muss,,,Vorgang,40,SG4,IDE,,,,,,Muss,
+Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,
+Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,
+Transaktionsgrund,43,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,43,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Transaktionsgrund,44,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,44,SG4,STS,9015,,7,,Transaktionsgrund,X,
+Transaktionsgrund,45,SG4,STS,9013,,ZG7,,Änderung vom MSB ohne Abhängigkeiten,X,,,Transaktionsgrund,45,SG4,STS,9013,,ZG7,,Änderung vom MSB ohne Abhängigkeiten,X,
+Status der Antwort,46,SG4,STS,,,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,,Status der Antwort,46,SG4,STS,,,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten 
+Status der Antwort,47,SG4,STS,9015,,E01,,Status der Antwort,X,,,Status der Antwort,47,SG4,STS,9015,,E01,,Status der Antwort,X,
+Status der Antwort,48,SG4,STS,9013,,,,Code des Prüfschritts,X,,,Status der Antwort,48,SG4,STS,9013,,,,Code des Prüfschritts,X,
+Status der Antwort,49,SG4,STS,1131,,G_0026,,Codeliste Gas Nr. G_0026,X [493] ∧ [98],,,Status der Antwort,49,SG4,STS,1131,,G_0026,,Codeliste Gas Nr. G_0026,X [493] ∧ [98],
+Status der Antwort,50,SG4,STS,1131,,G_0029,,Codeliste Gas Nr. G_0029,X [493] ∧ [135],,,Status der Antwort,50,SG4,STS,1131,,G_0029,,Codeliste Gas Nr. G_0029,X [493] ∧ [135],
+Status der Antwort,51,SG4,STS,1131,,G_0030 S_0018 S_0019 S_0020,,Codeliste Gas Nr. G_0030 Codeliste Strom Nr. S_0018 Codeliste Strom Nr. S_0019 Codeliste Strom Nr. S_0020,X [5] ∧ [493] X [492] ∧ [98] X [5] ∧ [492] X [492] ∧ [135],"[5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
+[98] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle NB
+[135] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle MSB
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Status der Antwort,51,SG4,STS,1131,,G_0030 S_0018 S_0019 S_0020,,Codeliste Gas Nr. G_0030 Codeliste Strom Nr. S_0018 Codeliste Strom Nr. S_0019 Codeliste Strom Nr. S_0020,X [5] ∧ [493] X [492] ∧ [98] X [5] ∧ [492] X [492] ∧ [135],"[5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
+[98] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle NB
+[135] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle MSB
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Meldepunkt,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Meldepunkt,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Meldepunkt,53,SG5,LOC,,,,,,Muss,,,Meldepunkt,53,SG5,LOC,,,,,,Muss,
+Meldepunkt,54,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,54,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,55,SG5,LOC,3225,,,,Identifikator,X [953],[953] Format: Marktlokations-ID oder Zählpunktbezeichnung,,Meldepunkt,55,SG5,LOC,3225,,,,Identifikator,X [953],[953] Format: Marktlokations-ID oder Zählpunktbezeichnung
+Prüfidentifikator,56,SG6,,,,,,,Muss,,,Prüfidentifikator,56,SG6,,,,,,,Muss,
+Prüfidentifikator,57,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,57,SG6,RFF,,,,,,Muss,
+Prüfidentifikator,58,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,58,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,59,SG6,RFF,1154,,11161,,SDÄ / Änderung vom MSB ohne Abhängigkeiten AG an AF,X,,,Prüfidentifikator,59,SG6,RFF,1154,,11161,,SDÄ / Änderung vom MSB ohne Abhängigkeiten AG an AF,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),60,SG6,,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),60,SG6,,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),61,SG6,RFF,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),61,SG6,RFF,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),62,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),62,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),63,SG6,RFF,1154,,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),63,SG6,RFF,1154,,,,Vorgangsnummer,X,
+Nachrichten-Endesegment,64,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,64,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,65,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,65,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,66,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,66,,UNT,0062,,,,Nachrichten-Referenznummer,X,

@@ -1,0 +1,117 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,QUOTES,,Angebot,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,QUOTES,,Angebot,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,10A,,Ausgabe 2010 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,10A,,Ausgabe 2010 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z29,,Abrechnung des Messstellenbetriebs vom MSB an den LF,X,,,Beginn der Nachricht,8,,BGM,1001,,Z29,,Abrechnung des Messstellenbetriebs vom MSB an den LF,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Ausführungsdatum,14,,DTM,,,,,,Muss [27],[27] Wenn DTM+469 nicht vorhanden,,Ausführungsdatum,14,,DTM,,,,,,Muss [27],[27] Wenn DTM+469 nicht vorhanden
+Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,
+Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Beginn zum (nächstmöglichen Termin),18,,DTM,,,,,,Soll [26] ∧ [28] ∧ [29],"[26] Wenn DTM+203 nicht vorhanden
+[28] Wenn RFF+AAV vorhanden
+[29] Wenn DTM+469 in Anfrage (REQOTE) vorhanden war",,Beginn zum (nächstmöglichen Termin),18,,DTM,,,,,,Soll [26] ∧ [28] ∧ [29],"[26] Wenn DTM+203 nicht vorhanden
+[28] Wenn RFF+AAV vorhanden
+[29] Wenn DTM+469 in Anfrage (REQOTE) vorhanden war"
+Beginn zum (nächstmöglichen Termin),19,,DTM,2005,,469,,"Startdatum oder - zeitpunkt, frühestes/r",X,,,Beginn zum (nächstmöglichen Termin),19,,DTM,2005,,469,,"Startdatum oder - zeitpunkt, frühestes/r",X,
+Beginn zum (nächstmöglichen Termin),20,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Beginn zum (nächstmöglichen Termin),20,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Beginn zum (nächstmöglichen Termin),21,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum (nächstmöglichen Termin),21,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Produkt-/ Leistungsbeschreibung,22,,IMD,,,,,,Muss,,,Produkt-/ Leistungsbeschreibung,22,,IMD,,,,,,Muss,
+Produkt-/ Leistungsbeschreibung,23,,IMD,7081,,Z33,,Angebot auf Basis Preisblatt,X,,,Produkt-/ Leistungsbeschreibung,23,,IMD,7081,,Z33,,Angebot auf Basis Preisblatt,X,
+Produkt-/ Leistungsbeschreibung,24,,IMD,7081,,Z34,,Individuelles Angebot,X,,,Produkt-/ Leistungsbeschreibung,24,,IMD,7081,,Z34,,Individuelles Angebot,X,
+Nachrichtennummer der Anfrage,25,SG1,,,,,,,Soll [17],[17] Wenn das Angebot per REQOTE angefragt wurde,,Nachrichtennummer der Anfrage,25,SG1,,,,,,,Soll [17],[17] Wenn das Angebot per REQOTE angefragt wurde
+Nachrichtennummer der Anfrage,26,SG1,RFF,,,,,,Muss,,,Nachrichtennummer der Anfrage,26,SG1,RFF,,,,,,Muss,
+Nachrichtennummer der Anfrage,27,SG1,RFF,1153,,AAV,,Nummer der Anfrage,X,,,Nachrichtennummer der Anfrage,27,SG1,RFF,1153,,AAV,,Nummer der Anfrage,X,
+Nachrichtennummer der Anfrage,28,SG1,RFF,1154,,,,Nachrichtennummer,X [505],"[505] Hinweis: Wert aus BGM+Z29 DE1004 der REQOTE, mit der die Anfrage Rechnungsabwicklung erfolgt ist.",,Nachrichtennummer der Anfrage,28,SG1,RFF,1154,,,,Nachrichtennummer,X [505],"[505] Hinweis: Wert aus BGM+Z29 DE1004 der REQOTE, mit der die Anfrage Rechnungsabwicklung erfolgt ist."
+Prüfidentifikator,29,SG1,,,,,,,Muss,,,Prüfidentifikator,29,SG1,,,,,,,Muss,
+Prüfidentifikator,30,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,30,SG1,RFF,,,,,,Muss,
+Prüfidentifikator,31,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,31,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,32,SG1,RFF,1154,,15002,,Angebot Rechnungsabwicklung MSB über LF,X,,,Prüfidentifikator,32,SG1,RFF,1154,,15002,,Angebot Rechnungsabwicklung MSB über LF,X,
+Währungsangaben,33,SG4,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,,Währungsangaben,33,SG4,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden
+Währungsangaben,34,SG4,CUX,,,,,,Muss,,,Währungsangaben,34,SG4,CUX,,,,,,Muss,
+Währungsangaben,35,SG4,CUX,6347,,2,,Referenzwährung,X,,,Währungsangaben,35,SG4,CUX,6347,,2,,Referenzwährung,X,
+Währungsangaben,36,SG4,CUX,6345,,EUR,,Euro,X,,,Währungsangaben,36,SG4,CUX,6345,,EUR,,Euro,X,
+Währungsangaben,37,SG4,CUX,6343,,4,,Währung der Rechnung,X,,,Währungsangaben,37,SG4,CUX,6343,,4,,Währung der Rechnung,X,
+MP-ID Absender,38,SG11,,,,,,,Muss,,,MP-ID Absender,38,SG11,,,,,,,Muss,
+MP-ID Absender,39,SG11,NAD,,,,,,Muss,,,MP-ID Absender,39,SG11,NAD,,,,,,Muss,
+MP-ID Absender,40,SG11,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,40,SG11,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,41,SG11,NAD,3039,,,,MP-ID,X [39],[39] MP-ID nur aus Sparte Strom,,MP-ID Absender,41,SG11,NAD,3039,,,,MP-ID,X [39],[39] MP-ID nur aus Sparte Strom
+MP-ID Absender,42,SG11,NAD,3055,,9,,GS1,X,,,MP-ID Absender,42,SG11,NAD,3055,,9,,GS1,X,
+MP-ID Absender,43,SG11,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,43,SG11,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,44,SG14,,,,,,,Muss,,,Ansprechpartner,44,SG14,,,,,,,Muss,
+Ansprechpartner,45,SG14,CTA,,,,,,Muss,,,Ansprechpartner,45,SG14,CTA,,,,,,Muss,
+Ansprechpartner,46,SG14,CTA,3139,,,,,IC,,,Ansprechpartner,46,SG14,CTA,3139,,,,,IC,
+Ansprechpartner,47,SG14,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,47,SG14,CTA,3412,,,,Kontakt,X,
+Kommunikationsverbindung,48,SG14,COM,,,,,,Muss,,,Kommunikationsverbindung,48,SG14,COM,,,,,,Muss,
+Kommunikationsverbindung,49,SG14,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,49,SG14,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,50,SG14,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,50,SG14,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,51,SG14,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,51,SG14,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,52,SG14,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,52,SG14,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,53,SG14,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,53,SG14,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,54,SG14,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,54,SG14,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,55,SG11,,,,,,,Muss,,,MP-ID Empfänger,55,SG11,,,,,,,Muss,
+MP-ID Empfänger,56,SG11,NAD,,,,,,Muss,,,MP-ID Empfänger,56,SG11,NAD,,,,,,Muss,
+MP-ID Empfänger,57,SG11,NAD,3035,,,,,MR,,,MP-ID Empfänger,57,SG11,NAD,3035,,,,,MR,
+MP-ID Empfänger,58,SG11,NAD,3039,,,,MP-ID,X [39],[39] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,58,SG11,NAD,3039,,,,MP-ID,X [39],[39] MP-ID nur aus Sparte Strom
+MP-ID Empfänger,59,SG11,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,59,SG11,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,60,SG11,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,60,SG11,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Marktlokation bzw. Messlokation,61,SG11,,,,,,,Muss,,,Marktlokation bzw. Messlokation,61,SG11,,,,,,,Muss,
+Marktlokation bzw. Messlokation,62,SG11,NAD,,,,,,Muss,,,Marktlokation bzw. Messlokation,62,SG11,NAD,,,,,,Muss,
+Marktlokation bzw. Messlokation,63,SG11,NAD,3035,,,,,DP,,,Marktlokation bzw. Messlokation,63,SG11,NAD,3035,,,,,DP,
+Meldepunkt,64,SG11,LOC,,,,,,Muss,,,Meldepunkt,64,SG11,LOC,,,,,,Muss,
+Meldepunkt,65,SG11,LOC,3227,,,,,172,,,Meldepunkt,65,SG11,LOC,3227,,,,,172,
+Meldepunkt,66,SG11,LOC,3225,,,,Identifikator,X [950] [501],"[501] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",,Meldepunkt,66,SG11,LOC,3225,,,,Identifikator,X [950] [501],"[501] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID"
+Positionsdaten,67,SG27,,,,,,,Muss,,,Positionsdaten,67,SG27,,,,,,,Muss,
+Positionsdaten,68,SG27,LIN,,,,,,Muss,,,Positionsdaten,68,SG27,LIN,,,,,,Muss,
+Positionsdaten,69,SG27,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Positionsdaten,69,SG27,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
+Positionsdaten,70,SG27,LIN,7140,,,,Artikelnummer,X [31],"[31] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind.",,Positionsdaten,70,SG27,LIN,7140,,,,Artikelnummer,X [31],"[31] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind."
+Positionsdaten,71,SG27,LIN,7143,,Z01,,Artikelnummer,X,,,Positionsdaten,71,SG27,LIN,7143,,Z01,,Artikelnummer,X,
+Zusätzliche Produktidentifikation,72,SG27,PIA,,,,,,Muss [20],[20] Wenn IMD++Z33 vorhanden,,Zusätzliche Produktidentifikation,72,SG27,PIA,,,,,,Muss [20],[20] Wenn IMD++Z33 vorhanden
+Zusätzliche Produktidentifikation,73,SG27,PIA,4347,,,,,1,,,Zusätzliche Produktidentifikation,73,SG27,PIA,4347,,,,,1,
+Zusätzliche Produktidentifikation,74,SG27,PIA,7140,,,,Preisschlüsselstamm,X,,,Zusätzliche Produktidentifikation,74,SG27,PIA,7140,,,,Preisschlüsselstamm,X,
+Zusätzliche Produktidentifikation,75,SG27,PIA,7143,,Z06,,Preisschlüsselstamm,X,,,Zusätzliche Produktidentifikation,75,SG27,PIA,7143,,Z06,,Preisschlüsselstamm,X,
+Menge,76,SG27,QTY,,,,,,Muss,,,Menge,76,SG27,QTY,,,,,,Muss,
+Menge,77,SG27,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,,Menge,77,SG27,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,
+Menge,78,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,,Menge,78,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n
+Menge,79,SG27,QTY,6411,,H87,,Stück,X,,,Menge,79,SG27,QTY,6411,,H87,,Stück,X,
+zeitliche Mengenangaben,80,SG27,QTY,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,,zeitliche Mengenangaben,80,SG27,QTY,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden
+zeitliche Mengenangaben,81,SG27,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,,zeitliche Mengenangaben,81,SG27,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,
+zeitliche Mengenangaben,82,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,,zeitliche Mengenangaben,82,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n
+zeitliche Mengenangaben,83,SG27,QTY,6411,,ANN,,Jahr,X,,,zeitliche Mengenangaben,83,SG27,QTY,6411,,ANN,,Jahr,X,
+zeitliche Mengenangaben,84,SG27,QTY,6411,,DAY,,Tag,X,,,zeitliche Mengenangaben,84,SG27,QTY,6411,,DAY,,Tag,X,
+zeitliche Mengenangaben,85,SG27,QTY,6411,,MON,,Monat,X,,,zeitliche Mengenangaben,85,SG27,QTY,6411,,MON,,Monat,X,
+Geldbetrag,86,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,,Geldbetrag,86,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden
+Geldbetrag,87,SG29,MOA,,,,,,Muss,,,Geldbetrag,87,SG29,MOA,,,,,,Muss,
+Geldbetrag,88,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,,Geldbetrag,88,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,
+Geldbetrag,89,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,,Geldbetrag,89,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen
+Preisangaben,90,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,,Preisangaben,90,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden
+Preisangaben,91,SG31,PRI,,,,,,Muss,,,Preisangaben,91,SG31,PRI,,,,,,Muss,
+Preisangaben,92,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,,Preisangaben,92,SG31,PRI,5125,,CAL,,Berechnungspreis,X,
+Preisangaben,93,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,,Preisangaben,93,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen
+Referenz auf ID weiterer Marktlokationen,94,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
+[20] Wenn IMD++Z33 vorhanden",,Referenz auf ID weiterer Marktlokationen,94,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
+[20] Wenn IMD++Z33 vorhanden"
+Referenz auf ID weiterer Marktlokationen,95,SG32,RFF,,,,,,Muss,,,Referenz auf ID weiterer Marktlokationen,95,SG32,RFF,,,,,,Muss,
+Referenz auf ID weiterer Marktlokationen,96,SG32,RFF,1153,,AVE,,Meldepunkt,X,,,Referenz auf ID weiterer Marktlokationen,96,SG32,RFF,1153,,AVE,,Meldepunkt,X,
+Referenz auf ID weiterer Marktlokationen,97,SG32,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf ID weiterer Marktlokationen,97,SG32,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
+Abschnitts-Kontrollsegment,98,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,98,,UNS,,,,,,Muss,
+Abschnitts-Kontrollsegment,99,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,99,,UNS,0081,,und Summenteil,,,S,
+Summenbetrag (netto),100,,MOA,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,,Summenbetrag (netto),100,,MOA,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden
+Summenbetrag (netto),101,,MOA,5025,,97,,Gesamtbetrag des Angebots,X,,,Summenbetrag (netto),101,,MOA,5025,,97,,Gesamtbetrag des Angebots,X,
+Summenbetrag (netto),102,,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,,Summenbetrag (netto),102,,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen
+Nachrichten-Endesegment,103,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,103,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,104,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,104,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,105,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,105,,UNT,0062,,,,Nachrichten-Referenznummer,X,

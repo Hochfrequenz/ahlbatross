@@ -1,0 +1,163 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,REMADV,,Zahlungsavis,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,REMADV,,Zahlungsavis,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,05A,,Ausgabe 2005 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,05A,,Ausgabe 2005 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,2.9a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,2.9b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,239,,Abgelehnte Forderung (Nicht-Zahlungsavis),X,,,Beginn der Nachricht,8,,BGM,1001,,239,,Abgelehnte Forderung (Nicht-Zahlungsavis),X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,,,,,Muss,,,Dokumentendatum,10,,DTM,,,,,,Muss,
+Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,14,,RFF,,,,,,Muss,,,Prüfidentifikator,14,,RFF,,,,,,Muss,
+Prüfidentifikator,15,,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,15,,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,16,,RFF,1154,,33004,,Abweisung Position,X,,,Prüfidentifikator,16,,RFF,1154,,33004,,Abweisung Position,X,
+MP-ID Absender,17,SG1,,,,,,,Muss,,,MP-ID Absender,17,SG1,,,,,,,Muss,
+MP-ID Absender,18,SG1,NAD,,,,,,Muss,,,MP-ID Absender,18,SG1,NAD,,,,,,Muss,
+MP-ID Absender,19,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,19,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,20,SG1,NAD,3039,,,,MP-ID,X [45],[45] Nur MP-ID aus Sparte Strom,,MP-ID Absender,20,SG1,NAD,3039,,,,MP-ID,X [45],[45] Nur MP-ID aus Sparte Strom
+MP-ID Absender,21,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Absender,21,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Absender,22,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,22,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,23,SG3,,,,,,,Kann [503],"[503] Hinweis: Empfohlen, um bei Abweisung Ansprechpartner für Rückfragen zu erreichen.",,Ansprechpartner,23,SG3,,,,,,,Kann [503],"[503] Hinweis: Empfohlen, um bei Abweisung Ansprechpartner für Rückfragen zu erreichen."
+Ansprechpartner,24,SG3,CTA,,,,,,Muss,,,Ansprechpartner,24,SG3,CTA,,,,,,Muss,
+Ansprechpartner,25,SG3,CTA,3139,,IC,,Informationsstelle,X,,,Ansprechpartner,25,SG3,CTA,3139,,IC,,Informationsstelle,X,
+Ansprechpartner,26,SG3,CTA,3412,,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,26,SG3,CTA,3412,,,,Abteilung oder Bearbeiter,X,
+Kommunikationsverbindung,27,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,27,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,28,SG3,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,28,SG3,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,29,SG3,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,32,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,32,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,33,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,33,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,34,SG1,,,,,,,Muss,,,MP-ID Empfänger,34,SG1,,,,,,,Muss,
+MP-ID Empfänger,35,SG1,NAD,,,,,,Muss,,,MP-ID Empfänger,35,SG1,NAD,,,,,,Muss,
+MP-ID Empfänger,36,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,36,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,37,SG1,NAD,3039,,,,MP-ID,X [45],[45] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,37,SG1,NAD,3039,,,,MP-ID,X [45],[45] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,38,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,38,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,39,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,39,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Währungsangaben,40,SG4,,,,,,,Muss,,,Währungsangaben,40,SG4,,,,,,,Muss,
+Währungsangaben,41,SG4,CUX,,,,,,Muss,,,Währungsangaben,41,SG4,CUX,,,,,,Muss,
+Währungsangaben,42,SG4,CUX,6347,,2,,Referenzwährung,X,,,Währungsangaben,42,SG4,CUX,6347,,2,,Referenzwährung,X,
+Währungsangaben,43,SG4,CUX,6345,,EUR,,Euro,X,,,Währungsangaben,43,SG4,CUX,6345,,EUR,,Euro,X,
+Währungsangaben,44,SG4,CUX,6343,,11,,Zahlungswährung,X,,,Währungsangaben,44,SG4,CUX,6343,,11,,Zahlungswährung,X,
+Dokument-/Nachrichten- Einzelheiten,45,SG5,,,,,,,Muss,,,Dokument-/Nachrichten- Einzelheiten,45,SG5,,,,,,,Muss,
+Dokument-/Nachrichten- Einzelheiten,46,SG5,DOC,,,,,,Muss,,,Dokument-/Nachrichten- Einzelheiten,46,SG5,DOC,,,,,,Muss,
+Dokument-/Nachrichten- Einzelheiten,47,SG5,DOC,1001,,380,,Handelsrechnung,X,,,Dokument-/Nachrichten- Einzelheiten,47,SG5,DOC,1001,,380,,Handelsrechnung,X,
+Dokument-/Nachrichten- Einzelheiten,48,SG5,DOC,1001,,389,,"Selbst ausgestellte Rechnung (engl.: ""Self- billed invoice"")",X,,,Dokument-/Nachrichten- Einzelheiten,48,SG5,DOC,1001,,389,,"Selbst ausgestellte Rechnung (engl.: ""Self- billed invoice"")",X,
+Dokument-/Nachrichten- Einzelheiten,49,SG5,DOC,1001,,457,,Storno einer Belastung.,X,,,Dokument-/Nachrichten- Einzelheiten,49,SG5,DOC,1001,,457,,Storno einer Belastung.,X,
+Dokument-/Nachrichten- Einzelheiten,50,SG5,DOC,1001,,Z25,,Storno für selbst ausgestellte Rechnung (Gutschrift im Gutschriftsverfahren),X,,,Dokument-/Nachrichten- Einzelheiten,50,SG5,DOC,1001,,Z25,,Storno für selbst ausgestellte Rechnung (Gutschrift im Gutschriftsverfahren),X,
+Dokument-/Nachrichten- Einzelheiten,51,SG5,DOC,1004,,,,Dokumentennummer,X [511],[511] Hinweis: BGM DE1004 aus der abgelehnten INVOIC- Nachricht,,Dokument-/Nachrichten- Einzelheiten,51,SG5,DOC,1004,,,,Dokumentennummer,X [511],[511] Hinweis: BGM DE1004 aus der abgelehnten INVOIC- Nachricht
+Geforderter Rechnungsbetrag,52,SG5,MOA,,,,,,Muss,,,Geforderter Rechnungsbetrag,52,SG5,MOA,,,,,,Muss,
+Geforderter Rechnungsbetrag,53,SG5,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,,Geforderter Rechnungsbetrag,53,SG5,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,
+Geforderter Rechnungsbetrag,54,SG5,MOA,5004,,,,Geldbetrag,X [930] [501],"[501] Hinweis: An dieser Stelle ist der Betrag aus SG50 MOA+9 der zugrundeliegenden INVOIC zu übernehmen.
+[930] Format: max. 2 Nachkommastellen",,Geforderter Rechnungsbetrag,54,SG5,MOA,5004,,,,Geldbetrag,X [930] [501],"[501] Hinweis: An dieser Stelle ist der Betrag aus SG50 MOA+9 der zugrundeliegenden INVOIC zu übernehmen.
+[930] Format: max. 2 Nachkommastellen"
+Überweisungsbetrag,55,SG5,MOA,,,,,,Muss,,,Überweisungsbetrag,55,SG5,MOA,,,,,,Muss,
+Überweisungsbetrag,56,SG5,MOA,5025,,12,,Überweisungsbetrag,X,,,Überweisungsbetrag,56,SG5,MOA,5025,,12,,Überweisungsbetrag,X,
+Überweisungsbetrag,57,SG5,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,,Überweisungsbetrag,57,SG5,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 
+Rechnungsdatum,58,SG5,DTM,,,,,,Muss,,,Rechnungsdatum,58,SG5,DTM,,,,,,Muss,
+Rechnungsdatum,59,SG5,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Rechnungsdatum,59,SG5,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Rechnungsdatum,60,SG5,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Rechnungsdatum,60,SG5,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Rechnungsdatum,61,SG5,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Rechnungsdatum,61,SG5,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Referenz auf COMDIS,62,SG5,RFF,,,,,,Muss [42],[42] Wenn in SG7 AJT DE1082 = E_0407,,Referenz auf COMDIS,62,SG5,RFF,,,,,,Muss [42],[42] Wenn in SG7 AJT DE1082 = E_0407
+Referenz auf COMDIS,63,SG5,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Referenz auf COMDIS,63,SG5,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+Referenz auf COMDIS,64,SG5,RFF,1154,,,,"Referenz, Identifikation",X [512],[512] Hinweis: BGM DE1004 aus der abgelehnten COMDIS-Nachricht,,Referenz auf COMDIS,64,SG5,RFF,1154,,,,"Referenz, Identifikation",X [512],[512] Hinweis: BGM DE1004 aus der abgelehnten COMDIS-Nachricht
+Identifikation der Zeile/ Position im Dokument,65,SG10,,,,,,,Muss [525],"[525] Hinweis: Diese SG10 ist so oft zu wiederholen, bis alle Fehler der Positionsebene genannt sind.",,Identifikation der Zeile/ Position im Dokument,65,SG10,,,,,,,Muss [525],"[525] Hinweis: Diese SG10 ist so oft zu wiederholen, bis alle Fehler der Positionsebene genannt sind."
+Identifikation der Zeile/ Position im Dokument,66,SG10,DLI,,,,,,Muss,,,Identifikation der Zeile/ Position im Dokument,66,SG10,DLI,,,,,,Muss,
+Identifikation der Zeile/ Position im Dokument,67,SG10,DLI,1073,,1,,Enthalten in Dokument/Nachricht,X,,,Identifikation der Zeile/ Position im Dokument,67,SG10,DLI,1073,,1,,Enthalten in Dokument/Nachricht,X,
+Identifikation der Zeile/ Position im Dokument,68,SG10,DLI,1082,,,,Positionsnummer,X [526],"[526] Hinweis: Wert aus DE1082 der SG26 in der sich der nachfolgende Fehler in der INVOIC befindet, die in diesem SG5 DOC DE1004 genannt ist.",,Identifikation der Zeile/ Position im Dokument,68,SG10,DLI,1082,,,,Positionsnummer,X [526],"[526] Hinweis: Wert aus DE1082 der SG26 in der sich der nachfolgende Fehler in der INVOIC befindet, die in diesem SG5 DOC DE1004 genannt ist."
+Abweichungsgrund auf Positionsebene,69,SG12,,,,,,,Muss [533] ⊻  [534],"[533] Hinweis: Wenn in dieser SG12 AJT DE4465 = AA1/ AA6/AA7/AB8/AD6, ist diese SG12 so oft mit AJT DE4465 = Code zu wiederholen, bis alle Rechnungsnummern im RFF- Segment dieser SG12 genannt sind.
+[534] Hinweis: Wenn in dieser SG12 AJT DE4465 = A34/ A39/AA2/AB2, ist diese SG12 ist so oft mit AJT DE4465 = Code zu wiederholen, bis alle Nummern der Reklamationen im RFF-Segment dieser SG12 genannt sind.",,Abweichungsgrund auf Positionsebene,69,SG12,,,,,,,Muss [533] ⊻  [534],"[533] Hinweis: Wenn in dieser SG12 AJT DE4465 = AA1/ AA6/AA7/AB8/AD6, ist diese SG12 so oft mit AJT DE4465 = Code zu wiederholen, bis alle Rechnungsnummern im RFF- Segment dieser SG12 genannt sind.
+[534] Hinweis: Wenn in dieser SG12 AJT DE4465 = A34/ A39/AA2/AB2, ist diese SG12 ist so oft mit AJT DE4465 = Code zu wiederholen, bis alle Nummern der Reklamationen im RFF-Segment dieser SG12 genannt sind."
+Abweichungsgrund auf Positionsebene,70,SG12,AJT,,,,,,Muss,,,Abweichungsgrund auf Positionsebene,70,SG12,AJT,,,,,,Muss,
+Abweichungsgrund auf Positionsebene,71,SG12,AJT,4465,,,,Code des Prüfschritts,X ([15] ∧ ([11] ⊻ [12] ⊻ [47] ⊻ [48])) ⊻ [33] ⊻ [34],"[11] Wenn in diesem AJT DE1082 = E_0406
+[12] Wenn in diesem AJT DE1082 = E_0407
+[15] A-Code aus Cluster Ablehnung auf Positionsebene
+[33] Wenn in diesem AJT DE1082 = S_0103
+[34] Wenn in diesem AJT DE1082 = S_0104
+[47] Wenn in diesem AJT DE1082 = E_0210
+[48] Wenn in diesem AJT DE1082 = E_0259",,Abweichungsgrund auf Positionsebene,71,SG12,AJT,4465,,,,Code des Prüfschritts,X ([15] ∧ ([11] ⊻ [12] ⊻ [47] ⊻ [48] ⊻ [75] ⊻ [76] ⊻ [77] ⊻ [78] ⊻ [79] ⊻ [80])) ⊻ [33] ⊻ [34],"[11] Wenn in diesem AJT DE1082 = E_0406
+[12] Wenn in diesem AJT DE1082 = E_0407
+[15] A-Code aus Cluster Ablehnung auf Positionsebene
+[33] Wenn in diesem AJT DE1082 = S_0103
+[34] Wenn in diesem AJT DE1082 = S_0104
+[47] Wenn in diesem AJT DE1082 = E_0210
+[48] Wenn in diesem AJT DE1082 = E_0259
+[75] Wenn in diesem AJT DE1082 = E_0264
+[76] Wenn in diesem AJT DE1082 = E_0266
+[77] Wenn in diesem AJT DE1082 = E_0515
+[78] Wenn in diesem AJT DE1082 = E_0517
+[79] Wenn in diesem AJT DE1082 = E_0519
+[80] Wenn in diesem AJT DE1082 = E_0521"
+Abweichungsgrund auf Positionsebene,72,SG12,AJT,1082,,E_0406,,EBD Nr. E_0406,X,,,Abweichungsgrund auf Positionsebene,72,SG12,AJT,1082,,E_0406,,EBD Nr. E_0406,X,
+Abweichungsgrund auf Positionsebene,73,SG12,AJT,1082,,E_0407,,EBD Nr. E_0407,X,,,Abweichungsgrund auf Positionsebene,73,SG12,AJT,1082,,E_0407,,EBD Nr. E_0407,X,
+Abweichungsgrund auf Positionsebene,74,SG12,AJT,1082,,E_0210,,EBD Nr. E_0210,X,,,Abweichungsgrund auf Positionsebene,74,SG12,AJT,1082,,E_0210,,EBD Nr. E_0210,X,
+Abweichungsgrund auf Positionsebene,75,SG12,AJT,1082,,E_0259 S_0103 S_0104,,EBD Nr. E_0259 Codeliste Strom Nr. S_0103 Codeliste Strom Nr. S_0104,XXX,,,Abweichungsgrund auf Positionsebene,75,SG12,AJT,1082,,E_0259 S_0103 S_0104,,EBD Nr. E_0259 Codeliste Strom Nr. S_0103 Codeliste Strom Nr. S_0104,XXX,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,76,SG12,AJT,1082,,E_0264,,EBD Nr. E_0264,X,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,77,SG12,AJT,1082,,E_0266,,EBD Nr. E_0266,X,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,78,SG12,AJT,1082,,E_0515,,EBD Nr. E_0515,X,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,79,SG12,AJT,1082,,E_0517,,EBD Nr. E_0517,X,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,80,SG12,AJT,1082,,E_0519,,EBD Nr. E_0519,X,
+,,,,,,,,,,,NEW,Abweichungsgrund auf Positionsebene,81,SG12,AJT,1082,,E_0521,,EBD Nr. E_0521,X,
+Zugehörige Rechnung oder Bestellung auf Positionsebene,76,SG12,RFF,,,,,,Muss [26] ⊻ [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",,Zugehörige Rechnung oder Bestellung auf Positionsebene,82,SG12,RFF,,,,,,Muss [26] ⊻ [35] ⊻ ([70] ∧ ([65] ⊻ [68] ⊻ [66] ⊻ [69] ⊻ [64] ⊻ [67])) ⊻ ([97] ∧ ([51] ⊻ [52])),"[26] Wenn in dieser SG12 AJT DE4465 = A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2
+[51] Wenn in dieser SG12 AJT DE1082 = E_0406
+[52] Wenn in dieser SG12 AJT DE1082 = E_0407
+[64] Wenn in dieser SG12 AJT DE1082 = E_0264
+[65] Wenn in dieser SG12 AJT DE1082 = E_0515
+[66] Wenn in dieser SG12 AJT DE1082 = E_0519
+[67] Wenn in dieser SG12 AJT DE1082 = E_0266
+[68] Wenn in dieser SG12 AJT DE1082 = E_0517
+[69] Wenn in dieser SG12 AJT DE1082 = E_0521
+[70] Wenn in dieser SG12 AJT DE4465 = A15
+[97] Wenn in dieser SG12 AJT DE4465 = A27 "
+Zugehörige Rechnung oder Bestellung auf Positionsebene,77,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26],,,Zugehörige Rechnung oder Bestellung auf Positionsebene,83,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26] ⊻ ([70] ∧ ([65] ⊻ [68] ⊻ [66] ⊻ [69] ⊻ [64] ⊻ [67])) ⊻ ([97] ∧ ([51] ⊻ [52])),
+Zugehörige Rechnung oder Bestellung auf Positionsebene,78,SG12,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",,Zugehörige Rechnung oder Bestellung auf Positionsebene,84,SG12,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X [35],"[26] Wenn in dieser SG12 AJT DE4465 = A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2
+[51] Wenn in dieser SG12 AJT DE1082 = E_0406
+[52] Wenn in dieser SG12 AJT DE1082 = E_0407
+[64] Wenn in dieser SG12 AJT DE1082 = E_0264
+[65] Wenn in dieser SG12 AJT DE1082 = E_0515
+[66] Wenn in dieser SG12 AJT DE1082 = E_0519
+[67] Wenn in dieser SG12 AJT DE1082 = E_0266
+[68] Wenn in dieser SG12 AJT DE1082 = E_0517
+[69] Wenn in dieser SG12 AJT DE1082 = E_0521
+[70] Wenn in dieser SG12 AJT DE4465 = A15
+[97] Wenn in dieser SG12 AJT DE4465 = A27 "
+Zugehörige Rechnung oder Bestellung auf Positionsebene,79,SG12,RFF,1154,,,,"Referenz, Identifikation",X,,,Zugehörige Rechnung oder Bestellung auf Positionsebene,85,SG12,RFF,1154,,,,"Referenz, Identifikation",X,
+Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,80,SG12,FTX,,,,,,Muss [43] ⊻ ([28] ∧ ([51] ⊻ [52])) ⊻ ([53] ∧ ([54] ⊻ [55])) Kann,"[28] Wenn in dieser SG12 AJT DE4465 = A23/A26/A35/ A36/A38/A46/A47/A48/A50/ A58/A59/A61/A77/A84/A99
+[43] Wenn in SG12 AJT DE4465=28
+[51] Wenn in dieser SG12 AJT DE1082 = E_0406
+[52] Wenn in dieser SG12 AJT DE1082 = E_0407
+[53] Wenn in dieser SG12 AJT DE4465 = A25/A99
+[54] Wenn in dieser SG12 AJT DE1082 = E_0210
+[55] Wenn in dieser SG12 AJT DE1082 = E_0259",,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,86,SG12,FTX,,,,,,Muss [43] ⊻ ([28] ∧ ([51] ⊻ [52])) ⊻ ([53] ∧ ([54] ⊻ [55])) ⊻ ([71] ∧ ([64] ⊻ [65] ⊻ [66] ⊻ [67] ⊻ [68] ⊻ [69])) Kann,"[28] Wenn in dieser SG12 AJT DE4465 = A23/A26/A35/ A36/A38/A46/A47/A48/A50/ A58/A59/A61/A77/A84/A99
+[43] Wenn in SG12 AJT DE4465=28
+[51] Wenn in dieser SG12 AJT DE1082 = E_0406
+[52] Wenn in dieser SG12 AJT DE1082 = E_0407
+[53] Wenn in dieser SG12 AJT DE4465 = A25/A99
+[54] Wenn in dieser SG12 AJT DE1082 = E_0210
+[55] Wenn in dieser SG12 AJT DE1082 = E_0259
+[64] Wenn in dieser SG12 AJT DE1082 = E_0264
+[65] Wenn in dieser SG12 AJT DE1082 = E_0515
+[66] Wenn in dieser SG12 AJT DE1082 = E_0519
+[67] Wenn in dieser SG12 AJT DE1082 = E_0266
+[68] Wenn in dieser SG12 AJT DE1082 = E_0517
+[69] Wenn in dieser SG12 AJT DE1082 = E_0521
+[71] Wenn in dieser SG12 AJT DE4465 = A99"
+Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,81,SG12,FTX,4451,,ABO,,Information über Abweichung,X,,,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,87,SG12,FTX,4451,,ABO,,Information über Abweichung,X,
+Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,82,SG12,FTX,4440,,,,Freier Text,X,,,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,88,SG12,FTX,4440,,,,Freier Text,X [548],[548] Hinweis: Die Befüllung des Datenelements ergibt sich aus dem zugehörigen EBD.
+Trennung von Positions- u. Summenteil,83,,UNS,,,,,,Muss,,,Trennung von Positions- u. Summenteil,89,,UNS,,,,,,Muss,
+Trennung von Positions- u. Summenteil,84,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,,Trennung von Positions- u. Summenteil,90,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,
+Summenbetrag,85,,MOA,,,,,,Muss,,,Summenbetrag,91,,MOA,,,,,,Muss,
+Summenbetrag,86,,MOA,5025,,12,,Überweisungsbetrag,X,,,Summenbetrag,92,,MOA,5025,,12,,Überweisungsbetrag,X,
+Summenbetrag,87,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,,Summenbetrag,93,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 
+Nachrichten-Endesegment,88,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,94,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,89,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,95,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,90,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,96,,UNT,0062,,,,Nachrichten-Referenznummer,X,

@@ -1,0 +1,97 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z31,,Änderung Gerätekonfiguration,X,,,Beginn der Nachricht,8,,BGM,1001,,Z31,,Änderung Gerätekonfiguration,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Ausführungsdatum,14,,DTM,,,,,,Muss,,,Ausführungsdatum,14,,DTM,,,,,,Muss,
+Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,
+Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bestellung Zählzeiten,18,,IMD,,,,,,Soll [104] ∧ [105],"[104] Wenn MP-ID in SG2 NAD+VY mit Rolle LF vorhanden
+[105] Wenn die bisherige Konfiguration mit Zählzeiten des LF vom LF beendet werden soll",,Bestellung Zählzeiten,18,,IMD,,,,,,Soll [104] ∧ [105],"[104] Wenn MP-ID in SG2 NAD+VY mit Rolle LF vorhanden
+[105] Wenn die bisherige Konfiguration mit Zählzeiten des LF vom LF beendet werden soll"
+Bestellung Zählzeiten,19,,IMD,7081,,Z60,,Abbestellung Messprodukt mit Zählzeit des LF,X,,,Bestellung Zählzeiten,19,,IMD,7081,,Z60,,Abbestellung Messprodukt mit Zählzeit des LF,X,
+Prüfidentifikator,20,SG1,,,,,,,Muss,,,Prüfidentifikator,20,SG1,,,,,,,Muss,
+Prüfidentifikator,21,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,21,SG1,RFF,,,,,,Muss,
+Prüfidentifikator,22,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,22,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,23,SG1,RFF,1154,,17118,,Bestellung Konfigurationsänderung,X,,,Prüfidentifikator,23,SG1,RFF,1154,,17118,,Bestellung Konfigurationsänderung,X,
+MP-ID Absender,24,SG2,,,,,,,Muss,,,MP-ID Absender,24,SG2,,,,,,,Muss,
+MP-ID Absender,25,SG2,NAD,,,,,,Muss,,,MP-ID Absender,25,SG2,NAD,,,,,,Muss,
+MP-ID Absender,26,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,26,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,27,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Absender,27,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
+MP-ID Absender,28,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,28,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,29,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,29,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,30,SG5,,,,,,,Kann,,,Ansprechpartner,30,SG5,,,,,,,Kann,
+Ansprechpartner,31,SG5,CTA,,,,,,Muss,,,Ansprechpartner,31,SG5,CTA,,,,,,Muss,
+Ansprechpartner,32,SG5,CTA,3139,,,,,IC,,,Ansprechpartner,32,SG5,CTA,3139,,,,,IC,
+Ansprechpartner,33,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,33,SG5,CTA,3412,,,,Kontakt,X,
+Kommunikationsverbindung,34,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,34,SG5,COM,,,,,,Muss,
+Kommunikationsverbindung,35,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,35,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,36,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,36,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,37,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,37,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,38,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,39,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,40,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,40,SG5,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,41,SG2,,,,,,,Muss,,,MP-ID Empfänger,41,SG2,,,,,,,Muss,
+MP-ID Empfänger,42,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,42,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,43,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,43,SG2,NAD,3035,,,,,MR,
+MP-ID Empfänger,44,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,44,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
+MP-ID Empfänger,45,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,45,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,46,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,46,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Meldepunkt,47,SG2,,,,,,,Muss,,,Meldepunkt,47,SG2,,,,,,,Muss,
+Meldepunkt,48,SG2,NAD,,,,,,Muss,,,Meldepunkt,48,SG2,NAD,,,,,,Muss,
+Meldepunkt,49,SG2,NAD,3035,,,,,DP,,,Meldepunkt,49,SG2,NAD,3035,,,,,DP,
+Meldepunkt,50,SG2,LOC,,,,,,Muss,,,Meldepunkt,50,SG2,LOC,,,,,,Muss,
+Meldepunkt,51,SG2,LOC,3227,,,,,172,,,Meldepunkt,51,SG2,LOC,3227,,,,,172,
+Meldepunkt,52,SG2,LOC,3225,,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
+[951] Format: Zählpunktbezeichnung",,Meldepunkt,52,SG2,LOC,3225,,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
+[951] Format: Zählpunktbezeichnung"
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,53,SG2,,,,,,,Muss,,,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,53,SG2,,,,,,,Muss,
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,54,SG2,NAD,,,,,,Muss,,,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,54,SG2,NAD,,,,,,Muss,
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,55,SG2,NAD,3035,,,,,VY,,,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,55,SG2,NAD,3035,,,,,VY,
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,56,SG2,NAD,3039,,,,MP-ID,X [548],"[548] Hinweis: Wenn die Änderung der Gerätekonfiguration mit einer Zählzeit übermittelt wird, ist hier die MP-ID des Eigentümers der Liste der Zählzeit einzutragen. Wenn anstatt der bisherigen Zählzeit keine Zählzeit mehr verwendet werden soll ist hier die MP-ID des Eigentümers der Liste der Zählzeit einzutragen aus welcher bisher die Zählzeit verwendet wurde.",,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,56,SG2,NAD,3039,,,,MP-ID,X [548],"[548] Hinweis: Wenn die Änderung der Gerätekonfiguration mit einer Zählzeit übermittelt wird, ist hier die MP-ID des Eigentümers der Liste der Zählzeit einzutragen. Wenn anstatt der bisherigen Zählzeit keine Zählzeit mehr verwendet werden soll ist hier die MP-ID des Eigentümers der Liste der Zählzeit einzutragen aus welcher bisher die Zählzeit verwendet wurde."
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,57,SG2,NAD,3055,,9,,GS1,X,,,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,57,SG2,NAD,3055,,9,,GS1,X,
+MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,58,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID des Eigentümers der Liste der Zählzeitdefinitionen,58,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Erforderliches Messprodukt der Messlokation,59,SG29,,,,,,,Muss [2090] ∧ [106],"[106] wenn IMD++Z60 (Abbestellung Messprodukt mit Zählzeit des LF) nicht vorhanden
+[2090] Für 33-stellige ID im SG2 LOC+172 (Meldepunk) DE3225 mindestens einmal anzugeben",,Erforderliches Messprodukt der Messlokation,59,SG29,,,,,,,Muss [2090] ∧ [106] ∧ [551],"[106] wenn IMD++Z60 (Abbestellung Messprodukt mit Zählzeit des LF) nicht vorhanden
+[551] Hinweis: Die SG29 ist so oft zu wiederholen, dass alle Messprodukte und Zählzeiten genannt werden, die ab dem in DTM+203 genannten Zeitpunkt auf der Messlokation durch den MSB konfiguriert werden müssen. Nicht genannte Messprodukte sind ab dem Zeitpunkt nicht mehr in der Konfiguration enthalten.
+[2090] Für 33-stellige ID im SG2 LOC+172 (Meldepunkt) DE3225 mindestens einmal anzugeben"
+Erforderliches Messprodukt der Messlokation,60,SG29,LIN,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,60,SG29,LIN,,,,,,Muss,
+Erforderliches Messprodukt der Messlokation,61,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Erforderliches Messprodukt der Messlokation,61,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
+Erforderliches Messprodukt der Messlokation,62,SG29,LIN,1229,,Messlokation,,,Z19,,,Erforderliches Messprodukt der Messlokation,62,SG29,LIN,1229,,Messlokation,,,Z19,
+Erforderliches Messprodukt der Messlokation,63,SG29,PIA,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,63,SG29,PIA,,,,,,Muss,
+Erforderliches Messprodukt der Messlokation,64,SG29,PIA,4347,,,,,5,,,Erforderliches Messprodukt der Messlokation,64,SG29,PIA,4347,,,,,5,
+Erforderliches Messprodukt der Messlokation,65,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte",,Erforderliches Messprodukt der Messlokation,65,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte"
+Erforderliches Messprodukt der Messlokation,66,SG29,PIA,7143,,Z11,,Messprodukt,X,,,Erforderliches Messprodukt der Messlokation,66,SG29,PIA,7143,,Z11,,Messprodukt,X,
+Weitere Beschreibung erforderliches Messprodukt,67,SG30,,,,,,,Muss,,,Weitere Beschreibung erforderliches Messprodukt,67,SG30,,,,,,,Muss,
+Weitere Beschreibung erforderliches Messprodukt,68,SG30,CCI,,,,,,Muss,,,Weitere Beschreibung erforderliches Messprodukt,68,SG30,CCI,,,,,,Muss,
+Weitere Beschreibung erforderliches Messprodukt,69,SG30,CCI,7059,,erforderlicher Wert,,,Z35,,,Weitere Beschreibung erforderliches Messprodukt,69,SG30,CCI,7059,,erforderlicher Wert,,,Z35,
+Notwendigkeit einer zweiten Messung,70,SG30,CAV,,,,,,Muss,,,Notwendigkeit einer zweiten Messung,70,SG30,CAV,,,,,,Muss,
+Notwendigkeit einer zweiten Messung,71,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,,,Notwendigkeit einer zweiten Messung,71,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,
+Notwendigkeit einer zweiten Messung,72,SG30,CAV,7110,,Z06,,vorhanden,X,,,Notwendigkeit einer zweiten Messung,72,SG30,CAV,7110,,Z06,,vorhanden,X,
+Notwendigkeit einer zweiten Messung,73,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Notwendigkeit einer zweiten Messung,73,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,74,SG30,CAV,,,,,,Muss,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,74,SG30,CAV,,,,,,Muss,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,75,SG30,CAV,7111,,Z88,,NB,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,75,SG30,CAV,7111,,Z88,,NB,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,76,SG30,CAV,7110,,Z06,,vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,76,SG30,CAV,7110,,Z06,,vorhanden,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,77,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,77,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
+Zugeordnete Zählzeit,78,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,,Zugeordnete Zählzeit,78,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist
+Zugeordnete Zählzeit,79,SG30,CCI,,,,,,Muss,,,Zugeordnete Zählzeit,79,SG30,CCI,,,,,,Muss,
+Zugeordnete Zählzeit,80,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,,Zugeordnete Zählzeit,80,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird
+Zugeordnete Zählzeit,81,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,,Zugeordnete Zählzeit,81,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist
+Abschnitts-Kontrollsegment,82,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,82,,UNS,,,,,,Muss,
+Abschnitts-Kontrollsegment,83,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,83,,UNS,0081,,und Summenteil,,,S,
+Nachrichten-Endesegment,84,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,84,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,85,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,85,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,86,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,86,,UNT,0062,,,,Nachrichten-Referenznummer,X,

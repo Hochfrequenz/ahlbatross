@@ -1,0 +1,87 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00002,Z03,,MaBiS Meldung(en),X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z03,,MaBiS Meldung(en),X,
+Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,00003,,,,Muss,,,Dokumentendatum,10,,DTM,,00003,,,,Muss,
+Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Empfänger,14,SG1,,,,,,,Muss,,,MP-ID Empfänger,14,SG1,,,,,,,Muss,
+MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,,,MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,
+MP-ID Empfänger,16,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,16,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,,,MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,
+MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,20,SG1,,,,,,,Muss,,,MP-ID Absender,20,SG1,,,,,,,Muss,
+MP-ID Absender,21,SG1,NAD,,00005,,,,Muss,,,MP-ID Absender,21,SG1,NAD,,00005,,,,Muss,
+MP-ID Absender,22,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,22,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,23,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Absender,23,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
+MP-ID Absender,24,SG1,NAD,3055,00005,9,,GS1,X,,,MP-ID Absender,24,SG1,NAD,3055,00005,9,,GS1,X,
+MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,26,SG2,,,,,,,Kann,,,Ansprechpartner,26,SG2,,,,,,,Kann,
+Ansprechpartner,27,SG2,CTA,,00006,,,,Muss,,,Ansprechpartner,27,SG2,CTA,,00006,,,,Muss,
+Ansprechpartner,28,SG2,CTA,3139,00006,IC,,Informationskontakt,X,,,Ansprechpartner,28,SG2,CTA,3139,00006,IC,,Informationskontakt,X,
+Ansprechpartner,29,SG2,CTA,3412,00006,,,Kontakt,X,,,Ansprechpartner,29,SG2,CTA,3412,00006,,,Kontakt,X,
+Kommunikationsverbindung,30,SG2,COM,,00007,,,,Muss,,,Kommunikationsverbindung,30,SG2,COM,,00007,,,,Muss,
+Kommunikationsverbindung,31,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,31,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X,
+Kommunikationsverbindung,32,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,32,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],
+Einzelheiten zu Equipment,37,SG4,,,,,,,Muss,,,Einzelheiten zu Equipment,37,SG4,,,,,,,Muss,
+Einzelheiten zu Equipment,38,SG4,EQD,,00008,,,,Muss,,,Einzelheiten zu Equipment,38,SG4,EQD,,00008,,,,Muss,
+Einzelheiten zu Equipment,39,SG4,EQD,8053,00008,Z01,,Laufende Nummer,X,,,Einzelheiten zu Equipment,39,SG4,EQD,8053,00008,Z01,,Laufende Nummer,X,
+Einzelheiten zu Equipment,40,SG4,EQD,8260,00008,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",,Einzelheiten zu Equipment,40,SG4,EQD,8260,00008,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend"
+Prüfidentifikator,41,SG4,RFF,,00009,,,,Muss,,,Prüfidentifikator,41,SG4,RFF,,00009,,,,Muss,
+Prüfidentifikator,42,SG4,RFF,1153,00009,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,42,SG4,RFF,1153,00009,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,43,SG4,RFF,1154,00009,21000,,MaBiS / Statusmeldung vom LF an NB/ÜNB,X,,,Prüfidentifikator,43,SG4,RFF,1154,00009,21000,,MaBiS / Statusmeldung vom LF an NB/ÜNB,X,
+Versionsangabe der betrachteten Summenzeitreihe,44,SG4,RFF,,00010,,,,Muss,,,Versionsangabe der betrachteten Summenzeitreihe,44,SG4,RFF,,00010,,,,Muss,
+Versionsangabe der betrachteten Summenzeitreihe,45,SG4,RFF,1153,00010,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der betrachteten Summenzeitreihe,45,SG4,RFF,1153,00010,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der betrachteten Summenzeitreihe,46,SG4,RFF,1154,00010,,,Version der Summenzeitreihe,X,,,Versionsangabe der betrachteten Summenzeitreihe,46,SG4,RFF,1154,00010,,,Version der Summenzeitreihe,X,
+Meldepunkt,47,SG6,,,,,,,Muss,,,Meldepunkt,47,SG6,,,,,,,Muss,
+Meldepunkt,48,SG6,LOC,,00011,,,,Muss,,,Meldepunkt,48,SG6,LOC,,00011,,,,Muss,
+Meldepunkt,49,SG6,LOC,3227,00011,172,,Meldepunkt,X,,,Meldepunkt,49,SG6,LOC,3227,00011,172,,Meldepunkt,X,
+Meldepunkt,50,SG6,LOC,3225,00011,,,Identifikator,X [951] [504],"[504] Hinweis: Verwendung der ID des MaBiS-ZP
+[951] Format: Zählpunktbezeichnung",,Meldepunkt,50,SG6,LOC,3225,00011,,,Identifikator,X [951] [504],"[504] Hinweis: Verwendung der ID des MaBiS-ZP
+[951] Format: Zählpunktbezeichnung"
+Betrachtungszeitintervall,51,SG6,DTM,,00012,,,,Muss,,,Betrachtungszeitintervall,51,SG6,DTM,,00012,,,,Muss,
+Betrachtungszeitintervall,52,SG6,DTM,2005,00012,492,,"Bilanzierungsdatum, - zeit, -periode",X,,,Betrachtungszeitintervall,52,SG6,DTM,2005,00012,492,,"Bilanzierungsdatum, - zeit, -periode",X,
+Betrachtungszeitintervall,53,SG6,DTM,2380,00012,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Betrachtungszeitintervall,53,SG6,DTM,2380,00012,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Betrachtungszeitintervall,54,SG6,DTM,2379,00012,610,,CCYYMM,X,,,Betrachtungszeitintervall,54,SG6,DTM,2379,00012,610,,CCYYMM,X,
+Zeitpunkt der Statusvergabe,55,SG6,DTM,,00013,,,,Muss,,,Zeitpunkt der Statusvergabe,55,SG6,DTM,,00013,,,,Muss,
+Zeitpunkt der Statusvergabe,56,SG6,DTM,2005,00013,334,,"Statusveränderung, Datum/Zeit",X,,,Zeitpunkt der Statusvergabe,56,SG6,DTM,2005,00013,334,,"Statusveränderung, Datum/Zeit",X,
+Zeitpunkt der Statusvergabe,57,SG6,DTM,2380,00013,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",,Zeitpunkt der Statusvergabe,57,SG6,DTM,2380,00013,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00"
+Zeitpunkt der Statusvergabe,58,SG6,DTM,2379,00013,304,,CCYYMMDDHHMMSSZZZ,X,,,Zeitpunkt der Statusvergabe,58,SG6,DTM,2379,00013,304,,CCYYMMDDHHMMSSZZZ,X,
+Prüfstatus Antwort auf Summenzeitreihen,59,SG7,,,,,,,Muss [4],[4] Wenn SG7 STS+Z02 nicht vorhanden. ,,Prüfstatus Antwort auf Summenzeitreihen,59,SG7,,,,,,,Muss [4],[4] Wenn SG7 STS+Z02 nicht vorhanden. 
+Prüfstatus Antwort auf Summenzeitreihen,60,SG7,STS,,00014,,,,Muss,,,Prüfstatus Antwort auf Summenzeitreihen,60,SG7,STS,,00014,,,,Muss,
+Prüfstatus Antwort auf Summenzeitreihen,61,SG7,STS,9015,00014,Z01,,Prüfstatus Antwort auf Summenzeitreihen,X,,,Prüfstatus Antwort auf Summenzeitreihen,61,SG7,STS,9015,00014,Z01,,Prüfstatus Antwort auf Summenzeitreihen,X,
+Prüfstatus Antwort auf Summenzeitreihen,62,SG7,STS,4405,00014,Z07,,Zeitreihe akzeptiert,X,,,Prüfstatus Antwort auf Summenzeitreihen,62,SG7,STS,4405,00014,Z07,,Zeitreihe akzeptiert,X,
+Prüfstatus Antwort auf Summenzeitreihen,63,SG7,STS,4405,,Z08,,Zeitreihe nicht akzeptiert,X,,,Prüfstatus Antwort auf Summenzeitreihen,63,SG7,STS,4405,,Z08,,Zeitreihe nicht akzeptiert,X,
+Prüfstatus Antwort auf Summenzeitreihen,64,SG7,STS,9013,00014,,,Code des Prüfschritts,X [43] ∨ [44],"[43] Wenn STS+Z01+Z07 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[44] Wenn STS+Z01+Z08 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",,Prüfstatus Antwort auf Summenzeitreihen,64,SG7,STS,9013,00014,,,Code des Prüfschritts,X [43] ∨ [44],"[43] Wenn STS+Z01+Z07 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[44] Wenn STS+Z01+Z08 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich."
+Prüfstatus Antwort auf Summenzeitreihen,65,SG7,STS,1131,00014,E_0007,,EBD Nr. E_0007,X,,,Prüfstatus Antwort auf Summenzeitreihen,65,SG7,STS,1131,00014,E_0007,,EBD Nr. E_0007,X,
+Prüfstatus Antwort auf Summenzeitreihen,66,SG7,STS,1131,,E_0041,,EBD Nr. E_0041,X,,,Prüfstatus Antwort auf Summenzeitreihen,66,SG7,STS,1131,,E_0041,,EBD Nr. E_0041,X,
+Prüfstatus Antwort auf Summenzeitreihen,67,SG7,STS,1131,,E_0093,,EBD Nr. E_0093,X,,,Prüfstatus Antwort auf Summenzeitreihen,67,SG7,STS,1131,,E_0093,,EBD Nr. E_0093,X,
+Abweisung der Summenzeitreihe,68,SG7,,,,,,,Muss [3],[3] Wenn SG7 STS+Z01 nicht vorhanden.,,Abweisung der Summenzeitreihe,68,SG7,,,,,,,Muss [3],[3] Wenn SG7 STS+Z01 nicht vorhanden.
+Abweisung der Summenzeitreihe,69,SG7,STS,,00015,,,,Muss,,,Abweisung der Summenzeitreihe,69,SG7,STS,,00015,,,,Muss,
+Abweisung der Summenzeitreihe,70,SG7,STS,9015,00015,Z02,,Abweisung der Summenzeitreihe,X,,,Abweisung der Summenzeitreihe,70,SG7,STS,9015,00015,Z02,,Abweisung der Summenzeitreihe,X,
+Abweisung der Summenzeitreihe,71,SG7,STS,9013,00015,,,Code des Prüfschritts,X [51],[51] Es sind nur Codes aus dem EBD-Cluster Abweisung möglich.,,Abweisung der Summenzeitreihe,71,SG7,STS,9013,00015,,,Code des Prüfschritts,X [51],[51] Es sind nur Codes aus dem EBD-Cluster Abweisung möglich.
+Abweisung der Summenzeitreihe,72,SG7,STS,1131,00015,E_0007,,EBD Nr. E_0007,X,,,Abweisung der Summenzeitreihe,72,SG7,STS,1131,00015,E_0007,,EBD Nr. E_0007,X,
+Abweisung der Summenzeitreihe,73,SG7,STS,1131,,E_0041,,EBD Nr. E_0041,X,,,Abweisung der Summenzeitreihe,73,SG7,STS,1131,,E_0041,,EBD Nr. E_0041,X,
+Abweisung der Summenzeitreihe,74,SG7,STS,1131,,E_0093,,EBD Nr. E_0093,X,,,Abweisung der Summenzeitreihe,74,SG7,STS,1131,,E_0093,,EBD Nr. E_0093,X,
+Nachrichten-Endesegment,75,,UNT,,00126,,,,Muss,,,Nachrichten-Endesegment,75,,UNT,,00126,,,,Muss,
+Nachrichten-Endesegment,76,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,76,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,77,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,77,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,

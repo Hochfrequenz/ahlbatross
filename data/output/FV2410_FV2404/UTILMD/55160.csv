@@ -1,0 +1,156 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,
+Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
+Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
+Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
+Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
+MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,
+MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
+Vorgang,38,SG4,IDE,,00020,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
+Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
+Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
+Beginn zum,41,SG4,DTM,,00024,,,,Muss,,,Beginn zum,41,SG4,DTM,,00024,,,,Muss,
+Beginn zum,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,,Beginn zum,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,
+Beginn zum,43,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Beginn zum,43,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Beginn zum,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,
+"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,
+"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,
+"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,
+Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,,Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,
+Transaktionsgrund,51,SG4,STS,9013,00037,ZG7,,Änderung vom MSB ohne Abhängigkeiten,X,,,Transaktionsgrund,51,SG4,STS,9013,00037,ZG7,,Änderung vom MSB ohne Abhängigkeiten,X,
+Marktlokation,52,SG5,,,,,,,Muss [2061] ∧ [349],"[349] Wenn SG5 LOC+Z17 (Messlokation) nicht vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Marktlokation,52,SG5,,,,,,,Muss [2061] ∧ [349],"[349] Wenn SG5 LOC+Z17 (Messlokation) nicht vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Marktlokation,53,SG5,LOC,,00051,,,,Muss,,,Marktlokation,53,SG5,LOC,,00051,,,,Muss,
+Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,,Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,
+Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
+Messlokation,56,SG5,,,,,,,Muss [2061] ∧ [347],"[347] Wenn SG5 LOC+Z16 (Marktlokation) nicht vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Messlokation,56,SG5,,,,,,,Muss [2061] ∧ [347],"[347] Wenn SG5 LOC+Z16 (Marktlokation) nicht vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Messlokation,57,SG5,LOC,,00055,,,,Muss,,,Messlokation,57,SG5,LOC,,00055,,,,Muss,
+Messlokation,58,SG5,LOC,3227,00055,Z17,,Messlokation,X,,,Messlokation,58,SG5,LOC,3227,00055,Z17,,Messlokation,X,
+Messlokation,59,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Messlokation,59,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung
+Prüfidentifikator,60,SG6,,,,,,,Muss,,,Prüfidentifikator,60,SG6,,,,,,,Muss,
+Prüfidentifikator,61,SG6,RFF,,00057,,,,Muss,,,Prüfidentifikator,61,SG6,RFF,,00057,,,,Muss,
+Prüfidentifikator,62,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,62,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,63,SG6,RFF,1154,,55160,,SDÄ Strom / Änderung vom MSB ohne Abhängigkeiten NB an LF / MSB,X,,,Prüfidentifikator,63,SG6,RFF,1154,,55160,,SDÄ Strom / Änderung vom MSB ohne Abhängigkeiten NB an LF / MSB,X,
+Referenz auf die ID der Marktlokation für Termine der Marktlokation,64,SG6,,,,,,,Soll [25] ∧ [92],"[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden
+[92] Wenn Wert innerhalb SG bzw. Segment geändert wird",,Referenz auf die ID der Marktlokation für Termine der Marktlokation,64,SG6,,,,,,,Soll [25] ∧ [92],"[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden
+[92] Wenn Wert innerhalb SG bzw. Segment geändert wird"
+Referenz auf die ID der Marktlokation für Termine der Marktlokation,65,SG6,RFF,,00066,,,,Muss [636],[636] Hinweis: Dieses RFF klassifiziert mit einem Code im DE1153 die in derselben Segmentgruppe enthaltenen DTM zu einem Markt- bzw. Messlokation relevanten Inhalt,,Referenz auf die ID der Marktlokation für Termine der Marktlokation,65,SG6,RFF,,00066,,,,Muss [636],[636] Hinweis: Dieses RFF klassifiziert mit einem Code im DE1153 die in derselben Segmentgruppe enthaltenen DTM zu einem Markt- bzw. Messlokation relevanten Inhalt
+Referenz auf die ID der Marktlokation für Termine der Marktlokation,66,SG6,RFF,1153,00066,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation für Termine der Marktlokation,66,SG6,RFF,1153,00066,Z18,,Marktlokation,X,
+Referenz auf die ID der Marktlokation für Termine der Marktlokation,67,SG6,RFF,1154,00066,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation für Termine der Marktlokation,67,SG6,RFF,1154,00066,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
+Turnusablesung des MSB,68,SG6,DTM,,00067,,,,Soll [92],[92] Wenn Wert innerhalb SG bzw. Segment geändert wird,,Turnusablesung des MSB,68,SG6,DTM,,00067,,,,Soll [92],[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+Turnusablesung des MSB,69,SG6,DTM,2005,00067,752,,Turnusablesung,X,,,Turnusablesung des MSB,69,SG6,DTM,2005,00067,752,,Turnusablesung,X,
+Turnusablesung des MSB,70,SG6,DTM,2380,00067,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Turnusablesung des MSB,70,SG6,DTM,2380,00067,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Turnusablesung des MSB,71,SG6,DTM,2379,00067,104,,MMWW-MMWW,X,,,Turnusablesung des MSB,71,SG6,DTM,2379,00067,104,,MMWW-MMWW,X,
+Turnusablesung des MSB,72,SG6,DTM,2379,,106,,MMDD,X,,,Turnusablesung des MSB,72,SG6,DTM,2379,,106,,MMDD,X,
+Kunde des Messstellenbetreibers,73,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden",,Kunde des Messstellenbetreibers,73,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden"
+Kunde des Messstellenbetreibers,74,SG12,NAD,,00524,,,,Muss,,,Kunde des Messstellenbetreibers,74,SG12,NAD,,00524,,,,Muss,
+Kunde des Messstellenbetreibers,75,SG12,NAD,3035,00524,Z07,,Kunde des MSB,X,,,Kunde des Messstellenbetreibers,75,SG12,NAD,3035,00524,Z07,,Kunde des MSB,X,
+Kunde des Messstellenbetreibers,76,SG12,NAD,3036,00524,,,Name,X,,,Kunde des Messstellenbetreibers,76,SG12,NAD,3036,00524,,,Name,X,
+Kunde des Messstellenbetreibers,77,SG12,NAD,3045,00524,Z01,,Struktur von Personennamen,X,,,Kunde des Messstellenbetreibers,77,SG12,NAD,3045,00524,Z01,,Struktur von Personennamen,X,
+Kunde des Messstellenbetreibers,78,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Kunde des Messstellenbetreibers,78,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Referenz auf die ID der Messlokation,79,SG12,RFF,,00525,,,,Muss,,,Referenz auf die ID der Messlokation,79,SG12,RFF,,00525,,,,Muss,
+Referenz auf die ID der Messlokation,80,SG12,RFF,1153,00525,Z19,,Messlokation,X,,,Referenz auf die ID der Messlokation,80,SG12,RFF,1153,00525,Z19,,Messlokation,X,
+Referenz auf die ID der Messlokation,81,SG12,RFF,1154,00525,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Messlokation,81,SG12,RFF,1154,00525,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,82,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden",,Korrespondenzanschrift des Kunden des Messstellenbetreibers,82,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden"
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,83,SG12,NAD,,00526,,,,Muss,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,83,SG12,NAD,,00526,,,,Muss,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,84,SG12,NAD,3035,00526,Z08,,Korrespondenzanschrift des Kunden des MSB,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,84,SG12,NAD,3035,00526,Z08,,Korrespondenzanschrift des Kunden des MSB,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,85,SG12,NAD,3036,00526,,,Name,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,85,SG12,NAD,3036,00526,,,Name,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,86,SG12,NAD,3045,00526,Z01,,Struktur von Personennamen,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,86,SG12,NAD,3045,00526,Z01,,Struktur von Personennamen,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,87,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,87,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,88,SG12,NAD,3042,00526,,,Straße und Hausnummer oder Postfach,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,88,SG12,NAD,3042,00526,,,Straße und Hausnummer oder Postfach,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,89,SG12,NAD,3164,00526,,,Ort,X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,89,SG12,NAD,3164,00526,,,Ort,X,
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,90,SG12,NAD,3251,00526,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",,Korrespondenzanschrift des Kunden des Messstellenbetreibers,90,SG12,NAD,3251,00526,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist"
+Korrespondenzanschrift des Kunden des Messstellenbetreibers,91,SG12,NAD,3207,00526,,,"Ländername, Code",X,,,Korrespondenzanschrift des Kunden des Messstellenbetreibers,91,SG12,NAD,3207,00526,,,"Ländername, Code",X,
+Messlokationsadresse,92,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden",,Messlokationsadresse,92,SG12,,,,,,,Soll [92] ∧ [241] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden"
+Messlokationsadresse,93,SG12,NAD,,00536,,,,Muss,,,Messlokationsadresse,93,SG12,NAD,,00536,,,,Muss,
+Messlokationsadresse,94,SG12,NAD,3035,00536,Z03,,Messlokationsadresse,X,,,Messlokationsadresse,94,SG12,NAD,3035,00536,Z03,,Messlokationsadresse,X,
+Messlokationsadresse,95,SG12,NAD,3124,00536,,,Zusatzinformation zur Identifizierung,S [336],[336] Wenn in Änderungsmeldung gefüllt,,Messlokationsadresse,95,SG12,NAD,3124,00536,,,Zusatzinformation zur Identifizierung,S [336],[336] Wenn in Änderungsmeldung gefüllt
+Messlokationsadresse,96,SG12,NAD,3042,00536,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",,Messlokationsadresse,96,SG12,NAD,3042,00536,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden"
+Messlokationsadresse,97,SG12,NAD,3164,00536,,,Ort,X,,,Messlokationsadresse,97,SG12,NAD,3164,00536,,,Ort,X,
+Messlokationsadresse,98,SG12,NAD,3251,00536,,,Postleitzahl,X,,,Messlokationsadresse,98,SG12,NAD,3251,00536,,,Postleitzahl,X,
+Messlokationsadresse,99,SG12,NAD,3207,00536,,,"Ländername, Code",X,,,Messlokationsadresse,99,SG12,NAD,3207,00536,,,"Ländername, Code",X,
+Referenz auf die ID einer Messlokation,100,SG12,RFF,,00537,,,,Muss,,,Referenz auf die ID einer Messlokation,100,SG12,RFF,,00537,,,,Muss,
+Referenz auf die ID einer Messlokation,101,SG12,RFF,1153,00537,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,101,SG12,RFF,1153,00537,Z19,,Messlokation,X,
+Referenz auf die ID einer Messlokation,102,SG12,RFF,1154,00537,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,102,SG12,RFF,1154,00537,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
+Name und Adresse für die Ablesekarte,103,SG12,,,,,,,Soll [92] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden",,Name und Adresse für die Ablesekarte,103,SG12,,,,,,,Soll [92] ∧ [345],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[345] Wenn SG5 LOC+Z17 (Messlokation) vorhanden"
+Name und Adresse für die Ablesekarte,104,SG12,NAD,,00538,,,,Muss,,,Name und Adresse für die Ablesekarte,104,SG12,NAD,,00538,,,,Muss,
+Name und Adresse für die Ablesekarte,105,SG12,NAD,3035,00538,Z05,,Name und Adresse für die Ablesekarte,X,,,Name und Adresse für die Ablesekarte,105,SG12,NAD,3035,00538,Z05,,Name und Adresse für die Ablesekarte,X,
+Name und Adresse für die Ablesekarte,106,SG12,NAD,3036,00538,,,Name,X,,,Name und Adresse für die Ablesekarte,106,SG12,NAD,3036,00538,,,Name,X,
+Name und Adresse für die Ablesekarte,107,SG12,NAD,3045,00538,Z01,,Struktur von Personennamen,X,,,Name und Adresse für die Ablesekarte,107,SG12,NAD,3045,00538,Z01,,Struktur von Personennamen,X,
+Name und Adresse für die Ablesekarte,108,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Adresse für die Ablesekarte,108,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Adresse für die Ablesekarte,109,SG12,NAD,3042,00538,,,Straße und Hausnummer oder Postfach,X,,,Name und Adresse für die Ablesekarte,109,SG12,NAD,3042,00538,,,Straße und Hausnummer oder Postfach,X,
+Name und Adresse für die Ablesekarte,110,SG12,NAD,3164,00538,,,Ort,X,,,Name und Adresse für die Ablesekarte,110,SG12,NAD,3164,00538,,,Ort,X,
+Name und Adresse für die Ablesekarte,111,SG12,NAD,3251,00538,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",,Name und Adresse für die Ablesekarte,111,SG12,NAD,3251,00538,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist"
+Name und Adresse für die Ablesekarte,112,SG12,NAD,3207,00538,,,"Ländername, Code",X,,,Name und Adresse für die Ablesekarte,112,SG12,NAD,3207,00538,,,"Ländername, Code",X,
+Referenz auf die ID einer Messlokation,113,SG12,RFF,,00539,,,,Muss,,,Referenz auf die ID einer Messlokation,113,SG12,RFF,,00539,,,,Muss,
+Referenz auf die ID einer Messlokation,114,SG12,RFF,1153,00539,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,114,SG12,RFF,1153,00539,Z19,,Messlokation,X,
+Referenz auf die ID einer Messlokation,115,SG12,RFF,1154,00539,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,115,SG12,RFF,1154,00539,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
+Nachrichten-Endesegment,116,,UNT,,00540,,,,Muss,,,Nachrichten-Endesegment,116,,UNT,,00540,,,,Muss,
+Nachrichten-Endesegment,117,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,117,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,118,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,118,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,

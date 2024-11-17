@@ -1,0 +1,81 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z51,,Sperrung,X,,,Beginn der Nachricht,8,,BGM,1001,,Z51,,Sperrung,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Ausführungsdatum,14,,DTM,,,,,,Muss [55] ∧ [533],"[55] Wenn DTM+469 nicht vorhanden
+[533] Hinweis: Gerichtsvollzieher hat Termin vorgegeben",,Ausführungsdatum,14,,DTM,,,,,,Muss [55] ∧ [533],"[55] Wenn DTM+469 nicht vorhanden
+[533] Hinweis: Gerichtsvollzieher hat Termin vorgegeben"
+Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,
+Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Beginn zum (nächstmöglichen Termin),18,,DTM,,,,,,Muss [56],[56] Wenn DTM+203 nicht vorhanden,,Beginn zum (nächstmöglichen Termin),18,,DTM,,,,,,Muss [56],[56] Wenn DTM+203 nicht vorhanden
+Beginn zum (nächstmöglichen Termin),19,,DTM,2005,,469,,"Startdatum oder - zeitpunkt, frühestes/r",X,,,Beginn zum (nächstmöglichen Termin),19,,DTM,2005,,469,,"Startdatum oder - zeitpunkt, frühestes/r",X,
+Beginn zum (nächstmöglichen Termin),20,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Beginn zum (nächstmöglichen Termin),20,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Beginn zum (nächstmöglichen Termin),21,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum (nächstmöglichen Termin),21,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,22,SG1,,,,,,,Muss,,,Prüfidentifikator,22,SG1,,,,,,,Muss,
+Prüfidentifikator,23,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,23,SG1,RFF,,,,,,Muss,
+Prüfidentifikator,24,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,24,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,25,SG1,RFF,1154,,17115,,Sperrauftrag,X,,,Prüfidentifikator,25,SG1,RFF,1154,,17115,,Sperrauftrag,X,
+MP-ID Absender,26,SG2,,,,,,,Muss,,,MP-ID Absender,26,SG2,,,,,,,Muss,
+MP-ID Absender,27,SG2,NAD,,,,,,Muss,,,MP-ID Absender,27,SG2,NAD,,,,,,Muss,
+MP-ID Absender,28,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,28,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,29,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Absender,29,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
+MP-ID Absender,30,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,30,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,31,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,31,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,32,SG5,,,,,,,Muss,,,Ansprechpartner,32,SG5,,,,,,,Muss,
+Ansprechpartner,33,SG5,CTA,,,,,,Muss,,,Ansprechpartner,33,SG5,CTA,,,,,,Muss,
+Ansprechpartner,34,SG5,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,34,SG5,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,35,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,35,SG5,CTA,3412,,,,Kontakt,X,
+Kommunikationsverbindung,36,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,36,SG5,COM,,,,,,Muss,
+Kommunikationsverbindung,37,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,37,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,38,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,39,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,40,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,40,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,41,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,41,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,42,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,42,SG5,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,43,SG2,,,,,,,Muss,,,MP-ID Empfänger,43,SG2,,,,,,,Muss,
+MP-ID Empfänger,44,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,44,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,45,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,45,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,46,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,46,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
+MP-ID Empfänger,47,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,47,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,48,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,48,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Meldepunkt,49,SG2,,,,,,,Muss,,,Meldepunkt,49,SG2,,,,,,,Muss,
+Meldepunkt,50,SG2,NAD,,,,,,Muss,,,Meldepunkt,50,SG2,NAD,,,,,,Muss,
+Meldepunkt,51,SG2,NAD,3035,,DP,,Lieferanschrift,X,,,Meldepunkt,51,SG2,NAD,3035,,DP,,Lieferanschrift,X,
+Meldepunkt,52,SG2,LOC,,,,,,Muss,,,Meldepunkt,52,SG2,LOC,,,,,,Muss,
+Meldepunkt,53,SG2,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,53,SG2,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",,Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID"
+Adresse für Treffpunkt,55,SG2,,,,,,,Kann,,,Adresse für Treffpunkt,55,SG2,,,,,,,Kann,
+Adresse für Treffpunkt,56,SG2,NAD,,,,,,Muss,,,Adresse für Treffpunkt,56,SG2,NAD,,,,,,Muss,
+Adresse für Treffpunkt,57,SG2,NAD,3035,,Z24,,Treffpunkt,X,,,Adresse für Treffpunkt,57,SG2,NAD,3035,,Z24,,Treffpunkt,X,
+Adresse für Treffpunkt,58,SG2,NAD,3124,,,,Zusatzinformation zur Identifizierung,K,,,Adresse für Treffpunkt,58,SG2,NAD,3124,,,,Zusatzinformation zur Identifizierung,K,
+Adresse für Treffpunkt,59,SG2,NAD,3042,,,,Straße und Hausnummer oder Postfach,M [57],[57] Wenn im selben SG2 NAD DE3124 nicht vorhanden,,Adresse für Treffpunkt,59,SG2,NAD,3042,,,,Straße und Hausnummer oder Postfach,M [57],[57] Wenn im selben SG2 NAD DE3124 nicht vorhanden
+Adresse für Treffpunkt,60,SG2,NAD,3164,,,,Ort,X,,,Adresse für Treffpunkt,60,SG2,NAD,3164,,,,Ort,X,
+Adresse für Treffpunkt,61,SG2,NAD,3251,,,,"Postleitzahl, Code",X,,,Adresse für Treffpunkt,61,SG2,NAD,3251,,,,"Postleitzahl, Code",X,
+Adresse für Treffpunkt,62,SG2,NAD,3207,,,,"Ländername, Code",X,,,Adresse für Treffpunkt,62,SG2,NAD,3207,,,,"Ländername, Code",X,
+Positionsdaten,63,SG29,,,,,,,Kann [2092],[2092] Pro Nachricht ist die SG29 maximal einmal anzugeben,,Positionsdaten,63,SG29,,,,,,,Kann [2092],[2092] Pro Nachricht ist die SG29 maximal einmal anzugeben
+Positionsdaten,64,SG29,LIN,,,,,,Muss,,,Positionsdaten,64,SG29,LIN,,,,,,Muss,
+Positionsdaten,65,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Positionsdaten,65,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
+Allgemeine Information (Feld für allgemeine Hinweise),66,SG29,FTX,,,,,,Kann,,,Allgemeine Information (Feld für allgemeine Hinweise),66,SG29,FTX,,,,,,Kann,
+Allgemeine Information (Feld für allgemeine Hinweise),67,SG29,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Allgemeine Information (Feld für allgemeine Hinweise),67,SG29,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
+Allgemeine Information (Feld für allgemeine Hinweise),68,SG29,FTX,4440,,,,Freier Text,X,,,Allgemeine Information (Feld für allgemeine Hinweise),68,SG29,FTX,4440,,,,Freier Text,X,
+Abschnitts-Kontrollsegment,69,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,69,,UNS,,,,,,Muss,
+Abschnitts-Kontrollsegment,70,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,,Abschnitts-Kontrollsegment,70,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,
+Nachrichten-Endesegment,71,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,71,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,72,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,72,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,73,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,73,,UNT,0062,,,,Nachrichten-Referenznummer,X,

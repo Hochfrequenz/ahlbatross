@@ -1,0 +1,121 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,REMADV,,Zahlungsavis,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,REMADV,,Zahlungsavis,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,05A,,Ausgabe 2005 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,05A,,Ausgabe 2005 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,2.9,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,2.9a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,239,,Abgelehnte Forderung (Nicht-Zahlungsavis),X,,,Beginn der Nachricht,8,,BGM,1001,,239,,Abgelehnte Forderung (Nicht-Zahlungsavis),X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,,,,,Muss,,,Dokumentendatum,10,,DTM,,,,,,Muss,
+Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,14,,RFF,,,,,,Muss,,,Prüfidentifikator,14,,RFF,,,,,,Muss,
+Prüfidentifikator,15,,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,15,,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,16,,RFF,1154,,33002,,Abweisung,X,,,Prüfidentifikator,16,,RFF,1154,,33002,,Abweisung,X,
+MP-ID Absender,17,SG1,,,,,,,Muss,,,MP-ID Absender,17,SG1,,,,,,,Muss,
+MP-ID Absender,18,SG1,NAD,,,,,,Muss,,,MP-ID Absender,18,SG1,NAD,,,,,,Muss,
+MP-ID Absender,19,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,19,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,20,SG1,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,20,SG1,NAD,3039,,,,MP-ID,X,
+MP-ID Absender,21,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Absender,21,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Absender,22,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,22,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,23,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,23,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,24,SG3,,,,,,,Kann [503],"[503] Hinweis: Empfohlen, um bei Abweisung Ansprechpartner für Rückfragen zu erreichen.",,Ansprechpartner,24,SG3,,,,,,,Kann [503],"[503] Hinweis: Empfohlen, um bei Abweisung Ansprechpartner für Rückfragen zu erreichen."
+Ansprechpartner,25,SG3,CTA,,,,,,Muss,,,Ansprechpartner,25,SG3,CTA,,,,,,Muss,
+Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationsstelle,X,,,Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationsstelle,X,
+Ansprechpartner,27,SG3,CTA,3412,,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,27,SG3,CTA,3412,,,,Abteilung oder Bearbeiter,X,
+Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,29,SG3,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,29,SG3,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,30,SG3,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,35,SG1,,,,,,,Muss,,,MP-ID Empfänger,35,SG1,,,,,,,Muss,
+MP-ID Empfänger,36,SG1,NAD,,,,,,Muss,,,MP-ID Empfänger,36,SG1,NAD,,,,,,Muss,
+MP-ID Empfänger,37,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,37,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,38,SG1,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,38,SG1,NAD,3039,,,,MP-ID,X,
+MP-ID Empfänger,39,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,39,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,40,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,40,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,41,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,41,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Währungsangaben,42,SG4,,,,,,,Muss,,,Währungsangaben,42,SG4,,,,,,,Muss,
+Währungsangaben,43,SG4,CUX,,,,,,Muss,,,Währungsangaben,43,SG4,CUX,,,,,,Muss,
+Währungsangaben,44,SG4,CUX,6347,,2,,Referenzwährung,X,,,Währungsangaben,44,SG4,CUX,6347,,2,,Referenzwährung,X,
+Währungsangaben,45,SG4,CUX,6345,,EUR,,Euro,X,,,Währungsangaben,45,SG4,CUX,6345,,EUR,,Euro,X,
+Währungsangaben,46,SG4,CUX,6343,,11,,Zahlungswährung,X,,,Währungsangaben,46,SG4,CUX,6343,,11,,Zahlungswährung,X,
+Dokument-/Nachrichten- Einzelheiten,47,SG5,,,,,,,Muss,,,Dokument-/Nachrichten- Einzelheiten,47,SG5,,,,,,,Muss,
+Dokument-/Nachrichten- Einzelheiten,48,SG5,DOC,,,,,,Muss,,,Dokument-/Nachrichten- Einzelheiten,48,SG5,DOC,,,,,,Muss,
+Dokument-/Nachrichten- Einzelheiten,49,SG5,DOC,1001,,380,,Handelsrechnung,X,,,Dokument-/Nachrichten- Einzelheiten,49,SG5,DOC,1001,,380,,Handelsrechnung,X,
+Dokument-/Nachrichten- Einzelheiten,50,SG5,DOC,1001,,389,,"Selbst ausgestellte Rechnung (engl.: ""Self- billed invoice"")",X,,,Dokument-/Nachrichten- Einzelheiten,50,SG5,DOC,1001,,389,,"Selbst ausgestellte Rechnung (engl.: ""Self- billed invoice"")",X,
+Dokument-/Nachrichten- Einzelheiten,51,SG5,DOC,1001,,457,,Storno einer Belastung.,X,,,Dokument-/Nachrichten- Einzelheiten,51,SG5,DOC,1001,,457,,Storno einer Belastung.,X,
+Dokument-/Nachrichten- Einzelheiten,52,SG5,DOC,1001,,Z25,,Storno für selbst ausgestellte Rechnung (Gutschrift im Gutschriftsverfahren),X,,,Dokument-/Nachrichten- Einzelheiten,52,SG5,DOC,1001,,Z25,,Storno für selbst ausgestellte Rechnung (Gutschrift im Gutschriftsverfahren),X,
+Dokument-/Nachrichten- Einzelheiten,53,SG5,DOC,1004,,,,Dokumentennummer,X [511],"[511] Hinweis: BGM DE1004 aus der abgelehnten INVOIC- Nachricht
+[515] Hinweis: BGM DE1004 aus der bestätigten INVOIC- Nachricht",,Dokument-/Nachrichten- Einzelheiten,53,SG5,DOC,1004,,,,Dokumentennummer,X [511],"[511] Hinweis: BGM DE1004 aus der abgelehnten INVOIC- Nachricht
+[515] Hinweis: BGM DE1004 aus der bestätigten INVOIC- Nachricht"
+Geforderter Rechnungsbetrag,54,SG5,MOA,,,,,,Muss,,,Geforderter Rechnungsbetrag,54,SG5,MOA,,,,,,Muss,
+Geforderter Rechnungsbetrag,55,SG5,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,,Geforderter Rechnungsbetrag,55,SG5,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,
+Geforderter Rechnungsbetrag,56,SG5,MOA,5004,,,,Geldbetrag,X [930] [501],"[501] Hinweis: An dieser Stelle ist der Betrag aus SG50 MOA+9 der zugrundeliegenden INVOIC zu übernehmen.
+[930] Format: max. 2 Nachkommastellen",,Geforderter Rechnungsbetrag,56,SG5,MOA,5004,,,,Geldbetrag,X [930] [501],"[501] Hinweis: An dieser Stelle ist der Betrag aus SG50 MOA+9 der zugrundeliegenden INVOIC zu übernehmen.
+[930] Format: max. 2 Nachkommastellen"
+Überweisungsbetrag,57,SG5,MOA,,,,,,Muss,,,Überweisungsbetrag,57,SG5,MOA,,,,,,Muss,
+Überweisungsbetrag,58,SG5,MOA,5025,,12,,Überweisungsbetrag,X,,,Überweisungsbetrag,58,SG5,MOA,5025,,12,,Überweisungsbetrag,X,
+Überweisungsbetrag,59,SG5,MOA,5004,,,,Geldbetrag,X [926],"[3] Bei SG5 DOC+389 / Z25 ist der Wert aus derselben SG5 MOA+9 mit (-1) multipliziert anzugeben.
+[4] Bei SG5 DOC+380 / 457 ist der Wert aus derselben SG5 MOA+9 unverändert anzugeben.
+[926] Format: Möglicher Wert: 0
+[930] Format: max. 2 Nachkommastellen",,Überweisungsbetrag,59,SG5,MOA,5004,,,,Geldbetrag,X [926],"[3] Bei SG5 DOC+389 / Z25 ist der Wert aus derselben SG5 MOA+9 mit (-1) multipliziert anzugeben.
+[4] Bei SG5 DOC+380 / 457 ist der Wert aus derselben SG5 MOA+9 unverändert anzugeben.
+[926] Format: Möglicher Wert: 0
+[930] Format: max. 2 Nachkommastellen"
+Rechnungsdatum,60,SG5,DTM,,,,,,Muss,,,Rechnungsdatum,60,SG5,DTM,,,,,,Muss,
+Rechnungsdatum,61,SG5,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Rechnungsdatum,61,SG5,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Rechnungsdatum,62,SG5,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Rechnungsdatum,62,SG5,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Rechnungsdatum,63,SG5,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Rechnungsdatum,63,SG5,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Referenz auf COMDIS,64,SG5,RFF,,,,,,Soll [510],[510] Hinweis: Bei Ablehnung einer vorherigen COMDIS,,Referenz auf COMDIS,64,SG5,RFF,,,,,,Soll [510],[510] Hinweis: Bei Ablehnung einer vorherigen COMDIS
+Referenz auf COMDIS,65,SG5,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Referenz auf COMDIS,65,SG5,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+Referenz auf COMDIS,66,SG5,RFF,1154,,,,"Referenz, Identifikation",X [512],[512] Hinweis: BGM DE1004 aus der abgelehnten COMDIS-Nachricht,,Referenz auf COMDIS,66,SG5,RFF,1154,,,,"Referenz, Identifikation",X [512],[512] Hinweis: BGM DE1004 aus der abgelehnten COMDIS-Nachricht
+Abweichungsgrund,67,SG7,,,,,,,Muss,,,Abweichungsgrund,67,SG7,,,,,,,Muss,
+Abweichungsgrund,68,SG7,AJT,,,,,,Muss,,,Abweichungsgrund,68,SG7,AJT,,,,,,Muss,
+Abweichungsgrund,69,SG7,AJT,4465,,,,Code des Prüfschritts,X,,,Abweichungsgrund,69,SG7,AJT,4465,,,,Code des Prüfschritts,X,
+Abweichungsgrund,70,SG7,AJT,1082,,G_0079,,Codeliste Gas Nr. G_0079,X [493],,,Abweichungsgrund,70,SG7,AJT,1082,,G_0079,,Codeliste Gas Nr. G_0079,X [493],
+Abweichungsgrund,71,SG7,AJT,1082,,G_0080,,Codeliste Gas Nr. G_0080,X [493],,,Abweichungsgrund,71,SG7,AJT,1082,,G_0080,,Codeliste Gas Nr. G_0080,X [493],
+Abweichungsgrund,72,SG7,AJT,1082,,G_0081,,Codeliste Gas Nr. G_0081,X [493],,,Abweichungsgrund,72,SG7,AJT,1082,,G_0081,,Codeliste Gas Nr. G_0081,X [493],
+Abweichungsgrund,73,SG7,AJT,1082,,G_0083,,Codeliste Gas Nr. G_0083,X [493],,,Abweichungsgrund,73,SG7,AJT,1082,,G_0083,,Codeliste Gas Nr. G_0083,X [493],
+Abweichungsgrund,74,SG7,AJT,1082,,G_0084,,Codeliste Gas Nr. G_0084,X [493],,,Abweichungsgrund,74,SG7,AJT,1082,,G_0084,,Codeliste Gas Nr. G_0084,X [493],
+Abweichungsgrund,75,SG7,AJT,1082,,G_0085,,Codeliste Gas Nr. G_0085,X [493],,,Abweichungsgrund,75,SG7,AJT,1082,,G_0085,,Codeliste Gas Nr. G_0085,X [493],
+Abweichungsgrund,76,SG7,AJT,1082,,G_0086,,Codeliste Gas Nr. G_0086,X [493],,,Abweichungsgrund,76,SG7,AJT,1082,,G_0086,,Codeliste Gas Nr. G_0086,X [493],
+Abweichungsgrund,77,SG7,AJT,1082,,G_0087,,Codeliste Gas Nr. G_0087,X [493],,,Abweichungsgrund,77,SG7,AJT,1082,,G_0087,,Codeliste Gas Nr. G_0087,X [493],
+Abweichungsgrund,78,SG7,AJT,1082,,G_0088 GS_002 GS_004 GS_005 S_0106 S_0107 S_0110 S_0111,,Codeliste Gas Nr. G_0088 Codeliste Gas und Strom Nr. GS_002 Codeliste Gas und Strom Nr. GS_004 Codeliste Gas und Strom Nr. GS_005 Codeliste Strom Nr. S_0106 Codeliste Strom Nr. S_0107 Codeliste Strom Nr. S_0110 Codeliste Strom Nr. S_0111,X [493]XXX X [492] X [492] X [492] X [492],,,Abweichungsgrund,78,SG7,AJT,1082,,G_0088 GS_002 GS_004 GS_005,,Codeliste Gas Nr. G_0088 Codeliste Gas und Strom Nr. GS_002 Codeliste Gas und Strom Nr. GS_004 Codeliste Gas und Strom Nr. GS_005,X [493]XXX,
+Abweichungsgrund,79,SG7,AJT,1082,,E_0459,,EBD Nr. E_0459,X [492],,,Abweichungsgrund,79,SG7,AJT,1082,,E_0459,,EBD Nr. E_0459,X [492],
+Abweichungsgrund,80,SG7,AJT,1082,,E_0503,,EBD Nr. E_0503,X [492],,,Abweichungsgrund,80,SG7,AJT,1082,,E_0503,,EBD Nr. E_0503,X [492],
+Abweichungsgrund,81,SG7,AJT,1082,,E_0505,,EBD Nr. E_0505,X [492],,,Abweichungsgrund,81,SG7,AJT,1082,,E_0505,,EBD Nr. E_0505,X [492],
+Abweichungsgrund,82,SG7,AJT,1082,,E_0506,,EBD Nr. E_0506,X [492],"[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Abweichungsgrund,82,SG7,AJT,1082,,E_0506,,EBD Nr. E_0506,X [492],
+,,,,,,,,,,,NEW,Abweichungsgrund,83,SG7,AJT,1082,,E_0243,,EBD Nr. E_0243,X [492],
+,,,,,,,,,,,NEW,Abweichungsgrund,84,SG7,AJT,1082,,E_0261,,EBD Nr. E_0261,X [492],"[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Nähere Erläuterung des Abweichungsgrundes,83,SG7,FTX,,,,,,Muss ([2] ∨ [8] ∨ [9] ∨ [59]) Kann,"[2] Wenn SG7 AJT+28 vorhanden
+[8] Wenn SG7 AJT+A01/ A02+E_0505 vorhanden
+[9] Wenn SG7 AJT+A32/ A99+E_0503 vorhanden
+[59] Wenn SG7 AJT+A99+E_0459 vorhanden",,Nähere Erläuterung des Abweichungsgrundes,85,SG7,FTX,,,,,,Muss ([2] ∨ [8] ∨ [9] ∨ [59] ∨ [60] ∨ [61]) Kann,"[2] Wenn SG7 AJT+28 vorhanden
+[8] Wenn SG7 AJT+A01/ A02+E_0505 vorhanden
+[9] Wenn SG7 AJT+A32/A99+E_0503 vorhanden
+[59] Wenn SG7 AJT+A99+E_0459 vorhanden
+[60] Wenn SG7 AJT+A99+E_0243 vorhanden
+[61] Wenn SG7 AJT+A99+E_0261 vorhanden"
+Nähere Erläuterung des Abweichungsgrundes,84,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,,Nähere Erläuterung des Abweichungsgrundes,86,SG7,FTX,4451,,ABO,,Information über Abweichung,X,
+Nähere Erläuterung des Abweichungsgrundes,85,SG7,FTX,4440,,,,Freier Text,X,,,Nähere Erläuterung des Abweichungsgrundes,87,SG7,FTX,4440,,,,Freier Text,X,
+Trennung von Positions- u. Summenteil,86,,UNS,,,,,,Muss,,,Trennung von Positions- u. Summenteil,88,,UNS,,,,,,Muss,
+Trennung von Positions- u. Summenteil,87,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,,Trennung von Positions- u. Summenteil,89,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,
+Summenbetrag,88,,MOA,,,,,,Muss,,,Summenbetrag,90,,MOA,,,,,,Muss,
+Summenbetrag,89,,MOA,5025,,12,,Überweisungsbetrag,X,,,Summenbetrag,91,,MOA,5025,,12,,Überweisungsbetrag,X,
+Summenbetrag,90,,MOA,5004,,,,Geldbetrag,X [926],"[502] Hinweis: Bei positivem Betrag ergibt sich eine Forderung des Rechnungsstellers. Bei negativem Betrag ergibt sich eine Forderung für den Rechnungsempfänger.
+[926] Format: Möglicher Wert: 0
+[930] Format: max. 2 Nachkommastellen",,Summenbetrag,92,,MOA,5004,,,,Geldbetrag,X [926],"[502] Hinweis: Bei positivem Betrag ergibt sich eine Forderung des Rechnungsstellers. Bei negativem Betrag ergibt sich eine Forderung für den Rechnungsempfänger.
+[926] Format: Möglicher Wert: 0
+[930] Format: max. 2 Nachkommastellen"
+Nachrichten-Endesegment,91,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,93,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,92,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,94,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,93,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,95,,UNT,0062,,,,Nachrichten-Referenznummer,X,

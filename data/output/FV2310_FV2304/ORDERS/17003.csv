@@ -1,0 +1,168 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,ORDERS,,Bestellung,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,09B,,Ausgabe 2009 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z12,,Änderung an der Messlokation,X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z12,,Änderung an der Messlokation,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,00003,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+Ausführungsdatum,14,,DTM,,,,,,Muss,,,Ausführungsdatum,14,,DTM,,00004,,,,Muss,
+Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,00004,203,,Ausführungsdatum/-zeit,X,
+Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,,Ausführungsdatum,16,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],
+Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,18,SG1,,,,,,,Muss,,,Prüfidentifikator,18,SG1,,,,,,,Muss,
+Prüfidentifikator,19,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,19,SG1,RFF,,00019,,,,Muss,
+Prüfidentifikator,20,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,20,SG1,RFF,1153,00019,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,21,SG1,RFF,1154,,17003,,Beauftragung zur Änderung der Messlokation,X,,,Prüfidentifikator,21,SG1,RFF,1154,00019,17003,,Beauftragung zur Änderung der Messlokation,X,
+MP-ID Absender,22,SG2,,,,,,,Muss,,,MP-ID Absender,22,SG2,,,,,,,Muss,
+MP-ID Absender,23,SG2,NAD,,,,,,Muss,,,MP-ID Absender,23,SG2,NAD,,00020,,,,Muss,
+MP-ID Absender,24,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,24,SG2,NAD,3035,00020,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,25,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,25,SG2,NAD,3039,00020,,,MP-ID,X,
+MP-ID Absender,26,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,26,SG2,NAD,3055,00020,9,,GS1,X,
+MP-ID Absender,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,27,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,28,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,28,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,29,SG5,,,,,,,Muss,,,Ansprechpartner,29,SG5,,,,,,,Muss,
+Ansprechpartner,30,SG5,CTA,,,,,,Muss,,,Ansprechpartner,30,SG5,CTA,,00021,,,,Muss,
+Ansprechpartner,31,SG5,CTA,3139,,,,,IC,,,Ansprechpartner,31,SG5,CTA,3139,00021,,,,IC,
+Ansprechpartner,32,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,32,SG5,CTA,3412,00021,,,Kontakt,X,
+Kommunikationsverbindung,33,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,33,SG5,COM,,00022,,,,Muss,
+Kommunikationsverbindung,34,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,34,SG5,COM,3148,00022,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,35,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,35,SG5,COM,3155,00022,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,36,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,36,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,37,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,37,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,38,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,39,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,40,SG2,,,,,,,Muss,,,MP-ID Empfänger,40,SG2,,,,,,,Muss,
+MP-ID Empfänger,41,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,41,SG2,NAD,,00023,,,,Muss,
+MP-ID Empfänger,42,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,42,SG2,NAD,3035,00023,,,,MR,
+MP-ID Empfänger,43,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,43,SG2,NAD,3039,00023,,,MP-ID,X,
+MP-ID Empfänger,44,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,44,SG2,NAD,3055,00023,9,,GS1,X,
+MP-ID Empfänger,45,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,45,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,46,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,46,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Meldepunkt,47,SG2,,,,,,,Muss,,,Meldepunkt,47,SG2,,,,,,,Muss,
+Meldepunkt,48,SG2,NAD,,,,,,Muss,,,Meldepunkt,48,SG2,NAD,,00025,,,,Muss,
+Meldepunkt,49,SG2,NAD,3035,,,,,DP,,,Meldepunkt,49,SG2,NAD,3035,00025,,,,DP,
+Meldepunkt,50,SG2,LOC,,,,,,Muss,,,Meldepunkt,50,SG2,LOC,,00026,,,,Muss,
+Meldepunkt,51,SG2,LOC,3227,,,,,172,,,Meldepunkt,51,SG2,LOC,3227,00026,,,,172,
+Meldepunkt,52,SG2,LOC,3225,,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
+[951] Format: Zählpunktbezeichnung",,Meldepunkt,52,SG2,LOC,3225,00026,,,Identifikator,X ([951] [522]) ⊻ ([922] [566] ∧ [7] ∧ [492]) ⊻ ([960] [552] ∧ [7] ∧ [492]),"[7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[522] Hinweis: Verwendung der ID der Messlokation
+[552] Hinweis: Verwendung der ID der Netzlokation
+[566] Hinweis: Verwendung der ID der Technischen Ressource
+[922] Format: TR-ID
+[951] Format: Zählpunktbezeichnung
+[960] Format: Netzlokations-ID"
+,,,,,,,,,,,NEW,Referenz auf ID der Steuerbaren Ressource,53,SG3,,,,,,,Muss [143],[143] Wenn in LOC+172 DE3225 (Meldepunkt) die ID einer Technischen Ressource angegeben ist
+,,,,,,,,,,,NEW,Referenz auf ID der Steuerbaren Ressource,54,SG3,RFF,,00028,,,,Muss,
+,,,,,,,,,,,NEW,Referenz auf ID der Steuerbaren Ressource,55,SG3,RFF,1153,00028,Z38,,Steuerbare Ressource,X,
+,,,,,,,,,,,NEW,Referenz auf ID der Steuerbaren Ressource,56,SG3,RFF,1154,00028,,,"Referenz, Identifikation",X [961] [553],"[553] Hinweis: Verwendung der ID der Steuerbaren Ressource
+[961] Format: SR-ID"
+,,,,,,,,,,,NEW,Referenz auf ID der Technischen Ressource,57,SG3,,,,,,,Soll [2066] ∧ [143] ,"[143] Wenn in LOC+172 DE3225 (Meldepunkt) die ID einer Technischen Ressource angegeben ist
+[2066] Die SG3 RFF+Z37 Referenz auf ID der Technischen Ressource ist so oft zu wiederholen, bis alle IDs der Technischen Ressourcen angegeben sind, die zusätzlich zur Technischen Ressource in LOC+172 DE3225, die der Steuerbaren Ressource in SG3 RFF+Z38 Referenz auf ID der Steuerbaren Ressource, DE1154 mit diesem Vorgang zugeordnet werden sollen genannt sind."
+,,,,,,,,,,,NEW,Referenz auf ID der Technischen Ressource,58,SG3,RFF,,00029,,,,Muss,
+,,,,,,,,,,,NEW,Referenz auf ID der Technischen Ressource,59,SG3,RFF,1153,00029,Z37,,Technische Ressource,X,
+,,,,,,,,,,,NEW,Referenz auf ID der Technischen Ressource,60,SG3,RFF,1154,00029,,,"Referenz, Identifikation",X [922] [566],"[566] Hinweis: Verwendung der ID der Technischen Ressource
+[922] Format: TR-ID"
+Erforderliches Messprodukt der Messlokation,53,SG29,,,,,,,Muss [2090],[2090] Für 33-stellige ID im SG2 LOC+172 (Meldepunkt) DE3225 mindestens einmal anzugeben,,Erforderliches Messprodukt der Messlokation,61,SG29,,,,,,,Muss [2090],[2090] Für 33-stellige ID im SG2 LOC+172 (Meldepunkt) DE3225 mindestens einmal anzugeben
+Erforderliches Messprodukt der Messlokation,54,SG29,LIN,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,62,SG29,LIN,,00083,,,,Muss,
+Erforderliches Messprodukt der Messlokation,55,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Erforderliches Messprodukt der Messlokation,63,SG29,LIN,1082,00083,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
+Erforderliches Messprodukt der Messlokation,56,SG29,LIN,1229,,Messlokation,,,Z19,,,Erforderliches Messprodukt der Messlokation,64,SG29,LIN,1229,00083,Messlokation,,,Z19,
+Erforderliches Messprodukt der Messlokation,57,SG29,PIA,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,65,SG29,PIA,,00084,,,,Muss,
+Erforderliches Messprodukt der Messlokation,58,SG29,PIA,4347,,,,,5,,,Erforderliches Messprodukt der Messlokation,66,SG29,PIA,4347,00084,,,,5,
+Erforderliches Messprodukt der Messlokation,59,SG29,PIA,7140,,,,Messprodukt-Code,X ([100] ∧ [492]) ⊻ ([111] ∧ [493]),"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte
+[111] Messprodukt-Code aus dem Kapitel 3 ""Codeliste der Standard-Messprodukte Gas"" der Codeliste der Messprodukte
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Erforderliches Messprodukt der Messlokation,67,SG29,PIA,7140,00084,,,Messprodukt-Code,X ([100] ∧ [492]) ⊻ ([111] ∧ [493]),"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Konfigurationen
+[111] Messprodukt-Code aus dem Kapitel 3 ""Codeliste der Standard-Messprodukte Gas"" der Codeliste der Konfigurationen
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Erforderliches Messprodukt der Messlokation,60,SG29,PIA,7143,,Z11,,Messprodukt,X,,,Erforderliches Messprodukt der Messlokation,68,SG29,PIA,7143,00084,Z11,,Messprodukt,X,
+Weitere Beschreibung erforderliches Messprodukt,61,SG30,,,,,,,Muss [7] ∧ [492],"[7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Weitere Beschreibung erforderliches Messprodukt,69,SG30,,,,,,,Muss [7] ∧ [492],"[7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
+Weitere Beschreibung erforderliches Messprodukt,62,SG30,CCI,,,,,,Muss,,,Weitere Beschreibung erforderliches Messprodukt,70,SG30,CCI,,00085,,,,Muss,
+Weitere Beschreibung erforderliches Messprodukt,63,SG30,CCI,7059,,erforderlicher Wert,,,Z35,,,Weitere Beschreibung erforderliches Messprodukt,71,SG30,CCI,7059,00085,erforderlicher Wert,,,Z35,
+Notwendigkeit einer zweiten Messung,64,SG30,CAV,,,,,,Muss,,,Notwendigkeit einer zweiten Messung,72,SG30,CAV,,00086,,,,Muss,
+Notwendigkeit einer zweiten Messung,65,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,,,Notwendigkeit einer zweiten Messung,73,SG30,CAV,7111,00086,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,
+Notwendigkeit einer zweiten Messung,66,SG30,CAV,7110,,Z06,,vorhanden,X,,,Notwendigkeit einer zweiten Messung,74,SG30,CAV,7110,00086,Z06,,vorhanden,X,
+Notwendigkeit einer zweiten Messung,67,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Notwendigkeit einer zweiten Messung,75,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,68,SG30,CAV,,,,,,Muss,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,76,SG30,CAV,,00087,,,,Muss,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,69,SG30,CAV,7111,,Z88,,NB,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,77,SG30,CAV,7111,00087,Z88,,NB,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,70,SG30,CAV,7110,,Z06,,vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,78,SG30,CAV,7110,00087,Z06,,vorhanden,X,
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,71,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,79,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
+Zugeordnete Zählzeit,72,SG30,,,,,,,Muss [86] ∧ [492],"[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",REMOVED,,,,,,,,,,,
+Zugeordnete Zählzeit,73,SG30,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
+Zugeordnete Zählzeit,74,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,,REMOVED,,,,,,,,,,,
+Zugeordnete Zählzeit,75,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Zugeordnete Zählzeitdefinition,80,SG30,,,,,,,Muss [86] ∧ [492],"[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Konfigurationen Kapitel 2.3.1 ""Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit"" vorhanden ist
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
+,,,,,,,,,,,NEW,Zugeordnete Zählzeitdefinition,81,SG30,CCI,,00088,,,,Muss,
+,,,,,,,,,,,NEW,Zugeordnete Zählzeitdefinition,82,SG30,CCI,7059,00088,Messprodukt erforderlich,,,Z39 Z41,
+,,,,,,,,,,,NEW,Zugeordnete Zählzeitdefinition,83,SG30,CCI,7037,00088,,,Code der Zählzeitdefinition,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeitdefinition) vorhanden ist
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,84,SG29,,,,,,,Soll [145] ∧ [2060] ∧ [144],"[144] Wenn SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) vorhanden
+[145] Wenn für die Steuerbare Ressource in SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) DE1154, das Produkt bestellt werden soll
+[2060] Pro Nachricht ist die SG29 LIN+Z64 (Erforderliches Produkt Schaltzeitdefinitionen) maximal einmal anzugeben"
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,85,SG29,LIN,,00096,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,86,SG29,LIN,1082,00096,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,87,SG29,LIN,1229,00096,Schaltzeitdefinitionen,,,Z64,
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,88,SG29,PIA,,00097,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,89,SG29,PIA,4347,00097,,,,5,
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,90,SG29,PIA,7140,00097,,,Produkt-Code,X [125],"[125] Es sind nur die Konfigurations-Produkte erlaubt, die in der Codeliste der Konfigurationen im Kapitel 4.1 „Konfigurationsprodukte Schaltzeitdefinition“ enthalten sind."
+,,,,,,,,,,,NEW,Erforderliches Produkt Schaltzeitdefinitionen,91,SG29,PIA,7143,00097,Z12,,Konfigurationsprodukt,X,
+,,,,,,,,,,,NEW,Zugeordnete Schaltzeitdefinition,92,SG30,,,,,,,Muss,
+,,,,,,,,,,,NEW,Zugeordnete Schaltzeitdefinition,93,SG30,CCI,,00099,,,,Muss,
+,,,,,,,,,,,NEW,Zugeordnete Schaltzeitdefinition,94,SG30,CCI,7059,00099,Schaltzeitdefinition,,,Z52,
+,,,,,,,,,,,NEW,Zugeordnete Schaltzeitdefinition,95,SG30,CCI,7037,00099,,,"Merkmal, Code",X,
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,96,SG29,,,,,,,Soll ([145] ∧ [2061] ∧ [144]) ⊻ ([146] ∧ [2061] ∧ [132]),"[132] Wenn in LOC+172 DE3225 (Meldepunkt) die ID einer Netzlokation angegeben ist
+[144] Wenn SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) vorhanden
+[145] Wenn für die Steuerbare Ressource in SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) DE1154, das Produkt bestellt werden soll
+[146] Wenn für die Netzlokation in LOC+172 DE3225 (Meldepunkt), das Produkt bestellt werden soll
+[2061] Pro Nachricht ist die SG29 LIN++Z65 (Erforderliches Produkt Leistungskurvendefinitionen) maximal einmal anzugeben"
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,97,SG29,LIN,,00100,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,98,SG29,LIN,1082,00100,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,99,SG29,LIN,1229,00100,Leistungskurvendefinitionen,,,Z65,
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,100,SG29,PIA,,00101,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,101,SG29,PIA,4347,00101,,,,5,
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,102,SG29,PIA,7140,00101,,,Produkt-Code,X [126],"[126] Es sind nur die Konfigurations-Produkte erlaubt, die in der Codeliste der Konfigurationen im Kapitel 4.2 „Konfigurationsprodukte Leistungskurvendefinition“ enthalten sind."
+,,,,,,,,,,,NEW,Erforderliches Produkt Leistungskurvendefinitione n,103,SG29,PIA,7143,00101,Z12,,Konfigurationsprodukt,X,
+,,,,,,,,,,,NEW,Zugeordnete Leistungskurvendefinition,104,SG30,,,,,,,Muss,
+,,,,,,,,,,,NEW,Zugeordnete Leistungskurvendefinition,105,SG30,CCI,,00103,,,,Muss,
+,,,,,,,,,,,NEW,Zugeordnete Leistungskurvendefinition,106,SG30,CCI,7059,00103,Leistungskurvendefinition,,,Z53,
+,,,,,,,,,,,NEW,Zugeordnete Leistungskurvendefinition,107,SG30,CCI,7037,00103,,,"Merkmal, Code",X,
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,108,SG29,,,,,,,Soll ([145] ∧ [2062] ∧ [144]) ⊻ ([146] ∧ [2062] ∧ [132]),"[132] Wenn in LOC+172 DE3225 (Meldepunkt) die ID einer Netzlokation angegeben ist
+[144] Wenn SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) vorhanden
+[145] Wenn für die Steuerbare Ressource in SG3 RFF+Z38 (Referenz auf ID der Steuerbaren Ressource) DE1154, das Produkt bestellt werden soll
+[146] Wenn für die Netzlokation in LOC+172 DE3225 (Meldepunkt), das Produkt bestellt werden soll
+[2062] Pro Nachricht ist die SG29 LIN++Z66 (Erforderliches Produkt Ad-hoc-Steuerkanal) maximal einmal anzugeben"
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,109,SG29,LIN,,00104,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,110,SG29,LIN,1082,00104,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,111,SG29,LIN,1229,00104,Ad-hoc-Steuerkanal,,,Z66,
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,112,SG29,PIA,,00105,,,,Muss,
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,113,SG29,PIA,4347,00105,,,,5,
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,114,SG29,PIA,7140,00105,,,Produkt-Code,X [127],"[127] Es sind nur die Konfigurations-Produkte erlaubt, die in der Codeliste der Konfigurationen im Kapitel 4.3 „Konfigurationsprodukte Ad- Hoc-Steuerkanal“ enthalten sind."
+,,,,,,,,,,,NEW,Erforderliches Produkt Ad- hoc-Steuerkanal,115,SG29,PIA,7143,00105,Z12,,Konfigurationsprodukt,X,
+,,,,,,,,,,,NEW,Zieladresse URI,116,SG29,FTX,,00106,,,,Muss [565],[565] Hinweis: Für den Empfang der Mitteilung zum weiteren Vorgehen eines Steuerbefehls und der Antwort auf die Anweisung eines Steuerbefehls.
+,,,,,,,,,,,NEW,Zieladresse URI,117,SG29,FTX,4451,00106,,,,Z17,
+,,,,,,,,,,,NEW,Zieladresse URI,118,SG29,FTX,4440,00106,,,Zieladresse URI für Kommunikation Steuerbefehl,X,
+,,,,,,,,,,,NEW,Zertifikatsaussteller (Issuer),119,SG29,FTX,,00107,,,,Muss [565],[565] Hinweis: Für den Empfang der Mitteilung zum weiteren Vorgehen eines Steuerbefehls und der Antwort auf die Anweisung eines Steuerbefehls.
+,,,,,,,,,,,NEW,Zertifikatsaussteller (Issuer),120,SG29,FTX,4451,00107,,,,Z24,
+,,,,,,,,,,,NEW,Zertifikatsaussteller (Issuer),121,SG29,FTX,4440,00107,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4"
+,,,,,,,,,,,NEW,Zertifikatsnutzer (Subject),122,SG29,FTX,,00108,,,,Muss [565],[565] Hinweis: Für den Empfang der Mitteilung zum weiteren Vorgehen eines Steuerbefehls und der Antwort auf die Anweisung eines Steuerbefehls.
+,,,,,,,,,,,NEW,Zertifikatsnutzer (Subject),123,SG29,FTX,4451,00108,,,,Z23,
+,,,,,,,,,,,NEW,Zertifikatsnutzer (Subject),124,SG29,FTX,4440,00108,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4"
+Abschnitts-Kontrollsegment,76,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,125,,UNS,,00123,,,,Muss,
+Abschnitts-Kontrollsegment,77,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,126,,UNS,0081,00123,und Summenteil,,,S,
+Nachrichten-Endesegment,78,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,127,,UNT,,00125,,,,Muss,
+Nachrichten-Endesegment,79,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,128,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,80,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,129,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,

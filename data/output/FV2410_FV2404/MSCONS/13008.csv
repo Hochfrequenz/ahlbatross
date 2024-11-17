@@ -1,0 +1,272 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,,,Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,
+Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,,Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,
+Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,,,Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,
+Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,,,Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,
+Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,
+Nutzdaten-Kopfsegment,5,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,,,Nutzdaten-Kopfsegment,5,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,
+Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,,,Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,
+Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,
+Nutzdaten-Kopfsegment,8,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,,,Nutzdaten-Kopfsegment,8,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,
+Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,,,Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,
+Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,,,Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,
+Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind.",,Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind."
+Nutzdaten-Kopfsegment,12,,UNB,0026,00002,Zeitraum,,,TL,,,Nutzdaten-Kopfsegment,12,,UNB,0026,00002,Zeitraum,,,TL,
+Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,,,Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,
+Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,,,Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,
+Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,,,Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,
+Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,20,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,20,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,21,,BGM,1001,00004,7,,Prozessdatenbericht,X,,,Beginn der Nachricht,21,,BGM,1001,00004,7,,Prozessdatenbericht,X,
+Beginn der Nachricht,22,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,22,,BGM,1004,00004,,,Dokumentennummer,X,
+Beginn der Nachricht,23,,BGM,1225,00004,,,,9,,,Beginn der Nachricht,23,,BGM,1225,00004,,,,9,
+Nachrichtendatum,24,,DTM,,00005,,,,Muss,,,Nachrichtendatum,24,,DTM,,00005,,,,Muss,
+Nachrichtendatum,25,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,25,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,26,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,26,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,27,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,27,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+Referenzangaben,28,SG1,,,,,,,Soll [1],[1] Sofern per ORDERS angefordert,,Referenzangaben,28,SG1,,,,,,,Soll [1],[1] Sofern per ORDERS angefordert
+Referenzangaben,29,SG1,RFF,,00006,,,,Muss,,,Referenzangaben,29,SG1,RFF,,00006,,,,Muss,
+Referenzangaben,30,SG1,RFF,1153,00006,AGI,,Beantragungsnummer,X,,,Referenzangaben,30,SG1,RFF,1153,00006,AGI,,Beantragungsnummer,X,
+Referenzangaben,31,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [529] ∨ [553],"[529] Hinweis: Wert aus BGM+7 DE1004 der ORDERS mit der die Anforderung von Messwerten erfolgt ist.
+[553] Hinweis: Wert aus BGM+Z34 DE1004 der ORDERS mit der die Reklamation von Werten erfolgt ist",,Referenzangaben,31,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [529] ∨ [553],"[529] Hinweis: Wert aus BGM+7 DE1004 der ORDERS mit der die Anforderung von Messwerten erfolgt ist.
+[553] Hinweis: Wert aus BGM+Z34 DE1004 der ORDERS mit der die Reklamation von Werten erfolgt ist"
+Prüfidentifikator,32,SG1,,,,,,,Muss,,,Prüfidentifikator,32,SG1,,,,,,,Muss,
+Prüfidentifikator,33,SG1,RFF,,00009,,,,Muss,,,Prüfidentifikator,33,SG1,RFF,,00009,,,,Muss,
+Prüfidentifikator,34,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,34,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,35,SG1,RFF,1154,00009,13008,,Messwert Lastgang (Gas),X,,,Prüfidentifikator,35,SG1,RFF,1154,00009,13008,,Messwert Lastgang (Gas),X,
+MP-ID Absender,36,SG2,,,,,,,Muss,,,MP-ID Absender,36,SG2,,,,,,,Muss,
+MP-ID Absender,37,SG2,NAD,,00010,,,,Muss,,,MP-ID Absender,37,SG2,NAD,,00010,,,,Muss,
+MP-ID Absender,38,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,38,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,39,SG2,NAD,3039,00010,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas,,MP-ID Absender,39,SG2,NAD,3039,00010,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas
+MP-ID Absender,40,SG2,NAD,3055,00010,9,,GS1,X,,,MP-ID Absender,40,SG2,NAD,3055,00010,9,,GS1,X,
+MP-ID Absender,41,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,41,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,42,SG4,,,,,,,Kann,,,Ansprechpartner,42,SG4,,,,,,,Kann,
+Ansprechpartner,43,SG4,CTA,,00011,,,,Muss,,,Ansprechpartner,43,SG4,CTA,,00011,,,,Muss,
+Ansprechpartner,44,SG4,CTA,3139,00011,,,,IC,,,Ansprechpartner,44,SG4,CTA,3139,00011,,,,IC,
+Ansprechpartner,45,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,45,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,
+Kommunikationsverbindung,46,SG4,COM,,00012,,,,Muss,,,Kommunikationsverbindung,46,SG4,COM,,00012,,,,Muss,
+Kommunikationsverbindung,47,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[143]  wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,47,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[143]  wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,48,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,48,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,49,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,49,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,50,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,50,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,51,SG4,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,51,SG4,COM,3155,,AL,,Handy,X [1P0..1],
+Kommunikationsverbindung,52,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,52,SG4,COM,3155,,FX,,Telefax,X [1P0..1],
+MP-ID Empfänger,53,SG2,,,,,,,Muss,,,MP-ID Empfänger,53,SG2,,,,,,,Muss,
+MP-ID Empfänger,54,SG2,NAD,,00013,,,,Muss,,,MP-ID Empfänger,54,SG2,NAD,,00013,,,,Muss,
+MP-ID Empfänger,55,SG2,NAD,3035,00013,,,,MR,,,MP-ID Empfänger,55,SG2,NAD,3035,00013,,,,MR,
+MP-ID Empfänger,56,SG2,NAD,3039,00013,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas,,MP-ID Empfänger,56,SG2,NAD,3039,00013,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas
+MP-ID Empfänger,57,SG2,NAD,3055,00013,9,,GS1,X,,,MP-ID Empfänger,57,SG2,NAD,3055,00013,9,,GS1,X,
+MP-ID Empfänger,58,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,58,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Abschnitts-Kontrollsegment,59,,UNS,,00014,,,,Muss,,,Abschnitts-Kontrollsegment,59,,UNS,,00014,,,,Muss,
+Abschnitts-Kontrollsegment,60,,UNS,0081,00014,Positionsteil,,,D,,,Abschnitts-Kontrollsegment,60,,UNS,0081,00014,Positionsteil,,,D,
+Name und Adresse,61,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben,,Name und Adresse,61,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben
+Name und Adresse,62,SG5,NAD,,00015,,,,Muss,,,Name und Adresse,62,SG5,NAD,,00015,,,,Muss,
+Name und Adresse,63,SG5,NAD,3035,00015,,,,DP,,,Name und Adresse,63,SG5,NAD,3035,00015,,,,DP,
+Identifikationsangabe,64,SG6,,,,,,,Muss,,,Identifikationsangabe,64,SG6,,,,,,,Muss,
+Identifikationsangabe,65,SG6,LOC,,00017,,,,Muss,,,Identifikationsangabe,65,SG6,LOC,,00017,,,,Muss,
+Identifikationsangabe,66,SG6,LOC,3227,00017,,,,172,,,Identifikationsangabe,66,SG6,LOC,3227,00017,,,,172,
+Identifikationsangabe,67,SG6,LOC,3225,00017,,,Bezeichnung,X ([951] (([35] ∧ [36]) ∨ ([32] ∧ [42]) ∧ [510]) ∨ ([32] ∧ [36] ∧ [535]) ∨ ([32] ∧ [33] ∧ [519]))  ⊻ ([950] ([32] ∧ [33]) ∧ ([514] ∧ [520])) ⊻ ([950] [32] ∧ [141] ∧ [514]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[33] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[35] wenn MP-ID in SG2 NAD+MS in der Rolle MSB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[42] Wenn MP-ID in SG2 NAD+MR in der Rolle MSB
+[141] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV
+[510] Hinweis: Verwendung der ID der Messlokation
+[514] Hinweis: Verwendung der ID der Marktlokation
+[519] Hinweis: Nur wenn der gemessene Lastgang der Messlokation nicht dem Lastgang der Marktlokation 1:1 entspricht.
+[520] Hinweis: Wenn es sich um eine 1:1 Beziehung zwischen Messlokation und Marktlokation handelt und der gemessene Lastgang der Messlokation dem Lastgang der Marktlokation 1:1 entspricht, oder wenn der gemessene Lastgang nicht dem Lastgang der Marktlokation entspricht.
+[535] Hinweis: Verwendung der ID des Netzkoppelpunktes Strom/ Gas
+[950] Format: Marktlokations-ID
+[951] Format: Zählpunktbezeichnung",,Identifikationsangabe,67,SG6,LOC,3225,00017,,,Bezeichnung,X ([951] (([35] ∧ [36]) ∨ ([32] ∧ [42]) ∧ [510]) ∨ ([32] ∧ [36] ∧ [535]) ∨ ([32] ∧ [33] ∧ [519]))  ⊻ ([950] ([32] ∧ [33]) ∧ ([514] ∧ [520])) ⊻ ([950] [32] ∧ [141] ∧ [514]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[33] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[35] wenn MP-ID in SG2 NAD+MS in der Rolle MSB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[42] Wenn MP-ID in SG2 NAD+MR in der Rolle MSB
+[141] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV
+[510] Hinweis: Verwendung der ID der Messlokation
+[514] Hinweis: Verwendung der ID der Marktlokation
+[519] Hinweis: Nur wenn der gemessene Lastgang der Messlokation nicht dem Lastgang der Marktlokation 1:1 entspricht.
+[520] Hinweis: Wenn es sich um eine 1:1 Beziehung zwischen Messlokation und Marktlokation handelt und der gemessene Lastgang der Messlokation dem Lastgang der Marktlokation 1:1 entspricht, oder wenn der gemessene Lastgang nicht dem Lastgang der Marktlokation entspricht.
+[535] Hinweis: Verwendung der ID des Netzkoppelpunktes Strom/ Gas
+[950] Format: Marktlokations-ID
+[951] Format: Zählpunktbezeichnung"
+Beginn Messperiode Übertragungszeitraum,68,SG6,DTM,,00018,,,,Muss,,,Beginn Messperiode Übertragungszeitraum,68,SG6,DTM,,00018,,,,Muss,
+Beginn Messperiode Übertragungszeitraum,69,SG6,DTM,2005,00018,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Beginn Messperiode Übertragungszeitraum,69,SG6,DTM,2005,00018,163,,"Verarbeitung, Beginndatum/-zeit",X,
+Beginn Messperiode Übertragungszeitraum,70,SG6,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Beginn Messperiode Übertragungszeitraum,70,SG6,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Beginn Messperiode Übertragungszeitraum,71,SG6,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,,,Beginn Messperiode Übertragungszeitraum,71,SG6,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,
+Ende Messperiode Übertragungszeitraum,72,SG6,DTM,,00019,,,,Muss,,,Ende Messperiode Übertragungszeitraum,72,SG6,DTM,,00019,,,,Muss,
+Ende Messperiode Übertragungszeitraum,73,SG6,DTM,2005,00019,164,,"Verarbeitung, Endedatum/-zeit",X,,,Ende Messperiode Übertragungszeitraum,73,SG6,DTM,2005,00019,164,,"Verarbeitung, Endedatum/-zeit",X,
+Ende Messperiode Übertragungszeitraum,74,SG6,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Ende Messperiode Übertragungszeitraum,74,SG6,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Ende Messperiode Übertragungszeitraum,75,SG6,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,,,Ende Messperiode Übertragungszeitraum,75,SG6,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,
+lfd. Position,76,SG9,,,,,,,Muss,,,lfd. Position,76,SG9,,,,,,,Muss,
+lfd. Position,77,SG9,LIN,,00026,,,,Muss,,,lfd. Position,77,SG9,LIN,,00026,,,,Muss,
+lfd. Position,78,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,lfd. Position,78,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n
+Produktidentifikation,79,SG9,PIA,,00027,,,,Muss,,,Produktidentifikation,79,SG9,PIA,,00027,,,,Muss,
+Produktidentifikation,80,SG9,PIA,4347,00027,,,,5,,,Produktidentifikation,80,SG9,PIA,4347,00027,,,,5,
+Produktidentifikation,81,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501] ⊻ ([108] ∧ [36]),"[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[108] wenn SG9 PIA+5+7-b?:99. 41.16/7-b?:99.42.16 (b=Kanal: Wert gemäß Codeliste der OBIS- Kennzahlen und Medien) vorhanden
+[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",,Produktidentifikation,81,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501] ⊻ ([108] ∧ [36]),"[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[108] wenn SG9 PIA+5+7-b?:99. 41.16/7-b?:99.42.16 (b=Kanal: Wert gemäß Codeliste der OBIS- Kennzahlen und Medien) vorhanden
+[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind."
+Produktidentifikation,82,SG9,PIA,7143,00027,SRW,,OBIS-Kennzahl,X,,,Produktidentifikation,82,SG9,PIA,7143,00027,SRW,,OBIS-Kennzahl,X,
+Mengenangaben,83,SG10,,,,,,,Muss,,,Mengenangaben,83,SG10,,,,,,,Muss,
+Mengenangaben,84,SG10,QTY,,00028,,,,Muss ,,,Mengenangaben,84,SG10,QTY,,00028,,,,Muss ,
+Mengenangaben,85,SG10,QTY,6063,00028,220,,Wahrer Wert,X,,,Mengenangaben,85,SG10,QTY,6063,00028,220,,Wahrer Wert,X,
+Mengenangaben,86,SG10,QTY,6063,,67,,Ersatzwert,X ([32] ∧ ([33] ∨ [36] ∨ [42] ∨ [141])),,,Mengenangaben,86,SG10,QTY,6063,,67,,Ersatzwert,X ([32] ∧ ([33] ∨ [36] ∨ [42] ∨ [141])),
+Mengenangaben,87,SG10,QTY,6063,,201,,Vorschlagswert,X ([35] ∧ [36]) ,,,Mengenangaben,87,SG10,QTY,6063,,201,,Vorschlagswert,X ([35] ∧ [36]) ,
+Mengenangaben,88,SG10,QTY,6063,,20,,Nicht verwendbarer Wert,X ([35] ∧ [36])  X ([32] ∧ [33] ∧ [506]),,,Mengenangaben,88,SG10,QTY,6063,,20,,Nicht verwendbarer Wert,X ([35] ∧ [36])  X ([32] ∧ [33] ∧ [506]),
+Mengenangaben,89,SG10,QTY,6063,,187,,Prognosewert,X [32] ∧ ([33] ∨ [36] ∨ [141]) ∧ [11],,,Mengenangaben,89,SG10,QTY,6063,,187,,Prognosewert,X [32] ∧ ([33] ∨ [36] ∨ [141]) ∧ [11],
+Mengenangaben,90,SG10,QTY,6063,,Z18,,Vorläufiger Wert,X [32] ∧ ([33] ∨ [141]),"[11] Wenn SG9 PIA+5+7-0?:52.0. 22/7-0?:54.0.16/7-0?:54.0.20/7- 0?:54.0.22
+[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[33] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[35] wenn MP-ID in SG2 NAD+MS in der Rolle MSB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[42] Wenn MP-ID in SG2 NAD+MR in der Rolle MSB
+[141] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV
+[506] Hinweis: Nur bei Einspeisemengen und bei Gas zur stündlichen Energiedatenübermittlung",,Mengenangaben,90,SG10,QTY,6063,,Z18,,Vorläufiger Wert,X [32] ∧ ([33] ∨ [141]),"[11] Wenn SG9 PIA+5+7-0?:52.0. 22/7-0?:54.0.16/7-0?:54.0.20/7- 0?:54.0.22
+[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[33] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[35] wenn MP-ID in SG2 NAD+MS in der Rolle MSB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[42] Wenn MP-ID in SG2 NAD+MR in der Rolle MSB
+[141] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV
+[506] Hinweis: Nur bei Einspeisemengen und bei Gas zur stündlichen Energiedatenübermittlung"
+Mengenangaben,91,SG10,QTY,6060,00028,,,Menge,X ([902] ∧ [906]) ∨ ([902] ∧ [907] [125]) ∨ ([910] ∧ [907] [45]),"[45] Wenn SG9 PIA+5+7-b:99.41. 16 (b=Kanal: Wert gemäß Codeliste der OBIS-Kennzahlen und Medien) vorhanden
+[125] wenn SG9 PIA+5+7-0?:52. 0.22/7-b?:53.0.16/7-b?:55.0.16/ 7-b?:55.0.20/7-b?:55.0.22 (b=Kanal: Wert gemäß Codeliste der OBIS-Kennzahlen und Medien) vorhanden
+[902] Format: Möglicher Wert: ≥ 0
+[906] Format: max. 3 Nachkommastellen
+[907] Format: max. 4 Nachkommastellen
+[910] Format: Möglicher Wert: < 0 oder ≥ 0",,Mengenangaben,91,SG10,QTY,6060,00028,,,Menge,X ([902] ∧ [906]) ∨ ([902] ∧ [907] [125]) ∨ ([910] ∧ [907] [45]),"[45] Wenn SG9 PIA+5+7-b:99.41. 16 (b=Kanal: Wert gemäß Codeliste der OBIS-Kennzahlen und Medien) vorhanden
+[125] wenn SG9 PIA+5+7-0?:52. 0.22/7-b?:53.0.16/7-b?:55.0.16/ 7-b?:55.0.20/7-b?:55.0.22 (b=Kanal: Wert gemäß Codeliste der OBIS-Kennzahlen und Medien) vorhanden
+[902] Format: Möglicher Wert: ≥ 0
+[906] Format: max. 3 Nachkommastellen
+[907] Format: max. 4 Nachkommastellen
+[910] Format: Möglicher Wert: < 0 oder ≥ 0"
+Beginn Messperiode,92,SG10,DTM,,00029,,,,Muss,,,Beginn Messperiode,92,SG10,DTM,,00029,,,,Muss,
+Beginn Messperiode,93,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Beginn Messperiode,93,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,
+Beginn Messperiode,94,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Beginn Messperiode,94,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Beginn Messperiode,95,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,,Beginn Messperiode,95,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,
+Ende Messperiode,96,SG10,DTM,,00030,,,,Muss,,,Ende Messperiode,96,SG10,DTM,,00030,,,,Muss,
+Ende Messperiode,97,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,,Ende Messperiode,97,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,
+Ende Messperiode,98,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Ende Messperiode,98,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Ende Messperiode,99,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,,Ende Messperiode,99,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,
+Plausibilisierungshinweis,100,SG10,STS,,00035,,,,Soll ([92] ⊻ [93] ⊻ [94]) ∧ [126],"[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden
+[93] Wenn SG10 QTY DE6063 mit Wert 220 vorhanden
+[94] Wenn SG10 QTY DE6063 mit Wert 201 vorhanden
+[126] wenn Plausibilisierungshinweise vorliegen",,Plausibilisierungshinweis,100,SG10,STS,,00035,,,,Soll ([92] ⊻ [93] ⊻ [94]) ∧ [126],"[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden
+[93] Wenn SG10 QTY DE6063 mit Wert 220 vorhanden
+[94] Wenn SG10 QTY DE6063 mit Wert 201 vorhanden
+[126] wenn Plausibilisierungshinweise vorliegen"
+Plausibilisierungshinweis,101,SG10,STS,9015,00035,Z33,,Plausibilisierungshinweis,X,,,Plausibilisierungshinweis,101,SG10,STS,9015,00035,Z33,,Plausibilisierungshinweis,X,
+Plausibilisierungshinweis,102,SG10,STS,9013,00035,Z83,,Kundenselbstablesung,X [5P0..1],,,Plausibilisierungshinweis,102,SG10,STS,9013,00035,Z83,,Kundenselbstablesung,X [5P0..1],
+Plausibilisierungshinweis,103,SG10,STS,9013,,Z84,,Leerstand,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,,,Plausibilisierungshinweis,103,SG10,STS,9013,,Z84,,Leerstand,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,
+Plausibilisierungshinweis,104,SG10,STS,9013,,Z85,,Realer Zählerüberlauf geprüft,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,,,Plausibilisierungshinweis,104,SG10,STS,9013,,Z85,,Realer Zählerüberlauf geprüft,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,
+Plausibilisierungshinweis,105,SG10,STS,9013,,Z86,,Plausibel wg. Kontrollablesung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,,,Plausibilisierungshinweis,105,SG10,STS,9013,,Z86,,Plausibel wg. Kontrollablesung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,
+Plausibilisierungshinweis,106,SG10,STS,9013,,Z87,,Plausibel wg. Kundenhinweis,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,,,Plausibilisierungshinweis,106,SG10,STS,9013,,Z87,,Plausibel wg. Kundenhinweis,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,
+Plausibilisierungshinweis,107,SG10,STS,9013,,ZC3,,Austausch des Ersatzwertes,X [5P0..1] ,,,Plausibilisierungshinweis,107,SG10,STS,9013,,ZC3,,Austausch des Ersatzwertes,X [5P0..1] ,
+Plausibilisierungshinweis,108,SG10,STS,9013,,ZR5,,Rechenwert,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,,,Plausibilisierungshinweis,108,SG10,STS,9013,,ZR5,,Rechenwert,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ,
+Ersatzwertbildungsverfahre n,109,SG10,STS,,00036,,,,Muss [92] ⊻ [94],"[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden
+[94] Wenn SG10 QTY DE6063 mit Wert 201 vorhanden",,Ersatzwertbildungsverfahre n,109,SG10,STS,,00036,,,,Muss [92] ⊻ [94],"[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden
+[94] Wenn SG10 QTY DE6063 mit Wert 201 vorhanden"
+Ersatzwertbildungsverfahre n,110,SG10,STS,9015,00036,Z32,,Ersatzwertbildungsverfahren,X,,,Ersatzwertbildungsverfahre n,110,SG10,STS,9015,00036,Z32,,Ersatzwertbildungsverfahren,X,
+Ersatzwertbildungsverfahre n,111,SG10,STS,9013,00036,Z89,,Vergleichsmessung (nicht geeicht),X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,111,SG10,STS,9013,00036,Z89,,Vergleichsmessung (nicht geeicht),X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,112,SG10,STS,9013,,Z90,,Messwertnachbildung aus geeichten Werten,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,112,SG10,STS,9013,,Z90,,Messwertnachbildung aus geeichten Werten,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,113,SG10,STS,9013,,Z91,,Messwertnachbildung aus nicht geeichten Werten,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,113,SG10,STS,9013,,Z91,,Messwertnachbildung aus nicht geeichten Werten,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,114,SG10,STS,9013,,Z92,,Interpolation,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,114,SG10,STS,9013,,Z92,,Interpolation,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,115,SG10,STS,9013,,Z93,,Haltewert,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,115,SG10,STS,9013,,Z93,,Haltewert,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,116,SG10,STS,9013,,Z94,,Bilanzierung Netzabschnitt,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,116,SG10,STS,9013,,Z94,,Bilanzierung Netzabschnitt,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,117,SG10,STS,9013,,Z95,,Historische Messwerte,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,117,SG10,STS,9013,,Z95,,Historische Messwerte,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,118,SG10,STS,9013,,ZQ8,,Aufteilung,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,118,SG10,STS,9013,,ZQ8,,Aufteilung,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,119,SG10,STS,9013,,ZQ9,,Verwendung von Werten des Störmengenzählwerks,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,119,SG10,STS,9013,,ZQ9,,Verwendung von Werten des Störmengenzählwerks,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,120,SG10,STS,9013,,ZR0,,Umgangs- und Korrekturmengen,X [4P0..1] ⊻ [6P0..1],,,Ersatzwertbildungsverfahre n,120,SG10,STS,9013,,ZR0,,Umgangs- und Korrekturmengen,X [4P0..1] ⊻ [6P0..1],
+Ersatzwertbildungsverfahre n,121,SG10,STS,9013,,ZS0,,Ersatzwertbildungsverfahren gemäß Angaben auf Ebene der Messlokation,X ([46] ∧ [568]) ⊻ ([32] ∧ [36] ∧ [572]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[46] Wenn Wert in SG6 LOC+172 DE3225 genau 11 Stellen
+[568] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung zwischen Markt- und Messlokation handelt und auf Ebene der Messlokation unterschiedliche Ersatzwertbildungsverfahren verwendet und kommuniziert wurden.
+[572] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung handelt und auf Ebene der Netzkopplungspunkte unterschiedliche Ersatzwertbildungsverfahren vorliegen und kommuniziert wurden.",,Ersatzwertbildungsverfahre n,121,SG10,STS,9013,,ZS0,,Ersatzwertbildungsverfahren gemäß Angaben auf Ebene der Messlokation,X ([46] ∧ [568]) ⊻ ([32] ∧ [36] ∧ [572]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[46] Wenn Wert in SG6 LOC+172 DE3225 genau 11 Stellen
+[568] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung zwischen Markt- und Messlokation handelt und auf Ebene der Messlokation unterschiedliche Ersatzwertbildungsverfahren verwendet und kommuniziert wurden.
+[572] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung handelt und auf Ebene der Netzkopplungspunkte unterschiedliche Ersatzwertbildungsverfahren vorliegen und kommuniziert wurden."
+Korrekturgrund,122,SG10,STS,,00037,,,,Soll [127] ∧ [560],"[127] wenn ein Korrekturgrund anzugeben ist
+[560] Hinweis: Ein Korrekturgrund ist anzugeben, wenn: 1. ein bereits an den MP übermittelter vorläufiger Wert durch einen Ersatzwert ersetzt wird, oder  2. ein bereits an den MP übermittelter Ersatzwert durch einen Ersatzwert ersetzt wird, oder  3. ein bereits an den MP übermittelter wahrer Wert durch einen Ersatzwert ersetzt wird, oder 4. ein bereits an den MP übermittelter wahrer Wert durch einen wahren Wert ersetzt wird.",,Korrekturgrund,122,SG10,STS,,00037,,,,Soll [127] ∧ [560],"[127] wenn ein Korrekturgrund anzugeben ist
+[560] Hinweis: Ein Korrekturgrund ist anzugeben, wenn: 1. ein bereits an den MP übermittelter vorläufiger Wert durch einen Ersatzwert ersetzt wird, oder  2. ein bereits an den MP übermittelter Ersatzwert durch einen Ersatzwert ersetzt wird, oder  3. ein bereits an den MP übermittelter wahrer Wert durch einen Ersatzwert ersetzt wird, oder 4. ein bereits an den MP übermittelter wahrer Wert durch einen wahren Wert ersetzt wird."
+Korrekturgrund,123,SG10,STS,9015,00037,Z34,,Korrekturgrund,X,,,Korrekturgrund,123,SG10,STS,9015,00037,Z34,,Korrekturgrund,X,
+Korrekturgrund,124,SG10,STS,9013,00037,Z74,,kein Zugang,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,124,SG10,STS,9013,00037,Z74,,kein Zugang,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,125,SG10,STS,9013,,Z75,,Kommunikationsstörung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,125,SG10,STS,9013,,Z75,,Kommunikationsstörung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,126,SG10,STS,9013,,Z76,,Netzausfall,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,126,SG10,STS,9013,,Z76,,Netzausfall,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,127,SG10,STS,9013,,Z78,,Gerätewechsel,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,127,SG10,STS,9013,,Z78,,Gerätewechsel,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,128,SG10,STS,9013,,Z80,,Gerät arbeitet außerhalb der Betriebsbedingungen,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,128,SG10,STS,9013,,Z80,,Gerät arbeitet außerhalb der Betriebsbedingungen,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,129,SG10,STS,9013,,Z81,,Messeinrichtung gestört/ defekt,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,129,SG10,STS,9013,,Z81,,Messeinrichtung gestört/ defekt,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,130,SG10,STS,9013,,Z82,,Unsicherheit Messung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,130,SG10,STS,9013,,Z82,,Unsicherheit Messung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,131,SG10,STS,9013,,Z98,,Berücksichtigung Störmengenzählwerk,X [4P0..1] ⊻ [6P0..1],,,Korrekturgrund,131,SG10,STS,9013,,Z98,,Berücksichtigung Störmengenzählwerk,X [4P0..1] ⊻ [6P0..1],
+Korrekturgrund,132,SG10,STS,9013,,Z99,,Mengenumwertung unvollständig,X [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,132,SG10,STS,9013,,Z99,,Mengenumwertung unvollständig,X [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,133,SG10,STS,9013,,ZA0,,Uhrzeit gestellt / Synchronisation,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,133,SG10,STS,9013,,ZA0,,Uhrzeit gestellt / Synchronisation,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,134,SG10,STS,9013,,ZA1,,Messwert unplausibel,X [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,134,SG10,STS,9013,,ZA1,,Messwert unplausibel,X [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,135,SG10,STS,9013,,ZA4,,Fehlerhafte Ablesung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,135,SG10,STS,9013,,ZA4,,Fehlerhafte Ablesung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,136,SG10,STS,9013,,ZA5,,Änderung der Berechnung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,136,SG10,STS,9013,,ZA5,,Änderung der Berechnung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,137,SG10,STS,9013,,ZA6,,Umbau der Messlokation,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,137,SG10,STS,9013,,ZA6,,Umbau der Messlokation,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,138,SG10,STS,9013,,ZA7,,Datenbearbeitungsfehler,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,138,SG10,STS,9013,,ZA7,,Datenbearbeitungsfehler,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,139,SG10,STS,9013,,ZA8,,Brennwertkorrektur,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,139,SG10,STS,9013,,ZA8,,Brennwertkorrektur,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,140,SG10,STS,9013,,ZA9,,Z-Zahl-Korrektur,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,140,SG10,STS,9013,,ZA9,,Z-Zahl-Korrektur,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,141,SG10,STS,9013,,ZB0,,Störung / Defekt Messeinrichtung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,141,SG10,STS,9013,,ZB0,,Störung / Defekt Messeinrichtung,X [4P0..1] ⊻ [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,142,SG10,STS,9013,,ZC4,,Impulswertigkeit nicht ausreichend,X [4P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,142,SG10,STS,9013,,ZC4,,Impulswertigkeit nicht ausreichend,X [4P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,143,SG10,STS,9013,,ZJ9,,Energiemenge aus dem ungepairten Zeitintervall,X [4P0..1] ⊻ [5P0..1],,,Korrekturgrund,143,SG10,STS,9013,,ZJ9,,Energiemenge aus dem ungepairten Zeitintervall,X [4P0..1] ⊻ [5P0..1],
+Korrekturgrund,144,SG10,STS,9013,,ZR1,,Wartungsarbeiten an geeichtem Messgerät,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,144,SG10,STS,9013,,ZR1,,Wartungsarbeiten an geeichtem Messgerät,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,145,SG10,STS,9013,,ZR2,,gestörte Werte,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,145,SG10,STS,9013,,ZR2,,gestörte Werte,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,146,SG10,STS,9013,,ZR3,,Wartungsarbeiten an eichrechtskonformen Messgeräten,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,146,SG10,STS,9013,,ZR3,,Wartungsarbeiten an eichrechtskonformen Messgeräten,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Korrekturgrund,147,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Korrekturgrund,147,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
+Grund der Ersatzwertbildung,148,SG10,STS,,00038,,,,Muss [92],[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden,,Grund der Ersatzwertbildung,148,SG10,STS,,00038,,,,Muss [92],[92] Wenn SG10 QTY DE6063 mit Wert 67 vorhanden
+Grund der Ersatzwertbildung,149,SG10,STS,9015,00038,Z40,,Grund der Ersatzwertbildung,X,,,Grund der Ersatzwertbildung,149,SG10,STS,9015,00038,Z40,,Grund der Ersatzwertbildung,X,
+Grund der Ersatzwertbildung,150,SG10,STS,9013,00038,Z74,,kein Zugang,X [4P0..1],,,Grund der Ersatzwertbildung,150,SG10,STS,9013,00038,Z74,,kein Zugang,X [4P0..1],
+Grund der Ersatzwertbildung,151,SG10,STS,9013,,Z75,,Kommunikationsstörung,X [4P0..1],,,Grund der Ersatzwertbildung,151,SG10,STS,9013,,Z75,,Kommunikationsstörung,X [4P0..1],
+Grund der Ersatzwertbildung,152,SG10,STS,9013,,Z76,,Netzausfall,X [4P0..1],,,Grund der Ersatzwertbildung,152,SG10,STS,9013,,Z76,,Netzausfall,X [4P0..1],
+Grund der Ersatzwertbildung,153,SG10,STS,9013,,Z78,,Gerätewechsel,X [4P0..1],,,Grund der Ersatzwertbildung,153,SG10,STS,9013,,Z78,,Gerätewechsel,X [4P0..1],
+Grund der Ersatzwertbildung,154,SG10,STS,9013,,Z80,,Gerät arbeitet außerhalb der Betriebsbedingungen,X [4P0..1],,,Grund der Ersatzwertbildung,154,SG10,STS,9013,,Z80,,Gerät arbeitet außerhalb der Betriebsbedingungen,X [4P0..1],
+Grund der Ersatzwertbildung,155,SG10,STS,9013,,Z81,,Messeinrichtung gestört/ defekt,X [4P0..1],,,Grund der Ersatzwertbildung,155,SG10,STS,9013,,Z81,,Messeinrichtung gestört/ defekt,X [4P0..1],
+Grund der Ersatzwertbildung,156,SG10,STS,9013,,Z82,,Unsicherheit Messung,X [4P0..1],,,Grund der Ersatzwertbildung,156,SG10,STS,9013,,Z82,,Unsicherheit Messung,X [4P0..1],
+Grund der Ersatzwertbildung,157,SG10,STS,9013,,Z98,,Berücksichtigung Störmengenzählwerk,X [4P0..1],,,Grund der Ersatzwertbildung,157,SG10,STS,9013,,Z98,,Berücksichtigung Störmengenzählwerk,X [4P0..1],
+Grund der Ersatzwertbildung,158,SG10,STS,9013,,Z99,,Mengenumwertung unvollständig,X [4P0..1],,,Grund der Ersatzwertbildung,158,SG10,STS,9013,,Z99,,Mengenumwertung unvollständig,X [4P0..1],
+Grund der Ersatzwertbildung,159,SG10,STS,9013,,ZA0,,Uhrzeit gestellt / Synchronisation,X [4P0..1],,,Grund der Ersatzwertbildung,159,SG10,STS,9013,,ZA0,,Uhrzeit gestellt / Synchronisation,X [4P0..1],
+Grund der Ersatzwertbildung,160,SG10,STS,9013,,ZA1,,Messwert unplausibel,X [4P0..1],,,Grund der Ersatzwertbildung,160,SG10,STS,9013,,ZA1,,Messwert unplausibel,X [4P0..1],
+Grund der Ersatzwertbildung,161,SG10,STS,9013,,ZA4,,Fehlerhafte Ablesung,X [4P0..1],,,Grund der Ersatzwertbildung,161,SG10,STS,9013,,ZA4,,Fehlerhafte Ablesung,X [4P0..1],
+Grund der Ersatzwertbildung,162,SG10,STS,9013,,ZA5,,Änderung der Berechnung,X [4P0..1],,,Grund der Ersatzwertbildung,162,SG10,STS,9013,,ZA5,,Änderung der Berechnung,X [4P0..1],
+Grund der Ersatzwertbildung,163,SG10,STS,9013,,ZA6,,Umbau der Messlokation,X [4P0..1],,,Grund der Ersatzwertbildung,163,SG10,STS,9013,,ZA6,,Umbau der Messlokation,X [4P0..1],
+Grund der Ersatzwertbildung,164,SG10,STS,9013,,ZA7,,Datenbearbeitungsfehler,X [4P0..1],,,Grund der Ersatzwertbildung,164,SG10,STS,9013,,ZA7,,Datenbearbeitungsfehler,X [4P0..1],
+Grund der Ersatzwertbildung,165,SG10,STS,9013,,ZB0,,Störung / Defekt Messeinrichtung,X [4P0..1],,,Grund der Ersatzwertbildung,165,SG10,STS,9013,,ZB0,,Störung / Defekt Messeinrichtung,X [4P0..1],
+Grund der Ersatzwertbildung,166,SG10,STS,9013,,ZC4,,Impulswertigkeit nicht ausreichend,X [4P0..1],,,Grund der Ersatzwertbildung,166,SG10,STS,9013,,ZC4,,Impulswertigkeit nicht ausreichend,X [4P0..1],
+Grund der Ersatzwertbildung,167,SG10,STS,9013,,ZR1,,Wartungsarbeiten an geeichtem Messgerät,X [4P0..1],,,Grund der Ersatzwertbildung,167,SG10,STS,9013,,ZR1,,Wartungsarbeiten an geeichtem Messgerät,X [4P0..1],
+Grund der Ersatzwertbildung,168,SG10,STS,9013,,ZR2,,gestörte Werte,X [4P0..1],,,Grund der Ersatzwertbildung,168,SG10,STS,9013,,ZR2,,gestörte Werte,X [4P0..1],
+Grund der Ersatzwertbildung,169,SG10,STS,9013,,ZR3,,Wartungsarbeiten an eichrechtskonformen Messgeräten,X [4P0..1],,,Grund der Ersatzwertbildung,169,SG10,STS,9013,,ZR3,,Wartungsarbeiten an eichrechtskonformen Messgeräten,X [4P0..1],
+Grund der Ersatzwertbildung,170,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1],,,Grund der Ersatzwertbildung,170,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1],
+Grund der Ersatzwertbildung,171,SG10,STS,9013,,ZS9,,Grund der Ersatzwertbildung gemäß Angaben auf Ebene der Messlokation,X ([46] ∧ [570]) ⊻ ([32] ∧ [36] ∧ [571]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[46] Wenn Wert in SG6 LOC+172 DE3225 genau 11 Stellen
+[570] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung zwischen Markt- und Messlokation handelt und auf Ebene der Messlokation unterschiedliche Gründe für die Ersatzwertbildung vorliegen und kommuniziert wurden.
+[571] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung handelt und auf Ebene der Netzkopplungspunkte unterschiedliche Gründe für die Ersatzwertbildung vorliegen und kommuniziert wurden.",,Grund der Ersatzwertbildung,171,SG10,STS,9013,,ZS9,,Grund der Ersatzwertbildung gemäß Angaben auf Ebene der Messlokation,X ([46] ∧ [570]) ⊻ ([32] ∧ [36] ∧ [571]),"[32] wenn MP-ID in SG2 NAD+MS in der Rolle NB
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[46] Wenn Wert in SG6 LOC+172 DE3225 genau 11 Stellen
+[570] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung zwischen Markt- und Messlokation handelt und auf Ebene der Messlokation unterschiedliche Gründe für die Ersatzwertbildung vorliegen und kommuniziert wurden.
+[571] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung handelt und auf Ebene der Netzkopplungspunkte unterschiedliche Gründe für die Ersatzwertbildung vorliegen und kommuniziert wurden."
+Gasqualität,172,SG10,STS,,00039,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt,,Gasqualität,172,SG10,STS,,00039,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt
+Gasqualität,173,SG10,STS,9015,00039,Z31,,Gasqualität,X,,,Gasqualität,173,SG10,STS,9015,00039,Z31,,Gasqualität,X,
+Gasqualität,174,SG10,STS,9013,00039,ZG3,,Umstellung Gasqualität,X,,,Gasqualität,174,SG10,STS,9013,00039,ZG3,,Umstellung Gasqualität,X,
+Nachrichten-Endesegment,175,,UNT,,00041,,,,Muss,,,Nachrichten-Endesegment,175,,UNT,,00041,,,,Muss,
+Nachrichten-Endesegment,176,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,176,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,177,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,177,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,
+Nutzdaten-Endesegment,178,,UNZ,,00042,,,,Muss,,,Nutzdaten-Endesegment,178,,UNZ,,00042,,,,Muss,
+Nutzdaten-Endesegment,179,,UNZ,0036,00042,,,Datenaustauschzähler,X,,,Nutzdaten-Endesegment,179,,UNZ,0036,00042,,,Datenaustauschzähler,X,
+Nutzdaten-Endesegment,180,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,,Nutzdaten-Endesegment,180,,UNZ,0020,00042,,,Datenaustauschreferenz,X,

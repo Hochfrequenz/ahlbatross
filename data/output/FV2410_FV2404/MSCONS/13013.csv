@@ -1,0 +1,122 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,,,Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,
+Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,,Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,
+Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,,,Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,
+Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,,,Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,
+Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,
+Nutzdaten-Kopfsegment,5,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,,,Nutzdaten-Kopfsegment,5,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,
+Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,,,Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,
+Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,
+Nutzdaten-Kopfsegment,8,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,,,Nutzdaten-Kopfsegment,8,,UNB,0007,,502,,"DE, DVGW Service & Consult GmbH",X,
+Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,,,Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,
+Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,,,Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,
+Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind.",,Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind."
+Nutzdaten-Kopfsegment,12,,UNB,0026,00002,EM,,Energiemenge,X,,,Nutzdaten-Kopfsegment,12,,UNB,0026,00002,EM,,Energiemenge,X,
+Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,,,Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,
+Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den,X,,,Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den,X,
+Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,,,Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,
+Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Nachrichtenkopfsegment,20,,UNH,0068,00003,,,Allgemeine Zuordnungs-Referenz,Soll [22],[22] Wenn Aufteilung vorhanden,,Nachrichtenkopfsegment,20,,UNH,0068,00003,,,Allgemeine Zuordnungs-Referenz,Soll [22],[22] Wenn Aufteilung vorhanden
+Nachrichtenkopfsegment,21,,UNH,0070,00003,,,Übermittlungsfolgenummer,X,,,Nachrichtenkopfsegment,21,,UNH,0070,00003,,,Übermittlungsfolgenummer,X,
+Nachrichtenkopfsegment,22,,UNH,0073,00003,C,,Beginn,Muss [23],,,Nachrichtenkopfsegment,22,,UNH,0073,00003,C,,Beginn,Muss [23],
+Nachrichtenkopfsegment,23,,UNH,0073,,F,,Ende,Soll [24],"[23] Wenn UNH DE0070 mit 1 vorhanden
+[24] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsnummer",,Nachrichtenkopfsegment,23,,UNH,0073,,F,,Ende,Soll [24],"[23] Wenn UNH DE0070 mit 1 vorhanden
+[24] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsnummer"
+Beginn der Nachricht,24,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,24,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,25,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,,,Beginn der Nachricht,25,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,
+Beginn der Nachricht,26,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,26,,BGM,1004,00004,,,Dokumentennummer,X,
+Beginn der Nachricht,27,,BGM,1225,00004,9,,Original,X,,,Beginn der Nachricht,27,,BGM,1225,00004,9,,Original,X,
+Nachrichtendatum,28,,DTM,,00005,,,,Muss,,,Nachrichtendatum,28,,DTM,,00005,,,,Muss,
+Nachrichtendatum,29,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,29,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,30,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,30,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,31,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,31,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+Referenzangaben,32,SG1,,,,,,,Muss,"[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[81] Wenn MP-ID in SG2 NAD+MS in der Rolle ÜNB",,Referenzangaben,32,SG1,,,,,,,Muss,"[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB
+[81] Wenn MP-ID in SG2 NAD+MS in der Rolle ÜNB"
+Referenzangaben,33,SG1,RFF,,00006,,,,Muss,,,Referenzangaben,33,SG1,RFF,,00006,,,,Muss,
+Referenzangaben,34,SG1,RFF,1153,00006,AGI,,Beantragungsnummer,X,,,Referenzangaben,34,SG1,RFF,1153,00006,AGI,,Beantragungsnummer,X,
+Referenzangaben,35,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [526],"[526] Hinweis: Wert aus BGM+Z24 DE1004 der ORDERS mit der die Allokationsliste bestellt wurde.
+[543] Hinweis: Wert aus BGM+Z23 DE1004 der ORDERS mit der die bilanzierte Menge bestellt wurde.",,Referenzangaben,35,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [526],"[526] Hinweis: Wert aus BGM+Z24 DE1004 der ORDERS mit der die Allokationsliste bestellt wurde.
+[543] Hinweis: Wert aus BGM+Z23 DE1004 der ORDERS mit der die bilanzierte Menge bestellt wurde."
+Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),36,SG1,DTM,,00007,,,,Muss,,,Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),36,SG1,DTM,,00007,,,,Muss,
+Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),37,SG1,DTM,2005,00007,293,,Fertigstellungsdatum/- zeit,X,,,Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),37,SG1,DTM,2005,00007,293,,Fertigstellungsdatum/- zeit,X,
+Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),38,SG1,DTM,2380,00007,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),38,SG1,DTM,2380,00007,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),39,SG1,DTM,2379,00007,304,,CCYYMMDDHHMMSSZZZ,X,,,Versionsangabe marktlokationsscharfe Allokationsliste Gas (MMMA),39,SG1,DTM,2379,00007,304,,CCYYMMDDHHMMSSZZZ,X,
+Prüfidentifikator,40,SG1,,,,,,,Muss,,,Prüfidentifikator,40,SG1,,,,,,,Muss,
+Prüfidentifikator,41,SG1,RFF,,00009,,,,Muss,,,Prüfidentifikator,41,SG1,RFF,,00009,,,,Muss,
+Prüfidentifikator,42,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,42,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,43,SG1,RFF,1154,00009,13013,,Marktlokationsscharfe Allokationsliste Gas (MMMA),X,,,Prüfidentifikator,43,SG1,RFF,1154,00009,13013,,Marktlokationsscharfe Allokationsliste Gas (MMMA),X,
+MP-ID Absender,44,SG2,,,,,,,Muss,,,MP-ID Absender,44,SG2,,,,,,,Muss,
+MP-ID Absender,45,SG2,NAD,,00010,,,,Muss,,,MP-ID Absender,45,SG2,NAD,,00010,,,,Muss,
+MP-ID Absender,46,SG2,NAD,3035,00010,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,46,SG2,NAD,3035,00010,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,47,SG2,NAD,3039,00010,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas,,MP-ID Absender,47,SG2,NAD,3039,00010,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas
+MP-ID Absender,48,SG2,NAD,3055,00010,9,,GS1,X,,,MP-ID Absender,48,SG2,NAD,3055,00010,9,,GS1,X,
+MP-ID Absender,49,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,49,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,50,SG4,,,,,,,Kann,,,Ansprechpartner,50,SG4,,,,,,,Kann,
+Ansprechpartner,51,SG4,CTA,,00011,,,,Muss,,,Ansprechpartner,51,SG4,CTA,,00011,,,,Muss,
+Ansprechpartner,52,SG4,CTA,3139,00011,IC,,Informationsstelle,X,,,Ansprechpartner,52,SG4,CTA,3139,00011,IC,,Informationsstelle,X,
+Ansprechpartner,53,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,53,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,
+Kommunikationsverbindung,54,SG4,COM,,00012,,,,Muss,,,Kommunikationsverbindung,54,SG4,COM,,00012,,,,Muss,
+Kommunikationsverbindung,55,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[143]  wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,55,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[143]  wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,56,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,56,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,57,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,57,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,58,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,58,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,59,SG4,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,59,SG4,COM,3155,,AL,,Handy,X [1P0..1],
+Kommunikationsverbindung,60,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,60,SG4,COM,3155,,FX,,Telefax,X [1P0..1],
+MP-ID Empfänger,61,SG2,,,,,,,Muss,,,MP-ID Empfänger,61,SG2,,,,,,,Muss,
+MP-ID Empfänger,62,SG2,NAD,,00013,,,,Muss,,,MP-ID Empfänger,62,SG2,NAD,,00013,,,,Muss,
+MP-ID Empfänger,63,SG2,NAD,3035,00013,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,63,SG2,NAD,3035,00013,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,64,SG2,NAD,3039,00013,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas,,MP-ID Empfänger,64,SG2,NAD,3039,00013,,,MP-ID,X [118],[118] Nur MP-ID aus Sparte Gas
+MP-ID Empfänger,65,SG2,NAD,3055,00013,9,,GS1,X,,,MP-ID Empfänger,65,SG2,NAD,3055,00013,9,,GS1,X,
+MP-ID Empfänger,66,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,66,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Abschnitts-Kontrollsegment,67,,UNS,,00014,,,,Muss,,,Abschnitts-Kontrollsegment,67,,UNS,,00014,,,,Muss,
+Abschnitts-Kontrollsegment,68,,UNS,0081,00014,D,,Trennung von Kopf- und Positionsteil,X,,,Abschnitts-Kontrollsegment,68,,UNS,0081,00014,D,,Trennung von Kopf- und Positionsteil,X,
+Name und Adresse,69,SG5,,,,,,,Muss,[2001] Segmentgruppe ist nur einmal je UNH anzugeben,,Name und Adresse,69,SG5,,,,,,,Muss,[2001] Segmentgruppe ist nur einmal je UNH anzugeben
+Name und Adresse,70,SG5,NAD,,00015,,,,Muss,,,Name und Adresse,70,SG5,NAD,,00015,,,,Muss,
+Name und Adresse,71,SG5,NAD,3035,00015,DP,,Lieferanschrift,X,,,Name und Adresse,71,SG5,NAD,3035,00015,DP,,Lieferanschrift,X,
+Identifikationsangabe,72,SG6,,,,,,,Muss,,,Identifikationsangabe,72,SG6,,,,,,,Muss,
+Identifikationsangabe,73,SG6,LOC,,00017,,,,Muss,,,Identifikationsangabe,73,SG6,LOC,,00017,,,,Muss,
+Identifikationsangabe,74,SG6,LOC,3227,00017,172,,Meldepunkt,X,,,Identifikationsangabe,74,SG6,LOC,3227,00017,172,,Meldepunkt,X,
+Identifikationsangabe,75,SG6,LOC,3225,00017,,,Bezeichnung,X [950] [514],"[514] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",,Identifikationsangabe,75,SG6,LOC,3225,00017,,,Bezeichnung,X [950] [514],"[514] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID"
+Bilanzierungsmonat,76,SG6,DTM,,00020,,,,Muss,,,Bilanzierungsmonat,76,SG6,DTM,,00020,,,,Muss,
+Bilanzierungsmonat,77,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, - zeit, -periode",X,,,Bilanzierungsmonat,77,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, - zeit, -periode",X,
+Bilanzierungsmonat,78,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Bilanzierungsmonat,78,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Bilanzierungsmonat,79,SG6,DTM,2379,00020,610,,CCYYMM,X,,,Bilanzierungsmonat,79,SG6,DTM,2379,00020,610,,CCYYMM,X,
+lfd. Position,80,SG9,,,,,,,Muss,,,lfd. Position,80,SG9,,,,,,,Muss,
+lfd. Position,81,SG9,LIN,,00026,,,,Muss,,,lfd. Position,81,SG9,LIN,,00026,,,,Muss,
+lfd. Position,82,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,lfd. Position,82,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n
+Produktidentifikation,83,SG9,PIA,,00027,,,,Muss,,,Produktidentifikation,83,SG9,PIA,,00027,,,,Muss,
+Produktidentifikation,84,SG9,PIA,4347,00027,5,,Produktidentifikation,X,,,Produktidentifikation,84,SG9,PIA,4347,00027,5,,Produktidentifikation,X,
+Produktidentifikation,85,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS-Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",,Produktidentifikation,85,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS-Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind."
+Produktidentifikation,86,SG9,PIA,7143,00027,Z02,,BDEW OBIS-ähnliche Kennzahl,X,,,Produktidentifikation,86,SG9,PIA,7143,00027,Z02,,BDEW OBIS-ähnliche Kennzahl,X,
+Mengenangaben,87,SG10,,,,,,,Muss,,,Mengenangaben,87,SG10,,,,,,,Muss,
+Mengenangaben,88,SG10,QTY,,00028,,,,Muss,,,Mengenangaben,88,SG10,QTY,,00028,,,,Muss,
+Mengenangaben,89,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,,Mengenangaben,89,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,
+Mengenangaben,90,SG10,QTY,6060,00028,,,Menge,X [902] ∧ [906],"[902] Format: Möglicher Wert: ≥ 0
+[906] Format: max. 3 Nachkommastellen",,Mengenangaben,90,SG10,QTY,6060,00028,,,Menge,X [902] ∧ [906],"[902] Format: Möglicher Wert: ≥ 0
+[906] Format: max. 3 Nachkommastellen"
+Leistungsperiode,91,SG10,DTM,,00034,,,,Muss,,,Leistungsperiode,91,SG10,DTM,,00034,,,,Muss,
+Leistungsperiode,92,SG10,DTM,2005,00034,306,,Leistungsperiode,X,,,Leistungsperiode,92,SG10,DTM,2005,00034,306,,Leistungsperiode,X,
+Leistungsperiode,93,SG10,DTM,2380,00034,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Leistungsperiode,93,SG10,DTM,2380,00034,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Leistungsperiode,94,SG10,DTM,2379,00034,102,,CCYYMMDD,X,,,Leistungsperiode,94,SG10,DTM,2379,00034,102,,CCYYMMDD,X,
+Nachrichten-Endesegment,95,,UNT,,00041,,,,Muss,,,Nachrichten-Endesegment,95,,UNT,,00041,,,,Muss,
+Nachrichten-Endesegment,96,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,96,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,97,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,97,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,
+Nutzdaten-Endesegment,98,,UNZ,,00042,,,,Muss,,,Nutzdaten-Endesegment,98,,UNZ,,00042,,,,Muss,
+Nutzdaten-Endesegment,99,,UNZ,0036,00042,,,Datenaustauschzähler,X,,,Nutzdaten-Endesegment,99,,UNZ,0036,00042,,,Datenaustauschzähler,X,
+Nutzdaten-Endesegment,100,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,,Nutzdaten-Endesegment,100,,UNZ,0020,00042,,,Datenaustauschreferenz,X,

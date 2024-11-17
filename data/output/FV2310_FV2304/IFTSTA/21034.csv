@@ -1,0 +1,73 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedinung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,IFTSTA,,Multimodaler Statusbericht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,IFTSTA,,Multimodaler Statusbericht,X,Multimodaler Statusbericht
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,D,,Entwurfs-Version,X,Entwurfs-Version
+Nachrichten-Kopfsegment,4,,UNH,0054,,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,18A,,Ausgabe 2018 - A,X,Ausgabe 2018 - A
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,UN,,UN/CEFACT,X,UN/CEFACT
+Nachrichten-Kopfsegment,6,,UNH,0057,,2.0d,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,2.0e,,Versionsnummer derzugrundeliegendenBDEW-Nachrichtenbeschreibung,X,Versionsnummer derzugrundeliegendenBDEW-Nachrichtenbeschreibung
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z33,,GPKE Meldung(en),X,,,Beginn der Nachricht,8,,BGM,1001,Z33,,GPKE Meldung(en),X,GPKE Meldung(en)
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,,,,,Muss,,,Dokumentendatum,10,,,,,,,Muss,
+Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,137,,Dokumenten-/Nachrichtendatum/-zeit,X,Dokumenten-/Nachrichtendatum/-zeit
+Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Dokumentendatum,12,,DTM,2380,,,"Datum oder Uhrzeit oderZeitspanne, Wert",X [931] [494],
+Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,303,,CCYYMMDDHHMMZZZ,X,CCYYMMDDHHMMZZZ
+MP-ID Empfänger,14,SG1,,,,,,,Muss,,,MP-ID Empfänger,14,SG1,,,,,,Muss,
+MP-ID Empfänger,15,SG1,NAD,,,,,,Muss,,,MP-ID Empfänger,15,SG1,,,,,,Muss,
+MP-ID Empfänger,16,SG1,NAD,3035,,,,,MR,,,MP-ID Empfänger,16,SG1,NAD,,,,,Muss,
+MP-ID Empfänger,17,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,17,SG1,NAD,3035,,,,MR,
+MP-ID Empfänger,18,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,18,SG1,NAD,3039,,,MP-ID,X [27],
+MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,19,SG1,NAD,3055,9,,GS1,X,GS1
+MP-ID Absender,20,SG1,,,,,,,Muss,,,MP-ID Absender,20,SG1,,,,,,Muss,
+MP-ID Absender,21,SG1,NAD,,,,,,Muss,,,MP-ID Absender,21,SG1,,,,,,Muss,
+MP-ID Absender,22,SG1,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,22,SG1,NAD,,,,,Muss,
+MP-ID Absender,23,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Absender,23,SG1,NAD,3035,Nachrichtenaussteller bzw.-absender,,,MS,Nachrichtenaussteller bzw.-absender
+MP-ID Absender,24,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Absender,24,SG1,NAD,3039,,,MP-ID,X [27],
+MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,25,SG1,NAD,3055,9,,GS1,X,GS1
+Ansprechpartner,26,SG2,,,,,,,Kann,,,Ansprechpartner,26,SG2,,,,,,Kann,
+Ansprechpartner,27,SG2,CTA,,,,,,Muss,,,Ansprechpartner,27,SG2,,,,,,Kann,
+Ansprechpartner,28,SG2,CTA,3139,,,,,IC,,,Ansprechpartner,28,SG2,CTA,,,,,Muss,
+Ansprechpartner,29,SG2,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,29,SG2,CTA,3139,,,,IC,
+,,,,,,,,,,,NEW,Ansprechpartner,30,SG2,CTA,3412,,,Kontakt,X,
+Kommunikationsverbindung,30,SG2,COM,,,,,,Muss,,,Kommunikationsverbindung,31,SG2,,,,,,,
+Kommunikationsverbindung,31,SG2,COM,3148,,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,32,SG2,,,,,,Muss,
+Kommunikationsverbindung,32,SG2,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,33,SG2,COM,,,,,Muss,
+Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,34,SG2,COM,3148,,,Nummer / E-Mail Adresse,X,
+Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,35,SG2,COM,3155,EM,,E-Mail,X [1P0..1],E-Mail
+Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,REMOVED,,,,,,,,,,
+Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],,REMOVED,,,,,,,,,,
+Sendungsdaten,37,SG14,,,,,,,Muss,,,Sendungsdaten,36,SG14,,,,,,Muss,
+Sendungsdaten,38,SG14,CNI,,,,,,Muss,,,Sendungsdaten,37,SG14,,,,,,Muss,
+Sendungsdaten,39,SG14,CNI,1490,,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",,Sendungsdaten,38,SG14,CNI,,,,,Muss,
+,,,,,,,,,,,NEW,Sendungsdaten,39,SG14,CNI,1490,,,Vorgangsnummer,X [911],
+Bestellung,40,SG15,,,,,,,Muss,,,Bestellung,40,SG15,,,,,,Muss,
+Bestellung,41,SG15,STS,,,,,,Muss,,,Bestellung,41,SG15,,,,,,Muss,
+Bestellung,42,SG15,STS,9015,,Z21,,Bestellung,X,,,Bestellung,42,SG15,STS,,,,,Muss,
+Bestellung,43,SG15,STS,4405,,Z42,,Antwort des Dritten,X [527],[527] Hinweis: Dritter ist hier der MSB,,Bestellung,43,SG15,STS,9015,Z21,,Bestellung,X,Bestellung
+Bestellung,44,SG15,STS,9013,,,,Code des Prüfschritts,X,,,Bestellung,44,SG15,STS,4405,Z42,,Antwort des Dritten,X [527],Antwort des Dritten
+Bestellung,45,SG15,STS,1131,,E_0474,,EBD Nr. E_0474,X,,,Bestellung,45,SG15,STS,9013,,,Code des Prüfschritts,X,
+,,,,,,,,,,,NEW,Bestellung,46,SG15,STS,1131,E_0474,,EBD Nr. E_0474,X,EBD Nr. E_0474
+Prüfidentifikator,46,SG15,RFF,,,,,,Muss,,,Prüfidentifikator,47,SG15,,,,,,,
+Prüfidentifikator,47,SG15,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,48,SG15,,,,,,Muss,
+Prüfidentifikator,48,SG15,RFF,1154,,21034,,GPKE / Ablehnen oder Scheitern Bestellung,X,,,Prüfidentifikator,49,SG15,RFF,,,,,Muss,
+,,,,,,,,,,,NEW,Prüfidentifikator,50,SG15,RFF,1153,Z13,,Prüfidentifikator,X,Prüfidentifikator
+,,,,,,,,,,,NEW,Prüfidentifikator,51,SG15,RFF,1154,21034,,GPKE / Ablehnen oderScheitern Bestellung,X,GPKE / Ablehnen oderScheitern Bestellung
+Referenz auf die Bestellung,49,SG15,RFF,,,,,,Muss,,,Referenz auf die Bestellung,52,SG15,,,,,,,
+Referenz auf die Bestellung,50,SG15,RFF,1153,,AGI,,Beantragungsnummer,X,,,Referenz auf die Bestellung,53,SG15,,,,,,Muss,
+Referenz auf die Bestellung,51,SG15,RFF,1154,,,,"Referenz, Identifikation",X [519],[519] Hinweis: Aus ORDERS BGM DE1004,,Referenz auf die Bestellung,54,SG15,RFF,,,,,Muss,
+,,,,,,,,,,,NEW,Referenz auf die Bestellung,55,SG15,RFF,1153,AGI,,Beantragungsnummer,X,Beantragungsnummer
+,,,,,,,,,,,NEW,Referenz auf die Bestellung,56,SG15,RFF,1154,,,"Referenz, Identifikation",X [519],
+Sendungspositionseinzelhei ten,52,SG25,,,,,,,Muss [113],[113] Wenn STS+Z21+Z42+A99: E_0474 in dieser SG14 vorhanden,,Sendungspositionseinzelhei ten,57,SG25,,,,,,Muss [113],
+Sendungspositionseinzelhei ten,53,SG25,GID,,,,,,Muss,,,Sendungspositionseinzelhei ten,58,SG25,,,,,,Muss [113],
+Sendungspositionseinzelhei ten,54,SG25,GID,1496,,,,Sendungsposition,X [903],[903] Format: Möglicher Wert: 1,,Sendungspositionseinzelhei ten,59,SG25,GID,,,,,Muss,
+,,,,,,,,,,,NEW,Sendungspositionseinzelhei ten,60,SG25,GID,1496,,,Sendungsposition,X [903],
+Freier Text,55,SG25,FTX,,,,,,Muss,,,Freier Text,61,SG25,,,,,,,
+Freier Text,56,SG25,FTX,4451,,(für allgemeine Hinweise),,,ACB,,,Freier Text,62,SG25,,,,,,Muss,
+Freier Text,57,SG25,FTX,4440,,,,Freier Text,X,,,Freier Text,63,SG25,FTX,,,,,Muss,
+,,,,,,,,,,,NEW,Freier Text,64,SG25,FTX,4451,(für allgemeine Hinweise),,,ACB,(für allgemeine Hinweise)
+,,,,,,,,,,,NEW,Freier Text,65,SG25,FTX,4440,,,Freier Text,X,
+Nachrichten-Endesegment,58,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,66,,,,,,,Muss,
+Nachrichten-Endesegment,59,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,67,,UNT,0074,,,Anzahl der Segmente in einerNachricht,X,
+Nachrichten-Endesegment,60,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,68,,UNT,0062,,,Nachrichten-Referenznummer,X,
