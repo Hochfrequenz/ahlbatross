@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
 
-from ahb_diff.main import determine_consecutive_formatversions, get_matching_files, parse_formatversions
+from ahb_diff.main import determine_consecutive_formatversions, get_matching_pruefid_files, parse_formatversions
 
 
 def test_parse_valid_formatversions() -> None:
@@ -35,7 +35,7 @@ def test_parse_invalid_formatversions() -> None:
 
 def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """
-    test finding matching files across formatversions.
+    test find matching files across formatversions.
     """
     monkeypatch.setattr("ahb_diff.main.SUBMODULE", tmp_path)
 
@@ -59,7 +59,7 @@ def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
             for file, content in files.items():
                 (nachrichtenformat_dir / file).write_text(content)
 
-    matches = get_matching_files("FV2410", "FV2504")
+    matches = get_matching_pruefid_files("FV2410", "FV2504")
 
     assert len(matches) == 2
     assert matches[0][2] == "nachrichtenformat_1"
@@ -69,14 +69,14 @@ def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
 
 def test_determine_consecutive_formatversions(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """
-    test determining consecutive formatversions.
+    test successful determination of consecutive formatversions.
     """
     monkeypatch.setattr("ahb_diff.main.SUBMODULE", tmp_path)
 
     submodule: dict[str, dict[str, bool | dict[str, str]]] = {
         "FV2504": {"nachrichtenformat_1": True},
         "FV2410": {"nachrichtenformat_1": True},
-        "FV2404": {},  # Empty directory
+        "FV2404": {},
         "FV2310": {"nachrichtenformat_1": True},
     }
 
