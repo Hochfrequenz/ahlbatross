@@ -1,0 +1,189 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten- Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILM,,Netzanschluss-,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S2.1,X,
+Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00004,E01,,Anmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E01,,Anmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZ ZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
+Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
+Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
+Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindu ng,24,SG3,COM,,00010,,,,Muss,,REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,REMOVED,,,,,,,,,,,
+Kommunikationsverbindu ng,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
+,,,,,,,,,,,NEW,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+,,,,,,,,,,,NEW,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
+,,,,,,,,,,,NEW,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+,,,,,,,,,,,NEW,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+,,,,,,,,,,,NEW,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+,,,,,,,,,,,NEW,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
+MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfän ger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,
+MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
+Vorgang,38,SG4,IDE,,00020,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
+Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
+Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
+Lieferbeginndatum in Bearbeitung,41,SG4,DTM,,00033,,,,Muss [36],[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden,,Lieferbeginndatum in Bearbeitung,41,SG4,DTM,,00033,,,,Muss [355],[355] Wenn SG4 STS+E01++A45 (Status der Antwort) vorhanden
+Lieferbeginndatum in Bearbeitung,42,SG4,DTM,2005,00033,Z07,,Lieferbeginndatum in Bearbeitung,X,,,Lieferbeginndatum in Bearbeitung,42,SG4,DTM,2005,00033,Z07,,Lieferbeginndatum in Bearbeitung,X,
+Lieferbeginndatum in Bearbeitung,43,SG4,DTM,2380,00033,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Lieferbeginndatum in Bearbeitung,43,SG4,DTM,2380,00033,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Lieferbeginndatum in Bearbeitung,44,SG4,DTM,2379,00033,303,,CCYYMMDDHHMMZ ZZ,X,,,Lieferbeginndatum in Bearbeitung,44,SG4,DTM,2379,00033,303,,CCYYMMDDHHMMZZZ,X,
+Datum für nächste Bearbeitung,45,SG4,DTM,,00034,,,,Muss [36],[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden,,Datum für nächste Bearbeitung,45,SG4,DTM,,00034,,,,Muss [355],[355] Wenn SG4 STS+E01++A45 (Status der Antwort) vorhanden
+Datum für nächste Bearbeitung,46,SG4,DTM,2005,00034,Z08,,Datum für nächste Bearbeitung,X,,,Datum für nächste Bearbeitung,46,SG4,DTM,2005,00034,Z08,,Datum für nächste Bearbeitung,X,
+Datum für nächste Bearbeitung,47,SG4,DTM,2380,00034,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Datum für nächste Bearbeitung,47,SG4,DTM,2380,00034,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Datum für nächste Bearbeitung,48,SG4,DTM,2379,00034,303,,CCYYMMDDHHMMZ ZZ,X,,,Datum für nächste Bearbeitung,48,SG4,DTM,2379,00034,303,,CCYYMMDDHHMMZZZ,X,
+Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,REMOVED,,,,,,,,,,,
+Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,REMOVED,,,,,,,,,,,
+Transaktionsgrund,51,SG4,STS,9013,,E03,,Wechsel,X,,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,49,SG4,STS,,00035,,,,Muss,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,50,SG4,STS,9015,00035,7,,Transaktionsgrund,X,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,51,SG4,STS,9013,00035,E03,,Wechsel,X,
+,,,,,,,,,,,NEW,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,52,SG4,STS,9013,,ZW3,,Erzeugende Marktlokation,X,
+Status der Antwort,52,SG4,STS,,00039,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,,Status der Antwort,53,SG4,STS,,00036,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Status der Antwort,53,SG4,STS,9015,00039,E01,,Status der Antwort,X,,,Status der Antwort,54,SG4,STS,9015,00036,E01,,Status der Antwort,X,
+Status der Antwort,54,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,,Status der Antwort,55,SG4,STS,9013,00036,,,Code des Prüfschritts,X [359],"[359] Es sind nur Antwortcodes aus dem Cluster Ablehnung erlaubt
+[360] Es sind nur Antwortcodes aus dem Cluster Zustimmung erlaubt"
+Status der Antwort,55,SG4,STS,1131,00039,Codeliste Strom Nr. S_0049 Codeliste Strom Nr. S_0050 Codeliste Strom Nr. S_0051,,S_0049 S_0050 S_0051,X,,,Status der Antwort,56,SG4,STS,1131,00036,E_0622,,EBD Nr. E_0622,X,
+,,,,,,,,,,,NEW,Status der Antwort,57,SG4,STS,1131,,E_0623,,EBD Nr. E_0623,X,
+Status der Antwort des dritten Marktbeteiligten,56,SG4,STS,,00040,,,,Muss [84],[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden,,Status der Antwort des dritten Marktbeteiligten,58,SG4,STS,,00037,,,,Muss [84],[84] Wenn SG4 STS+E01++A57 (Status der Antwort) vorhanden
+Status der Antwort des dritten Marktbeteiligten,57,SG4,STS,9015,00040,Z35,,Status der Antwort des dritten Marktbeteiligten,X,,,Status der Antwort des dritten Marktbeteiligten,59,SG4,STS,9015,00037,Z35,,Status der Antwort des dritten Marktbeteiligten,X,
+Status der Antwort des dritten Marktbeteiligten,58,SG4,STS,9013,00040,,,Code des Prüfschritts,X,,,Status der Antwort des dritten Marktbeteiligten,60,SG4,STS,9013,00037,,,Code des Prüfschritts,X [368],[368] Bis auf den Code A41 sind alle Codes aus EBD E_0624 im Cluster Ablehnung erlaubt 
+Status der Antwort des dritten Marktbeteiligten,59,SG4,STS,1131,00040,Codeliste Strom Nr. S_0048,,S_0048,X,,,Status der Antwort des dritten Marktbeteiligten,61,SG4,STS,1131,00037,E_0624,,EBD Nr. E_0624,X,
+Marktlokation,60,SG5,,,,,,,Muss [2061],"[348] Wenn SG5 LOC+Z21 (Tranche) nicht vorhanden
+[524] Hinweis: Bei Geschäftsvorfall 1 und 3: ist die ID der Marktlokation anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",REMOVED,,,,,,,,,,,
+Marktlokation,61,SG5,LOC,,00051,,,,Muss,,REMOVED,,,,,,,,,,,
+Marktlokation,62,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,REMOVED,,,,,,,,,,,
+Marktlokation,63,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,REMOVED,,,,,,,,,,,
+Tranche,64,SG5,,,,,,,Soll [2061] ∧ [625],"[347] Wenn SG5 LOC+Z16 (Marktlokation) nicht vorhanden
+[526] Hinweis: Bei Geschäftsvorfall 2: ID der Marktlokation und ID der Tranche, bei Geschäfts-vorfall 1 und 3: ID der Marktlokation
+[582] Hinweis: Bei Geschäftsvorfall 2 ist die ID der Tranche anzugeben
+[625] Hinweis: Bei Geschäftsvorfall 2 und 3
+[635] Hinweis: Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden, sind die Identifikatoren aller Tranchen anzugeben zu denen eine Ablehnung der Abmelde-anfrage vorliegt
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",REMOVED,,,,,,,,,,,
+Tranche,65,SG5,LOC,,00054,,,,Muss,,REMOVED,,,,,,,,,,,
+Tranche,66,SG5,LOC,3227,00054,Z21,,Tranche,X,,REMOVED,,,,,,,,,,,
+Tranche,67,SG5,LOC,3225,00054,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Status der Antwort des dritten Marktbeteiligten,62,SG4,STS,9013,00037,ZW5,,Tranche,X,
+,,,,,,,,,,,NEW,Status der Antwort des dritten Marktbeteiligten,63,SG4,STS,9013,,ZW3,,Erzeugende Marktlokation,X,
+,,,,,,,,,,,NEW,Status der Antwort des dritten Marktbeteiligten,64,SG4,STS,9012,00037,,,Referenz auf ID der Marktlokation / Tranche,X [950],[950] Format: Marktlokations-ID
+,,,,,,,,,,,NEW,Bemerkung (Feld für allgemeine Hinweise),65,SG4,FTX,,00038,,,,Muss [48],[48] Wenn in dieser SG4 das STS+E01++A99 (Status der Antwort: Sonstiges) vorhanden
+,,,,,,,,,,,NEW,Bemerkung (Feld für allgemeine Hinweise),66,SG4,FTX,4451,00038,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
+,,,,,,,,,,,NEW,Bemerkung (Feld für allgemeine Hinweise),67,SG4,FTX,4440,00038,,,Text für allgemeine Information,X,
+Prüfidentifikator,68,SG6,,,,,,,Muss,,,Prüfidentifikator,68,SG6,,,,,,,Muss,
+Prüfidentifikator,69,SG6,RFF,,00057,,,,Muss,,,Prüfidentifikator,69,SG6,RFF,,00056,,,,Muss,
+Prüfidentifikator,70,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,70,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,71,SG6,RFF,1154,,55080,,MPES / Ablehnung Anmeldung,X,,,Prüfidentifikator,71,SG6,RFF,1154,,55080,,GPKE / Ablehnung Anmeldung erzeugende Marktlokation,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),72,SG6,,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),72,SG6,,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),73,SG6,RFF,,00058,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),73,SG6,RFF,,00057,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),74,SG6,RFF,1153,00058,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),74,SG6,RFF,1153,00057,TN,,Transaktions- Referenznummer,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),75,SG6,RFF,1154,00058,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),75,SG6,RFF,1154,00057,,,Vorgangsnummer,X,
+Daten der Marktlokation,76,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,REMOVED,,,,,,,,,,,
+Daten der Marktlokation,77,SG8,SEQ,,00103,,,,Muss,,REMOVED,,,,,,,,,,,
+Daten der Marktlokation,78,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,REMOVED,,,,,,,,,,,
+Referenz auf die ID der Marktlokation,79,SG8,RFF,,00104,,,,Muss,"[439] Wenn in dem SG8 SEQ+Z15 (Daten der Tranche) das RFF+Z20 (Referenz auf die ID der Tranche) nicht vorhanden
+[627] Hinweis: Bei Geschäftsvorfall 1 und 3",REMOVED,,,,,,,,,,,
+Referenz auf die ID der Marktlokation,80,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,REMOVED,,,,,,,,,,,
+Referenz auf die ID der Marktlokation,81,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,REMOVED,,,,,,,,,,,
+Lieferrichtung,82,SG10,,,,,,,Muss,,REMOVED,,,,,,,,,,,
+Lieferrichtung,83,SG10,CCI,,00110,,,,Muss,,REMOVED,,,,,,,,,,,
+Lieferrichtung,84,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,REMOVED,,,,,,,,,,,
+Lieferrichtung,85,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation,86,SG10,,,,,,,Muss [118],[118] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) nicht vorhanden,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation,87,SG10,CCI,,00137,,,,Muss,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation,88,SG10,CCI,7037,00137,Z34,,Art der erzeugenden Marktlokation,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,89,SG10,CAV,,00138,,,,Muss,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,90,SG10,CAV,7111,00138,Z33,,EEG-Marktlokation ohne DV-Pflicht,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,91,SG10,CAV,7111,,Z34,,KWKG- Marktlokation ohne DV-Pflicht,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,92,SG10,CAV,7111,,Z35,,sonstige Marktlokation,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,93,SG10,CAV,7111,,Z37,,EEG-Marktlokation mit DV-Pflicht,X,,REMOVED,,,,,,,,,,,
+Art der erzeugenden Marktlokation ,94,SG10,CAV,7111,,Z46,,KWKG- Marktlokation mit DV-Pflicht,X,,REMOVED,,,,,,,,,,,
+Daten der Tranche,95,SG8,,,,,,,Muss [2307],[2307] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225 genau einmal anzugeben,REMOVED,,,,,,,,,,,
+Daten der Tranche,96,SG8,SEQ,,00238,,,,Muss,,REMOVED,,,,,,,,,,,
+Daten der Tranche,97,SG8,SEQ,1229,00238,Z15,,Daten der Tranche,X,,REMOVED,,,,,,,,,,,
+Referenz auf die ID der Tranche,98,SG8,RFF,,00239,,,,Muss,"[440] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) RFF+Z18 (Referenz auf die ID der Marktlokation) nicht vorhanden
+[626] Hinweis: Bei Geschäftsvorfall 2",REMOVED,,,,,,,,,,,
+Referenz auf die ID der Tranche,99,SG8,RFF,1153,00239,Z20,,Tranche,X,,REMOVED,,,,,,,,,,,
+Referenz auf die ID der Tranche,100,SG8,RFF,1154,00239,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,REMOVED,,,,,,,,,,,
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,101,SG9,,,,,,,Muss [384],"[124] Wenn in derselben SG8 SEQ+Z15 (Daten der Tranche) das RFF+Z20 (Referenz auf die ID der Tranche) nicht vorhanden
+[384] Wenn SG10 CCI+Z37++ZD1 (Basis zur Bildung der Tranchengröße) (Prozentual) vorhanden
+[627] Hinweis: Bei Geschäftsvorfall 1 und 3",REMOVED,,,,,,,,,,,
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,102,SG9,QTY,,00242,,,,Muss,,REMOVED,,,,,,,,,,,
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,103,SG9,QTY,6063,00242,11,,Aufteilungsmenge,X,,REMOVED,,,,,,,,,,,
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,104,SG9,QTY,6060,00242,,,Mengenangabe in %,X [914] ∧ [930] ∧ ([118] ∧ [520]) ⊻ ([196] ∧ [520]) ⊻ [521] ⊻ [523],"[118] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) nicht vorhanden
+[196] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[520] Hinweis: Bei Geschäftsvorfall 1 100%
+[521] Hinweis: Bei Geschäftsvorfall 2 100%
+[522] Hinweis: Bei Geschäftsvorfall 2 prozentualer Anteil der Tranche von der Marktlokation
+[523] Hinweis: Bei Geschäftsvorfall 3 prozentualer Anteil der Tranche von der Marktlokation
+[914] Format: Möglicher Wert: > 0
+[930] Format: max. 2 Nachkommastellen
+[955] Format: Möglicher Wert: < 100
+[958] Format: Möglicher Wert: 100",REMOVED,,,,,,,,,,,
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,105,SG9,QTY,6411,00242,P1,,Prozent,X,,REMOVED,,,,,,,,,,,
+Basis zur Bildung der Tranchengröße,106,SG10,,,,,,,Muss,"[124] Wenn in derselben SG8 SEQ+Z15 (Daten der Tranche) das RFF+Z20 (Referenz auf die ID der Tranche) nicht vorhanden
+[627] Hinweis: Bei Geschäftsvorfall 1 und 3",REMOVED,,,,,,,,,,,
+Basis zur Bildung der Tranchengröße,107,SG10,CCI,,00248,,,,Muss,,REMOVED,,,,,,,,,,,
+Basis zur Bildung der Tranchengröße,108,SG10,CCI,7059,00248,Z37,,Basis zur Bildung der Tranchengröße,X,,REMOVED,,,,,,,,,,,
+Basis zur Bildung der Tranchengröße,109,SG10,CCI,7037,00248,ZD1,,Prozentual,X,,REMOVED,,,,,,,,,,,
+Basis zur Bildung der Tranchengröße,110,SG10,CCI,7037,,ZD2,,Aufteilungsfaktor auf Basis von Referenzenträger/ installierter Leistung,X,,REMOVED,,,,,,,,,,,
+Beteiligter Marktpartner MP-ID,111,SG12,,,,,,,Muss [84] ∧ [566],"[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[566] Hinweis: Altlieferant",,Beteiligter Marktpartner MP-ID,76,SG12,,,,,,,Muss [84] ∧ [566],"[84] Wenn SG4 STS+E01++A57 (Status der Antwort) vorhanden
+[566] Hinweis: Altlieferant"
+Beteiligter Marktpartner MP-ID,112,SG12,NAD,,00533,,,,Muss,,,Beteiligter Marktpartner MP-ID,77,SG12,NAD,,00516,,,,Muss,
+Beteiligter Marktpartner MP-ID,113,SG12,NAD,3035,00533,VY,,andere zugehörige Partei,X,,,Beteiligter Marktpartner MP-ID,78,SG12,NAD,3035,00516,VY,,andere zugehörige Partei,X,
+Beteiligter Marktpartner MP-ID,114,SG12,NAD,3039,00533,,,MP-ID,X,,,Beteiligter Marktpartner MP-ID,79,SG12,NAD,3039,00516,,,MP-ID,X,
+Beteiligter Marktpartner MP-ID,115,SG12,NAD,3055,00533,9,,GS1,X,,,Beteiligter Marktpartner MP-ID,80,SG12,NAD,3055,00516,9,,GS1,X,
+Beteiligter Marktpartner MP-ID,116,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Beteiligter Marktpartner MP-ID,81,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Referenz auf die ID einer Marktlokation / Tranche,117,SG12,RFF,,00534,,,,Muss,,,Referenz auf die ID einer Marktlokation / Tranche,82,SG12,RFF,,00517,,,,Muss,
+Referenz auf die ID einer Marktlokation / Tranche,118,SG12,RFF,1153,00534,Z18,,Marktlokation,X,,,Referenz auf die ID einer Marktlokation / Tranche,83,SG12,RFF,1153,00517,Z18,,Marktlokation,X,
+Referenz auf die ID einer Marktlokation / Tranche,119,SG12,RFF,1153,,Z20,,Tranche,X,,,Referenz auf die ID einer Marktlokation / Tranche,84,SG12,RFF,1153,,Z20,,Tranche,X,
+Referenz auf die ID einer Marktlokation / Tranche,120,SG12,RFF,1154,00534,,,ID einer Marktlokation / Tranche,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID einer Marktlokation / Tranche,85,SG12,RFF,1154,00517,,,ID einer Marktlokation / Tranche,X [950],[950] Format: Marktlokations-ID
+Marktlokationsanschrift,121,SG12,,,,,,,Soll [170],[170] Wenn Anschrift der Marktlokation vorhanden,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,122,SG12,NAD,,00535,,,,Muss,,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,123,SG12,NAD,3035,00535,DP,,Lieferanschrift,X,,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,124,SG12,NAD,3124,00535,,,Zusatzinformation zur Identifizierung,K,,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,125,SG12,NAD,3042,00535,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,126,SG12,NAD,3164,00535,,,Ort,X,,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,127,SG12,NAD,3251,00535,,,Postleitzahl,X,,REMOVED,,,,,,,,,,,
+Marktlokationsanschrift,128,SG12,NAD,3207,00535,,,"Ländername, Code",X,,REMOVED,,,,,,,,,,,
+Nachrichten- Endesegment,129,,UNT,,00540,,,,Muss,,REMOVED,,,,,,,,,,,
+Nachrichten- Endesegment,130,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,REMOVED,,,,,,,,,,,
+Nachrichten- Endesegment,131,,UNT,0062,00540,,,Nachrichten- Referenznummer,X,,REMOVED,,,,,,,,,,,
+,,,,,,,,,,,NEW,Nachrichten-Endesegment,86,,UNT,,00526,,,,Muss,
+,,,,,,,,,,,NEW,Nachrichten-Endesegment,87,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,
+,,,,,,,,,,,NEW,Nachrichten-Endesegment,88,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,

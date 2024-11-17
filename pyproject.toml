@@ -21,7 +21,8 @@ classifiers = [
 ]
 dependencies = [
     "pandas>=2.2.3",
-    "pandas-stubs"
+    "pandas-stubs>=2.2.3.241009",
+    "xlsxwriter>=3.2.0"
 ]
 
 [project.optional-dependencies]

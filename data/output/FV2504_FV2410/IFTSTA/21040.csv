@@ -1,0 +1,68 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0f,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,00002,Z33,,GPKE Meldung(en),X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z33,,GPKE Meldung(en),X,
+Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,00003,,,,Muss,,,Dokumentendatum,10,,DTM,,00003,,,,Muss,
+Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Empfänger,14,SG1,,,,,,,Muss,,,MP-ID Empfänger,14,SG1,,,,,,,Muss,
+MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,,,MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,
+MP-ID Empfänger,16,SG1,NAD,3035,00004,,,,MR,,,MP-ID Empfänger,16,SG1,NAD,3035,00004,,,,MR,
+MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X,,,MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X,
+MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,,,MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,
+MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,20,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,20,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+MP-ID Absender,21,SG1,,,,,,,Muss,,,MP-ID Absender,21,SG1,,,,,,,Muss,
+MP-ID Absender,22,SG1,NAD,,00005,,,,Muss,,,MP-ID Absender,22,SG1,NAD,,00005,,,,Muss,
+MP-ID Absender,23,SG1,NAD,3035,00005,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,23,SG1,NAD,3035,00005,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,24,SG1,NAD,3039,00005,,,MP-ID,X,,,MP-ID Absender,24,SG1,NAD,3039,00005,,,MP-ID,X,
+MP-ID Absender,25,SG1,NAD,3055,00005,9,,GS1,X,,,MP-ID Absender,25,SG1,NAD,3055,00005,9,,GS1,X,
+MP-ID Absender,26,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,26,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,27,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,27,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,28,SG2,,,,,,,Kann,,,Ansprechpartner,28,SG2,,,,,,,Kann,
+Ansprechpartner,29,SG2,CTA,,00006,,,,Muss,,,Ansprechpartner,29,SG2,CTA,,00006,,,,Muss,
+Ansprechpartner,30,SG2,CTA,3139,00006,,,,IC,,,Ansprechpartner,30,SG2,CTA,3139,00006,,,,IC,
+Ansprechpartner,31,SG2,CTA,3412,00006,,,Kontakt,X,,,Ansprechpartner,31,SG2,CTA,3412,00006,,,Kontakt,X,
+Kommunikationsverbindung,32,SG2,COM,,00007,,,,Muss,,,Kommunikationsverbindung,32,SG2,COM,,00007,,,,Muss,
+Kommunikationsverbindung,33,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,33,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X (([939][146]) ∨ ([940] [147])) ∧ [534],"[146] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[147] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[534] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,34,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,34,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,35,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,35,SG2,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,36,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,36,SG2,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,37,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,37,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,38,SG2,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,38,SG2,COM,3155,,AL,,Handy,X [1P0..1],
+Sendungsdaten,39,SG14,,,,,,,Muss,,,Sendungsdaten,39,SG14,,,,,,,Muss,
+Sendungsdaten,40,SG14,CNI,,00019,,,,Muss,,,Sendungsdaten,40,SG14,CNI,,00019,,,,Muss,
+Sendungsdaten,41,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",,Sendungsdaten,41,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend"
+Meldepunkt,42,SG14,LOC,,00020,,,,Muss,,,Meldepunkt,42,SG14,LOC,,00020,,,,Muss,
+Meldepunkt,43,SG14,LOC,3227,00020,,,,172,,,Meldepunkt,43,SG14,LOC,3227,00020,,,,172,
+Meldepunkt,44,SG14,LOC,3225,00020,,,Identifikator,X [950] [506],"[506] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",,Meldepunkt,44,SG14,LOC,3225,00020,,,Identifikator,X [950] [506],"[506] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID"
+Information über Entsperrauftrag,45,SG15,,,,,,,Muss,,,Information über Entsperrauftrag,45,SG15,,,,,,,Muss,
+Information über Entsperrauftrag,46,SG15,STS,,00113,,,,Muss,,,Information über Entsperrauftrag,46,SG15,STS,,00113,,,,Muss,
+Information über Entsperrauftrag,47,SG15,STS,9015,00113,Z39,,Information über Entsperrauftrag,X,,,Information über Entsperrauftrag,47,SG15,STS,9015,00113,Z39,,Information über Entsperrauftrag,X,
+Information über Entsperrauftrag,48,SG15,STS,4405,00113,Z17,,geplant,X,,,Information über Entsperrauftrag,48,SG15,STS,4405,00113,Z17,,geplant,X,
+Prüfidentifikator,49,SG15,RFF,,00114,,,,Muss,,,Prüfidentifikator,49,SG15,RFF,,00114,,,,Muss,
+Prüfidentifikator,50,SG15,RFF,1153,00114,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,50,SG15,RFF,1153,00114,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,51,SG15,RFF,1154,00114,21040,,"GPKE, Awh Sperrp. Gas / Information über Entsperrauftrag",X,,,Prüfidentifikator,51,SG15,RFF,1154,00114,21040,,"GPKE, Awh Sperrp. Gas / Information über Entsperrauftrag",X,
+Datum/Uhrzeit/Zeitspanne,52,SG15,DTM,,00115,,,,Muss,,,Datum/Uhrzeit/Zeitspanne,52,SG15,DTM,,00115,,,,Muss,
+Datum/Uhrzeit/Zeitspanne,53,SG15,DTM,2005,00115,293,,Fertigstellungsdatum/-zeit,X,,,Datum/Uhrzeit/Zeitspanne,53,SG15,DTM,2005,00115,293,,Fertigstellungsdatum/-zeit,X,
+Datum/Uhrzeit/Zeitspanne,54,SG15,DTM,2380,00115,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Datum/Uhrzeit/Zeitspanne,54,SG15,DTM,2380,00115,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Datum/Uhrzeit/Zeitspanne,55,SG15,DTM,2379,00115,303,,CCYYMMDDHHMMZZZ,X,,,Datum/Uhrzeit/Zeitspanne,55,SG15,DTM,2379,00115,303,,CCYYMMDDHHMMZZZ,X,
+Nachrichten-Endesegment,56,,UNT,,00126,,,,Muss,,,Nachrichten-Endesegment,56,,UNT,,00131,,,,Muss,
+Nachrichten-Endesegment,57,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,57,,UNT,0074,00131,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,58,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,58,,UNT,0062,00131,,,Nachrichten-Referenznummer,X,
