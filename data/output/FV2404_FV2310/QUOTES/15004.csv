@@ -1,4 +1,4 @@
-Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Segmentname_FV2310,Unnamed: 0_FV2310,Segmentgruppe_FV2310,Segment_FV2310,Datenelement_FV2310,Segment ID_FV2310,Code_FV2310,Qualifier_FV2310,Beschreibung_FV2310,Bedingungsausdruck_FV2310,Bedingung_FV2310,diff,Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404
 Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
 Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
 Nachrichten-Kopfsegment,2,,UNH,0065,00001,QUOTES,,Angebot,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,QUOTES,,Angebot,X,

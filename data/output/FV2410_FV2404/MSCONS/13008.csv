@@ -1,4 +1,4 @@
-Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,diff,Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410
 Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,,,Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,
 Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,,Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,
 Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,,,Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,

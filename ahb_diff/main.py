@@ -156,83 +156,125 @@ def get_csv(previous_ahb_path: Path, subsequent_ahb_path: Path) -> tuple[DataFra
     return previous_ahb, subsequent_ahb
 
 
+def _populate_row_values(
+    df: DataFrame | None,
+    row: dict[str, Any],
+    idx: int | None,
+    formatversion: str,
+    is_segmentname: bool = True,
+) -> None:
+    """
+    utility function to populate row values for a given dataframe segment.
+    """
+    if df is not None and idx is not None:
+        segmentname_col = f"Segmentname_{formatversion}"
+        if is_segmentname:
+            row[segmentname_col] = df.iloc[idx][segmentname_col]
+        else:
+            for col in df.columns:
+                if col != segmentname_col:
+                    value = df.iloc[idx][col]
+                    row[f"{col}_{formatversion}"] = "" if pd.isna(value) else value
+
+
+# pylint: disable=too-many-arguments, too-many-positional-arguments
 def create_row(
-    previous_df: DataFrame | None = None, new_df: DataFrame | None = None, i: int | None = None, j: int | None = None
+    previous_df: DataFrame | None = None,
+    new_df: DataFrame | None = None,
+    i: int | None = None,
+    j: int | None = None,
+    previous_formatversion: str = "",
+    subsequent_formatversion: str = "",
 ) -> dict[str, Any]:
     """
-    fills rows for all columns that belong to one dataframe depending on whether old/new segments already exist.
+    fills rows for all columns that belong to one dataframe depending on whether previous/subsequent segments exist.
     """
-    row = {"Segmentname_old": "", "diff": "", "Segmentname_new": ""}
+    row = {f"Segmentname_{previous_formatversion}": "", "diff": "", f"Segmentname_{subsequent_formatversion}": ""}
 
     if previous_df is not None:
         for col in previous_df.columns:
-            if col != "Segmentname_old":
-                row[f"{col}_old"] = ""
+            if col != f"Segmentname_{previous_formatversion}":
+                row[f"{col}_{previous_formatversion}"] = ""
 
     if new_df is not None:
         for col in new_df.columns:
-            if col != "Segmentname_new":
-                row[f"{col}_new"] = ""
+            if col != f"Segmentname_{subsequent_formatversion}":
+                row[f"{col}_{subsequent_formatversion}"] = ""
 
-    if previous_df is not None and i is not None:
-        row["Segmentname_old"] = previous_df.iloc[i]["Segmentname_old"]
-        for col in previous_df.columns:
-            if col != "Segmentname_old":
-                value = previous_df.iloc[i][col]
-                row[f"{col}_old"] = "" if pd.isna(value) else value
+    _populate_row_values(previous_df, row, i, previous_formatversion, is_segmentname=True)
+    _populate_row_values(new_df, row, j, subsequent_formatversion, is_segmentname=True)
 
-    if new_df is not None and j is not None:
-        row["Segmentname_new"] = new_df.iloc[j]["Segmentname_new"]
-        for col in new_df.columns:
-            if col != "Segmentname_new":
-                value = new_df.iloc[j][col]
-                row[f"{col}_new"] = "" if pd.isna(value) else value
+    _populate_row_values(previous_df, row, i, previous_formatversion, is_segmentname=False)
+    _populate_row_values(new_df, row, j, subsequent_formatversion, is_segmentname=False)
 
     return row
 
 
 # pylint:disable=too-many-statements
-def align_columns(previous_pruefid: DataFrame, subsequent_pruefid: DataFrame) -> DataFrame:
+def align_columns(
+    previous_pruefid: DataFrame,
+    subsequent_pruefid: DataFrame,
+    previous_formatversion: str,
+    subsequent_formatversion: str,
+) -> DataFrame:
     """
     aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
     """
-    # add suffixes to columns.
+    # add corresponding formatversions as suffixes to columns.
     df_old = previous_pruefid.copy()
     df_new = subsequent_pruefid.copy()
-    df_old = df_old.rename(columns={"Segmentname": "Segmentname_old"})
-    df_new = df_new.rename(columns={"Segmentname": "Segmentname_new"})
+    df_old = df_old.rename(columns={"Segmentname": f"Segmentname_{previous_formatversion}"})
+    df_new = df_new.rename(columns={"Segmentname": f"Segmentname_{subsequent_formatversion}"})
 
     # preserve column order.
     old_columns = [col for col in previous_pruefid.columns if col != "Segmentname"]
     new_columns = [col for col in subsequent_pruefid.columns if col != "Segmentname"]
 
     column_order = (
-        ["Segmentname_old"]
-        + [f"{col}_old" for col in old_columns]
+        [f"Segmentname_{previous_formatversion}"]
+        + [f"{col}_{previous_formatversion}" for col in old_columns]
         + ["diff"]
-        + ["Segmentname_new"]
-        + [f"{col}_new" for col in new_columns]
+        + [f"Segmentname_{subsequent_formatversion}"]
+        + [f"{col}_{subsequent_formatversion}" for col in new_columns]
     )
 
     if df_old.empty and df_new.empty:
         return pd.DataFrame({col: pd.Series([], dtype="float64") for col in column_order})
 
     if df_new.empty:
-        result_rows = [create_row(previous_df=df_old, new_df=df_new, i=i) for i in range(len(df_old))]
+        result_rows = [
+            create_row(
+                previous_df=df_old,
+                new_df=df_new,
+                i=i,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+            )
+            for i in range(len(df_old))
+        ]
         for row in result_rows:
             row["diff"] = "REMOVED"
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
     if df_old.empty:
-        result_rows = [create_row(previous_df=df_old, new_df=df_new, j=j) for j in range(len(df_new))]
+        result_rows = [
+            create_row(
+                previous_df=df_old,
+                new_df=df_new,
+                j=j,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+            )
+            for j in range(len(df_new))
+        ]
         for row in result_rows:
             row["diff"] = "NEW"
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
-    segments_old = df_old["Segmentname_old"].tolist()
-    segments_new = df_new["Segmentname_new"].tolist()
+    segments_old = df_old[f"Segmentname_{previous_formatversion}"].tolist()
+    segments_new = df_new[f"Segmentname_{subsequent_formatversion}"].tolist()
     result_rows = []
 
     i = 0
@@ -241,44 +283,75 @@ def align_columns(previous_pruefid: DataFrame, subsequent_pruefid: DataFrame) ->
     # iterate through both lists until reaching their ends.
     while i < len(segments_old) or j < len(segments_new):
         if i >= len(segments_old):
-            row = create_row(previous_df=df_old, new_df=df_new, j=j)
+            row = create_row(
+                previous_df=df_old,
+                new_df=df_new,
+                j=j,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+            )
             row["diff"] = "NEW"
             result_rows.append(row)
             j += 1
         elif j >= len(segments_new):
-            row = create_row(previous_df=df_old, new_df=df_new, i=i)
+            row = create_row(
+                previous_df=df_old,
+                new_df=df_new,
+                i=i,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+            )
             row["diff"] = "REMOVED"
             result_rows.append(row)
             i += 1
         elif segments_old[i] == segments_new[j]:
-            row = create_row(previous_df=df_old, new_df=df_new, i=i, j=j)
+            row = create_row(
+                previous_df=df_old,
+                new_df=df_new,
+                i=i,
+                j=j,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+            )
             row["diff"] = ""
             result_rows.append(row)
             i += 1
             j += 1
         else:
-            # try to find next matching value.
             try:
+                # try to find next matching value.
                 next_match_new = segments_new[j:].index(segments_old[i])
                 for _ in range(next_match_new):
-                    row = create_row(previous_df=df_old, new_df=df_new, j=j)
+                    row = create_row(
+                        previous_df=df_old,
+                        new_df=df_new,
+                        j=j,
+                        previous_formatversion=previous_formatversion,
+                        subsequent_formatversion=subsequent_formatversion,
+                    )
                     row["diff"] = "NEW"
                     result_rows.append(row)
                     j += 1
                 continue
             except ValueError:
                 # no match found: add old value and empty new cell.
-                row = create_row(previous_df=df_old, new_df=df_new, i=i)
-                row["diff"] = "REMOVED"  # Segment only in old file
+                row = create_row(
+                    previous_df=df_old,
+                    new_df=df_new,
+                    i=i,
+                    previous_formatversion=previous_formatversion,
+                    subsequent_formatversion=subsequent_formatversion,
+                )
+                row["diff"] = "REMOVED"
                 result_rows.append(row)
                 i += 1
 
-    # create dataframe with string dtype and replace NaN with empty strings.
+    # create dataframe NaN being replaced by empty strings.
     result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
     return result_df[column_order]
 
 
-# pylint:disable=too-many-locals
+# pylint:disable=too-many-branches, too-many-locals
 def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     exports the merged dataframe to .xlsx with highlighted differences.
@@ -291,13 +364,22 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
         workbook = writer.book
         worksheet = writer.sheets["AHB-Diff"]
 
+        # sticky table header
+        worksheet.freeze_panes(1, 0)
+        if not df_filtered.empty:
+            table_options = {
+                "style": "None",
+                "columns": [{"header": col} for col in df_filtered.columns],
+            }
+            worksheet.add_table(0, 0, len(df_filtered), len(df_filtered.columns) - 1, table_options)
+
         # base formatting
         header_format = workbook.add_format(
             {"bold": True, "bg_color": "#D9D9D9", "border": 1, "align": "center", "text_wrap": True}
         )
         base_format = workbook.add_format({"border": 1, "text_wrap": True})
 
-        # formatting highlighted/changed cells
+        # formatting highlighted/changed cells.
         diff_formats: dict[str, Format] = {
             "NEW": workbook.add_format({"bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
             "REMOVED": workbook.add_format({"bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
@@ -345,6 +427,17 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             except ValueError:
                 return cell
 
+        previous_formatversion = None
+        subsequent_formatversion = None
+        for col in df_filtered.columns:
+            if col.startswith("Segmentname_"):
+                suffix = col.split("Segmentname_")[1]
+                if previous_formatversion is None:
+                    previous_formatversion = suffix
+                else:
+                    subsequent_formatversion = suffix
+                    break
+
         for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
             row_data = list(row)
             diff_value = str(row_data[diff_idx])
@@ -354,9 +447,9 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
                 if col_name == "diff":
                     worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
-                elif diff_value == "REMOVED" and col_name.endswith("_old"):
+                elif diff_value == "REMOVED" and previous_formatversion and col_name.endswith(previous_formatversion):
                     worksheet.write(row_num, col_num, converted_value, diff_formats["REMOVED"])
-                elif diff_value == "NEW" and col_name.endswith("_new"):
+                elif diff_value == "NEW" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
                     worksheet.write(row_num, col_num, converted_value, diff_formats["NEW"])
                 else:
                     worksheet.write(row_num, col_num, converted_value, base_format)
@@ -384,7 +477,7 @@ def process_files(previous_formatversion: str, subsequent_formatversion: str) ->
 
         try:
             df_old, df_new = get_csv(old_file, new_file)
-            merged_df = align_columns(df_old, df_new)
+            merged_df = align_columns(df_old, df_new, previous_formatversion, subsequent_formatversion)
 
             output_dir = output_base / nachrichtentyp
             output_dir.mkdir(parents=True, exist_ok=True)
