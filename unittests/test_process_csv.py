@@ -11,8 +11,8 @@ class TestSingleColumnDataframes:
     """
 
     def test_align_columns(self) -> None:
-        old_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"]})
-        new_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"]})
+        previous_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"]})
+        subsequent_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -22,12 +22,12 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_empty_dataframes(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -37,12 +37,12 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_one_empty_dataframe(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -52,12 +52,12 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_full_offset(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"]})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -67,12 +67,12 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_duplicate_segments(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"]})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -82,12 +82,12 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_repeating_segments(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "3", "2"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "4"]})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "3", "2"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "4"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -97,7 +97,7 @@ class TestSingleColumnDataframes:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
 
@@ -107,13 +107,13 @@ class TestMultiColumnDataFrames:
     """
 
     def test_align_columns(self) -> None:
-        old_pruefid = pd.DataFrame(
+        previous_pruefid = pd.DataFrame(
             {
                 "Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"],
                 "Segmentgruppe": ["a", "b", "c", "", "e", "f", "g", "h"],
             }
         )
-        new_pruefid = pd.DataFrame(
+        subsequent_pruefid = pd.DataFrame(
             {
                 "Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"],
                 "Segmentgruppe": ["a", "b", "d", "d", "d", "e", "f", "a", "b"],
@@ -130,23 +130,23 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_empty_dataframes(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
 
         expected_output: DataFrame = pd.DataFrame(
             {"Segmentname_old": [], "Segmentgruppe_old": [], "diff": [], "Segmentname_new": [], "Segmentgruppe_new": []}
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_one_empty_dataframe(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -158,12 +158,12 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_full_offset(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"], "Segmentgruppe": ["d", "e", "f"]})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"], "Segmentgruppe": ["d", "e", "f"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -175,12 +175,12 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_duplicate_segments(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"], "Segmentgruppe": ["a", "b", "c"]})
-        new_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"], "Segmentgruppe": ["a", "b", "d"]})
+        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"], "Segmentgruppe": ["a", "b", "c"]})
+        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"], "Segmentgruppe": ["a", "b", "d"]})
 
         expected_output: DataFrame = pd.DataFrame(
             {
@@ -192,14 +192,14 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_repeating_segments(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame(
+        previous_pruefid: DataFrame = pd.DataFrame(
             {"Segmentname": ["1", "2", "3", "3", "2"], "Segmentgruppe": ["a", "b", "c", "d", "e"]}
         )
-        new_pruefid: DataFrame = pd.DataFrame(
+        subsequent_pruefid: DataFrame = pd.DataFrame(
             {"Segmentname": ["1", "2", "3", "4"], "Segmentgruppe": ["a", "b", "c", "d"]}
         )
 
@@ -213,11 +213,11 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
 
     def test_align_columns_different_column_sets(self) -> None:
-        old_pruefid: DataFrame = pd.DataFrame(
+        previous_pruefid: DataFrame = pd.DataFrame(
             {
                 "Segmentname": ["1", "2"],
                 "Segmentgruppe": ["a", "b"],
@@ -225,7 +225,7 @@ class TestMultiColumnDataFrames:
                 "Qualifier": ["XY", "YZ"],
             }
         )
-        new_pruefid: DataFrame = pd.DataFrame(
+        subsequent_pruefid: DataFrame = pd.DataFrame(
             {
                 "Segmentname": ["2", "3"],
                 "Segmentgruppe": ["b", "c"],
@@ -248,5 +248,5 @@ class TestMultiColumnDataFrames:
             }
         )
 
-        output_df = align_columns(old_pruefid, new_pruefid)
+        output_df = align_columns(previous_pruefid, subsequent_pruefid)
         assert_frame_equal(output_df, expected_output)
