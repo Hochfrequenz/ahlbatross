@@ -11,6 +11,5 @@ Tool for **automatic AHB comparison** of consecutive `Formatversionen` provided 
 Merged `.csv` and `.xlsx` files are located inside the `./data/output/` 
 [directory](https://github.com/OLILHR/ahb-diff/tree/main/data/output).
 
-<div align="center">
-<img width="65%" src="https://raw.githubusercontent.com/OLILHR/ahb-diff/main/output.png" alt="output.png"><br>
-</div>
+<img width="90%" src="https://raw.githubusercontent.com/OLILHR/ahb-diff/main/output.png" alt="output.png">
+
