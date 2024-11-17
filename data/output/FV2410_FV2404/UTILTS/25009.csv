@@ -1,0 +1,136 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00001,UTILTS,,Netznutzungszeiten- Nachricht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,UTILTS,,Netznutzungszeiten- Nachricht,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.1c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.1c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z81,,Ausgerollte Leistungskurvendefinition,X,,,Beginn der Nachricht,8,,BGM,1001,,Z81,,Ausgerollte Leistungskurvendefinition,X,
+Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,00003,,,,Muss,,,Nachrichtendatum,10,,DTM,,00003,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,00004,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00004,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,00004,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00004,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,00004,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Absender,17,SG2,NAD,3039,00004,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Absender,18,SG2,NAD,3055,00004,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00004,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
+Ansprechpartner,21,SG3,CTA,,00005,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00005,,,,Muss,
+Ansprechpartner,22,SG3,CTA,3139,00005,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00005,IC,,Informationskontakt,X,
+Ansprechpartner,23,SG3,CTA,3412,00005,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00005,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,24,SG3,COM,,00006,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00006,,,,Muss,
+Kommunikationsverbindung,25,SG3,COM,3148,00006,,,Nummer / Adresse,X,,,Kommunikationsverbindung,25,SG3,COM,3148,00006,,,Nummer / Adresse,X,
+Kommunikationsverbindung,26,SG3,COM,3155,00006,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00006,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
+MP-ID Empfänger,32,SG2,NAD,,00007,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00007,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,3035,00007,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00007,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,34,SG2,NAD,3039,00007,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,00007,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,35,SG2,NAD,3055,00007,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00007,9,,GS1,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Vorgang,37,SG5,,,,,,,Muss [523],"[505] Hinweis: Jede ausgerollte Zählzeitdefinition ist in einem eigenen IDE anzugeben
+[522] Hinweis: Jede ausgerollte Schaltzeitdefinition ist in einem eigenen IDE anzugeben
+[523] Hinweis: Jede ausgerollte Leistungskurvendefinitio n ist in einem eigenen IDE anzugeben",,Vorgang,37,SG5,,,,,,,Muss [523],"[505] Hinweis: Jede ausgerollte Zählzeitdefinition ist in einem eigenen IDE anzugeben
+[522] Hinweis: Jede ausgerollte Schaltzeitdefinition ist in einem eigenen IDE anzugeben
+[523] Hinweis: Jede ausgerollte Leistungskurvendefinitio n ist in einem eigenen IDE anzugeben"
+Vorgang,38,SG5,IDE,,00008,,,,Muss,,,Vorgang,38,SG5,IDE,,00008,,,,Muss,
+Vorgang,39,SG5,IDE,7495,00008,24,,Transaktion,X,,,Vorgang,39,SG5,IDE,7495,00008,24,,Transaktion,X,
+Vorgang,40,SG5,IDE,7402,00008,,,Vorgangsnummer,X,,,Vorgang,40,SG5,IDE,7402,00008,,,Vorgangsnummer,X,
+Code der Definition,41,SG5,LOC,,00010,,,,Muss,,,Code der Definition,41,SG5,LOC,,00010,,,,Muss,
+Code der Definition,42,SG5,LOC,3227,00010,Z09,,Code der Definition,X,,,Code der Definition,42,SG5,LOC,3227,00010,Z09,,Code der Definition,X,
+Code der Definition,43,SG5,LOC,3225,00010,,,Code der Definition,X [526],"[524] Hinweis: Es ist der Code einer Zählzeitdefinition anzugeben
+[525] Hinweis: Es ist der Code einer Schaltzeitdefinition anzugeben
+[526] Hinweis: Es ist der Code einer Leistungskurvendefinitio n anzugeben",,Code der Definition,43,SG5,LOC,3225,00010,,,Code der Definition,X [526],"[524] Hinweis: Es ist der Code einer Zählzeitdefinition anzugeben
+[525] Hinweis: Es ist der Code einer Schaltzeitdefinition anzugeben
+[526] Hinweis: Es ist der Code einer Leistungskurvendefinitio n anzugeben"
+Gültigkeitsbeginn der ausgerollten Definition,44,SG5,DTM,,00012,,,,Muss,,,Gültigkeitsbeginn der ausgerollten Definition,44,SG5,DTM,,00012,,,,Muss,
+Gültigkeitsbeginn der ausgerollten Definition,45,SG5,DTM,2005,00012,Z34,,Gültigkeitsbeginn,X,,,Gültigkeitsbeginn der ausgerollten Definition,45,SG5,DTM,2005,00012,Z34,,Gültigkeitsbeginn,X,
+Gültigkeitsbeginn der ausgerollten Definition,46,SG5,DTM,2380,00012,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] ∧ [947],"[931] Format: ZZZ = +00
+[947] Format: MMDDHHMM = 12312300",,Gültigkeitsbeginn der ausgerollten Definition,46,SG5,DTM,2380,00012,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] ∧ [947],"[931] Format: ZZZ = +00
+[947] Format: MMDDHHMM = 12312300"
+Gültigkeitsbeginn der ausgerollten Definition,47,SG5,DTM,2379,00012,303,,CCYYMMDDHHMMZZZ,X,,,Gültigkeitsbeginn der ausgerollten Definition,47,SG5,DTM,2379,00012,303,,CCYYMMDDHHMMZZZ,X,
+Gültigkeitsende der ausgerollten Definition,48,SG5,DTM,,00013,,,,Muss [48] Soll [49] ∧ [37],"[29] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 303 vorhanden
+[36] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 401 vorhanden
+[37] Wenn ein Gültigkeitsende bereits angegeben werden kann.
+[46] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 303 vorhanden
+[47] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 401 vorhanden
+[48] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 303 vorhanden
+[49] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 401 vorhanden",,Gültigkeitsende der ausgerollten Definition,48,SG5,DTM,,00013,,,,Muss [48] Soll [49] ∧ [37],"[29] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 303 vorhanden
+[36] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 401 vorhanden
+[37] Wenn ein Gültigkeitsende bereits angegeben werden kann.
+[46] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 303 vorhanden
+[47] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 401 vorhanden
+[48] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 303 vorhanden
+[49] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 401 vorhanden"
+Gültigkeitsende der ausgerollten Definition,49,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,,,Gültigkeitsende der ausgerollten Definition,49,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,
+Gültigkeitsende der ausgerollten Definition,50,SG5,DTM,2380,00013,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] ∧ [947] [30],"[30] Der Wert von CCYY in diesem DE muss genau um eins höher sein, als der Wert CCYY des SG5 DTM+Z34 (Gültigkeitsbeginn) DE2380
+[931] Format: ZZZ = +00
+[947] Format: MMDDHHMM = 12312300",,Gültigkeitsende der ausgerollten Definition,50,SG5,DTM,2380,00013,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] ∧ [947] [30],"[30] Der Wert von CCYY in diesem DE muss genau um eins höher sein, als der Wert CCYY des SG5 DTM+Z34 (Gültigkeitsbeginn) DE2380
+[931] Format: ZZZ = +00
+[947] Format: MMDDHHMM = 12312300"
+Gültigkeitsende der ausgerollten Definition,51,SG5,DTM,2379,00013,303,,CCYYMMDDHHMMZZZ,X,,,Gültigkeitsende der ausgerollten Definition,51,SG5,DTM,2379,00013,303,,CCYYMMDDHHMMZZZ,X,
+Versionsangabe,52,SG5,DTM,,00014,,,,Muss,,,Versionsangabe,52,SG5,DTM,,00014,,,,Muss,
+Versionsangabe,53,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,,,Versionsangabe,53,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,
+Versionsangabe,54,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Versionsangabe,54,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Versionsangabe,55,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,,,Versionsangabe,55,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,
+Prüfidentifikator,56,SG6,,,,,,,Muss,,,Prüfidentifikator,56,SG6,,,,,,,Muss,
+Prüfidentifikator,57,SG6,RFF,,00018,,,,Muss,,,Prüfidentifikator,57,SG6,RFF,,00018,,,,Muss,
+Prüfidentifikator,58,SG6,RFF,1153,00018,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,58,SG6,RFF,1153,00018,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,59,SG6,RFF,1154,,25009,,Ausgerollte Leistungskurvendefinition,X,,,Prüfidentifikator,59,SG6,RFF,1154,,25009,,Ausgerollte Leistungskurvendefinition,X,
+Referenz auf Reklamation,60,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert,,Referenz auf Reklamation,60,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert
+Referenz auf Reklamation,61,SG6,RFF,,00019,,,,Muss,,,Referenz auf Reklamation,61,SG6,RFF,,00019,,,,Muss,
+Referenz auf Reklamation,62,SG6,RFF,1153,00019,AGI,,Beantragungsnummer,X,,,Referenz auf Reklamation,62,SG6,RFF,1153,00019,AGI,,Beantragungsnummer,X,
+Referenz auf Reklamation,63,SG6,RFF,1154,00019,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist,,Referenz auf Reklamation,63,SG6,RFF,1154,00019,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist
+Operator / Operation,64,SG9,CAV,7111,00030,Z83,,Positivwert,;,,,Operator / Operation,64,SG9,CAV,7111,00030,Z83,,Positivwert,;,
+Leistungskurvendefinition,65,SG8,,,,,,,Muss [518] ∧ [519] ∧ ([520] ⊻ [521]),"[518] Hinweis: Für jeden Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) ist diese Sementgruppe einmal anzugeben
+[519] Hinweis: Kein Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) darf mehrfach vorkommen
+[520] Hinweis: Wenn der Code 303 im DE2379 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) genutzt wird, muss genau ein Wert im DE2380 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) identisch mit dem Wert aus DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
+[521] Hinweis: Wenn der Code 401 im DE2379 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45)",,Leistungskurvendefinition,65,SG8,,,,,,,Muss [518] ∧ [519] ∧ ([520] ⊻ [521]),"[518] Hinweis: Für jeden Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) ist diese Sementgruppe einmal anzugeben
+[519] Hinweis: Kein Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) darf mehrfach vorkommen
+[520] Hinweis: Wenn der Code 303 im DE2379 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) genutzt wird, muss genau ein Wert im DE2380 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45) identisch mit dem Wert aus DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
+[521] Hinweis: Wenn der Code 401 im DE2379 des Leistungskurvenänderun gszeitpunkt (SG8 DTM+Z45)"
+Leistungskurvendefinition,66,SG8,SEQ,,00058,,,,Muss,,,Leistungskurvendefinition,66,SG8,SEQ,,00058,,,,Muss,
+Leistungskurvendefinition,67,SG8,SEQ,1229,00058,Z74,,Ausgerollte Leistungskurvendefinition,X,,,Leistungskurvendefinition,67,SG8,SEQ,1229,00058,Z74,,Ausgerollte Leistungskurvendefinition,X,
+Leistungskurvenänderungsz eitpunkt,68,SG8,DTM,,00059,,,,Muss,,,Leistungskurvenänderungsz eitpunkt,68,SG8,DTM,,00059,,,,Muss,
+Leistungskurvenänderungsz eitpunkt,69,SG8,DTM,2005,00059,Z45,,Leistungskurvenänderun gszeitpunkt,X,,,Leistungskurvenänderungsz eitpunkt,69,SG8,DTM,2005,00059,Z45,,Leistungskurvenänderun gszeitpunkt,X,
+Leistungskurvenänderungsz eitpunkt,70,SG8,DTM,2380,00059,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X ([931] [31] ∧ [32] ∧ [33]) ⊻ (([964] ∧ [965] [34]) ∧ [507]),"[31] Wenn im DE2379 dieses Segments der Code 303 vorhanden
+[32] Der Zeitpunkt in diesem DE muss ≥ dem Zeitpunkt aus dem DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
+[33] Der Zeitpunkt in diesem DE muss ≤ dem Zeitpunkt aus dem DE2380 des Gültigkeitsende der ausgerollten Definition (SG5 DTM+Z35) sein
+[34] Wenn im DE2379 dieses Segments der Code 401 vorhanden
+[507] Hinweis: Es ist die Zeit nach der deutschen gesetzlichen Zeit anzugeben
+[931] Format: ZZZ = +00
+[964] Format: HHMM ≥ 0000
+[965] Format: HHMM ≤ 2359",,Leistungskurvenänderungsz eitpunkt,70,SG8,DTM,2380,00059,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X ([931] [31] ∧ [32] ∧ [33]) ⊻ (([964] ∧ [965] [34]) ∧ [507]),"[31] Wenn im DE2379 dieses Segments der Code 303 vorhanden
+[32] Der Zeitpunkt in diesem DE muss ≥ dem Zeitpunkt aus dem DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
+[33] Der Zeitpunkt in diesem DE muss ≤ dem Zeitpunkt aus dem DE2380 des Gültigkeitsende der ausgerollten Definition (SG5 DTM+Z35) sein
+[34] Wenn im DE2379 dieses Segments der Code 401 vorhanden
+[507] Hinweis: Es ist die Zeit nach der deutschen gesetzlichen Zeit anzugeben
+[931] Format: ZZZ = +00
+[964] Format: HHMM ≥ 0000
+[965] Format: HHMM ≤ 2359"
+Leistungskurvenänderungsz eitpunkt,71,SG8,DTM,2379,00059,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],,,Leistungskurvenänderungsz eitpunkt,71,SG8,DTM,2379,00059,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],
+Leistungskurvenänderungsz eitpunkt,72,SG8,DTM,2379,,401,,HHMM,X [50] ∧ [527],"[50] In jedem DE2379 dieses DTM-Segments innerhalb eines IDE+24 (Vorgangs) muss der gleiche Code angegeben werden
+[527] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine einmalig zu übermittelnde Definition handelt
+[528] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine jährlich zu übermittelnde Definition handelt",,Leistungskurvenänderungsz eitpunkt,72,SG8,DTM,2379,,401,,HHMM,X [50] ∧ [527],"[50] In jedem DE2379 dieses DTM-Segments innerhalb eines IDE+24 (Vorgangs) muss der gleiche Code angegeben werden
+[527] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine einmalig zu übermittelnde Definition handelt
+[528] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine jährlich zu übermittelnde Definition handelt"
+oberer Schwellwert,73,SG11,,,,,,,Muss,,,oberer Schwellwert,73,SG11,,,,,,,Muss,
+oberer Schwellwert,74,SG11,QTY,,00063,,,,Muss,,,oberer Schwellwert,74,SG11,QTY,,00063,,,,Muss,
+oberer Schwellwert,75,SG11,QTY,6063,00063,Z40,,oberer Schwellwert,X,,,oberer Schwellwert,75,SG11,QTY,6063,00063,Z40,,oberer Schwellwert,X,
+oberer Schwellwert,76,SG11,QTY,6060,00063,,,Mengenangabe in %,X [930] ∧ [963],"[930] Format: max. 2 Nachkommastellen
+[963] Format: Möglicher Wert: ≤ 100",,oberer Schwellwert,76,SG11,QTY,6060,00063,,,Mengenangabe in %,X [930] ∧ [963],"[930] Format: max. 2 Nachkommastellen
+[963] Format: Möglicher Wert: ≤ 100"
+oberer Schwellwert,77,SG11,QTY,6411,00063,P1,,Prozent,X,,,oberer Schwellwert,77,SG11,QTY,6411,00063,P1,,Prozent,X,
+Nachrichten-Endesegment,78,,UNT,,00064,,,,Muss,,,Nachrichten-Endesegment,78,,UNT,,00064,,,,Muss,
+Nachrichten-Endesegment,79,,UNT,0074,00064,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,79,,UNT,0074,00064,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,80,,UNT,0062,00064,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,80,,UNT,0062,00064,,,Nachrichten-Referenznummer,X,

@@ -1,0 +1,91 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,ORDRSP,,Bestellantwort,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,ORDRSP,,Bestellantwort,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,10A,,Ausgabe 2010 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,10A,,Ausgabe 2010 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z55,,Reklamation Übersicht oder einer ausgerollten Zählzeitdefinition,X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z55,,Reklamation der Übersicht der Definitionen oder einer Definition,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,00003,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
+Referenz Nachrichtennummer,14,SG1,,,,,,,Muss,,,Referenz Nachrichtennummer,14,SG1,,,,,,,Muss,
+Referenz Nachrichtennummer,15,SG1,RFF,,,,,,Muss,,,Referenz Nachrichtennummer,15,SG1,RFF,,00009,,,,Muss,
+Referenz Nachrichtennummer,16,SG1,RFF,1153,,ON,,Auftragsnummer (Einkauf),X,,,Referenz Nachrichtennummer,16,SG1,RFF,1153,00009,ON,,Auftragsnummer (Einkauf),X,
+Referenz Nachrichtennummer,17,SG1,RFF,1154,,,,Referenz Nachrichtennummer,X [529],[529] Hinweis: Dokumentennummer aus BGM DE1004 der ORDERS,,Referenz Nachrichtennummer,17,SG1,RFF,1154,00009,,,Referenz Nachrichtennummer,X [529],[529] Hinweis: Dokumentennummer aus BGM DE1004 der ORDERS
+,,,,,,,,,,,NEW,Referenz einer vorangegangenen Nachricht,18,SG1,,,,,,,Muss [66] ⊻ [67] ⊻ [68] ⊻ [69],"[66] wenn SG2 AJT+A01/A02/ A03+E_0544 vorhanden
+[67] wenn SG2 AJT+A01/A02/ A03+E_0545 vorhanden
+[68] wenn SG2 AJT+A02/ A03+E_0546 vorhanden
+[69] wenn SG2 AJT+A01/A02/ A03+E_0547 vorhanden"
+,,,,,,,,,,,NEW,Referenz einer vorangegangenen Nachricht,19,SG1,RFF,,00010,,,,Muss,
+,,,,,,,,,,,NEW,Referenz einer vorangegangenen Nachricht,20,SG1,RFF,1153,00010,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+,,,,,,,,,,,NEW,Referenz einer vorangegangenen Nachricht,21,SG1,RFF,1154,00010,,,Referenz einer vorangegangenen Nachricht,X ([60] ∧ [63]) ⊻ ([61] ∧ [64]) ⊻ ([62] ∧ [65]),"[60] wenn es sich bei der Reklamation um die Reklamation der Übersicht der Zählzeitdefinitionen handelte
+[61] wenn es sich bei der Reklamation um die Reklamation der Übersicht der Schaltzeitdefinitionen handelte
+[62] wenn es sich bei der Reklamation um die Reklamation der Übersicht der Leistungskurvendefinitionen handelte
+[63] Dokumentennummer aus BGM+Z60 DE1004 der UTILTS
+[64] Dokumentennummer aus BGM+Z78 DE1004 der UTILTS
+[65] Dokumentennummer aus BGM+Z79 DE1004 der UTILTS"
+,,,,,,,,,,,NEW,Referenz Vorgangsnummer,22,SG1,,,,,,,Muss [56] ⊻ [57] ⊻ [58] ⊻ [59],"[56] wenn SG2 AJT+A02/A03/ A06/A07/A10/A11+E_0548 vorhanden
+[57] wenn SG2 AJT+A02/A03/ A06/A07/A10/A11+E_0549 vorhanden
+[58] wenn SG2 AJT+A02/A03/ A06/A07+E_0550 vorhanden
+[59] wenn SG2 AJT+A02/A03/ A06/A07/A10/A11+E_0551 vorhanden"
+,,,,,,,,,,,NEW,Referenz Vorgangsnummer,23,SG1,RFF,,00011,,,,Muss,
+,,,,,,,,,,,NEW,Referenz Vorgangsnummer,24,SG1,RFF,1153,00011,TN,,Transaktions- Referenznummer,X,
+,,,,,,,,,,,NEW,Referenz Vorgangsnummer,25,SG1,RFF,1154,00011,,,Referenz Vorgangsnummer,X ([70] ∧ [53]) ⊻ ([71] ∧ [54]) ⊻ ([52] ∧ [55]) ,"[52] wenn es sich bei der Reklamation um die Reklamation der ausgerollten Leistungskurvendefinitionen handelte
+[53] Vorgangsnummer aus IDE DE7402 der UTILTS mit BGM+Z59
+[54] Vorgangsnummer aus IDE DE7402 der UTILTS mit BGM+Z80
+[55] Vorgangsnummer aus IDE DE7402 der UTILTS mit BGM+Z81
+[70] wenn es sich bei der Reklamation um die Reklamation der ausgerollten Zählzeitdefinitionen handelte
+[71] wenn es sich bei der Reklamation um die Reklamation der ausgerollten Schaltzeitdefinitionen handelte"
+Prüfidentifikator,18,SG1,,,,,,,Muss,,,Prüfidentifikator,26,SG1,,,,,,,Muss,
+Prüfidentifikator,19,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,27,SG1,RFF,,00012,,,,Muss,
+Prüfidentifikator,20,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,28,SG1,RFF,1153,00012,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,21,SG1,RFF,1154,,19123,,Ablehnung der Reklamation einer Zählzeitdefinition,X,,,Prüfidentifikator,29,SG1,RFF,1154,00012,19123,,Ablehnung der Reklamation einer Definition,X,
+Einzelheiten zu einer Anpassung/Änderung,22,SG2,,,,,,,Muss,,,Einzelheiten zu einer Anpassung/Änderung,30,SG2,,,,,,,Muss,
+Einzelheiten zu einer Anpassung/Änderung,23,SG2,AJT,,,,,,Muss,,,Einzelheiten zu einer Anpassung/Änderung,31,SG2,AJT,,00013,,,,Muss,
+Einzelheiten zu einer Anpassung/Änderung,24,SG2,AJT,4465,,,,Code des Prüfschritts,X,,,Einzelheiten zu einer Anpassung/Änderung,32,SG2,AJT,4465,00013,,,Code des Prüfschritts,X,
+Einzelheiten zu einer Anpassung/Änderung,25,SG2,AJT,1082,,,,,E_0476 E_0478 E_0479,"[3] Wenn MP-ID in SG3 NAD+MS mit Rolle NB vorhanden
+[4] Wenn MP-ID in SG3 NAD+MR mit Rolle LF vorhanden
+[5] Wenn MP-ID in SG3 NAD+MS mit Rolle LF vorhanden
+[14] Wenn MP-ID in SG3 NAD+MR mit Rolle MSB vorhanden",,Einzelheiten zu einer Anpassung/Änderung,33,SG2,AJT,1082,00013,,,,E_0544 E_0545 E_0546 E_0547 E_0548 E_0549 E_0550 E_0551,"[3] Wenn MP-ID in SG3 NAD+MS mit Rolle NB vorhanden
+[4] Wenn MP-ID in SG3 NAD+MR mit Rolle LF vorhanden
+[5] Wenn MP-ID in SG3 NAD+MS mit Rolle LF vorhanden
+[14] Wenn MP-ID in SG3 NAD+MR mit Rolle MSB vorhanden
+[15] Wenn MP-ID in SG3 NAD+MR mit Rolle NB vorhanden"
+Allgemeine Information (Feld für allgemeine Hinweise),26,SG2,FTX,,,,,,Muss [28],[28] Wenn AJT+A99 vorhanden,,Allgemeine Information (Feld für allgemeine Hinweise),34,SG2,FTX,,00014,,,,Muss [28],[28] Wenn AJT+A99 vorhanden
+Allgemeine Information (Feld für allgemeine Hinweise),27,SG2,FTX,4451,,,,,AAP,,,Allgemeine Information (Feld für allgemeine Hinweise),35,SG2,FTX,4451,00014,,,,AAP,
+Allgemeine Information (Feld für allgemeine Hinweise),28,SG2,FTX,4440,,,,Freier Text,X,,,Allgemeine Information (Feld für allgemeine Hinweise),36,SG2,FTX,4440,00014,,,Freier Text,X,
+MP-ID Absender,29,SG3,,,,,,,Muss,,,MP-ID Absender,37,SG3,,,,,,,Muss,
+MP-ID Absender,30,SG3,NAD,,,,,,Muss,,,MP-ID Absender,38,SG3,NAD,,00015,,,,Muss,
+MP-ID Absender,31,SG3,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,39,SG3,NAD,3035,00015,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,32,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,,MP-ID Absender,40,SG3,NAD,3039,00015,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom
+MP-ID Absender,33,SG3,NAD,3055,,9,,GS1,X,,,MP-ID Absender,41,SG3,NAD,3055,00015,9,,GS1,X,
+MP-ID Absender,34,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,42,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,35,SG6,,,,,,,Kann,,,Ansprechpartner,43,SG6,,,,,,,Kann,
+Ansprechpartner,36,SG6,CTA,,,,,,Muss,,,Ansprechpartner,44,SG6,CTA,,00016,,,,Muss,
+Ansprechpartner,37,SG6,CTA,3139,,,,,IC,,,Ansprechpartner,45,SG6,CTA,3139,00016,,,,IC,
+Ansprechpartner,38,SG6,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,46,SG6,CTA,3412,00016,,,Kontakt,X,
+Kommunikationsverbindung,39,SG6,COM,,,,,,Muss,,,Kommunikationsverbindung,47,SG6,COM,,00017,,,,Muss,
+Kommunikationsverbindung,40,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,48,SG6,COM,3148,00017,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindung,41,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,49,SG6,COM,3155,00017,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,42,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,50,SG6,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,43,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,51,SG6,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,44,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,52,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,45,SG6,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,53,SG6,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,46,SG3,,,,,,,Muss,,,MP-ID Empfänger,54,SG3,,,,,,,Muss,
+MP-ID Empfänger,47,SG3,NAD,,,,,,Muss,,,MP-ID Empfänger,55,SG3,NAD,,00018,,,,Muss,
+MP-ID Empfänger,48,SG3,NAD,3035,,,,,MR,,,MP-ID Empfänger,56,SG3,NAD,3035,00018,,,,MR,
+MP-ID Empfänger,49,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,57,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom
+MP-ID Empfänger,50,SG3,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,58,SG3,NAD,3055,00018,9,,GS1,X,
+MP-ID Empfänger,51,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,59,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Abschnitts-Kontrollsegment,52,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,60,,UNS,,00030,,,,Muss,
+Abschnitts-Kontrollsegment,53,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,61,,UNS,0081,00030,und Summenteil,,,S,
+Nachrichten-Endesegment,54,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,62,,UNT,,00034,,,,Muss,
+Nachrichten-Endesegment,55,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,63,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,56,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,64,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,

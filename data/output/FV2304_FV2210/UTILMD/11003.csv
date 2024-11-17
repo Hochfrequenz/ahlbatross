@@ -1,0 +1,172 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,E01,,Anmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,,E01,,Anmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
+MP-ID Absender,15,SG2,NAD,,,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,,,,,Muss,
+MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,
+MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,21,SG3,,,,,,,Kann,,,Ansprechpartner,21,SG3,,,,,,,Kann,
+Ansprechpartner,22,SG3,CTA,,,,,,Muss,,,Ansprechpartner,22,SG3,CTA,,,,,,Muss,
+Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,
+Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,32,SG2,,,,,,,Muss,,,MP-ID Empfänger,32,SG2,,,,,,,Muss,
+MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,
+MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Vorgang,39,SG4,,,,,,,Muss,,,Vorgang,39,SG4,,,,,,,Muss,
+Vorgang,40,SG4,IDE,,,,,,Muss,,,Vorgang,40,SG4,IDE,,,,,,Muss,
+Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,
+Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,
+Lieferbeginndatum in Bearbeitung,43,SG4,DTM,,,,,,Muss ([493] ∧ [36]) ⊻ ([492] ∧ [355]),"[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden
+[355] Wenn SG4 STS+E01++A11 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Lieferbeginndatum in Bearbeitung,43,SG4,DTM,,,,,,Muss ([493] ∧ [36]) ⊻ ([492] ∧ [355]),"[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden
+[355] Wenn SG4 STS+E01++A11 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Lieferbeginndatum in Bearbeitung,44,SG4,DTM,2005,,Z07,,Lieferbeginndatum in Bearbeitung,X,,,Lieferbeginndatum in Bearbeitung,44,SG4,DTM,2005,,Z07,,Lieferbeginndatum in Bearbeitung,X,
+Lieferbeginndatum in Bearbeitung,45,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,,Lieferbeginndatum in Bearbeitung,45,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],
+Lieferbeginndatum in Bearbeitung,46,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Lieferbeginndatum in Bearbeitung,46,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Datum für nächste Bearbeitung,47,SG4,DTM,,,,,,Muss ([493] ∧ [36]) ⊻ ([492] ∧ [355]),"[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden
+[355] Wenn SG4 STS+E01++A11 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Datum für nächste Bearbeitung,47,SG4,DTM,,,,,,Muss ([493] ∧ [36]) ⊻ ([492] ∧ [355]),"[36] Wenn SG4 STS+E01++ZC5 (Status der Antwort: Ablehnung andere Anmeldung in Bearbeitung) vorhanden
+[355] Wenn SG4 STS+E01++A11 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Datum für nächste Bearbeitung,48,SG4,DTM,2005,,Z08,,Datum für nächste Bearbeitung,X,,,Datum für nächste Bearbeitung,48,SG4,DTM,2005,,Z08,,Datum für nächste Bearbeitung,X,
+Datum für nächste Bearbeitung,49,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,,Datum für nächste Bearbeitung,49,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],
+Datum für nächste Bearbeitung,50,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Datum für nächste Bearbeitung,50,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Transaktionsgrund,51,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,51,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Transaktionsgrund,52,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,52,SG4,STS,9015,,7,,Transaktionsgrund,X,
+Transaktionsgrund,53,SG4,STS,9013,,E01,,Ein-/Auszug (Umzug),X,,,Transaktionsgrund,53,SG4,STS,9013,,E01,,Ein-/Auszug (Umzug),X,
+Transaktionsgrund,54,SG4,STS,9013,,E02,,Einzug in Neuanlage,X,,,Transaktionsgrund,54,SG4,STS,9013,,E02,,Einzug in Neuanlage,X,
+Transaktionsgrund,55,SG4,STS,9013,,E03,,Wechsel,X,,,Transaktionsgrund,55,SG4,STS,9013,,E03,,Wechsel,X,
+Transaktionsgrund,56,SG4,STS,9013,,ZD2,,Lieferbeginn und Abmeldung aus der Ersatzversorgung,X,,,Transaktionsgrund,56,SG4,STS,9013,,ZD2,,Lieferbeginn und Abmeldung aus der Ersatzversorgung,X,
+Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,57,SG4,STS,,,,,,Soll [37],[37] Wenn Anmeldung/ Änderung befristet,,Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,57,SG4,STS,,,,,,Soll [37],[37] Wenn Anmeldung/ Änderung befristet
+Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,58,SG4,STS,9015,,Z17,,Transaktionsgrundergänzung für befristete Anmeldung,X,,,Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,58,SG4,STS,9015,,Z17,,Transaktionsgrundergänzung für befristete Anmeldung,X,
+Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,59,SG4,STS,9013,,E01,,Ein-/Auszug (Umzug),X,,,Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,59,SG4,STS,9013,,E01,,Ein-/Auszug (Umzug),X,
+Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,60,SG4,STS,9013,,E03,,Wechsel,X,,,Transaktionsgrundergänzun g für Lieferende bei befristeter Anmeldung,60,SG4,STS,9013,,E03,,Wechsel,X,
+Status der Antwort,61,SG4,STS,,,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,,Status der Antwort,61,SG4,STS,,,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten 
+Status der Antwort,62,SG4,STS,9015,,E01,,Status der Antwort,X,,,Status der Antwort,62,SG4,STS,9015,,E01,,Status der Antwort,X,
+Status der Antwort,63,SG4,STS,9013,,,,Code des Prüfschritts,X [359],"[359] Wenn im selben STS+E01 im DE1131 E_xxx (ein EBD ausgewählt wurde und keine Codeliste) vorhanden ist, sind nur Antwortcodes aus dem Cluster Ablehnung erlaubt
+[360] Wenn im selben STS+E01 im DE1131 E_xxx (ein EBD ausgewählt wurde und keine Codeliste) vorhanden ist, sind nur Antwortcodes aus dem Cluster Zustimmung erlaubt",,Status der Antwort,63,SG4,STS,9013,,,,Code des Prüfschritts,X [359],"[359] Wenn im selben STS+E01 im DE1131 E_xxx (ein EBD ausgewählt wurde und keine Codeliste) vorhanden ist, sind nur Antwortcodes aus dem Cluster Ablehnung erlaubt
+[360] Wenn im selben STS+E01 im DE1131 E_xxx (ein EBD ausgewählt wurde und keine Codeliste) vorhanden ist, sind nur Antwortcodes aus dem Cluster Zustimmung erlaubt"
+Status der Antwort,64,SG4,STS,1131,,E_0404,,EBD Nr. E_0404,X [492],,,Status der Antwort,64,SG4,STS,1131,,E_0404,,EBD Nr. E_0404,X [492],
+Status der Antwort,65,SG4,STS,1131,,E_0462,,EBD Nr. E_0462,X [492],,,Status der Antwort,65,SG4,STS,1131,,E_0462,,EBD Nr. E_0462,X [492],
+Status der Antwort,66,SG4,STS,1131,,G_0011,,Codeliste Gas Nr. G_0011,X [493],,,Status der Antwort,66,SG4,STS,1131,,G_0011,,Codeliste Gas Nr. G_0011,X [493],
+Status der Antwort des dritten Marktbeteiligten,67,SG4,STS,,,,,,Muss ([493] ∧ [84]) ⊻ ([492] ∧ [356]),"[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[356] Wenn SG4 STS+E01++A50 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Status der Antwort des dritten Marktbeteiligten,67,SG4,STS,,,,,,Muss ([493] ∧ [84]) ⊻ ([492] ∧ [356]),"[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[356] Wenn SG4 STS+E01++A50 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Status der Antwort des dritten Marktbeteiligten,68,SG4,STS,9015,,Z35,,Status der Antwort des dritten Marktbeteiligten,X,,,Status der Antwort des dritten Marktbeteiligten,68,SG4,STS,9015,,Z35,,Status der Antwort des dritten Marktbeteiligten,X,
+Status der Antwort des dritten Marktbeteiligten,69,SG4,STS,9013,,,,Code des Prüfschritts,X ([492] ∧ [366]) ⊻ ([493] ∧ [368]),"[366] Bis auf den Code A30 sind alle Codes aus EBD E_0403 im Cluster Ablehnung erlaubt
+[368] Es sind alle Codes aus der Codeliste G_0009 erlaubt
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Status der Antwort des dritten Marktbeteiligten,69,SG4,STS,9013,,,,Code des Prüfschritts,X ([492] ∧ [366]) ⊻ ([493] ∧ [368]),"[366] Bis auf den Code A30 sind alle Codes aus EBD E_0403 im Cluster Ablehnung erlaubt
+[368] Es sind alle Codes aus der Codeliste G_0009 erlaubt
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Status der Antwort des dritten Marktbeteiligten,70,SG4,STS,1131,,E_0403,,EBD Nr. E_0403,X [492],,,Status der Antwort des dritten Marktbeteiligten,70,SG4,STS,1131,,E_0403,,EBD Nr. E_0403,X [492],
+Status der Antwort des dritten Marktbeteiligten,71,SG4,STS,1131,,G_0009,,Codeliste Gas Nr. G_0009,X [493],"[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Status der Antwort des dritten Marktbeteiligten,71,SG4,STS,1131,,G_0009,,Codeliste Gas Nr. G_0009,X [493],"[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Bemerkung (Feld für allgemeine Hinweise),72,SG4,FTX,,,,,,Muss [48] ∧ [493] Kann,"[48] Wenn in dieser SG4 das STS+E01++E14/ A99 (Status der Antwort: Ablehnung Sonstiges) vorhanden
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Bemerkung (Feld für allgemeine Hinweise),72,SG4,FTX,,,,,,Muss [48] ∧ [493] Kann,"[48] Wenn in dieser SG4 das STS+E01++E14/ A99 (Status der Antwort: Ablehnung Sonstiges) vorhanden
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Bemerkung (Feld für allgemeine Hinweise),73,SG4,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Bemerkung (Feld für allgemeine Hinweise),73,SG4,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
+Bemerkung (Feld für allgemeine Hinweise),74,SG4,FTX,4440,,,,Text für allgemeine Information,X,,,Bemerkung (Feld für allgemeine Hinweise),74,SG4,FTX,4440,,,,Text für allgemeine Information,X,
+Meldepunkt,75,SG5,,,,,,,Muss [2061] ∧ [583] ∧ (([493] ∧ [362]) ⊻ ([492] ∧ [354])),"[165] Wenn bekannt
+[328] Wenn IMD++Z36+Z12 (Identifikationslogik: Marktlokations-ID) vorhanden
+[333] Wenn IMD+Z36+Z13 (Identifikationslogik: Alle Identifikationsdaten) vorhanden
+[354] Wenn STS+E01++A01/ A03/ A17/ A18 nicht vorhanden
+[362] Wenn STS+E01++A03/ A17 nicht vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas
+[527] Hinweis: Es ist die ID der Marktlokation und alle Identifikatoren der Messlokationen anzugeben
+[583] Hinweis: Verwendung der ID der Marktlokation
+[584] Hinweis: Verwendung der ID der Messlokation
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Meldepunkt,75,SG5,,,,,,,Muss [2061] ∧ [583] ∧ (([493] ∧ [362]) ⊻ ([492] ∧ [354])),"[165] Wenn bekannt
+[328] Wenn IMD++Z36+Z12 (Identifikationslogik: Marktlokations-ID) vorhanden
+[333] Wenn IMD+Z36+Z13 (Identifikationslogik: Alle Identifikationsdaten) vorhanden
+[354] Wenn STS+E01++A01/ A03/ A17/ A18 nicht vorhanden
+[362] Wenn STS+E01++A03/ A17 nicht vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas
+[527] Hinweis: Es ist die ID der Marktlokation und alle Identifikatoren der Messlokationen anzugeben
+[583] Hinweis: Verwendung der ID der Marktlokation
+[584] Hinweis: Verwendung der ID der Messlokation
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Meldepunkt,76,SG5,LOC,,,,,,Muss,,,Meldepunkt,76,SG5,LOC,,,,,,Muss,
+Meldepunkt,77,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,77,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,78,SG5,LOC,3225,,,,Identifikator,X [950],"[950] Format: Marktlokations-ID
+[953] Format: Marktlokations-ID oder Zählpunktbezeichnung",,Meldepunkt,78,SG5,LOC,3225,,,,Identifikator,X [950],"[950] Format: Marktlokations-ID
+[953] Format: Marktlokations-ID oder Zählpunktbezeichnung"
+Prüfidentifikator,79,SG6,,,,,,,Muss,,,Prüfidentifikator,79,SG6,,,,,,,Muss,
+Prüfidentifikator,80,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,80,SG6,RFF,,,,,,Muss,
+Prüfidentifikator,81,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,81,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,82,SG6,RFF,1154,,11003,,GPKE / GeLi Gas / Ablehnung Anmeldung,X,,,Prüfidentifikator,82,SG6,RFF,1154,,11003,,GPKE / GeLi Gas / Ablehnung Anmeldung,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),83,SG6,,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),83,SG6,,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),84,SG6,RFF,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),84,SG6,RFF,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),85,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),85,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),86,SG6,RFF,1154,,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),86,SG6,RFF,1154,,,,Vorgangsnummer,X,
+Daten der Marktlokation,87,SG8,,,,,,,Muss [2061] ∧ [248],"[248] Wenn SG5 LOC+172 (Meldepunkt) vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Daten der Marktlokation,87,SG8,,,,,,,Muss [2061] ∧ [248],"[248] Wenn SG5 LOC+172 (Meldepunkt) vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Daten der Marktlokation,88,SG8,SEQ,,,,,,Muss,,,Daten der Marktlokation,88,SG8,SEQ,,,,,,Muss,
+Daten der Marktlokation,89,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,89,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,
+Lieferrichtung,90,SG10,,,,,,,Muss,,,Lieferrichtung,90,SG10,,,,,,,Muss,
+Lieferrichtung,91,SG10,CCI,,,,,,Muss,,,Lieferrichtung,91,SG10,CCI,,,,,,Muss,
+Lieferrichtung,92,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,,Lieferrichtung,92,SG10,CCI,7059,,Z30,,Lieferrichtung,X,
+Lieferrichtung,93,SG10,CCI,7037,,Z07,,Verbrauch,X,,,Lieferrichtung,93,SG10,CCI,7037,,Z07,,Verbrauch,X,
+Beteiligter Marktpartner MP-ID,94,SG12,,,,,,,Muss (([84] ⊻ [363]) ∧ [566]) ⊻ ([367] ∧ [643]),"[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[363] Wenn SG4 STS+E01++A50 vorhanden
+[367] Wenn SG4 STS+E01++A04 vorhanden
+[566] Hinweis: Altlieferant
+[643] Hinweis: Nachfolgender Netzbetreiber",,Beteiligter Marktpartner MP-ID,94,SG12,,,,,,,Muss (([84] ⊻ [363]) ∧ [566]) ⊻ ([367] ∧ [643]),"[84] Wenn SG4 STS+E01++Z35 (Status der Antwort: Ablehnung der Abmeldeanfrage) vorhanden
+[363] Wenn SG4 STS+E01++A50 vorhanden
+[367] Wenn SG4 STS+E01++A04 vorhanden
+[566] Hinweis: Altlieferant
+[643] Hinweis: Nachfolgender Netzbetreiber"
+Beteiligter Marktpartner MP-ID,95,SG12,NAD,,,,,,Muss,,,Beteiligter Marktpartner MP-ID,95,SG12,NAD,,,,,,Muss,
+Beteiligter Marktpartner MP-ID,96,SG12,NAD,3035,,VY,,andere zugehörige Partei,X,,,Beteiligter Marktpartner MP-ID,96,SG12,NAD,3035,,VY,,andere zugehörige Partei,X,
+Beteiligter Marktpartner MP-ID,97,SG12,NAD,3039,,,,MP-ID,X,,,Beteiligter Marktpartner MP-ID,97,SG12,NAD,3039,,,,MP-ID,X,
+Beteiligter Marktpartner MP-ID,98,SG12,NAD,3055,,9,,GS1,X,,,Beteiligter Marktpartner MP-ID,98,SG12,NAD,3055,,9,,GS1,X,
+Beteiligter Marktpartner MP-ID,99,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Beteiligter Marktpartner MP-ID,99,SG12,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Beteiligter Marktpartner MP-ID,100,SG12,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,Beteiligter Marktpartner MP-ID,100,SG12,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Referenz auf die ID einer Marktlokation / Tranche / Messlokation,101,SG12,RFF,,,,,,Muss,,,Referenz auf die ID einer Marktlokation / Tranche / Messlokation,101,SG12,RFF,,,,,,Muss,
+Referenz auf die ID einer Marktlokation / Tranche / Messlokation,102,SG12,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID einer Marktlokation / Tranche / Messlokation,102,SG12,RFF,1153,,Z18,,Marktlokation,X,
+Referenz auf die ID einer Marktlokation / Tranche / Messlokation,103,SG12,RFF,1154,,,,ID des Identifikators,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID einer Marktlokation / Tranche / Messlokation,103,SG12,RFF,1154,,,,ID des Identifikators,X [950],[950] Format: Marktlokations-ID
+Nachrichten-Endesegment,104,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,104,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,105,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,105,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,106,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,106,,UNT,0062,,,,Nachrichten-Referenznummer,X,

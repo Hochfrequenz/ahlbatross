@@ -1,0 +1,130 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,COMDIS,,Handelsunstimmigkeit,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,COMDIS,,Handelsunstimmigkeit,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,17A,,Ausgabe 2017 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,17A,,Ausgabe 2017 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.0d,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,456,,Belastungsanzeige,X,,,Beginn der Nachricht,8,,BGM,1001,,456,,Belastungsanzeige,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Prüfidentifikator,10,,RFF,,,,,,Muss,,,Prüfidentifikator,10,,RFF,,,,,,Muss,
+Prüfidentifikator,11,,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,11,,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,12,,RFF,1154,,29001,,Ablehnung REMADV,X,,,Prüfidentifikator,12,,RFF,1154,,29001,,Ablehnung REMADV,X,
+Dokumentendatum,13,,DTM,,,,,,Muss,,,Dokumentendatum,13,,DTM,,,,,,Muss,
+Dokumentendatum,14,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,14,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,15,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Dokumentendatum,15,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
+Dokumentendatum,16,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,16,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Währungsangaben,17,,CUX,,,,,,Muss,,,Währungsangaben,17,,CUX,,,,,,Muss,
+Währungsangaben,18,,CUX,6347,,2,,Referenzwährung,X,,,Währungsangaben,18,,CUX,6347,,2,,Referenzwährung,X,
+Währungsangaben,19,,CUX,6345,,EUR,,Euro,X,,,Währungsangaben,19,,CUX,6345,,EUR,,Euro,X,
+Währungsangaben,20,,CUX,6343,,4,,Währung der Rechnung,X,,,Währungsangaben,20,,CUX,6343,,4,,Währung der Rechnung,X,
+MP-ID Absender,21,SG1,,,,,,,Muss,,,MP-ID Absender,21,SG1,,,,,,,Muss,
+MP-ID Absender,22,SG1,NAD,,,,,,Muss,,,MP-ID Absender,22,SG1,NAD,,,,,,Muss,
+MP-ID Absender,23,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,23,SG1,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,24,SG1,NAD,3039,,,,MP-ID,X,[3] Nur MP-ID aus Sparte Strom,,MP-ID Absender,24,SG1,NAD,3039,,,,MP-ID,X,[3] Nur MP-ID aus Sparte Strom
+MP-ID Absender,25,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Absender,25,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Absender,26,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,26,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,27,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,27,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,28,SG1,CTA,,,,,,Muss,,,Ansprechpartner,28,SG1,CTA,,,,,,Muss,
+Ansprechpartner,29,SG1,CTA,3139,,IC,,Informationsstelle,X,,,Ansprechpartner,29,SG1,CTA,3139,,IC,,Informationsstelle,X,
+Ansprechpartner,30,SG1,CTA,3412,,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,30,SG1,CTA,3412,,,,Abteilung oder Bearbeiter,X,
+Kommunikationsverbindung,31,SG1,COM,,,,,,Muss,,,Kommunikationsverbindung,31,SG1,COM,,,,,,Muss,
+Kommunikationsverbindung,32,SG1,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,32,SG1,COM,3148,,,,"Kommunikationsadresse, Identifikation",X (([939][21]) ∨ ([940][22])) ∧ [508],"[21] wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[22] wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[508] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,33,SG1,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,33,SG1,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,34,SG1,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,34,SG1,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,35,SG1,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,35,SG1,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,36,SG1,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,36,SG1,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,37,SG1,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,37,SG1,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,38,SG1,,,,,,,Muss,,,MP-ID Empfänger,38,SG1,,,,,,,Muss,
+MP-ID Empfänger,39,SG1,NAD,,,,,,Muss,,,MP-ID Empfänger,39,SG1,NAD,,,,,,Muss,
+MP-ID Empfänger,40,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,40,SG1,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,41,SG1,NAD,3039,,,,MP-ID,X,[3] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,41,SG1,NAD,3039,,,,MP-ID,X,[3] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,42,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,42,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,43,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,43,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Empfänger,44,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,44,SG1,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Dokument-/Nachricht- Einzelheiten,45,SG2,,,,,,,Muss,,,Dokument-/Nachricht- Einzelheiten,45,SG2,,,,,,,Muss,
+Dokument-/Nachricht- Einzelheiten,46,SG2,DOC,,,,,,Muss,,,Dokument-/Nachricht- Einzelheiten,46,SG2,DOC,,,,,,Muss,
+Dokument-/Nachricht- Einzelheiten,47,SG2,DOC,1001,,380,,Handelsrechnung,X,,,Dokument-/Nachricht- Einzelheiten,47,SG2,DOC,1001,,380,,Handelsrechnung,X,
+Dokument-/Nachricht- Einzelheiten,48,SG2,DOC,1004,,,,Dokumentennummer,X [505],"[505] Hinweis: BGM DE1004 aus der vorher per REMADV abgelehnten INVOIC-Nachricht
+[506] Hinweis: BGM DE1004 aus der vorher per IFTSTA abgelehnten MSCONS- Nachricht",,Dokument-/Nachricht- Einzelheiten,48,SG2,DOC,1004,,,,Dokumentennummer,X [505],"[505] Hinweis: BGM DE1004 aus der vorher per REMADV abgelehnten INVOIC-Nachricht
+[506] Hinweis: BGM DE1004 aus der vorher per IFTSTA abgelehnten MSCONS- Nachricht"
+angeforderter Betrag,49,SG2,MOA,,,,,,Muss,,,angeforderter Betrag,49,SG2,MOA,,,,,,Muss,
+angeforderter Betrag,50,SG2,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,,angeforderter Betrag,50,SG2,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,
+angeforderter Betrag,51,SG2,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,,angeforderter Betrag,51,SG2,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen
+Begründung der Korrektheit,52,SG3,,,,,,,Muss,,,Begründung der Korrektheit,52,SG3,,,,,,,Muss,
+Begründung der Korrektheit,53,SG3,AJT,,,,,,Muss,,,Begründung der Korrektheit,53,SG3,AJT,,,,,,Muss,
+Begründung der Korrektheit,54,SG3,AJT,4465,,,,"Anpassungsgrund, Code",X,,,Begründung der Korrektheit,54,SG3,AJT,4465,,,,"Anpassungsgrund, Code",X,
+Begründung der Korrektheit,55,SG3,AJT,1082,,Codeliste Strom Nr. S_0108 Codeliste Strom Nr. S_0109,,Positionsnummer S_0108 S_0109,X [492] ∧ [27] ∧ [25],,,Begründung der Korrektheit,55,SG3,AJT,1082,,E_0265,,EBD Nr. E_0265,X [492] ∧ [23] ∧ [24],
+Begründung der Korrektheit,56,SG3,AJT,1082,,E_0504,,EBD Nr. E_0504,X [492] ∧ [27] ∧ [25],,,Begründung der Korrektheit,56,SG3,AJT,1082,,E_0504,,EBD Nr. E_0504,X [492] ∧ [27] ∧ [25],
+Begründung der Korrektheit,57,SG3,AJT,1082,,E_0265,,EBD Nr. E_0265,X [492] ∧ [23] ∧ [24],,,Begründung der Korrektheit,57,SG3,AJT,1082,,E_0516,,EBD Nr. E_0516,X [492] ∧ [23] ∧ [26],
+Begründung der Korrektheit,58,SG3,AJT,1082,,E_0516,,EBD Nr. E_0516,X [492] ∧ [23] ∧ [26],,,Begründung der Korrektheit,58,SG3,AJT,1082,,E_0520,,EBD Nr. E_0520,X [492] ∧ [23] ∧ [25],
+Begründung der Korrektheit,59,SG3,AJT,1082,,E_0520,,EBD Nr. E_0520,X [492] ∧ [23] ∧ [25],,,Begründung der Korrektheit,59,SG3,AJT,1082,,E_0567,,EBD Nr. E_0567,X [492] ∧ [23] ∧ [26],
+Begründung der Korrektheit,60,SG3,AJT,1082,,E_1008,,EBD Nr. E_1008,X [493] ∧ [27] ∧ [25],"[23] Wenn MP-ID in NAD+MS (Nachrichtensender) mit Rolle MSB vorhanden
+[24] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle ESA vorhanden
+[25] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle LF vorhanden
+[26] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle NB vorhanden
+[27] Wenn MP-ID in NAD+MS (Nachrichtensender) mit Rolle NB vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Begründung der Korrektheit,60,SG3,AJT,1082,,E_1008 S_0108 S_0109,,EBD Nr. E_1008 Codeliste Strom Nr. S_0108 Codeliste Strom Nr. S_0109,X [493] ∧ [27] ∧ [25] X [492] ∧ [27] ∧ [25],"[23] Wenn MP-ID in NAD+MS (Nachrichtensender) mit Rolle MSB vorhanden
+[24] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle ESA vorhanden
+[25] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle LF vorhanden
+[26] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) mit Rolle NB vorhanden
+[27] Wenn MP-ID in NAD+MS (Nachrichtensender) mit Rolle NB vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,61,SG3,FTX,,,,,,Muss [4] ⊻ [5] ⊻ [20],"[4] wenn SG3 AJT+Z58/Z59/ Z60/Z61/Z62+S_0109 vorhanden
+[5] wenn SG3 AJT+A01/A02/ A03/A04/A06/A07/A09/A12/ A15+E_0504 vorhanden
+[20] wenn SG3 AJT+A01/ A02/A03/A04/A06/A07/A09/ A15+E_1008 vorhanden",,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,61,SG3,FTX,,,,,,Muss [4] ⊻ [5] ⊻ [20],"[4] wenn SG3 AJT+Z58/Z59/ Z60/Z61/Z62+S_0109 vorhanden
+[5] wenn SG3 AJT+A01/A02/ A03/A04/A06/A07/A09/A12/ A15+E_0504 vorhanden
+[20] wenn SG3 AJT+A01/ A02/A03/A04/A06/A07/A09/ A15+E_1008 vorhanden"
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,62,SG3,FTX,4451,,ACD,,Begründung,X,,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,62,SG3,FTX,4451,,ACD,,Begründung,X,
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,63,SG3,FTX,4441,,Z07,,MSCONS,X [1],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,63,SG3,FTX,4441,,Z07,,MSCONS,X [1],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,64,SG3,FTX,4441,,Z08,,UTILMD,X [2],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,64,SG3,FTX,4441,,Z08,,UTILMD,X [2],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,65,SG3,FTX,4441,,Z09,,INVOIC,X [6] ⊻ [13],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,65,SG3,FTX,4441,,Z09,,INVOIC,X [6] ⊻ [13],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,66,SG3,FTX,4441,,Z10,,ORDERS,X [7] ⊻ [14],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,66,SG3,FTX,4441,,Z10,,ORDERS,X [7] ⊻ [14],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,67,SG3,FTX,4441,,Z11,,PRICAT,X [8] ⊻ [15],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,67,SG3,FTX,4441,,Z11,,PRICAT,X [8] ⊻ [15],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,68,SG3,FTX,4441,,Z12,,IFTSTA,X [10] ⊻ [16],,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,68,SG3,FTX,4441,,Z12,,IFTSTA,X [10] ⊻ [16],
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,69,SG3,FTX,4441,,Z13,,ORDCHG,X [11] ⊻ [17],"[1] wenn SG3 AJT+Z61+S_0109 oder SG3 AJT+Z62+S_0109 vorhanden.
+[2] wenn SG3 AJT+Z58+S_0109 oder SG3 AJT+Z59+S_0109 oder SG3 AJT+Z60+S_0109 vorhanden.
+[6] wenn SG3 AJT+A07+E_0504 vorhanden
+[7] wenn SG3 AJT+A02+E_0504 vorhanden
+[8] wenn SG3 AJT+A01/A04/ A06/A09/A12+E_0504 vorhanden
+[10] wenn SG3 AJT+A03+E_0504 vorhanden
+[11] wenn SG3 AJT+A15+E_0504 vorhanden
+[13] wenn SG3 AJT+A07+E_1008 vorhanden
+[14] wenn SG3 AJT+A02+E_1008 vorhanden
+[15] wenn SG3 AJT+A01/ A04/A06/A09+E_1008 vorhanden
+[16] wenn SG3 AJT+A03+E_1008 vorhanden
+[17] wenn SG3 AJT+A15+E_1008 vorhanden",,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,69,SG3,FTX,4441,,Z13,,ORDCHG,X [11] ⊻ [17],"[1] wenn SG3 AJT+Z61+S_0109 oder SG3 AJT+Z62+S_0109 vorhanden.
+[2] wenn SG3 AJT+Z58+S_0109 oder SG3 AJT+Z59+S_0109 oder SG3 AJT+Z60+S_0109 vorhanden.
+[6] wenn SG3 AJT+A07+E_0504 vorhanden
+[7] wenn SG3 AJT+A02+E_0504 vorhanden
+[8] wenn SG3 AJT+A01/A04/ A06/A09/A12+E_0504 vorhanden
+[10] wenn SG3 AJT+A03+E_0504 vorhanden
+[11] wenn SG3 AJT+A15+E_0504 vorhanden
+[13] wenn SG3 AJT+A07+E_1008 vorhanden
+[14] wenn SG3 AJT+A02+E_1008 vorhanden
+[15] wenn SG3 AJT+A01/ A04/A06/A09+E_1008 vorhanden
+[16] wenn SG3 AJT+A03+E_1008 vorhanden
+[17] wenn SG3 AJT+A15+E_1008 vorhanden"
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,70,SG3,FTX,4440,,,,Datenaustauschreferenz der referenzierten Datei,X,,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,70,SG3,FTX,4440,,,,Datenaustauschreferenz der referenzierten Datei,X,
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,71,SG3,FTX,4440,,,,Nachrichten-/Vorgangsnummer,X,,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,71,SG3,FTX,4440,,,,Nachrichten-/Vorgangsnummer,X,
+Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,72,SG3,FTX,4440,,,,Datenaustauschreferenz der Empfangsbestätigung,X,,,Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,72,SG3,FTX,4440,,,,Datenaustauschreferenz der Empfangsbestätigung,X,
+Begründung Richtigkeit mit Angabe von Freitext,73,SG3,FTX,,,,,,Muss [9] ⊻ [12] ⊻ [18] ⊻ [19],"[9] wenn SG3 AJT+A05/A10/ A11/A14+E_0504 vorhanden
+[12] wenn SG3 AJT+A99+S_0109 vorhanden
+[18] wenn SG3 AJT+A05/ A10/A11+E_1008 vorhanden
+[19] wenn SG3 AJT+A99+E_0265/E_0516/ E_0520 vorhanden",,Begründung Richtigkeit mit Angabe von Freitext,73,SG3,FTX,,,,,,Muss [9] ⊻ [12] ⊻ [18] ⊻ [19],"[9] wenn SG3 AJT+A05/A10/ A11/A14+E_0504 vorhanden
+[12] wenn SG3 AJT+A99+S_0109 vorhanden
+[18] wenn SG3 AJT+A05/ A10/A11+E_1008 vorhanden
+[19] wenn SG3 AJT+A99+E_0265/E_0516/ E_0520/E_0567 vorhanden"
+Begründung Richtigkeit mit Angabe von Freitext,74,SG3,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Begründung Richtigkeit mit Angabe von Freitext,74,SG3,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
+Begründung Richtigkeit mit Angabe von Freitext,75,SG3,FTX,4440,,,,Freier Text,X,,,Begründung Richtigkeit mit Angabe von Freitext,75,SG3,FTX,4440,,,,Freier Text,X,
+Nachrichten-Endesegment,76,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,76,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,77,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,77,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,78,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,78,,UNT,0062,,,,Nachrichten-Referenznummer,X,

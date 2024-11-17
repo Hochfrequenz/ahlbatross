@@ -1,0 +1,433 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,PARTIN,,Partnerstammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,PARTIN,,Partnerstammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,20B,,Ausgabe 2020 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,20B,,Ausgabe 2020 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.0a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.0b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,10,,Partnerstammdaten,X,,,Beginn der Nachricht,8,,BGM,1001,,10,,Partnerstammdaten,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Beginn der Nachricht,10,,BGM,1373,,11,,Dokument nicht verfügbar,S [9],[9] Wenn die Kommunikationsdaten vom Absender nicht mehr aktiv sind.,,Beginn der Nachricht,10,,BGM,1373,,11,,Dokument nicht verfügbar,S [9],[9] Wenn die Kommunikationsdaten vom Absender nicht mehr aktiv sind.
+Nachrichtendatum,11,,DTM,,,,,,Muss,,,Nachrichtendatum,11,,DTM,,,,,,Muss,
+Nachrichtendatum,12,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,12,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,13,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,13,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931][494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,14,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,14,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Prüfidentifikator,15,SG1,,,,,,,Muss,,,Prüfidentifikator,15,SG1,,,,,,,Muss,
+Prüfidentifikator,16,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,16,SG1,RFF,,,,,,Muss,
+Prüfidentifikator,17,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,17,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,18,SG1,RFF,1154,,37001,,Übermittlung Kommunikationsdaten des NB,X,,,Prüfidentifikator,18,SG1,RFF,1154,,37001,,Übermittlung Kommunikationsdaten des NB,X,
+Versionsnummer,19,SG1,RFF,,,,,,Muss,,,Versionsnummer,19,SG1,,,,,,,Muss,
+Versionsnummer,20,SG1,RFF,1153,,AGK,,Anwendungsreferenznu mmer,X,,,Versionsnummer,20,SG1,RFF,,,,,,Muss,
+Versionsnummer,21,SG1,RFF,1056,,,,Versionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,Versionsnummer,21,SG1,RFF,1153,,AGK,,Anwendungsreferenznu mmer,X,
+,,,,,,,,,,,NEW,Versionsnummer,22,SG1,RFF,1056,,,,Versionsnummer,X [908][505],"[505] Wenn eine Vorgängerversion (RFF+ACW) angegeben ist, so muss der Wert in diesem DE1056 mindestens um 1 höher sein, als der Wert aus DE1056 der Vorgängerversion (RFF+ACW).
+[908] Format: Mögliche Werte: 1 bis n"
+Gültig Ab,22,SG1,DTM,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden,,Gültig Ab,23,SG1,DTM,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden
+Gültig Ab,23,SG1,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,Gültig Ab,24,SG1,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,
+Gültig Ab,24,SG1,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Gültig Ab,25,SG1,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
+Gültig Ab,25,SG1,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Gültig Ab,26,SG1,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Vorgängerversion,26,SG1,RFF,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden,,Vorgängerversion,27,SG1,,,,,,,Soll [4],[4] Wenn Vorgängerversion vorhanden
+Vorgängerversion,27,SG1,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Vorgängerversion,28,SG1,RFF,,,,,,Muss,
+Vorgängerversion,28,SG1,RFF,1056,,,,Versionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,Vorgängerversion,29,SG1,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+,,,,,,,,,,,NEW,Vorgängerversion,30,SG1,RFF,1056,,,,Versionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n
+MP-ID Absender,29,SG2,,,,,,,Muss,,,MP-ID Absender,31,SG2,,,,,,,Muss,
+MP-ID Absender,30,SG2,NAD,,,,,,Muss,,,MP-ID Absender,32,SG2,NAD,,,,,,Muss,
+MP-ID Absender,31,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,33,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,32,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Absender,34,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Absender,33,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,35,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,34,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,35,SG3,,,,,,,Kann,,,Ansprechpartner,37,SG3,,,,,,,Kann,
+Ansprechpartner,36,SG3,CTA,,,,,,Muss,,,Ansprechpartner,38,SG3,CTA,,,,,,Muss,
+Ansprechpartner,37,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,39,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,38,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,40,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,39,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,41,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,40,SG3,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][7])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[7] wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,42,SG3,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][7])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[7] wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,41,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,43,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,42,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,44,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,43,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,45,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,44,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,46,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,45,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,47,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,46,SG2,,,,,,,Muss,,,MP-ID Empfänger,48,SG2,,,,,,,Muss,
+MP-ID Empfänger,47,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,49,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,48,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,50,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,49,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,51,SG2,NAD,3039,,,,MP-ID,X [1],[1] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,50,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,52,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,51,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,53,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Abschnitts-Kontrollsegment,52,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,54,,UNS,,,,,,Muss,
+Abschnitts-Kontrollsegment,53,,UNS,0081,,D,,Trennung von Kopf- und Positionsteil,X,,,Abschnitts-Kontrollsegment,55,,UNS,0081,,D,,Trennung von Kopf- und Positionsteil,X,
+Name und Adresse des Unternehmens,54,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Adresse des Unternehmens,56,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Adresse des Unternehmens,55,SG4,NAD,,,,,,Muss,,,Name und Adresse des Unternehmens,57,SG4,NAD,,,,,,Muss,
+Name und Adresse des Unternehmens,56,SG4,NAD,3035,,DDM,,Netzbetreiber,X,,,Name und Adresse des Unternehmens,58,SG4,NAD,3035,,DDM,,Netzbetreiber,X,
+Name und Adresse des Unternehmens,57,SG4,NAD,3036,,,,Name,X,,,Name und Adresse des Unternehmens,59,SG4,NAD,3036,,,,Name,X,
+Name und Adresse des Unternehmens,58,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Adresse des Unternehmens,60,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Adresse des Unternehmens,59,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Adresse des Unternehmens,61,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Adresse des Unternehmens,60,SG4,NAD,3164,,,,Ort,X,,,Name und Adresse des Unternehmens,62,SG4,NAD,3164,,,,Ort,X,
+Name und Adresse des Unternehmens,61,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Adresse des Unternehmens,63,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Adresse des Unternehmens,62,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Adresse des Unternehmens,64,SG4,NAD,3207,,,,"Ländername, Code",X,
+Bankverbindung,63,SG4,FII,,,,,,Muss,,,Bankverbindung,65,SG4,FII,,,,,,Muss,
+Bankverbindung,64,SG4,FII,3035,,Z27,,Bankverbindung für Zahlungen aus der Netznutzungsabrechnung,X [1P1..1],,,Bankverbindung,66,SG4,FII,3035,,BK,,Kreditinstitut,X,
+Bankverbindung,65,SG4,FII,3035,,Z28,,Bankverbindung für Zahlungen aus der MMM-Abrechnung,X [1P1..1],,,Bankverbindung,67,SG4,FII,3194,,IBAN,,,X,
+Bankverbindung,66,SG4,FII,3035,,Z30,,Bankverbindung für Zahlungen der Sperren/ Entsperren-Abrechnung,X [1P1..1],,,Bankverbindung,68,SG4,FII,3192,,,,Name des Kontoinhabers,X,
+Bankverbindung,67,SG4,FII,3035,,Z32,,Sonstige Bankverbindung,X [1P0..7],,,Bankverbindung,69,SG4,FII,3192,,,,Name des Kontoinhabers,K,
+Bankverbindung,68,SG4,FII,3194,,IBAN,,,X,,,Bankverbindung,70,SG4,FII,3433,,BIC,,,X,
+Bankverbindung,69,SG4,FII,3192,,,,Name des Kontoinhabers,X,,,Bankverbindung,71,SG4,FII,3432,,,,Name des Kredinstituts,X,
+Bankverbindung,70,SG4,FII,3192,,,,Name des Kontoinhabers,K,,REMOVED,,,,,,,,,,,
+Bankverbindung,71,SG4,FII,3433,,BIC,,,X,,REMOVED,,,,,,,,,,,
+Bankverbindung,72,SG4,FII,3432,,,,Name des Kredinstituts,X,,REMOVED,,,,,,,,,,,
+Downloadlink für E-Mail Zertifikate 1:1 Marktkommunikation,73,SG4,FTX,,,,,,Muss,,REMOVED,,,,,,,,,,,
+Downloadlink für E-Mail Zertifikate 1:1 Marktkommunikation,74,SG4,FTX,4451,,Z11,,Downloadlink E-Mail Zertifikate,X,,REMOVED,,,,,,,,,,,
+Downloadlink für E-Mail Zertifikate 1:1 Marktkommunikation,75,SG4,FTX,4440,,,,Downloadlink,X,,REMOVED,,,,,,,,,,,
+E-Mail Adresse für den elektronischen Datenaustausch,76,SG4,FTX,,,,,,Muss,,REMOVED,,,,,,,,,,,
+E-Mail Adresse für den elektronischen Datenaustausch,77,SG4,FTX,4451,,Z12,,E-Mail Adresse für den elektronischen Datenaustausch,X,,REMOVED,,,,,,,,,,,
+E-Mail Adresse für den elektronischen Datenaustausch,78,SG4,FTX,4440,,,,E-Mail Adresse,X,,REMOVED,,,,,,,,,,,
+Internetseite (URL),79,SG4,FTX,,,,,,Muss,,,Internetseite (URL),72,SG4,FTX,,,,,,Muss,
+Internetseite (URL),80,SG4,FTX,4451,,Z13,,Internetseite,X,,,Internetseite (URL),73,SG4,FTX,4451,,Z13,,Internetseite,X,
+Internetseite (URL),81,SG4,FTX,4440,,,,Internetseite,X,,,Internetseite (URL),74,SG4,FTX,4440,,,,Internetseite,X,
+Gericht und Handelsregister-Nummer,82,SG4,FTX,,,,,,Soll [3],[3] wenn vorhanden ,,Gericht und Handelsregister-Nummer,75,SG4,FTX,,,,,,Soll [3],[3] wenn vorhanden 
+Gericht und Handelsregister-Nummer,83,SG4,FTX,4451,,Z15,,Gericht und Handelsregister-Nummer,X,,,Gericht und Handelsregister-Nummer,76,SG4,FTX,4451,,Z15,,Gericht und Handelsregister-Nummer,X,
+Gericht und Handelsregister-Nummer,84,SG4,FTX,4440,,,,Gericht,X,,,Gericht und Handelsregister-Nummer,77,SG4,FTX,4440,,,,Gericht,X,
+Gericht und Handelsregister-Nummer,85,SG4,FTX,4440,,,,Handelsregister-Nummer,X,,,Gericht und Handelsregister-Nummer,78,SG4,FTX,4440,,,,Handelsregister-Nummer,X,
+"Steuernummer, Umsatzsteuernummer",86,SG6,,,,,,,Muss [504],"[504] Hinweis: Es ist mindestens die Umsatzsteuer- bzw. Steuernummer zu nennen, die in der INVOIC genutzt wird.",,"Steuernummer, Umsatzsteuernummer",79,SG6,,,,,,,Muss [504],"[504] Hinweis: Es ist mindestens die Umsatzsteuer- bzw. Steuernummer zu nennen, die in der INVOIC genutzt wird."
+"Steuernummer, Umsatzsteuernummer",87,SG6,RFF,,,,,,Muss,,,"Steuernummer, Umsatzsteuernummer",80,SG6,RFF,,,,,,Muss,
+"Steuernummer, Umsatzsteuernummer",88,SG6,RFF,1153,,VA,,Umsatzsteuernummer,X [2P0..1] ⊻ [3P1..1],,,"Steuernummer, Umsatzsteuernummer",81,SG6,RFF,1153,,VA,,Umsatzsteuernummer,X [2P0..1] ⊻ [3P1..1],
+"Steuernummer, Umsatzsteuernummer",89,SG6,RFF,1153,,FC,,Steuernummer,X [2P0..1],,,"Steuernummer, Umsatzsteuernummer",82,SG6,RFF,1153,,FC,,Steuernummer,X [2P0..1],
+"Steuernummer, Umsatzsteuernummer",90,SG6,RFF,1154,,,,"Referenz, Identifikation",X,,,"Steuernummer, Umsatzsteuernummer",83,SG6,RFF,1154,,,,"Referenz, Identifikation",X,
+Faxnummer,91,SG6,RFF,,,,,,Kann,,,Faxnummer,84,SG6,RFF,,,,,,Kann,
+Faxnummer,92,SG6,RFF,1153,,Z25,,Faxnummer,X,,,Faxnummer,85,SG6,RFF,1153,,Z25,,Faxnummer,X,
+Faxnummer,93,SG6,RFF,1154,,,,Faxnummer,X [940],[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen,,Faxnummer,86,SG6,RFF,1154,,,,Faxnummer,X [940],[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen
+Erreichbarkeit an Werktagen,94,SG12,,,,,,,Muss,,,Erreichbarkeit an Werktagen,87,SG12,,,,,,,Muss,
+Erreichbarkeit an Werktagen,95,SG12,CCI,,,,,,Muss,,,Erreichbarkeit an Werktagen,88,SG12,CCI,,,,,,Muss,
+Erreichbarkeit an Werktagen,96,SG12,CCI,7059,,Z40,,Erreichbarkeit des Unternehmens,X,,,Erreichbarkeit an Werktagen,89,SG12,CCI,7059,,Z40,,Erreichbarkeit des Unternehmens,X,
+Erreichbarkeit,97,SG12,DTM,,,,,,Muss,,,Erreichbarkeit,90,SG12,DTM,,,,,,Muss,
+Erreichbarkeit,98,SG12,DTM,2005,,Z36,,Verfügbarkeit Montag,X [1P1..1],,,Erreichbarkeit,91,SG12,DTM,2005,,Z36,,Verfügbarkeit Montag,X [1P1..1],
+Erreichbarkeit,99,SG12,DTM,2005,,Z37,,Verfügbarkeit Dienstag,X [1P1..1],,,Erreichbarkeit,92,SG12,DTM,2005,,Z37,,Verfügbarkeit Dienstag,X [1P1..1],
+Erreichbarkeit,100,SG12,DTM,2005,,Z38,,Verfügbarkeit Mittwoch,X [1P1..1],,,Erreichbarkeit,93,SG12,DTM,2005,,Z38,,Verfügbarkeit Mittwoch,X [1P1..1],
+Erreichbarkeit,101,SG12,DTM,2005,,Z39,,Verfügbarkeit Donnerstag,X [1P1..1],,,Erreichbarkeit,94,SG12,DTM,2005,,Z39,,Verfügbarkeit Donnerstag,X [1P1..1],
+Erreichbarkeit,102,SG12,DTM,2005,,Z40,,Verfügbarkeit Freitag,X [1P1..1],,,Erreichbarkeit,95,SG12,DTM,2005,,Z40,,Verfügbarkeit Freitag,X [1P1..1],
+Erreichbarkeit,103,SG12,DTM,2005,,Z41,,Mittagspause (= Ausschluss der Verfügbarkeit),X [1P0..1],,,Erreichbarkeit,96,SG12,DTM,2005,,Z41,,Mittagspause (= Ausschluss der Verfügbarkeit),X [1P0..1],
+Erreichbarkeit,104,SG12,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [503],[503] Hinweis: Angabe erfolgt in gesetzlicher deutscher Zeit,,Erreichbarkeit,97,SG12,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [503],[503] Hinweis: Angabe erfolgt in gesetzlicher deutscher Zeit
+Erreichbarkeit,105,SG12,DTM,2379,,501,,HHMMHHMM,X,,,Erreichbarkeit,98,SG12,DTM,2379,,501,,HHMMHHMM,X,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,106,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,99,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,107,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,100,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,108,SG4,NAD,3035,,Z10,,Ansprechpartner Übertragungsweg / Datenaustausch,X,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,101,SG4,NAD,3035,,Z10,,Ansprechpartner Übertragungsweg / Datenaustausch,X,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,109,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,102,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,110,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,103,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,111,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,104,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,112,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,105,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,113,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden",,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,106,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,114,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Übertragungsweg / Datenaustausch,107,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,115,SG7,,,,,,,Muss,,,Ansprechpartner,108,SG7,,,,,,,Muss,
+Ansprechpartner,116,SG7,CTA,,,,,,Muss,,,Ansprechpartner,109,SG7,CTA,,,,,,Muss,
+Ansprechpartner,117,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,110,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,118,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,111,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,119,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,112,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,120,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,113,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,121,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,114,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,122,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,115,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,123,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,116,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Rahmenverträge,124,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Rahmenverträge,117,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Rahmenverträge,125,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Rahmenverträge,118,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Rahmenverträge,126,SG4,NAD,3035,,Z11,,Ansprechpartner Rahmenverträge,X,,,Name und Anschrift Ansprechpartner Rahmenverträge,119,SG4,NAD,3035,,Z11,,Ansprechpartner Rahmenverträge,X,
+Name und Anschrift Ansprechpartner Rahmenverträge,127,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Rahmenverträge,120,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Rahmenverträge,128,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Rahmenverträge,121,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Rahmenverträge,129,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Rahmenverträge,122,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Rahmenverträge,130,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Rahmenverträge,123,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Rahmenverträge,131,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Rahmenverträge,124,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden"
+Name und Anschrift Ansprechpartner Rahmenverträge,132,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Rahmenverträge,125,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,133,SG7,,,,,,,Muss,,,Ansprechpartner,126,SG7,,,,,,,Muss,
+Ansprechpartner,134,SG7,CTA,,,,,,Muss,,,Ansprechpartner,127,SG7,CTA,,,,,,Muss,
+Ansprechpartner,135,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,128,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,136,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,129,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,137,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,130,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,138,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,131,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,139,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,132,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,140,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,133,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,141,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,134,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Wechselprozesse,142,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Wechselprozesse,135,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Wechselprozesse,143,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Wechselprozesse,136,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Wechselprozesse,144,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,,,Name und Anschrift Ansprechpartner Wechselprozesse,137,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,
+Name und Anschrift Ansprechpartner Wechselprozesse,145,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Wechselprozesse,138,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Wechselprozesse,146,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Wechselprozesse,139,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Wechselprozesse,147,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Wechselprozesse,140,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Wechselprozesse,148,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Wechselprozesse,141,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Wechselprozesse,149,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Wechselprozesse,142,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Wechselprozesse,150,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Wechselprozesse,143,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,151,SG7,,,,,,,Muss,,,Ansprechpartner,144,SG7,,,,,,,Muss,
+Ansprechpartner,152,SG7,CTA,,,,,,Muss,,,Ansprechpartner,145,SG7,CTA,,,,,,Muss,
+Ansprechpartner,153,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,146,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,154,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,147,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,155,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,148,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,156,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,149,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,157,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,150,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,158,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,151,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,159,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,152,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Stammdatenprozesse,160,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Stammdatenprozesse,153,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Stammdatenprozesse,161,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,154,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Stammdatenprozesse,162,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,155,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,
+Name und Anschrift Ansprechpartner Stammdatenprozesse,163,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Stammdatenprozesse,156,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Stammdatenprozesse,164,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,157,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Stammdatenprozesse,165,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,158,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Stammdatenprozesse,166,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,159,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Stammdatenprozesse,167,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Stammdatenprozesse,160,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Stammdatenprozesse,168,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,161,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,169,SG7,,,,,,,Muss,,,Ansprechpartner,162,SG7,,,,,,,Muss,
+Ansprechpartner,170,SG7,CTA,,,,,,Muss,,,Ansprechpartner,163,SG7,CTA,,,,,,Muss,
+Ansprechpartner,171,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,164,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,172,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,165,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,173,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,166,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,174,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,167,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,175,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,168,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,176,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,169,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,177,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,170,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Einspeiseprozesse,178,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Einspeiseprozesse,171,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Einspeiseprozesse,179,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,172,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Einspeiseprozesse,180,SG4,NAD,3035,,Z16,,Ansprechpartner Einspeiseprozesse,X,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,173,SG4,NAD,3035,,Z16,,Ansprechpartner Einspeiseprozesse,X,
+Name und Anschrift Ansprechpartner Einspeiseprozesse,181,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Einspeiseprozesse,174,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Einspeiseprozesse,182,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,175,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Einspeiseprozesse,183,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,176,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Einspeiseprozesse,184,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,177,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Einspeiseprozesse,185,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Einspeiseprozesse,178,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden"
+Name und Anschrift Ansprechpartner Einspeiseprozesse,186,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Einspeiseprozesse,179,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,187,SG7,,,,,,,Muss,,,Ansprechpartner,180,SG7,,,,,,,Muss,
+Ansprechpartner,188,SG7,CTA,,,,,,Muss,,,Ansprechpartner,181,SG7,CTA,,,,,,Muss,
+Ansprechpartner,189,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,182,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,190,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,183,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,191,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,184,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,192,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,185,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,193,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,186,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,194,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,187,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,195,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,188,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,196,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,189,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,197,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,190,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,198,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,191,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,199,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,192,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,200,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,193,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,201,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,194,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,202,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,195,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,203,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Abrechnungsprozesse,196,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,204,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,197,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,205,SG7,,,,,,,Muss,,,Ansprechpartner,198,SG7,,,,,,,Muss,
+Ansprechpartner,206,SG7,CTA,,,,,,Muss,,,Ansprechpartner,199,SG7,CTA,,,,,,Muss,
+Ansprechpartner,207,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,200,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,208,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,201,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,209,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,202,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,210,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,203,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,211,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,204,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,212,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,205,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,213,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,206,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner MMMA- Prozesse,214,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner MMMA- Prozesse,207,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner MMMA- Prozesse,215,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,208,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner MMMA- Prozesse,216,SG4,NAD,3035,,Z18,,Ansprechpartner MMMA-Prozesse,X,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,209,SG4,NAD,3035,,Z18,,Ansprechpartner MMMA-Prozesse,X,
+Name und Anschrift Ansprechpartner MMMA- Prozesse,217,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner MMMA- Prozesse,210,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner MMMA- Prozesse,218,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,211,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner MMMA- Prozesse,219,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,212,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner MMMA- Prozesse,220,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,213,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner MMMA- Prozesse,221,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner MMMA- Prozesse,214,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden"
+Name und Anschrift Ansprechpartner MMMA- Prozesse,222,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner MMMA- Prozesse,215,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,223,SG7,,,,,,,Muss,,,Ansprechpartner,216,SG7,,,,,,,Muss,
+Ansprechpartner,224,SG7,CTA,,,,,,Muss,,,Ansprechpartner,217,SG7,CTA,,,,,,Muss,
+Ansprechpartner,225,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,218,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,226,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,219,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,227,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,220,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,228,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,221,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,229,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,222,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,230,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,223,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,231,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,224,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Bewegungsdaten,232,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Bewegungsdaten,225,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Bewegungsdaten,233,SG4,NAD,,,,,,Muss,,,Name und Anschrift Bewegungsdaten,226,SG4,NAD,,,,,,Muss,
+Name und Anschrift Bewegungsdaten,234,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,,,Name und Anschrift Bewegungsdaten,227,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,
+Name und Anschrift Bewegungsdaten,235,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Bewegungsdaten,228,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Bewegungsdaten,236,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Bewegungsdaten,229,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Bewegungsdaten,237,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Bewegungsdaten,230,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Bewegungsdaten,238,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Bewegungsdaten,231,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Bewegungsdaten,239,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden",,Name und Anschrift Bewegungsdaten,232,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Bewegungsdaten,240,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Bewegungsdaten,233,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,241,SG7,,,,,,,Muss,,,Ansprechpartner,234,SG7,,,,,,,Muss,
+Ansprechpartner,242,SG7,CTA,,,,,,Muss,,,Ansprechpartner,235,SG7,CTA,,,,,,Muss,
+Ansprechpartner,243,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,236,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,244,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,237,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,245,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,238,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,246,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,239,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,247,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,240,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,248,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,241,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,249,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,242,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,250,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,243,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,251,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,244,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,252,SG4,NAD,3035,,Z20,,Ansprechpartner Sperr-/Entsperrprozesse,X,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,245,SG4,NAD,3035,,Z20,,Ansprechpartner Sperr-/Entsperrprozesse,X,
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,253,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,246,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,254,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,247,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,255,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,248,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,256,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,249,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,257,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,250,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden"
+Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,258,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Prozesse zur Unterbrechung und Wiederherstellung der Anschlussnutzung,251,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,259,SG7,,,,,,,Muss,,,Ansprechpartner,252,SG7,,,,,,,Muss,
+Ansprechpartner,260,SG7,CTA,,,,,,Muss,,,Ansprechpartner,253,SG7,CTA,,,,,,Muss,
+Ansprechpartner,261,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,254,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,262,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,255,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,263,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,256,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,264,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,257,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,265,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,258,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,266,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,259,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,267,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,260,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,268,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,261,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,269,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,262,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,270,SG4,NAD,3035,,Z21,,Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,X,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,263,SG4,NAD,3035,,Z21,,Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,X,
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,271,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,264,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,272,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,265,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,273,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,266,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,274,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,267,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,275,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,268,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,276,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Bilanzierungsprozesse / Bilanzkreismanagement,269,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,277,SG7,,,,,,,Muss,,,Ansprechpartner,270,SG7,,,,,,,Muss,
+Ansprechpartner,278,SG7,CTA,,,,,,Muss,,,Ansprechpartner,271,SG7,CTA,,,,,,Muss,
+Ansprechpartner,279,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,272,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,280,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,273,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,281,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,274,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,282,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,275,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,283,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,276,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,284,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,277,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,285,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,278,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,286,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,279,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,287,SG4,NAD,,,,,,Muss,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,280,SG4,NAD,,,,,,Muss,
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,288,SG4,NAD,3035,,Z33,,Ansprechpartner technischer Netzanschluss für Neuanlagen und Anlagenumbau,X,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,281,SG4,NAD,3035,,Z33,,Ansprechpartner technischer Netzanschluss für Neuanlagen und Anlagenumbau,X,
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,289,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,282,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,290,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,283,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,291,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,284,SG4,NAD,3042,,,,Straße und Hausnummer oder,X,
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,292,SG4,NAD,3164,,,,Ort,X,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,285,SG4,NAD,3164,,,,Ort,X,
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,293,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,286,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden "
+Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,294,SG4,NAD,3207,,,,"Ländername, Code",X,,,Name und Anschrift Ansprechpartner Technischer Netzanschluss für Neuanlagen und Anlagenumbau,287,SG4,NAD,3207,,,,"Ländername, Code",X,
+Ansprechpartner,295,SG7,,,,,,,Muss,,,Ansprechpartner,288,SG7,,,,,,,Muss,
+Ansprechpartner,296,SG7,CTA,,,,,,Muss,,,Ansprechpartner,289,SG7,CTA,,,,,,Muss,
+Ansprechpartner,297,SG7,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,290,SG7,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,298,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",,Ansprechpartner,291,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen."
+Kommunikationsverbindung,299,SG7,COM,,,,,,Muss,,,Kommunikationsverbindung,292,SG7,COM,,,,,,Muss,
+Kommunikationsverbindung,300,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,293,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
+[502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,301,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,294,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],
+Kommunikationsverbindung,302,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,,Kommunikationsverbindung,295,SG7,COM,3155,,TE,,Telefon,X [1P1..1],
+Kommunikationsverbindung,303,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,296,SG7,COM,3155,,FX,,Telefax,X [1P0..1],
+Nachrichten-Endesegment,304,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,297,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,305,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,298,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,306,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,299,,UNT,0062,,,,Nachrichten-Referenznummer,X,

@@ -1,0 +1,164 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss [14],"[12] je UNB ist nur eine Nachricht mit BGM+Z04 in der Übertragungsdatei erlaubt (nur eine Nachricht je Übertragungsdatei)
+[14] je UNB ist maximal je Code aus DE1001 eine Nachricht in der Übertragungsdatei erlaubt",,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss [14],"[12] je UNB ist nur eine Nachricht mit BGM+Z04 in der Übertragungsdatei erlaubt (nur eine Nachricht je Übertragungsdatei)
+[14] je UNB ist maximal je Code aus DE1001 eine Nachricht in der Übertragungsdatei erlaubt"
+Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,00001,PRICAT,,Preisliste/Katalog,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,PRICAT,,Preisliste/Katalog,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,00001,20B,,Ausgabe 2020 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,20B,,Ausgabe 2020 - B,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,x,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,x,
+Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z32,,Preisblatt Messstellenbetrieb,X [30] ⊻ ([36] ∧ [33]),,,Beginn der Nachricht,8,,BGM,1001,,Z32,,Preisblatt Messstellenbetrieb,X [30] ⊻ ([36] ∧ [33]),
+Beginn der Nachricht,9,,BGM,1001,,Z77,,Preisblatt Konfigurationen,X,"[30] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB",,Beginn der Nachricht,9,,BGM,1001,,Z77,,Preisblatt Konfigurationen,X,"[30] wenn MP-ID in SG2 NAD+MR in der Rolle LF
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[36] wenn MP-ID in SG2 NAD+MR in der Rolle NB"
+Beginn der Nachricht,10,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,10,,BGM,1004,00002,,,Dokumentennummer,X,
+Beginn der Nachricht,11,,BGM,1373,00002,11,,Dokument nicht verfügbar,S [35],[35] Wenn das in DE1001 angegebene Preisblatt vom MSB nicht genutzt wird.,,Beginn der Nachricht,11,,BGM,1373,00002,11,,Dokument nicht verfügbar,S [35],[35] Wenn das in DE1001 angegebene Preisblatt vom MSB nicht genutzt wird.
+Nachrichtendatum,12,,DTM,,00004,,,,Muss,,,Nachrichtendatum,12,,DTM,,00004,,,,Muss,
+Nachrichtendatum,13,,DTM,2005,00004,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,13,,DTM,2005,00004,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,14,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,14,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,15,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,15,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,
+Gültigkeitsbeginn,16,,DTM,,00005,,,,Muss,,,Gültigkeitsbeginn,16,,DTM,,00005,,,,Muss,
+Gültigkeitsbeginn,17,,DTM,2005,00005,157,,"Gültigkeit, Beginndatum",X,,,Gültigkeitsbeginn,17,,DTM,2005,00005,157,,"Gültigkeit, Beginndatum",X,
+Gültigkeitsbeginn,18,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ ([43] ⊻ [47] ⊻ [44]),"[43] Wenn BGM DE1001 = Z32 und LIN DE7140 im Format n1-n2-n1-n3, dann muss der hier genannte Zeitpunkt ≥ 01. 01.2024 00:00 Uhr gesetzlicher deutscher Zeit sein
+[44] Wenn BGM DE1001 = Z77, dann muss der hier genannte Zeitpunkt ≥ 01.10. 2023 00:00 Uhr gesetzlicher deutscher Zeit sein.
+[47] Wenn BGM DE1001 = Z32 und LIN DE7140 im Format n13, dann muss der hier genannte Zeitpunkt < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit sein",,Gültigkeitsbeginn,18,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ ([43] ⊻ [47] ⊻ [44]),"[43] Wenn BGM DE1001 = Z32 und LIN DE7140 im Format n1-n2-n1-n3, dann muss der hier genannte Zeitpunkt ≥ 01. 01.2024 00:00 Uhr gesetzlicher deutscher Zeit sein
+[44] Wenn BGM DE1001 = Z77, dann muss der hier genannte Zeitpunkt ≥ 01.10. 2023 00:00 Uhr gesetzlicher deutscher Zeit sein.
+[47] Wenn BGM DE1001 = Z32 und LIN DE7140 im Format n13, dann muss der hier genannte Zeitpunkt < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit sein"
+Gültigkeitsbeginn,19,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Gültigkeitsbeginn,19,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
+Vorgängerversion,20,SG1,,,,,,,Soll [1],[1] Wenn Vorgängerversion vorhanden ,,Vorgängerversion,20,SG1,,,,,,,Soll [1],[1] Wenn Vorgängerversion vorhanden 
+Vorgängerversion,21,SG1,RFF,,00006,,,,Muss,,,Vorgängerversion,21,SG1,RFF,,00006,,,,Muss,
+Vorgängerversion,22,SG1,RFF,1153,00006,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Vorgängerversion,22,SG1,RFF,1153,00006,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+Vorgängerversion,23,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [504],[504] Hinweis: Dokumentennummer der PRICAT,,Vorgängerversion,23,SG1,RFF,1154,00006,,,"Referenz, Identifikation",X [504],[504] Hinweis: Dokumentennummer der PRICAT
+Prüfidentifikator,24,SG1,,,,,,,Muss,,,Prüfidentifikator,24,SG1,,,,,,,Muss,
+Prüfidentifikator,25,SG1,RFF,,00007,,,,Muss,,,Prüfidentifikator,25,SG1,RFF,,00007,,,,Muss,
+Prüfidentifikator,26,SG1,RFF,1153,00007,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,26,SG1,RFF,1153,00007,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,27,SG1,RFF,1154,,27002,,Preisblatt MSB- Leistungen,X,,,Prüfidentifikator,27,SG1,RFF,1154,,27002,,Preisblatt MSB- Leistungen,X,
+Empfänger-ID,28,SG2,,,,,,,Muss,,,Empfänger-ID,28,SG2,,,,,,,Muss,
+Empfänger-ID,29,SG2,NAD,,00008,,,,Muss,,,Empfänger-ID,29,SG2,NAD,,00008,,,,Muss,
+Empfänger-ID,30,SG2,NAD,3035,00008,MR,,Nachrichtenempfänger,X,,,Empfänger-ID,30,SG2,NAD,3035,00008,MR,,Nachrichtenempfänger,X,
+Empfänger-ID,31,SG2,NAD,3039,00008,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom,,Empfänger-ID,31,SG2,NAD,3039,00008,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom
+Empfänger-ID,32,SG2,NAD,3055,00008,9,,GS1,X,,,Empfänger-ID,32,SG2,NAD,3055,00008,9,,GS1,X,
+Empfänger-ID,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Empfänger-ID,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Sender-ID,34,SG2,,,,,,,Muss,,,Sender-ID,34,SG2,,,,,,,Muss,
+Sender-ID,35,SG2,NAD,,00009,,,,Muss,,,Sender-ID,35,SG2,NAD,,00009,,,,Muss,
+Sender-ID,36,SG2,NAD,3035,00009,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,Sender-ID,36,SG2,NAD,3035,00009,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+Sender-ID,37,SG2,NAD,3039,00009,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom,,Sender-ID,37,SG2,NAD,3039,00009,,,"Beteiligter, Identifikation",X [19],[19] Nur MP-ID aus Sparte Strom
+Sender-ID,38,SG2,NAD,3055,00009,9,,GS1,X,,,Sender-ID,38,SG2,NAD,3055,00009,9,,GS1,X,
+Sender-ID,39,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Sender-ID,39,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,40,SG4,,,,,,,Kann,,,Ansprechpartner,40,SG4,,,,,,,Kann,
+Ansprechpartner,41,SG4,CTA,,00011,,,,Muss,,,Ansprechpartner,41,SG4,CTA,,00011,,,,Muss,
+Ansprechpartner,42,SG4,CTA,3139,00011,IC,,Informationskontakt,X,,,Ansprechpartner,42,SG4,CTA,3139,00011,IC,,Informationskontakt,X,
+Ansprechpartner,43,SG4,CTA,3412,00011,,,Kontakt,X,,,Ansprechpartner,43,SG4,CTA,3412,00011,,,Kontakt,X,
+Kommunikationsverbindung,44,SG4,COM,,00012,,,,Muss,,,Kommunikationsverbindung,44,SG4,COM,,00012,,,,Muss,
+Kommunikationsverbindung,45,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939][37]) ∨ ([940][38])) ∧ [519],"[37] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[38] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[519] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,45,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939][37]) ∨ ([940][38])) ∧ [519],"[37] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[38] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
+[519] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
+[939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
+Kommunikationsverbindung,46,SG4,COM,3155,00012,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,46,SG4,COM,3155,00012,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,47,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,47,SG4,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,48,SG4,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,48,SG4,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,49,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,49,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,50,SG4,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,50,SG4,COM,3155,,AL,,Handy,X [1P0..1],
+Währungsangaben,51,SG6,,,,,,,Muss [9],[9] Wenn BGM DE1373 =11 nicht vorhanden,,Währungsangaben,51,SG6,,,,,,,Muss [9],[9] Wenn BGM DE1373 =11 nicht vorhanden
+Währungsangaben,52,SG6,CUX,,00013,,,,Muss,,,Währungsangaben,52,SG6,CUX,,00013,,,,Muss,
+Währungsangaben,53,SG6,CUX,6347,00013,2,,Referenzwährung,X,,,Währungsangaben,53,SG6,CUX,6347,00013,2,,Referenzwährung,X,
+Währungsangaben,54,SG6,CUX,6345,00013,EUR,,Euro,X,,,Währungsangaben,54,SG6,CUX,6345,00013,EUR,,Euro,X,
+Währungsangaben,55,SG6,CUX,6343,00013,8,,Währung der Preisliste,X,,,Währungsangaben,55,SG6,CUX,6343,00013,8,,Währung der Preisliste,X,
+Produktgruppen- Information,56,SG17,,,,,,,Muss [9],[9] Wenn BGM DE1373 =11 nicht vorhanden,,Produktgruppen- Information,56,SG17,,,,,,,Muss [9],[9] Wenn BGM DE1373 =11 nicht vorhanden
+Produktgruppen- Information,57,SG17,PGI,,00014,,,,Muss,,,Produktgruppen- Information,57,SG17,PGI,,00014,,,,Muss,
+Produktgruppen- Information,58,SG17,PGI,5379,00014,9,,keine Gruppe genutzt,X,,,Produktgruppen- Information,58,SG17,PGI,5379,00014,9,,keine Gruppe genutzt,X,
+Positionsdaten,59,SG36,,,,,,,Muss,,,Positionsdaten,59,SG36,,,,,,,Muss,
+Positionsdaten,60,SG36,LIN,,00015,,,,Muss,,,Positionsdaten,60,SG36,LIN,,00015,,,,Muss,
+Positionsdaten,61,SG36,LIN,1082,00015,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Positionsdaten,61,SG36,LIN,1082,00015,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
+Positionsdaten,62,SG36,LIN,7140,00015,,,Produkt-/Leistungsnummer,X ([941] ([31] ∧ [32] ∧ [40])) ⊻ ([942] ([31] ∧ [33] ∧ [45])) ⊻ ([959] ([34] ∧ [46])),"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77
+[39] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte MaBiS ein X haben
+[40] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte H ein X haben
+[45] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Abrechnung Messstellenbetrieb für die Sparte Strom"" genannt sind
+[46] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Artikel-ID für den Universalbestellprozess für die Sparte Strom"" genannt sind
+[941] Format: Artikelnummer
+[942] Format: n1-n2-n1-n3
+[959] Format: n13-n2",,Positionsdaten,62,SG36,LIN,7140,00015,,,Produkt-/Leistungsnummer,X ([941] ([31] ∧ [32] ∧ [40])) ⊻ ([942] ([31] ∧ [33] ∧ [45])) ⊻ ([959] ([34] ∧ [46])),"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77
+[39] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte MaBiS ein X haben
+[40] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in der Spalte H ein X haben
+[45] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Abrechnung Messstellenbetrieb für die Sparte Strom"" genannt sind
+[46] Es sind nur Werte aus der EDI@Energy Codeliste der Artikelnummern und Artikel-ID erlaubt, die in dieser in Kapitel ""Artikel-ID für den Universalbestellprozess für die Sparte Strom"" genannt sind
+[941] Format: Artikelnummer
+[942] Format: n1-n2-n1-n3
+[959] Format: n13-n2"
+Positionsdaten,63,SG36,LIN,7143,00015,Z01,,Artikelnummer,X [31] ∧ [32],,,Positionsdaten,63,SG36,LIN,7143,00015,Z01,,Artikelnummer,X [31] ∧ [32],
+Positionsdaten,64,SG36,LIN,7143,,Z09,,Artikel-ID,X ([31] ∧ [33]) ⊻ [34],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77",,Positionsdaten,64,SG36,LIN,7143,,Z09,,Artikel-ID,X ([31] ∧ [33]) ⊻ [34],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[33] wenn der Zeitpunkt im DTM+157 DE2380 ≥ 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit
+[34] wenn BGM DE1001 = Z77"
+Preisschlüsselstamm,65,SG36,PIA,,00016,,,,Muss [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit",,Preisschlüsselstamm,65,SG36,PIA,,00016,,,,Muss [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit"
+Preisschlüsselstamm,66,SG36,PIA,4347,00016,1,,Zusätzliche Identifikation,X,,,Preisschlüsselstamm,66,SG36,PIA,4347,00016,1,,Zusätzliche Identifikation,X,
+Preisschlüsselstamm,67,SG36,PIA,7140,00016,,,Code des Preisschlüsselstamms,X,,,Preisschlüsselstamm,67,SG36,PIA,7140,00016,,,Code des Preisschlüsselstamms,X,
+Preisschlüsselstamm,68,SG36,PIA,7143,00016,Z06,,Preisschlüsselstamm,X,,,Preisschlüsselstamm,68,SG36,PIA,7143,00016,Z06,,Preisschlüsselstamm,X,
+Produktbeschreibung,69,SG36,IMD,,00017,,,,Muss [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit",,Produktbeschreibung,69,SG36,IMD,,00017,,,,Muss [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit"
+Produktbeschreibung,70,SG36,IMD,7077,00017,C,,Code (aus der Liste einer codepflegenden Organisation),X [6],,,Produktbeschreibung,70,SG36,IMD,7077,00017,C,,Code (aus der Liste einer codepflegenden Organisation),X [6],
+Produktbeschreibung,71,SG36,IMD,7077,,X,,Teilstrukturiert (Code und Text),X [7],"[6] Wenn in dieser SG36 LIN in DE7140 9990001000798 vorhanden
+[7] Wenn in dieser SG36 LIN in DE7140 9990001000798 nicht vorhanden",,Produktbeschreibung,71,SG36,IMD,7077,,X,,Teilstrukturiert (Code und Text),X [7],"[6] Wenn in dieser SG36 LIN in DE7140 9990001000798 vorhanden
+[7] Wenn in dieser SG36 LIN in DE7140 9990001000798 nicht vorhanden"
+Produktbeschreibung,72,SG36,IMD,7081,00017,Z15,,POG bei verbrauchender Marktlokation > 100.000 kWh/a mit iMS,X [4],,,Produktbeschreibung,72,SG36,IMD,7081,00017,Z15,,POG bei verbrauchender Marktlokation > 100.000 kWh/a mit iMS,X [4],
+Produktbeschreibung,73,SG36,IMD,7081,,Z16,,POG bei verbrauchender Marktlokation ]50.000 kWh/a; 100.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,73,SG36,IMD,7081,,Z16,,POG bei verbrauchender Marktlokation ]50.000 kWh/a; 100.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,74,SG36,IMD,7081,,Z17,,POG bei verbrauchender Marktlokation ]20.000 kWh/a; 50.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,74,SG36,IMD,7081,,Z17,,POG bei verbrauchender Marktlokation ]20.000 kWh/a; 50.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,75,SG36,IMD,7081,,Z18,,POG bei verbrauchender Marktlokation ]10.000 kWh/a; 20.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,75,SG36,IMD,7081,,Z18,,POG bei verbrauchender Marktlokation ]10.000 kWh/a; 20.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,76,SG36,IMD,7081,,Z19,,POG bei verbrauchender Marktlokation mit unterbrechbaren Verbrauchseinrichtung nach § 14a EnWG mit iMS,X [4],,,Produktbeschreibung,76,SG36,IMD,7081,,Z19,,POG bei verbrauchender Marktlokation mit unterbrechbaren Verbrauchseinrichtung nach § 14a EnWG mit iMS,X [4],
+Produktbeschreibung,77,SG36,IMD,7081,,Z20,,POG bei verbrauchender Marktlokation ]6.000 kWh/a; 10.000 kWh/a] mit iMS,X [4],"[4] Wenn SG36 IMD+C in diesem IMD vorhanden
+[5] Wenn SG36 IMD+X in diesem IMD vorhanden",,Produktbeschreibung,77,SG36,IMD,7081,,Z20,,POG bei verbrauchender Marktlokation ]6.000 kWh/a; 10.000 kWh/a] mit iMS,X [4],"[4] Wenn SG36 IMD+C in diesem IMD vorhanden
+[5] Wenn SG36 IMD+X in diesem IMD vorhanden"
+Produktbeschreibung,78,SG36,IMD,7081,,Z21,,POG bei erzeugender Marktlokation ]7 kW; 15 kW] mit iMS,X [4],,,Produktbeschreibung,78,SG36,IMD,7081,,Z21,,POG bei erzeugender Marktlokation ]7 kW; 15 kW] mit iMS,X [4],
+Produktbeschreibung,79,SG36,IMD,7081,,Z22,,POG bei erzeugender Marktlokation ]15 kW; 30 kW] mit iMS,X [4],,,Produktbeschreibung,79,SG36,IMD,7081,,Z22,,POG bei erzeugender Marktlokation ]15 kW; 30 kW] mit iMS,X [4],
+Produktbeschreibung,80,SG36,IMD,7081,,Z23,,POG bei erzeugender Marktlokation ]30 kW; 100 kW] mit iMS,X [4],,,Produktbeschreibung,80,SG36,IMD,7081,,Z23,,POG bei erzeugender Marktlokation ]30 kW; 100 kW] mit iMS,X [4],
+Produktbeschreibung,81,SG36,IMD,7081,,Z24,,POG bei erzeugender Marktlokation > 100 kW mit iMS,X [4],,,Produktbeschreibung,81,SG36,IMD,7081,,Z24,,POG bei erzeugender Marktlokation > 100 kW mit iMS,X [4],
+Produktbeschreibung,82,SG36,IMD,7081,,Z25,,POG bei Marktlokation mit mME,X [4],,,Produktbeschreibung,82,SG36,IMD,7081,,Z25,,POG bei Marktlokation mit mME,X [4],
+Produktbeschreibung,83,SG36,IMD,7081,,Z28,,POG bei verbrauchender Marktlokation ]4.000 kWh/a; 6.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,83,SG36,IMD,7081,,Z28,,POG bei verbrauchender Marktlokation ]4.000 kWh/a; 6.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,84,SG36,IMD,7081,,Z29,,POG bei verbrauchender Marktlokation ]3.000 kWh/a; 4.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,84,SG36,IMD,7081,,Z29,,POG bei verbrauchender Marktlokation ]3.000 kWh/a; 4.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,85,SG36,IMD,7081,,Z30,,POG bei verbrauchender Marktlokation ]2.000 kWh/a; 3.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,85,SG36,IMD,7081,,Z30,,POG bei verbrauchender Marktlokation ]2.000 kWh/a; 3.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,86,SG36,IMD,7081,,Z31,,POG bei verbrauchender Marktlokation [0 kWh/a; 2.000 kWh/a] mit iMS,X [4],,,Produktbeschreibung,86,SG36,IMD,7081,,Z31,,POG bei verbrauchender Marktlokation [0 kWh/a; 2.000 kWh/a] mit iMS,X [4],
+Produktbeschreibung,87,SG36,IMD,7081,,Z32,,POG bei optionaler Ausstattung mit iMS von Neuanlagen von erzeugender Marktlokation,X [4],,,Produktbeschreibung,87,SG36,IMD,7081,,Z32,,POG bei optionaler Ausstattung mit iMS von Neuanlagen von erzeugender Marktlokation,X [4],
+Produktbeschreibung,88,SG36,IMD,7081,,Z41,,Zusatzleistung,X [5],,,Produktbeschreibung,88,SG36,IMD,7081,,Z41,,Zusatzleistung,X [5],
+Produktbeschreibung,89,SG36,IMD,7009,00017,,,"Produkt-/Leistungsbeschreibung, Code",Muss [2],,,Produktbeschreibung,89,SG36,IMD,7009,00017,,,"Produkt-/Leistungsbeschreibung, Code",Muss [2],
+Produktbeschreibung,90,SG36,IMD,7009,,Z08,,Höchstspannung,X,,,Produktbeschreibung,90,SG36,IMD,7009,,Z08,,Höchstspannung,X,
+Produktbeschreibung,91,SG36,IMD,7009,,Z09,,Hochspannung,X,,,Produktbeschreibung,91,SG36,IMD,7009,,Z09,,Hochspannung,X,
+Produktbeschreibung,92,SG36,IMD,7009,,Z10,,Mittelspannung,X,,,Produktbeschreibung,92,SG36,IMD,7009,,Z10,,Mittelspannung,X,
+Produktbeschreibung,93,SG36,IMD,7009,,Z11,,Niederspannung,X,[2] Wenn in dieser SG36 LIN in DE7140 9990001000813 vorhanden,,Produktbeschreibung,93,SG36,IMD,7009,,Z11,,Niederspannung,X,[2] Wenn in dieser SG36 LIN in DE7140 9990001000813 vorhanden
+Produktbeschreibung,94,SG36,IMD,7008,00017,,,Produkt-/Leistungsbeschreibung,Muss [3],[3] Wenn IMD+X vorhanden,,Produktbeschreibung,94,SG36,IMD,7008,00017,,,Produkt-/Leistungsbeschreibung,Muss [3],[3] Wenn IMD+X vorhanden
+Preisangaben,95,SG40,,,,,,,Muss,,,Preisangaben,95,SG40,,,,,,,Muss,
+Preisangaben,96,SG40,PRI,,00018,,,,Muss,,,Preisangaben,96,SG40,PRI,,00018,,,,Muss,
+Preisangaben,97,SG40,PRI,5125,00018,CAL,,Berechnungspreis,X,,,Preisangaben,97,SG40,PRI,5125,00018,CAL,,Berechnungspreis,X,
+Preisangaben,98,SG40,PRI,5118,00018,,,"Preis, Betrag",X [912] [513],"[502] Hinweis: Preis in Euro je MWh
+[513] Hinweis: Die zum Preis gehörende Einheit ist in der Codeliste definiert
+[912] Format: max. 6 Nachkommastellen",,Preisangaben,98,SG40,PRI,5118,00018,,,"Preis, Betrag",X [912] [513],"[502] Hinweis: Preis in Euro je MWh
+[513] Hinweis: Die zum Preis gehörende Einheit ist in der Codeliste definiert
+[912] Format: max. 6 Nachkommastellen"
+Preisangaben,99,SG40,PRI,6411,00018,ANN,,Jahr,X [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit",,Preisangaben,99,SG40,PRI,6411,00018,ANN,,Jahr,X [31] ∧ [32],"[31] wenn BGM DE1001 = Z32
+[32] wenn der Zeitpunkt im DTM+157 DE2380 < 01.01. 2024 00:00 Uhr gesetzlicher deutscher Zeit"
+Nachrichten-Endesegment,100,,UNT,,00024,,,,Muss,,,Nachrichten-Endesegment,100,,UNT,,00024,,,,Muss,
+Nachrichten-Endesegment,101,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,101,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,102,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,102,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,

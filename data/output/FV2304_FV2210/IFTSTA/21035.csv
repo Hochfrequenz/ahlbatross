@@ -1,0 +1,92 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,IFTSTA,,Multimodaler Statusbericht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,IFTSTA,,Multimodaler Statusbericht,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,18A,,Ausgabe 2018 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,2.0d,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,2.0d,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z33,,GPKE Meldung(en),X,,,Beginn der Nachricht,8,,BGM,1001,,Z33,,GPKE Meldung(en),X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Dokumentendatum,10,,DTM,,,,,,Muss,,,Dokumentendatum,10,,DTM,,,,,,Muss,
+Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Dokumentendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Empfänger,14,SG1,,,,,,,Muss,,,MP-ID Empfänger,14,SG1,,,,,,,Muss,
+MP-ID Empfänger,15,SG1,NAD,,,,,,Muss,,,MP-ID Empfänger,15,SG1,NAD,,,,,,Muss,
+MP-ID Empfänger,16,SG1,NAD,3035,,,,,MR,,,MP-ID Empfänger,16,SG1,NAD,3035,,,,,MR,
+MP-ID Empfänger,17,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,17,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,18,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,18,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+MP-ID Absender,20,SG1,,,,,,,Muss,,,MP-ID Absender,20,SG1,,,,,,,Muss,
+MP-ID Absender,21,SG1,NAD,,,,,,Muss,,,MP-ID Absender,21,SG1,NAD,,,,,,Muss,
+MP-ID Absender,22,SG1,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,22,SG1,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
+MP-ID Absender,23,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Absender,23,SG1,NAD,3039,,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
+MP-ID Absender,24,SG1,NAD,3055,,9,,GS1,X,,,MP-ID Absender,24,SG1,NAD,3055,,9,,GS1,X,
+MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,26,SG2,,,,,,,Kann,,,Ansprechpartner,26,SG2,,,,,,,Kann,
+Ansprechpartner,27,SG2,CTA,,,,,,Muss,,,Ansprechpartner,27,SG2,CTA,,,,,,Muss,
+Ansprechpartner,28,SG2,CTA,3139,,,,,IC,,,Ansprechpartner,28,SG2,CTA,3139,,,,,IC,
+Ansprechpartner,29,SG2,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,29,SG2,CTA,3412,,,,Kontakt,X,
+Kommunikationsverbindung,30,SG2,COM,,,,,,Muss,,,Kommunikationsverbindung,30,SG2,COM,,,,,,Muss,
+Kommunikationsverbindung,31,SG2,COM,3148,,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,31,SG2,COM,3148,,,,Nummer / E-Mail Adresse,X,
+Kommunikationsverbindung,32,SG2,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,32,SG2,COM,3155,,EM,,E-Mail,X [1P0..1],
+Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],
+Sendungsdaten,37,SG14,,,,,,,Muss,,,Sendungsdaten,37,SG14,,,,,,,Muss,
+Sendungsdaten,38,SG14,CNI,,,,,,Muss,,,Sendungsdaten,38,SG14,CNI,,,,,,Muss,
+Sendungsdaten,39,SG14,CNI,1490,,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",,Sendungsdaten,39,SG14,CNI,1490,,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend"
+Status des Lieferscheins,40,SG15,,,,,,,Muss,,,Status des Lieferscheins,40,SG15,,,,,,,Muss,
+Status des Lieferscheins,41,SG15,STS,,,,,,Muss,,,Status des Lieferscheins,41,SG15,STS,,,,,,Muss,
+Status des Lieferscheins,42,SG15,STS,9015,,Z25,,Status des Lieferscheins,X,,,Status des Lieferscheins,42,SG15,STS,9015,,Z25,,Status des Lieferscheins,X,
+Status des Lieferscheins,43,SG15,STS,4405,,Z30,,zugestimmt,X,,,Status des Lieferscheins,43,SG15,STS,4405,,Z30,,zugestimmt,X,
+Status des Lieferscheins,44,SG15,STS,4405,,Z31,,widersprochen,X,,,Status des Lieferscheins,44,SG15,STS,4405,,Z31,,widersprochen,X,
+Status des Lieferscheins,45,SG15,STS,9013,,,,Code des Prüfschritts,X [49] ∨ [50],"[49] Wenn STS+Z25+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[50] Wenn STS+Z25+Z31 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",,Status des Lieferscheins,45,SG15,STS,9013,,,,Code des Prüfschritts,X [49] ∨ [50],"[49] Wenn STS+Z25+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[50] Wenn STS+Z25+Z31 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich."
+Status des Lieferscheins,46,SG15,STS,1131,,E_0456,,EBD Nr. E_0456,X,,,Status des Lieferscheins,46,SG15,STS,1131,,E_0456,,EBD Nr. E_0456,X,
+Prüfidentifikator,47,SG15,RFF,,,,,,Muss,,,Prüfidentifikator,47,SG15,RFF,,,,,,Muss,
+Prüfidentifikator,48,SG15,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,48,SG15,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,49,SG15,RFF,1154,,21035,,GPKE / Rückmeldung auf Lieferschein,X,,,Prüfidentifikator,49,SG15,RFF,1154,,21035,,GPKE / Rückmeldung auf Lieferschein,X,
+Lieferschein,50,SG15,RFF,,,,,,Muss,,,Lieferschein,50,SG15,RFF,,,,,,Muss,
+Lieferschein,51,SG15,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Lieferschein,51,SG15,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
+Lieferschein,52,SG15,RFF,1154,,,,Referenznummer,X [512],[512] Hinweis: Aus MSCONS BGM DE1004,,Lieferschein,52,SG15,RFF,1154,,,,Referenznummer,X [512],[512] Hinweis: Aus MSCONS BGM DE1004
+Weitere Information,53,SG16,,,,,,,Muss [23],[23] Wenn SG15 STS+Z25+Z31+A06 / A09 / A10 / A11 / A13 / A14 / A15 / A16 vorhanden.,,Weitere Information,53,SG16,,,,,,,Muss [23],[23] Wenn SG15 STS+Z25+Z31+A06 / A09 / A10 / A11 / A13 / A14 / A15 / A16 vorhanden.
+Weitere Information,54,SG16,EFI,,,,,,Muss,,,Weitere Information,54,SG16,EFI,,,,,,Muss,
+Weitere Information,55,SG16,EFI,7008,,Z01,,Ansicht des Senders,X,,,Weitere Information,55,SG16,EFI,7008,,Z01,,Ansicht des Senders,X,
+Beginn Messperiode,56,SG16,DTM,,,,,,Muss [31],[31] Wenn in dieser SG16 in QTY in DE6411 KWH/K3 vorhanden.,,Beginn Messperiode,56,SG16,DTM,,,,,,Muss [31],[31] Wenn in dieser SG16 in QTY in DE6411 KWH/K3 vorhanden.
+Beginn Messperiode,57,SG16,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Beginn Messperiode,57,SG16,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,
+Beginn Messperiode,58,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [495],[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein,,Beginn Messperiode,58,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [495],[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+Beginn Messperiode,59,SG16,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn Messperiode,59,SG16,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Ende Messperiode,60,SG16,DTM,,,,,,Muss [33],[33] Wenn in dieser SG16 DTM+163 vorhanden.,,Ende Messperiode,60,SG16,DTM,,,,,,Muss [33],[33] Wenn in dieser SG16 DTM+163 vorhanden.
+Ende Messperiode,61,SG16,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,,,Ende Messperiode,61,SG16,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,
+Ende Messperiode,62,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [495],[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein,,Ende Messperiode,62,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [495],[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+Ende Messperiode,63,SG16,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ende Messperiode,63,SG16,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Leistungsperiode,64,SG16,DTM,,,,,,Muss [32],[32] Wenn in dieser SG16 in QTY in DE6411 KWT/K5 vorhanden.,,Leistungsperiode,64,SG16,DTM,,,,,,Muss [32],[32] Wenn in dieser SG16 in QTY in DE6411 KWT/K5 vorhanden.
+Leistungsperiode,65,SG16,DTM,2005,,306,,Leistungsperiode,X,,,Leistungsperiode,65,SG16,DTM,2005,,306,,Leistungsperiode,X,
+Leistungsperiode,66,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Leistungsperiode,66,SG16,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+Leistungsperiode,67,SG16,DTM,2379,,610,,CCYYMM,X,,,Leistungsperiode,67,SG16,DTM,2379,,610,,CCYYMM,X,
+Menge,68,SG16,QTY,,,,,,Muss,,,Menge,68,SG16,QTY,,,,,,Muss,
+Menge,69,SG16,QTY,6063,,Z20,,Tarifstufe 0,X,,,Menge,69,SG16,QTY,6063,,Z20,,Tarifstufe 0,X,
+Menge,70,SG16,QTY,6063,,Z21,,Tarifstufe 1,X,,,Menge,70,SG16,QTY,6063,,Z21,,Tarifstufe 1,X,
+Menge,71,SG16,QTY,6063,,Z22,,Tarifstufe 2,X,,,Menge,71,SG16,QTY,6063,,Z22,,Tarifstufe 2,X,
+Menge,72,SG16,QTY,6063,,Z23,,Tarifstufe 3,X,,,Menge,72,SG16,QTY,6063,,Z23,,Tarifstufe 3,X,
+Menge,73,SG16,QTY,6063,,Z24,,Tarifstufe 4,X,,,Menge,73,SG16,QTY,6063,,Z24,,Tarifstufe 4,X,
+Menge,74,SG16,QTY,6063,,Z25,,Tarifstufe 5,X,,,Menge,74,SG16,QTY,6063,,Z25,,Tarifstufe 5,X,
+Menge,75,SG16,QTY,6063,,Z26,,Tarifstufe 6,X,,,Menge,75,SG16,QTY,6063,,Z26,,Tarifstufe 6,X,
+Menge,76,SG16,QTY,6063,,Z27,,Tarifstufe 7,X,,,Menge,76,SG16,QTY,6063,,Z27,,Tarifstufe 7,X,
+Menge,77,SG16,QTY,6063,,Z28,,Tarifstufe 8,X,,,Menge,77,SG16,QTY,6063,,Z28,,Tarifstufe 8,X,
+Menge,78,SG16,QTY,6063,,Z29,,Tarifstufe 9,X,,,Menge,78,SG16,QTY,6063,,Z29,,Tarifstufe 9,X,
+Menge,79,SG16,QTY,6060,,,,Menge,X [902],[902] Format: Wert darf nur positiv oder 0 sein,,Menge,79,SG16,QTY,6060,,,,Menge,X [902],[902] Format: Wert darf nur positiv oder 0 sein
+Menge,80,SG16,QTY,6411,,KWH,,kilowatt hour,X,,,Menge,80,SG16,QTY,6411,,KWH,,kilowatt hour,X,
+Menge,81,SG16,QTY,6411,,KWT,,kilowatt,X,,,Menge,81,SG16,QTY,6411,,KWT,,kilowatt,X,
+Menge,82,SG16,QTY,6411,,K3,,kilovolt ampere reactive hour,X,,,Menge,82,SG16,QTY,6411,,K3,,kilovolt ampere reactive hour,X,
+Menge,83,SG16,QTY,6411,,K5,,kilovolt ampere (reactive),X,,,Menge,83,SG16,QTY,6411,,K5,,kilovolt ampere (reactive),X,
+Nachrichten-Endesegment,84,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,84,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,85,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,85,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,86,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,86,,UNT,0062,,,,Nachrichten-Referenznummer,X,

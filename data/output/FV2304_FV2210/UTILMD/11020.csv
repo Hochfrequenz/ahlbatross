@@ -1,0 +1,213 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+"Gültigkeit, Beginndatum",14,,DTM,,,,,,Muss [501],[501] Hinweis: Die Angabe wird aus dem DTM+157 (Änderung zum) der Zuordnungsliste übernommen,,"Gültigkeit, Beginndatum",14,,DTM,,,,,,Muss [501],[501] Hinweis: Die Angabe wird aus dem DTM+157 (Änderung zum) der Zuordnungsliste übernommen
+"Gültigkeit, Beginndatum",15,,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,"Gültigkeit, Beginndatum",15,,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,
+"Gültigkeit, Beginndatum",16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,"Gültigkeit, Beginndatum",16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
+"Gültigkeit, Beginndatum",17,,DTM,2379,,610,,CCYYMM,X,,,"Gültigkeit, Beginndatum",17,,DTM,2379,,610,,CCYYMM,X,
+MP-ID Absender,18,SG2,,,,,,,Muss,,,MP-ID Absender,18,SG2,,,,,,,Muss,
+MP-ID Absender,19,SG2,NAD,,,,,,Muss,,,MP-ID Absender,19,SG2,NAD,,,,,,Muss,
+MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [334],[334] Nur MP-ID aus Sparte Gas,,MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [334],[334] Nur MP-ID aus Sparte Gas
+MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,23,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,23,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Ansprechpartner,24,SG3,,,,,,,Kann,,,Ansprechpartner,24,SG3,,,,,,,Kann,
+Ansprechpartner,25,SG3,CTA,,,,,,Muss,,,Ansprechpartner,25,SG3,CTA,,,,,,Muss,
+Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,
+Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,35,SG2,,,,,,,Muss,,,MP-ID Empfänger,35,SG2,,,,,,,Muss,
+MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [334],[334] Nur MP-ID aus Sparte Gas,,MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [334],[334] Nur MP-ID aus Sparte Gas
+MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,40,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,40,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
+Vorgang,41,SG4,,,,,,,Muss,,,Vorgang,41,SG4,,,,,,,Muss,
+Vorgang,42,SG4,IDE,,,,,,Muss,,,Vorgang,42,SG4,IDE,,,,,,Muss,
+Vorgang,43,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,43,SG4,IDE,7495,,24,,Transaktion,X,
+Vorgang,44,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,44,SG4,IDE,7402,,,,Vorgangsnummer,X,
+Beginn zum,45,SG4,DTM,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Beginn zum,45,SG4,DTM,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Beginn zum,46,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,,Beginn zum,46,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,
+Beginn zum,47,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],,,Beginn zum,47,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],
+Beginn zum,48,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,48,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Ende zum,49,SG4,DTM,,,,,,Kann,"[14] Wenn Datum bekannt
+[336] Wenn in Änderungsmeldung gefüllt",,Ende zum,49,SG4,DTM,,,,,,Kann,"[14] Wenn Datum bekannt
+[336] Wenn in Änderungsmeldung gefüllt"
+Ende zum,50,SG4,DTM,2005,,93,,Datum Vertragsende,X,,,Ende zum,50,SG4,DTM,2005,,93,,Datum Vertragsende,X,
+Ende zum,51,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],,,Ende zum,51,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],
+Ende zum,52,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ende zum,52,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsbeginn,53,SG4,DTM,,,,,,Kann,"[18] Wenn SG4 DTM+93 (Ende zum) nicht vorhanden
+[28] Wenn SG4 DTM+93 (Ende zum) vorhanden
+[29] Wenn eine Bilanzierung stattfindet
+[336] Wenn in Änderungsmeldung gefüllt",,Bilanzierungsbeginn,53,SG4,DTM,,,,,,Kann,"[18] Wenn SG4 DTM+93 (Ende zum) nicht vorhanden
+[28] Wenn SG4 DTM+93 (Ende zum) vorhanden
+[29] Wenn eine Bilanzierung stattfindet
+[336] Wenn in Änderungsmeldung gefüllt"
+Bilanzierungsbeginn,54,SG4,DTM,2005,,158,,Bilanzierungsbeginn,X,,,Bilanzierungsbeginn,54,SG4,DTM,2005,,158,,Bilanzierungsbeginn,X,
+Bilanzierungsbeginn,55,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],,,Bilanzierungsbeginn,55,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],
+Bilanzierungsbeginn,56,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsbeginn,56,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Bilanzierungsende,57,SG4,DTM,,,,,,Kann,"[28] Wenn SG4 DTM+93 (Ende zum) vorhanden
+[64] Wenn SG4 DTM+158 (Bilanzierungsbeginn) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",,Bilanzierungsende,57,SG4,DTM,,,,,,Kann,"[28] Wenn SG4 DTM+93 (Ende zum) vorhanden
+[64] Wenn SG4 DTM+158 (Bilanzierungsbeginn) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt"
+Bilanzierungsende,58,SG4,DTM,2005,,159,,Bilanzierungsende,X,,,Bilanzierungsende,58,SG4,DTM,2005,,159,,Bilanzierungsende,X,
+Bilanzierungsende,59,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],,,Bilanzierungsende,59,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2],
+Bilanzierungsende,60,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Bilanzierungsende,60,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+Transaktionsgrund,61,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,61,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
+Transaktionsgrund,62,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,62,SG4,STS,9015,,7,,Transaktionsgrund,X,
+Transaktionsgrund,63,SG4,STS,9013,,ZD0,,Fehlerkorrektur,X,,,Transaktionsgrund,63,SG4,STS,9013,,ZD0,,Fehlerkorrektur,X,
+Beschreibung der Abweichung zur übermittelten Liste,64,SG4,FTX,,,,,,Muss,,,Beschreibung der Abweichung zur übermittelten Liste,64,SG4,FTX,,,,,,Muss,
+Beschreibung der Abweichung zur übermittelten Liste,65,SG4,FTX,4451,,ABO,,Information über Abweichung,X,,,Beschreibung der Abweichung zur übermittelten Liste,65,SG4,FTX,4451,,ABO,,Information über Abweichung,X,
+Beschreibung der Abweichung zur übermittelten Liste,66,SG4,FTX,4441,,Z03,,Ergänzte Marktlokation,X,,,Beschreibung der Abweichung zur übermittelten Liste,66,SG4,FTX,4441,,Z03,,Ergänzte Marktlokation,X,
+Beschreibung der Abweichung zur übermittelten Liste,67,SG4,FTX,4441,,Z05,,Änderung vorhanden,X,,,Beschreibung der Abweichung zur übermittelten Liste,67,SG4,FTX,4441,,Z05,,Änderung vorhanden,X,
+Beschreibung der Abweichung zur übermittelten Liste,68,SG4,FTX,4440,,,,Text für Erläuterung der Abweichung,Kann,,,Beschreibung der Abweichung zur übermittelten Liste,68,SG4,FTX,4440,,,,Text für Erläuterung der Abweichung,Kann,
+Meldepunkt,69,SG5,,,,,,,Muss [2061] ∧ [583],"[583] Hinweis: Verwendung der ID der Marktlokation
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Meldepunkt,69,SG5,,,,,,,Muss [2061] ∧ [583],"[583] Hinweis: Verwendung der ID der Marktlokation
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Meldepunkt,70,SG5,LOC,,,,,,Muss,,,Meldepunkt,70,SG5,LOC,,,,,,Muss,
+Meldepunkt,71,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,71,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,72,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,,Meldepunkt,72,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID
+Prüfidentifikator,73,SG6,,,,,,,Muss,,,Prüfidentifikator,73,SG6,,,,,,,Muss,
+Prüfidentifikator,74,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,74,SG6,RFF,,,,,,Muss,
+Prüfidentifikator,75,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,75,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,76,SG6,RFF,1154,,11020,,GeLi Gas / Änderungsmeldung zur Zuordnungsliste,X,,,Prüfidentifikator,76,SG6,RFF,1154,,11020,,GeLi Gas / Änderungsmeldung zur Zuordnungsliste,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),77,SG6,,,,,,,Muss [81],[81] Wenn SG4 FTX+ABO+Z05 (Beschreibung der Abweichung zur übermittelten Liste: Änderung vorhanden) vorhanden,,Referenz Vorgangsnummer (aus Anfragenachricht),77,SG6,,,,,,,Muss [81],[81] Wenn SG4 FTX+ABO+Z05 (Beschreibung der Abweichung zur übermittelten Liste: Änderung vorhanden) vorhanden
+Referenz Vorgangsnummer (aus Anfragenachricht),78,SG6,RFF,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),78,SG6,RFF,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),79,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),79,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),80,SG6,RFF,1154,,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),80,SG6,RFF,1154,,,,Vorgangsnummer,X,
+Daten der Marktlokation,81,SG8,,,,,,,Soll [92],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[336] Wenn in Änderungsmeldung gefüllt
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Daten der Marktlokation,81,SG8,,,,,,,Soll [92],"[92] Wenn Wert innerhalb SG bzw. Segment geändert wird
+[336] Wenn in Änderungsmeldung gefüllt
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Daten der Marktlokation,82,SG8,SEQ,,,,,,Muss,,,Daten der Marktlokation,82,SG8,SEQ,,,,,,Muss,
+Daten der Marktlokation,83,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,83,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,
+Referenz auf die ID der Marktlokation,84,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,84,SG8,RFF,,,,,,Muss,
+Referenz auf die ID der Marktlokation,85,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,85,SG8,RFF,1153,,Z18,,Marktlokation,X,
+Referenz auf die ID der Marktlokation,86,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,86,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
+Veranschlagte Jahresmenge gesamt,87,SG9,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt
+[513] Hinweis: Ist SG9 QTY+Y02 (TUM Kundenwert) vorhanden, dann ist ausschließlich SG9 QTY+Y02, unabhängig von SG9 QTY+31 (Veranschlagte Jahresmenge gesamt), für die Bilanzierung und MMM-Abrechnung zu nutzen",,Veranschlagte Jahresmenge gesamt,87,SG9,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt
+[513] Hinweis: Ist SG9 QTY+Y02 (TUM Kundenwert) vorhanden, dann ist ausschließlich SG9 QTY+Y02, unabhängig von SG9 QTY+31 (Veranschlagte Jahresmenge gesamt), für die Bilanzierung und MMM-Abrechnung zu nutzen"
+Veranschlagte Jahresmenge gesamt,88,SG9,QTY,,,,,,Muss,,,Veranschlagte Jahresmenge gesamt,88,SG9,QTY,,,,,,Muss,
+Veranschlagte Jahresmenge gesamt,89,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,89,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,
+Veranschlagte Jahresmenge gesamt,90,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,90,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle"
+Veranschlagte Jahresmenge gesamt,91,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,91,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+TUM Kundenwert,92,SG9,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[108] Wenn Kundenwertverfahren (z. B. TU München)
+[336] Wenn in Änderungsmeldung gefüllt",,TUM Kundenwert,92,SG9,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[108] Wenn Kundenwertverfahren (z. B. TU München)
+[336] Wenn in Änderungsmeldung gefüllt"
+TUM Kundenwert,93,SG9,QTY,,,,,,Muss,,,TUM Kundenwert,93,SG9,QTY,,,,,,Muss,
+TUM Kundenwert,94,SG9,QTY,6063,,Y02,,Kundenwert,X,,,TUM Kundenwert,94,SG9,QTY,6063,,Y02,,Kundenwert,X,
+TUM Kundenwert,95,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
+[907] Format: max. 4 Nachkommastellen",,TUM Kundenwert,95,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
+[907] Format: max. 4 Nachkommastellen"
+TUM Kundenwert,96,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,TUM Kundenwert,96,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
+Bilanzkreis,97,SG10,,,,,,,Kann,"[336] Wenn in Änderungsmeldung gefüllt
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Bilanzkreis,97,SG10,,,,,,,Kann,"[336] Wenn in Änderungsmeldung gefüllt
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Bilanzkreis,98,SG10,CCI,,,,,,Muss,,,Bilanzkreis,98,SG10,CCI,,,,,,Muss,
+Bilanzkreis,99,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,,Bilanzkreis,99,SG10,CCI,7059,,Z19,,Bilanzkreis,X,
+Bilanzkreis,100,SG10,CCI,7037,,,,Bilanzkreis,X,,,Bilanzkreis,100,SG10,CCI,7037,,,,Bilanzkreis,X,
+Prognosegrundlage der Marktlokation,101,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Prognosegrundlage der Marktlokation,101,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Prognosegrundlage der Marktlokation,102,SG10,CCI,,,,,,Muss,,,Prognosegrundlage der Marktlokation,102,SG10,CCI,,,,,,Muss,
+Prognosegrundlage der Marktlokation,103,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,,Prognosegrundlage der Marktlokation,103,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,
+Prognosegrundlage der Marktlokation,104,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,,Prognosegrundlage der Marktlokation,104,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,
+Details der Prognosegrundlage,105,SG10,CAV,,,,,,Muss [21] ∧ [2182],"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
+[2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",,Details der Prognosegrundlage,105,SG10,CAV,,,,,,Muss [21] ∧ [2182],"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
+[2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben"
+Details der Prognosegrundlage,106,SG10,CAV,7111,,E02,,SLP/SEP,X,,,Details der Prognosegrundlage,106,SG10,CAV,7111,,E02,,SLP/SEP,X,
+Gruppenzuordnung (nach EnWG) ,107,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Gruppenzuordnung (nach EnWG) ,107,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Gruppenzuordnung (nach EnWG) ,108,SG10,CCI,,,,,,Muss,,,Gruppenzuordnung (nach EnWG) ,108,SG10,CCI,,,,,,Muss,
+Gruppenzuordnung (nach EnWG) ,109,SG10,CCI,7037,,Z15,,Haushaltskunde gem. EnWG,X,,,Gruppenzuordnung (nach EnWG) ,109,SG10,CCI,7037,,Z15,,Haushaltskunde gem. EnWG,X,
+Gruppenzuordnung (nach EnWG) ,110,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,,,Gruppenzuordnung (nach EnWG) ,110,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,
+Fallgruppenzuordnung,111,SG10,,,,,,,Kann,"[19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",,Fallgruppenzuordnung,111,SG10,,,,,,,Kann,"[19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt"
+Fallgruppenzuordnung,112,SG10,CCI,,,,,,Muss,,,Fallgruppenzuordnung,112,SG10,CCI,,,,,,Muss,
+Fallgruppenzuordnung,113,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,,,Fallgruppenzuordnung,113,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,
+Fallgruppenzuordnung,114,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,,,Fallgruppenzuordnung,114,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,
+Fallgruppenzuordnung,115,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,,,Fallgruppenzuordnung,115,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,
+Fallgruppenzuordnung,116,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,,,Fallgruppenzuordnung,116,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,
+Netznutzung,117,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Netznutzung,117,SG10,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Netznutzung,118,SG10,CCI,,,,,,Muss,,,Netznutzung,118,SG10,CCI,,,,,,Muss,
+Netznutzung,119,SG10,CCI,7037,,Z88,,Netznutzung,X,,,Netznutzung,119,SG10,CCI,7037,,Z88,,Netznutzung,X,
+Netznutzungsvertrag,120,SG10,CAV,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Netznutzungsvertrag,120,SG10,CAV,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Netznutzungsvertrag,121,SG10,CAV,7111,,Z74,,Netznutzungsvertrag,X,,,Netznutzungsvertrag,121,SG10,CAV,7111,,Z74,,Netznutzungsvertrag,X,
+Netznutzungsvertrag,122,SG10,CAV,7110,,Z08,,Direkter Vertrag zwischen Kunden und NB,X,,,Netznutzungsvertrag,122,SG10,CAV,7110,,Z08,,Direkter Vertrag zwischen Kunden und NB,X,
+Netznutzungsvertrag,123,SG10,CAV,7110,,Z09,,Vertrag zwischen Lieferanten und NB,X,,,Netznutzungsvertrag,123,SG10,CAV,7110,,Z09,,Vertrag zwischen Lieferanten und NB,X,
+Zahlung der Netznutzung,124,SG10,CAV,,,,,,Muss,,,Zahlung der Netznutzung,124,SG10,CAV,,,,,,Muss,
+Zahlung der Netznutzung,125,SG10,CAV,7111,,Z73,,Zahlung der Netznutzung,X,,,Zahlung der Netznutzung,125,SG10,CAV,7111,,Z73,,Zahlung der Netznutzung,X,
+Zahlung der Netznutzung,126,SG10,CAV,7110,,Z10,,Kunde,X [216],,,Zahlung der Netznutzung,126,SG10,CAV,7110,,Z10,,Kunde,X [216],
+Zahlung der Netznutzung,127,SG10,CAV,7110,,Z11,,Lieferant,X,[216] Wenn CCI+++Z88 (Netznutzung) CAV+Z74:::Z08 (Netznutzungsvertrag: Direkter Vertrag zwischen Kunden und NB) vorhanden,,Zahlung der Netznutzung,127,SG10,CAV,7110,,Z11,,Lieferant,X,[216] Wenn CCI+++Z88 (Netznutzung) CAV+Z74:::Z08 (Netznutzungsvertrag: Direkter Vertrag zwischen Kunden und NB) vorhanden
+Lastprofildaten (Gas),128,SG8,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",,Lastprofildaten (Gas),128,SG8,,,,,,,Kann,"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt"
+Lastprofildaten (Gas),129,SG8,SEQ,,,,,,Muss,,,Lastprofildaten (Gas),129,SG8,SEQ,,,,,,Muss,
+Lastprofildaten (Gas),130,SG8,SEQ,1229,,Z35,,Lastprofildaten,X,,,Lastprofildaten (Gas),130,SG8,SEQ,1229,,Z35,,Lastprofildaten,X,
+Lastprofil ( Gas),131,SG10,,,,,,,Muss,,,Lastprofil ( Gas),131,SG10,,,,,,,Muss,
+Lastprofil ( Gas),132,SG10,CCI,,,,,,Muss,,,Lastprofil ( Gas),132,SG10,CCI,,,,,,Muss,
+Lastprofil ( Gas),133,SG10,CCI,7059,,Z12,,Lastprofil,X,,,Lastprofil ( Gas),133,SG10,CCI,7059,,Z12,,Lastprofil,X,
+Lastprofil ( Gas),134,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,,Lastprofil ( Gas),134,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,
+Lastprofil ( Gas),135,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,,Lastprofil ( Gas),135,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,
+Lastprofil (Gas),136,SG10,CAV,,,,,,Muss,,,Lastprofil (Gas),136,SG10,CAV,,,,,,Muss,
+Lastprofil (Gas),137,SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,,,Lastprofil (Gas),137,SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,
+Lastprofil (Gas),138,SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,,Lastprofil (Gas),138,SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,
+Lastprofil (Gas),139,SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Lastprofil (Gas),139,SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Klimazone / Temperaturmessstelle,140,SG10,,,,,,,Muss,,,Klimazone / Temperaturmessstelle,140,SG10,,,,,,,Muss,
+Klimazone / Temperaturmessstelle,141,SG10,CCI,,,,,,Muss,,,Klimazone / Temperaturmessstelle,141,SG10,CCI,,,,,,Muss,
+Klimazone / Temperaturmessstelle,142,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,,Klimazone / Temperaturmessstelle,142,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,
+Klimazone / Temperaturmessstelle,143,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,,Klimazone / Temperaturmessstelle,143,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,
+Klimazone / Temperaturmessstelle,144,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,,Klimazone / Temperaturmessstelle,144,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,
+Klimazone / Temperaturmessstelle,145,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,,Klimazone / Temperaturmessstelle,145,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden
+Klimazone / Temperaturmessstelle,146,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,,Klimazone / Temperaturmessstelle,146,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,
+Klimazone / Temperaturmessstelle,147,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Klimazone / Temperaturmessstelle,147,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Kunde des Lieferanten,148,SG12,,,,,,,Kann,"[166] Wenn vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",,Kunde des Lieferanten,148,SG12,,,,,,,Kann,"[166] Wenn vorhanden
+[336] Wenn in Änderungsmeldung gefüllt"
+Kunde des Lieferanten,149,SG12,NAD,,,,,,Muss,,,Kunde des Lieferanten,149,SG12,NAD,,,,,,Muss,
+Kunde des Lieferanten,150,SG12,NAD,3035,,Z09,,Kunde des LF,X,,,Kunde des Lieferanten,150,SG12,NAD,3035,,Z09,,Kunde des LF,X,
+Kunde des Lieferanten,151,SG12,NAD,3036,,,,Name,X,,,Kunde des Lieferanten,151,SG12,NAD,3036,,,,Name,X,
+Kunde des Lieferanten,152,SG12,NAD,3045,,Z01,,Struktur von Personennamen,X,,,Kunde des Lieferanten,152,SG12,NAD,3045,,Z01,,Struktur von Personennamen,X,
+Kunde des Lieferanten,153,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Kunde des Lieferanten,153,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
+Referenz auf die ID der Marktlokation,154,SG12,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,154,SG12,RFF,,,,,,Muss,
+Referenz auf die ID der Marktlokation,155,SG12,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,155,SG12,RFF,1153,,Z18,,Marktlokation,X,
+Referenz auf die ID der Marktlokation,156,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,156,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
+Marktlokationsanschrift,157,SG12,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt,,Marktlokationsanschrift,157,SG12,,,,,,,Kann,[336] Wenn in Änderungsmeldung gefüllt
+Marktlokationsanschrift,158,SG12,NAD,,,,,,Muss,,,Marktlokationsanschrift,158,SG12,NAD,,,,,,Muss,
+Marktlokationsanschrift,159,SG12,NAD,3035,,DP,,Lieferanschrift,X,,,Marktlokationsanschrift,159,SG12,NAD,3035,,DP,,Lieferanschrift,X,
+Marktlokationsanschrift,160,SG12,NAD,3124,,,,Zusatzinformation zur Identifizierung,K,,,Marktlokationsanschrift,160,SG12,NAD,3124,,,,Zusatzinformation zur Identifizierung,K,
+Marktlokationsanschrift,161,SG12,NAD,3042,,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",,Marktlokationsanschrift,161,SG12,NAD,3042,,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden"
+Marktlokationsanschrift,162,SG12,NAD,3164,,,,Ort,X,,,Marktlokationsanschrift,162,SG12,NAD,3164,,,,Ort,X,
+Marktlokationsanschrift,163,SG12,NAD,3251,,,,Postleitzahl,X,,,Marktlokationsanschrift,163,SG12,NAD,3251,,,,Postleitzahl,X,
+Marktlokationsanschrift,164,SG12,NAD,3207,,,,"Ländername, Code",X,,,Marktlokationsanschrift,164,SG12,NAD,3207,,,,"Ländername, Code",X,
+Nachrichten-Endesegment,165,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,165,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,166,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,166,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,167,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,167,,UNT,0062,,,,Nachrichten-Referenznummer,X,

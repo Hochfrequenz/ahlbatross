@@ -1,0 +1,98 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
+Nachrichten-Kopfsegment,7,,UNH,0068,,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden,,Nachrichten-Kopfsegment,7,,UNH,0068,,,,Allgemeine Zuordnungs-Referenz,S [1],[1] Wenn Aufteilung vorhanden
+Nachrichten-Kopfsegment,8,,UNH,0070,,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden,,Nachrichten-Kopfsegment,8,,UNH,0070,,,,Übermittlungsfolgenummer,M [252],[252] Wenn DE0068 vorhanden
+Nachrichten-Kopfsegment,9,,UNH,0073,,C,,Beginn,M [2],,,Nachrichten-Kopfsegment,9,,UNH,0073,,C,,Beginn,M [2],
+Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE 0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer",,Nachrichten-Kopfsegment,10,,UNH,0073,,F,,Ende,S [3],"[2] Wenn UNH DE 0070 (Übermittlungsfolgenummer) mit 1 vorhanden
+[3] Bei Aufteilung, in der Nachricht mit der höchsten Übermittlungsfolgenummer"
+Beginn der Nachricht,11,,BGM,,,,,,Muss,,,Beginn der Nachricht,11,,BGM,,,,,,Muss,
+Beginn der Nachricht,12,,BGM,1001,,Z37,,DZÜ-Liste,X,,,Beginn der Nachricht,12,,BGM,1001,,Z37,,DZÜ-Liste,X,
+Beginn der Nachricht,13,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,13,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,14,,DTM,,,,,,Muss,,,Nachrichtendatum,14,,DTM,,,,,,Muss,
+Nachrichtendatum,15,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,15,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
+Nachrichtendatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",,Nachrichtendatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00"
+Nachrichtendatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
+MP-ID Absender,18,SG2,,,,,,,Muss,,,MP-ID Absender,18,SG2,,,,,,,Muss,
+MP-ID Absender,19,SG2,NAD,,,,,,Muss,,,MP-ID Absender,19,SG2,NAD,,,,,,Muss,
+MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,20,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
+MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Absender,21,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,22,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Absender,23,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,23,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,24,SG3,,,,,,,Kann,,,Ansprechpartner,24,SG3,,,,,,,Kann,
+Ansprechpartner,25,SG3,CTA,,,,,,Muss,,,Ansprechpartner,25,SG3,CTA,,,,,,Muss,
+Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,26,SG3,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,27,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
+Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,28,SG3,COM,,,,,,Muss,
+Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,29,SG3,COM,3148,,,,Nummer / Adresse,X,
+Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,32,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,33,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,34,SG3,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,35,SG2,,,,,,,Muss,,,MP-ID Empfänger,35,SG2,,,,,,,Muss,
+MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,36,SG2,NAD,,,,,,Muss,
+MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,37,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
+MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,38,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
+MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,39,SG2,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,40,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,40,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Identifikation einer Liste,41,SG4,,,,,,,Muss,,,Identifikation einer Liste,41,SG4,,,,,,,Muss,
+Identifikation einer Liste,42,SG4,IDE,,,,,,Muss,,,Identifikation einer Liste,42,SG4,IDE,,,,,,Muss,
+Identifikation einer Liste,43,SG4,IDE,7495,,Z01,,Liste,X,,,Identifikation einer Liste,43,SG4,IDE,7495,,Z01,,Liste,X,
+Identifikation einer Liste,44,SG4,IDE,7402,,,,Listennummer,X,,,Identifikation einer Liste,44,SG4,IDE,7402,,,,Listennummer,X,
+Status der Antwort,45,SG4,STS,,,,,,Muss [238],[238] Wenn SG4 IDE+24 (Vorgang) nicht vorhanden,,Status der Antwort,45,SG4,STS,,,,,,Muss [238],[238] Wenn SG4 IDE+24 (Vorgang) nicht vorhanden
+Status der Antwort,46,SG4,STS,9015,,E01,,Status der Antwort,X,,,Status der Antwort,46,SG4,STS,9015,,E01,,Status der Antwort,X,
+Status der Antwort,47,SG4,STS,9013,,,,Code des Prüfschritts,X,,,Status der Antwort,47,SG4,STS,9013,,,,Code des Prüfschritts,X,
+Status der Antwort,48,SG4,STS,1131,,E_0070,,EBD Nr. E_0070,X,,,Status der Antwort,48,SG4,STS,1131,,E_0070,,EBD Nr. E_0070,X,
+Meldepunkt,49,SG5,,,,,,,Muss,,,Meldepunkt,49,SG5,,,,,,,Muss,
+Meldepunkt,50,SG5,LOC,,,,,,Muss,,,Meldepunkt,50,SG5,LOC,,,,,,Muss,
+Meldepunkt,51,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,51,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,52,SG5,LOC,3225,,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,,Meldepunkt,52,SG5,LOC,3225,,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung
+Prüfidentifikator,53,SG6,,,,,,,Muss,,,Prüfidentifikator,53,SG6,,,,,,,Muss,
+Prüfidentifikator,54,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,54,SG6,RFF,,,,,,Muss,
+Prüfidentifikator,55,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,55,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,56,SG6,RFF,1154,,11224,,MaBiS / Antwort auf DZÜ Liste,X,,,Prüfidentifikator,56,SG6,RFF,1154,,11224,,MaBiS / Antwort auf DZÜ Liste,X,
+Referenzangaben,57,SG6,,,,,,,Muss,,,Referenzangaben,57,SG6,,,,,,,Muss,
+Referenzangaben,58,SG6,RFF,,,,,,Muss,,,Referenzangaben,58,SG6,RFF,,,,,,Muss,
+Referenzangaben,59,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenzangaben,59,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
+Referenzangaben,60,SG6,RFF,1154,,,,"Referenz, Identifikation",X [655],[655] Hinweis: Es ist die Listennummer aus der DZÜ Liste zu verwenden,,Referenzangaben,60,SG6,RFF,1154,,,,"Referenz, Identifikation",X [655],[655] Hinweis: Es ist die Listennummer aus der DZÜ Liste zu verwenden
+Daten der Summenzeitreihe,61,SG8,,,,,,,Muss,,,Daten der Summenzeitreihe,61,SG8,,,,,,,Muss,
+Daten der Summenzeitreihe,62,SG8,SEQ,,,,,,Muss,,,Daten der Summenzeitreihe,62,SG8,SEQ,,,,,,Muss,
+Daten der Summenzeitreihe,63,SG8,SEQ,1229,,Z22,,Daten der Summenzeitreihe,X,,,Daten der Summenzeitreihe,63,SG8,SEQ,1229,,Z22,,Daten der Summenzeitreihe,X,
+Versionsangabe der Summenzeitreihe,64,SG8,RFF,,,,,,Muss,,,Versionsangabe der Summenzeitreihe,64,SG8,RFF,,,,,,Muss,
+Versionsangabe der Summenzeitreihe,65,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,65,SG8,RFF,1153,,AUU,,Referenz auf eine Zeitreihe,X,
+Versionsangabe der Summenzeitreihe,66,SG8,RFF,1154,,,,Version der Zeitreihe,X,,,Versionsangabe der Summenzeitreihe,66,SG8,RFF,1154,,,,Version der Zeitreihe,X,
+Vorgang,67,SG4,,,,,,,Soll [2344] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde",,Vorgang,67,SG4,,,,,,,Soll [2055] ∧ [617],"[617] Hinweis: Mehrere Vorgänge für eine Marktlokation bei Wechsel bilanzierungsrelevanter Stammdaten innerhalb des Bilanzierungsmonats
+[2055] Einmal für jede Marktlokation bzw. Tranche, für die der NB nicht die gemeldete Ansicht des ÜNB teilt
+[2344] Einmal für jede Marktlokation bzw. Tranche, die in der DZÜ / BG-CL / LF- SZR berücksichtigt wurde"
+Vorgang,68,SG4,IDE,,,,,,Muss,,,Vorgang,68,SG4,IDE,,,,,,Muss,
+Vorgang,69,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,69,SG4,IDE,7495,,24,,Transaktion,X,
+Vorgang,70,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,70,SG4,IDE,7402,,,,Vorgangsnummer,X,
+Status der Antwort,71,SG4,STS,,,,,,Muss,,,Status der Antwort,71,SG4,STS,,,,,,Muss,
+Status der Antwort,72,SG4,STS,9015,,E01,,Status der Antwort,X,,,Status der Antwort,72,SG4,STS,9015,,E01,,Status der Antwort,X,
+Status der Antwort,73,SG4,STS,9013,,,,Code des Prüfschritts,X,,,Status der Antwort,73,SG4,STS,9013,,,,Code des Prüfschritts,X,
+Status der Antwort,74,SG4,STS,1131,,E_0070,,EBD Nr. E_0070,X,,,Status der Antwort,74,SG4,STS,1131,,E_0070,,EBD Nr. E_0070,X,
+Meldepunkt,75,SG5,,,,,,,Muss [2061] ∧ [659],"[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Meldepunkt,75,SG5,,,,,,,Muss [2061] ∧ [659],"[659] Hinweis: Bei Tranchen ist nur der Meldepunkt der Tranche anzugeben
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
+Meldepunkt,76,SG5,LOC,,,,,,Muss,,,Meldepunkt,76,SG5,LOC,,,,,,Muss,
+Meldepunkt,77,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,77,SG5,LOC,3227,,172,,Meldepunkt,X,
+Meldepunkt,78,SG5,LOC,3225,,,,Identifikator,X [950] [528],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",,Meldepunkt,78,SG5,LOC,3225,,,,Identifikator,X [950] [528],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID"
+Referenz Vorgangsnummer (aus Anfragenachricht),79,SG6,,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),79,SG6,,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),80,SG6,RFF,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),80,SG6,RFF,,,,,,Muss,
+Referenz Vorgangsnummer (aus Anfragenachricht),81,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),81,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
+Referenz Vorgangsnummer (aus Anfragenachricht),82,SG6,RFF,1154,,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),82,SG6,RFF,1154,,,,Vorgangsnummer,X,
+Nachrichten-Endesegment,83,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,83,,UNT,,,,,,Muss,
+Nachrichten-Endesegment,84,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,84,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten-Endesegment,85,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,85,,UNT,0062,,,,Nachrichten-Referenznummer,X,

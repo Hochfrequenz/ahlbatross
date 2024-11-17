@@ -10,7 +10,7 @@ from ahb_diff.main import align_columns, export_to_excel
 
 def test_export() -> None:
     """
-    testing csv and xlsx exports with example pruefid files.
+    test csv and xlsx exports with example pruefid files.
     """
     test_data_dir = Path(__file__).parent / "test_data"
 
@@ -37,7 +37,7 @@ def test_export() -> None:
 
 
 def test_empty_dataframe_export() -> None:
-    """Test exporting an empty dataframe."""
+    """test exporting an empty dataframe."""
     df = pd.DataFrame(columns=["Segmentname_old", "diff", "Segmentname_new"])
 
     with tempfile.TemporaryDirectory() as temp_dir:

@@ -1,0 +1,66 @@
+Segmentname_old,Unnamed: 0_old,Segmentgruppe_old,Segment_old,Datenelement_old,Segment ID_old,Code_old,Qualifier_old,Beschreibung_old,Bedingungsausdruck_old,Bedingung_old,diff,Segmentname_new,Unnamed: 0_new,Segmentgruppe_new,Segment_new,Datenelement_new,Segment ID_new,Code_new,Qualifier_new,Beschreibung_new,Bedingungsausdruck_new,Bedingung_new
+Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
+Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten- Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten- Referenznummer,X,
+Nachrichten-Kopfsegment,2,,UNH,0065,,ORDRSP,,Bestellantwort,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDRSP,,Bestellantwort,X,
+Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
+Nachrichten-Kopfsegment,4,,UNH,0054,,10A,,Ausgabe 2010 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,10A,,Ausgabe 2010 - A,X,
+Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
+Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,X,
+Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
+Beginn der Nachricht,8,,BGM,1001,,Z51,,Sperrung,X,,,Beginn der Nachricht,8,,BGM,1001,,Z51,,Sperrung,X,
+Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
+Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
+Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,
+Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00"
+Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMM ZZZ,X,
+Referenz Nachrichtennummer,14,SG1,,,,,,,Muss,,,Referenz Nachrichtennummer,14,SG1,,,,,,,Muss,
+Referenz Nachrichtennummer,15,SG1,RFF,,,,,,Muss,,,Referenz Nachrichtennummer,15,SG1,RFF,,,,,,Muss,
+Referenz Nachrichtennummer,16,SG1,RFF,1153,,ON,,Auftragsnummer (Einkauf),X,,,Referenz Nachrichtennummer,16,SG1,RFF,1153,,ON,,Auftragsnummer (Einkauf),X,
+Referenz Nachrichtennummer,17,SG1,RFF,1154,,,,Referenz Nachrichtennummer,X [529],[529] Hinweis: Dokumentennummer aus BGM DE1004 der ORDERS,,Referenz Nachrichtennummer,17,SG1,RFF,1154,,,,Referenz Nachrichtennummer,X [529],[529] Hinweis: Dokumentennummer aus BGM DE1004 der ORDERS
+Prüfidentifikator,18,SG1,,,,,,,Muss,,,Prüfidentifikator,18,SG1,,,,,,,Muss,
+Prüfidentifikator,19,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,19,SG1,RFF,,,,,,Muss,
+Prüfidentifikator,20,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,20,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
+Prüfidentifikator,21,SG1,RFF,1154,,19119,,Ablehnung Anfrage Sperrung,X,,,Prüfidentifikator,21,SG1,RFF,1154,,19119,,Ablehnung Anfrage Sperrung,X,
+Einzelheiten zu einer Anpassung/Änderung,22,SG2,,,,,,,Muss,,,Einzelheiten zu einer Anpassung/Änderung,22,SG2,,,,,,,Muss,
+Einzelheiten zu einer Anpassung/Änderung,23,SG2,AJT,,,,,,Muss,,,Einzelheiten zu einer Anpassung/Änderung,23,SG2,AJT,,,,,,Muss,
+Einzelheiten zu einer Anpassung/Änderung,24,SG2,AJT,4465,,,,Code des Prüfschritts,X [18],"[17] Der hier angegebene Code des Prüfschritts muss im EBD dem Cluster Zustimmung zugeordnet sein
+[18] Der hier angegebene Code des Prüfschritts muss im EBD dem Cluster Ablehnung zugeordnet sein",,Einzelheiten zu einer Anpassung/Änderung,24,SG2,AJT,4465,,,,Code des Prüfschritts,X [18],"[17] Der hier angegebene Code des Prüfschritts muss im EBD dem Cluster Zustimmung zugeordnet sein
+[18] Der hier angegebene Code des Prüfschritts muss im EBD dem Cluster Ablehnung zugeordnet sein"
+Einzelheiten zu einer Anpassung/Änderung,25,SG2,AJT,1082,,E_0488,,EBD Nr. E_0488,X,,,Einzelheiten zu einer Anpassung/Änderung,25,SG2,AJT,1082,,E_0488,,EBD Nr. E_0488,X,
+Allgemeine Information (Feld für allgemeine Hinweise),26,SG2,FTX,,,,,,Muss [33],"[27] Wenn SG2 AJT+A05+E_0470 vorhanden
+[28] Wenn AJT+A99 vorhanden
+[33] Wenn AJT+A02/ A03+E_0488 vorhanden",,Allgemeine Information (Feld für allgemeine Hinweise),26,SG2,FTX,,,,,,Muss [33],"[27] Wenn SG2 AJT+A05+E_0470 vorhanden
+[28] Wenn AJT+A99 vorhanden
+[33] Wenn AJT+A02/ A03+E_0488 vorhanden"
+Allgemeine Information (Feld für allgemeine Hinweise),27,SG2,FTX,4451,,AAP,,Antwort (Freier Text),X,,,Allgemeine Information (Feld für allgemeine Hinweise),27,SG2,FTX,4451,,AAP,,Antwort (Freier Text),X,
+Allgemeine Information (Feld für allgemeine Hinweise),28,SG2,FTX,4440,,,,Freier Text,X,,,Allgemeine Information (Feld für allgemeine Hinweise),28,SG2,FTX,4440,,,,Freier Text,X,
+MP-ID Absender,29,SG3,,,,,,,Muss,,,MP-ID Absender,29,SG3,,,,,,,Muss,
+MP-ID Absender,30,SG3,NAD,,,,,,Muss,,,MP-ID Absender,30,SG3,NAD,,,,,,Muss,
+MP-ID Absender,31,SG3,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,,MP-ID Absender,31,SG3,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,
+MP-ID Absender,32,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,,MP-ID Absender,32,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom
+MP-ID Absender,33,SG3,NAD,3055,,9,,GS1,X,,,MP-ID Absender,33,SG3,NAD,3055,,9,,GS1,X,
+MP-ID Absender,34,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,34,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Ansprechpartner,35,SG6,,,,,,,Kann,,,Ansprechpartner,35,SG6,,,,,,,Kann,
+Ansprechpartner,36,SG6,CTA,,,,,,Muss,,,Ansprechpartner,36,SG6,CTA,,,,,,Muss,
+Ansprechpartner,37,SG6,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,37,SG6,CTA,3139,,IC,,Informationskontakt,X,
+Ansprechpartner,38,SG6,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,38,SG6,CTA,3412,,,,Kontakt,X,
+Kommunikationsverbindu ng,39,SG6,COM,,,,,,Muss,,,Kommunikationsverbindu ng,39,SG6,COM,,,,,,Muss,
+Kommunikationsverbindu ng,40,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindu ng,40,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
+Kommunikationsverbindu ng,41,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindu ng,41,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],
+Kommunikationsverbindu ng,42,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindu ng,42,SG6,COM,3155,,FX,,Telefax,X [1P0..1],
+Kommunikationsverbindu ng,43,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindu ng,43,SG6,COM,3155,,TE,,Telefon,X [1P0..1],
+Kommunikationsverbindu ng,44,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindu ng,44,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
+Kommunikationsverbindu ng,45,SG6,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindu ng,45,SG6,COM,3155,,AL,,Handy,X [1P0..1],
+MP-ID Empfänger,46,SG3,,,,,,,Muss,,,MP-ID Empfänger,46,SG3,,,,,,,Muss,
+MP-ID Empfänger,47,SG3,NAD,,,,,,Muss,,,MP-ID Empfänger,47,SG3,NAD,,,,,,Muss,
+MP-ID Empfänger,48,SG3,NAD,3035,,MR,,Nachrichtenempfän ger,X,,,MP-ID Empfänger,48,SG3,NAD,3035,,MR,,Nachrichtenempfän ger,X,
+MP-ID Empfänger,49,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,49,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom
+MP-ID Empfänger,50,SG3,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,50,SG3,NAD,3055,,9,,GS1,X,
+MP-ID Empfänger,51,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,51,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
+Abschnitts- Kontrollsegment,52,,UNS,,,,,,Muss,,,Abschnitts- Kontrollsegment,52,,UNS,,,,,,Muss,
+Abschnitts- Kontrollsegment,53,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,,Abschnitts- Kontrollsegment,53,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,
+Nachrichten- Endesegment,54,,UNT,,,,,,Muss,,,Nachrichten- Endesegment,54,,UNT,,,,,,Muss,
+Nachrichten- Endesegment,55,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten- Endesegment,55,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
+Nachrichten- Endesegment,56,,UNT,0062,,,,Nachrichten- Referenznummer,X,,,Nachrichten- Endesegment,56,,UNT,0062,,,,Nachrichten- Referenznummer,X,
