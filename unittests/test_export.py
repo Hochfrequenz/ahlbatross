@@ -14,10 +14,18 @@ def test_export() -> None:
     """
     test_data_dir = Path(__file__).parent / "test_data"
 
-    pruefid_old = pd.read_csv(test_data_dir / "FV2410_55001.csv", dtype=str)
-    pruefid_new = pd.read_csv(test_data_dir / "FV2504_55001.csv", dtype=str)
+    previous_formatversion = "FV2410"
+    subsequent_formatversion = "FV2504"
 
-    df_merged = align_columns(pruefid_old, pruefid_new)
+    pruefid_old = pd.read_csv(test_data_dir / f"{previous_formatversion}_55001.csv", dtype=str)
+    pruefid_new = pd.read_csv(test_data_dir / f"{subsequent_formatversion}_55001.csv", dtype=str)
+
+    df_merged = align_columns(
+        pruefid_old,
+        pruefid_new,
+        previous_formatversion=previous_formatversion,
+        subsequent_formatversion=subsequent_formatversion,
+    )
 
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_dir_path = temp_dir
@@ -37,8 +45,15 @@ def test_export() -> None:
 
 
 def test_empty_dataframe_export() -> None:
-    """test exporting an empty dataframe."""
-    df = pd.DataFrame(columns=["Segmentname_old", "diff", "Segmentname_new"])
+    """
+    test exporting an empty dataframe.
+    """
+    previous_formatversion = "FV2410"
+    subsequent_formatversion = "FV2504"
+
+    df = pd.DataFrame(
+        columns=[f"Segmentname_{previous_formatversion}", "diff", f"Segmentname_{subsequent_formatversion}"]
+    )
 
     with tempfile.TemporaryDirectory() as temp_dir:
         xlsx_path = Path(temp_dir) / "test.xlsx"
