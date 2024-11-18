@@ -80,6 +80,6 @@ Lieferrichtung,SG10,CCI,,00110,,,,Muss,,62,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,63,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,64,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,65,ENTFÄLLT,,,,,,,,,,,,
-Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,58
-Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,59
-Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,60
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,58
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,59
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,60

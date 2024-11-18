@@ -125,11 +125,11 @@ Abweichungsgrund,SG7,AJT,1082,,E_0521,,EBD Nr. E_0521,X,,77,,,Abweichungsgrund,S
 ,,,,,,,,,,,NEU,,Abweichungsgrund,SG7,AJT,1082,,E_0568,,EBD Nr. E_0568,X,,79
 Zugehörige Rechnung,SG7,RFF,,,,,,Muss [36] ∧ ([11] ⊻ [12]),"[11] Wenn in diesem AJT DE1082 = E_0406
 [12] Wenn in diesem AJT DE1082 = E_0407
-[36] Wenn in dieser SG7 AJT DE4465 = A12/A75/A80/AE1",78,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugehörige Rechnung,SG7,RFF,,,,,,Muss [36] ∧ ([11] ⊻ [12]),"[11] Wenn in diesem AJT DE1082 = E_0406
+[36] Wenn in dieser SG7 AJT DE4465 = A12/A75/A80/AE1",78,,,Zugehörige Rechnung,SG7,RFF,,,,,,Muss [36] ∧ ([11] ⊻ [12]),"[11] Wenn in diesem AJT DE1082 = E_0406
 [12] Wenn in diesem AJT DE1082 = E_0407
 [36] Wenn in dieser SG7 AJT DE4465 = A12/A75/A80/AE1",80
-Zugehörige Rechnung,SG7,RFF,1153,,AFL,,Zugehörige Rechnungen,X,,79,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugehörige Rechnung,SG7,RFF,1153,,AFL,,Zugehörige Rechnungen,X,,81
-Zugehörige Rechnung,SG7,RFF,1154,,,,"Referenz, Identifikation",X [536],[536] Hinweis: Dieses DE darf keine Abschlagsrechnungsnummer enthalten ,80,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugehörige Rechnung,SG7,RFF,1154,,,,"Referenz, Identifikation",X [536],[536] Hinweis: Dieses DE darf keine Abschlagsrechnungsnummer enthalten ,82
+Zugehörige Rechnung,SG7,RFF,1153,,AFL,,Zugehörige Rechnungen,X,,79,,,Zugehörige Rechnung,SG7,RFF,1153,,AFL,,Zugehörige Rechnungen,X,,81
+Zugehörige Rechnung,SG7,RFF,1154,,,,"Referenz, Identifikation",X [536],[536] Hinweis: Dieses DE darf keine Abschlagsrechnungsnummer enthalten ,80,,,Zugehörige Rechnung,SG7,RFF,1154,,,,"Referenz, Identifikation",X [536],[536] Hinweis: Dieses DE darf keine Abschlagsrechnungsnummer enthalten ,82
 Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ((([40] ⊻ [41]) ∧ [22]) ⊻ ([41] ∧ [39]) ⊻ ([49] ∧ [57]) ⊻ ([50] ∧ [58])) ⊻ (([81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86]) ∧ [87]) ⊻  (([84] ⊻ [85] ⊻ [86]) ∧ [88]) Kann,"[22] Wenn in dieser SG7 AJT DE4465 = A02/A06/A16/ A66/A67/A68/A69/A78/A90/ A95/A96/AC3/AC4
 [39] Wenn in dieser SG7 AJT DE4465 = AC1
 [40] Wenn in dieser SG7 AJT DE1082 = E_0406
@@ -145,7 +145,7 @@ Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ((([40] ⊻ [41]) 
 [85] Wenn in dieser SG7 AJT DE1082 = E_0517
 [86] Wenn in dieser SG7 AJT DE1082 = E_0521
 [87] Wenn in dieser SG7 AJT DE4465 =A21/A22/A23/A90/ A96
-[88] Wenn in dieser SG7 AJT DE4465 =A25",81,ÄNDERUNG,Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ((([40] ⊻ [41]) ∧ [22]) ⊻ (([41] ⊻ [92]) ∧ [39]) ⊻ ([49] ∧ [57]) ⊻ ([50] ∧ [58])) ⊻ (([81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86] ⊻ [91] ⊻ [92]) ∧ [87]) ⊻ (([84] ⊻ [85] ⊻ [86]) ∧ [88]) Kann,"[22] Wenn in dieser SG7 AJT DE4465 = A02/A06/A16/ A66/A67/A68/A69/A78/A90/ A95/A96/AC3/AC4
+[88] Wenn in dieser SG7 AJT DE4465 =A25",81,ÄNDERUNG,Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ((([40] ⊻ [41]) ∧ [22]) ⊻ (([41] ⊻ [92]) ∧ [39]) ⊻ ([49] ∧ [57]) ⊻ ([50] ∧ [58])) ⊻ (([81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86] ⊻ [91] ⊻ [92]) ∧ [87]) ⊻ (([84] ⊻ [85] ⊻ [86]) ∧ [88]) Kann,"[22] Wenn in dieser SG7 AJT DE4465 = A02/A06/A16/ A66/A67/A68/A69/A78/A90/ A95/A96/AC3/AC4
 [39] Wenn in dieser SG7 AJT DE4465 = AC1
 [40] Wenn in dieser SG7 AJT DE1082 = E_0406
 [41] Wenn in dieser SG7 AJT DE1082 = E_0407
@@ -163,13 +163,13 @@ Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ((([40] ⊻ [41]) 
 [88] Wenn in dieser SG7 AJT DE4465 = A25
 [91] Wenn in dieser SG7 AJT DE1082 = E_0566
 [92] Wenn in dieser SG7 AJT DE1082 = E_0568",83
-Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,82,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,84
-Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X [548],[548] Hinweis: Die Befüllung des Datenelements ergibt sich aus dem zugehörigen EBD.,83,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X [548],[548] Hinweis: Die Befüllung des Datenelements ergibt sich aus dem zugehörigen EBD.,85
+Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,82,,,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,84
+Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X [548],[548] Hinweis: Die Befüllung des Datenelements ergibt sich aus dem zugehörigen EBD.,83,,,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X [548],[548] Hinweis: Die Befüllung des Datenelements ergibt sich aus dem zugehörigen EBD.,85
 Enthaltene Abschlagsrechnungen,SG7,FTX,,,,,,Muss [18] ∧ [529],"[18] Wenn in dieser SG7 AJT DE4465 = A74/A75/A76/AC5
-[529] Hinweis: Wenn in dieser SG7 AJT DE4465 = A75 vorhanden, dann dürfen in den DE4440 dieses FTX- Segments nur Abschlagsrechnungsnummern genannt sein, welche in der Rechnung enthalten sind, deren Nummer in dieser SG7 in SG7 RFF+AFL angegeben ist.",84,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Enthaltene Abschlagsrechnungen,SG7,FTX,,,,,,Muss [18] ∧ [529],"[18] Wenn in dieser SG7 AJT DE4465 = A74/A75/A76/AC5
+[529] Hinweis: Wenn in dieser SG7 AJT DE4465 = A75 vorhanden, dann dürfen in den DE4440 dieses FTX- Segments nur Abschlagsrechnungsnummern genannt sein, welche in der Rechnung enthalten sind, deren Nummer in dieser SG7 in SG7 RFF+AFL angegeben ist.",84,,,Enthaltene Abschlagsrechnungen,SG7,FTX,,,,,,Muss [18] ∧ [529],"[18] Wenn in dieser SG7 AJT DE4465 = A74/A75/A76/AC5
 [529] Hinweis: Wenn in dieser SG7 AJT DE4465 = A75 vorhanden, dann dürfen in den DE4440 dieses FTX- Segments nur Abschlagsrechnungsnummern genannt sein, welche in der Rechnung enthalten sind, deren Nummer in dieser SG7 in SG7 RFF+AFL angegeben ist.",86
-Enthaltene Abschlagsrechnungen,SG7,FTX,4451,,Z14,,Enthaltene Abschläge,X,,85,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Enthaltene Abschlagsrechnungen,SG7,FTX,4451,,Z14,,Enthaltene Abschläge,X,,87
-Enthaltene Abschlagsrechnungen,SG7,FTX,4440,,,,Freier Text,X [523],"[523] Hinweis: Jede Rechnungsnummer einer Abschlagsrechnung muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Rechnungsnummern aller anzugebenden Abschlagrechnungen nicht aus, ist das FTX+Z14 zu wiederholen.",86,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Enthaltene Abschlagsrechnungen,SG7,FTX,4440,,,,Freier Text,X [523],"[523] Hinweis: Jede Rechnungsnummer einer Abschlagsrechnung muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Rechnungsnummern aller anzugebenden Abschlagrechnungen nicht aus, ist das FTX+Z14 zu wiederholen.",88
+Enthaltene Abschlagsrechnungen,SG7,FTX,4451,,Z14,,Enthaltene Abschläge,X,,85,,,Enthaltene Abschlagsrechnungen,SG7,FTX,4451,,Z14,,Enthaltene Abschläge,X,,87
+Enthaltene Abschlagsrechnungen,SG7,FTX,4440,,,,Freier Text,X [523],"[523] Hinweis: Jede Rechnungsnummer einer Abschlagsrechnung muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Rechnungsnummern aller anzugebenden Abschlagrechnungen nicht aus, ist das FTX+Z14 zu wiederholen.",86,,,Enthaltene Abschlagsrechnungen,SG7,FTX,4440,,,,Freier Text,X [523],"[523] Hinweis: Jede Rechnungsnummer einer Abschlagsrechnung muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Rechnungsnummern aller anzugebenden Abschlagrechnungen nicht aus, ist das FTX+Z14 zu wiederholen.",88
 Fehlende Positionen,SG7,FTX,,,,,,Muss [56] ∧ ([57] ⊻ [81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86]) ∧ [544],"[56] Wenn in dieser SG7 AJT DE4465 = A21
 [57] Wenn in dieser SG7 AJT DE1082 = E_0210
 [81] Wenn in dieser SG7 AJT DE1082 = E_0264
@@ -178,7 +178,7 @@ Fehlende Positionen,SG7,FTX,,,,,,Muss [56] ∧ ([57] ⊻ [81] ⊻ [82] ⊻ [83] 
 [84] Wenn in dieser SG7 AJT DE1082 = E_0266
 [85] Wenn in dieser SG7 AJT DE1082 = E_0517
 [86] Wenn in dieser SG7 AJT DE1082 = E_0521
-[544] Hinweis: Wenn in dieser SG7 AJT DE4465 = A21 vorhanden, dann darf in den DE4440 dieses FTX-Segments jeweils nur eine Positionsnummer genannt sein, welche aus dem bestätigten Angebot nicht in der Rechung enthalten sind.",87,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fehlende Positionen,SG7,FTX,,,,,,Muss [56] ∧ ([57] ⊻ [81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86]) ∧ [544],"[56] Wenn in dieser SG7 AJT DE4465 = A21
+[544] Hinweis: Wenn in dieser SG7 AJT DE4465 = A21 vorhanden, dann darf in den DE4440 dieses FTX-Segments jeweils nur eine Positionsnummer genannt sein, welche aus dem bestätigten Angebot nicht in der Rechung enthalten sind.",87,,,Fehlende Positionen,SG7,FTX,,,,,,Muss [56] ∧ ([57] ⊻ [81] ⊻ [82] ⊻ [83] ⊻ [84] ⊻ [85] ⊻ [86]) ∧ [544],"[56] Wenn in dieser SG7 AJT DE4465 = A21
 [57] Wenn in dieser SG7 AJT DE1082 = E_0210
 [81] Wenn in dieser SG7 AJT DE1082 = E_0264
 [82] Wenn in dieser SG7 AJT DE1082 = E_0515
@@ -187,13 +187,13 @@ Fehlende Positionen,SG7,FTX,,,,,,Muss [56] ∧ ([57] ⊻ [81] ⊻ [82] ⊻ [83] 
 [85] Wenn in dieser SG7 AJT DE1082 = E_0517
 [86] Wenn in dieser SG7 AJT DE1082 = E_0521
 [544] Hinweis: Wenn in dieser SG7 AJT DE4465 = A21 vorhanden, dann darf in den DE4440 dieses FTX-Segments jeweils nur eine Positionsnummer genannt sein, welche aus dem bestätigten Angebot nicht in der Rechung enthalten sind.",89
-Fehlende Positionen,SG7,FTX,4451,,Z16,,Positionsnummern aus dem Angebot,X,,88,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fehlende Positionen,SG7,FTX,4451,,Z16,,Positionsnummern aus dem Angebot,X,,90
-Fehlende Positionen,SG7,FTX,4440,,,,Freier Text,X [538],"[538] Hinweis: Jede Positionsnummer eines Angebotes muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Positionsnummern aller anzugebenden Angebote nicht aus, ist das SG7 FTX+Z16 zu wiederholen.",89,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fehlende Positionen,SG7,FTX,4440,,,,Freier Text,X [538],"[538] Hinweis: Jede Positionsnummer eines Angebotes muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Positionsnummern aller anzugebenden Angebote nicht aus, ist das SG7 FTX+Z16 zu wiederholen.",91
-Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,90,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,92
-Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,91,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,93
-Summenbetrag,,MOA,,,,,,Muss,,92,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Summenbetrag,,MOA,,,,,,Muss,,94
-Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,93,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,95
-Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,94,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,96
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,95,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,,,,,Muss,,97
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,96,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,98
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,97,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,99
+Fehlende Positionen,SG7,FTX,4451,,Z16,,Positionsnummern aus dem Angebot,X,,88,,,Fehlende Positionen,SG7,FTX,4451,,Z16,,Positionsnummern aus dem Angebot,X,,90
+Fehlende Positionen,SG7,FTX,4440,,,,Freier Text,X [538],"[538] Hinweis: Jede Positionsnummer eines Angebotes muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Positionsnummern aller anzugebenden Angebote nicht aus, ist das SG7 FTX+Z16 zu wiederholen.",89,,,Fehlende Positionen,SG7,FTX,4440,,,,Freier Text,X [538],"[538] Hinweis: Jede Positionsnummer eines Angebotes muss in einem separaten DE4440 angegeben werden. Reichen die fünf DE4440 für die Positionsnummern aller anzugebenden Angebote nicht aus, ist das SG7 FTX+Z16 zu wiederholen.",91
+Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,90,,,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,92
+Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,91,,,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,93
+Summenbetrag,,MOA,,,,,,Muss,,92,,,Summenbetrag,,MOA,,,,,,Muss,,94
+Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,93,,,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,95
+Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,94,,,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,96
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,95,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,97
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,96,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,98
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,97,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,99

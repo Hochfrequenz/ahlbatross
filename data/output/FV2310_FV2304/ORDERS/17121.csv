@@ -91,7 +91,7 @@ Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitsabrechnung/ Betriebsf
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,76
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,CCI,,00070,,,,Muss,,77
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,CCI,7037,00070,ZA7,,LF,X,,78
-Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,76,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,,00071,,,,Muss,,79
+Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,76,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,,00071,,,,Muss,,79
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,7111,00071,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,80
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,81
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,82
@@ -120,18 +120,18 @@ Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vo
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,,00077,,,,Muss,,102
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,7111,00077,Z85,,Bilanzkreisabrechnung,X [1P0..1],,103
 ,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,104
-Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,77,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,105
-Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Messprodukt für Lieferant relevant,SG30,CCI,,00078,,,,Muss,,106
-Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Messprodukt für Lieferant relevant,SG30,CCI,7037,00078,ZA7,,LF,X,,107
-Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,,00079,,,,Muss,,108
-Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00079,Z47,,Endkundenabrechnung,X [1P1..1],,109
-Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,82,ÄNDERUNG,Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],,110
+Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,77,,,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,105
+Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Messprodukt für Lieferant relevant,SG30,CCI,,00078,,,,Muss,,106
+Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Messprodukt für Lieferant relevant,SG30,CCI,7037,00078,ZA7,,LF,X,,107
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Verwendungszweck der Werte,SG30,CAV,,00079,,,,Muss,,108
+Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00079,Z47,,Endkundenabrechnung,X [1P1..1],,109
+Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,82,ÄNDERUNG,Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],,110
 ,,,,,,,,,,,NEU,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss,,111
 ,,,,,,,,,,,NEU,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,00080,,,,Muss,,112
 ,,,,,,,,,,,NEU,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,00080,ZA9,,ÜNB,X,,113
-Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,83,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,,00081,,,,Muss,,114
-Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,84,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00081,Z85,,Bilanzkreisabrechnung,X [1P0..1],,115
-Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,85,ÄNDERUNG,Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,116
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,83,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,,00081,,,,Muss,,114
+Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,84,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00081,Z85,,Bilanzkreisabrechnung,X [1P0..1],,115
+Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,85,ÄNDERUNG,Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,116
 ,,,,,,,,,,,NEU,,Referenz auf ID der Tranche,SG34,,,,,,,Muss,,117
 ,,,,,,,,,,,NEU,,Referenz auf ID der Tranche,SG34,RFF,,00082,,,,Muss,,118
 ,,,,,,,,,,,NEU,,Referenz auf ID der Tranche,SG34,RFF,1153,00082,Z20,,Tranche,X,,119
@@ -177,16 +177,16 @@ Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsf
 ,,,,,,,,,,,NEU,,Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,156
 ,,,,,,,,,,,NEU,,Messprodukt für Netzbetreiber relevant,SG30,CCI,,00092,,,,Muss,,157
 ,,,,,,,,,,,NEU,,Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,00092,ZA8,,NB,X,,158
-Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,86,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,,00093,,,,Muss,,159
+Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,86,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,,00093,,,,Muss,,159
 Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss [112],"[112] Wenn in derselben SG29 LIN++Z27 (Erforderliches Messprodukt der Marktlokation), das PIA+5+9991000000078: Z11 (Wirkarbeit Lastgang 1/4 stündlich) vorhanden ist",87,ENTFÄLLT,,,,,,,,,,,,
 Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,,,,,Muss,,88,ENTFÄLLT,,,,,,,,,,,,
 Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,,ZA9,,ÜNB,X,,89,ENTFÄLLT,,,,,,,,,,,,
-Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,90,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00093,ZD1,,Blindarbeitabrechnung / Betriebsführung,X,,160
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,90,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00093,ZD1,,Blindarbeitabrechnung / Betriebsführung,X,,160
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,161
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,CCI,,00094,,,,Muss,,162
 ,,,,,,,,,,,NEU,,Messprodukt für Lieferant relevant,SG30,CCI,7037,00094,ZA7,,LF,X,,163
-Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,91,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,,00095,,,,Muss,,164
-Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00095,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,165
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,91,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,,00095,,,,Muss,,164
+Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,00095,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,165
 Erforderliches Messprodukt der Tranche,SG29,,,,,,,Muss [2001] ∧ [2002] ∧ [94],"[94] Wenn in derselben Nachricht eine SG29 mit Z27 in LIN DE1229 nicht vorhanden
 [2001] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Tranchen zu der in der SG2 genannten Marktlokation vorhanden sind.
 [2002] Ist mindestens zwei Mal anzugeben",93,ENTFÄLLT,,,,,,,,,,,,
@@ -200,7 +200,7 @@ Erforderliches Messprodukt der Tranche,SG29,PIA,7143,,Z11,,Messprodukt,X,,100,EN
 Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,101,ENTFÄLLT,,,,,,,,,,,,
 Messprodukt für Netzbetreiber relevant,SG30,CCI,,,,,,Muss,,102,ENTFÄLLT,,,,,,,,,,,,
 Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,,ZA8,,NB,X,,103,ENTFÄLLT,,,,,,,,,,,,
-Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,104,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,166
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,104,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,166
 Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,105,ENTFÄLLT,,,,,,,,,,,,
 Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,106,ENTFÄLLT,,,,,,,,,,,,
 Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,107,ENTFÄLLT,,,,,,,,,,,,
@@ -247,8 +247,8 @@ Referenz auf ID der Messlokation,SG34,,,,,,,Muss,,146,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf ID der Messlokation,SG34,RFF,,,,,,Muss,,147,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf ID der Messlokation,SG34,RFF,1153,,Z19,,Messlokation,X,,148,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf ID der Messlokation,SG34,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,149,ENTFÄLLT,,,,,,,,,,,,
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,150,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,167
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,151,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,168
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,152,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,169
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,153,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,170
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,154,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,171
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,150,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,167
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,151,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,168
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,152,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,169
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,153,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,170
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,154,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,171

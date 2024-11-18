@@ -122,119 +122,119 @@ Adresse der Markt- oder Messlokation,SG2,NAD,3164,,,,Ort,M,,92,ÄNDERUNG,Datenel
 Adresse der Markt- oder Messlokation,SG2,NAD,3251,,,,"Postleitzahl, Code",X,,93,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304,Adresse der Markt- oder Messlokation,SG2,NAD,3164,,,,Ort,M,,93
 Adresse der Markt- oder Messlokation,SG2,NAD,3207,,,,"Ländername, Code",X,,94,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Beschreibung_FV2210|Beschreibung_FV2304,Adresse der Markt- oder Messlokation,SG2,NAD,3251,,,,"Postleitzahl, Code",X,,94
 ,,,,,,,,,,,NEU,,Adresse der Markt- oder Messlokation,SG2,NAD,3207,,,,"Ländername, Code",X,,95
-Meldepunkt,SG2,LOC,,,,,,Muss,,95,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,,,,,,Muss,,96
-Meldepunkt,SG2,LOC,3227,,172,,Meldepunkt,X,,96,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,3227,,172,,Meldepunkt,X,,97
+Meldepunkt,SG2,LOC,,,,,,Muss,,95,,,Meldepunkt,SG2,LOC,,,,,,Muss,,96
+Meldepunkt,SG2,LOC,3227,,172,,Meldepunkt,X,,96,,,Meldepunkt,SG2,LOC,3227,,172,,Meldepunkt,X,,97
 Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509],"[509] Hinweis: Verwendung der ID der Marktlokation
 [510] Hinweis: Verwendung der ID der Messlokation
 [950] Format: Marktlokations-ID
-[951] Format: Zählpunktbezeichnung",97,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509],"[509] Hinweis: Verwendung der ID der Marktlokation
+[951] Format: Zählpunktbezeichnung",97,,,Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509],"[509] Hinweis: Verwendung der ID der Marktlokation
 [510] Hinweis: Verwendung der ID der Messlokation
 [950] Format: Marktlokations-ID
 [951] Format: Zählpunktbezeichnung",98
-Währungsangaben,SG7,,,,,,,Muss,,98,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,,,,,,,Muss,,99
-Währungsangaben,SG7,CUX,,,,,,Muss,,99,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,,,,,,Muss,,100
-Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,100,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,101
-Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,101,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,102
-Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,102,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,103
-Zahlungsbedingungen,SG8,,,,,,,Muss,,103,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,,,,,,,Muss,,104
-Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,104,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,105
-Zahlungsbedingungen,SG8,PYT,4279,,3,,Fixdatum,X,,105,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,PYT,4279,,3,,Fixdatum,X,,106
-Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,106,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,107
-Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,107,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,108
+Währungsangaben,SG7,,,,,,,Muss,,98,,,Währungsangaben,SG7,,,,,,,Muss,,99
+Währungsangaben,SG7,CUX,,,,,,Muss,,99,,,Währungsangaben,SG7,CUX,,,,,,Muss,,100
+Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,100,,,Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,101
+Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,101,,,Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,102
+Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,102,,,Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,103
+Zahlungsbedingungen,SG8,,,,,,,Muss,,103,,,Zahlungsbedingungen,SG8,,,,,,,Muss,,104
+Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,104,,,Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,105
+Zahlungsbedingungen,SG8,PYT,4279,,3,,Fixdatum,X,,105,,,Zahlungsbedingungen,SG8,PYT,4279,,3,,Fixdatum,X,,106
+Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,106,,,Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,107
+Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,107,,,Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,108
 Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X (([UB1] ∧ [20] ∧ [24]) ⊻ ([UB1] ∧ [21] ∧ [25])),"[20] Wenn fälliger Betrag (SG50 MOA+9) >= 0
 [21] Wenn fälliger Betrag (SG50 MOA+9) < 0
 [24] Wert muss mindestens 10 WT nach Wert aus DTM+137 DE2380 liegen
 [25] Wert darf maximal 10 WT nach Wert aus DTM+137 DE2380 liegen
 [45] Nur MP-ID aus Sparte Strom
-[46] Nur MP-ID aus Sparte Gas",108,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],"[20] Wenn fälliger Betrag (SG50 MOA+9) ≥ 0
+[46] Nur MP-ID aus Sparte Gas",108,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],"[20] Wenn fälliger Betrag (SG50 MOA+9) ≥ 0
 [21] Wenn fälliger Betrag (SG50 MOA+9) < 0
 [24] Wert muss mindestens 10 WT nach Wert aus DTM+137 DE2380 liegen
 [25] Wert darf maximal 10 WT nach Wert aus DTM+137 DE2380 liegen
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfäng er) aus Sparte Strom
 [493] Wenn MP-ID in NAD+MR (Nachrichtenempfäng er) aus Sparte Gas",109
-Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,109,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,110
-Positionsdaten,SG26,,,,,,,Muss,,110,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsdaten,SG26,,,,,,,Muss,,111
-Positionsdaten,SG26,LIN,,,,,,Muss,,111,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsdaten,SG26,LIN,,,,,,Muss,,112
-Positionsdaten,SG26,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",112,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsdaten,SG26,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",113
-Positionsdaten,SG26,LIN,7140,,,,Produkt-/Leistungsnummer,X [40],"[40] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern und Artikel-ID mit dem entsprechenden Prüfidentifikator versehen sind oder Artikel-ID aus der Codeliste der Artikelnummern und Artikel-ID.",113,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsdaten,SG26,LIN,7140,,,,Produkt-/Leistungsnummer,X [40],"[40] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern und Artikel-ID mit dem entsprechenden Prüfidentifikator versehen sind oder Artikel-ID aus der Codeliste der Artikelnummern und Artikel-ID.",114
-Positionsdaten,SG26,LIN,7143,,Z01,,Artikelnummer,X,,114,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsdaten,SG26,LIN,7143,,Z01,,Artikelnummer,X,,115
-energetische Mengenangaben,SG26,QTY,,,,,,Muss,,115,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,energetische Mengenangaben,SG26,QTY,,,,,,Muss,,116
-energetische Mengenangaben,SG26,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,116,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,energetische Mengenangaben,SG26,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,117
+Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,109,,,Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,110
+Positionsdaten,SG26,,,,,,,Muss,,110,,,Positionsdaten,SG26,,,,,,,Muss,,111
+Positionsdaten,SG26,LIN,,,,,,Muss,,111,,,Positionsdaten,SG26,LIN,,,,,,Muss,,112
+Positionsdaten,SG26,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",112,,,Positionsdaten,SG26,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",113
+Positionsdaten,SG26,LIN,7140,,,,Produkt-/Leistungsnummer,X [40],"[40] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern und Artikel-ID mit dem entsprechenden Prüfidentifikator versehen sind oder Artikel-ID aus der Codeliste der Artikelnummern und Artikel-ID.",113,,,Positionsdaten,SG26,LIN,7140,,,,Produkt-/Leistungsnummer,X [40],"[40] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern und Artikel-ID mit dem entsprechenden Prüfidentifikator versehen sind oder Artikel-ID aus der Codeliste der Artikelnummern und Artikel-ID.",114
+Positionsdaten,SG26,LIN,7143,,Z01,,Artikelnummer,X,,114,,,Positionsdaten,SG26,LIN,7143,,Z01,,Artikelnummer,X,,115
+energetische Mengenangaben,SG26,QTY,,,,,,Muss,,115,,,energetische Mengenangaben,SG26,QTY,,,,,,Muss,,116
+energetische Mengenangaben,SG26,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,116,,,energetische Mengenangaben,SG26,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,117
 energetische Mengenangaben,SG26,QTY,6060,,,,Menge,X [902] ∧ [906],"[902] Format: Möglicher Wert: ≥ 0
 [906] Format: max. 3 Nachkommastellen
-[910] Format: Möglicher Wert: < 0 oder ≥ 0 ",117,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,energetische Mengenangaben,SG26,QTY,6060,,,,Menge,X [902] ∧ [906],"[902] Format: Möglicher Wert: ≥ 0
+[910] Format: Möglicher Wert: < 0 oder ≥ 0 ",117,,,energetische Mengenangaben,SG26,QTY,6060,,,,Menge,X [902] ∧ [906],"[902] Format: Möglicher Wert: ≥ 0
 [906] Format: max. 3 Nachkommastellen
 [910] Format: Möglicher Wert: < 0 oder ≥ 0 ",118
 energetische Mengenangaben,SG26,QTY,6411,,H87,,Stück,X,"[35] Wenn MP-ID in SG2 NAD+MR aus Sparte Strom
-[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) <= 1.1. 2023 0:00 gesetzlicher deutscher Zeit",118,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,energetische Mengenangaben,SG26,QTY,6411,,H87,,Stück,X,"[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) ≤ 1.1. 2023 0:00 gesetzlicher deutscher Zeit
+[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) <= 1.1. 2023 0:00 gesetzlicher deutscher Zeit",118,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304,energetische Mengenangaben,SG26,QTY,6411,,H87,,Stück,X,"[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) ≤ 1.1. 2023 0:00 gesetzlicher deutscher Zeit
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfäng er) aus Sparte Strom",119
-zeitliche Mengenangaben,SG26,QTY,,,,,,Muss,[8] Bei zeitabhängigen Preisen,119,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,,,,,,Muss,[8] Bei zeitabhängigen Preisen,120
-zeitliche Mengenangaben,SG26,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,120,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,121
-zeitliche Mengenangaben,SG26,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,121,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,122
-zeitliche Mengenangaben,SG26,QTY,6411,,DAY,,Tag,X,,122,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,6411,,DAY,,Tag,X,,123
-zeitliche Mengenangaben,SG26,QTY,6411,,MON,,Monat,X,,123,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,6411,,MON,,Monat,X,,124
+zeitliche Mengenangaben,SG26,QTY,,,,,,Muss,[8] Bei zeitabhängigen Preisen,119,,,zeitliche Mengenangaben,SG26,QTY,,,,,,Muss,[8] Bei zeitabhängigen Preisen,120
+zeitliche Mengenangaben,SG26,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,120,,,zeitliche Mengenangaben,SG26,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,121
+zeitliche Mengenangaben,SG26,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,121,,,zeitliche Mengenangaben,SG26,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,122
+zeitliche Mengenangaben,SG26,QTY,6411,,DAY,,Tag,X,,122,,,zeitliche Mengenangaben,SG26,QTY,6411,,DAY,,Tag,X,,123
+zeitliche Mengenangaben,SG26,QTY,6411,,MON,,Monat,X,,123,,,zeitliche Mengenangaben,SG26,QTY,6411,,MON,,Monat,X,,124
 zeitliche Mengenangaben,SG26,QTY,6411,,ANN,,Jahr,X,"[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) <= 1.1. 2023 0:00 gesetzlicher deutscher Zeit
-[52] Wenn MP-ID in SG2 NAD+MR aus Sparte Gas",124,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,zeitliche Mengenangaben,SG26,QTY,6411,,ANN,,Jahr,X,"[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) ≤ 1.1. 2023 0:00 gesetzlicher deutscher Zeit
+[52] Wenn MP-ID in SG2 NAD+MR aus Sparte Gas",124,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304,zeitliche Mengenangaben,SG26,QTY,6411,,ANN,,Jahr,X,"[51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) ≤ 1.1. 2023 0:00 gesetzlicher deutscher Zeit
 [493] Wenn MP-ID in NAD+MR (Nachrichtenempfäng er) aus Sparte Gas",125
-Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,125,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,126
-Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2005,,155,,"Rechnungsperiode, Beginndatum",X,,126,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2005,,155,,"Rechnungsperiode, Beginndatum",X,,127
-Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,127,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,128
-Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,128,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,129
-Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,129,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,130
-Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2005,,156,,"Rechnungsperiode, Endedatum",X,,130,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2005,,156,,"Rechnungsperiode, Endedatum",X,,131
-Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,131,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,132
-Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,132,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,133
-Positionsnettobetrag,SG27,,,,,,,Muss,,133,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsnettobetrag,SG27,,,,,,,Muss,,134
-Positionsnettobetrag,SG27,MOA,,,,,,Muss,,134,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsnettobetrag,SG27,MOA,,,,,,Muss,,135
-Positionsnettobetrag,SG27,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,135,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsnettobetrag,SG27,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,136
-Positionsnettobetrag,SG27,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,136,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Positionsnettobetrag,SG27,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,137
-Preis,SG29,,,,,,,Muss,,137,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preis,SG29,,,,,,,Muss,,138
-Preis,SG29,PRI,,,,,,Muss,,138,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preis,SG29,PRI,,,,,,Muss,,139
-Preis,SG29,PRI,5125,,CAL,,Berechnungspreis,X,,139,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preis,SG29,PRI,5125,,CAL,,Berechnungspreis,X,,140
+Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,125,,,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,126
+Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2005,,155,,"Rechnungsperiode, Beginndatum",X,,126,,,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2005,,155,,"Rechnungsperiode, Beginndatum",X,,127
+Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,127,,,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,128
+Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,128,,,Positionsbezogener Abrechnungszeitraum Beginn,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,129
+Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,129,,,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,,,,,,Muss,[9] Wenn SG26 DTM+203 nicht vorhanden,130
+Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2005,,156,,"Rechnungsperiode, Endedatum",X,,130,,,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2005,,156,,"Rechnungsperiode, Endedatum",X,,131
+Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,131,,,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,132
+Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,132,,,Positionsbezogener Abrechnungszeitraum Ende,SG26,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,133
+Positionsnettobetrag,SG27,,,,,,,Muss,,133,,,Positionsnettobetrag,SG27,,,,,,,Muss,,134
+Positionsnettobetrag,SG27,MOA,,,,,,Muss,,134,,,Positionsnettobetrag,SG27,MOA,,,,,,Muss,,135
+Positionsnettobetrag,SG27,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,135,,,Positionsnettobetrag,SG27,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,136
+Positionsnettobetrag,SG27,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,136,,,Positionsnettobetrag,SG27,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,137
+Preis,SG29,,,,,,,Muss,,137,,,Preis,SG29,,,,,,,Muss,,138
+Preis,SG29,PRI,,,,,,Muss,,138,,,Preis,SG29,PRI,,,,,,Muss,,139
+Preis,SG29,PRI,5125,,CAL,,Berechnungspreis,X,,139,,,Preis,SG29,PRI,5125,,CAL,,Berechnungspreis,X,,140
 Preis,SG29,PRI,5118,,,,"Preis, Betrag",X [912],"[912] Format: max. 6 Nachkommastellen
-[946] Format: max. 11 Nachkommastellen",140,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preis,SG29,PRI,5118,,,,"Preis, Betrag",X [912],"[912] Format: max. 6 Nachkommastellen
+[946] Format: max. 11 Nachkommastellen",140,,,Preis,SG29,PRI,5118,,,,"Preis, Betrag",X [912],"[912] Format: max. 6 Nachkommastellen
 [946] Format: max. 11 Nachkommastellen",141
 Preis,SG29,PRI,6411,,ANN,,Jahr,X [12],"[12] Wenn SG26 QTY+136 vorhanden
 [51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) <= 1.1. 2023 0:00 gesetzlicher deutscher Zeit
-[52] Wenn MP-ID in SG2 NAD+MR aus Sparte Gas",141,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preis,SG29,PRI,6411,,ANN,,Jahr,X [12],"[12] Wenn SG26 QTY+136 vorhanden
+[52] Wenn MP-ID in SG2 NAD+MR aus Sparte Gas",141,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304,Preis,SG29,PRI,6411,,ANN,,Jahr,X [12],"[12] Wenn SG26 QTY+136 vorhanden
 [51] Wenn SG26 DTM+156 (Rechnungsperiode Endedatum) ≤ 1.1. 2023 0:00 gesetzlicher deutscher Zeit
 [493] Wenn MP-ID in NAD+MR (Nachrichtenempfäng er) aus Sparte Gas",142
-Umsatzsteuer der Position,SG34,,,,,,,Muss,,142,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,,,,,,,Muss,,143
-Umsatzsteuer der Position,SG34,TAX,,,,,,Muss,,143,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,,,,,,Muss,,144
-Umsatzsteuer der Position,SG34,TAX,5283,,7,,Steuer,X,,144,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5283,,7,,Steuer,X,,145
-Umsatzsteuer der Position,SG34,TAX,5153,,VAT,,Umsatzsteuer,X,,145,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5153,,VAT,,Umsatzsteuer,X,,146
+Umsatzsteuer der Position,SG34,,,,,,,Muss,,142,,,Umsatzsteuer der Position,SG34,,,,,,,Muss,,143
+Umsatzsteuer der Position,SG34,TAX,,,,,,Muss,,143,,,Umsatzsteuer der Position,SG34,TAX,,,,,,Muss,,144
+Umsatzsteuer der Position,SG34,TAX,5283,,7,,Steuer,X,,144,,,Umsatzsteuer der Position,SG34,TAX,5283,,7,,Steuer,X,,145
+Umsatzsteuer der Position,SG34,TAX,5153,,VAT,,Umsatzsteuer,X,,145,,,Umsatzsteuer der Position,SG34,TAX,5153,,VAT,,Umsatzsteuer,X,,146
 Umsatzsteuer der Position,SG34,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
-[930] Format: max. 2 Nachkommastellen",146,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
+[930] Format: max. 2 Nachkommastellen",146,,,Umsatzsteuer der Position,SG34,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
 [930] Format: max. 2 Nachkommastellen",147
-Umsatzsteuer der Position,SG34,TAX,5305,,S,,Einheitssatz (Standard),X,,147,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5305,,S,,Einheitssatz (Standard),X,,148
-Umsatzsteuer der Position,SG34,TAX,5305,,O,,nicht steuerbar,X,,148,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5305,,O,,nicht steuerbar,X,,149
-Umsatzsteuer der Position,SG34,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,149,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Position,SG34,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,150
-Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,150,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,151
-Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,151,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,152
-Rechnungsbetrag,SG50,,,,,,,Muss,,152,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,,,,,,,Muss,,153
-Rechnungsbetrag,SG50,MOA,,,,,,Muss,,153,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,,,,,,Muss,,154
-Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,154,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,155
-Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,155,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,156
-Fälliger Betrag,SG50,,,,,,,Muss,,156,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,,,,,,,Muss,,157
-Fälliger Betrag,SG50,MOA,,,,,,Muss,,157,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,,,,,,Muss,,158
-Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,158,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,159
-Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,159,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,160
-Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,160,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,161
-Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,161,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,162
-Umsatzsteuer der Rechnung,SG52,TAX,5283,,7,,Steuer,X,,162,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5283,,7,,Steuer,X,,163
-Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,163,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,164
+Umsatzsteuer der Position,SG34,TAX,5305,,S,,Einheitssatz (Standard),X,,147,,,Umsatzsteuer der Position,SG34,TAX,5305,,S,,Einheitssatz (Standard),X,,148
+Umsatzsteuer der Position,SG34,TAX,5305,,O,,nicht steuerbar,X,,148,,,Umsatzsteuer der Position,SG34,TAX,5305,,O,,nicht steuerbar,X,,149
+Umsatzsteuer der Position,SG34,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,149,,,Umsatzsteuer der Position,SG34,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,150
+Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,150,,,Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,151
+Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,151,,,Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,152
+Rechnungsbetrag,SG50,,,,,,,Muss,,152,,,Rechnungsbetrag,SG50,,,,,,,Muss,,153
+Rechnungsbetrag,SG50,MOA,,,,,,Muss,,153,,,Rechnungsbetrag,SG50,MOA,,,,,,Muss,,154
+Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,154,,,Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,155
+Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,155,,,Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,156
+Fälliger Betrag,SG50,,,,,,,Muss,,156,,,Fälliger Betrag,SG50,,,,,,,Muss,,157
+Fälliger Betrag,SG50,MOA,,,,,,Muss,,157,,,Fälliger Betrag,SG50,MOA,,,,,,Muss,,158
+Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,158,,,Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,159
+Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,159,,,Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,160
+Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,160,,,Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,161
+Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,161,,,Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,162
+Umsatzsteuer der Rechnung,SG52,TAX,5283,,7,,Steuer,X,,162,,,Umsatzsteuer der Rechnung,SG52,TAX,5283,,7,,Steuer,X,,163
+Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,163,,,Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,164
 Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
-[930] Format: max. 2 Nachkommastellen",164,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
+[930] Format: max. 2 Nachkommastellen",164,,,Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
 [930] Format: max. 2 Nachkommastellen",165
-Umsatzsteuer der Rechnung,SG52,TAX,5305,,S,,Einheitssatz (Standard),X,,165,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5305,,S,,Einheitssatz (Standard),X,,166
-Umsatzsteuer der Rechnung,SG52,TAX,5305,,O,,nicht steuerbar,X,,166,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5305,,O,,nicht steuerbar,X,,167
-Umsatzsteuer der Rechnung,SG52,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,167,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,168
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,168,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,169
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundl age,X,,169,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundl age,X,,170
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,170,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,171
-Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,171,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,172
-Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/ Gebühren-/ Abgabebetrag,X,,172,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/ Gebühren-/ Abgabebetrag,X,,173
-Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,173,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,174
-Nachrichtenende,,UNT,,,,,,Muss,,174,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,,,,,,Muss,,175
-Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,175,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,176
-Nachrichtenende,,UNT,0062,,,,Nachrichten-,X,,176,ÄNDERUNG,Beschreibung_FV2210|Beschreibung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,0062,,,,Nachrichten- Referenznummer,X,,177
+Umsatzsteuer der Rechnung,SG52,TAX,5305,,S,,Einheitssatz (Standard),X,,165,,,Umsatzsteuer der Rechnung,SG52,TAX,5305,,S,,Einheitssatz (Standard),X,,166
+Umsatzsteuer der Rechnung,SG52,TAX,5305,,O,,nicht steuerbar,X,,166,,,Umsatzsteuer der Rechnung,SG52,TAX,5305,,O,,nicht steuerbar,X,,167
+Umsatzsteuer der Rechnung,SG52,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,167,,,Umsatzsteuer der Rechnung,SG52,TAX,5305,,AE,,Reverse Charge / Steuerschuldnerscha ft des Leistungsempfängers,X,,168
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,168,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,169
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundl age,X,,169,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundl age,X,,170
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,170,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,171
+Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,171,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,172
+Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/ Gebühren-/ Abgabebetrag,X,,172,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/ Gebühren-/ Abgabebetrag,X,,173
+Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,173,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,174
+Nachrichtenende,,UNT,,,,,,Muss,,174,,,Nachrichtenende,,UNT,,,,,,Muss,,175
+Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,175,,,Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,176
+Nachrichtenende,,UNT,0062,,,,Nachrichten-,X,,176,ÄNDERUNG,Beschreibung_FV2210|Beschreibung_FV2304,Nachrichtenende,,UNT,0062,,,,Nachrichten- Referenznummer,X,,177

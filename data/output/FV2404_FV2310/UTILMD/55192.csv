@@ -112,156 +112,156 @@ Messstellenbetreiber,SG10,CAV,1131,,,,MP-ID,X,,95,ÄNDERUNG,Segment ID_FV2310|Se
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,00115,Z39,,Grundzuständiger Messstellenbetreiber,X,,96
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,97
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,98
-Regelzone,SG10,,,,,,,Muss,,96,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Regelzone,SG10,,,,,,,Muss,,99
-Regelzone,SG10,CCI,,,,,,Muss,,97,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Regelzone,SG10,CCI,,00116,,,,Muss,,100
-Regelzone,SG10,CCI,7059,,Z18,,Regelzone,X,,98,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Regelzone,SG10,CCI,7059,00116,Z18,,Regelzone,X,,101
-Regelzone,SG10,CCI,7037,,,,Regelzone,X,,99,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Regelzone,SG10,CCI,7037,00116,,,Regelzone,X,,102
+Regelzone,SG10,,,,,,,Muss,,96,,,Regelzone,SG10,,,,,,,Muss,,99
+Regelzone,SG10,CCI,,,,,,Muss,,97,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Regelzone,SG10,CCI,,00116,,,,Muss,,100
+Regelzone,SG10,CCI,7059,,Z18,,Regelzone,X,,98,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Regelzone,SG10,CCI,7059,00116,Z18,,Regelzone,X,,101
+Regelzone,SG10,CCI,7037,,,,Regelzone,X,,99,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Regelzone,SG10,CCI,7037,00116,,,Regelzone,X,,102
 Bilanzkreis,SG10,,,,,,,Muss [2061] ∧ [300],"[300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden
-[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",100,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,,,,,,,Muss [2061] ∧ [300],"[300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",100,,,Bilanzkreis,SG10,,,,,,,Muss [2061] ∧ [300],"[300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",103
-Bilanzkreis,SG10,CCI,,,,,,Muss,,101,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,,00117,,,,Muss,,104
-Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7059,00117,Z19,,Bilanzkreis,X,,105
-Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7037,00117,,,Bilanzkreis,X,,106
-Bilanzierungsgebiet,SG10,,,,,,,Muss,,104,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzierungsgebiet,SG10,,,,,,,Muss,,107
-Bilanzierungsgebiet,SG10,CCI,,,,,,Muss,,105,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzierungsgebiet,SG10,CCI,,00118,,,,Muss,,108
-Bilanzierungsgebiet,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,106,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzierungsgebiet,SG10,CCI,7059,00118,Z20,,Bilanzierungsgebiet,X,,109
-Bilanzierungsgebiet,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,107,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzierungsgebiet,SG10,CCI,7037,00118,,,Bilanzierungsgebiet,X,,110
-Zeitreihentyp,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,108,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,111
-Zeitreihentyp,SG10,CCI,,,,,,Muss,,109,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,CCI,,00121,,,,Muss,,112
-Zeitreihentyp,SG10,CCI,7059,,15,,Struktur,X,,110,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,CCI,7059,00121,15,,Struktur,X,,113
-Zeitreihentyp,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,111,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,CCI,7037,00121,Z21,,Summenzeitreihentyp,X,,114
-Zeitreihentyp,SG10,CAV,,,,,,Muss,,112,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,CAV,,00122,,,,Muss,,115
-Zeitreihentyp,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,113,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zeitreihentyp,SG10,CAV,7111,00122,,,Code des Zeitreihentyps,X,,116
-Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,114,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,117
-Spannungsebene der Marktlokation,SG10,CCI,,,,,,Muss,,115,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CCI,,00123,,,,Muss,,118
-Spannungsebene der Marktlokation,SG10,CCI,7037,,E03,,Spannungsebene der Marktlokation,X,,116,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CCI,7037,00123,E03,,Spannungsebene der Marktlokation,X,,119
-Spannungsebene der Marktlokation,SG10,CAV,,,,,,Muss,,117,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CAV,,00124,,,,Muss,,120
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E03,,Höchstspannung,X,,118,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CAV,7111,00124,E03,,Höchstspannung,X,,121
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,119,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,122
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,120,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,123
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,121,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,124
-Umspannung der Marktlokation,SG10,CAV,,,,,,Soll [166],[166] Wenn vorhanden,122,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Umspannung der Marktlokation,SG10,CAV,,00125,,,,Soll [166],[166] Wenn vorhanden,125
-Umspannung der Marktlokation,SG10,CAV,7111,,E07,,Hös/HS Umspannung,X [116],,123,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Umspannung der Marktlokation,SG10,CAV,7111,00125,E07,,Hös/HS Umspannung,X [116],,126
-Umspannung der Marktlokation,SG10,CAV,7111,,E08,,HS/MS Umspannung,X [115],,124,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Umspannung der Marktlokation,SG10,CAV,7111,,E08,,HS/MS Umspannung,X [115],,127
+Bilanzkreis,SG10,CCI,,,,,,Muss,,101,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,,00117,,,,Muss,,104
+Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7059,00117,Z19,,Bilanzkreis,X,,105
+Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7037,00117,,,Bilanzkreis,X,,106
+Bilanzierungsgebiet,SG10,,,,,,,Muss,,104,,,Bilanzierungsgebiet,SG10,,,,,,,Muss,,107
+Bilanzierungsgebiet,SG10,CCI,,,,,,Muss,,105,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzierungsgebiet,SG10,CCI,,00118,,,,Muss,,108
+Bilanzierungsgebiet,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,106,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzierungsgebiet,SG10,CCI,7059,00118,Z20,,Bilanzierungsgebiet,X,,109
+Bilanzierungsgebiet,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,107,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzierungsgebiet,SG10,CCI,7037,00118,,,Bilanzierungsgebiet,X,,110
+Zeitreihentyp,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,108,,,Zeitreihentyp,SG10,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,111
+Zeitreihentyp,SG10,CCI,,,,,,Muss,,109,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zeitreihentyp,SG10,CCI,,00121,,,,Muss,,112
+Zeitreihentyp,SG10,CCI,7059,,15,,Struktur,X,,110,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zeitreihentyp,SG10,CCI,7059,00121,15,,Struktur,X,,113
+Zeitreihentyp,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,111,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zeitreihentyp,SG10,CCI,7037,00121,Z21,,Summenzeitreihentyp,X,,114
+Zeitreihentyp,SG10,CAV,,,,,,Muss,,112,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zeitreihentyp,SG10,CAV,,00122,,,,Muss,,115
+Zeitreihentyp,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,113,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zeitreihentyp,SG10,CAV,7111,00122,,,Code des Zeitreihentyps,X,,116
+Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,114,,,Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,117
+Spannungsebene der Marktlokation,SG10,CCI,,,,,,Muss,,115,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Spannungsebene der Marktlokation,SG10,CCI,,00123,,,,Muss,,118
+Spannungsebene der Marktlokation,SG10,CCI,7037,,E03,,Spannungsebene der Marktlokation,X,,116,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Spannungsebene der Marktlokation,SG10,CCI,7037,00123,E03,,Spannungsebene der Marktlokation,X,,119
+Spannungsebene der Marktlokation,SG10,CAV,,,,,,Muss,,117,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Spannungsebene der Marktlokation,SG10,CAV,,00124,,,,Muss,,120
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E03,,Höchstspannung,X,,118,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Spannungsebene der Marktlokation,SG10,CAV,7111,00124,E03,,Höchstspannung,X,,121
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,119,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,122
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,120,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,123
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,121,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,124
+Umspannung der Marktlokation,SG10,CAV,,,,,,Soll [166],[166] Wenn vorhanden,122,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Umspannung der Marktlokation,SG10,CAV,,00125,,,,Soll [166],[166] Wenn vorhanden,125
+Umspannung der Marktlokation,SG10,CAV,7111,,E07,,Hös/HS Umspannung,X [116],,123,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Umspannung der Marktlokation,SG10,CAV,7111,00125,E07,,Hös/HS Umspannung,X [116],,126
+Umspannung der Marktlokation,SG10,CAV,7111,,E08,,HS/MS Umspannung,X [115],,124,,,Umspannung der Marktlokation,SG10,CAV,7111,,E08,,HS/MS Umspannung,X [115],,127
 Umspannung der Marktlokation,SG10,CAV,7111,,E09,,MS/NS Umspannung,X [114],"[114] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E06 (Niederspannung) in dieser SG vorhanden
 [115] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E05 (Mittelspannung) in dieser SG vorhanden
-[116] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E04 (Hochspannung) in dieser SG vorhanden",125,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Umspannung der Marktlokation,SG10,CAV,7111,,E09,,MS/NS Umspannung,X [114],"[114] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E06 (Niederspannung) in dieser SG vorhanden
+[116] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E04 (Hochspannung) in dieser SG vorhanden",125,,,Umspannung der Marktlokation,SG10,CAV,7111,,E09,,MS/NS Umspannung,X [114],"[114] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E06 (Niederspannung) in dieser SG vorhanden
 [115] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E05 (Mittelspannung) in dieser SG vorhanden
 [116] Wenn das SG10 CCI+E03 (Spannungsebene der Marktlokation) CAV E04 (Hochspannung) in dieser SG vorhanden",128
-Aggregationsverantwortung in MaBiS,SG10,,,,,,,Muss,,126,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Aggregationsverantwortung in MaBiS,SG10,,,,,,,Muss,,129
-Aggregationsverantwortung in MaBiS,SG10,CCI,,,,,,Muss,,127,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,,00128,,,,Muss,,130
-Aggregationsverantwortung in MaBiS,SG10,CCI,7059,,6,,Verantwortlicher,X,,128,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,7059,00128,6,,Verantwortlicher,X,,131
-Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA8,,NB,X,,129,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,00128,ZA8,,NB,X,,132
-Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,130,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,133
-Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,131,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,134
-Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,132,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prognosegrundlage der Marktlokation,SG10,CCI,,00130,,,,Muss,,135
-Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,133,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prognosegrundlage der Marktlokation,SG10,CCI,7037,00130,ZC0,,Prognose auf Basis von Werten,X,,136
-Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,134,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,137
+Aggregationsverantwortung in MaBiS,SG10,,,,,,,Muss,,126,,,Aggregationsverantwortung in MaBiS,SG10,,,,,,,Muss,,129
+Aggregationsverantwortung in MaBiS,SG10,CCI,,,,,,Muss,,127,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,,00128,,,,Muss,,130
+Aggregationsverantwortung in MaBiS,SG10,CCI,7059,,6,,Verantwortlicher,X,,128,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,7059,00128,6,,Verantwortlicher,X,,131
+Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA8,,NB,X,,129,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,00128,ZA8,,NB,X,,132
+Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,130,,,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,133
+Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,131,,,Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,134
+Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,132,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prognosegrundlage der Marktlokation,SG10,CCI,,00130,,,,Muss,,135
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,133,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prognosegrundlage der Marktlokation,SG10,CCI,7037,00130,ZC0,,Prognose auf Basis von Werten,X,,136
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,134,,,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,137
 Details der Prognosegrundlage,SG10,CAV,,,,,,Muss [20] ∧ [21] ∧ [2182],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
-[2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",135,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Details der Prognosegrundlage,SG10,CAV,,00131,,,,Muss [20] ∧ [21] ∧ [2182],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",135,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Details der Prognosegrundlage,SG10,CAV,,00131,,,,Muss [20] ∧ [21] ∧ [2182],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
 [2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",138
-Details der Prognosegrundlage,SG10,CAV,7111,,E02,,SLP/SEP,X,,136,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Details der Prognosegrundlage,SG10,CAV,7111,00131,E02,,SLP/SEP,X,,139
+Details der Prognosegrundlage,SG10,CAV,7111,,E02,,SLP/SEP,X,,136,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Details der Prognosegrundlage,SG10,CAV,7111,00131,E02,,SLP/SEP,X,,139
 Abwicklungsmodell,SG10,,,,,,,Muss [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,137,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,,,,,,Muss,,138,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,7059,,ZA2,,Abwicklungsmodell,X,,139,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,7037,,ZE9,,"Modell 1 ""Bilanzierung an der Marktlokation""",X,,140,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,7037,,ZF0,,"Modell 2 ""Bilanzierung im Bilanzierungsgebiet (BG) des LPB""",X,,141,ENTFÄLLT,,,,,,,,,,,,
 OBIS-Daten der Marktlokation,SG8,,,,,,,Muss [19] ∧ [300],"[19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
-[300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden",142,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Marktlokation,SG8,,,,,,,Muss [19] ∧ [300],"[19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
+[300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden",142,,,OBIS-Daten der Marktlokation,SG8,,,,,,,Muss [19] ∧ [300],"[19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
 [300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden",140
-OBIS-Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,143,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,,00198,,,,Muss,,141
-OBIS-Daten der Marktlokation,SG8,SEQ,1229,,Z02,,OBIS-Daten der Marktlokation,X,,144,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,,142
-Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,145,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00199,,,,Muss,,143
-Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,146,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00199,Z18,,Marktlokation,X,,144
-Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,147,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00199,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,145
-OBIS-Kennzahl der Marktlokation,SG8,PIA,,,,,,Muss,,148,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,,00200,,,,Muss,,146
-OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,149,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00200,5,,Produktidentifikation,X,,147
-OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,,,,OBIS-Kennzahl der Marktlokation,X [614],[614] Hinweis: Es werden nur die OBIS Kennzahlen übermittelt die für die Bilanzierung relevant sind,150,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X [614],[614] Hinweis: Es werden nur die OBIS Kennzahlen übermittelt die für die Bilanzierung relevant sind,148
-OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,151,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,,149
-OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,152,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,150
-OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,153,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,,00207,,,,Muss,,151
-OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,154,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00207,ZA7,,LF,X,,152
-Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,155,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,,00208,,,,Muss,,153
-Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X,,156,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00208,Z85,,Bilanzkreisabrechnung,X,,154
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,157,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,155
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,,,,,Muss,,158,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,00209,,,,Muss,,156
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,159,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,00209,ZA9,,ÜNB,X,,157
-Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,160,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,,00210,,,,Muss,,158
-Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,161,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00210,Z85,,Bilanzkreisabrechnung,X [1P0..1],,159
-Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,162,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,160
+OBIS-Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,143,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,,00198,,,,Muss,,141
+OBIS-Daten der Marktlokation,SG8,SEQ,1229,,Z02,,OBIS-Daten der Marktlokation,X,,144,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,,142
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,145,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00199,,,,Muss,,143
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,146,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00199,Z18,,Marktlokation,X,,144
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,147,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00199,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,145
+OBIS-Kennzahl der Marktlokation,SG8,PIA,,,,,,Muss,,148,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,,00200,,,,Muss,,146
+OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,149,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00200,5,,Produktidentifikation,X,,147
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,,,,OBIS-Kennzahl der Marktlokation,X [614],[614] Hinweis: Es werden nur die OBIS Kennzahlen übermittelt die für die Bilanzierung relevant sind,150,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X [614],[614] Hinweis: Es werden nur die OBIS Kennzahlen übermittelt die für die Bilanzierung relevant sind,148
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,151,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,,149
+OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,152,,,OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,150
+OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,153,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,,00207,,,,Muss,,151
+OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,154,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00207,ZA7,,LF,X,,152
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,155,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00208,,,,Muss,,153
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X,,156,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00208,Z85,,Bilanzkreisabrechnung,X,,154
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,157,,,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,155
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,,,,,Muss,,158,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,00209,,,,Muss,,156
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,159,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,00209,ZA9,,ÜNB,X,,157
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,160,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00210,,,,Muss,,158
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,161,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00210,Z85,,Bilanzkreisabrechnung,X [1P0..1],,159
+Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,162,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,160
 Daten der Tranche,SG8,,,,,,,Muss [54] ∧ [2307] ∧ [607],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2307] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225 genau einmal anzugeben",163,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,,,,,,,Muss [54] ∧ [2307] ∧ [607],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
+[2307] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225 genau einmal anzugeben",163,,,Daten der Tranche,SG8,,,,,,,Muss [54] ∧ [2307] ∧ [607],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
 [2307] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225 genau einmal anzugeben",161
-Daten der Tranche,SG8,SEQ,,,,,,Muss,,164,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,SEQ,,00238,,,,Muss,,162
-Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,165,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,SEQ,1229,00238,Z15,,Daten der Tranche,X,,163
-Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,166,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,,00239,,,,Muss,,164
-Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,167,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1153,00239,Z20,,Tranche,X,,165
-Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,168,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1154,00239,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,166
-Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,,,,,,,Muss [384],[384] Wenn SG10 CCI+Z37++ZD1 (Basis zur Bildung der Tranchengröße) (Prozentual) vorhanden,169,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,,,,,,,Muss [384],[384] Wenn SG10 CCI+Z37++ZD1 (Basis zur Bildung der Tranchengröße) (Prozentual) vorhanden,167
-Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,,,,,,Muss,,170,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,,00242,,,,Muss,,168
-Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6063,,11,,Aufteilungsmenge,X,,171,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6063,00242,11,,Aufteilungsmenge,X,,169
+Daten der Tranche,SG8,SEQ,,,,,,Muss,,164,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Tranche,SG8,SEQ,,00238,,,,Muss,,162
+Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,165,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Tranche,SG8,SEQ,1229,00238,Z15,,Daten der Tranche,X,,163
+Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,166,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,,00239,,,,Muss,,164
+Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,167,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1153,00239,Z20,,Tranche,X,,165
+Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,168,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1154,00239,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,166
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,,,,,,,Muss [384],[384] Wenn SG10 CCI+Z37++ZD1 (Basis zur Bildung der Tranchengröße) (Prozentual) vorhanden,169,,,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,,,,,,,Muss [384],[384] Wenn SG10 CCI+Z37++ZD1 (Basis zur Bildung der Tranchengröße) (Prozentual) vorhanden,167
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,,,,,,Muss,,170,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,,00242,,,,Muss,,168
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6063,,11,,Aufteilungsmenge,X,,171,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6063,00242,11,,Aufteilungsmenge,X,,169
 Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6060,,,,Mengenangabe in %,X [914] ∧ [930] ∧ [955],"[914] Format: Möglicher Wert: > 0
 [930] Format: max. 2 Nachkommastellen
-[955] Format: Möglicher Wert: < 100",172,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6060,00242,,,Mengenangabe in %,X [914] ∧ [930] ∧ [955],"[914] Format: Möglicher Wert: > 0
+[955] Format: Möglicher Wert: < 100",172,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6060,00242,,,Mengenangabe in %,X [914] ∧ [930] ∧ [955],"[914] Format: Möglicher Wert: > 0
 [930] Format: max. 2 Nachkommastellen
 [955] Format: Möglicher Wert: < 100",170
-Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6411,,P1,,Prozent,X,,173,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6411,00242,P1,,Prozent,X,,171
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,174,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,172
-Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,175,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,CCI,,00243,,,,Muss,,173
-Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,176,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,CCI,7037,00243,ZB3,,Zugeordneter Marktpartner,X,,174
-Lieferant,SG10,CAV,,,,,,Muss,,177,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferant,SG10,CAV,,00244,,,,Muss,,175
-Lieferant,SG10,CAV,7111,,Z89,,LF,X,,178,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferant,SG10,CAV,7111,00244,Z89,,LF,X,,176
-Lieferant,SG10,CAV,1131,,,,MP-ID,X,,179,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferant,SG10,CAV,1131,00244,,,MP-ID,X,,177
-Bilanzkreis,SG10,,,,,,,Muss,,180,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,,,,,,,Muss,,178
-Bilanzkreis,SG10,CCI,,,,,,Muss,,181,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,,00245,,,,Muss,,179
-Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,182,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7059,00245,Z19,,Bilanzkreis,X,,180
-Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,183,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7037,00245,,,Bilanzkreis,X,,181
-Basis zur Bildung der Tranchengröße,SG10,,,,,,,Muss,,184,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Basis zur Bildung der Tranchengröße,SG10,,,,,,,Muss,,182
-Basis zur Bildung der Tranchengröße,SG10,CCI,,,,,,Muss,,185,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,,00248,,,,Muss,,183
-Basis zur Bildung der Tranchengröße,SG10,CCI,7059,,Z37,,Basis zur Bildung der Tranchengröße,X,,186,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,7059,00248,Z37,,Basis zur Bildung der Tranchengröße,X,,184
-Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD1,,Prozentual,X,,187,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,7037,00248,ZD1,,Prozentual,X,,185
-Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD2,,Aufteilungsfaktor auf Basis von Referenzenträger/ installierter Leistung,X,,188,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD2,,Aufteilungsfaktor auf Basis von Referenzenträger/ installierter Leistung,X,,186
+Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6411,,P1,,Prozent,X,,173,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prozentualer Anteil der Tranche an der erzeugenden Marktlokation,SG9,QTY,6411,00242,P1,,Prozent,X,,171
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,174,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,172
+Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,175,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Marktpartner,SG10,CCI,,00243,,,,Muss,,173
+Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,176,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Marktpartner,SG10,CCI,7037,00243,ZB3,,Zugeordneter Marktpartner,X,,174
+Lieferant,SG10,CAV,,,,,,Muss,,177,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferant,SG10,CAV,,00244,,,,Muss,,175
+Lieferant,SG10,CAV,7111,,Z89,,LF,X,,178,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferant,SG10,CAV,7111,00244,Z89,,LF,X,,176
+Lieferant,SG10,CAV,1131,,,,MP-ID,X,,179,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferant,SG10,CAV,1131,00244,,,MP-ID,X,,177
+Bilanzkreis,SG10,,,,,,,Muss,,180,,,Bilanzkreis,SG10,,,,,,,Muss,,178
+Bilanzkreis,SG10,CCI,,,,,,Muss,,181,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,,00245,,,,Muss,,179
+Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,182,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7059,00245,Z19,,Bilanzkreis,X,,180
+Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,183,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7037,00245,,,Bilanzkreis,X,,181
+Basis zur Bildung der Tranchengröße,SG10,,,,,,,Muss,,184,,,Basis zur Bildung der Tranchengröße,SG10,,,,,,,Muss,,182
+Basis zur Bildung der Tranchengröße,SG10,CCI,,,,,,Muss,,185,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,,00248,,,,Muss,,183
+Basis zur Bildung der Tranchengröße,SG10,CCI,7059,,Z37,,Basis zur Bildung der Tranchengröße,X,,186,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,7059,00248,Z37,,Basis zur Bildung der Tranchengröße,X,,184
+Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD1,,Prozentual,X,,187,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Basis zur Bildung der Tranchengröße,SG10,CCI,7037,00248,ZD1,,Prozentual,X,,185
+Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD2,,Aufteilungsfaktor auf Basis von Referenzenträger/ installierter Leistung,X,,188,,,Basis zur Bildung der Tranchengröße,SG10,CCI,7037,,ZD2,,Aufteilungsfaktor auf Basis von Referenzenträger/ installierter Leistung,X,,186
 OBIS-Daten der Tranche,SG8,,,,,,,Muss [2311] ∧ [607],"[607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2311] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225, mindestens einmal anzugeben",189,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Tranche,SG8,,,,,,,Muss [2311] ∧ [607],"[607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
+[2311] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225, mindestens einmal anzugeben",189,,,OBIS-Daten der Tranche,SG8,,,,,,,Muss [2311] ∧ [607],"[607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
 [2311] Für jede ID im SG5 LOC+Z21 (Tranche) DE3225, mindestens einmal anzugeben",187
-OBIS-Daten der Tranche,SG8,SEQ,,,,,,Muss,,190,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Tranche,SG8,SEQ,,00260,,,,Muss,,188
-OBIS-Daten der Tranche,SG8,SEQ,1229,,Z17,,OBIS-Daten der Tranche,X,,191,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Tranche,SG8,SEQ,1229,00260,Z17,,OBIS-Daten der Tranche,X,,189
-Referenz auf die ID einer Tranche,SG8,RFF,,,,,,Muss,,192,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,,00261,,,,Muss,,190
-Referenz auf die ID einer Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,193,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,1153,00261,Z20,,Tranche,X,,191
-Referenz auf die ID einer Tranche,SG8,RFF,1154,,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,194,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,1154,00261,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,192
-OBIS-Kennzahl der Tranche,SG8,PIA,,,,,,Muss,,195,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,,00262,,,,Muss,,193
-OBIS-Kennzahl der Tranche,SG8,PIA,4347,,5,,Produktidentifikation,X,,196,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,4347,00262,5,,Produktidentifikation,X,,194
-OBIS-Kennzahl der Tranche,SG8,PIA,7140,,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,197,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,7140,00262,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,195
-OBIS-Kennzahl der Tranche,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,198,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,7143,00262,SRW,,OBIS-Kennzahl,X,,196
-OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,199,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,197
-OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,200,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,,00265,,,,Muss,,198
-OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,201,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00265,ZA7,,LF,X,,199
-Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,202,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,,00266,,,,Muss,,200
-Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X,,203,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00266,Z85,,Bilanzkreisabrechnung,X,,201
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,204,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,202
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,,,,,Muss,,205,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,00267,,,,Muss,,203
-OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,206,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,00267,ZA9,,ÜNB,X,,204
-Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,207,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,,00268,,,,Muss,,205
-Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,208,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00268,Z85,,Bilanzkreisabrechnung,X [1P0..1],,206
-Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,209,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,207
+OBIS-Daten der Tranche,SG8,SEQ,,,,,,Muss,,190,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Tranche,SG8,SEQ,,00260,,,,Muss,,188
+OBIS-Daten der Tranche,SG8,SEQ,1229,,Z17,,OBIS-Daten der Tranche,X,,191,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Tranche,SG8,SEQ,1229,00260,Z17,,OBIS-Daten der Tranche,X,,189
+Referenz auf die ID einer Tranche,SG8,RFF,,,,,,Muss,,192,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,,00261,,,,Muss,,190
+Referenz auf die ID einer Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,193,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,1153,00261,Z20,,Tranche,X,,191
+Referenz auf die ID einer Tranche,SG8,RFF,1154,,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,194,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID einer Tranche,SG8,RFF,1154,00261,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,192
+OBIS-Kennzahl der Tranche,SG8,PIA,,,,,,Muss,,195,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,,00262,,,,Muss,,193
+OBIS-Kennzahl der Tranche,SG8,PIA,4347,,5,,Produktidentifikation,X,,196,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,4347,00262,5,,Produktidentifikation,X,,194
+OBIS-Kennzahl der Tranche,SG8,PIA,7140,,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,197,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,7140,00262,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,195
+OBIS-Kennzahl der Tranche,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,198,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Tranche,SG8,PIA,7143,00262,SRW,,OBIS-Kennzahl,X,,196
+OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,199,,,OBIS Daten für Lieferant relevant,SG10,,,,,,,Muss,,197
+OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,200,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,,00265,,,,Muss,,198
+OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,201,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00265,ZA7,,LF,X,,199
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,202,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00266,,,,Muss,,200
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X,,203,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00266,Z85,,Bilanzkreisabrechnung,X,,201
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,204,,,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,,,,,,,Muss,,202
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,,,,,Muss,,205,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,,00267,,,,Muss,,203
+OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,206,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreiber relevant,SG10,CCI,7037,00267,ZA9,,ÜNB,X,,204
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,207,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00268,,,,Muss,,205
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,208,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00268,Z85,,Bilanzkreisabrechnung,X [1P0..1],,206
+Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,209,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,207
 Profildaten,SG8,,,,,,,Muss [119] ∧ [607],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
-[607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben",210,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Profildaten,SG8,,,,,,,Muss [119] ∧ [607],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben",210,,,Profildaten,SG8,,,,,,,Muss [119] ∧ [607],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben",208
-Profildaten,SG8,SEQ,,,,,,Muss,,211,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Profildaten,SG8,SEQ,,00376,,,,Muss,,209
-Profildaten,SG8,SEQ,1229,,Z21,,Profildaten,X,,212,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Profildaten,SG8,SEQ,1229,00376,Z21,,Profildaten,X,,210
-Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,213,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00378,,,,Muss,,211
-Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,214,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00378,Z18,,Marktlokation,X,,212
-Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,215,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00378,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,213
-Normiertes Profil,SG10,,,,,,,Muss,,216,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,,,,,,,Muss,,214
-Normiertes Profil,SG10,CCI,,,,,,Muss,,217,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,CCI,,00380,,,,Muss,,215
-Normiertes Profil,SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,218,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,CCI,7059,00380,Z02,,Standardlastprofil,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,216
-Normiertes Profil,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,219,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,CCI,7037,00380,E01,,synthetisches Verfahren,X,,217
-Normiertes Profil,SG10,CAV,,,,,,Muss,,220,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,CAV,,00381,,,,Muss,,218
-Normiertes Profil,SG10,CAV,7111,,,,Code des Normierten Profils,X,,221,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Normiertes Profil,SG10,CAV,7111,00381,,,Code des Normierten Profils,X,,219
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,222,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,220
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,223,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,221
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,224,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,222
+Profildaten,SG8,SEQ,,,,,,Muss,,211,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Profildaten,SG8,SEQ,,00376,,,,Muss,,209
+Profildaten,SG8,SEQ,1229,,Z21,,Profildaten,X,,212,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Profildaten,SG8,SEQ,1229,00376,Z21,,Profildaten,X,,210
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,213,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00378,,,,Muss,,211
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,214,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00378,Z18,,Marktlokation,X,,212
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,215,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00378,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,213
+Normiertes Profil,SG10,,,,,,,Muss,,216,,,Normiertes Profil,SG10,,,,,,,Muss,,214
+Normiertes Profil,SG10,CCI,,,,,,Muss,,217,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Normiertes Profil,SG10,CCI,,00380,,,,Muss,,215
+Normiertes Profil,SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,218,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Normiertes Profil,SG10,CCI,7059,00380,Z02,,Standardlastprofil,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,216
+Normiertes Profil,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,219,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Normiertes Profil,SG10,CCI,7037,00380,E01,,synthetisches Verfahren,X,,217
+Normiertes Profil,SG10,CAV,,,,,,Muss,,220,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Normiertes Profil,SG10,CAV,,00381,,,,Muss,,218
+Normiertes Profil,SG10,CAV,7111,,,,Code des Normierten Profils,X,,221,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Normiertes Profil,SG10,CAV,7111,00381,,,Code des Normierten Profils,X,,219
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,222,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,220
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,223,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,221
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,224,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,222

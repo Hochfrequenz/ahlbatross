@@ -53,8 +53,8 @@ MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,34,ÄNDERUNG,Segment ID_FV2310|Segment
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,42
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,43
 ,,,,,,,,,,,NEU,,Status der Antwort,SG4,STS,,00039,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4,44
-EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,45
-EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,46
+EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,45
+EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,46
 Vorgang,SG4,,,,,,,Muss,,37,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,,,,,,Muss,,38,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,39,ENTFÄLLT,,,,,,,,,,,,

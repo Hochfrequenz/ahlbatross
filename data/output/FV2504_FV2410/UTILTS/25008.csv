@@ -70,44 +70,44 @@ Gültigkeitsende der ausgerollten Definition,SG5,DTM,,00013,,,,Muss [46] Soll [4
 [46] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 303 vorhanden
 [47] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 401 vorhanden
 [48] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 303 vorhanden
-[49] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 401 vorhanden",48,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,,00013,,,,Muss [46] Soll [47] ∧ [37],"[29] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 303 vorhanden
+[49] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 401 vorhanden",48,,,Gültigkeitsende der ausgerollten Definition,SG5,DTM,,00013,,,,Muss [46] Soll [47] ∧ [37],"[29] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 303 vorhanden
 [36] Wenn in SG8 SEQ+Z43 DTM+Z33 (Zählzeitänderungszeitpu nkt) im DE2379 der Code 401 vorhanden
 [37] Wenn ein Gültigkeitsende bereits angegeben werden kann.
 [46] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 303 vorhanden
 [47] Wenn in SG8 SEQ+Z73 DTM+Z44 (Schaltzeitänderungszeit punkt) im DE2379 der Code 401 vorhanden
 [48] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 303 vorhanden
 [49] Wenn in SG8 SEQ+Z74 DTM+Z45 (Leistungskurvenänderun gszeitpunkt) im DE2379 der Code 401 vorhanden",49
-Gültigkeitsende der ausgerollten Definition,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,,49,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,,50
+Gültigkeitsende der ausgerollten Definition,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,,49,,,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2005,00013,Z35,,Gültigkeitsende,X,,50
 Gültigkeitsende der ausgerollten Definition,SG5,DTM,2380,00013,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] ∧ [947] [30],"[30] Der Wert von CCYY in diesem DE muss genau um eins höher sein, als der Wert CCYY des SG5 DTM+Z34 (Gültigkeitsbeginn) DE2380
 [931] Format: ZZZ = +00
-[947] Format: MMDDHHMM = 12312300",50,ÄNDERUNG,Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2380,00013,,,Datum oder Uhrzeit oder,X [931] ∧,,51
-Gültigkeitsende der ausgerollten Definition,SG5,DTM,2379,00013,303,,CCYYMMDDHHMMZZZ,X,,51,ÄNDERUNG,Datenelement_FV2410|Datenelement_FV2504|Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2380,,"Zeitspanne, Wert",,,[947] [30],"[30] Der Wert von CCYY in diesem DE muss genau um eins höher sein, als der Wert CCYY des SG5 DTM+Z34 (Gültigkeitsbeginn) DE2380
+[947] Format: MMDDHHMM = 12312300",50,ÄNDERUNG,Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2380,00013,,,Datum oder Uhrzeit oder,X [931] ∧,,51
+Gültigkeitsende der ausgerollten Definition,SG5,DTM,2379,00013,303,,CCYYMMDDHHMMZZZ,X,,51,ÄNDERUNG,Datenelement_FV2410|Datenelement_FV2504|Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2380,,"Zeitspanne, Wert",,,[947] [30],"[30] Der Wert von CCYY in diesem DE muss genau um eins höher sein, als der Wert CCYY des SG5 DTM+Z34 (Gültigkeitsbeginn) DE2380
 [931] Format: ZZZ = +00
 [947] Format: MMDDHHMM = 12312300",52
 ,,,,,,,,,,,NEU,,Gültigkeitsende der ausgerollten Definition,SG5,DTM,2379,00013,303,,CCYYMMDDHHMMZZZ,X,,53
-Versionsangabe,SG5,DTM,,00014,,,,Muss,,52,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe,SG5,DTM,,00014,,,,Muss,,54
-Versionsangabe,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,,53,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,,55
-Versionsangabe,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,54,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,56
-Versionsangabe,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,,55,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,,57
-Prüfidentifikator,SG6,,,,,,,Muss,,56,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,,,,,,,Muss,,58
-Prüfidentifikator,SG6,RFF,,00018,,,,Muss,,57,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,,00019,,,,Muss,,59
-Prüfidentifikator,SG6,RFF,1153,00018,Z13,,Prüfidentifikator,X,,58,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1153,00019,Z13,,Prüfidentifikator,X,,60
-Prüfidentifikator,SG6,RFF,1154,,25008,,Ausgerollte Schaltzeitdefinition,X,,59,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1154,,25008,,Ausgerollte Schaltzeitdefinition,X,,61
-Referenz auf Reklamation,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert,60,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf Reklamation,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert,62
-Referenz auf Reklamation,SG6,RFF,,00019,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf Reklamation,SG6,RFF,,00020,,,,Muss,,63
-Referenz auf Reklamation,SG6,RFF,1153,00019,AGI,,Beantragungsnummer,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf Reklamation,SG6,RFF,1153,00020,AGI,,Beantragungsnummer,X,,64
-Referenz auf Reklamation,SG6,RFF,1154,00019,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf Reklamation,SG6,RFF,1154,00020,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist,65
+Versionsangabe,SG5,DTM,,00014,,,,Muss,,52,,,Versionsangabe,SG5,DTM,,00014,,,,Muss,,54
+Versionsangabe,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,,53,,,Versionsangabe,SG5,DTM,2005,00014,293,,Fertigstellungsdatum/- zeit,X,,55
+Versionsangabe,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,54,,,Versionsangabe,SG5,DTM,2380,00014,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,56
+Versionsangabe,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,,55,,,Versionsangabe,SG5,DTM,2379,00014,304,,CCYYMMDDHHMMSSZZZ,X,,57
+Prüfidentifikator,SG6,,,,,,,Muss,,56,,,Prüfidentifikator,SG6,,,,,,,Muss,,58
+Prüfidentifikator,SG6,RFF,,00018,,,,Muss,,57,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,,00019,,,,Muss,,59
+Prüfidentifikator,SG6,RFF,1153,00018,Z13,,Prüfidentifikator,X,,58,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1153,00019,Z13,,Prüfidentifikator,X,,60
+Prüfidentifikator,SG6,RFF,1154,,25008,,Ausgerollte Schaltzeitdefinition,X,,59,,,Prüfidentifikator,SG6,RFF,1154,,25008,,Ausgerollte Schaltzeitdefinition,X,,61
+Referenz auf Reklamation,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert,60,,,Referenz auf Reklamation,SG6,,,,,,,Soll [26],[26] sofern per ORDERS reklamiert,62
+Referenz auf Reklamation,SG6,RFF,,00019,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf Reklamation,SG6,RFF,,00020,,,,Muss,,63
+Referenz auf Reklamation,SG6,RFF,1153,00019,AGI,,Beantragungsnummer,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf Reklamation,SG6,RFF,1153,00020,AGI,,Beantragungsnummer,X,,64
+Referenz auf Reklamation,SG6,RFF,1154,00019,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf Reklamation,SG6,RFF,1154,00020,,,"Referenz, Identifikation",X [504],[504] Hinweis: Wert aus BGM+Z55 DE1004 der ORDERS mit der die Reklamation einer Definition erfolgt ist,65
 Schaltzeitdefinition,SG8,,,,,,,Muss [514] ∧ [515] ∧ ([516] ⊻ [517]),"[514] Hinweis: Für jeden Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) ist diese Sementgruppe einmal anzugeben
 [515] Hinweis: Kein Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) darf mehrfach vorkommen
 [516] Hinweis: Wenn der Code 303 im DE2379 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) genutzt wird, muss genau ein Wert im DE2380 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) identisch mit dem Wert aus DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
-[517] Hinweis: Wenn der Code 401 im DE2379 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) genutzt wird, muss genau ein Wert = 0000 im DE2380 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) sein",64,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitdefinition,SG8,,,,,,,Muss [514] ∧ [515] ∧ ([516] ⊻ [517]),"[514] Hinweis: Für jeden Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) ist diese Sementgruppe einmal anzugeben
+[517] Hinweis: Wenn der Code 401 im DE2379 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) genutzt wird, muss genau ein Wert = 0000 im DE2380 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) sein",64,,,Schaltzeitdefinition,SG8,,,,,,,Muss [514] ∧ [515] ∧ ([516] ⊻ [517]),"[514] Hinweis: Für jeden Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) ist diese Sementgruppe einmal anzugeben
 [515] Hinweis: Kein Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) darf mehrfach vorkommen
 [516] Hinweis: Wenn der Code 303 im DE2379 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) genutzt wird, muss genau ein Wert im DE2380 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) identisch mit dem Wert aus DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
 [517] Hinweis: Wenn der Code 401 im DE2379 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) genutzt wird, muss genau ein Wert = 0000 im DE2380 des Schaltzeitänderungszeitp unkt (SG8 DTM+Z44) sein",66
-Schaltzeitdefinition,SG8,SEQ,,00052,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitdefinition,SG8,SEQ,,00055,,,,Muss,,67
-Schaltzeitdefinition,SG8,SEQ,1229,00052,Z73,,Ausgerollte Schaltzeitdefinition,X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitdefinition,SG8,SEQ,1229,00055,Z73,,Ausgerollte Schaltzeitdefinition,X,,68
-Schaltzeitänderungszeitpun kt,SG8,DTM,,00053,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,,00056,,,,Muss,,69
-Schaltzeitänderungszeitpun kt,SG8,DTM,2005,00053,Z44,,Schaltzeitänderungszeitp unkt,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2005,00056,Z44,,Schaltzeitänderungszeitp unkt,X,,70
+Schaltzeitdefinition,SG8,SEQ,,00052,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schaltzeitdefinition,SG8,SEQ,,00055,,,,Muss,,67
+Schaltzeitdefinition,SG8,SEQ,1229,00052,Z73,,Ausgerollte Schaltzeitdefinition,X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schaltzeitdefinition,SG8,SEQ,1229,00055,Z73,,Ausgerollte Schaltzeitdefinition,X,,68
+Schaltzeitänderungszeitpun kt,SG8,DTM,,00053,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,,00056,,,,Muss,,69
+Schaltzeitänderungszeitpun kt,SG8,DTM,2005,00053,Z44,,Schaltzeitänderungszeitp unkt,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2005,00056,Z44,,Schaltzeitänderungszeitp unkt,X,,70
 Schaltzeitänderungszeitpun kt,SG8,DTM,2380,00053,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X ([931] [31] ∧ [32] ∧ [33]) ⊻ (([964] ∧ [965] [34]) ∧ [507]),"[31] Wenn im DE2379 dieses Segments der Code 303 vorhanden
 [32] Der Zeitpunkt in diesem DE muss ≥ dem Zeitpunkt aus dem DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
 [33] Der Zeitpunkt in diesem DE muss ≤ dem Zeitpunkt aus dem DE2380 des Gültigkeitsende der ausgerollten Definition (SG5 DTM+Z35) sein
@@ -115,8 +115,8 @@ Schaltzeitänderungszeitpun kt,SG8,DTM,2380,00053,,,"Datum oder Uhrzeit oder Zei
 [507] Hinweis: Es ist die Zeit nach der deutschen gesetzlichen Zeit anzugeben
 [931] Format: ZZZ = +00
 [964] Format: HHMM ≥ 0000
-[965] Format: HHMM ≤ 2359",69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2380,00056,,,Datum oder Uhrzeit oder,X ([931] [31],,71
-Schaltzeitänderungszeitpun kt,SG8,DTM,2379,00053,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],,70,ÄNDERUNG,Datenelement_FV2410|Datenelement_FV2504|Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2380,,"Zeitspanne, Wert",,,∧ [32] ∧ [33]) ⊻ (([964] ∧ [965] [34]) ∧ [507]),"[31] Wenn im DE2379 dieses Segments der Code 303 vorhanden
+[965] Format: HHMM ≤ 2359",69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2380,00056,,,Datum oder Uhrzeit oder,X ([931] [31],,71
+Schaltzeitänderungszeitpun kt,SG8,DTM,2379,00053,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],,70,ÄNDERUNG,Datenelement_FV2410|Datenelement_FV2504|Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2380,,"Zeitspanne, Wert",,,∧ [32] ∧ [33]) ⊻ (([964] ∧ [965] [34]) ∧ [507]),"[31] Wenn im DE2379 dieses Segments der Code 303 vorhanden
 [32] Der Zeitpunkt in diesem DE muss ≥ dem Zeitpunkt aus dem DE2380 des Gültigkeitsbeginn der ausgerollten Definition (SG5 DTM+Z34) sein
 [33] Der Zeitpunkt in diesem DE muss ≤ dem Zeitpunkt aus dem DE2380 des Gültigkeitsende der ausgerollten Definition (SG5 DTM+Z35) sein
 [34] Wenn im DE2379 dieses Segments der Code 401 vorhanden
@@ -126,15 +126,15 @@ Schaltzeitänderungszeitpun kt,SG8,DTM,2379,00053,303,,CCYYMMDDHHMMZZZ,X [50] �
 [965] Format: HHMM ≤ 2359",72
 Schaltzeitänderungszeitpun kt,SG8,DTM,2379,,401,,HHMM,X [50] ∧ [527],"[50] In jedem DE2379 dieses DTM-Segments innerhalb eines IDE+24 (Vorgangs) muss der gleiche Code angegeben werden
 [527] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine einmalig zu übermittelnde Definition handelt
-[528] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine jährlich zu übermittelnde Definition handelt",71,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2379,00056,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],,73
+[528] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine jährlich zu übermittelnde Definition handelt",71,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Schaltzeitänderungszeitpun kt,SG8,DTM,2379,00056,303,,CCYYMMDDHHMMZZZ,X [50] ∧ [528],,73
 ,,,,,,,,,,,NEU,,Schaltzeitänderungszeitpun kt,SG8,DTM,2379,,401,,HHMM,X [50] ∧ [527],"[50] In jedem DE2379 dieses DTM-Segments innerhalb eines IDE+24 (Vorgangs) muss der gleiche Code angegeben werden
 [527] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine einmalig zu übermittelnde Definition handelt
 [528] Hinweis: Dieser Code ist anzugeben, wenn es sich um eine jährlich zu übermittelnde Definition handelt",74
-Schalthandlung an der Lokation,SG9,,,,,,,Muss,,72,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schalthandlung an der Lokation,SG9,,,,,,,Muss,,75
-Schalthandlung an der Lokation,SG9,CCI,,00057,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schalthandlung an der Lokation,SG9,CCI,,00060,,,,Muss,,76
-Schalthandlung an der Lokation,SG9,CCI,7059,00057,Z58,,Schalthandlung,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schalthandlung an der Lokation,SG9,CCI,7059,00060,Z58,,Schalthandlung,X,,77
-Schalthandlung an der Lokation,SG9,CCI,7037,00057,ZF4,,Leistung an der Lokation an,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schalthandlung an der Lokation,SG9,CCI,7037,00060,ZF4,,Leistung an der Lokation an,X,,78
-Schalthandlung an der Lokation,SG9,CCI,7037,,ZF5,,Leistung an der Lokation aus,X,,76,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Schalthandlung an der Lokation,SG9,CCI,7037,,ZF5,,Leistung an der Lokation aus,X,,79
-Nachrichten-Endesegment,,UNT,,00064,,,,Muss,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00067,,,,Muss,,80
-Nachrichten-Endesegment,,UNT,0074,00064,,,Anzahl der Segmente in einer Nachricht,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00067,,,Anzahl der Segmente in einer Nachricht,X,,81
-Nachrichten-Endesegment,,UNT,0062,00064,,,Nachrichten-Referenznummer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00067,,,Nachrichten-Referenznummer,X,,82
+Schalthandlung an der Lokation,SG9,,,,,,,Muss,,72,,,Schalthandlung an der Lokation,SG9,,,,,,,Muss,,75
+Schalthandlung an der Lokation,SG9,CCI,,00057,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schalthandlung an der Lokation,SG9,CCI,,00060,,,,Muss,,76
+Schalthandlung an der Lokation,SG9,CCI,7059,00057,Z58,,Schalthandlung,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schalthandlung an der Lokation,SG9,CCI,7059,00060,Z58,,Schalthandlung,X,,77
+Schalthandlung an der Lokation,SG9,CCI,7037,00057,ZF4,,Leistung an der Lokation an,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Schalthandlung an der Lokation,SG9,CCI,7037,00060,ZF4,,Leistung an der Lokation an,X,,78
+Schalthandlung an der Lokation,SG9,CCI,7037,,ZF5,,Leistung an der Lokation aus,X,,76,,,Schalthandlung an der Lokation,SG9,CCI,7037,,ZF5,,Leistung an der Lokation aus,X,,79
+Nachrichten-Endesegment,,UNT,,00064,,,,Muss,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00067,,,,Muss,,80
+Nachrichten-Endesegment,,UNT,0074,00064,,,Anzahl der Segmente in einer Nachricht,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00067,,,Anzahl der Segmente in einer Nachricht,X,,81
+Nachrichten-Endesegment,,UNT,0062,00064,,,Nachrichten-Referenznummer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00067,,,Nachrichten-Referenznummer,X,,82

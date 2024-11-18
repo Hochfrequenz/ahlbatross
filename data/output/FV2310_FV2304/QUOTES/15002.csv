@@ -92,41 +92,41 @@ Positionsdaten,SG27,LIN,7143,,Z01,,Artikelnummer,X,,71,ÄNDERUNG,Segment ID_FV23
 [66] Wenn DTM+469 (Beginn zum (nächstmöglichen Termin)) im DE2380 < 202312312300?+00
 [67] Wenn DTM+203 (Ausführungsdatum) im DE2380 ≥ 202312312300?+00
 [68] Wenn DTM+469 (Beginn zum (nächstmöglichen Termin)) im DE2380 ≥ 202312312300?+00",72
-Zusätzliche Produktidentifikation,SG27,PIA,,,,,,Muss [20],[20] Wenn IMD++Z33 vorhanden,72,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,,00021,,,,Muss [20] ∧ ([65] ⊻ [66]),"[20] Wenn IMD++Z33 vorhanden
+Zusätzliche Produktidentifikation,SG27,PIA,,,,,,Muss [20],[20] Wenn IMD++Z33 vorhanden,72,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,,00021,,,,Muss [20] ∧ ([65] ⊻ [66]),"[20] Wenn IMD++Z33 vorhanden
 [65] Wenn DTM+203 (Ausführungsdatum) im DE2380 < 202312312300?+00
 [66] Wenn DTM+469 (Beginn zum (nächstmöglichen Termin)) im DE2380 < 202312312300?+00",73
-Zusätzliche Produktidentifikation,SG27,PIA,4347,,,,,1,,73,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,4347,00021,,,,1,,74
-Zusätzliche Produktidentifikation,SG27,PIA,7140,,,,Preisschlüsselstamm,X,,74,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,7140,00021,,,Preisschlüsselstamm,X,,75
-Zusätzliche Produktidentifikation,SG27,PIA,7143,,Z06,,Preisschlüsselstamm,X,,75,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,7143,00021,Z06,,Preisschlüsselstamm,X,,76
-Menge,SG27,QTY,,,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Menge,SG27,QTY,,00023,,,,Muss,,77
-Menge,SG27,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,77,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Menge,SG27,QTY,6063,00023,47,,Berechnete (fakturierte) Menge,X,,78
-Menge,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Menge,SG27,QTY,6060,00023,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,79
-Menge,SG27,QTY,6411,,H87,,Stück,X,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Menge,SG27,QTY,6411,00023,H87,,Stück,X,,80
-zeitliche Mengenangaben,SG27,QTY,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,,00024,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,81
-zeitliche Mengenangaben,SG27,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,6063,00024,136,,Erreichte Menge in dem Zeitintervall,X,,82
-zeitliche Mengenangaben,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,82,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,6060,00024,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,83
-zeitliche Mengenangaben,SG27,QTY,6411,,ANN,,Jahr,X,,83,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,6411,00024,ANN,,Jahr,X,,84
-zeitliche Mengenangaben,SG27,QTY,6411,,DAY,,Tag,X,,84,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,6411,,DAY,,Tag,X,,85
-zeitliche Mengenangaben,SG27,QTY,6411,,MON,,Monat,X,,85,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,zeitliche Mengenangaben,SG27,QTY,6411,,MON,,Monat,X,,86
-Geldbetrag,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,86,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,87
-Geldbetrag,SG29,MOA,,,,,,Muss,,87,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,,00048,,,,Muss,,88
-Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,88,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5025,00048,203,,Positionsbetrag (ohne USt.),X,,89
-Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,89,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5004,00048,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,90
-Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,90,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,91
-Preisangaben,SG31,PRI,,,,,,Muss,,91,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,,00049,,,,Muss,,92
-Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5125,00049,CAL,,Berechnungspreis,X,,93
-Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,93,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5118,00049,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94
+Zusätzliche Produktidentifikation,SG27,PIA,4347,,,,,1,,73,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,4347,00021,,,,1,,74
+Zusätzliche Produktidentifikation,SG27,PIA,7140,,,,Preisschlüsselstamm,X,,74,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,7140,00021,,,Preisschlüsselstamm,X,,75
+Zusätzliche Produktidentifikation,SG27,PIA,7143,,Z06,,Preisschlüsselstamm,X,,75,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Zusätzliche Produktidentifikation,SG27,PIA,7143,00021,Z06,,Preisschlüsselstamm,X,,76
+Menge,SG27,QTY,,,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Menge,SG27,QTY,,00023,,,,Muss,,77
+Menge,SG27,QTY,6063,,47,,Berechnete (fakturierte) Menge,X,,77,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Menge,SG27,QTY,6063,00023,47,,Berechnete (fakturierte) Menge,X,,78
+Menge,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Menge,SG27,QTY,6060,00023,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,79
+Menge,SG27,QTY,6411,,H87,,Stück,X,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Menge,SG27,QTY,6411,00023,H87,,Stück,X,,80
+zeitliche Mengenangaben,SG27,QTY,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,zeitliche Mengenangaben,SG27,QTY,,00024,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,81
+zeitliche Mengenangaben,SG27,QTY,6063,,136,,Erreichte Menge in dem Zeitintervall,X,,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,zeitliche Mengenangaben,SG27,QTY,6063,00024,136,,Erreichte Menge in dem Zeitintervall,X,,82
+zeitliche Mengenangaben,SG27,QTY,6060,,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,82,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,zeitliche Mengenangaben,SG27,QTY,6060,00024,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,83
+zeitliche Mengenangaben,SG27,QTY,6411,,ANN,,Jahr,X,,83,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,zeitliche Mengenangaben,SG27,QTY,6411,00024,ANN,,Jahr,X,,84
+zeitliche Mengenangaben,SG27,QTY,6411,,DAY,,Tag,X,,84,,,zeitliche Mengenangaben,SG27,QTY,6411,,DAY,,Tag,X,,85
+zeitliche Mengenangaben,SG27,QTY,6411,,MON,,Monat,X,,85,,,zeitliche Mengenangaben,SG27,QTY,6411,,MON,,Monat,X,,86
+Geldbetrag,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,86,,,Geldbetrag,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,87
+Geldbetrag,SG29,MOA,,,,,,Muss,,87,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,,00048,,,,Muss,,88
+Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,88,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5025,00048,203,,Positionsbetrag (ohne USt.),X,,89
+Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,89,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5004,00048,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,90
+Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,90,,,Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,91
+Preisangaben,SG31,PRI,,,,,,Muss,,91,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,,00049,,,,Muss,,92
+Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5125,00049,CAL,,Berechnungspreis,X,,93
+Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,93,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5118,00049,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94
 Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
-[20] Wenn IMD++Z33 vorhanden",94,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
+[20] Wenn IMD++Z33 vorhanden",94,,,Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
 [20] Wenn IMD++Z33 vorhanden",95
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,,,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00051,,,,Muss,,96
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,,AVE,,Meldepunkt,X,,96,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00051,Z18,,Marktlokation,X,,97
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,97,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00051,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,98
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,98,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,99
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,99,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,100
-Summenbetrag (netto),,MOA,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,100,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Summenbetrag (netto),,MOA,,00098,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,101
-Summenbetrag (netto),,MOA,5025,,97,,Gesamtbetrag des Angebots,X,,101,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Summenbetrag (netto),,MOA,5025,00098,97,,Gesamtbetrag des Angebots,X,,102
-Summenbetrag (netto),,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,102,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Summenbetrag (netto),,MOA,5004,00098,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,103
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,103,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,104
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,104,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,105
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,105,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,106
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,,,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00051,,,,Muss,,96
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,,AVE,,Meldepunkt,X,,96,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00051,Z18,,Marktlokation,X,,97
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,97,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00051,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,98
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,98,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,99
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,99,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,100
+Summenbetrag (netto),,MOA,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,100,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Summenbetrag (netto),,MOA,,00098,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,101
+Summenbetrag (netto),,MOA,5025,,97,,Gesamtbetrag des Angebots,X,,101,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Summenbetrag (netto),,MOA,5025,00098,97,,Gesamtbetrag des Angebots,X,,102
+Summenbetrag (netto),,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,102,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Summenbetrag (netto),,MOA,5004,00098,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,103
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,103,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,104
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,104,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,105
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,105,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,106

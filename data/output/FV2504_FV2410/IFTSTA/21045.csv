@@ -98,40 +98,40 @@ Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV1,,§ 37 EnFG Schienenbahnen
 Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV2,,§ 38 EnFG elektrische betriebene Bussen im Linienverkehr,X [143],,88,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV1,,§ 37 EnFG Schienenbahnen,X [143],,88
 Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV3,,§ 39 EnFG Landstromanlagen,X [143],[143] Wenn mehr als ein Grund vorliegt und die voranstehenden DE9013 dieses STS nicht ausreichen,89,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingung_FV2410|Bedingung_FV2504,Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV2,,§ 38 EnFG elektrische betriebene Bussen im Linienverkehr,X [143],,89
 ,,,,,,,,,,,NEU,,Grund der Privilegierung nach EnFG,SG15,STS,9013,,ZV3,,§ 39 EnFG Landstromanlagen,X [143],[143] Wenn mehr als ein Grund vorliegt und die voranstehenden DE9013 dieses STS nicht ausreichen,90
-Prüfidentifikator,SG15,RFF,,00117,,,,Muss,,90,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG15,RFF,,00117,,,,Muss,,91
-Prüfidentifikator,SG15,RFF,1153,00117,Z13,,Prüfidentifikator,X,,91,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG15,RFF,1153,00117,Z13,,Prüfidentifikator,X,,92
-Prüfidentifikator,SG15,RFF,1154,00117,21045,,GPKE / Privilegierungsinformation nach EnFG,X,,92,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG15,RFF,1154,00117,21045,,GPKE / Privilegierungsinformation nach EnFG,X,,93
-Datum/Uhrzeit/Zeitspanne,SG15,DTM,,00118,,,,Muss,,93,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Datum/Uhrzeit/Zeitspanne,SG15,DTM,,00118,,,,Muss,,94
-Datum/Uhrzeit/Zeitspanne,SG15,DTM,2005,00118,273,,Gültigkeitszeitspanne,X,,94,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2005,00118,273,,Gültigkeitszeitspanne,X,,95
-Datum/Uhrzeit/Zeitspanne,SG15,DTM,2380,00118,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,95,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2380,00118,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,96
-Datum/Uhrzeit/Zeitspanne,SG15,DTM,2379,00118,602,,CCYY,X,,96,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2379,00118,602,,CCYY,X,,97
-Privilegierte Energiemenge,SG16,,,,,,,Muss,,97,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Privilegierte Energiemenge,SG16,,,,,,,Muss,,98
-Privilegierte Energiemenge,SG16,EFI,,00119,,,,Muss,,98,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Privilegierte Energiemenge,SG16,EFI,,00119,,,,Muss,,99
-Privilegierte Energiemenge,SG16,EFI,7008,00119,Z02,,Privilegierte Energiemenge,X,,99,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Privilegierte Energiemenge,SG16,EFI,7008,00119,Z02,,Privilegierte Energiemenge,X,,100
-Beginn des Zeitraums,SG16,DTM,,00120,,,,Muss,,100,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn des Zeitraums,SG16,DTM,,00120,,,,Muss,,101
-Beginn des Zeitraums,SG16,DTM,2005,00120,163,,"Verarbeitung, Beginndatum/-zeit",X,,101,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn des Zeitraums,SG16,DTM,2005,00120,163,,"Verarbeitung, Beginndatum/-zeit",X,,102
-Beginn des Zeitraums,SG16,DTM,2380,00120,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,102,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn des Zeitraums,SG16,DTM,2380,00120,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,103
-Beginn des Zeitraums,SG16,DTM,2379,00120,303,,CCYYMMDDHHMMZZZ,X,,103,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn des Zeitraums,SG16,DTM,2379,00120,303,,CCYYMMDDHHMMZZZ,X,,104
-Ende des Zeitraums,SG16,DTM,,00121,,,,Muss,,104,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende des Zeitraums,SG16,DTM,,00121,,,,Muss,,105
-Ende des Zeitraums,SG16,DTM,2005,00121,164,,"Verarbeitung, Endedatum/-zeit",X,,105,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende des Zeitraums,SG16,DTM,2005,00121,164,,"Verarbeitung, Endedatum/-zeit",X,,106
-Ende des Zeitraums,SG16,DTM,2380,00121,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,106,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende des Zeitraums,SG16,DTM,2380,00121,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,107
-Ende des Zeitraums,SG16,DTM,2379,00121,303,,CCYYMMDDHHMMZZZ,X,,107,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende des Zeitraums,SG16,DTM,2379,00121,303,,CCYYMMDDHHMMZZZ,X,,108
-Menge,SG16,QTY,,00122,,,,Muss,,108,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Menge,SG16,QTY,,00122,,,,Muss,,109
-Menge,SG16,QTY,6063,00122,136,,Erreichte Menge in dem Zeitintervall,X,,109,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Menge,SG16,QTY,6063,00122,136,,Erreichte Menge in dem Zeitintervall,X,,110
-Menge,SG16,QTY,6060,00122,,,Menge,X,,110,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Menge,SG16,QTY,6060,00122,,,Menge,X,,111
-Menge,SG16,QTY,6411,00122,KWH,,Kilowattstunde,X,,111,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Menge,SG16,QTY,6411,00122,KWH,,Kilowattstunde,X,,112
-Name und Anschrift,SG17,,,,,,,Muss,,112,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,,,,,,,Muss,,113
-Name und Anschrift,SG17,NAD,,00123,,,,Muss,,113,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,NAD,,00123,,,,Muss,,114
-Name und Anschrift,SG17,NAD,3035,00123,,,,Z09,,114,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,NAD,3035,00123,,,,Z09,,115
-Name und Anschrift,SG17,NAD,3036,00123,,,Name,X,,115,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,NAD,3036,00123,,,Name,X,,116
-Name und Anschrift,SG17,NAD,3045,00123,Z01,,Struktur von Personennamen,X,,116,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,NAD,3045,00123,Z01,,Struktur von Personennamen,X,,117
-Name und Anschrift,SG17,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,117,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Name und Anschrift,SG17,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,118
-Sendungspositionseinzelhei ten,SG25,,,,,,,Soll [1],[1] Wenn die Übermittlung nicht codierbarer Informationen nötig ist.,118,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Sendungspositionseinzelhei ten,SG25,,,,,,,Soll [1],[1] Wenn die Übermittlung nicht codierbarer Informationen nötig ist.,119
-Sendungspositionseinzelhei ten,SG25,GID,,00124,,,,Muss,,119,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Sendungspositionseinzelhei ten,SG25,GID,,00124,,,,Muss,,120
-Sendungspositionseinzelhei ten,SG25,GID,1496,00124,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,120,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Sendungspositionseinzelhei ten,SG25,GID,1496,00124,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,121
-Freier Text,SG25,FTX,,00125,,,,Muss,,121,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Freier Text,SG25,FTX,,00125,,,,Muss,,122
-Freier Text,SG25,FTX,4451,00125,(für allgemeine Hinweise),,,ACB,,122,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Freier Text,SG25,FTX,4451,00125,(für allgemeine Hinweise),,,ACB,,123
-Freier Text,SG25,FTX,4440,00125,,,Freier Text,X,,123,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Freier Text,SG25,FTX,4440,00125,,,Freier Text,X,,124
-Nachrichten-Endesegment,,UNT,,00126,,,,Muss,,124,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00131,,,,Muss,,125
-Nachrichten-Endesegment,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,125,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00131,,,Anzahl der Segmente in einer Nachricht,X,,126
-Nachrichten-Endesegment,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,126,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00131,,,Nachrichten-Referenznummer,X,,127
+Prüfidentifikator,SG15,RFF,,00117,,,,Muss,,90,,,Prüfidentifikator,SG15,RFF,,00117,,,,Muss,,91
+Prüfidentifikator,SG15,RFF,1153,00117,Z13,,Prüfidentifikator,X,,91,,,Prüfidentifikator,SG15,RFF,1153,00117,Z13,,Prüfidentifikator,X,,92
+Prüfidentifikator,SG15,RFF,1154,00117,21045,,GPKE / Privilegierungsinformation nach EnFG,X,,92,,,Prüfidentifikator,SG15,RFF,1154,00117,21045,,GPKE / Privilegierungsinformation nach EnFG,X,,93
+Datum/Uhrzeit/Zeitspanne,SG15,DTM,,00118,,,,Muss,,93,,,Datum/Uhrzeit/Zeitspanne,SG15,DTM,,00118,,,,Muss,,94
+Datum/Uhrzeit/Zeitspanne,SG15,DTM,2005,00118,273,,Gültigkeitszeitspanne,X,,94,,,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2005,00118,273,,Gültigkeitszeitspanne,X,,95
+Datum/Uhrzeit/Zeitspanne,SG15,DTM,2380,00118,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,95,,,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2380,00118,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,96
+Datum/Uhrzeit/Zeitspanne,SG15,DTM,2379,00118,602,,CCYY,X,,96,,,Datum/Uhrzeit/Zeitspanne,SG15,DTM,2379,00118,602,,CCYY,X,,97
+Privilegierte Energiemenge,SG16,,,,,,,Muss,,97,,,Privilegierte Energiemenge,SG16,,,,,,,Muss,,98
+Privilegierte Energiemenge,SG16,EFI,,00119,,,,Muss,,98,,,Privilegierte Energiemenge,SG16,EFI,,00119,,,,Muss,,99
+Privilegierte Energiemenge,SG16,EFI,7008,00119,Z02,,Privilegierte Energiemenge,X,,99,,,Privilegierte Energiemenge,SG16,EFI,7008,00119,Z02,,Privilegierte Energiemenge,X,,100
+Beginn des Zeitraums,SG16,DTM,,00120,,,,Muss,,100,,,Beginn des Zeitraums,SG16,DTM,,00120,,,,Muss,,101
+Beginn des Zeitraums,SG16,DTM,2005,00120,163,,"Verarbeitung, Beginndatum/-zeit",X,,101,,,Beginn des Zeitraums,SG16,DTM,2005,00120,163,,"Verarbeitung, Beginndatum/-zeit",X,,102
+Beginn des Zeitraums,SG16,DTM,2380,00120,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,102,,,Beginn des Zeitraums,SG16,DTM,2380,00120,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,103
+Beginn des Zeitraums,SG16,DTM,2379,00120,303,,CCYYMMDDHHMMZZZ,X,,103,,,Beginn des Zeitraums,SG16,DTM,2379,00120,303,,CCYYMMDDHHMMZZZ,X,,104
+Ende des Zeitraums,SG16,DTM,,00121,,,,Muss,,104,,,Ende des Zeitraums,SG16,DTM,,00121,,,,Muss,,105
+Ende des Zeitraums,SG16,DTM,2005,00121,164,,"Verarbeitung, Endedatum/-zeit",X,,105,,,Ende des Zeitraums,SG16,DTM,2005,00121,164,,"Verarbeitung, Endedatum/-zeit",X,,106
+Ende des Zeitraums,SG16,DTM,2380,00121,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,106,,,Ende des Zeitraums,SG16,DTM,2380,00121,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,107
+Ende des Zeitraums,SG16,DTM,2379,00121,303,,CCYYMMDDHHMMZZZ,X,,107,,,Ende des Zeitraums,SG16,DTM,2379,00121,303,,CCYYMMDDHHMMZZZ,X,,108
+Menge,SG16,QTY,,00122,,,,Muss,,108,,,Menge,SG16,QTY,,00122,,,,Muss,,109
+Menge,SG16,QTY,6063,00122,136,,Erreichte Menge in dem Zeitintervall,X,,109,,,Menge,SG16,QTY,6063,00122,136,,Erreichte Menge in dem Zeitintervall,X,,110
+Menge,SG16,QTY,6060,00122,,,Menge,X,,110,,,Menge,SG16,QTY,6060,00122,,,Menge,X,,111
+Menge,SG16,QTY,6411,00122,KWH,,Kilowattstunde,X,,111,,,Menge,SG16,QTY,6411,00122,KWH,,Kilowattstunde,X,,112
+Name und Anschrift,SG17,,,,,,,Muss,,112,,,Name und Anschrift,SG17,,,,,,,Muss,,113
+Name und Anschrift,SG17,NAD,,00123,,,,Muss,,113,,,Name und Anschrift,SG17,NAD,,00123,,,,Muss,,114
+Name und Anschrift,SG17,NAD,3035,00123,,,,Z09,,114,,,Name und Anschrift,SG17,NAD,3035,00123,,,,Z09,,115
+Name und Anschrift,SG17,NAD,3036,00123,,,Name,X,,115,,,Name und Anschrift,SG17,NAD,3036,00123,,,Name,X,,116
+Name und Anschrift,SG17,NAD,3045,00123,Z01,,Struktur von Personennamen,X,,116,,,Name und Anschrift,SG17,NAD,3045,00123,Z01,,Struktur von Personennamen,X,,117
+Name und Anschrift,SG17,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,117,,,Name und Anschrift,SG17,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,118
+Sendungspositionseinzelhei ten,SG25,,,,,,,Soll [1],[1] Wenn die Übermittlung nicht codierbarer Informationen nötig ist.,118,,,Sendungspositionseinzelhei ten,SG25,,,,,,,Soll [1],[1] Wenn die Übermittlung nicht codierbarer Informationen nötig ist.,119
+Sendungspositionseinzelhei ten,SG25,GID,,00124,,,,Muss,,119,,,Sendungspositionseinzelhei ten,SG25,GID,,00124,,,,Muss,,120
+Sendungspositionseinzelhei ten,SG25,GID,1496,00124,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,120,,,Sendungspositionseinzelhei ten,SG25,GID,1496,00124,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,121
+Freier Text,SG25,FTX,,00125,,,,Muss,,121,,,Freier Text,SG25,FTX,,00125,,,,Muss,,122
+Freier Text,SG25,FTX,4451,00125,(für allgemeine Hinweise),,,ACB,,122,,,Freier Text,SG25,FTX,4451,00125,(für allgemeine Hinweise),,,ACB,,123
+Freier Text,SG25,FTX,4440,00125,,,Freier Text,X,,123,,,Freier Text,SG25,FTX,4440,00125,,,Freier Text,X,,124
+Nachrichten-Endesegment,,UNT,,00126,,,,Muss,,124,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00131,,,,Muss,,125
+Nachrichten-Endesegment,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,125,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00131,,,Anzahl der Segmente in einer Nachricht,X,,126
+Nachrichten-Endesegment,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,126,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00131,,,Nachrichten-Referenznummer,X,,127

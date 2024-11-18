@@ -32,7 +32,7 @@ Kommunikationsverbindung,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,26,ENT
 Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,ENTFÄLLT,,,,,,,,,,,,
 Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,ENTFÄLLT,,,,,,,,,,,,
 Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,ENTFÄLLT,,,,,,,,,,,,
-EDIFACT Struktur,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26
+EDIFACT Struktur,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26
 ,,,,,,,,,,,NEU,,EDIFACT Struktur,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27
 ,,,,,,,,,,,NEU,,EDIFACT Struktur,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28
 ,,,,,,,,,,,NEU,,EDIFACT Struktur,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29
@@ -74,7 +74,7 @@ Status der Antwort,SG4,STS,9013,,,,Code des Prüfschritts,X,,46,ÄNDERUNG,Segmen
 ,,,,,,,,,,,NEU,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00058,,,,Muss,,61
 ,,,,,,,,,,,NEU,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00058,TN,,Transaktions-Referenznummer,X,,62
 EDIFACT Struktur,SG4,STS,1131,,Codeliste Strom Nr. S_0041 Codeliste Strom Nr. S_0094 Codeliste Strom Nr. S_0098 Codeliste Strom Nr. S_0099 Codeliste Strom Nr. S_0100,,S_0041 S_0094 S_0098 S_0099 S_0100,X [4] X [241],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
-[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB",47,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG6,RFF,1154,00058,,,Vorgangsnummer,X,,63
+[241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB",47,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,EDIFACT Struktur,SG6,RFF,1154,00058,,,Vorgangsnummer,X,,63
 Marktlokation,SG5,,,,,,,Muss [2061] ∧ [349],"[349] Wenn SG5 LOC+Z17 (Messlokation) nicht vorhanden
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",48,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,,,,,,Muss,,49,ENTFÄLLT,,,,,,,,,,,,

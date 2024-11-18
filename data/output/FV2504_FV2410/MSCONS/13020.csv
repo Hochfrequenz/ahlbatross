@@ -84,43 +84,43 @@ Identifikationsangabe,SG6,LOC,3225,00017,,,Bezeichnung,X [951] [511],"[511] Hinw
 ,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2005,00019,164,,"Verarbeitung, Endedatum/-zeit",X,,70
 ,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,71
 ,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,,72
-Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,65,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,73
-Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,66,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,74
-Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,67,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,75
-Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,68,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,76
-Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,69,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,77
-Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,70,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,78
-Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,71,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,79
-Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,72,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,80
-lfd. Position,SG9,,,,,,,Muss,,73,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,,,,,,,Muss,,81
-lfd. Position,SG9,LIN,,00026,,,,Muss,,74,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,LIN,,00026,,,,Muss,,82
-lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,75,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,83
-Produktidentifikation,SG9,PIA,,00027,,,,Muss,,76,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,,00027,,,,Muss,,84
-Produktidentifikation,SG9,PIA,4347,00027,,,,5,,77,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,4347,00027,,,,5,,85
-Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",78,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",86
-Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,79,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,87
-Mengenangaben,SG10,,,,,,,Muss,,80,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,,,,,,,Muss,,88
-Mengenangaben,SG10,QTY,,00028,,,,Muss,,81,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,,00028,,,,Muss,,89
-Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,82,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,90
+Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,65,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,73
+Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,66,,,Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,74
+Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,67,,,Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,75
+Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,68,,,Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,76
+Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,69,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,77
+Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,70,,,Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,78
+Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,71,,,Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,79
+Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,72,,,Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,80
+lfd. Position,SG9,,,,,,,Muss,,73,,,lfd. Position,SG9,,,,,,,Muss,,81
+lfd. Position,SG9,LIN,,00026,,,,Muss,,74,,,lfd. Position,SG9,LIN,,00026,,,,Muss,,82
+lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,75,,,lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,83
+Produktidentifikation,SG9,PIA,,00027,,,,Muss,,76,,,Produktidentifikation,SG9,PIA,,00027,,,,Muss,,84
+Produktidentifikation,SG9,PIA,4347,00027,,,,5,,77,,,Produktidentifikation,SG9,PIA,4347,00027,,,,5,,85
+Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",78,,,Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",86
+Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,79,,,Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,87
+Mengenangaben,SG10,,,,,,,Muss,,80,,,Mengenangaben,SG10,,,,,,,Muss,,88
+Mengenangaben,SG10,QTY,,00028,,,,Muss,,81,,,Mengenangaben,SG10,QTY,,00028,,,,Muss,,89
+Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,82,,,Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,90
 Mengenangaben,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
-[910] Format: Möglicher Wert: < 0 oder ≥ 0",83,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
+[910] Format: Möglicher Wert: < 0 oder ≥ 0",83,,,Mengenangaben,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
 [910] Format: Möglicher Wert: < 0 oder ≥ 0",91
-Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,84,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,92
-Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,85,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,93
-Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,86,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,94
+Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,84,,,Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,92
+Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,85,,,Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,93
+Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,86,,,Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,94
 Beginn Messperiode,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00",87,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",87,,,Beginn Messperiode,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
 [931] Format: ZZZ = +00",95
-Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,88,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,96
-Ende Messperiode,SG10,DTM,,00030,,,,Muss,,89,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,,00030,,,,Muss,,97
-Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,90,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,98
+Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,88,,,Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,96
+Ende Messperiode,SG10,DTM,,00030,,,,Muss,,89,,,Ende Messperiode,SG10,DTM,,00030,,,,Muss,,97
+Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,90,,,Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,98
 Ende Messperiode,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00",91,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",91,,,Ende Messperiode,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
 [931] Format: ZZZ = +00",99
-Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,92,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,100
-Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,93,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,101
-Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,94,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,102
-Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,95,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,103
-Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,96,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,104
-Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,97,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,105
-Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,98,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,106
+Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,92,,,Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,100
+Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,93,,,Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,101
+Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,94,,,Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,102
+Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,95,,,Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,103
+Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,96,,,Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,104
+Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,97,,,Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,105
+Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,98,,,Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,106

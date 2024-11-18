@@ -43,49 +43,49 @@ Referenz Nachrichtennummer,SG1,RFF,1154,,,,Referenz Nachrichtennummer,X [529],[5
 [55] Vorgangsnummer aus IDE DE7402 der UTILTS mit BGM+Z81
 [70] wenn es sich bei der Reklamation um die Reklamation der ausgerollten Zählzeitdefinitionen handelte
 [71] wenn es sich bei der Reklamation um die Reklamation der ausgerollten Schaltzeitdefinitionen handelte",25
-Prüfidentifikator,SG1,,,,,,,Muss,,18,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Prüfidentifikator,SG1,,,,,,,Muss,,26
-Prüfidentifikator,SG1,RFF,,,,,,Muss,,19,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Prüfidentifikator,SG1,RFF,,00012,,,,Muss,,27
-Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,20,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Prüfidentifikator,SG1,RFF,1153,00012,Z13,,Prüfidentifikator,X,,28
-Prüfidentifikator,SG1,RFF,1154,,19123,,Ablehnung der Reklamation einer Zählzeitdefinition,X,,21,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Prüfidentifikator,SG1,RFF,1154,00012,19123,,Ablehnung der Reklamation einer Definition,X,,29
-Einzelheiten zu einer Anpassung/Änderung,SG2,,,,,,,Muss,,22,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,,,,,,,Muss,,30
-Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,,,,,,Muss,,23,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,,00013,,,,Muss,,31
-Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,4465,,,,Code des Prüfschritts,X,,24,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,4465,00013,,,Code des Prüfschritts,X,,32
+Prüfidentifikator,SG1,,,,,,,Muss,,18,,,Prüfidentifikator,SG1,,,,,,,Muss,,26
+Prüfidentifikator,SG1,RFF,,,,,,Muss,,19,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Prüfidentifikator,SG1,RFF,,00012,,,,Muss,,27
+Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,20,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Prüfidentifikator,SG1,RFF,1153,00012,Z13,,Prüfidentifikator,X,,28
+Prüfidentifikator,SG1,RFF,1154,,19123,,Ablehnung der Reklamation einer Zählzeitdefinition,X,,21,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Beschreibung_FV2304|Beschreibung_FV2310,Prüfidentifikator,SG1,RFF,1154,00012,19123,,Ablehnung der Reklamation einer Definition,X,,29
+Einzelheiten zu einer Anpassung/Änderung,SG2,,,,,,,Muss,,22,,,Einzelheiten zu einer Anpassung/Änderung,SG2,,,,,,,Muss,,30
+Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,,,,,,Muss,,23,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,,00013,,,,Muss,,31
+Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,4465,,,,Code des Prüfschritts,X,,24,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,4465,00013,,,Code des Prüfschritts,X,,32
 Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,,,,,E_0476 E_0478 E_0479,"[3] Wenn MP-ID in SG3 NAD+MS mit Rolle NB vorhanden
 [4] Wenn MP-ID in SG3 NAD+MR mit Rolle LF vorhanden
 [5] Wenn MP-ID in SG3 NAD+MS mit Rolle LF vorhanden
-[14] Wenn MP-ID in SG3 NAD+MR mit Rolle MSB vorhanden",25,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,00013,,,,E_0544 E_0545 E_0546 E_0547 E_0548 E_0549 E_0550 E_0551,"[3] Wenn MP-ID in SG3 NAD+MS mit Rolle NB vorhanden
+[14] Wenn MP-ID in SG3 NAD+MR mit Rolle MSB vorhanden",25,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,00013,,,,E_0544 E_0545 E_0546 E_0547 E_0548 E_0549 E_0550 E_0551,"[3] Wenn MP-ID in SG3 NAD+MS mit Rolle NB vorhanden
 [4] Wenn MP-ID in SG3 NAD+MR mit Rolle LF vorhanden
 [5] Wenn MP-ID in SG3 NAD+MS mit Rolle LF vorhanden
 [14] Wenn MP-ID in SG3 NAD+MR mit Rolle MSB vorhanden
 [15] Wenn MP-ID in SG3 NAD+MR mit Rolle NB vorhanden",33
-Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,,,,,,Muss [28],[28] Wenn AJT+A99 vorhanden,26,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,,00014,,,,Muss [28],[28] Wenn AJT+A99 vorhanden,34
-Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4451,,,,,AAP,,27,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4451,00014,,,,AAP,,35
-Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4440,,,,Freier Text,X,,28,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4440,00014,,,Freier Text,X,,36
-MP-ID Absender,SG3,,,,,,,Muss,,29,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,,,,,,,Muss,,37
-MP-ID Absender,SG3,NAD,,,,,,Muss,,30,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,,00015,,,,Muss,,38
-MP-ID Absender,SG3,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,31,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3035,00015,Nachrichtenaussteller bzw. -absender,,,MS,,39
-MP-ID Absender,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,32,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3039,00015,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,40
-MP-ID Absender,SG3,NAD,3055,,9,,GS1,X,,33,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3055,00015,9,,GS1,X,,41
-MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,34,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,42
-Ansprechpartner,SG6,,,,,,,Kann,,35,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,,,,,,,Kann,,43
-Ansprechpartner,SG6,CTA,,,,,,Muss,,36,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,,00016,,,,Muss,,44
-Ansprechpartner,SG6,CTA,3139,,,,,IC,,37,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,3139,00016,,,,IC,,45
-Ansprechpartner,SG6,CTA,3412,,,,Kontakt,X,,38,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,3412,00016,,,Kontakt,X,,46
-Kommunikationsverbindung,SG6,COM,,,,,,Muss,,39,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,,00017,,,,Muss,,47
-Kommunikationsverbindung,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,40,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3148,00017,,,"Kommunikationsadresse, Identifikation",X,,48
-Kommunikationsverbindung,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,41,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3155,00017,EM,,Elektronische Post,X [1P0..1],,49
-Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,42,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,50
-Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,43,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,51
-Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,44,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,52
-Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,45,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,53
-MP-ID Empfänger,SG3,,,,,,,Muss,,46,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,,,,,,,Muss,,54
-MP-ID Empfänger,SG3,NAD,,,,,,Muss,,47,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,55
-MP-ID Empfänger,SG3,NAD,3035,,,,,MR,,48,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,56
-MP-ID Empfänger,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,49,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,57
-MP-ID Empfänger,SG3,NAD,3055,,9,,GS1,X,,50,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,58
-MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,51,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,59
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,52,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,60
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,53,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00030,und Summenteil,,,S,,61
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,54,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,62
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,55,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,63
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,56,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,64
+Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,,,,,,Muss [28],[28] Wenn AJT+A99 vorhanden,26,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,,00014,,,,Muss [28],[28] Wenn AJT+A99 vorhanden,34
+Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4451,,,,,AAP,,27,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4451,00014,,,,AAP,,35
+Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4440,,,,Freier Text,X,,28,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Allgemeine Information (Feld für allgemeine Hinweise),SG2,FTX,4440,00014,,,Freier Text,X,,36
+MP-ID Absender,SG3,,,,,,,Muss,,29,,,MP-ID Absender,SG3,,,,,,,Muss,,37
+MP-ID Absender,SG3,NAD,,,,,,Muss,,30,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,,00015,,,,Muss,,38
+MP-ID Absender,SG3,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,31,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,3035,00015,Nachrichtenaussteller bzw. -absender,,,MS,,39
+MP-ID Absender,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,32,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,3039,00015,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,40
+MP-ID Absender,SG3,NAD,3055,,9,,GS1,X,,33,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,3055,00015,9,,GS1,X,,41
+MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,34,,,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,42
+Ansprechpartner,SG6,,,,,,,Kann,,35,,,Ansprechpartner,SG6,,,,,,,Kann,,43
+Ansprechpartner,SG6,CTA,,,,,,Muss,,36,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,,00016,,,,Muss,,44
+Ansprechpartner,SG6,CTA,3139,,,,,IC,,37,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,3139,00016,,,,IC,,45
+Ansprechpartner,SG6,CTA,3412,,,,Kontakt,X,,38,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,3412,00016,,,Kontakt,X,,46
+Kommunikationsverbindung,SG6,COM,,,,,,Muss,,39,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindung,SG6,COM,,00017,,,,Muss,,47
+Kommunikationsverbindung,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,40,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindung,SG6,COM,3148,00017,,,"Kommunikationsadresse, Identifikation",X,,48
+Kommunikationsverbindung,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,41,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindung,SG6,COM,3155,00017,EM,,Elektronische Post,X [1P0..1],,49
+Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,42,,,Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,50
+Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,43,,,Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,51
+Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,44,,,Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,52
+Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,45,,,Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,53
+MP-ID Empfänger,SG3,,,,,,,Muss,,46,,,MP-ID Empfänger,SG3,,,,,,,Muss,,54
+MP-ID Empfänger,SG3,NAD,,,,,,Muss,,47,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,55
+MP-ID Empfänger,SG3,NAD,3035,,,,,MR,,48,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,56
+MP-ID Empfänger,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,49,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,57
+MP-ID Empfänger,SG3,NAD,3055,,9,,GS1,X,,50,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,58
+MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,51,,,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,59
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,52,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,60
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,53,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00030,und Summenteil,,,S,,61
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,54,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,62
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,55,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,63
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,56,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,64

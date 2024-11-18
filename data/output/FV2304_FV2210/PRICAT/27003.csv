@@ -91,7 +91,7 @@ Preisangaben,SG40,PRI,5118,,,,"Preis, Betrag",X [946],[946] Format: max. 11 Nach
 [949] Format: n1-n2-n1-n8-n2-n1
 [957] Format: n1-n2-n1-n8",76
 ,,,,,,,,,,,NEU,,Positionsdaten,SG36,LIN,7143,,Z09,,Artikel-ID,X,,77
-Preisangaben,SG40,PRI,6411,,DAY,,Tag,X [25],[25] Wenn Preis in DE5118 zeitabhängig,70,ÄNDERUNG,Segment_FV2210|Segment_FV2304|Datenelement_FV2210|Datenelement_FV2304|Code_FV2210|Code_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Preisangaben,SG40,,,,,,,Muss,,78
+Preisangaben,SG40,PRI,6411,,DAY,,Tag,X [25],[25] Wenn Preis in DE5118 zeitabhängig,70,ÄNDERUNG,Segment_FV2210|Segment_FV2304|Datenelement_FV2210|Datenelement_FV2304|Code_FV2210|Code_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Preisangaben,SG40,,,,,,,Muss,,78
 Netzbetreiberindividuelle Artikel-ID,SG17,,,,,,,Muss [9] ∧ [26],"[9] Wenn BGM DE1373 =11 nicht vorhanden
 [26] Wenn BGM DE1001 = Z70 vorhanden",71,ENTFÄLLT,,,,,,,,,,,,
 Netzbetreiberindividuelle Artikel-ID,SG17,PGI,,,,,,Muss,,72,ENTFÄLLT,,,,,,,,,,,,
@@ -109,21 +109,21 @@ Preisangaben,SG40,,,,,,,Muss,,79,ÄNDERUNG,Segment_FV2210|Segment_FV2304,Preisan
 Preisangaben,SG40,PRI,,,,,,Muss,,80,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Code_FV2210|Code_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304,Preisangaben,SG40,PRI,5125,,CAL,,Berechnungspreis,X,,80
 Preisangaben,SG40,PRI,5125,,CAL,,Berechnungspreis,X,,81,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Code_FV2210|Code_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Preisangaben,SG40,PRI,5118,,,,"Preis, Betrag",X [946],[946] Format: max. 11 Nachkommastellen,81
 Preisangaben,SG40,PRI,5118,,,,"Preis, Betrag",X [946],[946] Format: max. 11 Nachkommastellen,82,ENTFÄLLT,,,,,,,,,,,,
-Zonenintervallgrenzen,SG40,RNG,,,,,,Muss [24],[24] Wenn in dieser SG36 Wert von LIN DE7140 im Format n1- n2-n1-n8-n2-n1,83,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zonenintervallgrenzen,SG40,RNG,,,,,,Muss [24],[24] Wenn in dieser SG36 Wert von LIN DE7140 im Format n1- n2-n1-n8-n2-n1,82
-Zonenintervallgrenzen,SG40,RNG,6167,,,,,10,,84,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zonenintervallgrenzen,SG40,RNG,6167,,,,,10,,83
-Zonenintervallgrenzen,SG40,RNG,6411,,KWH,,kilowatt hour,X,,85,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zonenintervallgrenzen,SG40,RNG,6411,,KWH,,kilowatt hour,X,,84
+Zonenintervallgrenzen,SG40,RNG,,,,,,Muss [24],[24] Wenn in dieser SG36 Wert von LIN DE7140 im Format n1- n2-n1-n8-n2-n1,83,,,Zonenintervallgrenzen,SG40,RNG,,,,,,Muss [24],[24] Wenn in dieser SG36 Wert von LIN DE7140 im Format n1- n2-n1-n8-n2-n1,82
+Zonenintervallgrenzen,SG40,RNG,6167,,,,,10,,84,,,Zonenintervallgrenzen,SG40,RNG,6167,,,,,10,,83
+Zonenintervallgrenzen,SG40,RNG,6411,,KWH,,kilowatt hour,X,,85,,,Zonenintervallgrenzen,SG40,RNG,6411,,KWH,,kilowatt hour,X,,84
 Zonenintervallgrenzen,SG40,RNG,6162,,,,"Wertebereichsgrenze, untere",X ([926] [28] ⊻ [908] [29]) ∧ [511],"[28] Wenn die zugehörige Artikel- ID in der letzten Stelle eine 1 ist
 [29] Wenn die zugehörige Artikel- ID in der letzten Stelle > 1 ist
 [511] Hinweis: 1. Der genannte Wert gehört nicht zum Intervall.  2. Wenn in dieser SG36 die letzte Ziffer von LIN DE7140 >1, dann ist der Wert identisch mit dem Wert des DE6152 im RNG-Segment, in der SG36, in der die letzte Ziffer von LIN DE7140 um 1 kleiner ist, als die letzte Ziffer von LIN DE7140 in dieser SG36. 3. Die untere Wertegrenze zu der Artikel-ID, deren Zahl an der letzten Stelle den Wert n hat, muss kleiner sein, als die untere Wertegrenze zu der Artikel-ID, deren Zahl an der letzten Stelle den Wert n+1 hat.
 [908] Format: Mögliche Werte: 1 bis n
-[926] Format: Möglicher Wert: 0",86,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zonenintervallgrenzen,SG40,RNG,6162,,,,"Wertebereichsgrenze, untere",X ([926] [28] ⊻ [908] [29]) ∧ [511],"[28] Wenn die zugehörige Artikel- ID in der letzten Stelle eine 1 ist
+[926] Format: Möglicher Wert: 0",86,,,Zonenintervallgrenzen,SG40,RNG,6162,,,,"Wertebereichsgrenze, untere",X ([926] [28] ⊻ [908] [29]) ∧ [511],"[28] Wenn die zugehörige Artikel- ID in der letzten Stelle eine 1 ist
 [29] Wenn die zugehörige Artikel- ID in der letzten Stelle > 1 ist
 [511] Hinweis: 1. Der genannte Wert gehört nicht zum Intervall.  2. Wenn in dieser SG36 die letzte Ziffer von LIN DE7140 >1, dann ist der Wert identisch mit dem Wert des DE6152 im RNG-Segment, in der SG36, in der die letzte Ziffer von LIN DE7140 um 1 kleiner ist, als die letzte Ziffer von LIN DE7140 in dieser SG36. 3. Die untere Wertegrenze zu der Artikel-ID, deren Zahl an der letzten Stelle den Wert n hat, muss kleiner sein, als die untere Wertegrenze zu der Artikel-ID, deren Zahl an der letzten Stelle den Wert n+1 hat.
 [908] Format: Mögliche Werte: 1 bis n
 [926] Format: Möglicher Wert: 0",85
 Zonenintervallgrenzen,SG40,RNG,6152,,,,"Wertebereichsgrenze, obere",S [10] ∧ [512] ,"[10] Wenn eine weitere Zone für diese Gruppenartikel-ID vorhanden
-[512] Hinweis: Der genannte Wert gehört zum Intervall",87,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zonenintervallgrenzen,SG40,RNG,6152,,,,"Wertebereichsgrenze, obere",S [10] ∧ [512] ,"[10] Wenn eine weitere Zone für diese Gruppenartikel-ID vorhanden
+[512] Hinweis: Der genannte Wert gehört zum Intervall",87,,,Zonenintervallgrenzen,SG40,RNG,6152,,,,"Wertebereichsgrenze, obere",S [10] ∧ [512] ,"[10] Wenn eine weitere Zone für diese Gruppenartikel-ID vorhanden
 [512] Hinweis: Der genannte Wert gehört zum Intervall",86
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,88,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,,,,,,Muss,,87
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,89,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,88
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,90,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,89
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,88,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,87
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,89,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,88
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,90,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,89

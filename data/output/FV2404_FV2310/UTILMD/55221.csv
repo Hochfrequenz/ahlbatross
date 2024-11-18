@@ -167,6 +167,6 @@ Preisangabe für Singulär genutzte Betriebsmittel,SG10,CCI,7036,,,,"Preis, Betr
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,,00178,,,,Muss,,107
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00178,Z38,,Code des Zählzeitregisters,X,,108
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00178,,,Code des Zählzeitregisters,X,,109
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,110
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,111
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,104,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,112
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,110
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,111
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,104,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,112

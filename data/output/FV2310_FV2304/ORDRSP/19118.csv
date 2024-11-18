@@ -30,33 +30,33 @@ Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,4465,,,,Code des Prüfschritts
 [18] Der hier angegebene Code des Prüfschritts muss im EBD dem Cluster Ablehnung zugeordnet sein",24
 Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,,E_0488,,EBD Nr. E_0488,X,,25,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,,E_0488,,EBD Nr. E_0488,X [492],,25
 ,,,,,,,,,,,NEU,,Einzelheiten zu einer Anpassung/Änderung,SG2,AJT,1082,,E_1001,,EBD Nr. E_1001,X [493],,26
-MP-ID Absender,SG3,,,,,,,Muss,,26,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,,,,,,,Muss,,27
-MP-ID Absender,SG3,NAD,,,,,,Muss,,27,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,,00015,,,,Muss,,28
-MP-ID Absender,SG3,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,28,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3035,00015,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,29
-MP-ID Absender,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,29,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3039,00015,,,MP-ID,X,,30
-MP-ID Absender,SG3,NAD,3055,,9,,GS1,X,,30,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3055,00015,9,,GS1,X,,31
-MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,31,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,32
+MP-ID Absender,SG3,,,,,,,Muss,,26,,,MP-ID Absender,SG3,,,,,,,Muss,,27
+MP-ID Absender,SG3,NAD,,,,,,Muss,,27,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,,00015,,,,Muss,,28
+MP-ID Absender,SG3,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,28,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,3035,00015,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,29
+MP-ID Absender,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,29,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,MP-ID Absender,SG3,NAD,3039,00015,,,MP-ID,X,,30
+MP-ID Absender,SG3,NAD,3055,,9,,GS1,X,,30,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Absender,SG3,NAD,3055,00015,9,,GS1,X,,31
+MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,31,,,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,32
 ,,,,,,,,,,,NEU,,MP-ID Absender,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,33
-Ansprechpartner,SG6,,,,,,,Kann,,32,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,,,,,,,Kann,,34
-Ansprechpartner,SG6,CTA,,,,,,Muss,,33,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,,00016,,,,Muss,,35
-Ansprechpartner,SG6,CTA,3139,,IC,,Informationskontakt,X,,34,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,3139,00016,IC,,Informationskontakt,X,,36
-Ansprechpartner,SG6,CTA,3412,,,,Kontakt,X,,35,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG6,CTA,3412,00016,,,Kontakt,X,,37
-Kommunikationsverbindu ng,SG6,COM,,,,,,Muss,,36,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,,00017,,,,Muss,,38
-Kommunikationsverbindu ng,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,37,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3148,00017,,,"Kommunikationsadresse, Identifikation",X,,39
-Kommunikationsverbindu ng,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,38,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,00017,EM,,Elektronische Post,X [1P0..1],,40
-Kommunikationsverbindu ng,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,39,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,41
-Kommunikationsverbindu ng,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,40,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,42
-Kommunikationsverbindu ng,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,41,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,43
-Kommunikationsverbindu ng,SG6,COM,3155,,AL,,Handy,X [1P0..1],,42,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,,AL,,Handy,X [1P0..1],,44
-MP-ID Empfänger,SG3,,,,,,,Muss,,43,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,,,,,,,Muss,,45
-MP-ID Empfänger,SG3,NAD,,,,,,Muss,,44,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,46
-MP-ID Empfänger,SG3,NAD,3035,,MR,,Nachrichtenempfän ger,X,,45,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3035,00018,MR,,Nachrichtenempfän ger,X,,47
-MP-ID Empfänger,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,46,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X,,48
-MP-ID Empfänger,SG3,NAD,3055,,9,,GS1,X,,47,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,49
-MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,48,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,50
+Ansprechpartner,SG6,,,,,,,Kann,,32,,,Ansprechpartner,SG6,,,,,,,Kann,,34
+Ansprechpartner,SG6,CTA,,,,,,Muss,,33,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,,00016,,,,Muss,,35
+Ansprechpartner,SG6,CTA,3139,,IC,,Informationskontakt,X,,34,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,3139,00016,IC,,Informationskontakt,X,,36
+Ansprechpartner,SG6,CTA,3412,,,,Kontakt,X,,35,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Ansprechpartner,SG6,CTA,3412,00016,,,Kontakt,X,,37
+Kommunikationsverbindu ng,SG6,COM,,,,,,Muss,,36,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindu ng,SG6,COM,,00017,,,,Muss,,38
+Kommunikationsverbindu ng,SG6,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,37,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindu ng,SG6,COM,3148,00017,,,"Kommunikationsadresse, Identifikation",X,,39
+Kommunikationsverbindu ng,SG6,COM,3155,,EM,,Elektronische Post,X [1P0..1],,38,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Kommunikationsverbindu ng,SG6,COM,3155,00017,EM,,Elektronische Post,X [1P0..1],,40
+Kommunikationsverbindu ng,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,39,,,Kommunikationsverbindu ng,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,41
+Kommunikationsverbindu ng,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,40,,,Kommunikationsverbindu ng,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,42
+Kommunikationsverbindu ng,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,41,,,Kommunikationsverbindu ng,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,43
+Kommunikationsverbindu ng,SG6,COM,3155,,AL,,Handy,X [1P0..1],,42,,,Kommunikationsverbindu ng,SG6,COM,3155,,AL,,Handy,X [1P0..1],,44
+MP-ID Empfänger,SG3,,,,,,,Muss,,43,,,MP-ID Empfänger,SG3,,,,,,,Muss,,45
+MP-ID Empfänger,SG3,NAD,,,,,,Muss,,44,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,46
+MP-ID Empfänger,SG3,NAD,3035,,MR,,Nachrichtenempfän ger,X,,45,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,3035,00018,MR,,Nachrichtenempfän ger,X,,47
+MP-ID Empfänger,SG3,NAD,3039,,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,46,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X,,48
+MP-ID Empfänger,SG3,NAD,3055,,9,,GS1,X,,47,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,49
+MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,48,,,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,50
 ,,,,,,,,,,,NEU,,MP-ID Empfänger,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,51
-Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,49,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts- Kontrollsegment,,UNS,,00030,,,,Muss,,52
-Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,50,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts- Kontrollsegment,,UNS,0081,00030,S,,Trennung von Positions- und Summenteil,X,,53
-Nachrichten- Endesegment,,UNT,,,,,,Muss,,51,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten- Endesegment,,UNT,,00034,,,,Muss,,54
-Nachrichten- Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,52,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten- Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,55
-Nachrichten- Endesegment,,UNT,0062,,,,Nachrichten- Referenznummer,X,,53,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten- Endesegment,,UNT,0062,00034,,,Nachrichten- Referenznummer,X,,56
+Abschnitts- Kontrollsegment,,UNS,,,,,,Muss,,49,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts- Kontrollsegment,,UNS,,00030,,,,Muss,,52
+Abschnitts- Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,50,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts- Kontrollsegment,,UNS,0081,00030,S,,Trennung von Positions- und Summenteil,X,,53
+Nachrichten- Endesegment,,UNT,,,,,,Muss,,51,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten- Endesegment,,UNT,,00034,,,,Muss,,54
+Nachrichten- Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,52,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten- Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,55
+Nachrichten- Endesegment,,UNT,0062,,,,Nachrichten- Referenznummer,X,,53,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten- Endesegment,,UNT,0062,00034,,,Nachrichten- Referenznummer,X,,56

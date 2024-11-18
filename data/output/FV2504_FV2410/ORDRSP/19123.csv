@@ -100,14 +100,14 @@ Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,51,ÄNDERUNG,Code
 Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,52,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,52
 Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,53,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,53
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,54
-MP-ID Empfänger,SG3,,,,,,,Muss,,54,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,,,,,,,Muss,,55
-MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,55,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,56
-MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,56,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,57
-MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,57,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,58
-MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,58,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,59
-MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,59,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,60
-Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abschnitts-Kontrollsegment,,UNS,,00026,,,,Muss,,61
-Abschnitts-Kontrollsegment,,UNS,0081,00030,und Summenteil,,,S,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abschnitts-Kontrollsegment,,UNS,0081,00026,und Summenteil,,,S,,62
-Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00029,,,,Muss,,63
-Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00029,,,Anzahl der Segmente in einer Nachricht,X,,64
-Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00029,,,Nachrichten-Referenznummer,X,,65
+MP-ID Empfänger,SG3,,,,,,,Muss,,54,,,MP-ID Empfänger,SG3,,,,,,,Muss,,55
+MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,55,,,MP-ID Empfänger,SG3,NAD,,00018,,,,Muss,,56
+MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,56,,,MP-ID Empfänger,SG3,NAD,3035,00018,,,,MR,,57
+MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,57,,,MP-ID Empfänger,SG3,NAD,3039,00018,,,MP-ID,X [30],[30] MP-ID nur aus Sparte Strom,58
+MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,58,,,MP-ID Empfänger,SG3,NAD,3055,00018,9,,GS1,X,,59
+MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,59,,,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,60
+Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abschnitts-Kontrollsegment,,UNS,,00026,,,,Muss,,61
+Abschnitts-Kontrollsegment,,UNS,0081,00030,und Summenteil,,,S,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abschnitts-Kontrollsegment,,UNS,0081,00026,und Summenteil,,,S,,62
+Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00029,,,,Muss,,63
+Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00029,,,Anzahl der Segmente in einer Nachricht,X,,64
+Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00029,,,Nachrichten-Referenznummer,X,,65

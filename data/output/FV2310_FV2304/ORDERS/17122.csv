@@ -89,8 +89,8 @@ Zugeordnete Zählzeit,SG30,CCI,7037,,,,Code der Zählzeit,X,,59,ENTFÄLLT,,,,,,,
 ,,,,,,,,,,,NEU,,Zugeordnete Leistungskurvendefinition,SG30,CCI,,00057,,,,Muss,,65
 ,,,,,,,,,,,NEU,,Zugeordnete Leistungskurvendefinition,SG30,CCI,7059,00057,Leistungskurvendefinition,,,Z53,,66
 ,,,,,,,,,,,NEU,,Zugeordnete Leistungskurvendefinition,SG30,CCI,7037,00057,,,Code der Leistungskurvendefinition,X,,67
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,68
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,61,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,69
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,70
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,71
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,72
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,68
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,61,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,69
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,70
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,71
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,72

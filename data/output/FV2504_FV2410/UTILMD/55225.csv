@@ -65,19 +65,19 @@ Transaktionsgrund,SG4,STS,9013,00037,ZS5,,Nicht bila.rel. Änderung Abrechnung B
 ,,,,,,,,,,,NEU,,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,SG4,STS,9015,00035,7,,Transaktionsgrund,X,,42
 ,,,,,,,,,,,NEU,,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,SG4,STS,9013,00035,ZX5,,Änderung Blindabrechnungsdaten der NeLo,X,,43
 Netzlokation,SG5,,,,,,,Muss [2061] ∧ [343],"[343] Wenn DTM+157 (Änderung zum) im DE2380 ≥ 202312312300?+00
-[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",52,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,44
-Netzlokation,SG5,LOC,,00050,,,,Muss,,53,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,,00048,,,,Muss,,45
-Netzlokation,SG5,LOC,3227,00050,Z18,,Netzlokation,X,,54,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,3227,00048,Z18,,Netzlokation,X,,46
-Netzlokation,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID,55,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,3225,00048,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID,47
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",52,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Netzlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,44
+Netzlokation,SG5,LOC,,00050,,,,Muss,,53,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,,00048,,,,Muss,,45
+Netzlokation,SG5,LOC,3227,00050,Z18,,Netzlokation,X,,54,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,3227,00048,Z18,,Netzlokation,X,,46
+Netzlokation,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID,55,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,3225,00048,,,ID der Netzlokation,X [960],[960] Format: Netzlokations- ID,47
 Marktlokation,SG5,,,,,,,Muss [2061] ∧ [464],"[464] Wenn DTM+157 (Änderung zum) im DE2380 < 202312312300?+00
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",56,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,,00051,,,,Muss,,57,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,58,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,59,ENTFÄLLT,,,,,,,,,,,,
-Prüfidentifikator,SG6,,,,,,,Muss,,60,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,,,,,,,Muss,,48
-Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,49
-Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,50
-Prüfidentifikator,SG6,RFF,1154,00057,55225,,SDÄ Strom / Nicht bila. rel. Änderung Abrechnung Blindarbeit vom NB,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55225,,GPKE / Änderung Abrechnung Blindarbeit vom NB,X,,51
+Prüfidentifikator,SG6,,,,,,,Muss,,60,,,Prüfidentifikator,SG6,,,,,,,Muss,,48
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,49
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,50
+Prüfidentifikator,SG6,RFF,1154,00057,55225,,SDÄ Strom / Nicht bila. rel. Änderung Abrechnung Blindarbeit vom NB,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55225,,GPKE / Änderung Abrechnung Blindarbeit vom NB,X,,51
 ,,,,,,,,,,,NEU,,Verwendungszeitraum der Daten,SG6,,,,,,,Muss [707],"[8] Wenn für Datenclearing erforderlich
 [301] Wenn BGM+E03 (Änderungsmeldung) vorhanden
 [315] Wenn BGM+Z88 (Datenclearing) vorhanden
@@ -103,28 +103,28 @@ Prüfidentifikator,SG6,RFF,1154,00057,55225,,SDÄ Strom / Nicht bila. rel. Ände
 ,,,,,,,,,,,NEU,,Verwendung der Daten bis,SG6,DTM,2005,00068,Z26,,Verwendung der Daten bis,X,,62
 ,,,,,,,,,,,NEU,,Verwendung der Daten bis,SG6,DTM,2380,00068,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,63
 ,,,,,,,,,,,NEU,,Verwendung der Daten bis,SG6,DTM,2379,00068,303,,CCYYMMDDHHMMZZZ,X,,64
-Abrechnungsdaten der Netzlokation,SG8,,,,,,,Muss [294],[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden,64,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnungsdaten der Netzlokation,SG8,,,,,,,Muss [2004],"[8] Wenn für Datenclearing erforderlich
+Abrechnungsdaten der Netzlokation,SG8,,,,,,,Muss [294],[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden,64,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Abrechnungsdaten der Netzlokation,SG8,,,,,,,Muss [2004],"[8] Wenn für Datenclearing erforderlich
 [2004] Segmentgruppe ist genau einmal für jede Zeitraum-ID aus dem DE1156 der SG6 RFF+Z49 (Verwendungszeitraum der Daten: ""Gültige Daten"") anzugeben",65
-Abrechnungsdaten der Netzlokation,SG8,SEQ,,00083,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnungsdaten der Netzlokation,SG8,SEQ,,00094,,,,Muss,,66
-Abrechnungsdaten der Netzlokation,SG8,SEQ,1229,00083,Z71,,Abrechnungsdaten der Netzlokation,X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnungsdaten der Netzlokation,SG8,SEQ,1229,00094,Z71,,Abrechnungsdaten der Netzlokation,X,,67
+Abrechnungsdaten der Netzlokation,SG8,SEQ,,00083,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abrechnungsdaten der Netzlokation,SG8,SEQ,,00094,,,,Muss,,66
+Abrechnungsdaten der Netzlokation,SG8,SEQ,1229,00083,Z71,,Abrechnungsdaten der Netzlokation,X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abrechnungsdaten der Netzlokation,SG8,SEQ,1229,00094,Z71,,Abrechnungsdaten der Netzlokation,X,,67
 ,,,,,,,,,,,NEU,,Abrechnungsdaten der Netzlokation,SG8,SEQ,1050,00094,,,Referenz auf Zeitraum-ID,X [914] ∧ [937] [22],"[22] Es ist die Zeitraum-ID vom DE1156 aus einem passenden SG6 RFF+Z47/ Z48/ Z49 (Verwendungszeitraum der Daten) einzutragen
 [914] Format: Möglicher Wert: > 0
 [937] Format: keine Nachkommastelle",68
-Artikel-ID,SG8,PIA,,00084,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Artikel-ID,SG8,PIA,,00095,,,,Muss,,69
-Artikel-ID,SG8,PIA,4347,00084,Z02,,Gruppenartikel-ID / Artikel-ID,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Artikel-ID,SG8,PIA,4347,00095,Z02,,Gruppenartikel-ID / Artikel-ID,X,,70
-Artikel-ID,SG8,PIA,7140,00084,,,Produkt-/Leistungsnummer,X,,69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Artikel-ID,SG8,PIA,7140,00095,,,Produkt-/Leistungsnummer,X,,71
-Artikel-ID,SG8,PIA,7143,00084,Z09,,Artikel-ID,X,,70,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Artikel-ID,SG8,PIA,7143,00095,Z09,,Artikel-ID,X,,72
-Artikel-ID,SG8,PIA,7143,,Z10,,Gruppenartikel-ID,X,,71,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Artikel-ID,SG8,PIA,7143,,Z10,,Gruppenartikel-ID,X,,73
-Abrechnung Blindarbeit,SG10,,,,,,,Muss,,72,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnung Blindarbeit,SG10,,,,,,,Muss,,74
-Abrechnung Blindarbeit,SG10,CCI,,00085,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnung Blindarbeit,SG10,CCI,,00096,,,,Muss,,75
-Abrechnung Blindarbeit,SG10,CCI,7059,00085,Z45,,Abrechnung der Blindarbeit,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnung Blindarbeit,SG10,CCI,7059,00096,Z45,,Abrechnung der Blindarbeit,X,,76
-Abrechnung Blindarbeit,SG10,CCI,7037,00085,ZD9,,Abrechnung findet statt,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnung Blindarbeit,SG10,CCI,7037,00096,ZD9,,Abrechnung findet statt,X,,77
-Abrechnung Blindarbeit,SG10,CCI,7037,,ZE0,,Abrechnung findet nicht statt,X,,76,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abrechnung Blindarbeit,SG10,CCI,7037,,ZE0,,Abrechnung findet nicht statt,X,,78
-Zahler der Blindarbeit,SG10,CAV,,00086,,,,Muss [57],[57] Wenn CCI+Z45++ZD9 (Abrechnung findet statt) vorhanden ist ,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zahler der Blindarbeit,SG10,CAV,,00097,,,,Muss [57],[57] Wenn in derselben SG8 das CCI+Z45++ZD9 (Abrechnung findet statt) vorhanden ist ,79
-Zahler der Blindarbeit,SG10,CAV,7111,00086,ZE4,,Zahler der Blindarbeit,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zahler der Blindarbeit,SG10,CAV,7111,00097,ZE4,,Zahler der Blindarbeit,X,,80
-Zahler der Blindarbeit,SG10,CAV,7110,00086,Z36,,Anschlussnutzer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zahler der Blindarbeit,SG10,CAV,7110,00097,Z36,,Anschlussnutzer,X,,81
-Zahler der Blindarbeit,SG10,CAV,7110,,Z37,,Lieferant,X,,80,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zahler der Blindarbeit,SG10,CAV,7110,,Z37,,Lieferant,X,,82
-Zahler der Blindarbeit,SG10,CAV,7110,,Z38,,Zahler der Blindarbeit noch nicht festgelegt,X,,81,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zahler der Blindarbeit,SG10,CAV,7110,,Z38,,Zahler der Blindarbeit noch nicht festgelegt,X,,83
+Artikel-ID,SG8,PIA,,00084,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Artikel-ID,SG8,PIA,,00095,,,,Muss,,69
+Artikel-ID,SG8,PIA,4347,00084,Z02,,Gruppenartikel-ID / Artikel-ID,X,,68,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Artikel-ID,SG8,PIA,4347,00095,Z02,,Gruppenartikel-ID / Artikel-ID,X,,70
+Artikel-ID,SG8,PIA,7140,00084,,,Produkt-/Leistungsnummer,X,,69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Artikel-ID,SG8,PIA,7140,00095,,,Produkt-/Leistungsnummer,X,,71
+Artikel-ID,SG8,PIA,7143,00084,Z09,,Artikel-ID,X,,70,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Artikel-ID,SG8,PIA,7143,00095,Z09,,Artikel-ID,X,,72
+Artikel-ID,SG8,PIA,7143,,Z10,,Gruppenartikel-ID,X,,71,,,Artikel-ID,SG8,PIA,7143,,Z10,,Gruppenartikel-ID,X,,73
+Abrechnung Blindarbeit,SG10,,,,,,,Muss,,72,,,Abrechnung Blindarbeit,SG10,,,,,,,Muss,,74
+Abrechnung Blindarbeit,SG10,CCI,,00085,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abrechnung Blindarbeit,SG10,CCI,,00096,,,,Muss,,75
+Abrechnung Blindarbeit,SG10,CCI,7059,00085,Z45,,Abrechnung der Blindarbeit,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abrechnung Blindarbeit,SG10,CCI,7059,00096,Z45,,Abrechnung der Blindarbeit,X,,76
+Abrechnung Blindarbeit,SG10,CCI,7037,00085,ZD9,,Abrechnung findet statt,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abrechnung Blindarbeit,SG10,CCI,7037,00096,ZD9,,Abrechnung findet statt,X,,77
+Abrechnung Blindarbeit,SG10,CCI,7037,,ZE0,,Abrechnung findet nicht statt,X,,76,,,Abrechnung Blindarbeit,SG10,CCI,7037,,ZE0,,Abrechnung findet nicht statt,X,,78
+Zahler der Blindarbeit,SG10,CAV,,00086,,,,Muss [57],[57] Wenn CCI+Z45++ZD9 (Abrechnung findet statt) vorhanden ist ,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504,Zahler der Blindarbeit,SG10,CAV,,00097,,,,Muss [57],[57] Wenn in derselben SG8 das CCI+Z45++ZD9 (Abrechnung findet statt) vorhanden ist ,79
+Zahler der Blindarbeit,SG10,CAV,7111,00086,ZE4,,Zahler der Blindarbeit,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zahler der Blindarbeit,SG10,CAV,7111,00097,ZE4,,Zahler der Blindarbeit,X,,80
+Zahler der Blindarbeit,SG10,CAV,7110,00086,Z36,,Anschlussnutzer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zahler der Blindarbeit,SG10,CAV,7110,00097,Z36,,Anschlussnutzer,X,,81
+Zahler der Blindarbeit,SG10,CAV,7110,,Z37,,Lieferant,X,,80,,,Zahler der Blindarbeit,SG10,CAV,7110,,Z37,,Lieferant,X,,82
+Zahler der Blindarbeit,SG10,CAV,7110,,Z38,,Zahler der Blindarbeit noch nicht festgelegt,X,,81,,,Zahler der Blindarbeit,SG10,CAV,7110,,Z38,,Zahler der Blindarbeit noch nicht festgelegt,X,,83
 Weitere Abrechnungsdaten der Marktlokation,SG8,,,,,,,Muss [25],[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden,82,ENTFÄLLT,,,,,,,,,,,,
 Weitere Abrechnungsdaten der Marktlokation,SG8,SEQ,,00183,,,,Muss,,83,ENTFÄLLT,,,,,,,,,,,,
 Weitere Abrechnungsdaten der Marktlokation,SG8,SEQ,1229,00183,Z46,,Weitere Abrechnungsdaten der Marktlokation,X,,84,ENTFÄLLT,,,,,,,,,,,,
@@ -143,6 +143,6 @@ Zahler der Blindarbeit,SG10,CAV,7111,00186,ZE4,,Zahler der Blindarbeit,X,,96,ENT
 Zahler der Blindarbeit,SG10,CAV,7110,00186,Z36,,Anschlussnutzer,X,,97,ENTFÄLLT,,,,,,,,,,,,
 Zahler der Blindarbeit,SG10,CAV,7110,,Z37,,Lieferant,X,,98,ENTFÄLLT,,,,,,,,,,,,
 Zahler der Blindarbeit,SG10,CAV,7110,,Z38,,Zahler der Blindarbeit noch nicht festgelegt,X,,99,ENTFÄLLT,,,,,,,,,,,,
-Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,84
-Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,101,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,85
-Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,102,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,86
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,84
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,101,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,85
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,102,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,86

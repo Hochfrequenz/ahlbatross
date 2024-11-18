@@ -197,64 +197,64 @@ Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,134,,,Kommunikati
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,150
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,151
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,152
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,135,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,,,,,,,Muss [10] ∧ [17],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,135,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,,,,,,,Muss [10] ∧ [17],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
 [17] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/NB/MSB",153
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,,,,,,Muss,,136,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,,,,,,Muss,,154
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,,137,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,,155
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,138,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,156
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,139,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,157
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,140,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,158
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3164,,,,Ort,X,,141,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3164,,,,Ort,X,,159
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,,,,,,Muss,,136,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,,,,,,Muss,,154
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,,137,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3035,,Z13,,Ansprechpartner Wechselprozesse,X,,155
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,138,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,156
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,139,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,157
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,140,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,158
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3164,,,,Ort,X,,141,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3164,,,,Ort,X,,159
 Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
-[3] wenn vorhanden ",142,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",142,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
 [3] wenn vorhanden",160
-Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,143,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,161
-Ansprechpartner,SG7,,,,,,,Muss,,144,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,,,,,,,Muss,,162
-Ansprechpartner,SG7,CTA,,,,,,Muss,,145,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,,,,,,Muss,,163
-Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,146,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,164
-Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",147,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",165
-Kommunikationsverbindung,SG7,COM,,,,,,Muss,,148,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,166
+Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,143,,,Name und Anschrift Ansprechpartner Wechselprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,161
+Ansprechpartner,SG7,,,,,,,Muss,,144,,,Ansprechpartner,SG7,,,,,,,Muss,,162
+Ansprechpartner,SG7,CTA,,,,,,Muss,,145,,,Ansprechpartner,SG7,CTA,,,,,,Muss,,163
+Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,146,,,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,164
+Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",147,,,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",165
+Kommunikationsverbindung,SG7,COM,,,,,,Muss,,148,,,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,166
 Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",149,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",149,,,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
 [940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",167
-Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,150,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,168
-Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,151,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,169
-Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,152,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,170
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,153,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,,,,,,,Muss [10] ∧ [19],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,150,,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,168
+Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,151,,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,169
+Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,152,,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,170
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,153,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,,,,,,,Muss [10] ∧ [19],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
 [19] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/MSB/ NB/ÜNB",171
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,,,,,,Muss,,154,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,,,,,,Muss,,172
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,,155,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,,173
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,156,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,174
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,157,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,175
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,158,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,176
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3164,,,,Ort,X,,159,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3164,,,,Ort,X,,177
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,,,,,,Muss,,154,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,,,,,,Muss,,172
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,,155,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3035,,Z14,,Ansprechpartner Stammdatenprozesse,X,,173
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,156,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,174
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,157,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,175
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,158,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,176
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3164,,,,Ort,X,,159,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3164,,,,Ort,X,,177
 Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
-[3] wenn vorhanden ",160,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",160,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
 [3] wenn vorhanden",178
-Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,161,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,179
-Ansprechpartner,SG7,,,,,,,Muss,,162,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,,,,,,,Muss,,180
-Ansprechpartner,SG7,CTA,,,,,,Muss,,163,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,,,,,,Muss,,181
-Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,164,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,182
-Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",165,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",183
-Kommunikationsverbindung,SG7,COM,,,,,,Muss,,166,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,184
+Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,161,,,Name und Anschrift Ansprechpartner Stammdatenprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,179
+Ansprechpartner,SG7,,,,,,,Muss,,162,,,Ansprechpartner,SG7,,,,,,,Muss,,180
+Ansprechpartner,SG7,CTA,,,,,,Muss,,163,,,Ansprechpartner,SG7,CTA,,,,,,Muss,,181
+Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,164,,,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,182
+Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",165,,,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",183
+Kommunikationsverbindung,SG7,COM,,,,,,Muss,,166,,,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,184
 Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",167,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",167,,,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
 [940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",185
-Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,168,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,186
-Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,169,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,187
-Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,170,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,188
+Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,168,,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,186
+Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,169,,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,187
+Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,170,,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,188
 ,,,,,,,,,,,NEU,,Name und Anschrift Ansprechpartner Einspeiseprozesse,SG4,,,,,,,Muss [10] ∧ [23],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
 [17] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/NB/MSB
 [18] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/MSB
@@ -281,66 +281,66 @@ Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,170,ÄNDERUNG,Unn
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,204
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,205
 ,,,,,,,,,,,NEU,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,206
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,171,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,,,,,,,Muss [10] ∧ [24],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,171,ÄNDERUNG,Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,,,,,,,Muss [10] ∧ [24],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
 [17] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/NB/MSB
 [18] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/MSB
 [24] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle NB/LF/ MSB/ESA",207
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,,,,,,Muss,,172,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,,,,,,Muss,,208
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,,173,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,,209
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,174,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,210
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,175,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,211
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,176,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,212
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3164,,,,Ort,X,,177,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3164,,,,Ort,X,,213
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,,,,,,Muss,,172,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,,,,,,Muss,,208
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,,173,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3035,,Z17,,Ansprechpartner Abrechnungsprozesse,X,,209
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,174,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,210
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,175,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,211
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,176,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,212
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3164,,,,Ort,X,,177,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3164,,,,Ort,X,,213
 Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
-[3] wenn vorhanden ",178,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",178,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
 [3] wenn vorhanden",214
-Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,179,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,215
-Ansprechpartner,SG7,,,,,,,Muss,,180,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,,,,,,,Muss,,216
-Ansprechpartner,SG7,CTA,,,,,,Muss,,181,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,,,,,,Muss,,217
-Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,182,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,218
-Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",183,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",219
-Kommunikationsverbindung,SG7,COM,,,,,,Muss,,184,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,220
+Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,179,,,Name und Anschrift Ansprechpartner Abrechnungsprozesse,SG4,NAD,3207,,,,"Ländername, Code",X,,215
+Ansprechpartner,SG7,,,,,,,Muss,,180,,,Ansprechpartner,SG7,,,,,,,Muss,,216
+Ansprechpartner,SG7,CTA,,,,,,Muss,,181,,,Ansprechpartner,SG7,CTA,,,,,,Muss,,217
+Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,182,,,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,218
+Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",183,,,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",219
+Kommunikationsverbindung,SG7,COM,,,,,,Muss,,184,,,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,220
 Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",185,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",185,,,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
 [940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",221
-Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,186,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,222
-Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,187,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,223
-Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,188,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,224
-Name und Anschrift Bewegungsdaten,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,189,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,,,,,,,Muss [10],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
+Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,186,,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,222
+Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,187,,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,223
+Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,188,,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,224
+Name und Anschrift Bewegungsdaten,SG4,,,,,,,Muss [10],[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden,189,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Bewegungsdaten,SG4,,,,,,,Muss [10],"[10] Wenn BGM DE1373 = 11 (Dokument nicht verfügbar) nicht vorhanden
 [19] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF/MSB/ NB/ÜNB",225
-Name und Anschrift Bewegungsdaten,SG4,NAD,,,,,,Muss,,190,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,,,,,,Muss,,226
-Name und Anschrift Bewegungsdaten,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,,191,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,,227
-Name und Anschrift Bewegungsdaten,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,192,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,228
-Name und Anschrift Bewegungsdaten,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,193,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,229
-Name und Anschrift Bewegungsdaten,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,194,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,230
-Name und Anschrift Bewegungsdaten,SG4,NAD,3164,,,,Ort,X,,195,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3164,,,,Ort,X,,231
+Name und Anschrift Bewegungsdaten,SG4,NAD,,,,,,Muss,,190,,,Name und Anschrift Bewegungsdaten,SG4,NAD,,,,,,Muss,,226
+Name und Anschrift Bewegungsdaten,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,,191,,,Name und Anschrift Bewegungsdaten,SG4,NAD,3035,,Z19,,Ansprechpartner Bewegungsdaten,X,,227
+Name und Anschrift Bewegungsdaten,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB eingetragen werden.,192,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3036,,,,Name,X [500],[500] Hinweis: Es kann der Firmenname eines Dienstleisters oder die identische Firmenbezeichnung aus SG4 NAD+SU / DDM / DEB / Z31 / Z34 / Z35 / Z36 eingetragen werden.,228
+Name und Anschrift Bewegungsdaten,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,193,,,Name und Anschrift Bewegungsdaten,SG4,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,229
+Name und Anschrift Bewegungsdaten,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,194,,,Name und Anschrift Bewegungsdaten,SG4,NAD,3042,,,,Straße und Hausnummer oder Postfach,X,,230
+Name und Anschrift Bewegungsdaten,SG4,NAD,3164,,,,Ort,X,,195,,,Name und Anschrift Bewegungsdaten,SG4,NAD,3164,,,,Ort,X,,231
 Name und Anschrift Bewegungsdaten,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
-[3] wenn vorhanden ",196,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
+[3] wenn vorhanden ",196,ÄNDERUNG,Bedingung_FV2304|Bedingung_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3251,,,,Postleitzahl,M [2] S [3],"[2] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält
 [3] wenn vorhanden",232
-Name und Anschrift Bewegungsdaten,SG4,NAD,3207,,,,"Ländername, Code",X,,197,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Name und Anschrift Bewegungsdaten,SG4,NAD,3207,,,,"Ländername, Code",X,,233
-Ansprechpartner,SG7,,,,,,,Muss,,198,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,,,,,,,Muss,,234
-Ansprechpartner,SG7,CTA,,,,,,Muss,,199,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,,,,,,Muss,,235
-Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,200,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,236
-Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",201,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",237
-Kommunikationsverbindung,SG7,COM,,,,,,Muss,,202,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,238
+Name und Anschrift Bewegungsdaten,SG4,NAD,3207,,,,"Ländername, Code",X,,197,,,Name und Anschrift Bewegungsdaten,SG4,NAD,3207,,,,"Ländername, Code",X,,233
+Ansprechpartner,SG7,,,,,,,Muss,,198,,,Ansprechpartner,SG7,,,,,,,Muss,,234
+Ansprechpartner,SG7,CTA,,,,,,Muss,,199,,,Ansprechpartner,SG7,CTA,,,,,,Muss,,235
+Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,200,,,Ansprechpartner,SG7,CTA,3139,,IC,,Informationskontakt,X,,236
+Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",201,,,Ansprechpartner,SG7,CTA,3412,,,,Name der organisatorischen Einheit,X [501],"[501] Hinweis: Es darf kein Name einer natürlichen Person übermittelt werden, stattdessen ist die organisatorische Einheit im Unternehmen zu nennen.",237
+Kommunikationsverbindung,SG7,COM,,,,,,Muss,,202,,,Kommunikationsverbindung,SG7,COM,,,,,,Muss,,238
 Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",203,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",203,,,Kommunikationsverbindung,SG7,COM,3148,,,,Nummer / Adresse,X (([939][6]) ∨ ([940][8])) ∧ [502],"[6] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [8] wenn im DE3155 im demselben COM der Code TE / FX vorhanden ist
 [502] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
 [940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",239
-Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,204,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,240
-Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,205,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,241
-Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,206,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,242
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,207,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,,,,,Muss,,243
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,208,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,244
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,209,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,245
+Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,204,,,Kommunikationsverbindung,SG7,COM,3155,,EM,,Elektronische Post,X [1P1..1],,240
+Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,205,,,Kommunikationsverbindung,SG7,COM,3155,,TE,,Telefon,X [1P1..1],,241
+Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,206,,,Kommunikationsverbindung,SG7,COM,3155,,FX,,Telefax,X [1P0..1],,242
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,207,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,243
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,208,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,244
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,209,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,245

@@ -61,8 +61,8 @@ MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,34,ÄNDERUNG,Segment ID_FV2310|Segment
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,51
 ,,,,,,,,,,,NEU,,Status der Antwort,SG4,STS,,00039,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4,52
-EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,53
-EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,54
+EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,53
+EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,54
 Vorgang,SG4,,,,,,,Muss,,37,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,,,,,,Muss,,38,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,39,ENTFÄLLT,,,,,,,,,,,,
@@ -137,8 +137,8 @@ Grund der Privilegierung nach EnFG,SG10,CAV,7111,,ZU6,,§ 22 EnFG elektrisch ang
 ,,,,,,,,,,,NEU,,Grund der Privilegierung nach EnFG,SG10,CAV,7111,,ZU9,,§§ 30 - 35 EnFG stromkostenintensive Unternehmen,X [1P0..1],,97
 ,,,,,,,,,,,NEU,,Grund der Privilegierung nach EnFG,SG10,CAV,7111,,ZV0,,§ 36 EnFG Herstellung von Wasserstoff in stromkostenintensiven Unternehmen,X [1P0..1],,98
 ,,,,,,,,,,,NEU,,Grund der Privilegierung nach EnFG,SG10,CAV,7111,,ZV1,,§ 37 EnFG Schienenbahnen,X [1P0..1],,99
-EDIFACT Struktur,SG10,CAV,7111,,ZU7,,§ 23 EnFG Umlageerhebung bei Anlagen zur Verstromung von Kuppelgasen,X 1P[0..1],,95,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG10,CAV,7111,,ZV2,,§ 38 EnFG elektrische betriebene Bussen im Linienverkehr,X [1P0..1],,100
-EDIFACT Struktur,SG10,CAV,7111,,ZU8,,§ 24 EnFG Herstellung von Grünen Wasserstoff,X 1P[0..1],,96,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG10,CAV,7111,,ZV3,,§ 39 EnFG Landstromanlagen,X [1P0..1],,101
+EDIFACT Struktur,SG10,CAV,7111,,ZU7,,§ 23 EnFG Umlageerhebung bei Anlagen zur Verstromung von Kuppelgasen,X 1P[0..1],,95,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404,EDIFACT Struktur,SG10,CAV,7111,,ZV2,,§ 38 EnFG elektrische betriebene Bussen im Linienverkehr,X [1P0..1],,100
+EDIFACT Struktur,SG10,CAV,7111,,ZU8,,§ 24 EnFG Herstellung von Grünen Wasserstoff,X 1P[0..1],,96,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404,EDIFACT Struktur,SG10,CAV,7111,,ZV3,,§ 39 EnFG Landstromanlagen,X [1P0..1],,101
 ,,,,,,,,,,,NEU,,Kunde des Lieferanten,SG12,,,,,,,Soll [202] ∧ [336],"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
 [336] Wenn in Änderungsmeldung gefüllt",102
 ,,,,,,,,,,,NEU,,Kunde des Lieferanten,SG12,NAD,,00518,,,,Muss,,103
@@ -151,7 +151,7 @@ EDIFACT Struktur,SG10,CAV,7111,,ZU8,,§ 24 EnFG Herstellung von Grünen Wasserst
 ,,,,,,,,,,,NEU,,Kundennummer beim Lieferanten,SG12,RFF,1154,00519,,,Kundennummer beim LF,X,,110
 ,,,,,,,,,,,NEU,,Referenz auf die ID der Marktlokation,SG12,RFF,,00521,,,,Muss,,111
 ,,,,,,,,,,,NEU,,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,112
-EDIFACT Struktur,SG10,CAV,7111,,ZU9,,§§ 30 - 35 EnFG stromkostenintensive Unternehmen,X 1P[0..1],,97,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,113
+EDIFACT Struktur,SG10,CAV,7111,,ZU9,,§§ 30 - 35 EnFG stromkostenintensive Unternehmen,X 1P[0..1],,97,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,113
 EDIFACT Struktur,SG10,CAV,7111,,ZV0,,§ 36 EnFG Herstellung von Wasserstoff in stromkostenintensiven Unternehmen,X 1P[0..1],,98,ENTFÄLLT,,,,,,,,,,,,
 EDIFACT Struktur,SG10,CAV,7111,,ZV1,,§ 37 EnFG Schienenbahnen,X 1P[0..1],,99,ENTFÄLLT,,,,,,,,,,,,
 EDIFACT Struktur,SG10,CAV,7111,,ZV2,,§ 38 EnFG elektrische betriebene Bussen im Linienverkehr,X 1P[0..1],,100,ENTFÄLLT,,,,,,,,,,,,
@@ -178,9 +178,9 @@ Kundennummer beim Lieferanten,SG12,RFF,1154,,,,Kundennummer beim LF,X,,110,ENTF�
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",122
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,123
-Referenz auf die ID der Marktlokation,SG12,RFF,,,,,,Muss,,111,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,124
-Referenz auf die ID der Marktlokation,SG12,RFF,1153,,Z18,,Marktlokation,X,,112,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,125
-Referenz auf die ID der Marktlokation,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,113,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,126
+Referenz auf die ID der Marktlokation,SG12,RFF,,,,,,Muss,,111,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,124
+Referenz auf die ID der Marktlokation,SG12,RFF,1153,,Z18,,Marktlokation,X,,112,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,125
+Referenz auf die ID der Marktlokation,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,113,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,126
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Soll [202] ∧ [336],"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
 [336] Wenn in Änderungsmeldung gefüllt",114,ENTFÄLLT,,,,,,,,,,,,
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,,,,,Muss,,115,ENTFÄLLT,,,,,,,,,,,,

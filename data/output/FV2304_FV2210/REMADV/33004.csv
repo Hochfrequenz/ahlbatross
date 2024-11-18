@@ -90,28 +90,28 @@ Abweichungsgrund auf Positionsebene,SG12,AJT,1082,,E_0407 S_0103 S_0104,,EBD Nr.
 ,,,,,,,,,,,NEU,,Abweichungsgrund auf Positionsebene,SG12,AJT,1082,,E_0210,,EBD Nr. E_0210,X,,74
 ,,,,,,,,,,,NEU,,Abweichungsgrund auf Positionsebene,SG12,AJT,1082,,E_0259 S_0103 S_0104,,EBD Nr. E_0259 Codeliste Strom Nr. S_0103 Codeliste Strom Nr. S_0104,XXX,,75
 Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,,,,,,Muss [26] ⊻ [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/ AB9/AD6
-[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",74,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,,,,,,Muss [26] ⊻ [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",74,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,,,,,,Muss [26] ⊻ [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
 [35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",76
-Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26],,75,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26],,77
+Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26],,75,,,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,AFL,,Zugehörige Rechnungen,X [26],,77
 Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/ AB9/AD6
-[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",76,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
+[35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",76,ÄNDERUNG,Bedingung_FV2210|Bedingung_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1153,,ACW,,Referenznummer einer vorangegangenen Nachricht,X [35],"[26] Wenn in dieser SG12 AJT DE4465 = A27/A51/A62/ A82/AA1/AA6/AA7/AB8/AD6
 [35] Wenn in dieser SG12 AJT DE4465 = A34/A39/AA2/AB2",78
-Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1154,,,,"Referenz, Identifikation",X,,77,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1154,,,,"Referenz, Identifikation",X,,79
+Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1154,,,,"Referenz, Identifikation",X,,77,,,Zugehörige Rechnung oder Bestellung auf Positionsebene,SG12,RFF,1154,,,,"Referenz, Identifikation",X,,79
 Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,,,,,,Muss [28] ⊻ [43] Kann,"[28] Wenn in dieser SG12 AJT DE4465 = A23/A26/A35/ A36/A38/A46/A47/A48/A50/ A58/A59/A61/A77/A84/A99
-[43] Wenn in SG12 AJT DE4465=28",78,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,,,,,,Muss [43] ⊻ ([28] ∧ ([51] ⊻ [52])) ⊻ ([53] ∧ ([54] ⊻ [55])) Kann,"[28] Wenn in dieser SG12 AJT DE4465 = A23/A26/A35/ A36/A38/A46/A47/A48/A50/ A58/A59/A61/A77/A84/A99
+[43] Wenn in SG12 AJT DE4465=28",78,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,,,,,,Muss [43] ⊻ ([28] ∧ ([51] ⊻ [52])) ⊻ ([53] ∧ ([54] ⊻ [55])) Kann,"[28] Wenn in dieser SG12 AJT DE4465 = A23/A26/A35/ A36/A38/A46/A47/A48/A50/ A58/A59/A61/A77/A84/A99
 [43] Wenn in SG12 AJT DE4465=28
 [51] Wenn in dieser SG12 AJT DE1082 = E_0406
 [52] Wenn in dieser SG12 AJT DE1082 = E_0407
 [53] Wenn in dieser SG12 AJT DE4465 = A25/A99
 [54] Wenn in dieser SG12 AJT DE1082 = E_0210
 [55] Wenn in dieser SG12 AJT DE1082 = E_0259",80
-Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4451,,ABO,,Information über Abweichung,X,,79,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4451,,ABO,,Information über Abweichung,X,,81
-Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4440,,,,Freier Text,X,,80,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4440,,,,Freier Text,X,,82
-Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,81,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,83
-Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,82,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,84
-Summenbetrag,,MOA,,,,,,Muss,,83,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,,,,,,Muss,,85
-Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,84,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,86
-Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,85,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,87
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,86,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,,,,,,Muss,,88
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,87,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,89
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,88,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,90
+Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4451,,ABO,,Information über Abweichung,X,,79,,,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4451,,ABO,,Information über Abweichung,X,,81
+Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4440,,,,Freier Text,X,,80,,,Nähere Erläuterung des Abweichungsgrundes auf Positionsebene,SG12,FTX,4440,,,,Freier Text,X,,82
+Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,81,,,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,83
+Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,82,,,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,84
+Summenbetrag,,MOA,,,,,,Muss,,83,,,Summenbetrag,,MOA,,,,,,Muss,,85
+Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,84,,,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,86
+Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,85,,,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],[926] Format: Möglicher Wert: 0 ,87
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,86,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,88
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,87,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,89
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,88,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,90

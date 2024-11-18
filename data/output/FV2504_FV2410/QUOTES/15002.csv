@@ -124,28 +124,28 @@ Geldbetrag,SG29,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,87,ENTFÄLLT,,,,,,,
 Geldbetrag,SG29,MOA,,00048,,,,Muss,,88,ENTFÄLLT,,,,,,,,,,,,
 Geldbetrag,SG29,MOA,5025,00048,203,,Positionsbetrag (ohne USt.),X,,89,ENTFÄLLT,,,,,,,,,,,,
 Geldbetrag,SG29,MOA,5004,00048,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,90,ENTFÄLLT,,,,,,,,,,,,
-Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,91,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Preisangaben,SG31,,,,,,,Muss ([81] ∧ [2069]) ⊻ ([82] ∧ [2070]),"[81] Wenn IMD DE7081 (Produkt-/Leistungsbeschreibung) mit Wert Z33 (Angebot auf Basis Preisblatt) vorhanden.
+Preisangaben,SG31,,,,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,91,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Preisangaben,SG31,,,,,,,Muss ([81] ∧ [2069]) ⊻ ([82] ∧ [2070]),"[81] Wenn IMD DE7081 (Produkt-/Leistungsbeschreibung) mit Wert Z33 (Angebot auf Basis Preisblatt) vorhanden.
 [82] Wenn IMD DE7081 (Produkt-/Leistungsbeschreibung) mit Wert Z34 (Individuelles Angebot) vorhanden.
 [2069] Pro SG27 LIN ist die SG31 PRI genau einmal anzugeben. Dabei muss in der SG31 PRI im DE6411 eine Preisangabe mit dem Code H87 (Stück) angeben sein.
 [2070] Pro SG27 LIN ist die SG31 PRI zweimal anzugeben. Dabei muss in genau einer SG31 PRI im DE6411 eine Preisangabe mit dem Code H87 (Stück) angeben sein und in genau einer SG31 PRI im DE6411 eine Preisangabe mit dem Code DAY (Tag).",77
-Preisangaben,SG31,PRI,,00049,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Preisangaben,SG31,PRI,,00046,,,,Muss,,78
-Preisangaben,SG31,PRI,5125,00049,CAL,,Berechnungspreis,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Preisangaben,SG31,PRI,5125,00046,CAL,,Berechnungspreis,X,,79
-Preisangaben,SG31,PRI,5118,00049,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Preisangaben,SG31,PRI,5118,00046,,,"Preis, Betrag",M [21] ∧ [912],"[21] Wenn IMD++Z34 vorhanden
+Preisangaben,SG31,PRI,,00049,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Preisangaben,SG31,PRI,,00046,,,,Muss,,78
+Preisangaben,SG31,PRI,5125,00049,CAL,,Berechnungspreis,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Preisangaben,SG31,PRI,5125,00046,CAL,,Berechnungspreis,X,,79
+Preisangaben,SG31,PRI,5118,00049,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Preisangaben,SG31,PRI,5118,00046,,,"Preis, Betrag",M [21] ∧ [912],"[21] Wenn IMD++Z34 vorhanden
 [912] Format: max. 6 Nachkommastellen",80
 ,,,,,,,,,,,NEU,,Preisangaben,SG31,PRI,5284,00046,,,"Einzelpreisbasis, Menge",X [908],[908] Format: Mögliche Werte: 1 bis n,81
 ,,,,,,,,,,,NEU,,Preisangaben,SG31,PRI,6411,00046,H87,,Stück,X ,,82
 ,,,,,,,,,,,NEU,,Preisangaben,SG31,PRI,6411,,DAY,,Tag,X [21],[21] Wenn IMD++Z34 vorhanden,83
 Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt (AN nutzt mehrere Marktlokationen in einem Gebäude)
-[20] Wenn IMD++Z33 vorhanden",95,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt, an welchen der identische Anschlussnutzer vorhanden ist und deren messtechnische Einordnung iMS ist (Marktlokation aus SG11 LOC+172 und alle Marktlokationen, die in einem SG29 RFF+Z18 aufgeführt sind).
+[20] Wenn IMD++Z33 vorhanden",95,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,,,,,,,Soll [18] ∧ [20],"[18] Wenn Angebot mehrere Marktlokationen abdeckt, an welchen der identische Anschlussnutzer vorhanden ist und deren messtechnische Einordnung iMS ist (Marktlokation aus SG11 LOC+172 und alle Marktlokationen, die in einem SG29 RFF+Z18 aufgeführt sind).
 [20] Wenn IMD++Z33 vorhanden",84
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00051,,,,Muss,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00048,,,,Muss,,85
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00051,Z18,,Marktlokation,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00048,Z18,,Marktlokation,X,,86
-Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00051,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,98,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00048,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,87
-Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,99,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abschnitts-Kontrollsegment,,UNS,,00073,,,,Muss,,88
-Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Abschnitts-Kontrollsegment,,UNS,0081,00073,und Summenteil,,,S,,89
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00051,,,,Muss,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,,00048,,,,Muss,,85
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00051,Z18,,Marktlokation,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1153,00048,Z18,,Marktlokation,X,,86
+Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00051,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,98,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf ID weiterer Marktlokationen,SG32,RFF,1154,00048,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,87
+Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,99,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abschnitts-Kontrollsegment,,UNS,,00073,,,,Muss,,88
+Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Abschnitts-Kontrollsegment,,UNS,0081,00073,und Summenteil,,,S,,89
 Summenbetrag (netto),,MOA,,00098,,,,Muss [21],[21] Wenn IMD++Z34 vorhanden,101,ENTFÄLLT,,,,,,,,,,,,
 Summenbetrag (netto),,MOA,5025,00098,97,,Gesamtbetrag des Angebots,X,,102,ENTFÄLLT,,,,,,,,,,,,
 Summenbetrag (netto),,MOA,5004,00098,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,103,ENTFÄLLT,,,,,,,,,,,,
-Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,104,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00074,,,,Muss,,90
-Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,105,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00074,,,Anzahl der Segmente in einer Nachricht,X,,91
-Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,106,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00074,,,Nachrichten-Referenznummer,X,,92
+Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,104,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00074,,,,Muss,,90
+Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,105,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00074,,,Anzahl der Segmente in einer Nachricht,X,,91
+Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,106,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00074,,,Nachrichten-Referenznummer,X,,92
