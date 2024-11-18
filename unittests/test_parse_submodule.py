@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
 
-from ahb_diff.main import determine_consecutive_formatversions, get_matching_pruefid_files, parse_formatversions
+from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files, parse_formatversions
 
 
 def test_parse_valid_formatversions() -> None:
@@ -37,7 +37,7 @@ def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """
     test find matching files across formatversions.
     """
-    monkeypatch.setattr("ahb_diff.main.SUBMODULE", tmp_path)
+    monkeypatch.setattr("ahlbatross.main.SUBMODULE", tmp_path)
 
     submodule: dict[str, dict[str, dict[str, str]]] = {
         "FV2504": {
@@ -71,7 +71,7 @@ def test_determine_consecutive_formatversions(tmp_path: Path, monkeypatch: Monke
     """
     test successful determination of consecutive formatversions.
     """
-    monkeypatch.setattr("ahb_diff.main.SUBMODULE", tmp_path)
+    monkeypatch.setattr("ahlbatross.main.SUBMODULE", tmp_path)
 
     submodule: dict[str, dict[str, bool | dict[str, str]]] = {
         "FV2504": {"nachrichtenformat_1": True},

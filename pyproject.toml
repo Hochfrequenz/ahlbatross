@@ -1,5 +1,5 @@
 [project]
-name = "ahb-diff"
+name = "ahlbatross"
 description = ""
 version = "0.1.0"
 license = { text = "MIT" }
@@ -54,8 +54,8 @@ dev = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/Hochfrequenz/ahb-diff/releases"
-Homepage = "https://github.com/Hochfrequenz/ahb-diff"
+Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"
+Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [tool.black]
 line-length = 120
