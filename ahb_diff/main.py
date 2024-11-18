@@ -5,7 +5,7 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Tuple
+from typing import Any, Tuple, TypeAlias
 
 import pandas as pd
 from pandas.core.frame import DataFrame
@@ -16,6 +16,8 @@ logger = logging.getLogger(__name__)
 
 SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 OUTPUT_DIR = Path("data/output")
+
+XlsxFormat: TypeAlias = Format
 
 
 def parse_formatversions(formatversion: str) -> Tuple[int, int]:
@@ -212,7 +214,7 @@ def create_row(
     return row
 
 
-# pylint:disable=too-many-statements
+# pylint:disable=too-many-branches, too-many-statements
 def align_columns(
     previous_pruefid: DataFrame,
     subsequent_pruefid: DataFrame,
@@ -222,9 +224,20 @@ def align_columns(
     """
     aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
     """
+    # get all unique columns from both dataframes.
+    all_columns = sorted(list(set(previous_pruefid.columns) | set(subsequent_pruefid.columns)))
+    columns_without_segmentname = [col for col in all_columns if col != "Segmentname"]
+
+    for col in all_columns:
+        if col not in previous_pruefid.columns:
+            previous_pruefid[col] = ""
+        if col not in subsequent_pruefid.columns:
+            subsequent_pruefid[col] = ""
+
     # add corresponding formatversions as suffixes to columns.
     df_of_previous_formatversion = previous_pruefid.copy()
     df_of_subsequent_formatversion = subsequent_pruefid.copy()
+
     df_of_previous_formatversion = df_of_previous_formatversion.rename(
         columns={"Segmentname": f"Segmentname_{previous_formatversion}"}
     )
@@ -232,16 +245,13 @@ def align_columns(
         columns={"Segmentname": f"Segmentname_{subsequent_formatversion}"}
     )
 
-    # preserve column order.
-    columns_of_previous_formatversion = [col for col in previous_pruefid.columns if col != "Segmentname"]
-    columns_of_subsequent_formatversion = [col for col in subsequent_pruefid.columns if col != "Segmentname"]
-
     column_order = (
         [f"Segmentname_{previous_formatversion}"]
-        + [f"{col}_{previous_formatversion}" for col in columns_of_previous_formatversion]
+        + [f"{col}_{previous_formatversion}" for col in columns_without_segmentname]
         + ["Änderung"]
+        + ["changed_entries"]
         + [f"Segmentname_{subsequent_formatversion}"]
-        + [f"{col}_{subsequent_formatversion}" for col in columns_of_subsequent_formatversion]
+        + [f"{col}_{subsequent_formatversion}" for col in columns_without_segmentname]
     )
 
     if df_of_previous_formatversion.empty and df_of_subsequent_formatversion.empty:
@@ -260,6 +270,7 @@ def align_columns(
         ]
         for row in result_rows:
             row["Änderung"] = "ENTFÄLLT"
+            row["changed_entries"] = ""
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
@@ -276,6 +287,7 @@ def align_columns(
         ]
         for row in result_rows:
             row["Änderung"] = "NEU"
+            row["changed_entries"] = ""
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
@@ -299,6 +311,7 @@ def align_columns(
                 subsequent_formatversion=subsequent_formatversion,
             )
             row["Änderung"] = "NEU"
+            row["changed_entries"] = ""
             result_rows.append(row)
             j += 1
         elif j >= len(segments_of_subsequent_formatversion):
@@ -310,6 +323,7 @@ def align_columns(
                 subsequent_formatversion=subsequent_formatversion,
             )
             row["Änderung"] = "ENTFÄLLT"
+            row["changed_entries"] = ""
             result_rows.append(row)
             i += 1
         elif segments_of_previous_formatversion[i] == segments_of_subsequent_formatversion[j]:
@@ -321,7 +335,23 @@ def align_columns(
                 previous_formatversion=previous_formatversion,
                 subsequent_formatversion=subsequent_formatversion,
             )
-            row["Änderung"] = ""
+
+            # check for changes within one row.
+            changed_entries = []
+            has_changes = False
+
+            # compare all columns except `Segmentname`.
+            for col in columns_without_segmentname:
+                prev_val = str(df_of_previous_formatversion.iloc[i][col])
+                subs_val = str(df_of_subsequent_formatversion.iloc[j][col])
+
+                # only consider cells/entries that are not empty for both formatversions.
+                if prev_val.strip() and subs_val.strip() and prev_val != subs_val:
+                    has_changes = True
+                    changed_entries.extend([f"{col}_{previous_formatversion}", f"{col}_{subsequent_formatversion}"])
+
+            row["Änderung"] = "ÄNDERUNG" if has_changes else ""
+            row["changed_entries"] = "|".join(changed_entries) if changed_entries else ""
             result_rows.append(row)
             i += 1
             j += 1
@@ -329,18 +359,18 @@ def align_columns(
             try:
                 # try to find next matching value.
                 next_match = segments_of_subsequent_formatversion[j:].index(segments_of_previous_formatversion[i])
-                for _ in range(next_match):
+                for k in range(next_match):
                     row = create_row(
                         previous_df=df_of_previous_formatversion,
                         subsequent_df=df_of_subsequent_formatversion,
-                        j=j,
+                        j=j + k,
                         previous_formatversion=previous_formatversion,
                         subsequent_formatversion=subsequent_formatversion,
                     )
                     row["Änderung"] = "NEU"
+                    row["changed_entries"] = ""
                     result_rows.append(row)
-                    j += 1
-                continue
+                j += next_match
             except ValueError:
                 # no match found: add old value and empty new cell.
                 row = create_row(
@@ -351,12 +381,13 @@ def align_columns(
                     subsequent_formatversion=subsequent_formatversion,
                 )
                 row["Änderung"] = "ENTFÄLLT"
+                row["changed_entries"] = ""
                 result_rows.append(row)
                 i += 1
 
-    # create dataframe NaN being replaced by empty strings.
-    result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
-    return result_df[column_order]
+            # create dataframe with NaN being replaced by empty strings.
+            result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
+            return result_df[column_order]
 
 
 # pylint:disable=too-many-branches, too-many-locals
@@ -366,16 +397,18 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     sheet_name = Path(output_path_xlsx).stem  # excel sheet name = <pruefid>
 
-    # add column for indexing through all rows
+    # add column for indexing through all rows.
     df = df.reset_index()
     df["index"] = df["index"] + 1
     df = df.rename(columns={"index": "#"})
-    # remove duplicate columns that index through the rows
-    df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:")]]
+
+    changed_entries_series = df["changed_entries"] if "changed_entries" in df.columns else pd.Series([""] * len(df))
+
+    # remove duplicate columns that index through the rows and the changed_entries column.
+    df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:") and col != "changed_entries"]]
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
         df_filtered.to_excel(writer, sheet_name=sheet_name, index=False)
-        sheet_name = Path(output_path_xlsx).stem
 
         workbook = writer.book
         worksheet = writer.sheets[sheet_name]
@@ -389,21 +422,23 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             }
             worksheet.add_table(0, 0, len(df_filtered), len(df_filtered.columns) - 1, table_options)
 
-        # base formatting
+        # base formatting.
         header_format = workbook.add_format(
             {"bold": True, "bg_color": "#D9D9D9", "border": 1, "align": "center", "text_wrap": True}
         )
         base_format = workbook.add_format({"border": 1, "text_wrap": True})
 
         # formatting highlighted/changed cells.
-        diff_formats: dict[str, Format] = {
+        diff_formats = {
             "NEU": workbook.add_format({"bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
             "ENTFÄLLT": workbook.add_format({"bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
+            "ÄNDERUNG": workbook.add_format({"bg_color": "#F5DC98", "border": 1, "text_wrap": True}),
+            "segmentname_changed": workbook.add_format({"bg_color": "#D9D9D9", "border": 1, "text_wrap": True}),
             "": workbook.add_format({"border": 1, "text_wrap": True}),
         }
 
-        # formatting diff column.
-        diff_text_formats: dict[str, Format] = {
+        # formatting 'Änderung' column.
+        diff_text_formats = {
             "NEU": workbook.add_format(
                 {
                     "bold": True,
@@ -424,13 +459,23 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                     "text_wrap": True,
                 }
             ),
+            "ÄNDERUNG": workbook.add_format(
+                {
+                    "bold": True,
+                    "color": "#B8860B",
+                    "border": 1,
+                    "bg_color": "#D9D9D9",
+                    "align": "center",
+                    "text_wrap": True,
+                }
+            ),
             "": workbook.add_format({"border": 1, "bg_color": "#D9D9D9", "align": "center", "text_wrap": True}),
         }
 
+        segment_name_bold = workbook.add_format({"bold": True, "border": 1, "text_wrap": True, "bg_color": "#D9D9D9"})
+
         for col_num, value in enumerate(df_filtered.columns.values):
             worksheet.write(0, col_num, value, header_format)
-
-        diff_idx = df_filtered.columns.get_loc("Änderung")
 
         previous_formatversion = None
         subsequent_formatversion = None
@@ -443,34 +488,20 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                     subsequent_formatversion = suffix
                     break
 
-        for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
-            row_data = list(row)
-            diff_value = str(row_data[diff_idx])
-
-            for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
-                value = str(value) if value != "" else ""
-
-                if col_name == "Änderung":
-                    worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
-                elif diff_value == "ENTFÄLLT" and previous_formatversion and col_name.endswith(previous_formatversion):
-                    worksheet.write(row_num, col_num, value, diff_formats["ENTFÄLLT"])
-                elif diff_value == "NEU" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
-                    worksheet.write(row_num, col_num, value, diff_formats["NEU"])
-                else:
-                    worksheet.write(row_num, col_num, value, base_format)
-
-        # format first row each time the `Segmentname` changes
-        diff_formats["segmentname_changed"] = workbook.add_format(
-            {"bg_color": "#D9D9D9", "border": 1, "text_wrap": True}
-        )
-        segment_name_bold = workbook.add_format({"bold": True, "border": 1, "text_wrap": True, "bg_color": "#D9D9D9"})
-
+        diff_idx = df_filtered.columns.get_loc("Änderung")
         previous_segmentname = None
 
         for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
             row_data = list(row)
             diff_value = str(row_data[diff_idx])
 
+            changed_entries = []
+            if diff_value == "ÄNDERUNG":
+                changed_entries_value = str(changed_entries_series.iloc[row_num - 1])
+                if changed_entries_value != "nan":
+                    changed_entries = changed_entries_value.split("|")
+
+            # check if current `Segmentname` changed.
             current_segmentname = None
             segmentname_col = None
             for col_name in df_filtered.columns:
@@ -485,24 +516,34 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             is_new_segment = current_segmentname and current_segmentname != previous_segmentname
             previous_segmentname = current_segmentname
 
-            # apply formatting only when `Segmentname` is not affected by "NEU"/"ENTFÄLLT" styling
             for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
                 value = str(value) if value != "" else ""
 
                 if col_name == "Änderung":
                     worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
-                elif diff_value == "ENTFÄLLT" and previous_formatversion and col_name.endswith(previous_formatversion):
+                elif (
+                    diff_value == "ENTFÄLLT"
+                    and previous_formatversion is not None
+                    and isinstance(col_name, str)
+                    and col_name.endswith(previous_formatversion)
+                ):
                     worksheet.write(row_num, col_num, value, diff_formats["ENTFÄLLT"])
-                elif diff_value == "NEU" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
+                elif (
+                    diff_value == "NEU"
+                    and subsequent_formatversion is not None
+                    and isinstance(col_name, str)
+                    and col_name.endswith(subsequent_formatversion)
+                ):
                     worksheet.write(row_num, col_num, value, diff_formats["NEU"])
-                else:
-                    if is_new_segment and diff_value == "":
-                        if col_name == segmentname_col:
-                            worksheet.write(row_num, col_num, value, segment_name_bold)
-                        else:
-                            worksheet.write(row_num, col_num, value, diff_formats["segmentname_changed"])
+                elif diff_value == "ÄNDERUNG" and col_name in changed_entries:
+                    worksheet.write(row_num, col_num, value, diff_formats["ÄNDERUNG"])
+                elif is_new_segment and diff_value == "":
+                    if col_name == segmentname_col:
+                        worksheet.write(row_num, col_num, value, segment_name_bold)
                     else:
-                        worksheet.write(row_num, col_num, value, base_format)
+                        worksheet.write(row_num, col_num, value, diff_formats["segmentname_changed"])
+                else:
+                    worksheet.write(row_num, col_num, value, base_format)
 
         column_widths = {
             "#": 25,
