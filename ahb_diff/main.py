@@ -368,9 +368,10 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
         df_filtered.to_excel(writer, sheet_name="AHB-Diff", index=False)
+        sheet_name = Path(output_path_xlsx).stem
 
         workbook = writer.book
-        worksheet = writer.sheets["AHB-Diff"]
+        worksheet = writer.sheets[sheet_name]
 
         # sticky table header
         worksheet.freeze_panes(1, 0)
