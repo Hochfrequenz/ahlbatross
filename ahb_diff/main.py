@@ -224,9 +224,31 @@ def align_columns(
     """
     aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
     """
+
+    default_column_order = [
+        "Segmentname",
+        "Segmentgruppe",
+        "Segment",
+        "Datenelement",
+        "Segment ID",
+        "Code",
+        "Qualifier",
+        "Beschreibung",
+        "Bedingungsausdruck",
+        "Bedingung",
+    ]
+
     # get all unique columns from both dataframes.
-    all_columns = sorted(list(set(previous_pruefid.columns) | set(subsequent_pruefid.columns)))
-    columns_without_segmentname = [col for col in all_columns if col != "Segmentname"]
+    all_columns = set(previous_pruefid.columns) | set(subsequent_pruefid.columns)
+
+    columns_without_segmentname = []
+    for col in default_column_order:
+        if col in all_columns and col != "Segmentname":
+            columns_without_segmentname.append(col)
+
+    for col in sorted(all_columns):
+        if col not in default_column_order and col != "Segmentname":
+            columns_without_segmentname.append(col)
 
     for col in all_columns:
         if col not in previous_pruefid.columns:
@@ -385,9 +407,9 @@ def align_columns(
                 result_rows.append(row)
                 i += 1
 
-            # create dataframe with NaN being replaced by empty strings.
-            result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
-            return result_df[column_order]
+    # create dataframe with NaN being replaced by empty strings.
+    result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
+    return result_df[column_order]
 
 
 # pylint:disable=too-many-branches, too-many-locals
@@ -404,7 +426,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
     changed_entries_series = df["changed_entries"] if "changed_entries" in df.columns else pd.Series([""] * len(df))
 
-    # remove duplicate columns that index through the rows and the changed_entries column.
+    # remove duplicate columns that index through the rows.
     df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:") and col != "changed_entries"]]
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
