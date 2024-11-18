@@ -19,15 +19,18 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
-
-[project.scripts]
-ahlbatross = "ahlbatross.main:main"
-
 dependencies = [
     "pandas>=2.2.3",
     "pandas-stubs>=2.2.3.241009",
     "xlsxwriter>=3.2.0"
 ]
+
+[project.scripts]
+ahlbatross = "ahlbatross.main:main"
+
+[project.urls]
+Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"
+Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [project.optional-dependencies]
 tests = [
@@ -57,10 +60,6 @@ dev = [
     "pip-tools"
 ]
 
-[project.urls]
-Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"
-Homepage = "https://github.com/Hochfrequenz/ahlbatross"
-
 [tool.black]
 line-length = 120
 target_version = ["py312", "py313"]
@@ -72,11 +71,9 @@ profile = "black"
 [tool.pylint."MESSAGES CONTROL"]
 max-line-length = 120
 
-[mypy]
-truethy-bool = true
-
 [tool.mypy]
 disable_error_code = []
+truthy-bool = true
 
 [build-system]
 requires = ["hatchling>=1.8.0"]
