@@ -424,17 +424,6 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
         diff_idx = df_filtered.columns.get_loc("diff")
 
-        def _try_convert_to_number(cell: str) -> int | float | str:
-            """
-            tries to format cell values to numbers where appropriate.
-            """
-            try:
-                if cell.isdigit():
-                    return int(cell)
-                return float(cell)
-            except ValueError:
-                return cell
-
         previous_formatversion = None
         subsequent_formatversion = None
         for col in df_filtered.columns:
@@ -451,16 +440,16 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             diff_value = str(row_data[diff_idx])
 
             for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
-                converted_value = _try_convert_to_number(str(value)) if value != "" else ""
+                value = str(value) if value != "" else ""
 
                 if col_name == "diff":
                     worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
                 elif diff_value == "REMOVED" and previous_formatversion and col_name.endswith(previous_formatversion):
-                    worksheet.write(row_num, col_num, converted_value, diff_formats["REMOVED"])
+                    worksheet.write(row_num, col_num, value, diff_formats["REMOVED"])
                 elif diff_value == "NEW" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
-                    worksheet.write(row_num, col_num, converted_value, diff_formats["NEW"])
+                    worksheet.write(row_num, col_num, value, diff_formats["NEW"])
                 else:
-                    worksheet.write(row_num, col_num, converted_value, base_format)
+                    worksheet.write(row_num, col_num, value, base_format)
 
         for col_num in range(len(df_filtered.columns)):
             worksheet.set_column(col_num, col_num, min(150 / 7, 21))  # cell width = 150 px.
