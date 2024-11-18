@@ -453,6 +453,51 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                 else:
                     worksheet.write(row_num, col_num, value, base_format)
 
+        # format first row each time the `Segmentname` changes
+        diff_formats["segmentname_changed"] = workbook.add_format(
+            {"bg_color": "#D9D9D9", "border": 1, "text_wrap": True}
+        )
+        segment_name_bold = workbook.add_format({"bold": True, "border": 1, "text_wrap": True, "bg_color": "#D9D9D9"})
+
+        previous_segmentname = None
+
+        for row_num, row in enumerate(df_filtered.itertuples(index=False), start=1):
+            row_data = list(row)
+            diff_value = str(row_data[diff_idx])
+
+            current_segmentname = None
+            segmentname_col = None
+            for col_name in df_filtered.columns:
+                if col_name.startswith("Segmentname_"):
+                    idx = df_filtered.columns.get_loc(col_name)
+                    value = str(row_data[idx])
+                    if value:
+                        current_segmentname = value
+                        segmentname_col = col_name
+                        break
+
+            is_new_segment = current_segmentname and current_segmentname != previous_segmentname
+            previous_segmentname = current_segmentname
+
+            # apply formatting only when `Segmentname` is not affected by "NEW"/"REMOVED" styling
+            for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
+                value = str(value) if value != "" else ""
+
+                if col_name == "diff":
+                    worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
+                elif diff_value == "REMOVED" and previous_formatversion and col_name.endswith(previous_formatversion):
+                    worksheet.write(row_num, col_num, value, diff_formats["REMOVED"])
+                elif diff_value == "NEW" and subsequent_formatversion and col_name.endswith(subsequent_formatversion):
+                    worksheet.write(row_num, col_num, value, diff_formats["NEW"])
+                else:
+                    if is_new_segment and diff_value == "":
+                        if col_name == segmentname_col:
+                            worksheet.write(row_num, col_num, value, segment_name_bold)
+                        else:
+                            worksheet.write(row_num, col_num, value, diff_formats["segmentname_changed"])
+                    else:
+                        worksheet.write(row_num, col_num, value, base_format)
+
         column_widths = {
             "#": 50,
             "Segmentname_": 175,
