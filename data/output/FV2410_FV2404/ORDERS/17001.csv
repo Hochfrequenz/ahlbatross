@@ -1,109 +1,109 @@
-Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,diff,Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410
-Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,00001,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,ORDERS,,Bestellung,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,00001,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,09B,,Ausgabe 2009 - B,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,00002,Z10,,Geräteübernahme,X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z10,,Geräteübernahme,X,
-Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,00003,,,,Muss,,,Nachrichtendatum,10,,DTM,,00003,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
-Ausführungsdatum,14,,DTM,,00004,,,,Muss,,,Ausführungsdatum,14,,DTM,,00004,,,,Muss,
-Ausführungsdatum,15,,DTM,2005,00004,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,00004,203,,Ausführungsdatum/-zeit,X,
-Ausführungsdatum,16,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,,Ausführungsdatum,16,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],
-Ausführungsdatum,17,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,
-Produkt-/ Leistungsbeschreibung,18,,IMD,,00009,,,,Muss [502],[502] Hinweis: Der Qualifier in DE7081 muss aus der in SG1 referenzierten QUOTES übernommen werden,,Produkt-/ Leistungsbeschreibung,18,,IMD,,00009,,,,Muss [502],[502] Hinweis: Der Qualifier in DE7081 muss aus der in SG1 referenzierten QUOTES übernommen werden
-Produkt-/ Leistungsbeschreibung,19,,IMD,7081,00009,Z07,,Kauf,X,,,Produkt-/ Leistungsbeschreibung,19,,IMD,7081,00009,Z07,,Kauf,X,
-Produkt-/ Leistungsbeschreibung,20,,IMD,7081,,Z08,,Nutzungsüberlassung,X,,,Produkt-/ Leistungsbeschreibung,20,,IMD,7081,,Z08,,Nutzungsüberlassung,X,
-Referenz Nachrichtennummer,21,SG1,,,,,,,Muss,,,Referenz Nachrichtennummer,21,SG1,,,,,,,Muss,
-Referenz Nachrichtennummer,22,SG1,RFF,,00013,,,,Muss,,,Referenz Nachrichtennummer,22,SG1,RFF,,00013,,,,Muss,
-Referenz Nachrichtennummer,23,SG1,RFF,1153,00013,AAG,,Angebotsnummer,X,,,Referenz Nachrichtennummer,23,SG1,RFF,1153,00013,AAG,,Angebotsnummer,X,
-Referenz Nachrichtennummer,24,SG1,RFF,1154,00013,,,Nachrichtennummer,X [530],[530] Hinweis: Wert aus BGM+310 DE1004 der QUOTES mit der das Angebot erfolgt ist.,,Referenz Nachrichtennummer,24,SG1,RFF,1154,00013,,,Nachrichtennummer,X [530],[530] Hinweis: Wert aus BGM+310 DE1004 der QUOTES mit der das Angebot erfolgt ist.
-Prüfidentifikator,25,SG1,,,,,,,Muss,,,Prüfidentifikator,25,SG1,,,,,,,Muss,
-Prüfidentifikator,26,SG1,RFF,,00019,,,,Muss,,,Prüfidentifikator,26,SG1,RFF,,00019,,,,Muss,
-Prüfidentifikator,27,SG1,RFF,1153,00019,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,27,SG1,RFF,1153,00019,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,28,SG1,RFF,1154,00019,17001,,Bestellung Geräteübernahme,X,,,Prüfidentifikator,28,SG1,RFF,1154,00019,17001,,Bestellung Geräteübernahme,X,
-MP-ID Absender,29,SG2,,,,,,,Muss,,,MP-ID Absender,29,SG2,,,,,,,Muss,
-MP-ID Absender,30,SG2,NAD,,00020,,,,Muss,,,MP-ID Absender,30,SG2,NAD,,00020,,,,Muss,
-MP-ID Absender,31,SG2,NAD,3035,00020,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,31,SG2,NAD,3035,00020,Nachrichtenaussteller bzw. -absender,,,MS,
-MP-ID Absender,32,SG2,NAD,3039,00020,,,MP-ID,X,,,MP-ID Absender,32,SG2,NAD,3039,00020,,,MP-ID,X,
-MP-ID Absender,33,SG2,NAD,3055,00020,9,,GS1,X,,,MP-ID Absender,33,SG2,NAD,3055,00020,9,,GS1,X,
-MP-ID Absender,34,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,34,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Absender,35,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,35,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Ansprechpartner,36,SG5,,,,,,,Muss,,,Ansprechpartner,36,SG5,,,,,,,Muss,
-Ansprechpartner,37,SG5,CTA,,00021,,,,Muss,,,Ansprechpartner,37,SG5,CTA,,00021,,,,Muss,
-Ansprechpartner,38,SG5,CTA,3139,00021,,,,IC,,,Ansprechpartner,38,SG5,CTA,3139,00021,,,,IC,
-Ansprechpartner,39,SG5,CTA,3412,00021,,,Kontakt,X [503],[503] Hinweis: Angabe eines technischen Ansprechpartners für die Geräteübernahme,,Ansprechpartner,39,SG5,CTA,3412,00021,,,Kontakt,X [503],[503] Hinweis: Angabe eines technischen Ansprechpartners für die Geräteübernahme
-Kommunikationsverbindung,40,SG5,COM,,00022,,,,Muss,,,Kommunikationsverbindung,40,SG5,COM,,00022,,,,Muss,
-Kommunikationsverbindung,41,SG5,COM,3148,00022,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,41,SG5,COM,3148,00022,,,"Kommunikationsadresse, Identifikation",X,
-Kommunikationsverbindung,42,SG5,COM,3155,00022,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,42,SG5,COM,3155,00022,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,43,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,43,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,44,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,44,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,45,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,45,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,46,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,46,SG5,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,47,SG2,,,,,,,Muss,,,MP-ID Empfänger,47,SG2,,,,,,,Muss,
-MP-ID Empfänger,48,SG2,NAD,,00023,,,,Muss,,,MP-ID Empfänger,48,SG2,NAD,,00023,,,,Muss,
-MP-ID Empfänger,49,SG2,NAD,3035,00023,,,,MR,,,MP-ID Empfänger,49,SG2,NAD,3035,00023,,,,MR,
-MP-ID Empfänger,50,SG2,NAD,3039,00023,,,MP-ID,X,,,MP-ID Empfänger,50,SG2,NAD,3039,00023,,,MP-ID,X,
-MP-ID Empfänger,51,SG2,NAD,3055,00023,9,,GS1,X,,,MP-ID Empfänger,51,SG2,NAD,3055,00023,9,,GS1,X,
-MP-ID Empfänger,52,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,52,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Empfänger,53,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,53,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Meldepunkt,54,SG2,,,,,,,Muss,,,Meldepunkt,54,SG2,,,,,,,Muss,
-Meldepunkt,55,SG2,NAD,,00025,,,,Muss,,,Meldepunkt,55,SG2,NAD,,00025,,,,Muss,
-Meldepunkt,56,SG2,NAD,3035,00025,,,,DP,,,Meldepunkt,56,SG2,NAD,3035,00025,,,,DP,
-Meldepunkt,57,SG2,LOC,,00026,,,,Muss,,,Meldepunkt,57,SG2,LOC,,00026,,,,Muss,
-Meldepunkt,58,SG2,LOC,3227,00026,,,,172,,,Meldepunkt,58,SG2,LOC,3227,00026,,,,172,
-Meldepunkt,59,SG2,LOC,3225,00026,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
-[951] Format: Zählpunktbezeichnung",,Meldepunkt,59,SG2,LOC,3225,00026,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
-[951] Format: Zählpunktbezeichnung"
-Währungsangaben,60,SG7,,,,,,,Muss,,,Währungsangaben,60,SG7,,,,,,,Muss,
-Währungsangaben,61,SG7,CUX,,00039,,,,Muss,,,Währungsangaben,61,SG7,CUX,,00039,,,,Muss,
-Währungsangaben,62,SG7,CUX,6347,00039,2,,Referenzwährung,X,,,Währungsangaben,62,SG7,CUX,6347,00039,2,,Referenzwährung,X,
-Währungsangaben,63,SG7,CUX,6345,00039,EUR,,Euro,X,,,Währungsangaben,63,SG7,CUX,6345,00039,EUR,,Euro,X,
-Währungsangaben,64,SG7,CUX,6343,00039,9,,Auftragswährung,X,,,Währungsangaben,64,SG7,CUX,6343,00039,9,,Auftragswährung,X,
-Positionsdaten,65,SG29,,,,,,,Muss,,,Positionsdaten,65,SG29,,,,,,,Muss,
-Positionsdaten,66,SG29,LIN,,00040,,,,Muss,,,Positionsdaten,66,SG29,LIN,,00040,,,,Muss,
-Positionsdaten,67,SG29,LIN,1082,00040,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Positionsdaten,67,SG29,LIN,1082,00040,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
-Positionsdaten,68,SG29,LIN,7140,00040,,,Artikelnummer,X [52] ∧ [504],"[52] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind.
-[504] Hinweis: Übernahme der Angabe aus der entsprechenden Position der QUOTES",,Positionsdaten,68,SG29,LIN,7140,00040,,,Artikelnummer,X [52] ∧ [504],"[52] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind.
-[504] Hinweis: Übernahme der Angabe aus der entsprechenden Position der QUOTES"
-Positionsdaten,69,SG29,LIN,7143,00040,Z01,,Artikelnummer,X,,,Positionsdaten,69,SG29,LIN,7143,00040,Z01,,Artikelnummer,X,
-Menge,70,SG29,QTY,,00043,,,,Muss,,,Menge,70,SG29,QTY,,00043,,,,Muss,
-Menge,71,SG29,QTY,6063,00043,145,,Istbestand,X,,,Menge,71,SG29,QTY,6063,00043,145,,Istbestand,X,
-Menge,72,SG29,QTY,6060,00043,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,,Menge,72,SG29,QTY,6060,00043,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n
-Menge,73,SG29,QTY,6411,00043,H87,,Stück,X,,,Menge,73,SG29,QTY,6411,00043,H87,,Stück,X,
-Positionsnettobetrag,74,SG29,MOA,,00047,,,,Muss,,,Positionsnettobetrag,74,SG29,MOA,,00047,,,,Muss,
-Positionsnettobetrag,75,SG29,MOA,5025,00047,203,,Positionsbetrag (ohne USt.),X,,,Positionsnettobetrag,75,SG29,MOA,5025,00047,203,,Positionsbetrag (ohne USt.),X,
-Positionsnettobetrag,76,SG29,MOA,5004,00047,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,,Positionsnettobetrag,76,SG29,MOA,5004,00047,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen
-Allgemeine Information (Feld für allgemeine Hinweise),77,SG29,FTX,,00048,,,,Kann,,,Allgemeine Information (Feld für allgemeine Hinweise),77,SG29,FTX,,00048,,,,Kann,
-Allgemeine Information (Feld für allgemeine Hinweise),78,SG29,FTX,4451,00048,(für allgemeine Hinweise),,,ACB,,,Allgemeine Information (Feld für allgemeine Hinweise),78,SG29,FTX,4451,00048,(für allgemeine Hinweise),,,ACB,
-Allgemeine Information (Feld für allgemeine Hinweise),79,SG29,FTX,4440,00048,,,Freier Text,X,,,Allgemeine Information (Feld für allgemeine Hinweise),79,SG29,FTX,4440,00048,,,Freier Text,X,
-Preisangaben,80,SG33,,,,,,,Muss,,,Preisangaben,80,SG33,,,,,,,Muss,
-Preisangaben,81,SG33,PRI,,00059,,,,Muss,,,Preisangaben,81,SG33,PRI,,00059,,,,Muss,
-Preisangaben,82,SG33,PRI,5125,00059,CAL,,Berechnungspreis,X,,,Preisangaben,82,SG33,PRI,5125,00059,CAL,,Berechnungspreis,X,
-Preisangaben,83,SG33,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,,Preisangaben,83,SG33,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen
-Gerätenummer,84,SG34,,,,,,,Soll [4],"[4] Übernahme der Angabe aus der QUOTES, wenn dort vorhanden",,Gerätenummer,84,SG34,,,,,,,Soll [4],"[4] Übernahme der Angabe aus der QUOTES, wenn dort vorhanden"
-Gerätenummer,85,SG34,RFF,,00061,,,,Muss,,,Gerätenummer,85,SG34,RFF,,00061,,,,Muss,
-Gerätenummer,86,SG34,RFF,1153,00061,Z09,,Gerätenummer,X,,,Gerätenummer,86,SG34,RFF,1153,00061,Z09,,Gerätenummer,X,
-Gerätenummer,87,SG34,RFF,1154,00061,,,Gerätenummer,X,,,Gerätenummer,87,SG34,RFF,1154,00061,,,Gerätenummer,X,
-Positionsnummer aus dem Angebot,88,SG34,,,,,,,Muss,,,Positionsnummer aus dem Angebot,88,SG34,,,,,,,Muss,
-Positionsnummer aus dem Angebot,89,SG34,RFF,,00062,,,,Muss,,,Positionsnummer aus dem Angebot,89,SG34,RFF,,00062,,,,Muss,
-Positionsnummer aus dem Angebot,90,SG34,RFF,1153,00062,Z03,,Positionsnummer des Angebots,X,,,Positionsnummer aus dem Angebot,90,SG34,RFF,1153,00062,Z03,,Positionsnummer des Angebots,X,
-Positionsnummer aus dem Angebot,91,SG34,RFF,1154,00062,,,Positionsnummer,X [531],"[531] Hinweis: Wert aus LIN DE1082 der QUOTES, mit der das Angebot erfolgt ist",,Positionsnummer aus dem Angebot,91,SG34,RFF,1154,00062,,,Positionsnummer,X [531],"[531] Hinweis: Wert aus LIN DE1082 der QUOTES, mit der das Angebot erfolgt ist"
-Abschnitts-Kontrollsegment,92,,UNS,,00123,,,,Muss,,,Abschnitts-Kontrollsegment,92,,UNS,,00123,,,,Muss,
-Abschnitts-Kontrollsegment,93,,UNS,0081,00123,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,93,,UNS,0081,00123,und Summenteil,,,S,
-Summenbetrag (netto),94,,MOA,,00124,,,,Muss,,,Summenbetrag (netto),94,,MOA,,00124,,,,Muss,
-Summenbetrag (netto),95,,MOA,5025,00124,24,,Summe der Gesamtkosten,X,,,Summenbetrag (netto),95,,MOA,5025,00124,24,,Summe der Gesamtkosten,X,
-Summenbetrag (netto),96,,MOA,5004,00124,,,Geldbetrag,X [930] [505],"[505] Hinweis: Der Summenbetrag ist entsprechend der Summe der Einzelbeträge der Bestellposition aufzuführen. Bei Annahme des Gesamtangebots kann der Summenbetrag (netto) aus der QUOTES übernommen werden.
-[930] Format: max. 2 Nachkommastellen",,Summenbetrag (netto),96,,MOA,5004,00124,,,Geldbetrag,X [930] [505],"[505] Hinweis: Der Summenbetrag ist entsprechend der Summe der Einzelbeträge der Bestellposition aufzuführen. Bei Annahme des Gesamtangebots kann der Summenbetrag (netto) aus der QUOTES übernommen werden.
-[930] Format: max. 2 Nachkommastellen"
-Nachrichten-Endesegment,97,,UNT,,00125,,,,Muss,,,Nachrichten-Endesegment,97,,UNT,,00125,,,,Muss,
-Nachrichten-Endesegment,98,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,98,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,99,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,99,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,
+Segmentname_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,Unnamed: 0_FV2404,Änderung,changed_entries,Segmentname_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,Unnamed: 0_FV2410
+Nachrichten-Kopfsegment,,UNH,,00001,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,00001,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,00001,ORDERS,,Bestellung,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,00001,ORDERS,,Bestellung,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,00001,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,00001,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,00001,09B,,Ausgabe 2009 - B,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,00001,09B,,Ausgabe 2009 - B,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,00001,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,00001,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,00001,1.3,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,00002,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,00002,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,00002,Z10,,Geräteübernahme,X,,8,,,Beginn der Nachricht,,BGM,1001,00002,Z10,,Geräteübernahme,X,,8
+Beginn der Nachricht,,BGM,1004,00002,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,00002,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,00003,,,,Muss,,10,,,Nachrichtendatum,,DTM,,00003,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,13
+Ausführungsdatum,,DTM,,00004,,,,Muss,,14,,,Ausführungsdatum,,DTM,,00004,,,,Muss,,14
+Ausführungsdatum,,DTM,2005,00004,203,,Ausführungsdatum/-zeit,X,,15,,,Ausführungsdatum,,DTM,2005,00004,203,,Ausführungsdatum/-zeit,X,,15
+Ausführungsdatum,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,16,,,Ausführungsdatum,,DTM,2380,00004,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],,16
+Ausführungsdatum,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,,17,,,Ausführungsdatum,,DTM,2379,00004,303,,CCYYMMDDHHMMZZZ,X,,17
+Produkt-/ Leistungsbeschreibung,,IMD,,00009,,,,Muss [502],[502] Hinweis: Der Qualifier in DE7081 muss aus der in SG1 referenzierten QUOTES übernommen werden,18,,,Produkt-/ Leistungsbeschreibung,,IMD,,00009,,,,Muss [502],[502] Hinweis: Der Qualifier in DE7081 muss aus der in SG1 referenzierten QUOTES übernommen werden,18
+Produkt-/ Leistungsbeschreibung,,IMD,7081,00009,Z07,,Kauf,X,,19,,,Produkt-/ Leistungsbeschreibung,,IMD,7081,00009,Z07,,Kauf,X,,19
+Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z08,,Nutzungsüberlassung,X,,20,,,Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z08,,Nutzungsüberlassung,X,,20
+Referenz Nachrichtennummer,SG1,,,,,,,Muss,,21,,,Referenz Nachrichtennummer,SG1,,,,,,,Muss,,21
+Referenz Nachrichtennummer,SG1,RFF,,00013,,,,Muss,,22,,,Referenz Nachrichtennummer,SG1,RFF,,00013,,,,Muss,,22
+Referenz Nachrichtennummer,SG1,RFF,1153,00013,AAG,,Angebotsnummer,X,,23,,,Referenz Nachrichtennummer,SG1,RFF,1153,00013,AAG,,Angebotsnummer,X,,23
+Referenz Nachrichtennummer,SG1,RFF,1154,00013,,,Nachrichtennummer,X [530],[530] Hinweis: Wert aus BGM+310 DE1004 der QUOTES mit der das Angebot erfolgt ist.,24,,,Referenz Nachrichtennummer,SG1,RFF,1154,00013,,,Nachrichtennummer,X [530],[530] Hinweis: Wert aus BGM+310 DE1004 der QUOTES mit der das Angebot erfolgt ist.,24
+Prüfidentifikator,SG1,,,,,,,Muss,,25,,,Prüfidentifikator,SG1,,,,,,,Muss,,25
+Prüfidentifikator,SG1,RFF,,00019,,,,Muss,,26,,,Prüfidentifikator,SG1,RFF,,00019,,,,Muss,,26
+Prüfidentifikator,SG1,RFF,1153,00019,Z13,,Prüfidentifikator,X,,27,,,Prüfidentifikator,SG1,RFF,1153,00019,Z13,,Prüfidentifikator,X,,27
+Prüfidentifikator,SG1,RFF,1154,00019,17001,,Bestellung Geräteübernahme,X,,28,,,Prüfidentifikator,SG1,RFF,1154,00019,17001,,Bestellung Geräteübernahme,X,,28
+MP-ID Absender,SG2,,,,,,,Muss,,29,,,MP-ID Absender,SG2,,,,,,,Muss,,29
+MP-ID Absender,SG2,NAD,,00020,,,,Muss,,30,,,MP-ID Absender,SG2,NAD,,00020,,,,Muss,,30
+MP-ID Absender,SG2,NAD,3035,00020,Nachrichtenaussteller bzw. -absender,,,MS,,31,,,MP-ID Absender,SG2,NAD,3035,00020,Nachrichtenaussteller bzw. -absender,,,MS,,31
+MP-ID Absender,SG2,NAD,3039,00020,,,MP-ID,X,,32,,,MP-ID Absender,SG2,NAD,3039,00020,,,MP-ID,X,,32
+MP-ID Absender,SG2,NAD,3055,00020,9,,GS1,X,,33,,,MP-ID Absender,SG2,NAD,3055,00020,9,,GS1,X,,33
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,34,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,34
+MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,35,,,MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,35
+Ansprechpartner,SG5,,,,,,,Muss,,36,,,Ansprechpartner,SG5,,,,,,,Muss,,36
+Ansprechpartner,SG5,CTA,,00021,,,,Muss,,37,,,Ansprechpartner,SG5,CTA,,00021,,,,Muss,,37
+Ansprechpartner,SG5,CTA,3139,00021,,,,IC,,38,,,Ansprechpartner,SG5,CTA,3139,00021,,,,IC,,38
+Ansprechpartner,SG5,CTA,3412,00021,,,Kontakt,X [503],[503] Hinweis: Angabe eines technischen Ansprechpartners für die Geräteübernahme,39,,,Ansprechpartner,SG5,CTA,3412,00021,,,Kontakt,X [503],[503] Hinweis: Angabe eines technischen Ansprechpartners für die Geräteübernahme,39
+Kommunikationsverbindung,SG5,COM,,00022,,,,Muss,,40,,,Kommunikationsverbindung,SG5,COM,,00022,,,,Muss,,40
+Kommunikationsverbindung,SG5,COM,3148,00022,,,"Kommunikationsadresse, Identifikation",X,,41,,,Kommunikationsverbindung,SG5,COM,3148,00022,,,"Kommunikationsadresse, Identifikation",X,,41
+Kommunikationsverbindung,SG5,COM,3155,00022,EM,,Elektronische Post,X [1P0..1],,42,,,Kommunikationsverbindung,SG5,COM,3155,00022,EM,,Elektronische Post,X [1P0..1],,42
+Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,43,,,Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,43
+Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,44,,,Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,44
+Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,45,,,Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,45
+Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,46,,,Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,46
+MP-ID Empfänger,SG2,,,,,,,Muss,,47,,,MP-ID Empfänger,SG2,,,,,,,Muss,,47
+MP-ID Empfänger,SG2,NAD,,00023,,,,Muss,,48,,,MP-ID Empfänger,SG2,NAD,,00023,,,,Muss,,48
+MP-ID Empfänger,SG2,NAD,3035,00023,,,,MR,,49,,,MP-ID Empfänger,SG2,NAD,3035,00023,,,,MR,,49
+MP-ID Empfänger,SG2,NAD,3039,00023,,,MP-ID,X,,50,,,MP-ID Empfänger,SG2,NAD,3039,00023,,,MP-ID,X,,50
+MP-ID Empfänger,SG2,NAD,3055,00023,9,,GS1,X,,51,,,MP-ID Empfänger,SG2,NAD,3055,00023,9,,GS1,X,,51
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,52,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,52
+MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,53,,,MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,53
+Meldepunkt,SG2,,,,,,,Muss,,54,,,Meldepunkt,SG2,,,,,,,Muss,,54
+Meldepunkt,SG2,NAD,,00025,,,,Muss,,55,,,Meldepunkt,SG2,NAD,,00025,,,,Muss,,55
+Meldepunkt,SG2,NAD,3035,00025,,,,DP,,56,,,Meldepunkt,SG2,NAD,3035,00025,,,,DP,,56
+Meldepunkt,SG2,LOC,,00026,,,,Muss,,57,,,Meldepunkt,SG2,LOC,,00026,,,,Muss,,57
+Meldepunkt,SG2,LOC,3227,00026,,,,172,,58,,,Meldepunkt,SG2,LOC,3227,00026,,,,172,,58
+Meldepunkt,SG2,LOC,3225,00026,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
+[951] Format: Zählpunktbezeichnung",59,,,Meldepunkt,SG2,LOC,3225,00026,,,Identifikator,X [951] [522],"[522] Hinweis: Verwendung der ID der Messlokation
+[951] Format: Zählpunktbezeichnung",59
+Währungsangaben,SG7,,,,,,,Muss,,60,,,Währungsangaben,SG7,,,,,,,Muss,,60
+Währungsangaben,SG7,CUX,,00039,,,,Muss,,61,,,Währungsangaben,SG7,CUX,,00039,,,,Muss,,61
+Währungsangaben,SG7,CUX,6347,00039,2,,Referenzwährung,X,,62,,,Währungsangaben,SG7,CUX,6347,00039,2,,Referenzwährung,X,,62
+Währungsangaben,SG7,CUX,6345,00039,EUR,,Euro,X,,63,,,Währungsangaben,SG7,CUX,6345,00039,EUR,,Euro,X,,63
+Währungsangaben,SG7,CUX,6343,00039,9,,Auftragswährung,X,,64,,,Währungsangaben,SG7,CUX,6343,00039,9,,Auftragswährung,X,,64
+Positionsdaten,SG29,,,,,,,Muss,,65,,,Positionsdaten,SG29,,,,,,,Muss,,65
+Positionsdaten,SG29,LIN,,00040,,,,Muss,,66,,,Positionsdaten,SG29,LIN,,00040,,,,Muss,,66
+Positionsdaten,SG29,LIN,1082,00040,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",67,,,Positionsdaten,SG29,LIN,1082,00040,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",67
+Positionsdaten,SG29,LIN,7140,00040,,,Artikelnummer,X [52] ∧ [504],"[52] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind.
+[504] Hinweis: Übernahme der Angabe aus der entsprechenden Position der QUOTES",68,,,Positionsdaten,SG29,LIN,7140,00040,,,Artikelnummer,X [52] ∧ [504],"[52] Es sind nur die Artikelnummern erlaubt, die in der Codeliste der Artikelnummern des BDEW mit dem entsprechenden Prüfidentifikator versehen sind.
+[504] Hinweis: Übernahme der Angabe aus der entsprechenden Position der QUOTES",68
+Positionsdaten,SG29,LIN,7143,00040,Z01,,Artikelnummer,X,,69,,,Positionsdaten,SG29,LIN,7143,00040,Z01,,Artikelnummer,X,,69
+Menge,SG29,QTY,,00043,,,,Muss,,70,,,Menge,SG29,QTY,,00043,,,,Muss,,70
+Menge,SG29,QTY,6063,00043,145,,Istbestand,X,,71,,,Menge,SG29,QTY,6063,00043,145,,Istbestand,X,,71
+Menge,SG29,QTY,6060,00043,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,72,,,Menge,SG29,QTY,6060,00043,,,Menge,X [908],[908] Format: Mögliche Werte: 1 bis n,72
+Menge,SG29,QTY,6411,00043,H87,,Stück,X,,73,,,Menge,SG29,QTY,6411,00043,H87,,Stück,X,,73
+Positionsnettobetrag,SG29,MOA,,00047,,,,Muss,,74,,,Positionsnettobetrag,SG29,MOA,,00047,,,,Muss,,74
+Positionsnettobetrag,SG29,MOA,5025,00047,203,,Positionsbetrag (ohne USt.),X,,75,,,Positionsnettobetrag,SG29,MOA,5025,00047,203,,Positionsbetrag (ohne USt.),X,,75
+Positionsnettobetrag,SG29,MOA,5004,00047,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,76,,,Positionsnettobetrag,SG29,MOA,5004,00047,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,76
+Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,,00048,,,,Kann,,77,,,Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,,00048,,,,Kann,,77
+Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,4451,00048,(für allgemeine Hinweise),,,ACB,,78,,,Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,4451,00048,(für allgemeine Hinweise),,,ACB,,78
+Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,4440,00048,,,Freier Text,X,,79,,,Allgemeine Information (Feld für allgemeine Hinweise),SG29,FTX,4440,00048,,,Freier Text,X,,79
+Preisangaben,SG33,,,,,,,Muss,,80,,,Preisangaben,SG33,,,,,,,Muss,,80
+Preisangaben,SG33,PRI,,00059,,,,Muss,,81,,,Preisangaben,SG33,PRI,,00059,,,,Muss,,81
+Preisangaben,SG33,PRI,5125,00059,CAL,,Berechnungspreis,X,,82,,,Preisangaben,SG33,PRI,5125,00059,CAL,,Berechnungspreis,X,,82
+Preisangaben,SG33,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,83,,,Preisangaben,SG33,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,83
+Gerätenummer,SG34,,,,,,,Soll [4],"[4] Übernahme der Angabe aus der QUOTES, wenn dort vorhanden",84,,,Gerätenummer,SG34,,,,,,,Soll [4],"[4] Übernahme der Angabe aus der QUOTES, wenn dort vorhanden",84
+Gerätenummer,SG34,RFF,,00061,,,,Muss,,85,,,Gerätenummer,SG34,RFF,,00061,,,,Muss,,85
+Gerätenummer,SG34,RFF,1153,00061,Z09,,Gerätenummer,X,,86,,,Gerätenummer,SG34,RFF,1153,00061,Z09,,Gerätenummer,X,,86
+Gerätenummer,SG34,RFF,1154,00061,,,Gerätenummer,X,,87,,,Gerätenummer,SG34,RFF,1154,00061,,,Gerätenummer,X,,87
+Positionsnummer aus dem Angebot,SG34,,,,,,,Muss,,88,,,Positionsnummer aus dem Angebot,SG34,,,,,,,Muss,,88
+Positionsnummer aus dem Angebot,SG34,RFF,,00062,,,,Muss,,89,,,Positionsnummer aus dem Angebot,SG34,RFF,,00062,,,,Muss,,89
+Positionsnummer aus dem Angebot,SG34,RFF,1153,00062,Z03,,Positionsnummer des Angebots,X,,90,,,Positionsnummer aus dem Angebot,SG34,RFF,1153,00062,Z03,,Positionsnummer des Angebots,X,,90
+Positionsnummer aus dem Angebot,SG34,RFF,1154,00062,,,Positionsnummer,X [531],"[531] Hinweis: Wert aus LIN DE1082 der QUOTES, mit der das Angebot erfolgt ist",91,,,Positionsnummer aus dem Angebot,SG34,RFF,1154,00062,,,Positionsnummer,X [531],"[531] Hinweis: Wert aus LIN DE1082 der QUOTES, mit der das Angebot erfolgt ist",91
+Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,92,,,Abschnitts-Kontrollsegment,,UNS,,00123,,,,Muss,,92
+Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,93,,,Abschnitts-Kontrollsegment,,UNS,0081,00123,und Summenteil,,,S,,93
+Summenbetrag (netto),,MOA,,00124,,,,Muss,,94,,,Summenbetrag (netto),,MOA,,00124,,,,Muss,,94
+Summenbetrag (netto),,MOA,5025,00124,24,,Summe der Gesamtkosten,X,,95,,,Summenbetrag (netto),,MOA,5025,00124,24,,Summe der Gesamtkosten,X,,95
+Summenbetrag (netto),,MOA,5004,00124,,,Geldbetrag,X [930] [505],"[505] Hinweis: Der Summenbetrag ist entsprechend der Summe der Einzelbeträge der Bestellposition aufzuführen. Bei Annahme des Gesamtangebots kann der Summenbetrag (netto) aus der QUOTES übernommen werden.
+[930] Format: max. 2 Nachkommastellen",96,,,Summenbetrag (netto),,MOA,5004,00124,,,Geldbetrag,X [930] [505],"[505] Hinweis: Der Summenbetrag ist entsprechend der Summe der Einzelbeträge der Bestellposition aufzuführen. Bei Annahme des Gesamtangebots kann der Summenbetrag (netto) aus der QUOTES übernommen werden.
+[930] Format: max. 2 Nachkommastellen",96
+Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,97,,,Nachrichten-Endesegment,,UNT,,00125,,,,Muss,,97
+Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,98,,,Nachrichten-Endesegment,,UNT,0074,00125,,,Anzahl der Segmente in einer Nachricht,X,,98
+Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,99,,,Nachrichten-Endesegment,,UNT,0062,00125,,,Nachrichten-Referenznummer,X,,99

@@ -1,120 +1,120 @@
-Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,diff,Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410
-Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,
-Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
-Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
-MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
-MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
-MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
-MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
-MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
-Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
-Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
-Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
-Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+Segmentname_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,Unnamed: 0_FV2404,Änderung,changed_entries,Segmentname_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,Unnamed: 0_FV2410
+Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,6
+Beginn der Nachricht,,BGM,,00004,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,00004,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8,,,Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8
+Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,00005,,,,Muss,,10,,,Nachrichtendatum,,DTM,,00005,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,14
+MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15,,,MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15
+MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,,,MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16
+MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17,,,MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17
+MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18,,,MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19
+Ansprechpartner,SG3,,,,,,,Kann,,20,,,Ansprechpartner,SG3,,,,,,,Kann,,20
+Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21,,,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21
+Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22,,,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22
+Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23,,,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23
+Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24,,,Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24
+Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",25,,,Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
-Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
-MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
-MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
-MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
-MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
-Vorgang,38,SG4,IDE,,00020,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
-Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
-Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
-Beginn zum,41,SG4,DTM,,00024,,,,Muss,,,Beginn zum,41,SG4,DTM,,00024,,,,Muss,
-Beginn zum,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,,Beginn zum,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,
-Beginn zum,43,SG4,DTM,2380,00024,,,Datum oder Uhrzeit oder,X [UB1],,,Beginn zum,43,SG4,DTM,2380,00024,,,Datum oder Uhrzeit oder,X [UB1],
-Beginn zum,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,
-"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,
-"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,
-"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
-"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,
-Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,,Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,
-Transaktionsgrund,51,SG4,STS,9013,00037,ZU1,,Änderung von MSB Abrechnungsdaten,X,,,Transaktionsgrund,51,SG4,STS,9013,00037,ZU1,,Änderung von MSB Abrechnungsdaten,X,
-Marktlokation,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Marktlokation,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Marktlokation,53,SG5,LOC,,00051,,,,Muss,,,Marktlokation,53,SG5,LOC,,00051,,,,Muss,
-Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,,Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,
-Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Prüfidentifikator,56,SG6,,,,,,,Muss,,,Prüfidentifikator,56,SG6,,,,,,,Muss,
-Prüfidentifikator,57,SG6,RFF,,00057,,,,Muss,,,Prüfidentifikator,57,SG6,RFF,,00057,,,,Muss,
-Prüfidentifikator,58,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,58,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,59,SG6,RFF,1154,00057,55557,,SDÄ Strom / Änderung von MSB Abrechnungsdaten,X,,,Prüfidentifikator,59,SG6,RFF,1154,00057,55557,,SDÄ Strom / Änderung von MSB Abrechnungsdaten,X,
-Daten der Marktlokation,60,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Daten der Marktlokation,60,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Daten der Marktlokation,61,SG8,SEQ,,00103,,,,Muss,,,Daten der Marktlokation,61,SG8,SEQ,,00103,,,,Muss,
-Daten der Marktlokation,62,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,62,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,63,SG8,RFF,,00104,,,,Muss,,,Referenz auf die ID der Marktlokation,63,SG8,RFF,,00104,,,,Muss,
-Referenz auf die ID der Marktlokation,64,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,64,SG8,RFF,1153,00104,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,65,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,65,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Lieferrichtung,66,SG10,,,,,,,Muss,,,Lieferrichtung,66,SG10,,,,,,,Muss,
-Lieferrichtung,67,SG10,CCI,,00110,,,,Muss,,,Lieferrichtung,67,SG10,CCI,,00110,,,,Muss,
-Lieferrichtung,68,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,,Lieferrichtung,68,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,
-Lieferrichtung,69,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,,Lieferrichtung,69,SG10,CCI,7037,00110,Z06,,Erzeugung,X,
-Lieferrichtung,70,SG10,CCI,7037,,Z07,,Verbrauch,X,,,Lieferrichtung,70,SG10,CCI,7037,,Z07,,Verbrauch,X,
-Messstellenbetriebsabrechn ungsdaten der Marktlokation,71,SG8,,,,,,,Muss,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,71,SG8,,,,,,,Muss,
-Messstellenbetriebsabrechn ungsdaten der Marktlokation,72,SG8,SEQ,,00179,,,,Muss,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,72,SG8,SEQ,,00179,,,,Muss,
-Messstellenbetriebsabrechn ungsdaten der Marktlokation,73,SG8,SEQ,1229,00179,Z76,,Messstellenbetriebsabre chnungsdaten der Marktlokation,X,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,73,SG8,SEQ,1229,00179,Z76,,Messstellenbetriebsabre chnungsdaten der Marktlokation,X,
-Gruppenartikel-ID / Artikel- ID,74,SG8,PIA,,00180,,,,Muss,,,Gruppenartikel-ID / Artikel- ID,74,SG8,PIA,,00180,,,,Muss,
-Gruppenartikel-ID / Artikel- ID,75,SG8,PIA,4347,00180,Z02,,Gruppenartikel-ID / Artikel-ID,X,,,Gruppenartikel-ID / Artikel- ID,75,SG8,PIA,4347,00180,Z02,,Gruppenartikel-ID / Artikel-ID,X,
-Gruppenartikel-ID / Artikel- ID,76,SG8,PIA,4347,,Z03,,Es wird keine Messstellenbetriebsabre chnung über diese Marktlokation vorgenommen,X,,,Gruppenartikel-ID / Artikel- ID,76,SG8,PIA,4347,,Z03,,Es wird keine Messstellenbetriebsabre chnung über diese Marktlokation vorgenommen,X,
-Gruppenartikel-ID / Artikel- ID,77,SG8,PIA,7140,00180,,,Produkt-/Leistungsnummer,X [942] [125] ∧ [93],"[93] Erlaubte Codes aus der PRICAT BGM+Z32 (Preisblatt Messstellenbetrieb) des verantwortlichen MSB
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",25
+Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26,,,Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26
+Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,,,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27
+Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,,,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28
+Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,,,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29
+Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,,,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30
+MP-ID Empfänger,SG2,,,,,,,Muss,,31,,,MP-ID Empfänger,SG2,,,,,,,Muss,,31
+MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32,,,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33,,,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33
+MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,34,,,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,34
+MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35,,,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36
+Vorgang,SG4,,,,,,,Muss,,37,,,Vorgang,SG4,,,,,,,Muss,,37
+Vorgang,SG4,IDE,,00020,,,,Muss,,38,,,Vorgang,SG4,IDE,,00020,,,,Muss,,38
+Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39,,,Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39
+Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40,,,Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40
+Beginn zum,SG4,DTM,,00024,,,,Muss,,41,,,Beginn zum,SG4,DTM,,00024,,,,Muss,,41
+Beginn zum,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42,,,Beginn zum,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42
+Beginn zum,SG4,DTM,2380,00024,,,Datum oder Uhrzeit oder,X [UB1],,43,,,Beginn zum,SG4,DTM,2380,00024,,,Datum oder Uhrzeit oder,X [UB1],,43
+Beginn zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44,,,Beginn zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00027,,,,Muss,,45,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00027,,,,Muss,,45
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,46,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,46
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,47,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,47
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,48,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,48
+Transaktionsgrund,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49,,,Transaktionsgrund,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49
+Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50,,,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50
+Transaktionsgrund,SG4,STS,9013,00037,ZU1,,Änderung von MSB Abrechnungsdaten,X,,51,,,Transaktionsgrund,SG4,STS,9013,00037,ZU1,,Änderung von MSB Abrechnungsdaten,X,,51
+Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,52,,,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,52
+Marktlokation,SG5,LOC,,00051,,,,Muss,,53,,,Marktlokation,SG5,LOC,,00051,,,,Muss,,53
+Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,54,,,Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,54
+Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,55,,,Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,55
+Prüfidentifikator,SG6,,,,,,,Muss,,56,,,Prüfidentifikator,SG6,,,,,,,Muss,,56
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,57,,,Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,57
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,58,,,Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,58
+Prüfidentifikator,SG6,RFF,1154,00057,55557,,SDÄ Strom / Änderung von MSB Abrechnungsdaten,X,,59,,,Prüfidentifikator,SG6,RFF,1154,00057,55557,,SDÄ Strom / Änderung von MSB Abrechnungsdaten,X,,59
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,60,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,60
+Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,61,,,Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,61
+Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,62,,,Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,62
+Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,63,,,Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,63
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,64,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,64
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65
+Lieferrichtung,SG10,,,,,,,Muss,,66,,,Lieferrichtung,SG10,,,,,,,Muss,,66
+Lieferrichtung,SG10,CCI,,00110,,,,Muss,,67,,,Lieferrichtung,SG10,CCI,,00110,,,,Muss,,67
+Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,68,,,Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,68
+Lieferrichtung,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,69,,,Lieferrichtung,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,69
+Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,70,,,Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,70
+Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,,,,,,,Muss,,71,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,,,,,,,Muss,,71
+Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,SEQ,,00179,,,,Muss,,72,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,SEQ,,00179,,,,Muss,,72
+Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,SEQ,1229,00179,Z76,,Messstellenbetriebsabre chnungsdaten der Marktlokation,X,,73,,,Messstellenbetriebsabrechn ungsdaten der Marktlokation,SG8,SEQ,1229,00179,Z76,,Messstellenbetriebsabre chnungsdaten der Marktlokation,X,,73
+Gruppenartikel-ID / Artikel- ID,SG8,PIA,,00180,,,,Muss,,74,,,Gruppenartikel-ID / Artikel- ID,SG8,PIA,,00180,,,,Muss,,74
+Gruppenartikel-ID / Artikel- ID,SG8,PIA,4347,00180,Z02,,Gruppenartikel-ID / Artikel-ID,X,,75,,,Gruppenartikel-ID / Artikel- ID,SG8,PIA,4347,00180,Z02,,Gruppenartikel-ID / Artikel-ID,X,,75
+Gruppenartikel-ID / Artikel- ID,SG8,PIA,4347,,Z03,,Es wird keine Messstellenbetriebsabre chnung über diese Marktlokation vorgenommen,X,,76,,,Gruppenartikel-ID / Artikel- ID,SG8,PIA,4347,,Z03,,Es wird keine Messstellenbetriebsabre chnung über diese Marktlokation vorgenommen,X,,76
+Gruppenartikel-ID / Artikel- ID,SG8,PIA,7140,00180,,,Produkt-/Leistungsnummer,X [942] [125] ∧ [93],"[93] Erlaubte Codes aus der PRICAT BGM+Z32 (Preisblatt Messstellenbetrieb) des verantwortlichen MSB
 [125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden
-[942] Format: n1-n2-n1-n3",,Gruppenartikel-ID / Artikel- ID,77,SG8,PIA,7140,00180,,,Produkt-/Leistungsnummer,X [942] [125] ∧ [93],"[93] Erlaubte Codes aus der PRICAT BGM+Z32 (Preisblatt Messstellenbetrieb) des verantwortlichen MSB
+[942] Format: n1-n2-n1-n3",77,,,Gruppenartikel-ID / Artikel- ID,SG8,PIA,7140,00180,,,Produkt-/Leistungsnummer,X [942] [125] ∧ [93],"[93] Erlaubte Codes aus der PRICAT BGM+Z32 (Preisblatt Messstellenbetrieb) des verantwortlichen MSB
 [125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden
-[942] Format: n1-n2-n1-n3"
-Gruppenartikel-ID / Artikel- ID,78,SG8,PIA,7143,00180,Z09,,Artikel-ID,X [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,,Gruppenartikel-ID / Artikel- ID,78,SG8,PIA,7143,00180,Z09,,Artikel-ID,X [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden
-Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,79,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,79,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden
-Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,80,SG9,QTY,,00181,,,,Muss,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,80,SG9,QTY,,00181,,,,Muss,
-Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,81,SG9,QTY,6063,00181,Z38,,Anzahl der abzurechenden Positionen der Gruppenartikel-ID / Artikel-ID,X,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,81,SG9,QTY,6063,00181,Z38,,Anzahl der abzurechenden Positionen der Gruppenartikel-ID / Artikel-ID,X,
-Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,82,SG9,QTY,6060,00181,,,Menge,X [914] ∧ [937],"[914] Format: Möglicher Wert: > 0
-[937] Format: keine Nachkommastelle",,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,82,SG9,QTY,6060,00181,,,Menge,X [914] ∧ [937],"[914] Format: Möglicher Wert: > 0
-[937] Format: keine Nachkommastelle"
-Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,83,SG9,QTY,6411,00181,PCS,,Stück,X,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,83,SG9,QTY,6411,00181,PCS,,Stück,X,
-Abschlag,84,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,,Abschlag,84,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden
-Abschlag,85,SG9,QTY,,00182,,,,Muss,,,Abschlag,85,SG9,QTY,,00182,,,,Muss,
-Abschlag,86,SG9,QTY,6063,00182,Z35,,Abschlag,X,,,Abschlag,86,SG9,QTY,6063,00182,Z35,,Abschlag,X,
-Abschlag,87,SG9,QTY,6063,,Z46,,kein Abschlag,X,,,Abschlag,87,SG9,QTY,6063,,Z46,,kein Abschlag,X,
-Abschlag,88,SG9,QTY,6060,00182,,,Menge,X ([914] ∧ [930] [138]) ⊻ ([926] ∧ [937] [180]),"[138] Wenn im selben QTY im DE6063 Z35 (Abschlag) vorhanden
+[942] Format: n1-n2-n1-n3",77
+Gruppenartikel-ID / Artikel- ID,SG8,PIA,7143,00180,Z09,,Artikel-ID,X [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,78,,,Gruppenartikel-ID / Artikel- ID,SG8,PIA,7143,00180,Z09,,Artikel-ID,X [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,78
+Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,79,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,79
+Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,,00181,,,,Muss,,80,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,,00181,,,,Muss,,80
+Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6063,00181,Z38,,Anzahl der abzurechenden Positionen der Gruppenartikel-ID / Artikel-ID,X,,81,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6063,00181,Z38,,Anzahl der abzurechenden Positionen der Gruppenartikel-ID / Artikel-ID,X,,81
+Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6060,00181,,,Menge,X [914] ∧ [937],"[914] Format: Möglicher Wert: > 0
+[937] Format: keine Nachkommastelle",82,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6060,00181,,,Menge,X [914] ∧ [937],"[914] Format: Möglicher Wert: > 0
+[937] Format: keine Nachkommastelle",82
+Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6411,00181,PCS,,Stück,X,,83,,,Anzahl in der Messstellenbetriebsabrechn ung abzurechenden Positionen der Gruppenartikel-ID / Artikel- ID,SG9,QTY,6411,00181,PCS,,Stück,X,,83
+Abschlag,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,84,,,Abschlag,SG9,,,,,,,Muss [125],[125] Wenn in derselben SG8 SEQ+Z76 (Messstellenbetriebsabrechnu ngsdaten der Marktlokation) im DE4347 des PIA Z02 (Gruppenartikel-ID / Artikel- ID) vorhanden,84
+Abschlag,SG9,QTY,,00182,,,,Muss,,85,,,Abschlag,SG9,QTY,,00182,,,,Muss,,85
+Abschlag,SG9,QTY,6063,00182,Z35,,Abschlag,X,,86,,,Abschlag,SG9,QTY,6063,00182,Z35,,Abschlag,X,,86
+Abschlag,SG9,QTY,6063,,Z46,,kein Abschlag,X,,87,,,Abschlag,SG9,QTY,6063,,Z46,,kein Abschlag,X,,87
+Abschlag,SG9,QTY,6060,00182,,,Menge,X ([914] ∧ [930] [138]) ⊻ ([926] ∧ [937] [180]),"[138] Wenn im selben QTY im DE6063 Z35 (Abschlag) vorhanden
 [180] Wenn im selben QTY im DE6063 Z46 (Kein Abschlag) vorhanden
 [914] Format: Möglicher Wert: > 0
 [926] Format: Möglicher Wert: 0
 [930] Format: max. 2 Nachkommastellen
-[937] Format: keine Nachkommastelle",,Abschlag,88,SG9,QTY,6060,00182,,,Menge,X ([914] ∧ [930] [138]) ⊻ ([926] ∧ [937] [180]),"[138] Wenn im selben QTY im DE6063 Z35 (Abschlag) vorhanden
+[937] Format: keine Nachkommastelle",88,,,Abschlag,SG9,QTY,6060,00182,,,Menge,X ([914] ∧ [930] [138]) ⊻ ([926] ∧ [937] [180]),"[138] Wenn im selben QTY im DE6063 Z35 (Abschlag) vorhanden
 [180] Wenn im selben QTY im DE6063 Z46 (Kein Abschlag) vorhanden
 [914] Format: Möglicher Wert: > 0
 [926] Format: Möglicher Wert: 0
 [930] Format: max. 2 Nachkommastellen
-[937] Format: keine Nachkommastelle"
-Abschlag,89,SG9,QTY,6411,00182,P1,,Prozent,X,,,Abschlag,89,SG9,QTY,6411,00182,P1,,Prozent,X,
-Nachrichten-Endesegment,90,,UNT,,00540,,,,Muss,,,Nachrichten-Endesegment,90,,UNT,,00540,,,,Muss,
-Nachrichten-Endesegment,91,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,91,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,92,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,92,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,
+[937] Format: keine Nachkommastelle",88
+Abschlag,SG9,QTY,6411,00182,P1,,Prozent,X,,89,,,Abschlag,SG9,QTY,6411,00182,P1,,Prozent,X,,89
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,90,,,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,90
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,91,,,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,91
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,92,,,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,92

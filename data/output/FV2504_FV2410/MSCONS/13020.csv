@@ -1,126 +1,126 @@
-Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,diff,Segmentname_FV2504,Unnamed: 0_FV2504,Segmentgruppe_FV2504,Segment_FV2504,Datenelement_FV2504,Segment ID_FV2504,Code_FV2504,Qualifier_FV2504,Beschreibung_FV2504,Bedingungsausdruck_FV2504,Bedingung_FV2504
-Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,,,Nutzdaten-Kopfsegment,0,,UNB,,00002,,,,Muss,
-Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,,Nutzdaten-Kopfsegment,1,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,
-Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,,,Nutzdaten-Kopfsegment,2,,UNB,0002,00002,3,,Version 3,X,
-Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,,,Nutzdaten-Kopfsegment,3,,UNB,0004,00002,,,MP-ID Absender,X,
-Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,4,,UNB,0007,00002,14,,GS1,X,
-Nutzdaten-Kopfsegment,5,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Nutzdaten-Kopfsegment,5,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,,,Nutzdaten-Kopfsegment,6,,UNB,0010,00002,,,MP-ID Empfänger,X,
-Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,,,Nutzdaten-Kopfsegment,7,,UNB,0007,00002,14,,GS1,X,
-Nutzdaten-Kopfsegment,8,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Nutzdaten-Kopfsegment,8,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,,,Nutzdaten-Kopfsegment,9,,UNB,0017,00002,,,Datum der Erstellung,X,
-Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,,,Nutzdaten-Kopfsegment,10,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,
-Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind.",,Nutzdaten-Kopfsegment,11,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind."
-Nutzdaten-Kopfsegment,12,,UNB,0026,00002,Zeitraum,,,TL,,,Nutzdaten-Kopfsegment,12,,UNB,0026,00002,Zeitraum,,,TL,
-Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,,,Nachrichtenkopfsegment,13,,UNH,,00003,,,,Muss,
-Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichtenkopfsegment,14,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
-Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,,,Nachrichtenkopfsegment,15,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,
-Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichtenkopfsegment,16,,UNH,0052,00003,D,,Entwurfs-Version,X,
-Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,,,Nachrichtenkopfsegment,17,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,
-Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichtenkopfsegment,18,,UNH,0051,00003,UN,,UN/CEFACT,X,
-Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichtenkopfsegment,19,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,20,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,20,,BGM,,00004,,,,Muss,
-Beginn der Nachricht,21,,BGM,1001,00004,Z43,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,,Beginn der Nachricht,21,,BGM,1001,00004,Z43,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,
-Beginn der Nachricht,22,,BGM,1001,,Z69,,Redispatch tägliche Ausfallarbeitsüberführungs zeitreihe,X,,,Beginn der Nachricht,22,,BGM,1001,,Z69,,Redispatch tägliche Ausfallarbeitsüberführungs zeitreihe,X,
-Beginn der Nachricht,23,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,23,,BGM,1004,00004,,,Dokumentennummer,X,
-Beginn der Nachricht,24,,BGM,1225,00004,,,,9,,,Beginn der Nachricht,24,,BGM,1225,00004,,,,9,
-Nachrichtendatum,25,,DTM,,00005,,,,Muss,,,Nachrichtendatum,25,,DTM,,00005,,,,Muss,
-Nachrichtendatum,26,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,26,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,27,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00",,Nachrichtendatum,27,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00"
-Nachrichtendatum,28,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,28,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
-Prüfidentifikator,29,SG1,,,,,,,Muss,,,Prüfidentifikator,29,SG1,,,,,,,Muss,
-Prüfidentifikator,30,SG1,RFF,,00009,,,,Muss,,,Prüfidentifikator,30,SG1,RFF,,00009,,,,Muss,
-Prüfidentifikator,31,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,31,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,32,SG1,RFF,1154,00009,13020,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,,Prüfidentifikator,32,SG1,RFF,1154,00009,13020,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,
-MP-ID Absender,33,SG2,,,,,,,Muss,,,MP-ID Absender,33,SG2,,,,,,,Muss,
-MP-ID Absender,34,SG2,NAD,,00010,,,,Muss,,,MP-ID Absender,34,SG2,NAD,,00010,,,,Muss,
-MP-ID Absender,35,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,35,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,
-MP-ID Absender,36,SG2,NAD,3039,00010,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,,MP-ID Absender,36,SG2,NAD,3039,00010,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom
-MP-ID Absender,37,SG2,NAD,3055,00010,9,,GS1,X,,,MP-ID Absender,37,SG2,NAD,3055,00010,9,,GS1,X,
-MP-ID Absender,38,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,38,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,39,SG4,,,,,,,Kann,,,Ansprechpartner,39,SG4,,,,,,,Kann,
-Ansprechpartner,40,SG4,CTA,,00011,,,,Muss,,,Ansprechpartner,40,SG4,CTA,,00011,,,,Muss,
-Ansprechpartner,41,SG4,CTA,3139,00011,,,,IC,,,Ansprechpartner,41,SG4,CTA,3139,00011,,,,IC,
-Ansprechpartner,42,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,,,Ansprechpartner,42,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,
-Kommunikationsverbindung,43,SG4,COM,,00012,,,,Muss,,,Kommunikationsverbindung,43,SG4,COM,,00012,,,,Muss,
-Kommunikationsverbindung,44,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
+Segmentname_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,Unnamed: 0_FV2410,Änderung,changed_entries,Segmentname_FV2504,Segmentgruppe_FV2504,Segment_FV2504,Datenelement_FV2504,Segment ID_FV2504,Code_FV2504,Qualifier_FV2504,Beschreibung_FV2504,Bedingungsausdruck_FV2504,Bedingung_FV2504,Unnamed: 0_FV2504
+Nutzdaten-Kopfsegment,,UNB,,00002,,,,Muss,,0,,,Nutzdaten-Kopfsegment,,UNB,,00002,,,,Muss,,0
+Nutzdaten-Kopfsegment,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,1,,,Nutzdaten-Kopfsegment,,UNB,0001,00002,UNOC,,UN/ECE-Zeichensatz C,X,,1
+Nutzdaten-Kopfsegment,,UNB,0002,00002,3,,Version 3,X,,2,,,Nutzdaten-Kopfsegment,,UNB,0002,00002,3,,Version 3,X,,2
+Nutzdaten-Kopfsegment,,UNB,0004,00002,,,MP-ID Absender,X,,3,,,Nutzdaten-Kopfsegment,,UNB,0004,00002,,,MP-ID Absender,X,,3
+Nutzdaten-Kopfsegment,,UNB,0007,00002,14,,GS1,X,,4,,,Nutzdaten-Kopfsegment,,UNB,0007,00002,14,,GS1,X,,4
+Nutzdaten-Kopfsegment,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,5,,,Nutzdaten-Kopfsegment,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,5
+Nutzdaten-Kopfsegment,,UNB,0010,00002,,,MP-ID Empfänger,X,,6,,,Nutzdaten-Kopfsegment,,UNB,0010,00002,,,MP-ID Empfänger,X,,6
+Nutzdaten-Kopfsegment,,UNB,0007,00002,14,,GS1,X,,7,,,Nutzdaten-Kopfsegment,,UNB,0007,00002,14,,GS1,X,,7
+Nutzdaten-Kopfsegment,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,8,,,Nutzdaten-Kopfsegment,,UNB,0007,,500,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,8
+Nutzdaten-Kopfsegment,,UNB,0017,00002,,,Datum der Erstellung,X,,9,,,Nutzdaten-Kopfsegment,,UNB,0017,00002,,,Datum der Erstellung,X,,9
+Nutzdaten-Kopfsegment,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,,10,,,Nutzdaten-Kopfsegment,,UNB,0019,00002,,,Uhrzeit der Erstellung,X,,10
+Nutzdaten-Kopfsegment,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind.",11,,,Nutzdaten-Kopfsegment,,UNB,0020,00002,,,Datenaustauschreferenz,X [918],"[918] Format: Zeichen aus dem über UNOC definierten Zeichensatz, wobei von den Buchstaben nur Großbuchstaben erlaubt sind.",11
+Nutzdaten-Kopfsegment,,UNB,0026,00002,Zeitraum,,,TL,,12,,,Nutzdaten-Kopfsegment,,UNB,0026,00002,Zeitraum,,,TL,,12
+Nachrichtenkopfsegment,,UNH,,00003,,,,Muss,,13,,,Nachrichtenkopfsegment,,UNH,,00003,,,,Muss,,13
+Nachrichtenkopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,14,,,Nachrichtenkopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,14
+Nachrichtenkopfsegment,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,,15,,,Nachrichtenkopfsegment,,UNH,0065,00003,MSCON,,Bericht über den Verbrauch,X,,15
+Nachrichtenkopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,16,,,Nachrichtenkopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,16
+Nachrichtenkopfsegment,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,,17,,,Nachrichtenkopfsegment,,UNH,0054,00003,04B,,Ausgabe 2004 - B,X,,17
+Nachrichtenkopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,18,,,Nachrichtenkopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,18
+Nachrichtenkopfsegment,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,19,,,Nachrichtenkopfsegment,,UNH,0057,00003,2.4c,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,19
+Beginn der Nachricht,,BGM,,00004,,,,Muss,,20,,,Beginn der Nachricht,,BGM,,00004,,,,Muss,,20
+Beginn der Nachricht,,BGM,1001,00004,Z43,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,21,,,Beginn der Nachricht,,BGM,1001,00004,Z43,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,21
+Beginn der Nachricht,,BGM,1001,,Z69,,Redispatch tägliche Ausfallarbeitsüberführungs zeitreihe,X,,22,,,Beginn der Nachricht,,BGM,1001,,Z69,,Redispatch tägliche Ausfallarbeitsüberführungs zeitreihe,X,,22
+Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,23,,,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,23
+Beginn der Nachricht,,BGM,1225,00004,,,,9,,24,,,Beginn der Nachricht,,BGM,1225,00004,,,,9,,24
+Nachrichtendatum,,DTM,,00005,,,,Muss,,25,,,Nachrichtendatum,,DTM,,00005,,,,Muss,,25
+Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,26,,,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,26
+Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",27,,,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",27
+Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,28,,,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,28
+Prüfidentifikator,SG1,,,,,,,Muss,,29,,,Prüfidentifikator,SG1,,,,,,,Muss,,29
+Prüfidentifikator,SG1,RFF,,00009,,,,Muss,,30,,,Prüfidentifikator,SG1,RFF,,00009,,,,Muss,,30
+Prüfidentifikator,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,,31,,,Prüfidentifikator,SG1,RFF,1153,00009,Z13,,Prüfidentifikator,X,,31
+Prüfidentifikator,SG1,RFF,1154,00009,13020,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,32,,,Prüfidentifikator,SG1,RFF,1154,00009,13020,,Redispatch Ausfallarbeitsüberführungs zeitreihe,X,,32
+MP-ID Absender,SG2,,,,,,,Muss,,33,,,MP-ID Absender,SG2,,,,,,,Muss,,33
+MP-ID Absender,SG2,NAD,,00010,,,,Muss,,34,,,MP-ID Absender,SG2,NAD,,00010,,,,Muss,,34
+MP-ID Absender,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,,35,,,MP-ID Absender,SG2,NAD,3035,00010,Nachrichtenaussteller bzw. -absender,,,MS,,35
+MP-ID Absender,SG2,NAD,3039,00010,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,36,,,MP-ID Absender,SG2,NAD,3039,00010,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,36
+MP-ID Absender,SG2,NAD,3055,00010,9,,GS1,X,,37,,,MP-ID Absender,SG2,NAD,3055,00010,9,,GS1,X,,37
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,38,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,38
+Ansprechpartner,SG4,,,,,,,Kann,,39,,,Ansprechpartner,SG4,,,,,,,Kann,,39
+Ansprechpartner,SG4,CTA,,00011,,,,Muss,,40,,,Ansprechpartner,SG4,CTA,,00011,,,,Muss,,40
+Ansprechpartner,SG4,CTA,3139,00011,,,,IC,,41,,,Ansprechpartner,SG4,CTA,3139,00011,,,,IC,,41
+Ansprechpartner,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,,42,,,Ansprechpartner,SG4,CTA,3412,00011,,,Abteilung oder Bearbeiter,X,,42
+Kommunikationsverbindung,SG4,COM,,00012,,,,Muss,,43,,,Kommunikationsverbindung,SG4,COM,,00012,,,,Muss,,43
+Kommunikationsverbindung,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 im demselben COM der Code EM vorhanden ist
 [143]  wenn im DE3155 im demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",,Kommunikationsverbindung,44,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",44,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Kommunikationsverbindung,SG4,COM,3148,00012,,,"Kommunikationsadresse, Identifikation",X (([939] [142]) ∨ ([940] [143])) ∧ [576],"[142] wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [143] wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [576] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
-Kommunikationsverbindung,45,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,45,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,46,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,46,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],
-Kommunikationsverbindung,47,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,47,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,48,SG4,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,48,SG4,COM,3155,,AL,,Handy,X [1P0..1],
-Kommunikationsverbindung,49,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,49,SG4,COM,3155,,FX,,Telefax,X [1P0..1],
-MP-ID Empfänger,50,SG2,,,,,,,Muss,,,MP-ID Empfänger,50,SG2,,,,,,,Muss,
-MP-ID Empfänger,51,SG2,NAD,,00013,,,,Muss,,,MP-ID Empfänger,51,SG2,NAD,,00013,,,,Muss,
-MP-ID Empfänger,52,SG2,NAD,3035,00013,,,,MR,,,MP-ID Empfänger,52,SG2,NAD,3035,00013,,,,MR,
-MP-ID Empfänger,53,SG2,NAD,3039,00013,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,53,SG2,NAD,3039,00013,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom
-MP-ID Empfänger,54,SG2,NAD,3055,00013,9,,GS1,X,,,MP-ID Empfänger,54,SG2,NAD,3055,00013,9,,GS1,X,
-MP-ID Empfänger,55,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,55,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Abschnitts-Kontrollsegment,56,,UNS,,00014,,,,Muss,,,Abschnitts-Kontrollsegment,56,,UNS,,00014,,,,Muss,
-Abschnitts-Kontrollsegment,57,,UNS,0081,00014,Positionsteil,,,D,,,Abschnitts-Kontrollsegment,57,,UNS,0081,00014,Positionsteil,,,D,
-Name und Adresse,58,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben,,Name und Adresse,58,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben
-Name und Adresse,59,SG5,NAD,,00015,,,,Muss,,,Name und Adresse,59,SG5,NAD,,00015,,,,Muss,
-Name und Adresse,60,SG5,NAD,3035,00015,,,,Z15,,,Name und Adresse,60,SG5,NAD,3035,00015,,,,Z15,
-Identifikationsangabe,61,SG6,,,,,,,Muss,,,Identifikationsangabe,61,SG6,,,,,,,Muss,
-Identifikationsangabe,62,SG6,LOC,,00017,,,,Muss,,,Identifikationsangabe,62,SG6,LOC,,00017,,,,Muss,
-Identifikationsangabe,63,SG6,LOC,3227,00017,,,,172,,,Identifikationsangabe,63,SG6,LOC,3227,00017,,,,172,
-Identifikationsangabe,64,SG6,LOC,3225,00017,,,Bezeichnung,X [951] [511],"[511] Hinweis: Verwendung der ID des MaBiS-ZP
-[951] Format: Zählpunktbezeichnung",,Identifikationsangabe,64,SG6,LOC,3225,00017,,,Bezeichnung,X [951] [511],"[511] Hinweis: Verwendung der ID des MaBiS-ZP
-[951] Format: Zählpunktbezeichnung"
-,,,,,,,,,,,NEW,Beginn Messperiode Übertragungszeitraum,65,SG6,DTM,,00018,,,,Muss [150],[150] Wenn BGM+Z69 (Redispatch tägliche Ausfallarbeitsüberführungszeitreih e) vorhanden.
-,,,,,,,,,,,NEW,Beginn Messperiode Übertragungszeitraum,66,SG6,DTM,2005,00018,163,,"Verarbeitung, Beginndatum/-zeit",X,
-,,,,,,,,,,,NEW,Beginn Messperiode Übertragungszeitraum,67,SG6,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
-,,,,,,,,,,,NEW,Beginn Messperiode Übertragungszeitraum,68,SG6,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,
-,,,,,,,,,,,NEW,Ende Messperiode Übertragungszeitraum,69,SG6,DTM,,00019,,,,Muss [150],[150] Wenn BGM+Z69 (Redispatch tägliche Ausfallarbeitsüberführungszeitreih e) vorhanden.
-,,,,,,,,,,,NEW,Ende Messperiode Übertragungszeitraum,70,SG6,DTM,2005,00019,164,,"Verarbeitung, Endedatum/-zeit",X,
-,,,,,,,,,,,NEW,Ende Messperiode Übertragungszeitraum,71,SG6,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
-,,,,,,,,,,,NEW,Ende Messperiode Übertragungszeitraum,72,SG6,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,
-Bilanzierungsmonat,65,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,,Bilanzierungsmonat,73,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden
-Bilanzierungsmonat,66,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,,Bilanzierungsmonat,74,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,
-Bilanzierungsmonat,67,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Bilanzierungsmonat,75,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
-Bilanzierungsmonat,68,SG6,DTM,2379,00020,610,,CCYYMM,X,,,Bilanzierungsmonat,76,SG6,DTM,2379,00020,610,,CCYYMM,X,
-Versionsangabe ,69,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,,Versionsangabe ,77,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden
-Versionsangabe ,70,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,,Versionsangabe ,78,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,
-Versionsangabe ,71,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Versionsangabe ,79,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
-Versionsangabe ,72,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,,Versionsangabe ,80,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,
-lfd. Position,73,SG9,,,,,,,Muss,,,lfd. Position,81,SG9,,,,,,,Muss,
-lfd. Position,74,SG9,LIN,,00026,,,,Muss,,,lfd. Position,82,SG9,LIN,,00026,,,,Muss,
-lfd. Position,75,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,,lfd. Position,83,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n
-Produktidentifikation,76,SG9,PIA,,00027,,,,Muss,,,Produktidentifikation,84,SG9,PIA,,00027,,,,Muss,
-Produktidentifikation,77,SG9,PIA,4347,00027,,,,5,,,Produktidentifikation,85,SG9,PIA,4347,00027,,,,5,
-Produktidentifikation,78,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",,Produktidentifikation,86,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind."
-Produktidentifikation,79,SG9,PIA,7143,00027,Z08,,Medium,X,,,Produktidentifikation,87,SG9,PIA,7143,00027,Z08,,Medium,X,
-Mengenangaben,80,SG10,,,,,,,Muss,,,Mengenangaben,88,SG10,,,,,,,Muss,
-Mengenangaben,81,SG10,QTY,,00028,,,,Muss,,,Mengenangaben,89,SG10,QTY,,00028,,,,Muss,
-Mengenangaben,82,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,,Mengenangaben,90,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,
-Mengenangaben,83,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
-[910] Format: Möglicher Wert: < 0 oder ≥ 0",,Mengenangaben,91,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
-[910] Format: Möglicher Wert: < 0 oder ≥ 0"
-Mengenangaben,84,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,,Mengenangaben,92,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,
-Beginn Messperiode,85,SG10,DTM,,00029,,,,Muss,,,Beginn Messperiode,93,SG10,DTM,,00029,,,,Muss,
-Beginn Messperiode,86,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Beginn Messperiode,94,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,
-Beginn Messperiode,87,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00",,Beginn Messperiode,95,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00"
-Beginn Messperiode,88,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,,Beginn Messperiode,96,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,
-Ende Messperiode,89,SG10,DTM,,00030,,,,Muss,,,Ende Messperiode,97,SG10,DTM,,00030,,,,Muss,
-Ende Messperiode,90,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,,Ende Messperiode,98,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,
-Ende Messperiode,91,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00",,Ende Messperiode,99,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
-[931] Format: ZZZ = +00"
-Ende Messperiode,92,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,,Ende Messperiode,100,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,
-Nachrichten-Endesegment,93,,UNT,,00041,,,,Muss,,,Nachrichten-Endesegment,101,,UNT,,00041,,,,Muss,
-Nachrichten-Endesegment,94,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,102,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,95,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,103,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,
-Nutzdaten-Endesegment,96,,UNZ,,00042,,,,Muss,,,Nutzdaten-Endesegment,104,,UNZ,,00042,,,,Muss,
-Nutzdaten-Endesegment,97,,UNZ,0036,00042,,,Datenaustauschzähler,X,,,Nutzdaten-Endesegment,105,,UNZ,0036,00042,,,Datenaustauschzähler,X,
-Nutzdaten-Endesegment,98,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,,Nutzdaten-Endesegment,106,,UNZ,0020,00042,,,Datenaustauschreferenz,X,
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",44
+Kommunikationsverbindung,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],,45,,,Kommunikationsverbindung,SG4,COM,3155,00012,TE,,Telefon,X [1P0..1],,45
+Kommunikationsverbindung,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],,46,,,Kommunikationsverbindung,SG4,COM,3155,,EM,,E-Mail,X [1P0..1],,46
+Kommunikationsverbindung,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,47,,,Kommunikationsverbindung,SG4,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,47
+Kommunikationsverbindung,SG4,COM,3155,,AL,,Handy,X [1P0..1],,48,,,Kommunikationsverbindung,SG4,COM,3155,,AL,,Handy,X [1P0..1],,48
+Kommunikationsverbindung,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,49,,,Kommunikationsverbindung,SG4,COM,3155,,FX,,Telefax,X [1P0..1],,49
+MP-ID Empfänger,SG2,,,,,,,Muss,,50,,,MP-ID Empfänger,SG2,,,,,,,Muss,,50
+MP-ID Empfänger,SG2,NAD,,00013,,,,Muss,,51,,,MP-ID Empfänger,SG2,NAD,,00013,,,,Muss,,51
+MP-ID Empfänger,SG2,NAD,3035,00013,,,,MR,,52,,,MP-ID Empfänger,SG2,NAD,3035,00013,,,,MR,,52
+MP-ID Empfänger,SG2,NAD,3039,00013,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,53,,,MP-ID Empfänger,SG2,NAD,3039,00013,,,MP-ID,X [117],[117] Nur MP-ID aus Sparte Strom,53
+MP-ID Empfänger,SG2,NAD,3055,00013,9,,GS1,X,,54,,,MP-ID Empfänger,SG2,NAD,3055,00013,9,,GS1,X,,54
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,55,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,55
+Abschnitts-Kontrollsegment,,UNS,,00014,,,,Muss,,56,,,Abschnitts-Kontrollsegment,,UNS,,00014,,,,Muss,,56
+Abschnitts-Kontrollsegment,,UNS,0081,00014,Positionsteil,,,D,,57,,,Abschnitts-Kontrollsegment,,UNS,0081,00014,Positionsteil,,,D,,57
+Name und Adresse,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben,58,,,Name und Adresse,SG5,,,,,,,Muss [2001],[2001] Segmentgruppe ist nur einmal je UNH anzugeben,58
+Name und Adresse,SG5,NAD,,00015,,,,Muss,,59,,,Name und Adresse,SG5,NAD,,00015,,,,Muss,,59
+Name und Adresse,SG5,NAD,3035,00015,,,,Z15,,60,,,Name und Adresse,SG5,NAD,3035,00015,,,,Z15,,60
+Identifikationsangabe,SG6,,,,,,,Muss,,61,,,Identifikationsangabe,SG6,,,,,,,Muss,,61
+Identifikationsangabe,SG6,LOC,,00017,,,,Muss,,62,,,Identifikationsangabe,SG6,LOC,,00017,,,,Muss,,62
+Identifikationsangabe,SG6,LOC,3227,00017,,,,172,,63,,,Identifikationsangabe,SG6,LOC,3227,00017,,,,172,,63
+Identifikationsangabe,SG6,LOC,3225,00017,,,Bezeichnung,X [951] [511],"[511] Hinweis: Verwendung der ID des MaBiS-ZP
+[951] Format: Zählpunktbezeichnung",64,,,Identifikationsangabe,SG6,LOC,3225,00017,,,Bezeichnung,X [951] [511],"[511] Hinweis: Verwendung der ID des MaBiS-ZP
+[951] Format: Zählpunktbezeichnung",64
+,,,,,,,,,,,NEU,,Beginn Messperiode Übertragungszeitraum,SG6,DTM,,00018,,,,Muss [150],[150] Wenn BGM+Z69 (Redispatch tägliche Ausfallarbeitsüberführungszeitreih e) vorhanden.,65
+,,,,,,,,,,,NEU,,Beginn Messperiode Übertragungszeitraum,SG6,DTM,2005,00018,163,,"Verarbeitung, Beginndatum/-zeit",X,,66
+,,,,,,,,,,,NEU,,Beginn Messperiode Übertragungszeitraum,SG6,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,67
+,,,,,,,,,,,NEU,,Beginn Messperiode Übertragungszeitraum,SG6,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,,68
+,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,,00019,,,,Muss [150],[150] Wenn BGM+Z69 (Redispatch tägliche Ausfallarbeitsüberführungszeitreih e) vorhanden.,69
+,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2005,00019,164,,"Verarbeitung, Endedatum/-zeit",X,,70
+,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2380,00019,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,71
+,,,,,,,,,,,NEU,,Ende Messperiode Übertragungszeitraum,SG6,DTM,2379,00019,303,,CCYYMMDDHHMMZZZ,X,,72
+Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,65,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,,00020,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,73
+Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,66,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2005,00020,492,,"Bilanzierungsdatum, -zeit, -periode",X,,74
+Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,67,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2380,00020,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,75
+Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,68,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bilanzierungsmonat,SG6,DTM,2379,00020,610,,CCYYMM,X,,76
+Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 vorhanden,69,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,,00021,,,,Muss [121],[121] wenn BGM+Z43 (Redispatch Ausfallarbeitüberführungszeitreih e) vorhanden,77
+Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,70,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2005,00021,293,,Fertigstellungsdatum/-zeit,X,,78
+Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,71,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2380,00021,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,79
+Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,72,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Versionsangabe ,SG6,DTM,2379,00021,304,,CCYYMMDDHHMMSSZZZ,X,,80
+lfd. Position,SG9,,,,,,,Muss,,73,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,,,,,,,Muss,,81
+lfd. Position,SG9,LIN,,00026,,,,Muss,,74,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,LIN,,00026,,,,Muss,,82
+lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,75,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,lfd. Position,SG9,LIN,1082,00026,,,Positionsnummer,X [908],[908] Format: Mögliche Werte: 1 bis n,83
+Produktidentifikation,SG9,PIA,,00027,,,,Muss,,76,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,,00027,,,,Muss,,84
+Produktidentifikation,SG9,PIA,4347,00027,,,,5,,77,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,4347,00027,,,,5,,85
+Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",78,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,7140,00027,,,Medium / OBIS-Kennzahl,X [501],"[501] Hinweis: Es sind nur die Werte erlaubt, die in der EDI@Energy Codeliste der OBIS- Kennzahlen und Medien mit dem entsprechenden Prüfidentifikator versehen sind.",86
+Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,79,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Produktidentifikation,SG9,PIA,7143,00027,Z08,,Medium,X,,87
+Mengenangaben,SG10,,,,,,,Muss,,80,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,,,,,,,Muss,,88
+Mengenangaben,SG10,QTY,,00028,,,,Muss,,81,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,,00028,,,,Muss,,89
+Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,82,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6063,00028,79,,"Energiemenge summiert (Summenwert, Bilanzsumme)",X,,90
+Mengenangaben,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
+[910] Format: Möglicher Wert: < 0 oder ≥ 0",83,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6060,00028,,,Menge,X [910] ∧ [906],"[906] Format: max. 3 Nachkommastellen
+[910] Format: Möglicher Wert: < 0 oder ≥ 0",91
+Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,84,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Mengenangaben,SG10,QTY,6411,00028,KWH,,Kilowattstunde,X,,92
+Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,85,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,,00029,,,,Muss,,93
+Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,86,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2005,00029,163,,"Verarbeitung, Beginndatum/-zeit",X,,94
+Beginn Messperiode,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",87,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2380,00029,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",95
+Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,88,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn Messperiode,SG10,DTM,2379,00029,303,,CCYYMMDDHHMMZZZ,X,,96
+Ende Messperiode,SG10,DTM,,00030,,,,Muss,,89,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,,00030,,,,Muss,,97
+Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,90,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2005,00030,164,,"Verarbeitung, Endedatum/-zeit",X,,98
+Ende Messperiode,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",91,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2380,00030,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [495],"[495] Der Zeitpunkt muss ≤ dem Wert im DE2380 des DTM+137 sein
+[931] Format: ZZZ = +00",99
+Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,92,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende Messperiode,SG10,DTM,2379,00030,303,,CCYYMMDDHHMMZZZ,X,,100
+Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,93,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00041,,,,Muss,,101
+Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,94,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00041,,,Anzahl der Segmente in einer Nachricht,X,,102
+Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,95,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00041,,,Nachrichten-Referenznummer,X,,103
+Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,96,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,,00042,,,,Muss,,104
+Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,97,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,0036,00042,,,Datenaustauschzähler,X,,105
+Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,98,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nutzdaten-Endesegment,,UNZ,0020,00042,,,Datenaustauschreferenz,X,,106

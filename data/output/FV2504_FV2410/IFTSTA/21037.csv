@@ -1,174 +1,174 @@
-Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,diff,Segmentname_FV2504,Unnamed: 0_FV2504,Segmentgruppe_FV2504,Segment_FV2504,Datenelement_FV2504,Segment ID_FV2504,Code_FV2504,Qualifier_FV2504,Beschreibung_FV2504,Bedingungsausdruck_FV2504,Bedingung_FV2504
-Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00001,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00001,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00001,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00001,2.0f,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,00002,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00002,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,00002,Z49,,Redispatch Meldung(en),X,,,Beginn der Nachricht,8,,BGM,1001,00002,Z49,,Redispatch Meldung(en),X,
-Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00002,,,Dokumentennummer,X,
-Dokumentendatum,10,,DTM,,00003,,,,Muss,,,Dokumentendatum,10,,DTM,,00003,,,,Muss,
-Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Dokumentendatum,11,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Dokumentendatum,12,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,,Dokumentendatum,13,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Empfänger,14,SG1,,,,,,,Muss,,,MP-ID Empfänger,14,SG1,,,,,,,Muss,
-MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,,,MP-ID Empfänger,15,SG1,NAD,,00004,,,,Muss,
-MP-ID Empfänger,16,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,16,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,17,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
-MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,,,MP-ID Empfänger,18,SG1,NAD,3055,00004,9,,GS1,X,
-MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,19,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Absender,20,SG1,,,,,,,Muss,,,MP-ID Absender,20,SG1,,,,,,,Muss,
-MP-ID Absender,21,SG1,NAD,,00005,,,,Muss,,,MP-ID Absender,21,SG1,NAD,,00005,,,,Muss,
-MP-ID Absender,22,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,22,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
-MP-ID Absender,23,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,,MP-ID Absender,23,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom
-MP-ID Absender,24,SG1,NAD,3055,00005,9,,GS1,X,,,MP-ID Absender,24,SG1,NAD,3055,00005,9,,GS1,X,
-MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,25,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,26,SG2,,,,,,,Kann,,,Ansprechpartner,26,SG2,,,,,,,Kann,
-Ansprechpartner,27,SG2,CTA,,00006,,,,Muss,,,Ansprechpartner,27,SG2,CTA,,00006,,,,Muss,
-Ansprechpartner,28,SG2,CTA,3139,00006,IC,,Informationskontakt,X,,,Ansprechpartner,28,SG2,CTA,3139,00006,IC,,Informationskontakt,X,
-Ansprechpartner,29,SG2,CTA,3412,00006,,,Kontakt,X,,,Ansprechpartner,29,SG2,CTA,3412,00006,,,Kontakt,X,
-Kommunikationsverbindung,30,SG2,COM,,00007,,,,Muss,,,Kommunikationsverbindung,30,SG2,COM,,00007,,,,Muss,
-Kommunikationsverbindung,31,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,31,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X (([939][146]) ∨ ([940][147])) ∧ [534],"[146] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+Segmentname_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,Unnamed: 0_FV2410,Änderung,changed_entries,Segmentname_FV2504,Segmentgruppe_FV2504,Segment_FV2504,Datenelement_FV2504,Segment ID_FV2504,Code_FV2504,Qualifier_FV2504,Beschreibung_FV2504,Bedingungsausdruck_FV2504,Bedingung_FV2504,Unnamed: 0_FV2504
+Nachrichten-Kopfsegment,,UNH,,00001,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,00001,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,00001,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,00001,IFTSTA,,Multimodaler Statusbericht,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,00001,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,00001,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,00001,18A,,Ausgabe 2018 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,00001,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,00001,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,00001,2.0e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,ÄNDERUNG,Code_FV2410|Code_FV2504,Nachrichten-Kopfsegment,,UNH,0057,00001,2.0f,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,00002,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,00002,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,00002,Z49,,Redispatch Meldung(en),X,,8,,,Beginn der Nachricht,,BGM,1001,00002,Z49,,Redispatch Meldung(en),X,,8
+Beginn der Nachricht,,BGM,1004,00002,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,00002,,,Dokumentennummer,X,,9
+Dokumentendatum,,DTM,,00003,,,,Muss,,10,,,Dokumentendatum,,DTM,,00003,,,,Muss,,10
+Dokumentendatum,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Dokumentendatum,,DTM,2005,00003,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Dokumentendatum,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Dokumentendatum,,DTM,2380,00003,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Dokumentendatum,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,13,,,Dokumentendatum,,DTM,2379,00003,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Empfänger,SG1,,,,,,,Muss,,14,,,MP-ID Empfänger,SG1,,,,,,,Muss,,14
+MP-ID Empfänger,SG1,NAD,,00004,,,,Muss,,15,,,MP-ID Empfänger,SG1,NAD,,00004,,,,Muss,,15
+MP-ID Empfänger,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,,16,,,MP-ID Empfänger,SG1,NAD,3035,00004,MR,,Nachrichtenempfänger,X,,16
+MP-ID Empfänger,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,17,,,MP-ID Empfänger,SG1,NAD,3039,00004,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,17
+MP-ID Empfänger,SG1,NAD,3055,00004,9,,GS1,X,,18,,,MP-ID Empfänger,SG1,NAD,3055,00004,9,,GS1,X,,18
+MP-ID Empfänger,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,,,MP-ID Empfänger,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19
+MP-ID Absender,SG1,,,,,,,Muss,,20,,,MP-ID Absender,SG1,,,,,,,Muss,,20
+MP-ID Absender,SG1,NAD,,00005,,,,Muss,,21,,,MP-ID Absender,SG1,NAD,,00005,,,,Muss,,21
+MP-ID Absender,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,22,,,MP-ID Absender,SG1,NAD,3035,00005,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,22
+MP-ID Absender,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,23,,,MP-ID Absender,SG1,NAD,3039,00005,,,MP-ID,X [27],[27] Nur MP-ID aus Sparte Strom,23
+MP-ID Absender,SG1,NAD,3055,00005,9,,GS1,X,,24,,,MP-ID Absender,SG1,NAD,3055,00005,9,,GS1,X,,24
+MP-ID Absender,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,25,,,MP-ID Absender,SG1,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,25
+Ansprechpartner,SG2,,,,,,,Kann,,26,,,Ansprechpartner,SG2,,,,,,,Kann,,26
+Ansprechpartner,SG2,CTA,,00006,,,,Muss,,27,,,Ansprechpartner,SG2,CTA,,00006,,,,Muss,,27
+Ansprechpartner,SG2,CTA,3139,00006,IC,,Informationskontakt,X,,28,,,Ansprechpartner,SG2,CTA,3139,00006,IC,,Informationskontakt,X,,28
+Ansprechpartner,SG2,CTA,3412,00006,,,Kontakt,X,,29,,,Ansprechpartner,SG2,CTA,3412,00006,,,Kontakt,X,,29
+Kommunikationsverbindung,SG2,COM,,00007,,,,Muss,,30,,,Kommunikationsverbindung,SG2,COM,,00007,,,,Muss,,30
+Kommunikationsverbindung,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X,,31,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Kommunikationsverbindung,SG2,COM,3148,00007,,,Nummer / E-Mail Adresse,X (([939][146]) ∨ ([940][147])) ∧ [534],"[146] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [147] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [534] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
-Kommunikationsverbindung,32,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],,,Kommunikationsverbindung,32,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],
-Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,33,SG2,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,34,SG2,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,35,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,36,SG2,COM,3155,,AL,,Handy,X [1P0..1],
-Sendungsdaten,37,SG14,,,,,,,Muss [525],[525] Hinweis: Je SG14 sind nur Statusinformationen zu einer MSCONS enthalten,,Sendungsdaten,37,SG14,,,,,,,Muss [525],[525] Hinweis: Je SG14 sind nur Statusinformationen zu einer MSCONS enthalten
-Sendungsdaten,38,SG14,CNI,,00019,,,,Muss,,,Sendungsdaten,38,SG14,CNI,,00019,,,,Muss,
-Sendungsdaten,39,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",,Sendungsdaten,39,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend"
-Status der Ausfallarbeit,40,SG15,,,,,,,Muss [57] ∧ [58]  Soll [60],"[57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",31
+Kommunikationsverbindung,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],,32,,,Kommunikationsverbindung,SG2,COM,3155,00007,EM,,E-Mail,X [1P0..1],,32
+Kommunikationsverbindung,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,33,,,Kommunikationsverbindung,SG2,COM,3155,,FX,,Telefax,X [1P0..1],,33
+Kommunikationsverbindung,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,34,,,Kommunikationsverbindung,SG2,COM,3155,,TE,,Telefon,X [1P0..1],,34
+Kommunikationsverbindung,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,35,,,Kommunikationsverbindung,SG2,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,35
+Kommunikationsverbindung,SG2,COM,3155,,AL,,Handy,X [1P0..1],,36,,,Kommunikationsverbindung,SG2,COM,3155,,AL,,Handy,X [1P0..1],,36
+Sendungsdaten,SG14,,,,,,,Muss [525],[525] Hinweis: Je SG14 sind nur Statusinformationen zu einer MSCONS enthalten,37,,,Sendungsdaten,SG14,,,,,,,Muss [525],[525] Hinweis: Je SG14 sind nur Statusinformationen zu einer MSCONS enthalten,37
+Sendungsdaten,SG14,CNI,,00019,,,,Muss,,38,,,Sendungsdaten,SG14,CNI,,00019,,,,Muss,,38
+Sendungsdaten,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",39,,,Sendungsdaten,SG14,CNI,1490,00019,,,Vorgangsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht bei 1 beginnend und fortlaufend aufsteigend",39
+Status der Ausfallarbeit,SG15,,,,,,,Muss [57] ∧ [58]  Soll [60],"[57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
 [58] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z29 ist
 [59] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z30 ist
-[60] Wenn zusätzlich zum Fahrplananteil auch die Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",,Status der Ausfallarbeit,40,SG15,,,,,,,Muss [57] ∧ [58]  Soll [60],"[57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
+[60] Wenn zusätzlich zum Fahrplananteil auch die Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",40,,,Status der Ausfallarbeit,SG15,,,,,,,Muss [57] ∧ [58]  Soll [60],"[57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
 [58] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z29 ist
 [59] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z30 ist
-[60] Wenn zusätzlich zum Fahrplananteil auch die Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist"
-Status der Ausfallarbeit,41,SG15,STS,,00069,,,,Muss,,,Status der Ausfallarbeit,41,SG15,STS,,00069,,,,Muss,
-Status der Ausfallarbeit,42,SG15,STS,9015,00069,Z27,,Status der Ausfallarbeit,X,,,Status der Ausfallarbeit,42,SG15,STS,9015,00069,Z27,,Status der Ausfallarbeit,X,
-Status der Ausfallarbeit,43,SG15,STS,4405,00069,Z30,,zugestimmt,X,,,Status der Ausfallarbeit,43,SG15,STS,4405,00069,Z30,,zugestimmt,X,
-Status der Ausfallarbeit,44,SG15,STS,4405,,Z32,,abgelehnt,X,,,Status der Ausfallarbeit,44,SG15,STS,4405,,Z32,,abgelehnt,X,
-Status der Ausfallarbeit,45,SG15,STS,9013,00069,,,Code des Prüfschritts,X [62] ∨ [63],"[62] Wenn STS+Z27+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
-[63] Wenn STS+Z27+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",,Status der Ausfallarbeit,45,SG15,STS,9013,00069,,,Code des Prüfschritts,X [62] ∨ [63],"[62] Wenn STS+Z27+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
-[63] Wenn STS+Z27+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich."
-Status der Ausfallarbeit,46,SG15,STS,1131,,E_0902,,EBD Nr. E_0902,X,,,Status der Ausfallarbeit,46,SG15,STS,1131,,E_0902,,EBD Nr. E_0902,X,
-Prüfidentifikator,47,SG15,RFF,,00070,,,,Muss,,,Prüfidentifikator,47,SG15,RFF,,00070,,,,Muss,
-Prüfidentifikator,48,SG15,RFF,1153,00070,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,48,SG15,RFF,1153,00070,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,49,SG15,RFF,1154,00070,21037,,RD / NB-Bewertung,X,,,Prüfidentifikator,49,SG15,RFF,1154,00070,21037,,RD / NB-Bewertung,X,
-Referenzangaben,50,SG15,RFF,,00071,,,,Muss,,,Referenzangaben,50,SG15,RFF,,00071,,,,Muss,
-Referenzangaben,51,SG15,RFF,1153,00071,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Referenzangaben,51,SG15,RFF,1153,00071,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
-Referenzangaben,52,SG15,RFF,1154,00071,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",,Referenzangaben,52,SG15,RFF,1154,00071,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht"
-Gegenvorschlag,53,SG15,RFF,,00072,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,,Gegenvorschlag,53,SG15,RFF,,00072,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann
-Gegenvorschlag,54,SG15,RFF,1153,00072,ACE,,Nummer des zugehörigen Dokuments,X,,,Gegenvorschlag,54,SG15,RFF,1153,00072,ACE,,Nummer des zugehörigen Dokuments,X,
-Gegenvorschlag,55,SG15,RFF,1154,00072,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",,Gegenvorschlag,55,SG15,RFF,1154,00072,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält"
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,56,SG17,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,56,SG17,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,57,SG17,NAD,,00073,,,,Muss,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,57,SG17,NAD,,00073,,,,Muss,
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,58,SG17,NAD,3035,00073,PK,,Ansprechpartner,X,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,58,SG17,NAD,3035,00073,PK,,Ansprechpartner,X,
-Ansprechpartner,59,SG18,,,,,,,Muss,,,Ansprechpartner,59,SG18,,,,,,,Muss,
-Ansprechpartner,60,SG18,CTA,,00074,,,,Muss,,,Ansprechpartner,60,SG18,CTA,,00074,,,,Muss,
-Ansprechpartner,61,SG18,CTA,3139,00074,IC,,Informationskontakt,X,,,Ansprechpartner,61,SG18,CTA,3139,00074,IC,,Informationskontakt,X,
-Ansprechpartner,62,SG18,CTA,3412,00074,,,Kontakt,X,,,Ansprechpartner,62,SG18,CTA,3412,00074,,,Kontakt,X,
-Kommunikationsverbindung,63,SG18,COM,,00075,,,,Muss,,,Kommunikationsverbindung,63,SG18,COM,,00075,,,,Muss,
-Kommunikationsverbindung,64,SG18,COM,3148,00075,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,64,SG18,COM,3148,00075,,,Nummer / E-Mail Adresse,X,
-Kommunikationsverbindung,65,SG18,COM,3155,00075,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,65,SG18,COM,3155,00075,EM,,Elektronische Post,X [1P1..1],
-Kommunikationsverbindung,66,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,66,SG18,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,67,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,67,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,68,SG18,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,68,SG18,COM,3155,,AL,,Handy,X [1P0..1],
-Sendungspositionseinzelhei ten,69,SG25,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,,Sendungspositionseinzelhei ten,69,SG25,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden
-Sendungspositionseinzelhei ten,70,SG25,GID,,00076,,,,Muss,,,Sendungspositionseinzelhei ten,70,SG25,GID,,00076,,,,Muss,
-Sendungspositionseinzelhei ten,71,SG25,GID,1496,00076,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Sendungspositionseinzelhei ten,71,SG25,GID,1496,00076,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
-Freier Text,72,SG25,FTX,,00077,,,,Muss,,,Freier Text,72,SG25,FTX,,00077,,,,Muss,
-Freier Text,73,SG25,FTX,4451,00077,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Freier Text,73,SG25,FTX,4451,00077,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
-Freier Text,74,SG25,FTX,4440,00077,,,Freier Text,X,,,Freier Text,74,SG25,FTX,4440,00077,,,Freier Text,X,
-Status des Fahrplananteils,75,SG15,,,,,,,Muss [56] ∧ [58] Soll [61],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
+[60] Wenn zusätzlich zum Fahrplananteil auch die Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",40
+Status der Ausfallarbeit,SG15,STS,,00069,,,,Muss,,41,,,Status der Ausfallarbeit,SG15,STS,,00069,,,,Muss,,41
+Status der Ausfallarbeit,SG15,STS,9015,00069,Z27,,Status der Ausfallarbeit,X,,42,,,Status der Ausfallarbeit,SG15,STS,9015,00069,Z27,,Status der Ausfallarbeit,X,,42
+Status der Ausfallarbeit,SG15,STS,4405,00069,Z30,,zugestimmt,X,,43,,,Status der Ausfallarbeit,SG15,STS,4405,00069,Z30,,zugestimmt,X,,43
+Status der Ausfallarbeit,SG15,STS,4405,,Z32,,abgelehnt,X,,44,,,Status der Ausfallarbeit,SG15,STS,4405,,Z32,,abgelehnt,X,,44
+Status der Ausfallarbeit,SG15,STS,9013,00069,,,Code des Prüfschritts,X [62] ∨ [63],"[62] Wenn STS+Z27+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[63] Wenn STS+Z27+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",45,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Status der Ausfallarbeit,SG15,STS,9013,00069,,,Code des Prüfschritts,X [62] ∨ [63],"[62] Wenn STS+Z27+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
+[63] Wenn STS+Z27+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich.",45
+Status der Ausfallarbeit,SG15,STS,1131,,E_0902,,EBD Nr. E_0902,X,,46,,,Status der Ausfallarbeit,SG15,STS,1131,,E_0902,,EBD Nr. E_0902,X,,46
+Prüfidentifikator,SG15,RFF,,00070,,,,Muss,,47,,,Prüfidentifikator,SG15,RFF,,00070,,,,Muss,,47
+Prüfidentifikator,SG15,RFF,1153,00070,Z13,,Prüfidentifikator,X,,48,,,Prüfidentifikator,SG15,RFF,1153,00070,Z13,,Prüfidentifikator,X,,48
+Prüfidentifikator,SG15,RFF,1154,00070,21037,,RD / NB-Bewertung,X,,49,,,Prüfidentifikator,SG15,RFF,1154,00070,21037,,RD / NB-Bewertung,X,,49
+Referenzangaben,SG15,RFF,,00071,,,,Muss,,50,,,Referenzangaben,SG15,RFF,,00071,,,,Muss,,50
+Referenzangaben,SG15,RFF,1153,00071,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,51,,,Referenzangaben,SG15,RFF,1153,00071,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,51
+Referenzangaben,SG15,RFF,1154,00071,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",52,,,Referenzangaben,SG15,RFF,1154,00071,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",52
+Gegenvorschlag,SG15,RFF,,00072,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,53,,,Gegenvorschlag,SG15,RFF,,00072,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,53
+Gegenvorschlag,SG15,RFF,1153,00072,ACE,,Nummer des zugehörigen Dokuments,X,,54,,,Gegenvorschlag,SG15,RFF,1153,00072,ACE,,Nummer des zugehörigen Dokuments,X,,54
+Gegenvorschlag,SG15,RFF,1154,00072,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",55,,,Gegenvorschlag,SG15,RFF,1154,00072,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",55
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,56,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,56
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,,00073,,,,Muss,,57,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,,00073,,,,Muss,,57
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,3035,00073,PK,,Ansprechpartner,X,,58,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,3035,00073,PK,,Ansprechpartner,X,,58
+Ansprechpartner,SG18,,,,,,,Muss,,59,,,Ansprechpartner,SG18,,,,,,,Muss,,59
+Ansprechpartner,SG18,CTA,,00074,,,,Muss,,60,,,Ansprechpartner,SG18,CTA,,00074,,,,Muss,,60
+Ansprechpartner,SG18,CTA,3139,00074,IC,,Informationskontakt,X,,61,,,Ansprechpartner,SG18,CTA,3139,00074,IC,,Informationskontakt,X,,61
+Ansprechpartner,SG18,CTA,3412,00074,,,Kontakt,X,,62,,,Ansprechpartner,SG18,CTA,3412,00074,,,Kontakt,X,,62
+Kommunikationsverbindung,SG18,COM,,00075,,,,Muss,,63,,,Kommunikationsverbindung,SG18,COM,,00075,,,,Muss,,63
+Kommunikationsverbindung,SG18,COM,3148,00075,,,Nummer / E-Mail Adresse,X,,64,,,Kommunikationsverbindung,SG18,COM,3148,00075,,,Nummer / E-Mail Adresse,X,,64
+Kommunikationsverbindung,SG18,COM,3155,00075,EM,,Elektronische Post,X [1P1..1],,65,,,Kommunikationsverbindung,SG18,COM,3155,00075,EM,,Elektronische Post,X [1P1..1],,65
+Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,66,,,Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,66
+Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,67,,,Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,67
+Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,68,,,Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,68
+Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,69,,,Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [52],[52] Wenn STS+Z27+Z32 vorhanden,69
+Sendungspositionseinzelhei ten,SG25,GID,,00076,,,,Muss,,70,,,Sendungspositionseinzelhei ten,SG25,GID,,00076,,,,Muss,,70
+Sendungspositionseinzelhei ten,SG25,GID,1496,00076,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,71,,,Sendungspositionseinzelhei ten,SG25,GID,1496,00076,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,71
+Freier Text,SG25,FTX,,00077,,,,Muss,,72,,,Freier Text,SG25,FTX,,00077,,,,Muss,,72
+Freier Text,SG25,FTX,4451,00077,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,73,,,Freier Text,SG25,FTX,4451,00077,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,73
+Freier Text,SG25,FTX,4440,00077,,,Freier Text,X,,74,,,Freier Text,SG25,FTX,4440,00077,,,Freier Text,X,,74
+Status des Fahrplananteils,SG15,,,,,,,Muss [56] ∧ [58] Soll [61],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
 [58] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z29 ist
-[61] Wenn zusätzlich zur Ausfallarbeit auch der Fahrplananteil zu identischem Wert aus RFF+ACW nicht o.k. ist",,Status des Fahrplananteils,75,SG15,,,,,,,Muss [56] ∧ [58] Soll [61],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
+[61] Wenn zusätzlich zur Ausfallarbeit auch der Fahrplananteil zu identischem Wert aus RFF+ACW nicht o.k. ist",75,,,Status des Fahrplananteils,SG15,,,,,,,Muss [56] ∧ [58] Soll [61],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
 [58] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z29 ist
-[61] Wenn zusätzlich zur Ausfallarbeit auch der Fahrplananteil zu identischem Wert aus RFF+ACW nicht o.k. ist"
-Status des Fahrplananteils,76,SG15,STS,,00078,,,,Muss,,,Status des Fahrplananteils,76,SG15,STS,,00078,,,,Muss,
-Status des Fahrplananteils,77,SG15,STS,9015,00078,Z28,,Status des Fahrplananteils,X,,,Status des Fahrplananteils,77,SG15,STS,9015,00078,Z28,,Status des Fahrplananteils,X,
-Status des Fahrplananteils,78,SG15,STS,4405,00078,Z30,,zugestimmt,X,,,Status des Fahrplananteils,78,SG15,STS,4405,00078,Z30,,zugestimmt,X,
-Status des Fahrplananteils,79,SG15,STS,4405,,Z32,,abgelehnt,X,,,Status des Fahrplananteils,79,SG15,STS,4405,,Z32,,abgelehnt,X,
-Status des Fahrplananteils,80,SG15,STS,9013,00078,,,Code des Prüfschritts,X [64] ∨ [65],"[64] Wenn STS+Z28+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
-[65] Wenn STS+Z28+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",,Status des Fahrplananteils,80,SG15,STS,9013,00078,,,Code des Prüfschritts,X [64] ∨ [65],"[64] Wenn STS+Z28+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
-[65] Wenn STS+Z28+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich."
-Status des Fahrplananteils,81,SG15,STS,1131,00078,E_0902,,EBD Nr. E_0902,X,,,Status des Fahrplananteils,81,SG15,STS,1131,00078,E_0902,,EBD Nr. E_0902,X,
-Prüfidentifikator,82,SG15,RFF,,00079,,,,Muss,,,Prüfidentifikator,82,SG15,RFF,,00079,,,,Muss,
-Prüfidentifikator,83,SG15,RFF,1153,00079,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,83,SG15,RFF,1153,00079,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,84,SG15,RFF,1154,00079,21037,,RD / NB-Bewertung,X,,,Prüfidentifikator,84,SG15,RFF,1154,00079,21037,,RD / NB-Bewertung,X,
-Referenzangaben,85,SG15,RFF,,00080,,,,Muss,,,Referenzangaben,85,SG15,RFF,,00080,,,,Muss,
-Referenzangaben,86,SG15,RFF,1153,00080,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Referenzangaben,86,SG15,RFF,1153,00080,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
-Referenzangaben,87,SG15,RFF,1154,00080,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",,Referenzangaben,87,SG15,RFF,1154,00080,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht"
-Gegenvorschlag,88,SG15,RFF,,00081,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,,Gegenvorschlag,88,SG15,RFF,,00081,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann
-Gegenvorschlag,89,SG15,RFF,1153,00081,ACE,,Nummer des zugehörigen Dokuments,X,,,Gegenvorschlag,89,SG15,RFF,1153,00081,ACE,,Nummer des zugehörigen Dokuments,X,
-Gegenvorschlag,90,SG15,RFF,1154,00081,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",,Gegenvorschlag,90,SG15,RFF,1154,00081,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält"
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,91,SG17,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,91,SG17,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,92,SG17,NAD,,00082,,,,Muss,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,92,SG17,NAD,,00082,,,,Muss,
-Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,93,SG17,NAD,3035,00082,PK,,Ansprechpartner,X,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,93,SG17,NAD,3035,00082,PK,,Ansprechpartner,X,
-Ansprechpartner,94,SG18,,,,,,,Muss ,,,Ansprechpartner,94,SG18,,,,,,,Muss ,
-Ansprechpartner,95,SG18,CTA,,00083,,,,Muss ,,,Ansprechpartner,95,SG18,CTA,,00083,,,,Muss ,
-Ansprechpartner,96,SG18,CTA,3139,00083,IC,,Informationskontakt,X,,,Ansprechpartner,96,SG18,CTA,3139,00083,IC,,Informationskontakt,X,
-Ansprechpartner,97,SG18,CTA,3412,00083,,,Kontakt,X,,,Ansprechpartner,97,SG18,CTA,3412,00083,,,Kontakt,X,
-Kommunikationsverbindung,98,SG18,COM,,00084,,,,Muss,,,Kommunikationsverbindung,98,SG18,COM,,00084,,,,Muss,
-Kommunikationsverbindung,99,SG18,COM,3148,00084,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,99,SG18,COM,3148,00084,,,Nummer / E-Mail Adresse,X,
-Kommunikationsverbindung,100,SG18,COM,3155,00084,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,100,SG18,COM,3155,00084,EM,,Elektronische Post,X [1P1..1],
-Kommunikationsverbindung,101,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,101,SG18,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,102,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,102,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,103,SG18,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,103,SG18,COM,3155,,AL,,Handy,X [1P0..1],
-Sendungspositionseinzelhei ten,104,SG25,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,,Sendungspositionseinzelhei ten,104,SG25,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden
-Sendungspositionseinzelhei ten,105,SG25,GID,,00085,,,,Muss,,,Sendungspositionseinzelhei ten,105,SG25,GID,,00085,,,,Muss,
-Sendungspositionseinzelhei ten,106,SG25,GID,1496,00085,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Sendungspositionseinzelhei ten,106,SG25,GID,1496,00085,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
-Freier Text,107,SG25,FTX,,00086,,,,Muss,,,Freier Text,107,SG25,FTX,,00086,,,,Muss,
-Freier Text,108,SG25,FTX,4451,00086,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Freier Text,108,SG25,FTX,4451,00086,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
-Freier Text,109,SG25,FTX,4440,00086,,,Freier Text,X,,,Freier Text,109,SG25,FTX,4440,00086,,,Freier Text,X,
-Status des Gegenvorschlags der Ausfallarbeit,110,SG15,,,,,,,Muss [56] ∧ [57],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
+[61] Wenn zusätzlich zur Ausfallarbeit auch der Fahrplananteil zu identischem Wert aus RFF+ACW nicht o.k. ist",75
+Status des Fahrplananteils,SG15,STS,,00078,,,,Muss,,76,,,Status des Fahrplananteils,SG15,STS,,00078,,,,Muss,,76
+Status des Fahrplananteils,SG15,STS,9015,00078,Z28,,Status des Fahrplananteils,X,,77,,,Status des Fahrplananteils,SG15,STS,9015,00078,Z28,,Status des Fahrplananteils,X,,77
+Status des Fahrplananteils,SG15,STS,4405,00078,Z30,,zugestimmt,X,,78,,,Status des Fahrplananteils,SG15,STS,4405,00078,Z30,,zugestimmt,X,,78
+Status des Fahrplananteils,SG15,STS,4405,,Z32,,abgelehnt,X,,79,,,Status des Fahrplananteils,SG15,STS,4405,,Z32,,abgelehnt,X,,79
+Status des Fahrplananteils,SG15,STS,9013,00078,,,Code des Prüfschritts,X [64] ∨ [65],"[64] Wenn STS+Z28+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[65] Wenn STS+Z28+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",80,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Status des Fahrplananteils,SG15,STS,9013,00078,,,Code des Prüfschritts,X [64] ∨ [65],"[64] Wenn STS+Z28+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
+[65] Wenn STS+Z28+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich.",80
+Status des Fahrplananteils,SG15,STS,1131,00078,E_0902,,EBD Nr. E_0902,X,,81,,,Status des Fahrplananteils,SG15,STS,1131,00078,E_0902,,EBD Nr. E_0902,X,,81
+Prüfidentifikator,SG15,RFF,,00079,,,,Muss,,82,,,Prüfidentifikator,SG15,RFF,,00079,,,,Muss,,82
+Prüfidentifikator,SG15,RFF,1153,00079,Z13,,Prüfidentifikator,X,,83,,,Prüfidentifikator,SG15,RFF,1153,00079,Z13,,Prüfidentifikator,X,,83
+Prüfidentifikator,SG15,RFF,1154,00079,21037,,RD / NB-Bewertung,X,,84,,,Prüfidentifikator,SG15,RFF,1154,00079,21037,,RD / NB-Bewertung,X,,84
+Referenzangaben,SG15,RFF,,00080,,,,Muss,,85,,,Referenzangaben,SG15,RFF,,00080,,,,Muss,,85
+Referenzangaben,SG15,RFF,1153,00080,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,86,,,Referenzangaben,SG15,RFF,1153,00080,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,86
+Referenzangaben,SG15,RFF,1154,00080,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",87,,,Referenzangaben,SG15,RFF,1154,00080,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",87
+Gegenvorschlag,SG15,RFF,,00081,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,88,,,Gegenvorschlag,SG15,RFF,,00081,,,,Soll [72],[72] Wenn Gegenvorschlag erstellt werden kann,88
+Gegenvorschlag,SG15,RFF,1153,00081,ACE,,Nummer des zugehörigen Dokuments,X,,89,,,Gegenvorschlag,SG15,RFF,1153,00081,ACE,,Nummer des zugehörigen Dokuments,X,,89
+Gegenvorschlag,SG15,RFF,1154,00081,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",90,,,Gegenvorschlag,SG15,RFF,1154,00081,,,"Referenz, Identifikation",X [524],"[524] Hinweis: Wert aus BGM DE1004 der MSCONS, die den Gegenvorschlag enthält",90
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,91,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,91
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,,00082,,,,Muss,,92,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,,00082,,,,Muss,,92
+Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,3035,00082,PK,,Ansprechpartner,X,,93,,,Ansprechpartner zum Gegenvorschlag bzw. zur Korrekturanforderung,SG17,NAD,3035,00082,PK,,Ansprechpartner,X,,93
+Ansprechpartner,SG18,,,,,,,Muss ,,94,,,Ansprechpartner,SG18,,,,,,,Muss ,,94
+Ansprechpartner,SG18,CTA,,00083,,,,Muss ,,95,,,Ansprechpartner,SG18,CTA,,00083,,,,Muss ,,95
+Ansprechpartner,SG18,CTA,3139,00083,IC,,Informationskontakt,X,,96,,,Ansprechpartner,SG18,CTA,3139,00083,IC,,Informationskontakt,X,,96
+Ansprechpartner,SG18,CTA,3412,00083,,,Kontakt,X,,97,,,Ansprechpartner,SG18,CTA,3412,00083,,,Kontakt,X,,97
+Kommunikationsverbindung,SG18,COM,,00084,,,,Muss,,98,,,Kommunikationsverbindung,SG18,COM,,00084,,,,Muss,,98
+Kommunikationsverbindung,SG18,COM,3148,00084,,,Nummer / E-Mail Adresse,X,,99,,,Kommunikationsverbindung,SG18,COM,3148,00084,,,Nummer / E-Mail Adresse,X,,99
+Kommunikationsverbindung,SG18,COM,3155,00084,EM,,Elektronische Post,X [1P1..1],,100,,,Kommunikationsverbindung,SG18,COM,3155,00084,EM,,Elektronische Post,X [1P1..1],,100
+Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,101,,,Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,101
+Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,102,,,Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,102
+Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,103,,,Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,103
+Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,104,,,Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [53],[53] Wenn STS+Z28+Z32 vorhanden,104
+Sendungspositionseinzelhei ten,SG25,GID,,00085,,,,Muss,,105,,,Sendungspositionseinzelhei ten,SG25,GID,,00085,,,,Muss,,105
+Sendungspositionseinzelhei ten,SG25,GID,1496,00085,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,106,,,Sendungspositionseinzelhei ten,SG25,GID,1496,00085,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,106
+Freier Text,SG25,FTX,,00086,,,,Muss,,107,,,Freier Text,SG25,FTX,,00086,,,,Muss,,107
+Freier Text,SG25,FTX,4451,00086,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,108,,,Freier Text,SG25,FTX,4451,00086,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,108
+Freier Text,SG25,FTX,4440,00086,,,Freier Text,X,,109,,,Freier Text,SG25,FTX,4440,00086,,,Freier Text,X,,109
+Status des Gegenvorschlags der Ausfallarbeit,SG15,,,,,,,Muss [56] ∧ [57],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
 [57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
 [59] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z30 ist
-[70] Wenn zusätzlich zum Gegenvorschlag des Fahrplananteils auch der Gegenvorschlag der Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",,Status des Gegenvorschlags der Ausfallarbeit,110,SG15,,,,,,,Muss [56] ∧ [57],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
+[70] Wenn zusätzlich zum Gegenvorschlag des Fahrplananteils auch der Gegenvorschlag der Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",110,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,,,,,,,Muss [56] ∧ [57],"[56] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z27 ist
 [57] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z28 ist
 [59] Wenn in dieser SG15 STS das SG15 RFF+ACW nicht identisch mit dem SG15 RFF+ACW der SG15 STS+Z30 ist
-[70] Wenn zusätzlich zum Gegenvorschlag des Fahrplananteils auch der Gegenvorschlag der Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist"
-Status des Gegenvorschlags der Ausfallarbeit,111,SG15,STS,,00087,,,,Muss,,,Status des Gegenvorschlags der Ausfallarbeit,111,SG15,STS,,00087,,,,Muss,
-Status des Gegenvorschlags der Ausfallarbeit,112,SG15,STS,9015,00087,Z29,,Status des Gegenvorschlags der Ausfallarbeit,X,,,Status des Gegenvorschlags der Ausfallarbeit,112,SG15,STS,9015,00087,Z29,,Status des Gegenvorschlags der Ausfallarbeit,X,
-Status des Gegenvorschlags der Ausfallarbeit,113,SG15,STS,4405,00087,Z30,,zugestimmt,X,,,Status des Gegenvorschlags der Ausfallarbeit,113,SG15,STS,4405,00087,Z30,,zugestimmt,X,
-Status des Gegenvorschlags der Ausfallarbeit,114,SG15,STS,4405,,Z32,,abgelehnt,X,,,Status des Gegenvorschlags der Ausfallarbeit,114,SG15,STS,4405,,Z32,,abgelehnt,X,
-Status des Gegenvorschlags der Ausfallarbeit,115,SG15,STS,9013,00087,,,Code des Prüfschritts,X [66] ∨ [67],"[66] Wenn STS+Z29+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
-[67] Wenn STS+Z29+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",,Status des Gegenvorschlags der Ausfallarbeit,115,SG15,STS,9013,00087,,,Code des Prüfschritts,X [66] ∨ [67],"[66] Wenn STS+Z29+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
-[67] Wenn STS+Z29+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich."
-Status des Gegenvorschlags der Ausfallarbeit,116,SG15,STS,1131,00087,E_0901,,EBD Nr. E_0901,X,,,Status des Gegenvorschlags der Ausfallarbeit,116,SG15,STS,1131,00087,E_0901,,EBD Nr. E_0901,X,
-Prüfidentifikator,117,SG15,RFF,,00088,,,,Muss,,,Prüfidentifikator,117,SG15,RFF,,00088,,,,Muss,
-Prüfidentifikator,118,SG15,RFF,1153,00088,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,118,SG15,RFF,1153,00088,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,119,SG15,RFF,1154,00088,21037,,RD / NB-Bewertung,X,,,Prüfidentifikator,119,SG15,RFF,1154,00088,21037,,RD / NB-Bewertung,X,
-Referenzangaben,120,SG15,RFF,,00089,,,,Muss,,,Referenzangaben,120,SG15,RFF,,00089,,,,Muss,
-Referenzangaben,121,SG15,RFF,1153,00089,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,,Referenzangaben,121,SG15,RFF,1153,00089,ACW,,Referenznummer einer vorangegangenen Nachricht,X,
-Referenzangaben,122,SG15,RFF,1154,00089,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",,Referenzangaben,122,SG15,RFF,1154,00089,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht"
-"Ansprechpartner, der den Gegenvorschlag ablehnt",123,SG17,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,,"Ansprechpartner, der den Gegenvorschlag ablehnt",123,SG17,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden
-"Ansprechpartner, der den Gegenvorschlag ablehnt",124,SG17,NAD,,00090,,,,Muss,,,"Ansprechpartner, der den Gegenvorschlag ablehnt",124,SG17,NAD,,00090,,,,Muss,
-"Ansprechpartner, der den Gegenvorschlag ablehnt",125,SG17,NAD,3035,00090,PK,,Ansprechpartner,X,,,"Ansprechpartner, der den Gegenvorschlag ablehnt",125,SG17,NAD,3035,00090,PK,,Ansprechpartner,X,
-Ansprechpartner,126,SG18,,,,,,,Muss ,,,Ansprechpartner,126,SG18,,,,,,,Muss ,
-Ansprechpartner,127,SG18,CTA,,00091,,,,Muss ,,,Ansprechpartner,127,SG18,CTA,,00091,,,,Muss ,
-Ansprechpartner,128,SG18,CTA,3139,00091,IC,,Informationskontakt,X,,,Ansprechpartner,128,SG18,CTA,3139,00091,IC,,Informationskontakt,X,
-Ansprechpartner,129,SG18,CTA,3412,00091,,,Kontakt,X,,,Ansprechpartner,129,SG18,CTA,3412,00091,,,Kontakt,X,
-Kommunikationsverbindung,130,SG18,COM,,00092,,,,Muss,,,Kommunikationsverbindung,130,SG18,COM,,00092,,,,Muss,
-Kommunikationsverbindung,131,SG18,COM,3148,00092,,,Nummer / E-Mail Adresse,X,,,Kommunikationsverbindung,131,SG18,COM,3148,00092,,,Nummer / E-Mail Adresse,X,
-Kommunikationsverbindung,132,SG18,COM,3155,00092,EM,,Elektronische Post,X [1P1..1],,,Kommunikationsverbindung,132,SG18,COM,3155,00092,EM,,Elektronische Post,X [1P1..1],
-Kommunikationsverbindung,133,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,133,SG18,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,134,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,134,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,135,SG18,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,135,SG18,COM,3155,,AL,,Handy,X [1P0..1],
-Sendungspositionseinzelhei ten,136,SG25,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,,Sendungspositionseinzelhei ten,136,SG25,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden
-Sendungspositionseinzelhei ten,137,SG25,GID,,00093,,,,Muss,,,Sendungspositionseinzelhei ten,137,SG25,GID,,00093,,,,Muss,
-Sendungspositionseinzelhei ten,138,SG25,GID,1496,00093,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Sendungspositionseinzelhei ten,138,SG25,GID,1496,00093,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
-Freier Text,139,SG25,FTX,,00094,,,,Muss,,,Freier Text,139,SG25,FTX,,00094,,,,Muss,
-Freier Text,140,SG25,FTX,4451,00094,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,,Freier Text,140,SG25,FTX,4451,00094,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,
-Freier Text,141,SG25,FTX,4440,00094,,,Freier Text,X,,,Freier Text,141,SG25,FTX,4440,00094,,,Freier Text,X,
-Nachrichten-Endesegment,142,,UNT,,00126,,,,Muss,,,Nachrichten-Endesegment,142,,UNT,,00131,,,,Muss,
-Nachrichten-Endesegment,143,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,143,,UNT,0074,00131,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,144,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,144,,UNT,0062,00131,,,Nachrichten-Referenznummer,X,
+[70] Wenn zusätzlich zum Gegenvorschlag des Fahrplananteils auch der Gegenvorschlag der Ausfallarbeit zu identischem Wert aus RFF+ACW nicht o.k. ist",110
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,,00087,,,,Muss,,111,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,,00087,,,,Muss,,111
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,9015,00087,Z29,,Status des Gegenvorschlags der Ausfallarbeit,X,,112,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,9015,00087,Z29,,Status des Gegenvorschlags der Ausfallarbeit,X,,112
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,4405,00087,Z30,,zugestimmt,X,,113,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,4405,00087,Z30,,zugestimmt,X,,113
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,4405,,Z32,,abgelehnt,X,,114,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,4405,,Z32,,abgelehnt,X,,114
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,9013,00087,,,Code des Prüfschritts,X [66] ∨ [67],"[66] Wenn STS+Z29+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster Zustimmung möglich.
+[67] Wenn STS+Z29+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster Ablehnung möglich.",115,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,9013,00087,,,Code des Prüfschritts,X [66] ∨ [67],"[66] Wenn STS+Z29+Z30 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Zustimmung"" möglich.
+[67] Wenn STS+Z29+Z32 vorhanden, dann sind nur Codes aus dem EBD-Cluster ""Ablehnung"" möglich.",115
+Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,1131,00087,E_0901,,EBD Nr. E_0901,X,,116,,,Status des Gegenvorschlags der Ausfallarbeit,SG15,STS,1131,00087,E_0901,,EBD Nr. E_0901,X,,116
+Prüfidentifikator,SG15,RFF,,00088,,,,Muss,,117,,,Prüfidentifikator,SG15,RFF,,00088,,,,Muss,,117
+Prüfidentifikator,SG15,RFF,1153,00088,Z13,,Prüfidentifikator,X,,118,,,Prüfidentifikator,SG15,RFF,1153,00088,Z13,,Prüfidentifikator,X,,118
+Prüfidentifikator,SG15,RFF,1154,00088,21037,,RD / NB-Bewertung,X,,119,,,Prüfidentifikator,SG15,RFF,1154,00088,21037,,RD / NB-Bewertung,X,,119
+Referenzangaben,SG15,RFF,,00089,,,,Muss,,120,,,Referenzangaben,SG15,RFF,,00089,,,,Muss,,120
+Referenzangaben,SG15,RFF,1153,00089,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,121,,,Referenzangaben,SG15,RFF,1153,00089,ACW,,Referenznummer einer vorangegangenen Nachricht,X,,121
+Referenzangaben,SG15,RFF,1154,00089,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",122,,,Referenzangaben,SG15,RFF,1154,00089,,,"Referenz, Identifikation",X [523],"[523] Hinweis: Wert aus BGM DE1004 der MSCONS, auf die sich die Statusangabe bezieht",122
+"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,123,,,"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,123
+"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,NAD,,00090,,,,Muss,,124,,,"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,NAD,,00090,,,,Muss,,124
+"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,NAD,3035,00090,PK,,Ansprechpartner,X,,125,,,"Ansprechpartner, der den Gegenvorschlag ablehnt",SG17,NAD,3035,00090,PK,,Ansprechpartner,X,,125
+Ansprechpartner,SG18,,,,,,,Muss ,,126,,,Ansprechpartner,SG18,,,,,,,Muss ,,126
+Ansprechpartner,SG18,CTA,,00091,,,,Muss ,,127,,,Ansprechpartner,SG18,CTA,,00091,,,,Muss ,,127
+Ansprechpartner,SG18,CTA,3139,00091,IC,,Informationskontakt,X,,128,,,Ansprechpartner,SG18,CTA,3139,00091,IC,,Informationskontakt,X,,128
+Ansprechpartner,SG18,CTA,3412,00091,,,Kontakt,X,,129,,,Ansprechpartner,SG18,CTA,3412,00091,,,Kontakt,X,,129
+Kommunikationsverbindung,SG18,COM,,00092,,,,Muss,,130,,,Kommunikationsverbindung,SG18,COM,,00092,,,,Muss,,130
+Kommunikationsverbindung,SG18,COM,3148,00092,,,Nummer / E-Mail Adresse,X,,131,,,Kommunikationsverbindung,SG18,COM,3148,00092,,,Nummer / E-Mail Adresse,X,,131
+Kommunikationsverbindung,SG18,COM,3155,00092,EM,,Elektronische Post,X [1P1..1],,132,,,Kommunikationsverbindung,SG18,COM,3155,00092,EM,,Elektronische Post,X [1P1..1],,132
+Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,133,,,Kommunikationsverbindung,SG18,COM,3155,,TE,,Telefon,X [1P0..1],,133
+Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,134,,,Kommunikationsverbindung,SG18,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,134
+Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,135,,,Kommunikationsverbindung,SG18,COM,3155,,AL,,Handy,X [1P0..1],,135
+Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,136,,,Sendungspositionseinzelhei ten,SG25,,,,,,,Muss [54],[54] Wenn STS+Z29+Z32 vorhanden,136
+Sendungspositionseinzelhei ten,SG25,GID,,00093,,,,Muss,,137,,,Sendungspositionseinzelhei ten,SG25,GID,,00093,,,,Muss,,137
+Sendungspositionseinzelhei ten,SG25,GID,1496,00093,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,138,,,Sendungspositionseinzelhei ten,SG25,GID,1496,00093,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,138
+Freier Text,SG25,FTX,,00094,,,,Muss,,139,,,Freier Text,SG25,FTX,,00094,,,,Muss,,139
+Freier Text,SG25,FTX,4451,00094,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,140,,,Freier Text,SG25,FTX,4451,00094,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,140
+Freier Text,SG25,FTX,4440,00094,,,Freier Text,X,,141,,,Freier Text,SG25,FTX,4440,00094,,,Freier Text,X,,141
+Nachrichten-Endesegment,,UNT,,00126,,,,Muss,,142,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00131,,,,Muss,,142
+Nachrichten-Endesegment,,UNT,0074,00126,,,Anzahl der Segmente in einer Nachricht,X,,143,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00131,,,Anzahl der Segmente in einer Nachricht,X,,143
+Nachrichten-Endesegment,,UNT,0062,00126,,,Nachrichten-Referenznummer,X,,144,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00131,,,Nachrichten-Referenznummer,X,,144

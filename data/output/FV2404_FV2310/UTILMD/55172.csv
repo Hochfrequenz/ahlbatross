@@ -1,488 +1,488 @@
-Segmentname_FV2310,Unnamed: 0_FV2310,Segmentgruppe_FV2310,Segment_FV2310,Datenelement_FV2310,Segment ID_FV2310,Code_FV2310,Qualifier_FV2310,Beschreibung_FV2310,Bedingungsausdruck_FV2310,Bedingung_FV2310,diff,Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten- Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten- Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,UTILM,,Netzanschluss-,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILM,,Netzanschluss-,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,,S1.1,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,,S1.1a,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
-Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,
-Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZ ZZ,X,
-MP-ID Absender,14,SG2,NAD,,,,,,Muss,,,MP-ID Absender,14,SG2,NAD,,00008,,,,Muss,
-MP-ID Absender,15,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,,MP-ID Absender,15,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,
-MP-ID Absender,16,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,16,SG2,NAD,3039,00008,,,MP-ID,X,
-MP-ID Absender,17,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,17,SG2,NAD,3055,00008,9,,GS1,X,
-MP-ID Absender,18,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,18,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,19,SG3,CTA,,,,,,Muss,,,Ansprechpartner,19,SG3,CTA,,00009,,,,Muss,
-Ansprechpartner,20,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,20,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
-Ansprechpartner,21,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,21,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindu ng,22,SG3,COM,,,,,,Muss,,,Kommunikationsverbindu ng,22,SG3,COM,,00010,,,,Muss,
-Kommunikationsverbindu ng,23,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindu ng,23,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+Segmentname_FV2310,Segmentgruppe_FV2310,Segment_FV2310,Datenelement_FV2310,Segment ID_FV2310,Code_FV2310,Qualifier_FV2310,Beschreibung_FV2310,Bedingungsausdruck_FV2310,Bedingung_FV2310,Unnamed: 0_FV2310,Änderung,changed_entries,Segmentname_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,Unnamed: 0_FV2404
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten- Referenznummer,X,,1,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten- Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,UTILM,,Netzanschluss-,X,,2,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,0065,00003,UTILM,,Netzanschluss-,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,4,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,,S1.1,X,,6,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschrei bung,,S1.1a,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn der Nachricht,,BGM,,00004,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,E03,,Änderungsmeldungen,X,,8,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,,,,,Muss,,10,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichtendatum,,DTM,,00005,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,,11,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/- zeit,X,,11
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,13,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZ ZZ,X,,13
+MP-ID Absender,SG2,NAD,,,,,,Muss,,14,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Absender,SG2,NAD,,00008,,,,Muss,,14
+MP-ID Absender,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,15,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenausstell er bzw. -absender,X,,15
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X,,16,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,16
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,17,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,17
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,18,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,18
+Ansprechpartner,SG3,CTA,,,,,,Muss,,19,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,19
+Ansprechpartner,SG3,CTA,3139,,IC,,Informationskontakt,X,,20,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,20
+Ansprechpartner,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,21,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,21
+Kommunikationsverbindu ng,SG3,COM,,,,,,Muss,,22,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Kommunikationsverbindu ng,SG3,COM,,00010,,,,Muss,,22
+Kommunikationsverbindu ng,SG3,COM,3148,,,,Nummer / Adresse,X,,23,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,Kommunikationsverbindu ng,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen"
-Kommunikationsverbindu ng,24,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindu ng,24,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindu ng,25,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindu ng,25,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindu ng,26,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindu ng,26,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindu ng,27,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindu ng,27,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindu ng,28,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindu ng,28,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,29,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,29,SG2,NAD,,00011,,,,Muss,
-MP-ID Empfänger,30,SG2,NAD,3035,,MR,,Nachrichtenempfän ger,X,,,MP-ID Empfänger,30,SG2,NAD,3035,00011,MR,,Nachrichtenempfän ger,X,
-MP-ID Empfänger,31,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,31,SG2,NAD,3039,00011,,,MP-ID,X,
-MP-ID Empfänger,32,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,32,SG2,NAD,3055,00011,9,,GS1,X,
-MP-ID Empfänger,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,33,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Vorgang,34,SG4,IDE,,,,,,Muss,,,Vorgang,34,SG4,IDE,,00020,,,,Muss,
-Vorgang,35,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,35,SG4,IDE,7495,00020,24,,Transaktion,X,
-Vorgang,36,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,36,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
-Beginn zum,37,SG4,DTM,,,,,,Muss,,,Beginn zum,37,SG4,DTM,,00024,,,,Muss,
-Beginn zum,38,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,,Beginn zum,38,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,
-Beginn zum,39,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Beginn zum,39,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Beginn zum,40,SG4,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,,Beginn zum,40,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZ ZZ,X,
-"Änderung zum, Gültigkeit, Beginndatum",41,SG4,DTM,,,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",41,SG4,DTM,,00027,,,,Muss,
-"Änderung zum, Gültigkeit, Beginndatum",42,SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",42,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,
-"Änderung zum, Gültigkeit, Beginndatum",43,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,"Änderung zum, Gültigkeit, Beginndatum",43,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-"Änderung zum, Gültigkeit, Beginndatum",44,SG4,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",44,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZ ZZ,X,
-Transaktionsgrund,45,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,45,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,46,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,46,SG4,STS,9015,00037,7,,Transaktionsgrund,X,
-Transaktionsgrund,47,SG4,STS,9013,,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,,Transaktionsgrund,47,SG4,STS,9013,00037,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,
-Netzlokation,48,SG5,LOC,,,,,,Muss,,,Netzlokation,48,SG5,LOC,,00050,,,,Muss,
-Netzlokation,49,SG5,LOC,3227,,Z18,,Netzlokation,X,,,Netzlokation,49,SG5,LOC,3227,00050,Z18,,Netzlokation,X,
-Netzlokation,50,SG5,LOC,3225,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,,Netzlokation,50,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID
-Marktlokation,51,SG5,LOC,,,,,,Muss,,,Marktlokation,51,SG5,LOC,,00051,,,,Muss,
-Marktlokation,52,SG5,LOC,3227,,Z16,,Marktlokation,X,,,Marktlokation,52,SG5,LOC,3227,00051,Z16,,Marktlokation,X,
-Marktlokation,53,SG5,LOC,3225,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Marktlokation,53,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Steuerbare Ressource,54,SG5,LOC,,,,,,Muss,,,Steuerbare Ressource,54,SG5,LOC,,00053,,,,Muss,
-Steuerbare Ressource,55,SG5,LOC,3227,,Z19,,Steuerbare Ressource,X,,,Steuerbare Ressource,55,SG5,LOC,3227,00053,Z19,,Steuerbare Ressource,X,
-Steuerbare Ressource,56,SG5,LOC,3225,,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,,Steuerbare Ressource,56,SG5,LOC,3225,00053,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID
-Tranche,57,SG5,LOC,,,,,,Muss,,,Tranche,57,SG5,LOC,,00054,,,,Muss,
-Tranche,58,SG5,LOC,3227,,Z21,,Tranche,X,,,Tranche,58,SG5,LOC,3227,00054,Z21,,Tranche,X,
-Tranche,59,SG5,LOC,3225,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,,Tranche,59,SG5,LOC,3225,00054,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID
-Messlokation,60,SG5,LOC,,,,,,Muss,,,Messlokation,60,SG5,LOC,,00055,,,,Muss,
-Messlokation,61,SG5,LOC,3227,,Z17,,Messlokation,X,,,Messlokation,61,SG5,LOC,3227,00055,Z17,,Messlokation,X,
-Messlokation,62,SG5,LOC,3225,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Messlokation,62,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Prüfidentifikator,63,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,63,SG6,RFF,,00057,,,,Muss,
-Prüfidentifikator,64,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,64,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,65,SG6,RFF,1154,,55172,,SDÄ Strom / Anfrage an MSB mit Abhängigkeit MSB an NB,X,,,Prüfidentifikator,65,SG6,RFF,1154,,55172,,SDÄ Strom / Anfrage an MSB mit Abhängigkeit MSB an NB,X,
-Daten der Netzlokation,66,SG8,SEQ,,,,,,Muss,,,Daten der Netzlokation,66,SG8,SEQ,,00078,,,,Muss,
-Daten der Netzlokation,67,SG8,SEQ,1229,,Z51,,Daten der Netzlokation,X,,,Daten der Netzlokation,67,SG8,SEQ,1229,00078,Z51,,Daten der Netzlokation,X,
-Referenz auf die ID der Netzlokation,68,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Netzlokation,68,SG8,RFF,,00079,,,,Muss,
-Referenz auf die ID der Netzlokation,69,SG8,RFF,1153,,Z32,,Netzlokation,X,,,Referenz auf die ID der Netzlokation,69,SG8,RFF,1153,00079,Z32,,Netzlokation,X,
-Referenz auf die ID der Netzlokation,70,SG8,RFF,1154,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,,Referenz auf die ID der Netzlokation,70,SG8,RFF,1154,00079,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID
-Steuerkanal,71,SG10,CCI,,,,,,Muss,,,Steuerkanal,71,SG10,CCI,,00080,,,,Muss,
-Steuerkanal,72,SG10,CCI,7059,,Z49,,Steuerkanal,X,,,Steuerkanal,72,SG10,CCI,7059,00080,Z49,,Steuerkanal,X,
-Steuerkanal,73,SG10,CCI,7037,,ZF2,,Kein Steuerkanal vorhanden,X,,,Steuerkanal,73,SG10,CCI,7037,00080,ZF2,,Kein Steuerkanal vorhanden,X,
-Steuerkanal,74,SG10,CCI,7037,,ZF3,,Steuerkanal vorhanden,X,,,Steuerkanal,74,SG10,CCI,7037,,ZF3,,Steuerkanal vorhanden,X,
-OBIS-Daten der Netzlokation,75,SG8,SEQ,,,,,,Muss,,,OBIS-Daten der Netzlokation,75,SG8,SEQ,,00088,,,,Muss,
-OBIS-Daten der Netzlokation,76,SG8,SEQ,1229,,Z57,,OBIS-Daten der Netzlokation,X,,,OBIS-Daten der Netzlokation,76,SG8,SEQ,1229,00088,Z57,,OBIS-Daten der Netzlokation,X,
-Referenz auf die ID der Netzlokation,77,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Netzlokation,77,SG8,RFF,,00089,,,,Muss,
-Referenz auf die ID der Netzlokation,78,SG8,RFF,1153,,Z32,,Netzlokation,X,,,Referenz auf die ID der Netzlokation,78,SG8,RFF,1153,00089,Z32,,Netzlokation,X,
-Referenz auf die ID der Netzlokation,79,SG8,RFF,1154,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,,Referenz auf die ID der Netzlokation,79,SG8,RFF,1154,00089,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID
-OBIS-Kennzahl der Netzlokation,80,SG8,PIA,,,,,,Muss,,,OBIS-Kennzahl der Netzlokation,80,SG8,PIA,,00090,,,,Muss,
-OBIS-Kennzahl der Netzlokation,81,SG8,PIA,4347,,5,,Produktidentifikation,X,,,OBIS-Kennzahl der Netzlokation,81,SG8,PIA,4347,00090,5,,Produktidentifikation,X,
-OBIS-Kennzahl der Netzlokation,82,SG8,PIA,7140,,,,OBIS-Kennzahl der Netzlokation,X,,,OBIS-Kennzahl der Netzlokation,82,SG8,PIA,7140,00090,,,OBIS-Kennzahl der Netzlokation,X,
-OBIS-Kennzahl der Netzlokation,83,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,,OBIS-Kennzahl der Netzlokation,83,SG8,PIA,7143,00090,SRW,,OBIS-Kennzahl,X,
-Produkt-Daten für Netzbetreiber relevant,84,SG10,CCI,,,,,,Muss,,,Produkt-Daten für Netzbetreiber relevant,84,SG10,CCI,,00091,,,,Muss,
-Produkt-Daten für Netzbetreiber relevant,85,SG10,CCI,7037,,ZA8,,NB,X,,,Produkt-Daten für Netzbetreiber relevant,85,SG10,CCI,7037,00091,ZA8,,NB,X,
-Verwendungszweck der Werte,86,SG10,CAV,,,,,,Muss,,,Verwendungszweck der Werte,86,SG10,CAV,,00092,,,,Muss,
-Verwendungszweck der Werte,87,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X,,,Verwendungszweck der Werte,87,SG10,CAV,7111,00092,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X,
-Produkt-Daten für Lieferant relevant,88,SG10,CCI,,,,,,Muss,,,Produkt-Daten für Lieferant relevant,88,SG10,CCI,,00093,,,,Muss,
-Produkt-Daten für Lieferant relevant,89,SG10,CCI,7037,,ZA7,,LF,X,,,Produkt-Daten für Lieferant relevant,89,SG10,CCI,7037,00093,ZA7,,LF,X,
-Verwendungszweck der Werte,90,SG10,CAV,,,,,,Muss,,,Verwendungszweck der Werte,90,SG10,CAV,,00094,,,,Muss,
-Verwendungszweck der Werte,91,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],,,Verwendungszweck der Werte,91,SG10,CAV,7111,00094,Z47,,Endkundenabrechnu ng,X [1P1..1],
-Verwendungszweck der Werte,92,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [1P1..1],,,Verwendungszweck der Werte,92,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [1P1..1],
-Produkt-Daten der Netzlokation,93,SG8,SEQ,,,,,,Muss,,,Produkt-Daten der Netzlokation,93,SG8,SEQ,,00095,,,,Muss,
-Produkt-Daten der Netzlokation,94,SG8,SEQ,1229,,Z60,,Produkt-Daten der Netzlokation,X,,,Produkt-Daten der Netzlokation,94,SG8,SEQ,1229,00095,Z60,,Produkt-Daten der Netzlokation,X,
-Referenz auf die ID der Netzlokation,95,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Netzlokation,95,SG8,RFF,,00096,,,,Muss,
-Referenz auf die ID der Netzlokation,96,SG8,RFF,1153,,Z32,,Netzlokation,X,,,Referenz auf die ID der Netzlokation,96,SG8,RFF,1153,00096,Z32,,Netzlokation,X,
-Referenz auf die ID der Netzlokation,97,SG8,RFF,1154,,,,ID einer Netzlokation,X [960],[960] Format: Netzlokations-ID,,Referenz auf die ID der Netzlokation,97,SG8,RFF,1154,00096,,,ID einer Netzlokation,X [960],[960] Format: Netzlokations-ID
-Produkt-Daten der Netzlokation,98,SG8,PIA,,,,,,Muss [445],[445] Wenn in derselben SG8 SEQ+Z60 (Produkt- Daten der Netzlokation) das SG10 CCI+11 (Details zum Produkt der Netzlokation) nicht vorhanden,,Produkt-Daten der Netzlokation,98,SG8,PIA,,00097,,,,Muss [445],[445] Wenn in derselben SG8 SEQ+Z60 (Produkt- Daten der Netzlokation) das SG10 CCI+11 (Details zum Produkt der Netzlokation) nicht vorhanden
-Produkt-Daten der Netzlokation,99,SG8,PIA,4347,,5,,Produktidentifikation,X,,,Produkt-Daten der Netzlokation,99,SG8,PIA,4347,00097,5,,Produktidentifikation,X,
-Produkt-Daten der Netzlokation,100,SG8,PIA,7140,,,,Konfigurationsprodukt- Code,X [412],"[412] Es sind ausschließlich Konfigurationsprodukt -Codes der ""EDI@Energy Codeliste der Konfigurationen"" aus Kapitel 4.2 Konfigurationsprodukt e Leistungskurvendefinit ion erlaubt",,Produkt-Daten der Netzlokation,100,SG8,PIA,7140,00097,,,Konfigurationsprodukt- Code,X [412],"[412] Es sind ausschließlich Konfigurationsprodukt -Codes der ""EDI@Energy Codeliste der Konfigurationen"" aus Kapitel 4.2 Konfigurationsprodukt e Leistungskurvendefinit ion erlaubt"
-Produkt-Daten der Netzlokation,101,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,,Produkt-Daten der Netzlokation,101,SG8,PIA,7143,00097,Z12,,Konfigurationsprodu kt,X,
-Details zum Produkt der Netzlokation,102,SG10,CCI,,,,,,Muss,,,Details zum Produkt der Netzlokation,102,SG10,CCI,,00098,,,,Muss,
-Details zum Produkt der Netzlokation,103,SG10,CCI,7059,,11,,Produkt,X,,,Details zum Produkt der Netzlokation,103,SG10,CCI,7059,00098,11,,Produkt,X,
-Details zum Produkt der Netzlokation,104,SG10,CCI,7037,,ZF6,,Kein Produkt an der Netzlokation zugeordnet,X,,,Details zum Produkt der Netzlokation,104,SG10,CCI,7037,00098,ZF6,,Kein Produkt an der Netzlokation zugeordnet,X,
-Zugeordnete Leistungskurvendefinition,105,SG10,CCI,,,,,,Muss,,,Zugeordnete Leistungskurvendefinition,105,SG10,CCI,,00099,,,,Muss,
-Zugeordnete Leistungskurvendefinition,106,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,,Zugeordnete Leistungskurvendefinition,106,SG10,CCI,7059,00099,Z53,,Code der Leistungskurvendefi nition,X,
-Zugeordnete Leistungskurvendefinition,107,SG10,CCI,7037,,,,Code der Leistungskurvendefinition,X,,,Zugeordnete Leistungskurvendefinition,107,SG10,CCI,7037,00099,,,Code der Leistungskurvendefinition,X,
-Auftraggebender Marktpartner,108,SG10,CCI,,,,,,Muss,,,Auftraggebender Marktpartner,108,SG10,CCI,,00100,,,,Muss,
-Auftraggebender Marktpartner,109,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,,Auftraggebender Marktpartner,109,SG10,CCI,7037,00100,ZB3,,Zugeordneter Marktpartner,X,
-Auftraggebender Marktpartner,110,SG10,CAV,,,,,,Muss,,,Auftraggebender Marktpartner,110,SG10,CAV,,00101,,,,Muss,
-Auftraggebender Marktpartner,111,SG10,CAV,7111,,Z88,,NB,X,,,Auftraggebender Marktpartner,111,SG10,CAV,7111,00101,Z88,,NB,X,
-Auftraggebender Marktpartner,112,SG10,CAV,7111,,Z89,,LF,X,,,Auftraggebender Marktpartner,112,SG10,CAV,7111,,Z89,,LF,X,
-Auftraggebender Marktpartner,113,SG10,CAV,1131,,,,MP-ID,X,,,Auftraggebender Marktpartner,113,SG10,CAV,1131,00101,,,MP-ID,X,
-Produkt-Daten für Marktrolle relevant,114,SG10,CCI,,,,,,Muss,,,Produkt-Daten für Marktrolle relevant,114,SG10,CCI,,00102,,,,Muss,
-Produkt-Daten für Marktrolle relevant,115,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,,Produkt-Daten für Marktrolle relevant,115,SG10,CCI,7037,00102,ZA7,,LF,X [1P0..1],
-Produkt-Daten für Marktrolle relevant,116,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,,Produkt-Daten für Marktrolle relevant,116,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],
-Daten der Marktlokation,117,SG8,SEQ,,,,,,Muss,,,Daten der Marktlokation,117,SG8,SEQ,,00103,,,,Muss,
-Daten der Marktlokation,118,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,118,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,119,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,119,SG8,RFF,,00104,,,,Muss,
-Referenz auf die ID der Marktlokation,120,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,120,SG8,RFF,1153,00104,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,121,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,121,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Lieferrichtung,122,SG10,CCI,,,,,,Muss,,,Lieferrichtung,122,SG10,CCI,,00110,,,,Muss,
-Lieferrichtung,123,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,,Lieferrichtung,123,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,
-Lieferrichtung,124,SG10,CCI,7037,,Z06,,Erzeugung,X,,,Lieferrichtung,124,SG10,CCI,7037,00110,Z06,,Erzeugung,X,
-Lieferrichtung,125,SG10,CCI,7037,,Z07,,Verbrauch,X,,,Lieferrichtung,125,SG10,CCI,7037,,Z07,,Verbrauch,X,
-OBIS-Daten der Marktlokation,126,SG8,SEQ,,,,,,Muss,,,OBIS-Daten der Marktlokation,126,SG8,SEQ,,00198,,,,Muss,
-OBIS-Daten der Marktlokation,127,SG8,SEQ,1229,,Z02,,OBIS-Daten der Marktlokation,X,,,OBIS-Daten der Marktlokation,127,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,128,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,128,SG8,RFF,,00199,,,,Muss,
-Referenz auf die ID der Marktlokation,129,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,129,SG8,RFF,1153,00199,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,130,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,130,SG8,RFF,1154,00199,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-OBIS-Kennzahl der Marktlokation,131,SG8,PIA,,,,,,Muss,,,OBIS-Kennzahl der Marktlokation,131,SG8,PIA,,00200,,,,Muss,
-OBIS-Kennzahl der Marktlokation,132,SG8,PIA,4347,,5,,Produktidentifikation,X,,,OBIS-Kennzahl der Marktlokation,132,SG8,PIA,4347,00200,5,,Produktidentifikation,X,
-OBIS-Kennzahl der Marktlokation,133,SG8,PIA,7140,,,,OBIS-Kennzahl der Marktlokation,X [314],"[314] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3 anzugeben welche an der Marktlokation erforderlich sind, dabei muss der Mindestumfang aus Kap. 3.4 eingehalten werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",,OBIS-Kennzahl der Marktlokation,133,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X [314],"[314] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3 anzugeben, welche an der Marktlokation erforderlich sind. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen"""
-OBIS-Kennzahl der Marktlokation,134,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,,OBIS-Kennzahl der Marktlokation,134,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,
-Wertegranularität,135,SG10,CCI,,,,,,Muss,,,Wertegranularität,135,SG10,CCI,,00201,,,,Muss,
-Wertegranularität,136,SG10,CCI,7037,,ZE4,,Wertegranularität,X,,,Wertegranularität,136,SG10,CCI,7037,00201,ZE4,,Wertegranularität,X,
-Wertegranularität,137,SG10,CAV,,,,,,Muss,,,Wertegranularität,137,SG10,CAV,,00202,,,,Muss,
-Wertegranularität,138,SG10,CAV,7111,,ZD9,,Jährlich,X,,,Wertegranularität,138,SG10,CAV,7111,00202,ZD9,,Jährlich,X,
-Wertegranularität,139,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,,Wertegranularität,139,SG10,CAV,7111,,ZE8,,Halbjährlich,X,
-Wertegranularität,140,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,,Wertegranularität,140,SG10,CAV,7111,,ZE9,,Quartalsweise,X,
-Wertegranularität,141,SG10,CAV,7111,,ZB7,,Monatlich,X,,,Wertegranularität,141,SG10,CAV,7111,,ZB7,,Monatlich,X,
-Zugeordnete Zählzeitdefinition,142,SG10,CCI,,,,,,Muss,,,Zugeordnete Zählzeitdefinition,142,SG10,CCI,,00203,,,,Muss,
-Zugeordnete Zählzeitdefinition,143,SG10,CCI,7059,,Z39,,Code der Zählzeitdefinition,X,,,Zugeordnete Zählzeitdefinition,143,SG10,CCI,7059,00203,Z39,,Code der Zählzeitdefinition,X,
-Zugeordnete Zählzeitdefinition,144,SG10,CCI,7037,,,,Code der Zählzeitdefinition,X,,,Zugeordnete Zählzeitdefinition,144,SG10,CCI,7037,00203,,,Code der Zählzeitdefinition,X,
-Zugeordnete Zählzeitregister ,145,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Zugeordnete Zählzeitregister ,146,SG10,CCI,7059,,Z38,,Code des Zählzeitregisters,X,,REMOVED,,,,,,,,,,,
-Zugeordnete Zählzeitregister ,147,SG10,CCI,7037,,,,Code des Zählzeitregisters,X,,REMOVED,,,,,,,,,,,
-,,,,,,,,,,,NEW,Zugeordnetes Zählzeitregister ,145,SG10,CCI,,00204,,,,Muss,
-,,,,,,,,,,,NEW,Zugeordnetes Zählzeitregister ,146,SG10,CCI,7059,00204,Z38,,Code des Zählzeitregisters,X,
-,,,,,,,,,,,NEW,Zugeordnetes Zählzeitregister ,147,SG10,CCI,7037,00204,,,Code des Zählzeitregisters,X,
-OBIS Daten für Netzbetreiber relevant,148,SG10,CCI,,,,,,Muss,,,OBIS Daten für Netzbetreiber relevant,148,SG10,CCI,,00205,,,,Muss,
-OBIS Daten für Netzbetreiber relevant,149,SG10,CCI,7037,,ZA8,,NB,X,,,OBIS Daten für Netzbetreiber relevant,149,SG10,CCI,7037,00205,ZA8,,NB,X,
-Verwendungszweck der Werte,150,SG10,CAV,,,,,,Muss,,,Verwendungszweck der Werte,150,SG10,CAV,,00206,,,,Muss,
-Verwendungszweck der Werte,151,SG10,CAV,7111,,Z84,,Netznutzungsabrech nung,X [29P1..1] ⊻ [30P1..1] ⊻ [32P1..1] ⊻ [36P1..1],,,Verwendungszweck der Werte,151,SG10,CAV,7111,00206,Z84,,Netznutzungsabrech nung,X [29P1..1] ⊻ [30P1..1] ⊻ [32P1..1] ⊻ [36P1..1],
-Verwendungszweck der Werte,152,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P0..1] ⊻ [32P0..1] ⊻ [33P0..1] ⊻ [34P0..1],,,Verwendungszweck der Werte,152,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P0..1] ⊻ [32P0..1] ⊻ [33P0..1] ⊻ [34P0..1],
-Verwendungszweck der Werte,153,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,,Verwendungszweck der Werte,153,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],
-Verwendungszweck der Werte,154,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [33P1..1] ⊻ [34P1..1],,,Verwendungszweck der Werte,154,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [33P1..1] ⊻ [34P1..1],
-Verwendungszweck der Werte,155,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P1..1],,,Verwendungszweck der Werte,155,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P1..1],
-Verwendungszweck der Werte,156,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,,Verwendungszweck der Werte,156,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],
-OBIS Daten für Lieferant relevant,157,SG10,CCI,,,,,,Muss,,,OBIS Daten für Lieferant relevant,157,SG10,CCI,,00207,,,,Muss,
-OBIS Daten für Lieferant relevant,158,SG10,CCI,7037,,ZA7,,LF,X,,,OBIS Daten für Lieferant relevant,158,SG10,CCI,7037,00207,ZA7,,LF,X,
-Verwendungszweck der Werte,159,SG10,CAV,,,,,,Muss,,,Verwendungszweck der Werte,159,SG10,CAV,,00208,,,,Muss,
-Verwendungszweck der Werte,160,SG10,CAV,7111,,Z84,,Netznutzungsabrech nung,X [29P0..1] ⊻ [30P0..1] ⊻ [32P0..1] ⊻ [36P0..1],,,Verwendungszweck der Werte,160,SG10,CAV,7111,00208,Z84,,Netznutzungsabrech nung,X [29P0..1] ⊻ [30P0..1] ⊻ [32P0..1] ⊻ [36P0..1],
-Verwendungszweck der Werte,161,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P1..1] ⊻ [32P1..1] ⊻ [33P1..1] ⊻ [34P1..1],,,Verwendungszweck der Werte,161,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P1..1] ⊻ [32P1..1] ⊻ [33P1..1] ⊻ [34P1..1],
-Verwendungszweck der Werte,162,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,,Verwendungszweck der Werte,162,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],
-Verwendungszweck der Werte,163,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [28P0..1] ⊻ [29P1..1] ⊻ [30P0..1] ⊻ [32P1..1] ⊻ [34P1..1] ⊻ [35P1..1] ⊻ [36P0..1] ⊻ [37P1..1],,,Verwendungszweck der Werte,163,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [28P0..1] ⊻ [29P1..1] ⊻ [30P0..1] ⊻ [32P1..1] ⊻ [34P1..1] ⊻ [35P1..1] ⊻ [36P0..1] ⊻ [37P1..1],
-Verwendungszweck der Werte,164,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P0..1],,,Verwendungszweck der Werte,164,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P0..1],
-Verwendungszweck der Werte,165,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,,Verwendungszweck der Werte,165,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],
-OBIS Daten für Übertragungsnetzbetreib er relevant,166,SG10,CCI,,,,,,Muss,,,OBIS Daten für Übertragungsnetzbetreib er relevant,166,SG10,CCI,,00209,,,,Muss,
-OBIS Daten für Übertragungsnetzbetreib er relevant,167,SG10,CCI,7037,,ZA9,,ÜNB,X,,,OBIS Daten für Übertragungsnetzbetreib er relevant,167,SG10,CCI,7037,00209,ZA9,,ÜNB,X,
-Verwendungszweck der Werte,168,SG10,CAV,,,,,,Muss,,,Verwendungszweck der Werte,168,SG10,CAV,,00210,,,,Muss,
-Verwendungszweck der Werte,169,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,,Verwendungszweck der Werte,169,SG10,CAV,7111,00210,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],
-Verwendungszweck der Werte,170,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,,Verwendungszweck der Werte,170,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],
-Produkt-Daten der Marktlokation,171,SG8,SEQ,,,,,,Muss,,,Produkt-Daten der Marktlokation,171,SG8,SEQ,,00211,,,,Muss,
-Produkt-Daten der Marktlokation,172,SG8,SEQ,1229,,Z59,,Produkt-Daten der Marktlokation,X,,,Produkt-Daten der Marktlokation,172,SG8,SEQ,1229,00211,Z59,,Produkt-Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,173,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,173,SG8,RFF,,00212,,,,Muss,
-Referenz auf die ID der Marktlokation,174,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,174,SG8,RFF,1153,00212,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,175,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,175,SG8,RFF,1154,00212,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Produkt-Daten der Marktlokation,176,SG8,PIA,,,,,,Muss,,,Produkt-Daten der Marktlokation,176,SG8,PIA,,00213,,,,Muss,
-Produkt-Daten der Marktlokation,177,SG8,PIA,4347,,5,,Produktidentifikation,X,,,Produkt-Daten der Marktlokation,177,SG8,PIA,4347,00213,5,,Produktidentifikation,X,
-Produkt-Daten der Marktlokation,178,SG8,PIA,7140,,,,Produkt-/Leistungsnummer,X,,,Produkt-Daten der Marktlokation,178,SG8,PIA,7140,00213,,,Produkt-/Leistungsnummer,X,
-Produkt-Daten der Marktlokation,179,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,,Produkt-Daten der Marktlokation,179,SG8,PIA,7143,00213,Z12,,Konfigurationsprodu kt,X,
-Zugeordnete Definition,180,SG10,CCI,,,,,,Muss,,,Zugeordnete Definition,180,SG10,CCI,,00214,,,,Muss,
-Zugeordnete Definition,181,SG10,CCI,7059,,Z52,,Code der Schaltzeitdefinition,X,,,Zugeordnete Definition,181,SG10,CCI,7059,00214,Z53,,Code der Leistungskurvendefi nition,X,
-Zugeordnete Definition,182,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,,Zugeordnete Definition,182,SG10,CCI,7037,00214,,,Code der Definition,X,
-,,,,,,,,,,,NEW,Produkt-Daten für Marktrolle relevant,183,SG10,CCI,,00215,,,,Muss,
-,,,,,,,,,,,NEW,Produkt-Daten für Marktrolle relevant,184,SG10,CCI,7037,00215,ZA8,,NB,X [1P0..1],
-,,,,,,,,,,,NEW,Produkt-Daten für Marktrolle relevant,185,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],
-,,,,,,,,,,,NEW,OBIS-Daten der Tranche,186,SG8,SEQ,,00260,,,,Muss,
-,,,,,,,,,,,NEW,OBIS-Daten der Tranche,187,SG8,SEQ,1229,00260,Z17,,OBIS-Daten der Tranche,X,
-,,,,,,,,,,,NEW,Referenz auf die ID einer Tranche,188,SG8,RFF,,00261,,,,Muss,
-,,,,,,,,,,,NEW,Referenz auf die ID einer Tranche,189,SG8,RFF,1153,00261,Z20,,Tranche,X,
-,,,,,,,,,,,NEW,Referenz auf die ID einer Tranche,190,SG8,RFF,1154,00261,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID
-,,,,,,,,,,,NEW,OBIS-Kennzahl der Tranche,191,SG8,PIA,,00262,,,,Muss,
-,,,,,,,,,,,NEW,OBIS-Kennzahl der Tranche,192,SG8,PIA,4347,00262,5,,Produktidentifikation,X,
-,,,,,,,,,,,NEW,OBIS-Kennzahl der Tranche,193,SG8,PIA,7140,00262,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind
-,,,,,,,,,,,NEW,OBIS-Kennzahl der Tranche,194,SG8,PIA,7143,00262,SRW,,OBIS-Kennzahl,X,
-,,,,,,,,,,,NEW,OBIS Daten für Netzbetreiber relevant,195,SG10,CCI,,00263,,,,Muss,
-,,,,,,,,,,,NEW,OBIS Daten für Netzbetreiber relevant,196,SG10,CCI,7037,00263,ZA8,,NB,X,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,197,SG10,CAV,,00264,,,,Muss,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,198,SG10,CAV,7111,00264,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,199,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],
-,,,,,,,,,,,NEW,OBIS Daten für Lieferant relevant,200,SG10,CCI,,00265,,,,Muss,
-,,,,,,,,,,,NEW,OBIS Daten für Lieferant relevant,201,SG10,CCI,7037,00265,ZA7,,LF,X,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,202,SG10,CAV,,00266,,,,Muss,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,203,SG10,CAV,7111,00266,Z85,,Bilanzkreisabrechnu ng,X [1P1..1],
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,204,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],
-,,,,,,,,,,,NEW,OBIS Daten für Übertragungsnetzbetreib er relevant,205,SG10,CCI,,00267,,,,Muss,
-,,,,,,,,,,,NEW,OBIS Daten für Übertragungsnetzbetreib er relevant,206,SG10,CCI,7037,00267,ZA9,,ÜNB,X,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,207,SG10,CAV,,00268,,,,Muss,
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,208,SG10,CAV,7111,00268,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],
-,,,,,,,,,,,NEW,Verwendungszweck der Werte,209,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],
-,,,,,,,,,,,NEW,Daten der Steuerbaren Ressource,210,SG8,SEQ,,00293,,,,Muss,
-,,,,,,,,,,,NEW,Daten der Steuerbaren Ressource,211,SG8,SEQ,1229,00293,Z62,,Daten der Steuerbaren Ressource,X,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,212,SG8,RFF,,00294,,,,Muss,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,213,SG8,RFF,1153,00294,Z38,,Steuerbare Ressource,X,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,214,SG8,RFF,1154,00294,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID
-,,,,,,,,,,,NEW,Steuerkanal,215,SG10,CCI,,00295,,,,Muss,
-,,,,,,,,,,,NEW,Steuerkanal,216,SG10,CCI,7059,00295,Z49,,Steuerkanal,X,
-,,,,,,,,,,,NEW,Leistungsbeschreibung des Steuerkanals,217,SG10,CAV,7111,00296,ZF2,,Leistungsbeschreibu ng des Steuerkanals,X,
-,,,,,,,,,,,NEW,Leistungsbeschreibung des Steuerkanals,218,SG10,CAV,1131,00296,Z14,,An/Aus,X,
-,,,,,,,,,,,NEW,Leistungsbeschreibung des Steuerkanals,219,SG10,CAV,1131,,Z15,,Gestuft,X,
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,220,SG8,SEQ,,00299,,,,Muss,
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,221,SG8,SEQ,1229,00299,Z61,,Produkt-Daten der Steuerbaren Ressource,X,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,222,SG8,RFF,,00300,,,,Muss,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,223,SG8,RFF,1153,00300,Z38,,Steuerbare Ressource,X,
-,,,,,,,,,,,NEW,Referenz auf die ID der Steuerbaren Ressource,224,SG8,RFF,1154,00300,,,ID einer Steuerbaren Ressource,X [961],[961] Format: SR-ID
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,225,SG8,PIA,,00301,,,,Muss,
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,226,SG8,PIA,4347,00301,5,,Produktidentifikation,X,
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,227,SG8,PIA,7140,00301,,,Konfigurationsprodukt- Code,X,
-,,,,,,,,,,,NEW,Produkt-Daten der Steuerbaren Ressource,228,SG8,PIA,7143,00301,Z12,,Konfigurationsprodu kt,X,
-Zugeordnete Definition,183,SG10,CCI,7037,,,,Code der Definition,X,,,Zugeordnete Definition,229,SG10,CCI,,00302,,,,Muss,
-,,,,,,,,,,,NEW,Zugeordnete Definition,230,SG10,CCI,7059,00302,Z52,,Code der Schaltzeitdefinition,X,
-,,,,,,,,,,,NEW,Zugeordnete Definition,231,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,
-,,,,,,,,,,,NEW,Zugeordnete Definition,232,SG10,CCI,7037,00302,,,Code der Definition,X,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,233,SG10,CCI,,00303,,,,Muss,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,234,SG10,CCI,7037,00303,ZB3,,Zugeordneter Marktpartner,X,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,235,SG10,CAV,,00304,,,,Muss,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,236,SG10,CAV,7111,00304,Z88,,NB,X,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,237,SG10,CAV,7111,,Z89,,LF,X,
-,,,,,,,,,,,NEW,Auftraggebender Marktpartner,238,SG10,CAV,1131,00304,,,MP-ID,X,
-Produkt-Daten für Marktrolle relevant,184,SG10,CCI,,,,,,Muss,,,Produkt-Daten für Marktrolle relevant,239,SG10,CCI,,00305,,,,Muss,
-Produkt-Daten für Marktrolle relevant,185,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,,Produkt-Daten für Marktrolle relevant,240,SG10,CCI,7037,00305,ZA8,,NB,X [1P0..1],
-Produkt-Daten für Marktrolle relevant,186,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,,Produkt-Daten für Marktrolle relevant,241,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],
-OBIS-Daten der Tranche,187,SG8,SEQ,,,,,,Muss,,REMOVED,,,,,,,,,,,
-OBIS-Daten der Tranche,188,SG8,SEQ,1229,,Z17,,OBIS-Daten der Tranche,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID einer Tranche,189,SG8,RFF,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Referenz auf die ID einer Tranche,190,SG8,RFF,1153,,Z20,,Tranche,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID einer Tranche,191,SG8,RFF,1154,,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,REMOVED,,,,,,,,,,,
-OBIS-Kennzahl der Tranche,192,SG8,PIA,,,,,,Muss,,REMOVED,,,,,,,,,,,
-OBIS-Kennzahl der Tranche,193,SG8,PIA,4347,,5,,Produktidentifikation,X,,REMOVED,,,,,,,,,,,
-OBIS-Kennzahl der Tranche,194,SG8,PIA,7140,,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,REMOVED,,,,,,,,,,,
-OBIS-Kennzahl der Tranche,195,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,REMOVED,,,,,,,,,,,
-OBIS Daten für Netzbetreiber relevant,196,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-OBIS Daten für Netzbetreiber relevant,197,SG10,CCI,7037,,ZA8,,NB,X,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,198,SG10,CAV,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,199,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,200,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,REMOVED,,,,,,,,,,,
-OBIS Daten für Lieferant relevant,201,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-OBIS Daten für Lieferant relevant,202,SG10,CCI,7037,,ZA7,,LF,X,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,203,SG10,CAV,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,204,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P1..1],,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,205,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],,REMOVED,,,,,,,,,,,
-OBIS Daten für Übertragungsnetzbetreib er relevant,206,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-OBIS Daten für Übertragungsnetzbetreib er relevant,207,SG10,CCI,7037,,ZA9,,ÜNB,X,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,208,SG10,CAV,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,209,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,REMOVED,,,,,,,,,,,
-Verwendungszweck der Werte,210,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,REMOVED,,,,,,,,,,,
-Daten der Steuerbaren Ressource,211,SG8,SEQ,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Daten der Steuerbaren Ressource,212,SG8,SEQ,1229,,Z62,,Daten der Steuerbaren Ressource,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,213,SG8,RFF,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,214,SG8,RFF,1153,,Z38,,Steuerbare Ressource,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,215,SG8,RFF,1154,,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,REMOVED,,,,,,,,,,,
-Steuerkanal,216,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Steuerkanal,217,SG10,CCI,7059,,Z49,,Steuerkanal,X,,REMOVED,,,,,,,,,,,
-Leistungsbeschreibung des Steuerkanals,218,SG10,CAV,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Leistungsbeschreibung des Steuerkanals,219,SG10,CAV,7111,,ZF2,,Leistungsbeschreibu ng des Steuerkanals,X,,REMOVED,,,,,,,,,,,
-Leistungsbeschreibung des Steuerkanals,220,SG10,CAV,1131,,Z14,,An/Aus,X,,REMOVED,,,,,,,,,,,
-Leistungsbeschreibung des Steuerkanals,221,SG10,CAV,1131,,Z15,,Gestuft,X,,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,222,SG8,SEQ,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,223,SG8,SEQ,1229,,Z61,,Produkt-Daten der Steuerbaren Ressource,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,224,SG8,RFF,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,225,SG8,RFF,1153,,Z38,,Steuerbare Ressource,X,,REMOVED,,,,,,,,,,,
-Referenz auf die ID der Steuerbaren Ressource,226,SG8,RFF,1154,,,,ID einer Steuerbaren Ressource,X [961],[961] Format: SR-ID,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,227,SG8,PIA,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,228,SG8,PIA,4347,,5,,Produktidentifikation,X,,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,229,SG8,PIA,7140,,,,Konfigurationsprodukt- Code,X,,REMOVED,,,,,,,,,,,
-Produkt-Daten der Steuerbaren Ressource,230,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,REMOVED,,,,,,,,,,,
-Zugeordnete Definition,231,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Zugeordnete Definition,232,SG10,CCI,7059,,Z52,,Code der Schaltzeitdefinition,X,,REMOVED,,,,,,,,,,,
-Zugeordnete Definition,233,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,REMOVED,,,,,,,,,,,
-Zugeordnete Definition,234,SG10,CCI,7037,,,,Code der Definition,X,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,235,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,236,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,237,SG10,CAV,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,238,SG10,CAV,7111,,Z88,,NB,X,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,239,SG10,CAV,7111,,Z89,,LF,X,,REMOVED,,,,,,,,,,,
-Auftraggebender Marktpartner,240,SG10,CAV,1131,,,,MP-ID,X,,REMOVED,,,,,,,,,,,
-Produkt-Daten für Marktrolle relevant,241,SG10,CCI,,,,,,Muss,,REMOVED,,,,,,,,,,,
-Produkt-Daten für Marktrolle relevant,242,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,REMOVED,,,,,,,,,,,
-Produkt-Daten für Marktrolle relevant,243,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,REMOVED,,,,,,,,,,,
-Daten der Messlokation,244,SG8,SEQ,,,,,,Muss,,,Daten der Messlokation,242,SG8,SEQ,,00306,,,,Muss,
-Daten der Messlokation,245,SG8,SEQ,1229,,Z18,,Daten der Messlokation,X,,,Daten der Messlokation,243,SG8,SEQ,1229,00306,Z18,,Daten der Messlokation,X,
-Referenz auf die ID der Messlokation,246,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Messlokation,244,SG8,RFF,,00307,,,,Muss,
-Referenz auf die ID der Messlokation,247,SG8,RFF,1153,,Z19,,Messlokation,X,,,Referenz auf die ID der Messlokation,245,SG8,RFF,1153,00307,Z19,,Messlokation,X,
-Referenz auf die ID der Messlokation,248,SG8,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID der Messlokation,246,SG8,RFF,1154,00307,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Spannungsebene der Messlokation,249,SG10,CCI,,,,,,Muss,,,Spannungsebene der Messlokation,247,SG10,CCI,,00314,,,,Muss,
-Spannungsebene der Messlokation,250,SG10,CCI,7037,,E04,,Spannungsebene der Messlokation,X,,,Spannungsebene der Messlokation,248,SG10,CCI,7037,00314,E04,,Spannungsebene der Messlokation,X,
-Spannungsebene der Messlokation,251,SG10,CAV,,,,,,Muss,,,Spannungsebene der Messlokation,249,SG10,CAV,,00315,,,,Muss,
-Spannungsebene der Messlokation,252,SG10,CAV,7111,,E03,,Höchstspannung,X,,,Spannungsebene der Messlokation,250,SG10,CAV,7111,00315,E03,,Höchstspannung,X,
-Spannungsebene der Messlokation,253,SG10,CAV,7111,,E04,,Hochspannung,X,,,Spannungsebene der Messlokation,251,SG10,CAV,7111,,E04,,Hochspannung,X,
-Spannungsebene der Messlokation,254,SG10,CAV,7111,,E05,,Mittelspannung,X,,,Spannungsebene der Messlokation,252,SG10,CAV,7111,,E05,,Mittelspannung,X,
-Spannungsebene der Messlokation,255,SG10,CAV,7111,,E06,,Niederspannung,X,,,Spannungsebene der Messlokation,253,SG10,CAV,7111,,E06,,Niederspannung,X,
-Zähleinrichtungsdaten,256,SG8,SEQ,,,,,,Muss,,,Zähleinrichtungsdaten,254,SG8,SEQ,,00326,,,,Muss,
-Zähleinrichtungsdaten,257,SG8,SEQ,1229,,Z03,,Zähleinrichtungsdat en,X,,,Zähleinrichtungsdaten,255,SG8,SEQ,1229,00326,Z03,,Zähleinrichtungsdat en,X,
-Referenz auf die ID einer Messlokation,258,SG8,RFF,,,,,,Muss,,,Referenz auf die ID einer Messlokation,256,SG8,RFF,,00327,,,,Muss,
-Referenz auf die ID einer Messlokation,259,SG8,RFF,1153,,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,257,SG8,RFF,1153,00327,Z19,,Messlokation,X,
-Referenz auf die ID einer Messlokation,260,SG8,RFF,1154,,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,258,SG8,RFF,1154,00327,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Referenz auf das Smartmeter-Gateway,261,SG8,RFF,,,,,,Soll [166] ∧ [215],"[166] Wenn vorhanden
-[215] Wenn in der selben SG8 SEQ+Z03 (Zähleinrichtungsdate n) SG10 CCI+++E13 CAV+MME (Zählertyp: mME) vorhanden",,Referenz auf das Smartmeter-Gateway,259,SG8,RFF,,00328,,,,Soll [166] ∧ [215],"[166] Wenn vorhanden
-[215] Wenn in derselben SG8 SEQ+Z03 (Zähleinrichtungsdate n) SG10 CCI+++E13 CAV+MME (Zählertyp: mME) vorhanden"
-Referenz auf das Smartmeter-Gateway,262,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,,,Referenz auf das Smartmeter-Gateway,260,SG8,RFF,1153,00328,Z14,,Smartmeter- Gateway,X,
-Referenz auf das Smartmeter-Gateway,263,SG8,RFF,1154,,,,Identifikation / Nummer des Smartmeter-Gateways,X,,,Referenz auf das Smartmeter-Gateway,261,SG8,RFF,1154,00328,,,Identifikation / Nummer des Smartmeter-Gateways,X,
-Zählertyp,264,SG10,CCI,,,,,,Muss,,,Zählertyp,262,SG10,CCI,,00329,,,,Muss,
-Zählertyp,265,SG10,CCI,7037,,E13,,Zählertyp,X,,,Zählertyp,263,SG10,CCI,7037,00329,E13,,Zählertyp,X,
-Zählertyp,266,SG10,CAV,,,,,,Muss,,,Zählertyp,264,SG10,CAV,,00330,,,,Muss,
-Zählertyp,267,SG10,CAV,7111,,AHZ,,analoger Haushaltszähler (Drehstrom),X,,,Zählertyp,265,SG10,CAV,7111,00330,AHZ,,analoger Haushaltszähler (Drehstrom),X,
-Zählertyp,268,SG10,CAV,7111,,WSZ,,analoger Wechselstromzähler,X,,,Zählertyp,266,SG10,CAV,7111,,WSZ,,analoger Wechselstromzähler,X,
-Zählertyp,269,SG10,CAV,7111,,LAZ,,Lastgangzähler,X,,,Zählertyp,267,SG10,CAV,7111,,LAZ,,Lastgangzähler,X,
-Zählertyp,270,SG10,CAV,7111,,MAZ,,Maximumzähler,X,,,Zählertyp,268,SG10,CAV,7111,,MAZ,,Maximumzähler,X,
-Zählertyp,271,SG10,CAV,7111,,MME,,moderne Messeinrichtung nach MsbG,X,,,Zählertyp,269,SG10,CAV,7111,,MME,,moderne Messeinrichtung nach MsbG,X,
-Zählertyp,272,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X ,,,Zählertyp,270,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X ,
-Zählertyp,273,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,,Zählertyp,271,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,
-Zählertyp,274,SG10,CAV,7110,,Z01,,EDL40,X [136],,,Zählertyp,272,SG10,CAV,7110,00330,Z01,,EDL40,X [136],
-Zählertyp,275,SG10,CAV,7110,,Z02,,EDL21,X [136],,,Zählertyp,273,SG10,CAV,7110,,Z02,,EDL21,X [136],
-Zählertyp,276,SG10,CAV,7110,,Z03,,sonstiger EHZ,X [136],,,Zählertyp,274,SG10,CAV,7110,,Z03,,sonstiger EHZ,X [136],
-Zählertyp,277,SG10,CAV,7110,,Z04,,Standard,X [346],,,Zählertyp,275,SG10,CAV,7110,,Z04,,Standard,X [346],
-Zählertyp,278,SG10,CAV,7110,,Z05,,MeDa-Zähler,X [346],"[136] Wenn SG10 CCI+++E13 (Zählertyp) CAV+EHZ (elektronischer Haushaltszähler) vorhanden
-[346] Wenn SG10 CCI+++E13 (Zählertyp) CAV+MME (mME) vorhanden",,Zählertyp,276,SG10,CAV,7110,,Z05,,MeDa-Zähler,X [346],"[136] Wenn SG10 CCI+++E13 (Zählertyp) CAV+EHZ (elektronischer Haushaltszähler) vorhanden
-[346] Wenn SG10 CCI+++E13 (Zählertyp) CAV+MME (mME) vorhanden"
-Identifikation / Nummer des Gerätes,279,SG10,CAV,,,,,,Muss,,,Identifikation / Nummer des Gerätes,277,SG10,CAV,,00331,,,,Muss,
-Identifikation / Nummer des Gerätes,280,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,278,SG10,CAV,7111,00331,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,281,SG10,CAV,7110,,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,279,SG10,CAV,7110,00331,,,Gerätenummer,X,
-Registeranzahl,282,SG10,CAV,,,,,,Muss [139],[139] Wenn SG10 CAV+IVA (Individuelle Abstimmung) nicht vorhanden,,Registeranzahl,280,SG10,CAV,,00332,,,,Muss [139],[139] Wenn SG10 CAV+IVA (Individuelle Abstimmung) nicht vorhanden
-Registeranzahl,283,SG10,CAV,7111,,ETZ,,Eintarif,X,,,Registeranzahl,281,SG10,CAV,7111,00332,ETZ,,Eintarif,X,
-Registeranzahl,284,SG10,CAV,7111,,ZTZ,,Zweitarif,X,,,Registeranzahl,282,SG10,CAV,7111,,ZTZ,,Zweitarif,X,
-Registeranzahl,285,SG10,CAV,7111,,NTZ,,Mehrtarif,X,,,Registeranzahl,283,SG10,CAV,7111,,NTZ,,Mehrtarif,X,
-Energierichtung,286,SG10,CAV,,,,,,Muss,,,Energierichtung,284,SG10,CAV,,00333,,,,Muss,
-Energierichtung,287,SG10,CAV,7111,,ERZ,,Einrichtungszähler,X,,,Energierichtung,285,SG10,CAV,7111,00333,ERZ,,Einrichtungszähler,X,
-Energierichtung,288,SG10,CAV,7111,,ZRZ,,Zweirichtungszähler,X,,,Energierichtung,286,SG10,CAV,7111,,ZRZ,,Zweirichtungszähler,X,
-Fernschaltung der Zähleinrichtung,289,SG10,CAV,,,,,,Muss,,,Fernschaltung der Zähleinrichtung,287,SG10,CAV,,00334,,,,Muss,
-Fernschaltung der Zähleinrichtung,290,SG10,CAV,7111,,Z58,,Fernschaltung der Zähleinrichtung,X,,,Fernschaltung der Zähleinrichtung,288,SG10,CAV,7111,00334,Z58,,Fernschaltung der Zähleinrichtung,X,
-Fernschaltung der Zähleinrichtung,291,SG10,CAV,7110,,Z06,,vorhanden,X,,,Fernschaltung der Zähleinrichtung,289,SG10,CAV,7110,00334,Z06,,vorhanden,X,
-Fernschaltung der Zähleinrichtung,292,SG10,CAV,7110,,Z07,,nicht vorhanden,X,,,Fernschaltung der Zähleinrichtung,290,SG10,CAV,7110,,Z07,,nicht vorhanden,X,
-Messwerterfassung an der Zähleinrichtung,293,SG10,CCI,,,,,,Muss,,,Messwerterfassung an der Zähleinrichtung,291,SG10,CCI,,00337,,,,Muss,
-Messwerterfassung an der Zähleinrichtung,294,SG10,CCI,7037,,E12,,Messwerterfassung an der Zähleinrichtung,X,,,Messwerterfassung an der Zähleinrichtung,292,SG10,CCI,7037,00337,E12,,Messwerterfassung an der Zähleinrichtung,X,
-Messwerterfassung an der Zähleinrichtung,295,SG10,CAV,,,,,,Muss,,,Messwerterfassung an der Zähleinrichtung,293,SG10,CAV,,00338,,,,Muss,
-Messwerterfassung an der Zähleinrichtung,296,SG10,CAV,7111,,AMR,,fernauslesbare Zähler,X,,,Messwerterfassung an der Zähleinrichtung,294,SG10,CAV,7111,00338,AMR,,fernauslesbare Zähler,X,
-Messwerterfassung an der Zähleinrichtung,297,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,,Messwerterfassung an der Zähleinrichtung,295,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,
-OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,298,SG8,SEQ,,,,,,Muss,,,OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,296,SG8,SEQ,,00339,,,,Muss,
-OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,299,SG8,SEQ,1229,,Z20,,OBIS-Daten der Zähleinrichtung,X,,,OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,297,SG8,SEQ,1229,00339,Z20,,OBIS-Daten der Zähleinrichtung,X,
-Referenz auf die Gerätenummer,300,SG8,RFF,,,,,,Muss [665],[665] Hinweis: Wenn ein Zähler mit einem SMGW parametriert ist werden an dem Zähler keine OBIS- Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom SMGW,,Referenz auf die Gerätenummer,298,SG8,RFF,,00340,,,,Muss [665],[665] Hinweis: Wenn ein Zähler mit einem SMGW parametriert ist werden an dem Zähler keine OBIS- Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom SMGW
-Referenz auf die Gerätenummer,301,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X [441],,,Referenz auf die Gerätenummer,299,SG8,RFF,1153,00340,MG,,Gerätenummer des Zählers,X [441],
-Referenz auf die Gerätenummer,302,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,[441] Wenn im SG8+SEQ+Z03 (Zähleinrichtungsdate n) für die in diesem RFF DE1154 genannte Gerätenummer eines Zählers das RFF+Z14 (Referenz auf das Smartmeter-Gateway) nicht vorhanden ist,,Referenz auf die Gerätenummer,300,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,[441] Wenn im SG8+SEQ+Z03 (Zähleinrichtungsdate n) für die in diesem RFF DE1154 genannte Gerätenummer eines Zählers das RFF+Z14 (Referenz auf das Smartmeter-Gateway) nicht vorhanden ist
-Referenz auf die Gerätenummer,303,SG8,RFF,1154,,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,301,SG8,RFF,1154,00340,,,Gerätenummer,X,
-Referenz auf die ID einer Messlokation,304,SG8,RFF,,,,,,Muss,,,Referenz auf die ID einer Messlokation,302,SG8,RFF,,00341,,,,Muss,
-Referenz auf die ID einer Messlokation,305,SG8,RFF,1153,,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,303,SG8,RFF,1153,00341,Z19,,Messlokation,X,
-Referenz auf die ID einer Messlokation,306,SG8,RFF,1154,,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,304,SG8,RFF,1154,00341,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Referenz auf die ID einer Marktlokation,307,SG8,RFF,,,,,,Muss [402] ∧ [420] ∧ [651],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",23
+Kommunikationsverbindu ng,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,24,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Kommunikationsverbindu ng,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,24
+Kommunikationsverbindu ng,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,25,,,Kommunikationsverbindu ng,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,25
+Kommunikationsverbindu ng,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,26,,,Kommunikationsverbindu ng,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,26
+Kommunikationsverbindu ng,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,27,,,Kommunikationsverbindu ng,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,27
+Kommunikationsverbindu ng,SG3,COM,3155,,AL,,Handy,X [1P0..1],,28,,,Kommunikationsverbindu ng,SG3,COM,3155,,AL,,Handy,X [1P0..1],,28
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,29,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,29
+MP-ID Empfänger,SG2,NAD,3035,,MR,,Nachrichtenempfän ger,X,,30,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfän ger,X,,30
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,31,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,31
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,32,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,32
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,33,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,33
+Vorgang,SG4,IDE,,,,,,Muss,,34,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Vorgang,SG4,IDE,,00020,,,,Muss,,34
+Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,35,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,35
+Vorgang,SG4,IDE,7402,,,,Vorgangsnummer,X,,36,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,36
+Beginn zum,SG4,DTM,,,,,,Muss,,37,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn zum,SG4,DTM,,00024,,,,Muss,,37
+Beginn zum,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,38,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn zum,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,38
+Beginn zum,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,39,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn zum,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,39
+Beginn zum,SG4,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,40,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Beginn zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZ ZZ,X,,40
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,,,,,Muss,,41,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00027,,,,Muss,,41
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,42,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,42
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,,303,,CCYYMMDDHHMMZ ZZ,X,,44,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZ ZZ,X,,44
+Transaktionsgrund,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,45,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Transaktionsgrund,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,45
+Transaktionsgrund,SG4,STS,9015,,7,,Transaktionsgrund,X,,46,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,46
+Transaktionsgrund,SG4,STS,9013,,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,47,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Transaktionsgrund,SG4,STS,9013,00037,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,47
+Netzlokation,SG5,LOC,,,,,,Muss,,48,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Netzlokation,SG5,LOC,,00050,,,,Muss,,48
+Netzlokation,SG5,LOC,3227,,Z18,,Netzlokation,X,,49,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Netzlokation,SG5,LOC,3227,00050,Z18,,Netzlokation,X,,49
+Netzlokation,SG5,LOC,3225,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,50,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Netzlokation,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,50
+Marktlokation,SG5,LOC,,,,,,Muss,,51,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,,00051,,,,Muss,,51
+Marktlokation,SG5,LOC,3227,,Z16,,Marktlokation,X,,52,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,52
+Marktlokation,SG5,LOC,3225,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,53,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,53
+Steuerbare Ressource,SG5,LOC,,,,,,Muss,,54,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerbare Ressource,SG5,LOC,,00053,,,,Muss,,54
+Steuerbare Ressource,SG5,LOC,3227,,Z19,,Steuerbare Ressource,X,,55,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerbare Ressource,SG5,LOC,3227,00053,Z19,,Steuerbare Ressource,X,,55
+Steuerbare Ressource,SG5,LOC,3225,,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,56,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerbare Ressource,SG5,LOC,3225,00053,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,56
+Tranche,SG5,LOC,,,,,,Muss,,57,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Tranche,SG5,LOC,,00054,,,,Muss,,57
+Tranche,SG5,LOC,3227,,Z21,,Tranche,X,,58,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Tranche,SG5,LOC,3227,00054,Z21,,Tranche,X,,58
+Tranche,SG5,LOC,3225,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,59,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Tranche,SG5,LOC,3225,00054,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,59
+Messlokation,SG5,LOC,,,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messlokation,SG5,LOC,,00055,,,,Muss,,60
+Messlokation,SG5,LOC,3227,,Z17,,Messlokation,X,,61,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messlokation,SG5,LOC,3227,00055,Z17,,Messlokation,X,,61
+Messlokation,SG5,LOC,3225,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,62,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messlokation,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,62
+Prüfidentifikator,SG6,RFF,,,,,,Muss,,63,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,63
+Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,64,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,64
+Prüfidentifikator,SG6,RFF,1154,,55172,,SDÄ Strom / Anfrage an MSB mit Abhängigkeit MSB an NB,X,,65,,,Prüfidentifikator,SG6,RFF,1154,,55172,,SDÄ Strom / Anfrage an MSB mit Abhängigkeit MSB an NB,X,,65
+Daten der Netzlokation,SG8,SEQ,,,,,,Muss,,66,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Netzlokation,SG8,SEQ,,00078,,,,Muss,,66
+Daten der Netzlokation,SG8,SEQ,1229,,Z51,,Daten der Netzlokation,X,,67,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Netzlokation,SG8,SEQ,1229,00078,Z51,,Daten der Netzlokation,X,,67
+Referenz auf die ID der Netzlokation,SG8,RFF,,,,,,Muss,,68,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,,00079,,,,Muss,,68
+Referenz auf die ID der Netzlokation,SG8,RFF,1153,,Z32,,Netzlokation,X,,69,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1153,00079,Z32,,Netzlokation,X,,69
+Referenz auf die ID der Netzlokation,SG8,RFF,1154,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,70,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1154,00079,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,70
+Steuerkanal,SG10,CCI,,,,,,Muss,,71,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerkanal,SG10,CCI,,00080,,,,Muss,,71
+Steuerkanal,SG10,CCI,7059,,Z49,,Steuerkanal,X,,72,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerkanal,SG10,CCI,7059,00080,Z49,,Steuerkanal,X,,72
+Steuerkanal,SG10,CCI,7037,,ZF2,,Kein Steuerkanal vorhanden,X,,73,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Steuerkanal,SG10,CCI,7037,00080,ZF2,,Kein Steuerkanal vorhanden,X,,73
+Steuerkanal,SG10,CCI,7037,,ZF3,,Steuerkanal vorhanden,X,,74,,,Steuerkanal,SG10,CCI,7037,,ZF3,,Steuerkanal vorhanden,X,,74
+OBIS-Daten der Netzlokation,SG8,SEQ,,,,,,Muss,,75,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Netzlokation,SG8,SEQ,,00088,,,,Muss,,75
+OBIS-Daten der Netzlokation,SG8,SEQ,1229,,Z57,,OBIS-Daten der Netzlokation,X,,76,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Netzlokation,SG8,SEQ,1229,00088,Z57,,OBIS-Daten der Netzlokation,X,,76
+Referenz auf die ID der Netzlokation,SG8,RFF,,,,,,Muss,,77,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,,00089,,,,Muss,,77
+Referenz auf die ID der Netzlokation,SG8,RFF,1153,,Z32,,Netzlokation,X,,78,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1153,00089,Z32,,Netzlokation,X,,78
+Referenz auf die ID der Netzlokation,SG8,RFF,1154,,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,79,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1154,00089,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,79
+OBIS-Kennzahl der Netzlokation,SG8,PIA,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Netzlokation,SG8,PIA,,00090,,,,Muss,,80
+OBIS-Kennzahl der Netzlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,81,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Netzlokation,SG8,PIA,4347,00090,5,,Produktidentifikation,X,,81
+OBIS-Kennzahl der Netzlokation,SG8,PIA,7140,,,,OBIS-Kennzahl der Netzlokation,X,,82,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Netzlokation,SG8,PIA,7140,00090,,,OBIS-Kennzahl der Netzlokation,X,,82
+OBIS-Kennzahl der Netzlokation,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,83,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Netzlokation,SG8,PIA,7143,00090,SRW,,OBIS-Kennzahl,X,,83
+Produkt-Daten für Netzbetreiber relevant,SG10,CCI,,,,,,Muss,,84,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Netzbetreiber relevant,SG10,CCI,,00091,,,,Muss,,84
+Produkt-Daten für Netzbetreiber relevant,SG10,CCI,7037,,ZA8,,NB,X,,85,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Netzbetreiber relevant,SG10,CCI,7037,00091,ZA8,,NB,X,,85
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,86,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00092,,,,Muss,,86
+Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X,,87,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00092,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X,,87
+Produkt-Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Lieferant relevant,SG10,CCI,,00093,,,,Muss,,88
+Produkt-Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,89,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Lieferant relevant,SG10,CCI,7037,00093,ZA7,,LF,X,,89
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,90,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00094,,,,Muss,,90
+Verwendungszweck der Werte,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],,91,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00094,Z47,,Endkundenabrechnu ng,X [1P1..1],,91
+Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [1P1..1],,92,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [1P1..1],,92
+Produkt-Daten der Netzlokation,SG8,SEQ,,,,,,Muss,,93,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,SEQ,,00095,,,,Muss,,93
+Produkt-Daten der Netzlokation,SG8,SEQ,1229,,Z60,,Produkt-Daten der Netzlokation,X,,94,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,SEQ,1229,00095,Z60,,Produkt-Daten der Netzlokation,X,,94
+Referenz auf die ID der Netzlokation,SG8,RFF,,,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,,00096,,,,Muss,,95
+Referenz auf die ID der Netzlokation,SG8,RFF,1153,,Z32,,Netzlokation,X,,96,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1153,00096,Z32,,Netzlokation,X,,96
+Referenz auf die ID der Netzlokation,SG8,RFF,1154,,,,ID einer Netzlokation,X [960],[960] Format: Netzlokations-ID,97,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Netzlokation,SG8,RFF,1154,00096,,,ID einer Netzlokation,X [960],[960] Format: Netzlokations-ID,97
+Produkt-Daten der Netzlokation,SG8,PIA,,,,,,Muss [445],[445] Wenn in derselben SG8 SEQ+Z60 (Produkt- Daten der Netzlokation) das SG10 CCI+11 (Details zum Produkt der Netzlokation) nicht vorhanden,98,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,PIA,,00097,,,,Muss [445],[445] Wenn in derselben SG8 SEQ+Z60 (Produkt- Daten der Netzlokation) das SG10 CCI+11 (Details zum Produkt der Netzlokation) nicht vorhanden,98
+Produkt-Daten der Netzlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,99,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,PIA,4347,00097,5,,Produktidentifikation,X,,99
+Produkt-Daten der Netzlokation,SG8,PIA,7140,,,,Konfigurationsprodukt- Code,X [412],"[412] Es sind ausschließlich Konfigurationsprodukt -Codes der ""EDI@Energy Codeliste der Konfigurationen"" aus Kapitel 4.2 Konfigurationsprodukt e Leistungskurvendefinit ion erlaubt",100,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,PIA,7140,00097,,,Konfigurationsprodukt- Code,X [412],"[412] Es sind ausschließlich Konfigurationsprodukt -Codes der ""EDI@Energy Codeliste der Konfigurationen"" aus Kapitel 4.2 Konfigurationsprodukt e Leistungskurvendefinit ion erlaubt",100
+Produkt-Daten der Netzlokation,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,101,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Netzlokation,SG8,PIA,7143,00097,Z12,,Konfigurationsprodu kt,X,,101
+Details zum Produkt der Netzlokation,SG10,CCI,,,,,,Muss,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Details zum Produkt der Netzlokation,SG10,CCI,,00098,,,,Muss,,102
+Details zum Produkt der Netzlokation,SG10,CCI,7059,,11,,Produkt,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Details zum Produkt der Netzlokation,SG10,CCI,7059,00098,11,,Produkt,X,,103
+Details zum Produkt der Netzlokation,SG10,CCI,7037,,ZF6,,Kein Produkt an der Netzlokation zugeordnet,X,,104,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Details zum Produkt der Netzlokation,SG10,CCI,7037,00098,ZF6,,Kein Produkt an der Netzlokation zugeordnet,X,,104
+Zugeordnete Leistungskurvendefinition,SG10,CCI,,,,,,Muss,,105,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Leistungskurvendefinition,SG10,CCI,,00099,,,,Muss,,105
+Zugeordnete Leistungskurvendefinition,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,106,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Leistungskurvendefinition,SG10,CCI,7059,00099,Z53,,Code der Leistungskurvendefi nition,X,,106
+Zugeordnete Leistungskurvendefinition,SG10,CCI,7037,,,,Code der Leistungskurvendefinition,X,,107,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Leistungskurvendefinition,SG10,CCI,7037,00099,,,Code der Leistungskurvendefinition,X,,107
+Auftraggebender Marktpartner,SG10,CCI,,,,,,Muss,,108,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Auftraggebender Marktpartner,SG10,CCI,,00100,,,,Muss,,108
+Auftraggebender Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,109,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Auftraggebender Marktpartner,SG10,CCI,7037,00100,ZB3,,Zugeordneter Marktpartner,X,,109
+Auftraggebender Marktpartner,SG10,CAV,,,,,,Muss,,110,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Auftraggebender Marktpartner,SG10,CAV,,00101,,,,Muss,,110
+Auftraggebender Marktpartner,SG10,CAV,7111,,Z88,,NB,X,,111,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Auftraggebender Marktpartner,SG10,CAV,7111,00101,Z88,,NB,X,,111
+Auftraggebender Marktpartner,SG10,CAV,7111,,Z89,,LF,X,,112,,,Auftraggebender Marktpartner,SG10,CAV,7111,,Z89,,LF,X,,112
+Auftraggebender Marktpartner,SG10,CAV,1131,,,,MP-ID,X,,113,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Auftraggebender Marktpartner,SG10,CAV,1131,00101,,,MP-ID,X,,113
+Produkt-Daten für Marktrolle relevant,SG10,CCI,,,,,,Muss,,114,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Marktrolle relevant,SG10,CCI,,00102,,,,Muss,,114
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,115,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,00102,ZA7,,LF,X [1P0..1],,115
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,116,,,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,116
+Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,117,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,117
+Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,118,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,118
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,119,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,119
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,120,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,120
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,121,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,121
+Lieferrichtung,SG10,CCI,,,,,,Muss,,122,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,,00110,,,,Muss,,122
+Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,123,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,123
+Lieferrichtung,SG10,CCI,7037,,Z06,,Erzeugung,X,,124,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,124
+Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,125,,,Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,125
+OBIS-Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,126,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,,00198,,,,Muss,,126
+OBIS-Daten der Marktlokation,SG8,SEQ,1229,,Z02,,OBIS-Daten der Marktlokation,X,,127,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Daten der Marktlokation,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,,127
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,128,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00199,,,,Muss,,128
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,129,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00199,Z18,,Marktlokation,X,,129
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,130,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00199,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,130
+OBIS-Kennzahl der Marktlokation,SG8,PIA,,,,,,Muss,,131,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,,00200,,,,Muss,,131
+OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,132,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00200,5,,Produktidentifikation,X,,132
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,,,,OBIS-Kennzahl der Marktlokation,X [314],"[314] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3 anzugeben welche an der Marktlokation erforderlich sind, dabei muss der Mindestumfang aus Kap. 3.4 eingehalten werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",133,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Bedingung_FV2310|Bedingung_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X [314],"[314] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3 anzugeben, welche an der Marktlokation erforderlich sind. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",133
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,134,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,,134
+Wertegranularität,SG10,CCI,,,,,,Muss,,135,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Wertegranularität,SG10,CCI,,00201,,,,Muss,,135
+Wertegranularität,SG10,CCI,7037,,ZE4,,Wertegranularität,X,,136,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Wertegranularität,SG10,CCI,7037,00201,ZE4,,Wertegranularität,X,,136
+Wertegranularität,SG10,CAV,,,,,,Muss,,137,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Wertegranularität,SG10,CAV,,00202,,,,Muss,,137
+Wertegranularität,SG10,CAV,7111,,ZD9,,Jährlich,X,,138,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Wertegranularität,SG10,CAV,7111,00202,ZD9,,Jährlich,X,,138
+Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,139,,,Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,139
+Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,140,,,Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,140
+Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,141,,,Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,141
+Zugeordnete Zählzeitdefinition,SG10,CCI,,,,,,Muss,,142,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,,00203,,,,Muss,,142
+Zugeordnete Zählzeitdefinition,SG10,CCI,7059,,Z39,,Code der Zählzeitdefinition,X,,143,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00203,Z39,,Code der Zählzeitdefinition,X,,143
+Zugeordnete Zählzeitdefinition,SG10,CCI,7037,,,,Code der Zählzeitdefinition,X,,144,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00203,,,Code der Zählzeitdefinition,X,,144
+Zugeordnete Zählzeitregister ,SG10,CCI,,,,,,Muss,,145,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Zählzeitregister ,SG10,CCI,7059,,Z38,,Code des Zählzeitregisters,X,,146,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Zählzeitregister ,SG10,CCI,7037,,,,Code des Zählzeitregisters,X,,147,ENTFÄLLT,,,,,,,,,,,,
+,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,,00204,,,,Muss,,145
+,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00204,Z38,,Code des Zählzeitregisters,X,,146
+,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00204,,,Code des Zählzeitregisters,X,,147
+OBIS Daten für Netzbetreiber relevant,SG10,CCI,,,,,,Muss,,148,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Netzbetreiber relevant,SG10,CCI,,00205,,,,Muss,,148
+OBIS Daten für Netzbetreiber relevant,SG10,CCI,7037,,ZA8,,NB,X,,149,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Netzbetreiber relevant,SG10,CCI,7037,00205,ZA8,,NB,X,,149
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,150,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00206,,,,Muss,,150
+Verwendungszweck der Werte,SG10,CAV,7111,,Z84,,Netznutzungsabrech nung,X [29P1..1] ⊻ [30P1..1] ⊻ [32P1..1] ⊻ [36P1..1],,151,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00206,Z84,,Netznutzungsabrech nung,X [29P1..1] ⊻ [30P1..1] ⊻ [32P1..1] ⊻ [36P1..1],,151
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P0..1] ⊻ [32P0..1] ⊻ [33P0..1] ⊻ [34P0..1],,152,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P0..1] ⊻ [32P0..1] ⊻ [33P0..1] ⊻ [34P0..1],,152
+Verwendungszweck der Werte,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,153,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,153
+Verwendungszweck der Werte,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [33P1..1] ⊻ [34P1..1],,154,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [33P1..1] ⊻ [34P1..1],,154
+Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P1..1],,155,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P1..1],,155
+Verwendungszweck der Werte,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,156,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,156
+OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,157,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,,00207,,,,Muss,,157
+OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,158,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00207,ZA7,,LF,X,,158
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,159,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00208,,,,Muss,,159
+Verwendungszweck der Werte,SG10,CAV,7111,,Z84,,Netznutzungsabrech nung,X [29P0..1] ⊻ [30P0..1] ⊻ [32P0..1] ⊻ [36P0..1],,160,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00208,Z84,,Netznutzungsabrech nung,X [29P0..1] ⊻ [30P0..1] ⊻ [32P0..1] ⊻ [36P0..1],,160
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P1..1] ⊻ [32P1..1] ⊻ [33P1..1] ⊻ [34P1..1],,161,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [31P1..1] ⊻ [32P1..1] ⊻ [33P1..1] ⊻ [34P1..1],,161
+Verwendungszweck der Werte,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,162,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z86,,Mehrmindermengen abrechnung,X [30P1..1] ⊻ [37P1..1],,162
+Verwendungszweck der Werte,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [28P0..1] ⊻ [29P1..1] ⊻ [30P0..1] ⊻ [32P1..1] ⊻ [34P1..1] ⊻ [35P1..1] ⊻ [36P0..1] ⊻ [37P1..1],,163,,,Verwendungszweck der Werte,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [28P0..1] ⊻ [29P1..1] ⊻ [30P0..1] ⊻ [32P1..1] ⊻ [34P1..1] ⊻ [35P1..1] ⊻ [36P0..1] ⊻ [37P1..1],,163
+Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P0..1],,164,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZD1,,Blindarbeitabrechnu ng / Betriebsführung,X [28P0..1],,164
+Verwendungszweck der Werte,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,165,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [38P1..1],,165
+OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,,,,,,Muss,,166,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,,00209,,,,Muss,,166
+OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,167,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,7037,00209,ZA9,,ÜNB,X,,167
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,168,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,,00210,,,,Muss,,168
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,169,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Verwendungszweck der Werte,SG10,CAV,7111,00210,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,169
+Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,170,,,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,170
+Produkt-Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,171,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,SEQ,,00211,,,,Muss,,171
+Produkt-Daten der Marktlokation,SG8,SEQ,1229,,Z59,,Produkt-Daten der Marktlokation,X,,172,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,SEQ,1229,00211,Z59,,Produkt-Daten der Marktlokation,X,,172
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,173,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00212,,,,Muss,,173
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,174,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00212,Z18,,Marktlokation,X,,174
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,175,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00212,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,175
+Produkt-Daten der Marktlokation,SG8,PIA,,,,,,Muss,,176,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,PIA,,00213,,,,Muss,,176
+Produkt-Daten der Marktlokation,SG8,PIA,4347,,5,,Produktidentifikation,X,,177,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,PIA,4347,00213,5,,Produktidentifikation,X,,177
+Produkt-Daten der Marktlokation,SG8,PIA,7140,,,,Produkt-/Leistungsnummer,X,,178,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,PIA,7140,00213,,,Produkt-/Leistungsnummer,X,,178
+Produkt-Daten der Marktlokation,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,179,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Produkt-Daten der Marktlokation,SG8,PIA,7143,00213,Z12,,Konfigurationsprodu kt,X,,179
+Zugeordnete Definition,SG10,CCI,,,,,,Muss,,180,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Definition,SG10,CCI,,00214,,,,Muss,,180
+Zugeordnete Definition,SG10,CCI,7059,,Z52,,Code der Schaltzeitdefinition,X,,181,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,Zugeordnete Definition,SG10,CCI,7059,00214,Z53,,Code der Leistungskurvendefi nition,X,,181
+Zugeordnete Definition,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,182,ÄNDERUNG,Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,Zugeordnete Definition,SG10,CCI,7037,00214,,,Code der Definition,X,,182
+,,,,,,,,,,,NEU,,Produkt-Daten für Marktrolle relevant,SG10,CCI,,00215,,,,Muss,,183
+,,,,,,,,,,,NEU,,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,00215,ZA8,,NB,X [1P0..1],,184
+,,,,,,,,,,,NEU,,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,185
+,,,,,,,,,,,NEU,,OBIS-Daten der Tranche,SG8,SEQ,,00260,,,,Muss,,186
+,,,,,,,,,,,NEU,,OBIS-Daten der Tranche,SG8,SEQ,1229,00260,Z17,,OBIS-Daten der Tranche,X,,187
+,,,,,,,,,,,NEU,,Referenz auf die ID einer Tranche,SG8,RFF,,00261,,,,Muss,,188
+,,,,,,,,,,,NEU,,Referenz auf die ID einer Tranche,SG8,RFF,1153,00261,Z20,,Tranche,X,,189
+,,,,,,,,,,,NEU,,Referenz auf die ID einer Tranche,SG8,RFF,1154,00261,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,190
+,,,,,,,,,,,NEU,,OBIS-Kennzahl der Tranche,SG8,PIA,,00262,,,,Muss,,191
+,,,,,,,,,,,NEU,,OBIS-Kennzahl der Tranche,SG8,PIA,4347,00262,5,,Produktidentifikation,X,,192
+,,,,,,,,,,,NEU,,OBIS-Kennzahl der Tranche,SG8,PIA,7140,00262,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,193
+,,,,,,,,,,,NEU,,OBIS-Kennzahl der Tranche,SG8,PIA,7143,00262,SRW,,OBIS-Kennzahl,X,,194
+,,,,,,,,,,,NEU,,OBIS Daten für Netzbetreiber relevant,SG10,CCI,,00263,,,,Muss,,195
+,,,,,,,,,,,NEU,,OBIS Daten für Netzbetreiber relevant,SG10,CCI,7037,00263,ZA8,,NB,X,,196
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,,00264,,,,Muss,,197
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,00264,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,198
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,199
+,,,,,,,,,,,NEU,,OBIS Daten für Lieferant relevant,SG10,CCI,,00265,,,,Muss,,200
+,,,,,,,,,,,NEU,,OBIS Daten für Lieferant relevant,SG10,CCI,7037,00265,ZA7,,LF,X,,201
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,,00266,,,,Muss,,202
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,00266,Z85,,Bilanzkreisabrechnu ng,X [1P1..1],,203
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],,204
+,,,,,,,,,,,NEU,,OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,,00267,,,,Muss,,205
+,,,,,,,,,,,NEU,,OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,7037,00267,ZA9,,ÜNB,X,,206
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,,00268,,,,Muss,,207
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,00268,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,208
+,,,,,,,,,,,NEU,,Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,209
+,,,,,,,,,,,NEU,,Daten der Steuerbaren Ressource,SG8,SEQ,,00293,,,,Muss,,210
+,,,,,,,,,,,NEU,,Daten der Steuerbaren Ressource,SG8,SEQ,1229,00293,Z62,,Daten der Steuerbaren Ressource,X,,211
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00294,,,,Muss,,212
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00294,Z38,,Steuerbare Ressource,X,,213
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00294,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,214
+,,,,,,,,,,,NEU,,Steuerkanal,SG10,CCI,,00295,,,,Muss,,215
+,,,,,,,,,,,NEU,,Steuerkanal,SG10,CCI,7059,00295,Z49,,Steuerkanal,X,,216
+,,,,,,,,,,,NEU,,Leistungsbeschreibung des Steuerkanals,SG10,CAV,7111,00296,ZF2,,Leistungsbeschreibu ng des Steuerkanals,X,,217
+,,,,,,,,,,,NEU,,Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,00296,Z14,,An/Aus,X,,218
+,,,,,,,,,,,NEU,,Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,,Z15,,Gestuft,X,,219
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,SEQ,,00299,,,,Muss,,220
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,SEQ,1229,00299,Z61,,Produkt-Daten der Steuerbaren Ressource,X,,221
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00300,,,,Muss,,222
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00300,Z38,,Steuerbare Ressource,X,,223
+,,,,,,,,,,,NEU,,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00300,,,ID einer Steuerbaren Ressource,X [961],[961] Format: SR-ID,224
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,PIA,,00301,,,,Muss,,225
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,PIA,4347,00301,5,,Produktidentifikation,X,,226
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,PIA,7140,00301,,,Konfigurationsprodukt- Code,X,,227
+,,,,,,,,,,,NEU,,Produkt-Daten der Steuerbaren Ressource,SG8,PIA,7143,00301,Z12,,Konfigurationsprodu kt,X,,228
+Zugeordnete Definition,SG10,CCI,7037,,,,Code der Definition,X,,183,ÄNDERUNG,Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Definition,SG10,CCI,,00302,,,,Muss,,229
+,,,,,,,,,,,NEU,,Zugeordnete Definition,SG10,CCI,7059,00302,Z52,,Code der Schaltzeitdefinition,X,,230
+,,,,,,,,,,,NEU,,Zugeordnete Definition,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,231
+,,,,,,,,,,,NEU,,Zugeordnete Definition,SG10,CCI,7037,00302,,,Code der Definition,X,,232
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CCI,,00303,,,,Muss,,233
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CCI,7037,00303,ZB3,,Zugeordneter Marktpartner,X,,234
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CAV,,00304,,,,Muss,,235
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CAV,7111,00304,Z88,,NB,X,,236
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CAV,7111,,Z89,,LF,X,,237
+,,,,,,,,,,,NEU,,Auftraggebender Marktpartner,SG10,CAV,1131,00304,,,MP-ID,X,,238
+Produkt-Daten für Marktrolle relevant,SG10,CCI,,,,,,Muss,,184,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Produkt-Daten für Marktrolle relevant,SG10,CCI,,00305,,,,Muss,,239
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,185,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,00305,ZA8,,NB,X [1P0..1],,240
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,186,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,241
+OBIS-Daten der Tranche,SG8,SEQ,,,,,,Muss,,187,ENTFÄLLT,,,,,,,,,,,,
+OBIS-Daten der Tranche,SG8,SEQ,1229,,Z17,,OBIS-Daten der Tranche,X,,188,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID einer Tranche,SG8,RFF,,,,,,Muss,,189,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID einer Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,190,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID einer Tranche,SG8,RFF,1154,,,,ID einer Tranche,X [950],[950] Format: Marktlokations-ID,191,ENTFÄLLT,,,,,,,,,,,,
+OBIS-Kennzahl der Tranche,SG8,PIA,,,,,,Muss,,192,ENTFÄLLT,,,,,,,,,,,,
+OBIS-Kennzahl der Tranche,SG8,PIA,4347,,5,,Produktidentifikation,X,,193,ENTFÄLLT,,,,,,,,,,,,
+OBIS-Kennzahl der Tranche,SG8,PIA,7140,,,,OBIS-Kennzahl der Tranche,X [269],[269] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap.3 anzugeben welche an der Tranche erforderlich sind,194,ENTFÄLLT,,,,,,,,,,,,
+OBIS-Kennzahl der Tranche,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,195,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Netzbetreiber relevant,SG10,CCI,,,,,,Muss,,196,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Netzbetreiber relevant,SG10,CCI,7037,,ZA8,,NB,X,,197,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,198,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,199,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,200,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Lieferant relevant,SG10,CCI,,,,,,Muss,,201,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Lieferant relevant,SG10,CCI,7037,,ZA7,,LF,X,,202,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,203,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P1..1],,204,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,Z47,,Endkundenabrechnu ng,X [1P1..1],,205,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,,,,,,Muss,,206,ENTFÄLLT,,,,,,,,,,,,
+OBIS Daten für Übertragungsnetzbetreib er relevant,SG10,CCI,7037,,ZA9,,ÜNB,X,,207,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,,,,,,Muss,,208,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,Z85,,Bilanzkreisabrechnu ng,X [1P0..1],,209,ENTFÄLLT,,,,,,,,,,,,
+Verwendungszweck der Werte,SG10,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,210,ENTFÄLLT,,,,,,,,,,,,
+Daten der Steuerbaren Ressource,SG8,SEQ,,,,,,Muss,,211,ENTFÄLLT,,,,,,,,,,,,
+Daten der Steuerbaren Ressource,SG8,SEQ,1229,,Z62,,Daten der Steuerbaren Ressource,X,,212,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,,,,,Muss,,213,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,,Z38,,Steuerbare Ressource,X,,214,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,215,ENTFÄLLT,,,,,,,,,,,,
+Steuerkanal,SG10,CCI,,,,,,Muss,,216,ENTFÄLLT,,,,,,,,,,,,
+Steuerkanal,SG10,CCI,7059,,Z49,,Steuerkanal,X,,217,ENTFÄLLT,,,,,,,,,,,,
+Leistungsbeschreibung des Steuerkanals,SG10,CAV,,,,,,Muss,,218,ENTFÄLLT,,,,,,,,,,,,
+Leistungsbeschreibung des Steuerkanals,SG10,CAV,7111,,ZF2,,Leistungsbeschreibu ng des Steuerkanals,X,,219,ENTFÄLLT,,,,,,,,,,,,
+Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,,Z14,,An/Aus,X,,220,ENTFÄLLT,,,,,,,,,,,,
+Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,,Z15,,Gestuft,X,,221,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,SEQ,,,,,,Muss,,222,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,SEQ,1229,,Z61,,Produkt-Daten der Steuerbaren Ressource,X,,223,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,,,,,Muss,,224,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,,Z38,,Steuerbare Ressource,X,,225,ENTFÄLLT,,,,,,,,,,,,
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,,,,ID einer Steuerbaren Ressource,X [961],[961] Format: SR-ID,226,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,PIA,,,,,,Muss,,227,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,PIA,4347,,5,,Produktidentifikation,X,,228,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,PIA,7140,,,,Konfigurationsprodukt- Code,X,,229,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten der Steuerbaren Ressource,SG8,PIA,7143,,Z12,,Konfigurationsprodu kt,X,,230,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Definition,SG10,CCI,,,,,,Muss,,231,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Definition,SG10,CCI,7059,,Z52,,Code der Schaltzeitdefinition,X,,232,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Definition,SG10,CCI,7059,,Z53,,Code der Leistungskurvendefi nition,X,,233,ENTFÄLLT,,,,,,,,,,,,
+Zugeordnete Definition,SG10,CCI,7037,,,,Code der Definition,X,,234,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CCI,,,,,,Muss,,235,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,236,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CAV,,,,,,Muss,,237,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CAV,7111,,Z88,,NB,X,,238,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CAV,7111,,Z89,,LF,X,,239,ENTFÄLLT,,,,,,,,,,,,
+Auftraggebender Marktpartner,SG10,CAV,1131,,,,MP-ID,X,,240,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten für Marktrolle relevant,SG10,CCI,,,,,,Muss,,241,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA8,,NB,X [1P0..1],,242,ENTFÄLLT,,,,,,,,,,,,
+Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,,ZA7,,LF,X [1P0..1],,243,ENTFÄLLT,,,,,,,,,,,,
+Daten der Messlokation,SG8,SEQ,,,,,,Muss,,244,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Messlokation,SG8,SEQ,,00306,,,,Muss,,242
+Daten der Messlokation,SG8,SEQ,1229,,Z18,,Daten der Messlokation,X,,245,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Messlokation,SG8,SEQ,1229,00306,Z18,,Daten der Messlokation,X,,243
+Referenz auf die ID der Messlokation,SG8,RFF,,,,,,Muss,,246,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Messlokation,SG8,RFF,,00307,,,,Muss,,244
+Referenz auf die ID der Messlokation,SG8,RFF,1153,,Z19,,Messlokation,X,,247,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Messlokation,SG8,RFF,1153,00307,Z19,,Messlokation,X,,245
+Referenz auf die ID der Messlokation,SG8,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,248,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Messlokation,SG8,RFF,1154,00307,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,246
+Spannungsebene der Messlokation,SG10,CCI,,,,,,Muss,,249,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CCI,,00314,,,,Muss,,247
+Spannungsebene der Messlokation,SG10,CCI,7037,,E04,,Spannungsebene der Messlokation,X,,250,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CCI,7037,00314,E04,,Spannungsebene der Messlokation,X,,248
+Spannungsebene der Messlokation,SG10,CAV,,,,,,Muss,,251,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CAV,,00315,,,,Muss,,249
+Spannungsebene der Messlokation,SG10,CAV,7111,,E03,,Höchstspannung,X,,252,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CAV,7111,00315,E03,,Höchstspannung,X,,250
+Spannungsebene der Messlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,253,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,251
+Spannungsebene der Messlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,254,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,252
+Spannungsebene der Messlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,255,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Spannungsebene der Messlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,253
+Zähleinrichtungsdaten,SG8,SEQ,,,,,,Muss,,256,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zähleinrichtungsdaten,SG8,SEQ,,00326,,,,Muss,,254
+Zähleinrichtungsdaten,SG8,SEQ,1229,,Z03,,Zähleinrichtungsdat en,X,,257,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zähleinrichtungsdaten,SG8,SEQ,1229,00326,Z03,,Zähleinrichtungsdat en,X,,255
+Referenz auf die ID einer Messlokation,SG8,RFF,,,,,,Muss,,258,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,,00327,,,,Muss,,256
+Referenz auf die ID einer Messlokation,SG8,RFF,1153,,Z19,,Messlokation,X,,259,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,1153,00327,Z19,,Messlokation,X,,257
+Referenz auf die ID einer Messlokation,SG8,RFF,1154,,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,260,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,1154,00327,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,258
+Referenz auf das Smartmeter-Gateway,SG8,RFF,,,,,,Soll [166] ∧ [215],"[166] Wenn vorhanden
+[215] Wenn in der selben SG8 SEQ+Z03 (Zähleinrichtungsdate n) SG10 CCI+++E13 CAV+MME (Zählertyp: mME) vorhanden",261,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Bedingung_FV2310|Bedingung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,,00328,,,,Soll [166] ∧ [215],"[166] Wenn vorhanden
+[215] Wenn in derselben SG8 SEQ+Z03 (Zähleinrichtungsdate n) SG10 CCI+++E13 CAV+MME (Zählertyp: mME) vorhanden",259
+Referenz auf das Smartmeter-Gateway,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,,262,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,1153,00328,Z14,,Smartmeter- Gateway,X,,260
+Referenz auf das Smartmeter-Gateway,SG8,RFF,1154,,,,Identifikation / Nummer des Smartmeter-Gateways,X,,263,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,1154,00328,,,Identifikation / Nummer des Smartmeter-Gateways,X,,261
+Zählertyp,SG10,CCI,,,,,,Muss,,264,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CCI,,00329,,,,Muss,,262
+Zählertyp,SG10,CCI,7037,,E13,,Zählertyp,X,,265,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CCI,7037,00329,E13,,Zählertyp,X,,263
+Zählertyp,SG10,CAV,,,,,,Muss,,266,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,,00330,,,,Muss,,264
+Zählertyp,SG10,CAV,7111,,AHZ,,analoger Haushaltszähler (Drehstrom),X,,267,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,00330,AHZ,,analoger Haushaltszähler (Drehstrom),X,,265
+Zählertyp,SG10,CAV,7111,,WSZ,,analoger Wechselstromzähler,X,,268,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,WSZ,,analoger Wechselstromzähler,X,,266
+Zählertyp,SG10,CAV,7111,,LAZ,,Lastgangzähler,X,,269,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,LAZ,,Lastgangzähler,X,,267
+Zählertyp,SG10,CAV,7111,,MAZ,,Maximumzähler,X,,270,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,MAZ,,Maximumzähler,X,,268
+Zählertyp,SG10,CAV,7111,,MME,,moderne Messeinrichtung nach MsbG,X,,271,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,MME,,moderne Messeinrichtung nach MsbG,X,,269
+Zählertyp,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X ,,272,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X ,,270
+Zählertyp,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,273,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,271
+Zählertyp,SG10,CAV,7110,,Z01,,EDL40,X [136],,274,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7110,00330,Z01,,EDL40,X [136],,272
+Zählertyp,SG10,CAV,7110,,Z02,,EDL21,X [136],,275,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7110,,Z02,,EDL21,X [136],,273
+Zählertyp,SG10,CAV,7110,,Z03,,sonstiger EHZ,X [136],,276,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7110,,Z03,,sonstiger EHZ,X [136],,274
+Zählertyp,SG10,CAV,7110,,Z04,,Standard,X [346],,277,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7110,,Z04,,Standard,X [346],,275
+Zählertyp,SG10,CAV,7110,,Z05,,MeDa-Zähler,X [346],"[136] Wenn SG10 CCI+++E13 (Zählertyp) CAV+EHZ (elektronischer Haushaltszähler) vorhanden
+[346] Wenn SG10 CCI+++E13 (Zählertyp) CAV+MME (mME) vorhanden",278,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zählertyp,SG10,CAV,7110,,Z05,,MeDa-Zähler,X [346],"[136] Wenn SG10 CCI+++E13 (Zählertyp) CAV+EHZ (elektronischer Haushaltszähler) vorhanden
+[346] Wenn SG10 CCI+++E13 (Zählertyp) CAV+MME (mME) vorhanden",276
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss,,279,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00331,,,,Muss,,277
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,280,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00331,Z30,,Gerätenummer,X,,278
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X,,281,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00331,,,Gerätenummer,X,,279
+Registeranzahl,SG10,CAV,,,,,,Muss [139],[139] Wenn SG10 CAV+IVA (Individuelle Abstimmung) nicht vorhanden,282,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Registeranzahl,SG10,CAV,,00332,,,,Muss [139],[139] Wenn SG10 CAV+IVA (Individuelle Abstimmung) nicht vorhanden,280
+Registeranzahl,SG10,CAV,7111,,ETZ,,Eintarif,X,,283,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Registeranzahl,SG10,CAV,7111,00332,ETZ,,Eintarif,X,,281
+Registeranzahl,SG10,CAV,7111,,ZTZ,,Zweitarif,X,,284,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Registeranzahl,SG10,CAV,7111,,ZTZ,,Zweitarif,X,,282
+Registeranzahl,SG10,CAV,7111,,NTZ,,Mehrtarif,X,,285,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Registeranzahl,SG10,CAV,7111,,NTZ,,Mehrtarif,X,,283
+Energierichtung,SG10,CAV,,,,,,Muss,,286,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Energierichtung,SG10,CAV,,00333,,,,Muss,,284
+Energierichtung,SG10,CAV,7111,,ERZ,,Einrichtungszähler,X,,287,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Energierichtung,SG10,CAV,7111,00333,ERZ,,Einrichtungszähler,X,,285
+Energierichtung,SG10,CAV,7111,,ZRZ,,Zweirichtungszähler,X,,288,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Energierichtung,SG10,CAV,7111,,ZRZ,,Zweirichtungszähler,X,,286
+Fernschaltung der Zähleinrichtung,SG10,CAV,,,,,,Muss,,289,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fernschaltung der Zähleinrichtung,SG10,CAV,,00334,,,,Muss,,287
+Fernschaltung der Zähleinrichtung,SG10,CAV,7111,,Z58,,Fernschaltung der Zähleinrichtung,X,,290,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fernschaltung der Zähleinrichtung,SG10,CAV,7111,00334,Z58,,Fernschaltung der Zähleinrichtung,X,,288
+Fernschaltung der Zähleinrichtung,SG10,CAV,7110,,Z06,,vorhanden,X,,291,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fernschaltung der Zähleinrichtung,SG10,CAV,7110,00334,Z06,,vorhanden,X,,289
+Fernschaltung der Zähleinrichtung,SG10,CAV,7110,,Z07,,nicht vorhanden,X,,292,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Fernschaltung der Zähleinrichtung,SG10,CAV,7110,,Z07,,nicht vorhanden,X,,290
+Messwerterfassung an der Zähleinrichtung,SG10,CCI,,,,,,Muss,,293,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messwerterfassung an der Zähleinrichtung,SG10,CCI,,00337,,,,Muss,,291
+Messwerterfassung an der Zähleinrichtung,SG10,CCI,7037,,E12,,Messwerterfassung an der Zähleinrichtung,X,,294,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messwerterfassung an der Zähleinrichtung,SG10,CCI,7037,00337,E12,,Messwerterfassung an der Zähleinrichtung,X,,292
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,,,,,,Muss,,295,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messwerterfassung an der Zähleinrichtung,SG10,CAV,,00338,,,,Muss,,293
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,,AMR,,fernauslesbare Zähler,X,,296,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,00338,AMR,,fernauslesbare Zähler,X,,294
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,297,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,295
+OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,SG8,SEQ,,,,,,Muss,,298,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,SG8,SEQ,,00339,,,,Muss,,296
+OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,SG8,SEQ,1229,,Z20,,OBIS-Daten der Zähleinrichtung,X,,299,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway,SG8,SEQ,1229,00339,Z20,,OBIS-Daten der Zähleinrichtung,X,,297
+Referenz auf die Gerätenummer,SG8,RFF,,,,,,Muss [665],[665] Hinweis: Wenn ein Zähler mit einem SMGW parametriert ist werden an dem Zähler keine OBIS- Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom SMGW,300,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,,00340,,,,Muss [665],[665] Hinweis: Wenn ein Zähler mit einem SMGW parametriert ist werden an dem Zähler keine OBIS- Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom SMGW,298
+Referenz auf die Gerätenummer,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X [441],,301,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1153,00340,MG,,Gerätenummer des Zählers,X [441],,299
+Referenz auf die Gerätenummer,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,[441] Wenn im SG8+SEQ+Z03 (Zähleinrichtungsdate n) für die in diesem RFF DE1154 genannte Gerätenummer eines Zählers das RFF+Z14 (Referenz auf das Smartmeter-Gateway) nicht vorhanden ist,302,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,[441] Wenn im SG8+SEQ+Z03 (Zähleinrichtungsdate n) für die in diesem RFF DE1154 genannte Gerätenummer eines Zählers das RFF+Z14 (Referenz auf das Smartmeter-Gateway) nicht vorhanden ist,300
+Referenz auf die Gerätenummer,SG8,RFF,1154,,,,Gerätenummer,X,,303,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1154,00340,,,Gerätenummer,X,,301
+Referenz auf die ID einer Messlokation,SG8,RFF,,,,,,Muss,,304,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,,00341,,,,Muss,,302
+Referenz auf die ID einer Messlokation,SG8,RFF,1153,,Z19,,Messlokation,X,,305,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,1153,00341,Z19,,Messlokation,X,,303
+Referenz auf die ID einer Messlokation,SG8,RFF,1154,,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,306,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Messlokation,SG8,RFF,1154,00341,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,304
+Referenz auf die ID einer Marktlokation,SG8,RFF,,,,,,Muss [402] ∧ [420] ∧ [651],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
 [420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist
-[651] Hinweis: Es sind die Marktlokationen anzugeben, zu welchen die hier genannte OBIS benötigt wird ",,Referenz auf die ID einer Marktlokation,305,SG8,RFF,,00342,,,,Muss [402] ∧ [420] ∧ [651],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
+[651] Hinweis: Es sind die Marktlokationen anzugeben, zu welchen die hier genannte OBIS benötigt wird ",307,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Marktlokation,SG8,RFF,,00342,,,,Muss [402] ∧ [420] ∧ [651],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
 [420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist
-[651] Hinweis: Es sind die Marktlokationen anzugeben, zu welchen die hier genannte OBIS benötigt wird "
-Referenz auf die ID einer Marktlokation,308,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID einer Marktlokation,306,SG8,RFF,1153,00342,Z18,,Marktlokation,X,
-Referenz auf die ID einer Marktlokation,309,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID einer Marktlokation,307,SG8,RFF,1154,00342,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Konfigurations-ID,310,SG8,RFF,,,,,,Muss [402] ∧ [420],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
-[420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist",,Konfigurations-ID,308,SG8,RFF,,00343,,,,Muss [402] ∧ [420],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
-[420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist"
-Konfigurations-ID,311,SG8,RFF,1153,,AGK,,Anwendungsreferen znummer,X,,,Konfigurations-ID,309,SG8,RFF,1153,00343,AGK,,Anwendungsreferen znummer,X,
-Konfigurations-ID,312,SG8,RFF,1154,,,,"Referenz, Identifikation",X,,,Konfigurations-ID,310,SG8,RFF,1154,00343,,,"Referenz, Identifikation",X,
-OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,313,SG8,PIA,,,,,,Muss,,,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,311,SG8,PIA,,00344,,,,Muss,
-OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,314,SG8,PIA,4347,,5,,Produktidentifikation,X,,,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,312,SG8,PIA,4347,00344,5,,Produktidentifikation,X,
-OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,315,SG8,PIA,7140,,,,OBIS-Kennzahl der Zähleinrichtung,X [323],"[323] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3. anzugeben, welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,313,SG8,PIA,7140,00344,,,OBIS-Kennzahl der Zähleinrichtung,X [323],"[323] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3. anzugeben, welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen"""
-OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,316,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,314,SG8,PIA,7143,00344,SRW,,OBIS-Kennzahl,X,
-Wertegranularität,317,SG10,CCI,,,,,,Muss,,,Wertegranularität,315,SG10,CCI,,00345,,,,Muss,
-Wertegranularität,318,SG10,CCI,7037,,ZE4,,Wertegranularität,X,,,Wertegranularität,316,SG10,CCI,7037,00345,ZE4,,Wertegranularität,X,
-Wertegranularität,319,SG10,CAV,,,,,,Muss,,,Wertegranularität,317,SG10,CAV,,00346,,,,Muss,
-Wertegranularität,320,SG10,CAV,7111,,ZD9,,Jährlich,X,,,Wertegranularität,318,SG10,CAV,7111,00346,ZD9,,Jährlich,X,
-Wertegranularität,321,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,,Wertegranularität,319,SG10,CAV,7111,,ZE8,,Halbjährlich,X,
-Wertegranularität,322,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,,Wertegranularität,320,SG10,CAV,7111,,ZE9,,Quartalsweise,X,
-Wertegranularität,323,SG10,CAV,7111,,ZB7,,Monatlich,X,,,Wertegranularität,321,SG10,CAV,7111,,ZB7,,Monatlich,X,
-Zugeordnete Zählzeitdefinition,324,SG10,CCI,,,,,,Muss,,,Zugeordnete Zählzeitdefinition,322,SG10,CCI,,00347,,,,Muss,
-Zugeordnete Zählzeitdefinition,325,SG10,CCI,7059,,Z39,,Code der Zählzeitdefinition,X,,,Zugeordnete Zählzeitdefinition,323,SG10,CCI,7059,00347,Z39,,Code der Zählzeitdefinition,X,
-Zugeordnete Zählzeitdefinition,326,SG10,CCI,7037,,,,Code der Zählzeitdefinition,X,,,Zugeordnete Zählzeitdefinition,324,SG10,CCI,7037,00347,,,Code der Zählzeitdefinition,X,
-Zugeordnetes Zählzeitregister ,327,SG10,CCI,,,,,,Muss,,,Zugeordnetes Zählzeitregister ,325,SG10,CCI,,00348,,,,Muss,
-Zugeordnetes Zählzeitregister ,328,SG10,CCI,7059,,Z38,,Code des Zählzeitregisters,X,,,Zugeordnetes Zählzeitregister ,326,SG10,CCI,7059,00348,Z38,,Code des Zählzeitregisters,X,
-Zugeordnetes Zählzeitregister ,329,SG10,CCI,7037,,,,Code des Zählzeitregisters,X,,,Zugeordnetes Zählzeitregister ,327,SG10,CCI,7037,00348,,,Code des Zählzeitregisters,X,
-Vor- und Nachkommastellen des Zählwerks,330,SG10,CCI,,,,,,Muss,,,Vor- und Nachkommastellen des Zählwerks,328,SG10,CCI,,00349,,,,Muss,
-Vor- und Nachkommastellen des Zählwerks,331,SG10,CCI,7059,,11,,Produkt,X,,,Vor- und Nachkommastellen des Zählwerks,329,SG10,CCI,7059,00349,11,,Produkt,X,
-Vor- und Nachkommastellen des Zählwerks,332,SG10,CCI,7037,,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,,Vor- und Nachkommastellen des Zählwerks,330,SG10,CCI,7037,00349,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,
-Vor- und Nachkommastellen des Zählwerks,333,SG10,CAV,,,,,,Muss,,,Vor- und Nachkommastellen des Zählwerks,331,SG10,CAV,,00350,,,,Muss,
-Vor- und Nachkommastellen des Zählwerks,334,SG10,CAV,7110,,,,Angabe der Vorkommastelle,X,,,Vor- und Nachkommastellen des Zählwerks,332,SG10,CAV,7110,00350,,,Angabe der Vorkommastelle,X,
-Vor- und Nachkommastellen des Zählwerks,335,SG10,CAV,7110,,,,Angabe der Nachkommastelle,X,,,Vor- und Nachkommastellen des Zählwerks,333,SG10,CAV,7110,00350,,,Angabe der Nachkommastelle,X,
-Schwachlastfähigkeit,336,SG10,CCI,,,,,,Muss,,,Schwachlastfähigkeit,334,SG10,CCI,,00352,,,,Muss,
-Schwachlastfähigkeit,337,SG10,CCI,7059,,Z10,,Schwachlastfähigkeit,X,,,Schwachlastfähigkeit,335,SG10,CCI,7059,00352,Z10,,Schwachlastfähigkeit,X,
-Schwachlastfähigkeit,338,SG10,CCI,7037,,Z59,,Nicht-Schwachlast fähig,X,,,Schwachlastfähigkeit,336,SG10,CCI,7037,00352,Z59,,Nicht-Schwachlast fähig,X,
-Schwachlastfähigkeit,339,SG10,CCI,7037,,Z60,,Schwachlast fähig,X,,,Schwachlastfähigkeit,337,SG10,CCI,7037,,Z60,,Schwachlast fähig,X,
-Wandlerdaten,340,SG8,SEQ,,,,,,Muss,,,Wandlerdaten,338,SG8,SEQ,,00353,,,,Muss,
-Wandlerdaten,341,SG8,SEQ,1229,,Z04,,Wandler-Daten,X,,,Wandlerdaten,339,SG8,SEQ,1229,00353,Z04,,Wandler-Daten,X,
-Referenz auf die Gerätenummer,342,SG8,RFF,,,,,,Muss,,,Referenz auf die Gerätenummer,340,SG8,RFF,,00354,,,,Muss,
-Referenz auf die Gerätenummer,343,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,,Referenz auf die Gerätenummer,341,SG8,RFF,1153,00354,MG,,Gerätenummer des Zählers,X,
-Referenz auf die Gerätenummer,344,SG8,RFF,1154,,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,342,SG8,RFF,1154,00354,,,Gerätenummer,X,
-Wandler,345,SG10,CCI,,,,,,Muss,,,Wandler,343,SG10,CCI,,00355,,,,Muss,
-Wandler,346,SG10,CCI,7037,,Z25,,Wandler,X,,,Wandler,344,SG10,CCI,7037,00355,Z25,,Wandler,X,
-Identifikation / Nummer des Gerätes,347,SG10,CAV,,,,,,Muss [2317] ⊻ [2318],"[2317] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MIW/MPW/ MUW vorhanden, ist das Segment mindestens zweimal anzugeben
-[2318] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MBW (Blockstromwandler) vorhanden, ist das Segment genau einmal anzugeben",,Identifikation / Nummer des Gerätes,345,SG10,CAV,,00356,,,,Muss [2317] ⊻ [2318],"[2317] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MIW/MPW/ MUW vorhanden, ist das Segment mindestens zweimal anzugeben
-[2318] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MBW (Blockstromwandler) vorhanden, ist das Segment genau einmal anzugeben"
-Identifikation / Nummer des Gerätes,348,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,346,SG10,CAV,7111,00356,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,349,SG10,CAV,7110,,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,347,SG10,CAV,7110,00356,,,Gerätenummer,X,
-Wandlertyp und Faktor,350,SG10,CAV,,,,,,Muss,,,Wandlertyp und Faktor,348,SG10,CAV,,00357,,,,Muss,
-Wandlertyp und Faktor,351,SG10,CAV,7111,,MIW,,Messwandlersatz Strom,X,,,Wandlertyp und Faktor,349,SG10,CAV,7111,00357,MIW,,Messwandlersatz Strom,X,
-Wandlertyp und Faktor,352,SG10,CAV,7111,,MPW,,Kombimesswandlers atz (Strom und Spannung),X,,,Wandlertyp und Faktor,350,SG10,CAV,7111,,MPW,,Kombimesswandlers atz (Strom und Spannung),X,
-Wandlertyp und Faktor,353,SG10,CAV,7111,,MBW,,Blockstromwandler,X,,,Wandlertyp und Faktor,351,SG10,CAV,7111,,MBW,,Blockstromwandler,X,
-Wandlertyp und Faktor,354,SG10,CAV,7111,,MUW,,Messwandlersatz Spannung,X,,,Wandlertyp und Faktor,352,SG10,CAV,7111,,MUW,,Messwandlersatz Spannung,X,
-Wandlertyp und Faktor,355,SG10,CAV,7110,,,,Wandlerfaktor,X [902] [141],"[141] Wenn SG10 CAV+MIW/ MPW/ MBW vorhanden
-[902] Format: Möglicher Wert: ≥ 0",,Wandlertyp und Faktor,353,SG10,CAV,7110,00357,,,Wandlerfaktor,X [902] [141],"[141] Wenn SG10 CAV+MIW/ MPW/ MBW vorhanden
-[902] Format: Möglicher Wert: ≥ 0"
-Kommunikationseinrichtu ngsdaten,356,SG8,SEQ,,,,,,Muss,,,Kommunikationseinrichtu ngsdaten,354,SG8,SEQ,,00358,,,,Muss,
-Kommunikationseinrichtu ngsdaten,357,SG8,SEQ,1229,,Z05,,Kommunikationsein richtungsdaten,X,,,Kommunikationseinrichtu ngsdaten,355,SG8,SEQ,1229,00358,Z05,,Kommunikationsein richtungsdaten,X,
-Referenz auf die Gerätenummer,358,SG8,RFF,,,,,,Muss,,,Referenz auf die Gerätenummer,356,SG8,RFF,,00359,,,,Muss,
-Referenz auf die Gerätenummer,359,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,,Referenz auf die Gerätenummer,357,SG8,RFF,1153,00359,MG,,Gerätenummer des Zählers,X,
-Referenz auf die Gerätenummer,360,SG8,RFF,1154,,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,358,SG8,RFF,1154,00359,,,Gerätenummer,X,
-Kommunikationseinrichtu ng,361,SG10,CCI,,,,,,Muss,,,Kommunikationseinrichtu ng,359,SG10,CCI,,00360,,,,Muss,
-Kommunikationseinrichtu ng,362,SG10,CCI,7037,,Z26,,Kommunikationsein richtung,X,,,Kommunikationseinrichtu ng,360,SG10,CCI,7037,00360,Z26,,Kommunikationsein richtung,X,
-Identifikation / Nummer des Gerätes,363,SG10,CAV,,,,,,Muss,,,Identifikation / Nummer des Gerätes,361,SG10,CAV,,00361,,,,Muss,
-Identifikation / Nummer des Gerätes,364,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,362,SG10,CAV,7111,00361,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,365,SG10,CAV,7110,,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,363,SG10,CAV,7110,00361,,,Gerätenummer,X,
-Kommunikationseinrichtu ngstyp,366,SG10,CAV,,,,,,Muss,,,Kommunikationseinrichtu ngstyp,364,SG10,CAV,,00362,,,,Muss,
-Kommunikationseinrichtu ngstyp,367,SG10,CAV,7111,,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,,Kommunikationseinrichtu ngstyp,365,SG10,CAV,7111,00362,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,
-Kommunikationseinrichtu ngstyp,368,SG10,CAV,7111,,ETH,,Ethernet-Kom.- Einricht. LAN/WLAN,X,,,Kommunikationseinrichtu ngstyp,366,SG10,CAV,7111,,ETH,,Ethernet-Kom.- Einricht. LAN/WLAN,X,
-Kommunikationseinrichtu ngstyp,369,SG10,CAV,7111,,PLC,,PLC-Kom.- Einrichtung,X,,,Kommunikationseinrichtu ngstyp,367,SG10,CAV,7111,,PLC,,PLC-Kom.- Einrichtung,X,
-Kommunikationseinrichtu ngstyp,370,SG10,CAV,7111,,PST,,Festnetz-Kom.- Einricht. TAE,X,,,Kommunikationseinrichtu ngstyp,368,SG10,CAV,7111,,PST,,Festnetz-Kom.- Einricht. TAE,X,
-Kommunikationseinrichtu ngstyp,371,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,,Kommunikationseinrichtu ngstyp,369,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,
-Kommunikationseinrichtu ngstyp,372,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,,Kommunikationseinrichtu ngstyp,370,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,
-Daten der technischen Steuereinrichtung,373,SG8,SEQ,,,,,,Muss,,,Daten der technischen Steuereinrichtung,371,SG8,SEQ,,00363,,,,Muss,
-Daten der technischen Steuereinrichtung,374,SG8,SEQ,1229,,Z06,,Daten der technischen Steuereinrichtung,X,,,Daten der technischen Steuereinrichtung,372,SG8,SEQ,1229,00363,Z06,,Daten der technischen Steuereinrichtung,X,
-Referenz auf die Gerätenummer,375,SG8,RFF,,,,,,Muss,,,Referenz auf die Gerätenummer,373,SG8,RFF,,00364,,,,Muss,
-Referenz auf die Gerätenummer,376,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,,Referenz auf die Gerätenummer,374,SG8,RFF,1153,00364,MG,,Gerätenummer des Zählers,X,
-Referenz auf die Gerätenummer,377,SG8,RFF,1154,,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,375,SG8,RFF,1154,00364,,,Gerätenummer,X,
-Technische Steuereinrichtung,378,SG10,CCI,,,,,,Muss,,,Technische Steuereinrichtung,376,SG10,CCI,,00365,,,,Muss,
-Technische Steuereinrichtung,379,SG10,CCI,7037,,Z27,,Technische Steuereinrichtung,X,,,Technische Steuereinrichtung,377,SG10,CCI,7037,00365,Z27,,Technische Steuereinrichtung,X,
-Identifikation / Nummer des Gerätes,380,SG10,CAV,,,,,,Muss,,,Identifikation / Nummer des Gerätes,378,SG10,CAV,,00366,,,,Muss,
-Identifikation / Nummer des Gerätes,381,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,379,SG10,CAV,7111,00366,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,382,SG10,CAV,7110,,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,380,SG10,CAV,7110,00366,,,Gerätenummer,X,
-Technische Steuereinrichtungstyp,383,SG10,CAV,,,,,,Muss,,,Technische Steuereinrichtungstyp,381,SG10,CAV,,00367,,,,Muss,
-Technische Steuereinrichtungstyp,384,SG10,CAV,7111,,RSU,,Rundsteuerempfäng er,X,,,Technische Steuereinrichtungstyp,382,SG10,CAV,7111,00367,RSU,,Rundsteuerempfäng er,X,
-Technische Steuereinrichtungstyp,385,SG10,CAV,7111,,TSU,,Tarifschaltuhr,X,,,Technische Steuereinrichtungstyp,383,SG10,CAV,7111,,TSU,,Tarifschaltuhr,X,
-Smartmeter-Gateway,386,SG8,SEQ,,,,,,Muss,,,Smartmeter-Gateway,384,SG8,SEQ,,00368,,,,Muss,
-Smartmeter-Gateway,387,SG8,SEQ,1229,,Z13,,Smartmeter- Gateway,X,,,Smartmeter-Gateway,385,SG8,SEQ,1229,00368,Z13,,Smartmeter- Gateway,X,
-Smartmeter-Gateway,388,SG10,CCI,,,,,,Muss,,,Smartmeter-Gateway,386,SG10,CCI,,00369,,,,Muss,
-Smartmeter-Gateway,389,SG10,CCI,7037,,Z75,,Smartmeter- Gateway,X,,,Smartmeter-Gateway,387,SG10,CCI,7037,00369,Z75,,Smartmeter- Gateway,X,
-Identifikation / Nummer des Gerätes,390,SG10,CAV,,,,,,Muss,,,Identifikation / Nummer des Gerätes,388,SG10,CAV,,00370,,,,Muss,
-Identifikation / Nummer des Gerätes,391,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,389,SG10,CAV,7111,00370,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,392,SG10,CAV,7110,,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,,Identifikation / Nummer des Gerätes,390,SG10,CAV,7110,00370,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5
-Daten der Steuerbox,393,SG8,SEQ,,,,,,Muss,,,Daten der Steuerbox,391,SG8,SEQ,,00371,,,,Muss,
-Daten der Steuerbox,394,SG8,SEQ,1229,,Z14,,Steuerbox,X,,,Daten der Steuerbox,392,SG8,SEQ,1229,00371,Z14,,Steuerbox,X,
-Referenz auf das Smartmeter-Gateway,395,SG8,RFF,,,,,,Muss,,,Referenz auf das Smartmeter-Gateway,393,SG8,RFF,,00372,,,,Muss,
-Referenz auf das Smartmeter-Gateway,396,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,,,Referenz auf das Smartmeter-Gateway,394,SG8,RFF,1153,00372,Z14,,Smartmeter- Gateway,X,
-Referenz auf das Smartmeter-Gateway,397,SG8,RFF,1154,,,,Identifikation / Nummer des,X,,,Referenz auf das Smartmeter-Gateway,395,SG8,RFF,1154,00372,,,Identifikation / Nummer des Smartmeter-Gateways,X,
-Referenz auf die ID der Marktlokation,398,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,396,SG8,RFF,,00373,,,,Muss,
-Referenz auf die ID der Marktlokation,399,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,397,SG8,RFF,1153,00373,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,400,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,398,SG8,RFF,1154,00373,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Steuerbox,401,SG10,CCI,,,,,,Muss,,,Steuerbox,399,SG10,CCI,,00374,,,,Muss,
-Steuerbox,402,SG10,CCI,7037,,Z76,,Steuerbox,X,,,Steuerbox,400,SG10,CCI,7037,00374,Z76,,Steuerbox,X,
-Identifikation / Nummer des Gerätes,403,SG10,CAV,,,,,,Muss,,,Identifikation / Nummer des Gerätes,401,SG10,CAV,,00375,,,,Muss,
-Identifikation / Nummer des Gerätes,404,SG10,CAV,7111,,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,402,SG10,CAV,7111,00375,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,405,SG10,CAV,7110,,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,,Identifikation / Nummer des Gerätes,403,SG10,CAV,7110,00375,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5
-Nachrichten- Endesegment,406,,UNT,,,,,,Muss,,,Nachrichten- Endesegment,404,,UNT,,00540,,,,Muss,
-Nachrichten- Endesegment,407,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten- Endesegment,405,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten- Endesegment,408,,UNT,0062,,,,Nachrichten- Referenznummer,X,,,Nachrichten- Endesegment,406,,UNT,0062,00540,,,Nachrichten- Referenznummer,X,
+[651] Hinweis: Es sind die Marktlokationen anzugeben, zu welchen die hier genannte OBIS benötigt wird ",305
+Referenz auf die ID einer Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,308,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Marktlokation,SG8,RFF,1153,00342,Z18,,Marktlokation,X,,306
+Referenz auf die ID einer Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,309,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID einer Marktlokation,SG8,RFF,1154,00342,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,307
+Konfigurations-ID,SG8,RFF,,,,,,Muss [402] ∧ [420],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
+[420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist",310,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Konfigurations-ID,SG8,RFF,,00343,,,,Muss [402] ∧ [420],"[402] Wenn in derselben SG8 SEQ+Z20 (OBIS-Daten der Zähleinrichtung / Smartmeter-Gateway) eine OBIS-Kennzahl der Werteart ""Zählerstand"" im PIA+5 vorhanden
+[420] Wenn in dieser SG8 das RFF+Z14 (Smartmeter- Gateway) vorhanden ist",308
+Konfigurations-ID,SG8,RFF,1153,,AGK,,Anwendungsreferen znummer,X,,311,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Konfigurations-ID,SG8,RFF,1153,00343,AGK,,Anwendungsreferen znummer,X,,309
+Konfigurations-ID,SG8,RFF,1154,,,,"Referenz, Identifikation",X,,312,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Konfigurations-ID,SG8,RFF,1154,00343,,,"Referenz, Identifikation",X,,310
+OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,,,,,,Muss,,313,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,,00344,,,,Muss,,311
+OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,4347,,5,,Produktidentifikation,X,,314,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,4347,00344,5,,Produktidentifikation,X,,312
+OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,7140,,,,OBIS-Kennzahl der Zähleinrichtung,X [323],"[323] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3. anzugeben, welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",315,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,7140,00344,,,OBIS-Kennzahl der Zähleinrichtung,X [323],"[323] Es sind alle OBIS-Kennzahlen gem. EDI@Energy Codeliste der OBIS-Kennzahlen und Medien für den deutschen Energiemarkt Kap. 3. anzugeben, welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.1 des Dokumentes ""Codeliste der Konfigurationen""",313
+OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,7143,,SRW,,OBIS-Kennzahl,X,,316,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,OBIS-Kennzahl der Zähleinrichtung / Smartmeter-Gateway,SG8,PIA,7143,00344,SRW,,OBIS-Kennzahl,X,,314
+Wertegranularität,SG10,CCI,,,,,,Muss,,317,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CCI,,00345,,,,Muss,,315
+Wertegranularität,SG10,CCI,7037,,ZE4,,Wertegranularität,X,,318,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CCI,7037,00345,ZE4,,Wertegranularität,X,,316
+Wertegranularität,SG10,CAV,,,,,,Muss,,319,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CAV,,00346,,,,Muss,,317
+Wertegranularität,SG10,CAV,7111,,ZD9,,Jährlich,X,,320,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CAV,7111,00346,ZD9,,Jährlich,X,,318
+Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,321,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,319
+Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,322,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,320
+Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,323,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,321
+Zugeordnete Zählzeitdefinition,SG10,CCI,,,,,,Muss,,324,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,,00347,,,,Muss,,322
+Zugeordnete Zählzeitdefinition,SG10,CCI,7059,,Z39,,Code der Zählzeitdefinition,X,,325,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00347,Z39,,Code der Zählzeitdefinition,X,,323
+Zugeordnete Zählzeitdefinition,SG10,CCI,7037,,,,Code der Zählzeitdefinition,X,,326,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00347,,,Code der Zählzeitdefinition,X,,324
+Zugeordnetes Zählzeitregister ,SG10,CCI,,,,,,Muss,,327,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnetes Zählzeitregister ,SG10,CCI,,00348,,,,Muss,,325
+Zugeordnetes Zählzeitregister ,SG10,CCI,7059,,Z38,,Code des Zählzeitregisters,X,,328,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00348,Z38,,Code des Zählzeitregisters,X,,326
+Zugeordnetes Zählzeitregister ,SG10,CCI,7037,,,,Code des Zählzeitregisters,X,,329,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00348,,,Code des Zählzeitregisters,X,,327
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,,,,,Muss,,330,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00349,,,,Muss,,328
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,,11,,Produkt,X,,331,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00349,11,,Produkt,X,,329
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,332,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00349,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,330
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,,,,,Muss,,333,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00350,,,,Muss,,331
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,,,,Angabe der Vorkommastelle,X,,334,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Vorkommastelle,X,,332
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,,,,Angabe der Nachkommastelle,X,,335,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Nachkommastelle,X,,333
+Schwachlastfähigkeit,SG10,CCI,,,,,,Muss,,336,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Schwachlastfähigkeit,SG10,CCI,,00352,,,,Muss,,334
+Schwachlastfähigkeit,SG10,CCI,7059,,Z10,,Schwachlastfähigkeit,X,,337,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Schwachlastfähigkeit,SG10,CCI,7059,00352,Z10,,Schwachlastfähigkeit,X,,335
+Schwachlastfähigkeit,SG10,CCI,7037,,Z59,,Nicht-Schwachlast fähig,X,,338,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Schwachlastfähigkeit,SG10,CCI,7037,00352,Z59,,Nicht-Schwachlast fähig,X,,336
+Schwachlastfähigkeit,SG10,CCI,7037,,Z60,,Schwachlast fähig,X,,339,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Schwachlastfähigkeit,SG10,CCI,7037,,Z60,,Schwachlast fähig,X,,337
+Wandlerdaten,SG8,SEQ,,,,,,Muss,,340,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlerdaten,SG8,SEQ,,00353,,,,Muss,,338
+Wandlerdaten,SG8,SEQ,1229,,Z04,,Wandler-Daten,X,,341,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlerdaten,SG8,SEQ,1229,00353,Z04,,Wandler-Daten,X,,339
+Referenz auf die Gerätenummer,SG8,RFF,,,,,,Muss,,342,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,,00354,,,,Muss,,340
+Referenz auf die Gerätenummer,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,343,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1153,00354,MG,,Gerätenummer des Zählers,X,,341
+Referenz auf die Gerätenummer,SG8,RFF,1154,,,,Gerätenummer,X,,344,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1154,00354,,,Gerätenummer,X,,342
+Wandler,SG10,CCI,,,,,,Muss,,345,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandler,SG10,CCI,,00355,,,,Muss,,343
+Wandler,SG10,CCI,7037,,Z25,,Wandler,X,,346,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandler,SG10,CCI,7037,00355,Z25,,Wandler,X,,344
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss [2317] ⊻ [2318],"[2317] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MIW/MPW/ MUW vorhanden, ist das Segment mindestens zweimal anzugeben
+[2318] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MBW (Blockstromwandler) vorhanden, ist das Segment genau einmal anzugeben",347,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00356,,,,Muss [2317] ⊻ [2318],"[2317] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MIW/MPW/ MUW vorhanden, ist das Segment mindestens zweimal anzugeben
+[2318] Wenn in derselben SG8 SEQ+Z04 (Wandlerdaten) das SG10 CCI+++Z25 (Wandler) CAV+MBW (Blockstromwandler) vorhanden, ist das Segment genau einmal anzugeben",345
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,348,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00356,Z30,,Gerätenummer,X,,346
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X,,349,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00356,,,Gerätenummer,X,,347
+Wandlertyp und Faktor,SG10,CAV,,,,,,Muss,,350,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,,00357,,,,Muss,,348
+Wandlertyp und Faktor,SG10,CAV,7111,,MIW,,Messwandlersatz Strom,X,,351,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,7111,00357,MIW,,Messwandlersatz Strom,X,,349
+Wandlertyp und Faktor,SG10,CAV,7111,,MPW,,Kombimesswandlers atz (Strom und Spannung),X,,352,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,7111,,MPW,,Kombimesswandlers atz (Strom und Spannung),X,,350
+Wandlertyp und Faktor,SG10,CAV,7111,,MBW,,Blockstromwandler,X,,353,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,7111,,MBW,,Blockstromwandler,X,,351
+Wandlertyp und Faktor,SG10,CAV,7111,,MUW,,Messwandlersatz Spannung,X,,354,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,7111,,MUW,,Messwandlersatz Spannung,X,,352
+Wandlertyp und Faktor,SG10,CAV,7110,,,,Wandlerfaktor,X [902] [141],"[141] Wenn SG10 CAV+MIW/ MPW/ MBW vorhanden
+[902] Format: Möglicher Wert: ≥ 0",355,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Wandlertyp und Faktor,SG10,CAV,7110,00357,,,Wandlerfaktor,X [902] [141],"[141] Wenn SG10 CAV+MIW/ MPW/ MBW vorhanden
+[902] Format: Möglicher Wert: ≥ 0",353
+Kommunikationseinrichtu ngsdaten,SG8,SEQ,,,,,,Muss,,356,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngsdaten,SG8,SEQ,,00358,,,,Muss,,354
+Kommunikationseinrichtu ngsdaten,SG8,SEQ,1229,,Z05,,Kommunikationsein richtungsdaten,X,,357,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngsdaten,SG8,SEQ,1229,00358,Z05,,Kommunikationsein richtungsdaten,X,,355
+Referenz auf die Gerätenummer,SG8,RFF,,,,,,Muss,,358,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,,00359,,,,Muss,,356
+Referenz auf die Gerätenummer,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,359,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1153,00359,MG,,Gerätenummer des Zählers,X,,357
+Referenz auf die Gerätenummer,SG8,RFF,1154,,,,Gerätenummer,X,,360,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1154,00359,,,Gerätenummer,X,,358
+Kommunikationseinrichtu ng,SG10,CCI,,,,,,Muss,,361,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ng,SG10,CCI,,00360,,,,Muss,,359
+Kommunikationseinrichtu ng,SG10,CCI,7037,,Z26,,Kommunikationsein richtung,X,,362,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ng,SG10,CCI,7037,00360,Z26,,Kommunikationsein richtung,X,,360
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss,,363,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00361,,,,Muss,,361
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,364,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00361,Z30,,Gerätenummer,X,,362
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X,,365,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00361,,,Gerätenummer,X,,363
+Kommunikationseinrichtu ngstyp,SG10,CAV,,,,,,Muss,,366,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,,00362,,,,Muss,,364
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,367,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,00362,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,365
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,ETH,,Ethernet-Kom.- Einricht. LAN/WLAN,X,,368,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,ETH,,Ethernet-Kom.- Einricht. LAN/WLAN,X,,366
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,PLC,,PLC-Kom.- Einrichtung,X,,369,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,PLC,,PLC-Kom.- Einrichtung,X,,367
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,PST,,Festnetz-Kom.- Einricht. TAE,X,,370,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,PST,,Festnetz-Kom.- Einricht. TAE,X,,368
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,371,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,369
+Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,372,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationseinrichtu ngstyp,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,370
+Daten der technischen Steuereinrichtung,SG8,SEQ,,,,,,Muss,,373,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der technischen Steuereinrichtung,SG8,SEQ,,00363,,,,Muss,,371
+Daten der technischen Steuereinrichtung,SG8,SEQ,1229,,Z06,,Daten der technischen Steuereinrichtung,X,,374,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der technischen Steuereinrichtung,SG8,SEQ,1229,00363,Z06,,Daten der technischen Steuereinrichtung,X,,372
+Referenz auf die Gerätenummer,SG8,RFF,,,,,,Muss,,375,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,,00364,,,,Muss,,373
+Referenz auf die Gerätenummer,SG8,RFF,1153,,MG,,Gerätenummer des Zählers,X,,376,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1153,00364,MG,,Gerätenummer des Zählers,X,,374
+Referenz auf die Gerätenummer,SG8,RFF,1154,,,,Gerätenummer,X,,377,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die Gerätenummer,SG8,RFF,1154,00364,,,Gerätenummer,X,,375
+Technische Steuereinrichtung,SG10,CCI,,,,,,Muss,,378,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Technische Steuereinrichtung,SG10,CCI,,00365,,,,Muss,,376
+Technische Steuereinrichtung,SG10,CCI,7037,,Z27,,Technische Steuereinrichtung,X,,379,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Technische Steuereinrichtung,SG10,CCI,7037,00365,Z27,,Technische Steuereinrichtung,X,,377
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss,,380,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00366,,,,Muss,,378
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,381,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00366,Z30,,Gerätenummer,X,,379
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X,,382,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00366,,,Gerätenummer,X,,380
+Technische Steuereinrichtungstyp,SG10,CAV,,,,,,Muss,,383,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Technische Steuereinrichtungstyp,SG10,CAV,,00367,,,,Muss,,381
+Technische Steuereinrichtungstyp,SG10,CAV,7111,,RSU,,Rundsteuerempfäng er,X,,384,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Technische Steuereinrichtungstyp,SG10,CAV,7111,00367,RSU,,Rundsteuerempfäng er,X,,382
+Technische Steuereinrichtungstyp,SG10,CAV,7111,,TSU,,Tarifschaltuhr,X,,385,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Technische Steuereinrichtungstyp,SG10,CAV,7111,,TSU,,Tarifschaltuhr,X,,383
+Smartmeter-Gateway,SG8,SEQ,,,,,,Muss,,386,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Smartmeter-Gateway,SG8,SEQ,,00368,,,,Muss,,384
+Smartmeter-Gateway,SG8,SEQ,1229,,Z13,,Smartmeter- Gateway,X,,387,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Smartmeter-Gateway,SG8,SEQ,1229,00368,Z13,,Smartmeter- Gateway,X,,385
+Smartmeter-Gateway,SG10,CCI,,,,,,Muss,,388,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Smartmeter-Gateway,SG10,CCI,,00369,,,,Muss,,386
+Smartmeter-Gateway,SG10,CCI,7037,,Z75,,Smartmeter- Gateway,X,,389,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Smartmeter-Gateway,SG10,CCI,7037,00369,Z75,,Smartmeter- Gateway,X,,387
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss,,390,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00370,,,,Muss,,388
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,391,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00370,Z30,,Gerätenummer,X,,389
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,392,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00370,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,390
+Daten der Steuerbox,SG8,SEQ,,,,,,Muss,,393,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Steuerbox,SG8,SEQ,,00371,,,,Muss,,391
+Daten der Steuerbox,SG8,SEQ,1229,,Z14,,Steuerbox,X,,394,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Steuerbox,SG8,SEQ,1229,00371,Z14,,Steuerbox,X,,392
+Referenz auf das Smartmeter-Gateway,SG8,RFF,,,,,,Muss,,395,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,,00372,,,,Muss,,393
+Referenz auf das Smartmeter-Gateway,SG8,RFF,1153,,Z14,,Smartmeter- Gateway,X,,396,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,1153,00372,Z14,,Smartmeter- Gateway,X,,394
+Referenz auf das Smartmeter-Gateway,SG8,RFF,1154,,,,Identifikation / Nummer des,X,,397,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf das Smartmeter-Gateway,SG8,RFF,1154,00372,,,Identifikation / Nummer des Smartmeter-Gateways,X,,395
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,398,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00373,,,,Muss,,396
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,399,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00373,Z18,,Marktlokation,X,,397
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,400,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00373,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,398
+Steuerbox,SG10,CCI,,,,,,Muss,,401,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Steuerbox,SG10,CCI,,00374,,,,Muss,,399
+Steuerbox,SG10,CCI,7037,,Z76,,Steuerbox,X,,402,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Steuerbox,SG10,CCI,7037,00374,Z76,,Steuerbox,X,,400
+Identifikation / Nummer des Gerätes,SG10,CAV,,,,,,Muss,,403,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,,00375,,,,Muss,,401
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,,Z30,,Gerätenummer,X,,404,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00375,Z30,,Gerätenummer,X,,402
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,405,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00375,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,403
+Nachrichten- Endesegment,,UNT,,,,,,Muss,,406,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten- Endesegment,,UNT,,00540,,,,Muss,,404
+Nachrichten- Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,407,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten- Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,405
+Nachrichten- Endesegment,,UNT,0062,,,,Nachrichten- Referenznummer,X,,408,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten- Endesegment,,UNT,0062,00540,,,Nachrichten- Referenznummer,X,,406

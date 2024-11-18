@@ -1,77 +1,77 @@
-Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,7,,Prozessdatenbericht,X (([6] ∨ [7]) ∧ [27] ∧ [492]) ∨ ([6] ∧ [23] ∧ [493]) ∨ ([7] ∧ [27] ∧ [493]),,,Beginn der Nachricht,8,,BGM,1001,,7,,Prozessdatenbericht,X (([6] ∨ [7]) ∧ [27] ∧ [492]) ∨ ([6] ∧ [23] ∧ [493]) ∨ ([7] ∧ [27] ∧ [493]),
-Beginn der Nachricht,9,,BGM,1001,,Z28,,Energiemenge und Leistungsmaximum,X ([6] ⊻ [7]) ∧ [27],,,Beginn der Nachricht,9,,BGM,1001,,Z28,,Energiemenge und Leistungsmaximum,X ([6] ⊻ [7]) ∧ [27],
-Beginn der Nachricht,10,,BGM,1001,,Z48,,"Lastgang Marktlokation, Tranche",X (([6] ∨ [7] ∨ [26]) ∧ [27] ∧ [492]),"[6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
+Segmentname_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,Unnamed: 0_FV2210,Änderung,changed_entries,Segmentname_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304,Unnamed: 0_FV2304
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,ÄNDERUNG,Code_FV2210|Code_FV2304,Nachrichten-Kopfsegment,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,7,,Prozessdatenbericht,X (([6] ∨ [7]) ∧ [27] ∧ [492]) ∨ ([6] ∧ [23] ∧ [493]) ∨ ([7] ∧ [27] ∧ [493]),,8,,,Beginn der Nachricht,,BGM,1001,,7,,Prozessdatenbericht,X (([6] ∨ [7]) ∧ [27] ∧ [492]) ∨ ([6] ∧ [23] ∧ [493]) ∨ ([7] ∧ [27] ∧ [493]),,8
+Beginn der Nachricht,,BGM,1001,,Z28,,Energiemenge und Leistungsmaximum,X ([6] ⊻ [7]) ∧ [27],,9,,,Beginn der Nachricht,,BGM,1001,,Z28,,Energiemenge und Leistungsmaximum,X ([6] ⊻ [7]) ∧ [27],,9
+Beginn der Nachricht,,BGM,1001,,Z48,,"Lastgang Marktlokation, Tranche",X (([6] ∨ [7] ∨ [26]) ∧ [27] ∧ [492]),"[6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
 [7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
 [23] Wenn MP-ID in SG2 NAD+MR mit Rolle NB vorhanden
 [26] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB vorhanden
 [27] Wenn MP-ID in SG2 NAD+MR mit Rolle MSB vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Beginn der Nachricht,10,,BGM,1001,,Z48,,"Lastgang Marktlokation, Tranche",X (([6] ∨ [7] ∨ [26]) ∧ [27] ∧ [492]),"[6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",10,,,Beginn der Nachricht,,BGM,1001,,Z48,,"Lastgang Marktlokation, Tranche",X (([6] ∨ [7] ∨ [26]) ∧ [27] ∧ [492]),"[6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
 [7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
 [23] Wenn MP-ID in SG2 NAD+MR mit Rolle NB vorhanden
 [26] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB vorhanden
 [27] Wenn MP-ID in SG2 NAD+MR mit Rolle MSB vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
-Beginn der Nachricht,11,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,11,,BGM,1004,,,,Dokumentennummer,X,
-Nachrichtendatum,12,,DTM,,,,,,Muss,,,Nachrichtendatum,12,,DTM,,,,,,Muss,
-Nachrichtendatum,13,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,13,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,14,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00",,Nachrichtendatum,14,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00"
-Nachrichtendatum,15,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,15,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Produkt-/ Leistungsbeschreibung,16,,IMD,,,,,,Muss [2],[2] Wenn BGM+7 vorhanden,,Produkt-/ Leistungsbeschreibung,16,,IMD,,,,,,Muss [2],[2] Wenn BGM+7 vorhanden
-Produkt-/ Leistungsbeschreibung,17,,IMD,7081,,Z11,,Lastgangdaten,X [519],,,Produkt-/ Leistungsbeschreibung,17,,IMD,7081,,Z11,,Lastgangdaten,X [519],
-Produkt-/ Leistungsbeschreibung,18,,IMD,7081,,Z12,,Zählerstände,X [39],,,Produkt-/ Leistungsbeschreibung,18,,IMD,7081,,Z12,,Zählerstände,X [39],
-Produkt-/ Leistungsbeschreibung,19,,IMD,7081,,Z35,,Energiemenge Einzelwert,X [39] ∧ [101],"[39] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB nicht vorhanden
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",10
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,11,,,Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,11
+Nachrichtendatum,,DTM,,,,,,Muss,,12,,,Nachrichtendatum,,DTM,,,,,,Muss,,12
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,13,,,Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,13
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",14,,,Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",14
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,15,,,Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,15
+Produkt-/ Leistungsbeschreibung,,IMD,,,,,,Muss [2],[2] Wenn BGM+7 vorhanden,16,,,Produkt-/ Leistungsbeschreibung,,IMD,,,,,,Muss [2],[2] Wenn BGM+7 vorhanden,16
+Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z11,,Lastgangdaten,X [519],,17,,,Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z11,,Lastgangdaten,X [519],,17
+Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z12,,Zählerstände,X [39],,18,,,Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z12,,Zählerstände,X [39],,18
+Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z35,,Energiemenge Einzelwert,X [39] ∧ [101],"[39] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB nicht vorhanden
 [101] Wenn MP-ID in SG2 NAD+MR mit Rolle MSB in der Sparte Gas nicht vorhanden
-[519] Hinweis: Bei Gas bezieht sich die Anforderung immer sowohl auf die vorläufigen Profilwerte als auch auf die endgültigen Profilwerte, falls diese bereits vorliegen.",,Produkt-/ Leistungsbeschreibung,19,,IMD,7081,,Z35,,Energiemenge Einzelwert,X [39] ∧ [101],"[39] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB nicht vorhanden
+[519] Hinweis: Bei Gas bezieht sich die Anforderung immer sowohl auf die vorläufigen Profilwerte als auch auf die endgültigen Profilwerte, falls diese bereits vorliegen.",19,,,Produkt-/ Leistungsbeschreibung,,IMD,7081,,Z35,,Energiemenge Einzelwert,X [39] ∧ [101],"[39] Wenn MP-ID in SG2 NAD+MS mit Rolle ÜNB nicht vorhanden
 [101] Wenn MP-ID in SG2 NAD+MR mit Rolle MSB in der Sparte Gas nicht vorhanden
-[519] Hinweis: Bei Gas bezieht sich die Anforderung immer sowohl auf die vorläufigen Profilwerte als auch auf die endgültigen Profilwerte, falls diese bereits vorliegen."
-Prüfidentifikator,20,SG1,,,,,,,Muss,,,Prüfidentifikator,20,SG1,,,,,,,Muss,
-Prüfidentifikator,21,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,21,SG1,RFF,,,,,,Muss,
-Prüfidentifikator,22,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,22,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,23,SG1,RFF,1154,,17102,,Anfrage Werte,X,,,Prüfidentifikator,23,SG1,RFF,1154,,17102,,Anfrage Werte,X,
-MP-ID Absender,24,SG2,,,,,,,Muss,,,MP-ID Absender,24,SG2,,,,,,,Muss,
-MP-ID Absender,25,SG2,NAD,,,,,,Muss,,,MP-ID Absender,25,SG2,NAD,,,,,,Muss,
-MP-ID Absender,26,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,26,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
-MP-ID Absender,27,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,27,SG2,NAD,3039,,,,MP-ID,X,
-MP-ID Absender,28,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,28,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Absender,29,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,29,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Absender,30,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,30,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Ansprechpartner,31,SG5,,,,,,,Kann,,,Ansprechpartner,31,SG5,,,,,,,Kann,
-Ansprechpartner,32,SG5,CTA,,,,,,Muss,,,Ansprechpartner,32,SG5,CTA,,,,,,Muss,
-Ansprechpartner,33,SG5,CTA,3139,,,,,IC,,,Ansprechpartner,33,SG5,CTA,3139,,,,,IC,
-Ansprechpartner,34,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,34,SG5,CTA,3412,,,,Kontakt,X,
-Kommunikationsverbindung,35,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,35,SG5,COM,,,,,,Muss,
-Kommunikationsverbindung,36,SG5,COM,3148,,,,"Kommunikationsadresse,",X,,,Kommunikationsverbindung,36,SG5,COM,3148,,,,"Kommunikationsadresse,",X,
-Kommunikationsverbindung,37,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,37,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,38,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,39,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,40,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,40,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,41,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,41,SG5,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,42,SG2,,,,,,,Muss,,,MP-ID Empfänger,42,SG2,,,,,,,Muss,
-MP-ID Empfänger,43,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,43,SG2,NAD,,,,,,Muss,
-MP-ID Empfänger,44,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,44,SG2,NAD,3035,,,,,MR,
-MP-ID Empfänger,45,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,45,SG2,NAD,3039,,,,MP-ID,X,
-MP-ID Empfänger,46,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,46,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Empfänger,47,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,47,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Empfänger,48,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,48,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Meldepunkt,49,SG2,,,,,,,Muss,,,Meldepunkt,49,SG2,,,,,,,Muss,
-Meldepunkt,50,SG2,NAD,,,,,,Muss,,,Meldepunkt,50,SG2,NAD,,,,,,Muss,
-Meldepunkt,51,SG2,NAD,3035,,,,,DP,,,Meldepunkt,51,SG2,NAD,3035,,,,,DP,
-Meldepunkt,52,SG2,LOC,,,,,,Muss,,,Meldepunkt,52,SG2,LOC,,,,,,Muss,
-Meldepunkt,53,SG2,LOC,3227,,,,,172,,,Meldepunkt,53,SG2,LOC,3227,,,,,172,
-Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] ⊻ [51] ⊻ ([18] ∧ [493] ∧ [6]))) ⊻ ([951] [522] ∧ (([6] ⊻ [7]) ∧ ([2] ∧ [18]) ⊻ [19])) ⊻ ([950] [523] ∧ [492] ∧ [51]),"[2] Wenn BGM+7 vorhanden
+[519] Hinweis: Bei Gas bezieht sich die Anforderung immer sowohl auf die vorläufigen Profilwerte als auch auf die endgültigen Profilwerte, falls diese bereits vorliegen.",19
+Prüfidentifikator,SG1,,,,,,,Muss,,20,,,Prüfidentifikator,SG1,,,,,,,Muss,,20
+Prüfidentifikator,SG1,RFF,,,,,,Muss,,21,,,Prüfidentifikator,SG1,RFF,,,,,,Muss,,21
+Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,22,,,Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,22
+Prüfidentifikator,SG1,RFF,1154,,17102,,Anfrage Werte,X,,23,,,Prüfidentifikator,SG1,RFF,1154,,17102,,Anfrage Werte,X,,23
+MP-ID Absender,SG2,,,,,,,Muss,,24,,,MP-ID Absender,SG2,,,,,,,Muss,,24
+MP-ID Absender,SG2,NAD,,,,,,Muss,,25,,,MP-ID Absender,SG2,NAD,,,,,,Muss,,25
+MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,26,,,MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,26
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X,,27,,,MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X,,27
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,28,,,MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,28
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,29,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,29
+MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,30,,,MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,30
+Ansprechpartner,SG5,,,,,,,Kann,,31,,,Ansprechpartner,SG5,,,,,,,Kann,,31
+Ansprechpartner,SG5,CTA,,,,,,Muss,,32,,,Ansprechpartner,SG5,CTA,,,,,,Muss,,32
+Ansprechpartner,SG5,CTA,3139,,,,,IC,,33,,,Ansprechpartner,SG5,CTA,3139,,,,,IC,,33
+Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,34,,,Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,34
+Kommunikationsverbindung,SG5,COM,,,,,,Muss,,35,,,Kommunikationsverbindung,SG5,COM,,,,,,Muss,,35
+Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse,",X,,36,,,Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse,",X,,36
+Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,37,,,Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,37
+Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,38,,,Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,38
+Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,39,,,Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,39
+Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,40,,,Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,40
+Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,41,,,Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,41
+MP-ID Empfänger,SG2,,,,,,,Muss,,42,,,MP-ID Empfänger,SG2,,,,,,,Muss,,42
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,43,,,MP-ID Empfänger,SG2,NAD,,,,,,Muss,,43
+MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,44,,,MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,44
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,45,,,MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,45
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,46,,,MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,46
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,47,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,47
+MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,48,,,MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,48
+Meldepunkt,SG2,,,,,,,Muss,,49,,,Meldepunkt,SG2,,,,,,,Muss,,49
+Meldepunkt,SG2,NAD,,,,,,Muss,,50,,,Meldepunkt,SG2,NAD,,,,,,Muss,,50
+Meldepunkt,SG2,NAD,3035,,,,,DP,,51,,,Meldepunkt,SG2,NAD,3035,,,,,DP,,51
+Meldepunkt,SG2,LOC,,,,,,Muss,,52,,,Meldepunkt,SG2,LOC,,,,,,Muss,,52
+Meldepunkt,SG2,LOC,3227,,,,,172,,53,,,Meldepunkt,SG2,LOC,3227,,,,,172,,53
+Meldepunkt,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] ⊻ [51] ⊻ ([18] ∧ [493] ∧ [6]))) ⊻ ([951] [522] ∧ (([6] ⊻ [7]) ∧ ([2] ∧ [18]) ⊻ [19])) ⊻ ([950] [523] ∧ [492] ∧ [51]),"[2] Wenn BGM+7 vorhanden
 [6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
 [7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
 [18] Wenn IMD++Z11 vorhanden
@@ -85,7 +85,7 @@ Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] �
 [522] Hinweis: Verwendung der ID der Messlokation
 [523] Hinweis: Verwendung der ID der Tranche
 [950] Format: Marktlokations-ID
-[951] Format: Zählpunktbezeichnung",,Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] ⊻ [51] ⊻ ([18] ∧ [493] ∧ [6]))) ⊻ ([951] [522] ∧ (([6] ⊻ [7]) ∧ ([2] ∧ [18]) ⊻ [19])) ⊻ ([950] [523] ∧ [492] ∧ [51]),"[2] Wenn BGM+7 vorhanden
+[951] Format: Zählpunktbezeichnung",54,,,Meldepunkt,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] ⊻ [51] ⊻ ([18] ∧ [493] ∧ [6]))) ⊻ ([951] [522] ∧ (([6] ⊻ [7]) ∧ ([2] ∧ [18]) ⊻ [19])) ⊻ ([950] [523] ∧ [492] ∧ [51]),"[2] Wenn BGM+7 vorhanden
 [6] Wenn MP-ID in SG2 NAD+MS mit Rolle LF vorhanden
 [7] Wenn MP-ID in SG2 NAD+MS mit Rolle NB vorhanden
 [18] Wenn IMD++Z11 vorhanden
@@ -99,20 +99,20 @@ Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X ([950] [521] ∧ ([21] ⊻ [24] �
 [522] Hinweis: Verwendung der ID der Messlokation
 [523] Hinweis: Verwendung der ID der Tranche
 [950] Format: Marktlokations-ID
-[951] Format: Zählpunktbezeichnung"
-Positionsdaten,55,SG29,,,,,,,Muss [2050],[2050] Pro Nachricht ist die SG29 genau einmal anzugeben,,Positionsdaten,55,SG29,,,,,,,Muss [2050],[2050] Pro Nachricht ist die SG29 genau einmal anzugeben
-Positionsdaten,56,SG29,LIN,,,,,,Muss,,,Positionsdaten,56,SG29,LIN,,,,,,Muss,
-Positionsdaten,57,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,,Positionsdaten,57,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1
-Beginn Zeitraum für Wertanfrage,58,SG29,DTM,,,,,,Muss,,,Beginn Zeitraum für Wertanfrage,58,SG29,DTM,,,,,,Muss,
-Beginn Zeitraum für Wertanfrage,59,SG29,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,,,Beginn Zeitraum für Wertanfrage,59,SG29,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,
-Beginn Zeitraum für Wertanfrage,60,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Beginn Zeitraum für Wertanfrage,60,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
-Beginn Zeitraum für Wertanfrage,61,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn Zeitraum für Wertanfrage,61,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Ende Zeitraum für Wertanfrage,62,SG29,DTM,,,,,,Muss,,,Ende Zeitraum für Wertanfrage,62,SG29,DTM,,,,,,Muss,
-Ende Zeitraum für Wertanfrage,63,SG29,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,,,Ende Zeitraum für Wertanfrage,63,SG29,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,
-Ende Zeitraum für Wertanfrage,64,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,,Ende Zeitraum für Wertanfrage,64,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00
-Ende Zeitraum für Wertanfrage,65,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ende Zeitraum für Wertanfrage,65,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Abschnitts-Kontrollsegment,66,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,66,,UNS,,,,,,Muss,
-Abschnitts-Kontrollsegment,67,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,67,,UNS,0081,,und Summenteil,,,S,
-Nachrichten-Endesegment,68,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,68,,UNT,,,,,,Muss,
-Nachrichten-Endesegment,69,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,69,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,70,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,70,,UNT,0062,,,,Nachrichten-Referenznummer,X,
+[951] Format: Zählpunktbezeichnung",54
+Positionsdaten,SG29,,,,,,,Muss [2050],[2050] Pro Nachricht ist die SG29 genau einmal anzugeben,55,,,Positionsdaten,SG29,,,,,,,Muss [2050],[2050] Pro Nachricht ist die SG29 genau einmal anzugeben,55
+Positionsdaten,SG29,LIN,,,,,,Muss,,56,,,Positionsdaten,SG29,LIN,,,,,,Muss,,56
+Positionsdaten,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,57,,,Positionsdaten,SG29,LIN,1082,,,,Positionsnummer,X [903],[903] Format: Möglicher Wert: 1,57
+Beginn Zeitraum für Wertanfrage,SG29,DTM,,,,,,Muss,,58,,,Beginn Zeitraum für Wertanfrage,SG29,DTM,,,,,,Muss,,58
+Beginn Zeitraum für Wertanfrage,SG29,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,,59,,,Beginn Zeitraum für Wertanfrage,SG29,DTM,2005,,163,,"Verarbeitung, Beginndatum/-zeit",X,,59
+Beginn Zeitraum für Wertanfrage,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,60,,,Beginn Zeitraum für Wertanfrage,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,60
+Beginn Zeitraum für Wertanfrage,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,61,,,Beginn Zeitraum für Wertanfrage,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,61
+Ende Zeitraum für Wertanfrage,SG29,DTM,,,,,,Muss,,62,,,Ende Zeitraum für Wertanfrage,SG29,DTM,,,,,,Muss,,62
+Ende Zeitraum für Wertanfrage,SG29,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,,63,,,Ende Zeitraum für Wertanfrage,SG29,DTM,2005,,164,,"Verarbeitung, Endedatum/-zeit",X,,63
+Ende Zeitraum für Wertanfrage,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,64,,,Ende Zeitraum für Wertanfrage,SG29,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931],[931] Format: ZZZ = +00,64
+Ende Zeitraum für Wertanfrage,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,65,,,Ende Zeitraum für Wertanfrage,SG29,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,65
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,66,,,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,66
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,67,,,Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,67
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,68,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,68
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,69,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,69
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,70,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,70

@@ -1,109 +1,109 @@
-Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,diff,Segmentname_FV2410,Unnamed: 0_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410
-Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss-Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss-Stammdaten,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,
-Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
-Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
-EDIFACT Struktur,15,SG2,NAD,,00008,,,,Muss,,,EDIFACT Struktur,15,SG2,NAD,,00008,,,,Muss,
-EDIFACT Struktur,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. - absender,X,,,EDIFACT Struktur,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. - absender,X,
-EDIFACT Struktur,17,SG2,NAD,3039,00008,,,MP-ID,X,,,EDIFACT Struktur,17,SG2,NAD,3039,00008,,,MP-ID,X,
-EDIFACT Struktur,18,SG2,NAD,3055,00008,9,,GS1,X,,,EDIFACT Struktur,18,SG2,NAD,3055,00008,9,,GS1,X,
-EDIFACT Struktur,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,,EDIFACT Struktur,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,
-Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
-Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
-Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
-Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
-Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+Segmentname_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,Unnamed: 0_FV2404,Änderung,changed_entries,Segmentname_FV2410,Segmentgruppe_FV2410,Segment_FV2410,Datenelement_FV2410,Segment ID_FV2410,Code_FV2410,Qualifier_FV2410,Beschreibung_FV2410,Bedingungsausdruck_FV2410,Bedingung_FV2410,Unnamed: 0_FV2410
+Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss-Stammdaten,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss-Stammdaten,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,S1.1a,X,,6
+Beginn der Nachricht,,BGM,,00004,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,00004,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8,,,Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8
+Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,00005,,,,Muss,,10,,,Nachrichtendatum,,DTM,,00005,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,14
+EDIFACT Struktur,SG2,NAD,,00008,,,,Muss,,15,,,EDIFACT Struktur,SG2,NAD,,00008,,,,Muss,,15
+EDIFACT Struktur,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. - absender,X,,16,,,EDIFACT Struktur,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. - absender,X,,16
+EDIFACT Struktur,SG2,NAD,3039,00008,,,MP-ID,X,,17,,,EDIFACT Struktur,SG2,NAD,3039,00008,,,MP-ID,X,,17
+EDIFACT Struktur,SG2,NAD,3055,00008,9,,GS1,X,,18,,,EDIFACT Struktur,SG2,NAD,3055,00008,9,,GS1,X,,18
+EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,19,,,EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,19
+Ansprechpartner,SG3,,,,,,,Kann,,20,,,Ansprechpartner,SG3,,,,,,,Kann,,20
+Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21,,,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21
+Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22,,,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22
+Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23,,,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23
+Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24,,,Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24
+Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
-[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden ",,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden ",25,,,Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
-[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden "
-EDIFACT Struktur,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,EDIFACT Struktur,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
-EDIFACT Struktur,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,EDIFACT Struktur,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-EDIFACT Struktur,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,EDIFACT Struktur,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-EDIFACT Struktur,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,EDIFACT Struktur,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-EDIFACT Struktur,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,EDIFACT Struktur,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
-MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
-MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,
-MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
-MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,
-Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
-Vorgang,38,SG4,IDE,,00020,,,,Muss,,,Vorgang,38,SG4,IDE,,00020,,,,Muss,
-Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00020,24,,Transaktion,X,
-Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00020,,,Vorgangsnummer,X,
-Beginn zum EDIFACT Struktur,41,SG4,DTM,,00024,,,,Muss,,,Beginn zum EDIFACT Struktur,41,SG4,DTM,,00024,,,,Muss,
-Beginn zum EDIFACT Struktur,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,,Beginn zum EDIFACT Struktur,42,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,
-Beginn zum EDIFACT Struktur,43,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Beginn zum EDIFACT Struktur,43,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Beginn zum EDIFACT Struktur,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum EDIFACT Struktur,44,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,
-"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00027,,,,Muss,
-"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,
-"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,
-Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,49,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,,Transaktionsgrund,50,SG4,STS,9015,00037,7,,Transaktionsgrund,X,
-Transaktionsgrund,51,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,,Transaktionsgrund,51,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,
-Marktlokation,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Marktlokation,52,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Marktlokation,53,SG5,LOC,,00051,,,,Muss,,,Marktlokation,53,SG5,LOC,,00051,,,,Muss,
-Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,,Marktlokation,54,SG5,LOC,3227,00051,Z16,,Marktlokation,X,
-Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Marktlokation,55,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Prüfidentifikator,56,SG6,,,,,,,Muss,,,Prüfidentifikator,56,SG6,,,,,,,Muss,
-Prüfidentifikator,57,SG6,RFF,,00057,,,,Muss,,,Prüfidentifikator,57,SG6,RFF,,00057,,,,Muss,
-Prüfidentifikator,58,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,58,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,59,SG6,RFF,1154,00057,55133,,SDÄ Strom / Nicht bila.rel. Anfrage an LF MSB an NB,X,,,Prüfidentifikator,59,SG6,RFF,1154,00057,55133,,SDÄ Strom / Nicht bila.rel. Anfrage an LF MSB an NB,X,
-Daten der Marktlokation,60,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Daten der Marktlokation,60,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Daten der Marktlokation,61,SG8,SEQ,,00103,,,,Muss,,,Daten der Marktlokation,61,SG8,SEQ,,00103,,,,Muss,
-Daten der Marktlokation,62,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,62,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,63,SG8,RFF,,00104,,,,Muss,,,Referenz auf die ID der Marktlokation,63,SG8,RFF,,00104,,,,Muss,
-Referenz auf die ID der Marktlokation,64,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,64,SG8,RFF,1153,00104,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,65,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,65,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Lieferrichtung,66,SG10,,,,,,,Muss,,,Lieferrichtung,66,SG10,,,,,,,Muss,
-Lieferrichtung,67,SG10,CCI,,00110,,,,Muss,,,Lieferrichtung,67,SG10,CCI,,00110,,,,Muss,
-Lieferrichtung,68,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,,Lieferrichtung,68,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,
-EDIFACT Struktur,69,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,,EDIFACT Struktur,69,SG10,CCI,7037,00110,Z06,,Erzeugung,X,
-EDIFACT Struktur,70,SG10,CCI,7037,,Z07,,Verbrauch,X,,,EDIFACT Struktur,70,SG10,CCI,7037,,Z07,,Verbrauch,X,
-Kunde des Lieferanten,71,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
-[336] Wenn in Änderungsmeldung gefüllt",,Kunde des Lieferanten,71,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
-[336] Wenn in Änderungsmeldung gefüllt"
-Kunde des Lieferanten,72,SG12,NAD,,00518,,,,Muss,,,Kunde des Lieferanten,72,SG12,NAD,,00518,,,,Muss,
-Kunde des Lieferanten,73,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,,,Kunde des Lieferanten,73,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,
-Kunde des Lieferanten,74,SG12,NAD,3036,00518,,,Name,X,,,Kunde des Lieferanten,74,SG12,NAD,3036,00518,,,Name,X,
-Kunde des Lieferanten,75,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,,,Kunde des Lieferanten,75,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,
-Kunde des Lieferanten,76,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Kunde des Lieferanten,76,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
-Referenz auf die ID der Marktlokation,77,SG12,RFF,,00521,,,,Muss,,,Referenz auf die ID der Marktlokation,77,SG12,RFF,,00521,,,,Muss,
-Referenz auf die ID der Marktlokation,78,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,78,SG12,RFF,1153,00521,Z18,,Marktlokation,X,
-EDIFACT Struktur,79,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,EDIFACT Struktur,79,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Korrespondenzanschrift des Kunden des Lieferanten,80,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
-[336] Wenn in Änderungsmeldung gefüllt",,Korrespondenzanschrift des Kunden des Lieferanten,80,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
-[336] Wenn in Änderungsmeldung gefüllt"
-Korrespondenzanschrift des Kunden des Lieferanten,81,SG12,NAD,,00522,,,,Muss,,,Korrespondenzanschrift des Kunden des Lieferanten,81,SG12,NAD,,00522,,,,Muss,
-Korrespondenzanschrift des Kunden des Lieferanten,82,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,,,Korrespondenzanschrift des Kunden des Lieferanten,82,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,
-Korrespondenzanschrift des Kunden des Lieferanten,83,SG12,NAD,3036,00522,,,Name,X,,,Korrespondenzanschrift des Kunden des Lieferanten,83,SG12,NAD,3036,00522,,,Name,X,
-Korrespondenzanschrift des Kunden des Lieferanten,84,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,,,Korrespondenzanschrift des Kunden des Lieferanten,84,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,
-Korrespondenzanschrift des Kunden des Lieferanten,85,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,,Korrespondenzanschrift des Kunden des Lieferanten,85,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,
-Korrespondenzanschrift des Kunden des Lieferanten,86,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,,,Korrespondenzanschrift des Kunden des Lieferanten,86,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,
-Korrespondenzanschrift des Kunden des Lieferanten,87,SG12,NAD,3164,00522,,,Ort,X,,,Korrespondenzanschrift des Kunden des Lieferanten,87,SG12,NAD,3164,00522,,,Ort,X,
-Korrespondenzanschrift des Kunden des Lieferanten,88,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
-[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",,Korrespondenzanschrift des Kunden des Lieferanten,88,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
-[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist"
-Korrespondenzanschrift des Kunden des Lieferanten,89,SG12,NAD,3207,00522,,,"Ländername, Code",X,,,Korrespondenzanschrift des Kunden des Lieferanten,89,SG12,NAD,3207,00522,,,"Ländername, Code",X,
-Referenz auf die ID der Marktlokation,90,SG12,RFF,,00523,,,,Muss,,,Referenz auf die ID der Marktlokation,90,SG12,RFF,,00523,,,,Muss,
-Referenz auf die ID der Marktlokation,91,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,91,SG12,RFF,1153,00523,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,92,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,92,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Nachrichten-Endesegment,93,,UNT,,00540,,,,Muss,,,Nachrichten-Endesegment,93,,UNT,,00540,,,,Muss,
-Nachrichten-Endesegment,94,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,94,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,95,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,95,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,
+[514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden ",25
+EDIFACT Struktur,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26,,,EDIFACT Struktur,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26
+EDIFACT Struktur,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,,,EDIFACT Struktur,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27
+EDIFACT Struktur,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,,,EDIFACT Struktur,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28
+EDIFACT Struktur,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,,,EDIFACT Struktur,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29
+EDIFACT Struktur,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,,,EDIFACT Struktur,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30
+MP-ID Empfänger,SG2,,,,,,,Muss,,31,,,MP-ID Empfänger,SG2,,,,,,,Muss,,31
+MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32,,,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33,,,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33
+MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34,,,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34
+MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35,,,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36
+Vorgang,SG4,,,,,,,Muss,,37,,,Vorgang,SG4,,,,,,,Muss,,37
+Vorgang,SG4,IDE,,00020,,,,Muss,,38,,,Vorgang,SG4,IDE,,00020,,,,Muss,,38
+Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39,,,Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39
+Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40,,,Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40
+Beginn zum EDIFACT Struktur,SG4,DTM,,00024,,,,Muss,,41,,,Beginn zum EDIFACT Struktur,SG4,DTM,,00024,,,,Muss,,41
+Beginn zum EDIFACT Struktur,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42,,,Beginn zum EDIFACT Struktur,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42
+Beginn zum EDIFACT Struktur,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43,,,Beginn zum EDIFACT Struktur,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43
+Beginn zum EDIFACT Struktur,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44,,,Beginn zum EDIFACT Struktur,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00027,,,,Muss,,45,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00027,,,,Muss,,45
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,46,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00027,157,,"Gültigkeit, Beginndatum",X,,46
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,47,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00027,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,47
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,48,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00027,303,,CCYYMMDDHHMMZZZ,X,,48
+Transaktionsgrund,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49,,,Transaktionsgrund,SG4,STS,,00037,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49
+Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50,,,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50
+Transaktionsgrund,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,51,,,Transaktionsgrund,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,51
+Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,52,,,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,52
+Marktlokation,SG5,LOC,,00051,,,,Muss,,53,,,Marktlokation,SG5,LOC,,00051,,,,Muss,,53
+Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,54,,,Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,54
+Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,55,,,Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,55
+Prüfidentifikator,SG6,,,,,,,Muss,,56,,,Prüfidentifikator,SG6,,,,,,,Muss,,56
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,57,,,Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,57
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,58,,,Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,58
+Prüfidentifikator,SG6,RFF,1154,00057,55133,,SDÄ Strom / Nicht bila.rel. Anfrage an LF MSB an NB,X,,59,,,Prüfidentifikator,SG6,RFF,1154,00057,55133,,SDÄ Strom / Nicht bila.rel. Anfrage an LF MSB an NB,X,,59
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,60,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,60
+Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,61,,,Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,61
+Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,62,,,Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,62
+Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,63,,,Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,63
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,64,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,64
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65
+Lieferrichtung,SG10,,,,,,,Muss,,66,,,Lieferrichtung,SG10,,,,,,,Muss,,66
+Lieferrichtung,SG10,CCI,,00110,,,,Muss,,67,,,Lieferrichtung,SG10,CCI,,00110,,,,Muss,,67
+Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,68,,,Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,68
+EDIFACT Struktur,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,69,,,EDIFACT Struktur,SG10,CCI,7037,00110,Z06,,Erzeugung,X,,69
+EDIFACT Struktur,SG10,CCI,7037,,Z07,,Verbrauch,X,,70,,,EDIFACT Struktur,SG10,CCI,7037,,Z07,,Verbrauch,X,,70
+Kunde des Lieferanten,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",71,,,Kunde des Lieferanten,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",71
+Kunde des Lieferanten,SG12,NAD,,00518,,,,Muss,,72,,,Kunde des Lieferanten,SG12,NAD,,00518,,,,Muss,,72
+Kunde des Lieferanten,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,,73,,,Kunde des Lieferanten,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,,73
+Kunde des Lieferanten,SG12,NAD,3036,00518,,,Name,X,,74,,,Kunde des Lieferanten,SG12,NAD,3036,00518,,,Name,X,,74
+Kunde des Lieferanten,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,,75,,,Kunde des Lieferanten,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,,75
+Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,76,,,Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,76
+Referenz auf die ID der Marktlokation,SG12,RFF,,00521,,,,Muss,,77,,,Referenz auf die ID der Marktlokation,SG12,RFF,,00521,,,,Muss,,77
+Referenz auf die ID der Marktlokation,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,78,,,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,78
+EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,79,,,EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,79
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",80,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Kann,"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
+[336] Wenn in Änderungsmeldung gefüllt",80
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00522,,,,Muss,,81,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00522,,,,Muss,,81
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,,82,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,,82
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00522,,,Name,X,,83,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00522,,,Name,X,,83
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,,84,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,,84
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,85,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,85
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,,86,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,,86
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00522,,,Ort,X,,87,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00522,,,Ort,X,,87
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",88,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",88
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,89,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,89
+Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,90,,,Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,90
+Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,91,,,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,91
+Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,92,,,Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,92
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,93,,,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,93
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,94,,,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,94
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,95,,,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,95

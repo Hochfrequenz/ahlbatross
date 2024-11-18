@@ -1,313 +1,313 @@
-Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,,E03,,Änderungsmeldungen,X,
-Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
-MP-ID Absender,15,SG2,NAD,,,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,,,,,Muss,
-MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
-MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X,
-MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,20,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Ansprechpartner,21,SG3,,,,,,,Kann,,,Ansprechpartner,21,SG3,,,,,,,Kann,
-Ansprechpartner,22,SG3,CTA,,,,,,Muss,,,Ansprechpartner,22,SG3,CTA,,,,,,Muss,
-Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,23,SG3,CTA,3139,,IC,,Informationskontakt,X,
-Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,24,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,25,SG3,COM,,,,,,Muss,
-Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,26,SG3,COM,3148,,,,Nummer / Adresse,X,
-Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,31,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,32,SG2,,,,,,,Muss,,,MP-ID Empfänger,32,SG2,,,,,,,Muss,
-MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,33,SG2,NAD,,,,,,Muss,
-MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,34,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,,,MP-ID Empfänger,35,SG2,NAD,3039,,,,MP-ID,X,
-MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,36,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,37,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,38,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Vorgang,39,SG4,,,,,,,Muss,,,Vorgang,39,SG4,,,,,,,Muss,
-Vorgang,40,SG4,IDE,,,,,,Muss,,,Vorgang,40,SG4,IDE,,,,,,Muss,
-Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,41,SG4,IDE,7495,,24,,Transaktion,X,
-Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,42,SG4,IDE,7402,,,,Vorgangsnummer,X,
-Beginn zum,43,SG4,DTM,,,,,,Muss,,,Beginn zum,43,SG4,DTM,,,,,,Muss,
-Beginn zum,44,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,,Beginn zum,44,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,
-Beginn zum,45,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Beginn zum,45,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Beginn zum,46,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,46,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,,,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,,,,,,Muss,
-"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,
-"Änderung zum, Gültigkeit, Beginndatum",49,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,"Änderung zum, Gültigkeit, Beginndatum",49,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-"Änderung zum, Gültigkeit, Beginndatum",50,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",50,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Transaktionsgrund,51,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,51,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,52,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,52,SG4,STS,9015,,7,,Transaktionsgrund,X,
-Transaktionsgrund,53,SG4,STS,9013,,ZF8,,Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,,Transaktionsgrund,53,SG4,STS,9013,,ZF8,,Bila.rel. Anfrage an NB mit Abhängigkeiten,X,
-Meldepunkt,54,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Meldepunkt,54,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Meldepunkt,55,SG5,LOC,,,,,,Muss,,,Meldepunkt,55,SG5,LOC,,,,,,Muss,
-Meldepunkt,56,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,56,SG5,LOC,3227,,172,,Meldepunkt,X,
-Meldepunkt,57,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,,Meldepunkt,57,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID
-Prüfidentifikator,58,SG6,,,,,,,Muss,,,Prüfidentifikator,58,SG6,,,,,,,Muss,
-Prüfidentifikator,59,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,59,SG6,RFF,,,,,,Muss,
-Prüfidentifikator,60,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,60,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,61,SG6,RFF,1154,,11156,,SDÄ / Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,,Prüfidentifikator,61,SG6,RFF,1154,,11156,,SDÄ / Bila.rel. Anfrage an NB mit Abhängigkeiten,X,
-Daten der Marktlokation,62,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Daten der Marktlokation,62,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Daten der Marktlokation,63,SG8,SEQ,,,,,,Muss,,,Daten der Marktlokation,63,SG8,SEQ,,,,,,Muss,
-Daten der Marktlokation,64,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,64,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,65,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,65,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Marktlokation,66,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,66,SG8,RFF,1153,,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,67,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,67,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,68,SG9,,,,,,,Kann [492],"[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref. messung) in dieser SG8 vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Arbeit / Leistung für tagesparameterabhängige Marktlokation,68,SG9,,,,,,,Kann [492],"[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref. messung) in dieser SG8 vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,69,SG9,QTY,,,,,,Muss,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,69,SG9,QTY,,,,,,Muss,
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,70,SG9,QTY,6063,,Z10,,Leistung der Marktlokation,X,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,70,SG9,QTY,6063,,Z10,,Leistung der Marktlokation,X,
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,71,SG9,QTY,6063,,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,71,SG9,QTY,6063,,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,72,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,[102] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP mit Ref.messung) in dieser SG8 vorhanden,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,72,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,[102] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP mit Ref.messung) in dieser SG8 vorhanden
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,73,SG9,QTY,6060,,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,73,SG9,QTY,6060,,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,74,SG9,QTY,6411,,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,74,SG9,QTY,6411,,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,75,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,75,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,76,SG9,QTY,6411,,KWT,,Kilowatt,X [105],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
+Segmentname_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,Unnamed: 0_FV2210,Änderung,changed_entries,Segmentname_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304,Unnamed: 0_FV2304
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,E03,,Änderungsmeldungen,X,,8,,,Beginn der Nachricht,,BGM,1001,,E03,,Änderungsmeldungen,X,,8
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,,,,,Muss,,10,,,Nachrichtendatum,,DTM,,,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,14
+MP-ID Absender,SG2,NAD,,,,,,Muss,,15,,,MP-ID Absender,SG2,NAD,,,,,,Muss,,15
+MP-ID Absender,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,,,MP-ID Absender,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X,,17,,,MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X,,17
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,18,,,MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,18
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19
+MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,20,,,MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,20
+Ansprechpartner,SG3,,,,,,,Kann,,21,,,Ansprechpartner,SG3,,,,,,,Kann,,21
+Ansprechpartner,SG3,CTA,,,,,,Muss,,22,,,Ansprechpartner,SG3,CTA,,,,,,Muss,,22
+Ansprechpartner,SG3,CTA,3139,,IC,,Informationskontakt,X,,23,,,Ansprechpartner,SG3,CTA,3139,,IC,,Informationskontakt,X,,23
+Ansprechpartner,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,24,,,Ansprechpartner,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,24
+Kommunikationsverbindung,SG3,COM,,,,,,Muss,,25,,,Kommunikationsverbindung,SG3,COM,,,,,,Muss,,25
+Kommunikationsverbindung,SG3,COM,3148,,,,Nummer / Adresse,X,,26,,,Kommunikationsverbindung,SG3,COM,3148,,,,Nummer / Adresse,X,,26
+Kommunikationsverbindung,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,27,,,Kommunikationsverbindung,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,27
+Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,28,,,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,28
+Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,29,,,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,29
+Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,30,,,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,30
+Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,31,,,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,31
+MP-ID Empfänger,SG2,,,,,,,Muss,,32,,,MP-ID Empfänger,SG2,,,,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,33,,,MP-ID Empfänger,SG2,NAD,,,,,,Muss,,33
+MP-ID Empfänger,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,34,,,MP-ID Empfänger,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,34
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,35,,,MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,35
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,36
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,37,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,37
+MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,38,,,MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,38
+Vorgang,SG4,,,,,,,Muss,,39,,,Vorgang,SG4,,,,,,,Muss,,39
+Vorgang,SG4,IDE,,,,,,Muss,,40,,,Vorgang,SG4,IDE,,,,,,Muss,,40
+Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,41,,,Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,41
+Vorgang,SG4,IDE,7402,,,,Vorgangsnummer,X,,42,,,Vorgang,SG4,IDE,7402,,,,Vorgangsnummer,X,,42
+Beginn zum,SG4,DTM,,,,,,Muss,,43,,,Beginn zum,SG4,DTM,,,,,,Muss,,43
+Beginn zum,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,44,,,Beginn zum,SG4,DTM,2005,,92,,Datum Vertragsbeginn,X,,44
+Beginn zum,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,45,,,Beginn zum,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,45
+Beginn zum,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,46,,,Beginn zum,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,46
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,,,,,Muss,,47,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,,,,,Muss,,47
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,48,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,,157,,"Gültigkeit, Beginndatum",X,,48
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,49,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB3],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,49
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,50,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,50
+Transaktionsgrund,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,51,,,Transaktionsgrund,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,51
+Transaktionsgrund,SG4,STS,9015,,7,,Transaktionsgrund,X,,52,,,Transaktionsgrund,SG4,STS,9015,,7,,Transaktionsgrund,X,,52
+Transaktionsgrund,SG4,STS,9013,,ZF8,,Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,53,,,Transaktionsgrund,SG4,STS,9013,,ZF8,,Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,53
+Meldepunkt,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,54,,,Meldepunkt,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,54
+Meldepunkt,SG5,LOC,,,,,,Muss,,55,,,Meldepunkt,SG5,LOC,,,,,,Muss,,55
+Meldepunkt,SG5,LOC,3227,,172,,Meldepunkt,X,,56,,,Meldepunkt,SG5,LOC,3227,,172,,Meldepunkt,X,,56
+Meldepunkt,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,57,,,Meldepunkt,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,57
+Prüfidentifikator,SG6,,,,,,,Muss,,58,,,Prüfidentifikator,SG6,,,,,,,Muss,,58
+Prüfidentifikator,SG6,RFF,,,,,,Muss,,59,,,Prüfidentifikator,SG6,RFF,,,,,,Muss,,59
+Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,60,,,Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,60
+Prüfidentifikator,SG6,RFF,1154,,11156,,SDÄ / Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,61,,,Prüfidentifikator,SG6,RFF,1154,,11156,,SDÄ / Bila.rel. Anfrage an NB mit Abhängigkeiten,X,,61
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,62,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,62
+Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,63,,,Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,63
+Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,64,,,Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,64
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,65,,,Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,65
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,66,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,66
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,67,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,67
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Kann [492],"[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref. messung) in dieser SG8 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",68,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Kann [492],"[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref. messung) in dieser SG8 vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",68
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,,,,,Muss,,69,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,,,,,Muss,,69
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z10,,Leistung der Marktlokation,X,,70,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z10,,Leistung der Marktlokation,X,,70
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,71,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,71
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,[102] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP mit Ref.messung) in dieser SG8 vorhanden,72,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,[102] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP mit Ref.messung) in dieser SG8 vorhanden,72
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,73,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,73
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,74,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,74
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],,75,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],,75
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWT,,Kilowatt,X [105],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
 [104] Wenn SG9 QTY+Z08 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: angepasste elektrische Arbeit nach Anhang D) in dieser SG8 vorhanden
-[105] Wenn SG9 QTY+Z10 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: Leistung der Marktlokation) in dieser SG8 vorhanden",,Arbeit / Leistung für tagesparameterabhängige Marktlokation,76,SG9,QTY,6411,,KWT,,Kilowatt,X [105],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
+[105] Wenn SG9 QTY+Z10 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: Leistung der Marktlokation) in dieser SG8 vorhanden",76,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWT,,Kilowatt,X [105],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
 [104] Wenn SG9 QTY+Z08 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: angepasste elektrische Arbeit nach Anhang D) in dieser SG8 vorhanden
-[105] Wenn SG9 QTY+Z10 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: Leistung der Marktlokation) in dieser SG8 vorhanden"
-Veranschlagte Jahresmenge gesamt,77,SG9,,,,,,,Kann ([5] ∧ [493]) ⊻ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[105] Wenn SG9 QTY+Z10 (Arbeit / Leistung für tagesparameterabhängige Marktlokation: Leistung der Marktlokation) in dieser SG8 vorhanden",76
+Veranschlagte Jahresmenge gesamt,SG9,,,,,,,Kann ([5] ∧ [493]) ⊻ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [205] Wenn SG9 QTY+Y02 (TUM Kundenwert) nicht vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Veranschlagte Jahresmenge gesamt,77,SG9,,,,,,,Kann ([5] ∧ [493]) ⊻ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",77,,,Veranschlagte Jahresmenge gesamt,SG9,,,,,,,Kann ([5] ∧ [493]) ⊻ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [205] Wenn SG9 QTY+Y02 (TUM Kundenwert) nicht vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
-Veranschlagte Jahresmenge gesamt,78,SG9,QTY,,,,,,Muss,,,Veranschlagte Jahresmenge gesamt,78,SG9,QTY,,,,,,Muss,
-Veranschlagte Jahresmenge gesamt,79,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,,Veranschlagte Jahresmenge gesamt,79,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,
-Veranschlagte Jahresmenge gesamt,80,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
-[937] Format: keine Nachkommastelle",,Veranschlagte Jahresmenge gesamt,80,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
-[937] Format: keine Nachkommastelle"
-Veranschlagte Jahresmenge gesamt,81,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,Veranschlagte Jahresmenge gesamt,81,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
-TUM Kundenwert,82,SG9,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",77
+Veranschlagte Jahresmenge gesamt,SG9,QTY,,,,,,Muss,,78,,,Veranschlagte Jahresmenge gesamt,SG9,QTY,,,,,,Muss,,78
+Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,79,,,Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,,31,,Veranschlagte Jahresmenge Gesamt,X,,79
+Veranschlagte Jahresmenge gesamt,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",80,,,Veranschlagte Jahresmenge gesamt,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",80
+Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,81,,,Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,81
+TUM Kundenwert,SG9,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [108] Wenn Kundenwertverfahren (z. B. TU München)
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,TUM Kundenwert,82,SG9,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",82,,,TUM Kundenwert,SG9,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [108] Wenn Kundenwertverfahren (z. B. TU München)
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
-TUM Kundenwert,83,SG9,QTY,,,,,,Muss,,,TUM Kundenwert,83,SG9,QTY,,,,,,Muss,
-TUM Kundenwert,84,SG9,QTY,6063,,Y02,,Kundenwert,X,,,TUM Kundenwert,84,SG9,QTY,6063,,Y02,,Kundenwert,X,
-TUM Kundenwert,85,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
-[907] Format: max. 4 Nachkommastellen",,TUM Kundenwert,85,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
-[907] Format: max. 4 Nachkommastellen"
-TUM Kundenwert,86,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,,TUM Kundenwert,86,SG9,QTY,6411,,KWH,,Kilowattstunde,X,
-Lieferrichtung,87,SG10,,,,,,,Muss,,,Lieferrichtung,87,SG10,,,,,,,Muss,
-Lieferrichtung,88,SG10,CCI,,,,,,Muss,,,Lieferrichtung,88,SG10,CCI,,,,,,Muss,
-Lieferrichtung,89,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,,Lieferrichtung,89,SG10,CCI,7059,,Z30,,Lieferrichtung,X,
-Lieferrichtung,90,SG10,CCI,7037,,Z06,,Erzeugung,X,,,Lieferrichtung,90,SG10,CCI,7037,,Z06,,Erzeugung,X,
-Lieferrichtung,91,SG10,CCI,7037,,Z07,,Verbrauch,X,,,Lieferrichtung,91,SG10,CCI,7037,,Z07,,Verbrauch,X,
-Regelzone,92,SG10,,,,,,,Muss [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",82
+TUM Kundenwert,SG9,QTY,,,,,,Muss,,83,,,TUM Kundenwert,SG9,QTY,,,,,,Muss,,83
+TUM Kundenwert,SG9,QTY,6063,,Y02,,Kundenwert,X,,84,,,TUM Kundenwert,SG9,QTY,6063,,Y02,,Kundenwert,X,,84
+TUM Kundenwert,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
+[907] Format: max. 4 Nachkommastellen",85,,,TUM Kundenwert,SG9,QTY,6060,,,,Mengenangabe,X [902] ∧ [907],"[902] Format: Möglicher Wert: ≥ 0
+[907] Format: max. 4 Nachkommastellen",85
+TUM Kundenwert,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,86,,,TUM Kundenwert,SG9,QTY,6411,,KWH,,Kilowattstunde,X,,86
+Lieferrichtung,SG10,,,,,,,Muss,,87,,,Lieferrichtung,SG10,,,,,,,Muss,,87
+Lieferrichtung,SG10,CCI,,,,,,Muss,,88,,,Lieferrichtung,SG10,CCI,,,,,,Muss,,88
+Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,89,,,Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,89
+Lieferrichtung,SG10,CCI,7037,,Z06,,Erzeugung,X,,90,,,Lieferrichtung,SG10,CCI,7037,,Z06,,Erzeugung,X,,90
+Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,91,,,Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,91
+Regelzone,SG10,,,,,,,Muss [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Regelzone,92,SG10,,,,,,,Muss [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",92,,,Regelzone,SG10,,,,,,,Muss [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Regelzone,93,SG10,CCI,,,,,,Muss,,,Regelzone,93,SG10,CCI,,,,,,Muss,
-Regelzone,94,SG10,CCI,7059,,Z18,,Regelzone,X,,,Regelzone,94,SG10,CCI,7059,,Z18,,Regelzone,X,
-Regelzone,95,SG10,CCI,7037,,,,Regelzone,X,,,Regelzone,95,SG10,CCI,7037,,,,Regelzone,X,
-Bilanzierungsgebiet,96,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",92
+Regelzone,SG10,CCI,,,,,,Muss,,93,,,Regelzone,SG10,CCI,,,,,,Muss,,93
+Regelzone,SG10,CCI,7059,,Z18,,Regelzone,X,,94,,,Regelzone,SG10,CCI,7059,,Z18,,Regelzone,X,,94
+Regelzone,SG10,CCI,7037,,,,Regelzone,X,,95,,,Regelzone,SG10,CCI,7037,,,,Regelzone,X,,95
+Bilanzierungsgebiet,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Bilanzierungsgebiet,96,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",96,,,Bilanzierungsgebiet,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Bilanzierungsgebiet,97,SG10,CCI,,,,,,Muss,,,Bilanzierungsgebiet,97,SG10,CCI,,,,,,Muss,
-Bilanzierungsgebiet,98,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,98,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,
-Bilanzierungsgebiet,99,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,,Bilanzierungsgebiet,99,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,
-Zeitreihentyp,100,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",96
+Bilanzierungsgebiet,SG10,CCI,,,,,,Muss,,97,,,Bilanzierungsgebiet,SG10,CCI,,,,,,Muss,,97
+Bilanzierungsgebiet,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,98,,,Bilanzierungsgebiet,SG10,CCI,7059,,Z20,,Bilanzierungsgebiet,X,,98
+Bilanzierungsgebiet,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,99,,,Bilanzierungsgebiet,SG10,CCI,7037,,,,Bilanzierungsgebiet,X,,99
+Zeitreihentyp,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-[2096] Segmentgruppe ist genau zweimal je SG4 IDE anzugeben",,Zeitreihentyp,100,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[2096] Segmentgruppe ist genau zweimal je SG4 IDE anzugeben",100,,,Zeitreihentyp,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-[2096] Segmentgruppe ist genau zweimal je SG4 IDE anzugeben"
-Zeitreihentyp,101,SG10,CCI,,,,,,Muss,,,Zeitreihentyp,101,SG10,CCI,,,,,,Muss,
-Zeitreihentyp,102,SG10,CCI,7059,,15,,Struktur,X,,,Zeitreihentyp,102,SG10,CCI,7059,,15,,Struktur,X,
-Zeitreihentyp,103,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,,Zeitreihentyp,103,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,
-Zeitreihentyp,104,SG10,CAV,,,,,,Muss,,,Zeitreihentyp,104,SG10,CAV,,,,,,Muss,
-Zeitreihentyp,105,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,,Zeitreihentyp,105,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,
-Messtechnische Einordnung der Marktlokation,106,SG10,,,,,,,Kann [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Messtechnische Einordnung der Marktlokation,106,SG10,,,,,,,Kann [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Messtechnische Einordnung der Marktlokation,107,SG10,CCI,,,,,,Muss,,,Messtechnische Einordnung der Marktlokation,107,SG10,CCI,,,,,,Muss,
-Messtechnische Einordnung der Marktlokation,108,SG10,CCI,7037,,Z83,,Messtechnische Einordnung der Marktlokation,X,,,Messtechnische Einordnung der Marktlokation,108,SG10,CCI,7037,,Z83,,Messtechnische Einordnung der Marktlokation,X,
-Messtechnische Einordnung der Marktlokation,109,SG10,CAV,,,,,,Muss,,,Messtechnische Einordnung der Marktlokation,109,SG10,CAV,,,,,,Muss,
-Messtechnische Einordnung der Marktlokation,110,SG10,CAV,7111,,Z52,,iMS,X,,,Messtechnische Einordnung der Marktlokation,110,SG10,CAV,7111,,Z52,,iMS,X,
-Messtechnische Einordnung der Marktlokation,111,SG10,CAV,7111,,Z53,,kME / mME,X,,,Messtechnische Einordnung der Marktlokation,111,SG10,CAV,7111,,Z53,,kME / mME,X,
-Messtechnische Einordnung der Marktlokation,112,SG10,CAV,7111,,Z68,,keine Messung,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,,Messtechnische Einordnung der Marktlokation,112,SG10,CAV,7111,,Z68,,keine Messung,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
-Aggregationsverantwortung in MaBiS,113,SG10,,,,,,,Kann [492],[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom,,Aggregationsverantwortung in MaBiS,113,SG10,,,,,,,Kann [492],[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
-Aggregationsverantwortung in MaBiS,114,SG10,CCI,,,,,,Muss,,,Aggregationsverantwortung in MaBiS,114,SG10,CCI,,,,,,Muss,
-Aggregationsverantwortung in MaBiS,115,SG10,CCI,7059,,6,,Verantwortlicher,X,,,Aggregationsverantwortung in MaBiS,115,SG10,CCI,7059,,6,,Verantwortlicher,X,
-Aggregationsverantwortung in MaBiS,116,SG10,CCI,7037,,ZA8,,NB,X,,,Aggregationsverantwortung in MaBiS,116,SG10,CCI,7037,,ZA8,,NB,X,
-Aggregationsverantwortung in MaBiS,117,SG10,CCI,7037,,ZA9,,ÜNB,X,,,Aggregationsverantwortung in MaBiS,117,SG10,CCI,7037,,ZA9,,ÜNB,X,
-Prognosegrundlage der Marktlokation,118,SG10,,,,,,,Kann,,,Prognosegrundlage der Marktlokation,118,SG10,,,,,,,Kann,
-Prognosegrundlage der Marktlokation,119,SG10,CCI,,,,,,Muss,,,Prognosegrundlage der Marktlokation,119,SG10,CCI,,,,,,Muss,
-Prognosegrundlage der Marktlokation,120,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,,Prognosegrundlage der Marktlokation,120,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,
-Prognosegrundlage der Marktlokation,121,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,,Prognosegrundlage der Marktlokation,121,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,
-Details der Prognosegrundlage,122,SG10,CAV,,,,,,Muss [21] ∧ (([492] ∧ ([2182] ⊻ ([90] ∧ [2183]))) ⊻ ([493] ∧ [2061])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
+[2096] Segmentgruppe ist genau zweimal je SG4 IDE anzugeben",100
+Zeitreihentyp,SG10,CCI,,,,,,Muss,,101,,,Zeitreihentyp,SG10,CCI,,,,,,Muss,,101
+Zeitreihentyp,SG10,CCI,7059,,15,,Struktur,X,,102,,,Zeitreihentyp,SG10,CCI,7059,,15,,Struktur,X,,102
+Zeitreihentyp,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,103,,,Zeitreihentyp,SG10,CCI,7037,,Z21,,Summenzeitreihentyp,X,,103
+Zeitreihentyp,SG10,CAV,,,,,,Muss,,104,,,Zeitreihentyp,SG10,CAV,,,,,,Muss,,104
+Zeitreihentyp,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,105,,,Zeitreihentyp,SG10,CAV,7111,,,,Code des Zeitreihentyps,X,,105
+Messtechnische Einordnung der Marktlokation,SG10,,,,,,,Kann [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",106,,,Messtechnische Einordnung der Marktlokation,SG10,,,,,,,Kann [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",106
+Messtechnische Einordnung der Marktlokation,SG10,CCI,,,,,,Muss,,107,,,Messtechnische Einordnung der Marktlokation,SG10,CCI,,,,,,Muss,,107
+Messtechnische Einordnung der Marktlokation,SG10,CCI,7037,,Z83,,Messtechnische Einordnung der Marktlokation,X,,108,,,Messtechnische Einordnung der Marktlokation,SG10,CCI,7037,,Z83,,Messtechnische Einordnung der Marktlokation,X,,108
+Messtechnische Einordnung der Marktlokation,SG10,CAV,,,,,,Muss,,109,,,Messtechnische Einordnung der Marktlokation,SG10,CAV,,,,,,Muss,,109
+Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z52,,iMS,X,,110,,,Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z52,,iMS,X,,110
+Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z53,,kME / mME,X,,111,,,Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z53,,kME / mME,X,,111
+Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z68,,keine Messung,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,112,,,Messtechnische Einordnung der Marktlokation,SG10,CAV,7111,,Z68,,keine Messung,X [20],[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden,112
+Aggregationsverantwortung in MaBiS,SG10,,,,,,,Kann [492],[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom,113,,,Aggregationsverantwortung in MaBiS,SG10,,,,,,,Kann [492],[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom,113
+Aggregationsverantwortung in MaBiS,SG10,CCI,,,,,,Muss,,114,,,Aggregationsverantwortung in MaBiS,SG10,CCI,,,,,,Muss,,114
+Aggregationsverantwortung in MaBiS,SG10,CCI,7059,,6,,Verantwortlicher,X,,115,,,Aggregationsverantwortung in MaBiS,SG10,CCI,7059,,6,,Verantwortlicher,X,,115
+Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA8,,NB,X,,116,,,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA8,,NB,X,,116
+Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,117,,,Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,117
+Prognosegrundlage der Marktlokation,SG10,,,,,,,Kann,,118,,,Prognosegrundlage der Marktlokation,SG10,,,,,,,Kann,,118
+Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,119,,,Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,119
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,120,,,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZC0,,Prognose auf Basis von Werten,X,,120
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,121,,,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,121
+Details der Prognosegrundlage,SG10,CAV,,,,,,Muss [21] ∧ (([492] ∧ ([2182] ⊻ ([90] ∧ [2183]))) ⊻ ([493] ∧ [2061])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
 [493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
 [2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben
-[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",,Details der Prognosegrundlage,122,SG10,CAV,,,,,,Muss [21] ∧ (([492] ∧ ([2182] ⊻ ([90] ∧ [2183]))) ⊻ ([493] ∧ [2061])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
+[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",122,,,Details der Prognosegrundlage,SG10,CAV,,,,,,Muss [21] ∧ (([492] ∧ ([2182] ⊻ ([90] ∧ [2183]))) ⊻ ([493] ∧ [2061])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom
 [493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
 [2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben
-[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben"
-Details der Prognosegrundlage,123,SG10,CAV,7111,,E02,,SLP/SEP,X [3P1..1] ⊻ [6P0..1] ⊻ [7P1..1],,,Details der Prognosegrundlage,123,SG10,CAV,7111,,E02,,SLP/SEP,X [3P1..1] ⊻ [6P0..1] ⊻ [7P1..1],
-Details der Prognosegrundlage,124,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],,,Details der Prognosegrundlage,124,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],
-Details der Prognosegrundlage,125,SG10,CAV,7111,,Z36,,TEP mit Referenzmessung,X [12P0..1],,,Details der Prognosegrundlage,125,SG10,CAV,7111,,Z36,,TEP mit Referenzmessung,X [12P0..1],
-Wahlrecht der Prognosegrundlage der Marktlokation,126,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",122
+Details der Prognosegrundlage,SG10,CAV,7111,,E02,,SLP/SEP,X [3P1..1] ⊻ [6P0..1] ⊻ [7P1..1],,123,,,Details der Prognosegrundlage,SG10,CAV,7111,,E02,,SLP/SEP,X [3P1..1] ⊻ [6P0..1] ⊻ [7P1..1],,123
+Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],,124,,,Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],,124
+Details der Prognosegrundlage,SG10,CAV,7111,,Z36,,TEP mit Referenzmessung,X [12P0..1],,125,,,Details der Prognosegrundlage,SG10,CAV,7111,,Z36,,TEP mit Referenzmessung,X [12P0..1],,125
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [244] Wenn SG10 CCI+6++ZA9 (Aggreg.verantw. ÜNB) in dieser SG8 vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Wahlrecht der Prognosegrundlage der Marktlokation,126,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",126,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,,,,,,,Kann [5] ∧ [492],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [244] Wenn SG10 CCI+6++ZA9 (Aggreg.verantw. ÜNB) in dieser SG8 vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Wahlrecht der Prognosegrundlage der Marktlokation,127,SG10,CCI,,,,,,Muss,,,Wahlrecht der Prognosegrundlage der Marktlokation,127,SG10,CCI,,,,,,Muss,
-Wahlrecht der Prognosegrundlage der Marktlokation,128,SG10,CCI,7037,,Z84,,Wahlrecht der Prognosegrundlage,X,,,Wahlrecht der Prognosegrundlage der Marktlokation,128,SG10,CCI,7037,,Z84,,Wahlrecht der Prognosegrundlage,X,
-Wahlrecht der Prognosegrundlage der Marktlokation,129,SG10,CAV,,,,,,Muss,,,Wahlrecht der Prognosegrundlage der Marktlokation,129,SG10,CAV,,,,,,Muss,
-Wahlrecht der Prognosegrundlage der Marktlokation,130,SG10,CAV,7111,,Z54,,Wahlrecht durch LF gegeben,X,,,Wahlrecht der Prognosegrundlage der Marktlokation,130,SG10,CAV,7111,,Z54,,Wahlrecht durch LF gegeben,X,
-Wahlrecht der Prognosegrundlage der Marktlokation,131,SG10,CAV,7111,,ZE2,,Wahlrecht durch LF nicht gegeben,X,,,Wahlrecht der Prognosegrundlage der Marktlokation,131,SG10,CAV,7111,,ZE2,,Wahlrecht durch LF nicht gegeben,X,
-Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,132,SG10,CAV,,,,,,Muss [247],[247] Wenn CAV+ZE2 (Wahlrecht durch LF nicht gegeben) vorhanden,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,132,SG10,CAV,,,,,,Muss [247],[247] Wenn CAV+ZE2 (Wahlrecht durch LF nicht gegeben) vorhanden
-Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,133,SG10,CAV,7111,,Z55,,Wahlrecht nicht vorhanden wegen Verbrauch > 10.000 kWh/a,X [1P0..1],,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,133,SG10,CAV,7111,,Z55,,Wahlrecht nicht vorhanden wegen Verbrauch > 10.000 kWh/a,X [1P0..1],
-Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,134,SG10,CAV,7111,,ZC1,,Wahlrecht nicht vorhanden wegen Eigenverbrauch,X [1P0..1],,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,134,SG10,CAV,7111,,ZC1,,Wahlrecht nicht vorhanden wegen Eigenverbrauch,X [1P0..1],
-Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,135,SG10,CAV,7111,,ZD2,,Wahlrecht nicht vorhanden wegen tagesparameterabhängig em Verbrauch,X [1P0..1],,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,135,SG10,CAV,7111,,ZD2,,Wahlrecht nicht vorhanden wegen tagesparameterabhängig em Verbrauch,X [1P0..1],
-Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,136,SG10,CAV,7111,,ZE3,,Wahlrecht nicht vorhanden wegen §14a EnWG,X [1P0..1],,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,136,SG10,CAV,7111,,ZE3,,Wahlrecht nicht vorhanden wegen §14a EnWG,X [1P0..1],
-Fallgruppenzuordnung,137,SG10,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",126
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,127,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,,,,,,Muss,,127
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,7037,,Z84,,Wahlrecht der Prognosegrundlage,X,,128,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,7037,,Z84,,Wahlrecht der Prognosegrundlage,X,,128
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,,,,,,Muss,,129,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,,,,,,Muss,,129
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,Z54,,Wahlrecht durch LF gegeben,X,,130,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,Z54,,Wahlrecht durch LF gegeben,X,,130
+Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZE2,,Wahlrecht durch LF nicht gegeben,X,,131,,,Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZE2,,Wahlrecht durch LF nicht gegeben,X,,131
+Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,,,,,,Muss [247],[247] Wenn CAV+ZE2 (Wahlrecht durch LF nicht gegeben) vorhanden,132,,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,,,,,,Muss [247],[247] Wenn CAV+ZE2 (Wahlrecht durch LF nicht gegeben) vorhanden,132
+Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,Z55,,Wahlrecht nicht vorhanden wegen Verbrauch > 10.000 kWh/a,X [1P0..1],,133,,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,Z55,,Wahlrecht nicht vorhanden wegen Verbrauch > 10.000 kWh/a,X [1P0..1],,133
+Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZC1,,Wahlrecht nicht vorhanden wegen Eigenverbrauch,X [1P0..1],,134,,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZC1,,Wahlrecht nicht vorhanden wegen Eigenverbrauch,X [1P0..1],,134
+Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZD2,,Wahlrecht nicht vorhanden wegen tagesparameterabhängig em Verbrauch,X [1P0..1],,135,,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZD2,,Wahlrecht nicht vorhanden wegen tagesparameterabhängig em Verbrauch,X [1P0..1],,135
+Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZE3,,Wahlrecht nicht vorhanden wegen §14a EnWG,X [1P0..1],,136,,,Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZE3,,Wahlrecht nicht vorhanden wegen §14a EnWG,X [1P0..1],,136
+Fallgruppenzuordnung,SG10,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Fallgruppenzuordnung,137,SG10,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",137,,,Fallgruppenzuordnung,SG10,,,,,,,Kann [5] ∧ [493],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [19] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+++ZC0 (Prognose auf Basis von Werten) vorhanden
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
-Fallgruppenzuordnung,138,SG10,CCI,,,,,,Muss,,,Fallgruppenzuordnung,138,SG10,CCI,,,,,,Muss,
-Fallgruppenzuordnung,139,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,,,Fallgruppenzuordnung,139,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,
-Fallgruppenzuordnung,140,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,,,Fallgruppenzuordnung,140,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,
-Fallgruppenzuordnung,141,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,,,Fallgruppenzuordnung,141,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,
-Fallgruppenzuordnung,142,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,,,Fallgruppenzuordnung,142,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,
-Lastprofildaten (Gas),143,SG8,,,,,,,Muss [5] ∧ [493] ∧ [106],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",137
+Fallgruppenzuordnung,SG10,CCI,,,,,,Muss,,138,,,Fallgruppenzuordnung,SG10,CCI,,,,,,Muss,,138
+Fallgruppenzuordnung,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,,139,,,Fallgruppenzuordnung,SG10,CCI,7037,,Z17,,Fallgruppenzuordnung nach GABi Gas,X,,139
+Fallgruppenzuordnung,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,,140,,,Fallgruppenzuordnung,SG10,CCI,1131,,GABi-,,Nominierungsersatzverfa,X,,140
+Fallgruppenzuordnung,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,,141,,,Fallgruppenzuordnung,SG10,CCI,1131,,GABi- RLMmT,,RLM-Kunde in Tagesregime - Exit,X,,141
+Fallgruppenzuordnung,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,,142,,,Fallgruppenzuordnung,SG10,CCI,1131,,GABi- RLMoT,,RLM-Kunde im Stundenregime - Exit,X,,142
+Lastprofildaten (Gas),SG8,,,,,,,Muss [5] ∧ [493] ∧ [106],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",,Lastprofildaten (Gas),143,SG8,,,,,,,Muss [5] ∧ [493] ∧ [106],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",143,,,Lastprofildaten (Gas),SG8,,,,,,,Muss [5] ∧ [493] ∧ [106],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [5] Wenn MP-ID in SG2 NAD+MS (Nachrichtenabsender) in der Rolle LF
 [106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
-[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas"
-Lastprofildaten (Gas),144,SG8,SEQ,,,,,,Muss,,,Lastprofildaten (Gas),144,SG8,SEQ,,,,,,Muss,
-Lastprofildaten (Gas),145,SG8,SEQ,1229,,Z35,,Lastprofildaten,X,,,Lastprofildaten (Gas),145,SG8,SEQ,1229,,Z35,,Lastprofildaten,X,
-Lastprofil ( Gas),146,SG10,,,,,,,Muss,,,Lastprofil ( Gas),146,SG10,,,,,,,Muss,
-Lastprofil ( Gas),147,SG10,CCI,,,,,,Muss,,,Lastprofil ( Gas),147,SG10,CCI,,,,,,Muss,
-Lastprofil ( Gas),148,SG10,CCI,7059,,Z12,,Lastprofil,X,,,Lastprofil ( Gas),148,SG10,CCI,7059,,Z12,,Lastprofil,X,
-Lastprofil ( Gas),149,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,,Lastprofil ( Gas),149,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,
-Lastprofil ( Gas),150,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,,Lastprofil ( Gas),150,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,
-Lastprofil (Gas),151,SG10,CAV,,,,,,Muss,,,Lastprofil (Gas),151,SG10,CAV,,,,,,Muss,
-Lastprofil (Gas),152,SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,,,Lastprofil (Gas),152,SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,
-Lastprofil (Gas),153,SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,,Lastprofil (Gas),153,SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,
-Lastprofil (Gas),154,SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Lastprofil (Gas),154,SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Klimazone / Temperaturmessstelle,155,SG10,,,,,,,Muss,,,Klimazone / Temperaturmessstelle,155,SG10,,,,,,,Muss,
-Klimazone / Temperaturmessstelle,156,SG10,CCI,,,,,,Muss,,,Klimazone / Temperaturmessstelle,156,SG10,CCI,,,,,,Muss,
-Klimazone / Temperaturmessstelle,157,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,,Klimazone / Temperaturmessstelle,157,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,
-Klimazone / Temperaturmessstelle,158,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,,Klimazone / Temperaturmessstelle,158,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,
-Klimazone / Temperaturmessstelle,159,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,,Klimazone / Temperaturmessstelle,159,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,
-Klimazone / Temperaturmessstelle,160,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,,Klimazone / Temperaturmessstelle,160,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden
-Klimazone / Temperaturmessstelle,161,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,,Klimazone / Temperaturmessstelle,161,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,
-Klimazone / Temperaturmessstelle,162,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Klimazone / Temperaturmessstelle,162,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Profildaten (Strom),163,SG8,,,,,,,Muss [492] ∧ [119],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Profildaten (Strom),163,SG8,,,,,,,Muss [492] ∧ [119],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Profildaten (Strom),164,SG8,SEQ,,,,,,Muss,,,Profildaten (Strom),164,SG8,SEQ,,,,,,Muss,
-Profildaten (Strom),165,SG8,SEQ,1229,,Z21,,Profildaten,X,,,Profildaten (Strom),165,SG8,SEQ,1229,,Z21,,Profildaten,X,
-Referenz auf die ID der Marktlokation,166,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,166,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Marktlokation,167,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,167,SG8,RFF,1153,,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,168,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,168,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Normiertes Profil (Strom),169,SG10,,,,,,,Muss,,,Normiertes Profil (Strom),169,SG10,,,,,,,Muss,
-Normiertes Profil (Strom),170,SG10,CCI,,,,,,Muss,,,Normiertes Profil (Strom),170,SG10,CCI,,,,,,Muss,
-Normiertes Profil (Strom),171,SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],,,Normiertes Profil (Strom),171,SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],
-Normiertes Profil (Strom),172,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
-[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",,Normiertes Profil (Strom),172,SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
-[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden"
-Normiertes Profil (Strom),173,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,,Normiertes Profil (Strom),173,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,
-Normiertes Profil (Strom),174,SG10,CCI,7037,,Z10,,analytisches Verfahren,X [332],[332] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+6++ZA9 (Aggreg. verantw. ÜNB) nicht vorhanden,,Normiertes Profil (Strom),174,SG10,CCI,7037,,Z10,,analytisches Verfahren,X [332],[332] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+6++ZA9 (Aggreg. verantw. ÜNB) nicht vorhanden
-Normiertes Profil (Strom),175,SG10,CAV,,,,,,Muss,,,Normiertes Profil (Strom),175,SG10,CAV,,,,,,Muss,
-Normiertes Profil (Strom),176,SG10,CAV,7111,,,,Code des Normierten Profils,X,,,Normiertes Profil (Strom),176,SG10,CAV,7111,,,,Code des Normierten Profils,X,
-Profilschardaten,177,SG8,,,,,,,Muss [492] ∧ [89],"[89] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14 (TLP/TEP) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Profilschardaten,177,SG8,,,,,,,Muss [492] ∧ [89],"[89] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14 (TLP/TEP) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Profilschardaten,178,SG8,SEQ,,,,,,Muss,,,Profilschardaten,178,SG8,SEQ,,,,,,Muss,
-Profilschardaten,179,SG8,SEQ,1229,,Z08,,Profilschardaten,X,,,Profilschardaten,179,SG8,SEQ,1229,,Z08,,Profilschardaten,X,
-Referenz auf die ID der Marktlokation,180,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,180,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Marktlokation,181,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,181,SG8,RFF,1153,,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,182,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,182,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Profilschar,183,SG10,,,,,,,Muss,,,Profilschar,183,SG10,,,,,,,Muss,
-Profilschar,184,SG10,CCI,,,,,,Muss,,,Profilschar,184,SG10,CCI,,,,,,Muss,
-Profilschar,185,SG10,CCI,7037,,Z12,,Profilschar,X,,,Profilschar,185,SG10,CCI,7037,,Z12,,Profilschar,X,
-Profilschar,186,SG10,CAV,,,,,,Muss,,,Profilschar,186,SG10,CAV,,,,,,Muss,
-Profilschar,187,SG10,CAV,7111,,,,Code der Profilschar,X,,,Profilschar,187,SG10,CAV,7111,,,,Code der Profilschar,X,
-Normiertes Profil,188,SG10,,,,,,,Muss,,,Normiertes Profil,188,SG10,,,,,,,Muss,
-Normiertes Profil,189,SG10,CCI,,,,,,Muss,,,Normiertes Profil,189,SG10,CCI,,,,,,Muss,
-Normiertes Profil,190,SG10,CCI,7059,,Z03,,tagesparameterabhängig es Lastprofil,X [20],,,Normiertes Profil,190,SG10,CCI,7059,,Z03,,tagesparameterabhängig es Lastprofil,X [20],
-Normiertes Profil,191,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
-[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",,Normiertes Profil,191,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
-[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden"
-Normiertes Profil,192,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,,Normiertes Profil,192,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,
-Normiertes Profil,193,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,,Normiertes Profil,193,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,
-Normiertes Profil,194,SG10,CAV,,,,,,Muss,,,Normiertes Profil,194,SG10,CAV,,,,,,Muss,
-Normiertes Profil,195,SG10,CAV,7111,,,,Code des Normierten Profils (Strom),X,,,Normiertes Profil,195,SG10,CAV,7111,,,,Code des Normierten Profils (Strom),X,
-Klimazone / Temperaturmessstelle,196,SG10,,,,,,,Kann,,,Klimazone / Temperaturmessstelle,196,SG10,,,,,,,Kann,
-Klimazone / Temperaturmessstelle,197,SG10,CCI,,,,,,Muss,,,Klimazone / Temperaturmessstelle,197,SG10,CCI,,,,,,Muss,
-Klimazone / Temperaturmessstelle,198,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,,Klimazone / Temperaturmessstelle,198,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,
-Klimazone / Temperaturmessstelle,199,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,,Klimazone / Temperaturmessstelle,199,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,
-Klimazone / Temperaturmessstelle,200,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,,Klimazone / Temperaturmessstelle,200,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,
-Klimazone / Temperaturmessstelle,201,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,,Klimazone / Temperaturmessstelle,201,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden
-Klimazone / Temperaturmessstelle,202,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,,Klimazone / Temperaturmessstelle,202,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,
-Klimazone / Temperaturmessstelle,203,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,Klimazone / Temperaturmessstelle,203,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Referenzprofildaten,204,SG8,,,,,,,Muss [54] ∧ [492] ∧ [265],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
+[493] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Gas",143
+Lastprofildaten (Gas),SG8,SEQ,,,,,,Muss,,144,,,Lastprofildaten (Gas),SG8,SEQ,,,,,,Muss,,144
+Lastprofildaten (Gas),SG8,SEQ,1229,,Z35,,Lastprofildaten,X,,145,,,Lastprofildaten (Gas),SG8,SEQ,1229,,Z35,,Lastprofildaten,X,,145
+Lastprofil ( Gas),SG10,,,,,,,Muss,,146,,,Lastprofil ( Gas),SG10,,,,,,,Muss,,146
+Lastprofil ( Gas),SG10,CCI,,,,,,Muss,,147,,,Lastprofil ( Gas),SG10,CCI,,,,,,Muss,,147
+Lastprofil ( Gas),SG10,CCI,7059,,Z12,,Lastprofil,X,,148,,,Lastprofil ( Gas),SG10,CCI,7059,,Z12,,Lastprofil,X,,148
+Lastprofil ( Gas),SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,149,,,Lastprofil ( Gas),SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,149
+Lastprofil ( Gas),SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,150,,,Lastprofil ( Gas),SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,150
+Lastprofil (Gas),SG10,CAV,,,,,,Muss,,151,,,Lastprofil (Gas),SG10,CAV,,,,,,Muss,,151
+Lastprofil (Gas),SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,,152,,,Lastprofil (Gas),SG10,CAV,7111,,,,Code des Lastprofils (Gas),X,,152
+Lastprofil (Gas),SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,153,,,Lastprofil (Gas),SG10,CAV,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,153
+Lastprofil (Gas),SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,154,,,Lastprofil (Gas),SG10,CAV,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,154
+Klimazone / Temperaturmessstelle,SG10,,,,,,,Muss,,155,,,Klimazone / Temperaturmessstelle,SG10,,,,,,,Muss,,155
+Klimazone / Temperaturmessstelle,SG10,CCI,,,,,,Muss,,156,,,Klimazone / Temperaturmessstelle,SG10,CCI,,,,,,Muss,,156
+Klimazone / Temperaturmessstelle,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,157,,,Klimazone / Temperaturmessstelle,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,157
+Klimazone / Temperaturmessstelle,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,158,,,Klimazone / Temperaturmessstelle,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,158
+Klimazone / Temperaturmessstelle,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,159,,,Klimazone / Temperaturmessstelle,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,159
+Klimazone / Temperaturmessstelle,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,160,,,Klimazone / Temperaturmessstelle,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,160
+Klimazone / Temperaturmessstelle,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,161,,,Klimazone / Temperaturmessstelle,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,161
+Klimazone / Temperaturmessstelle,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,162,,,Klimazone / Temperaturmessstelle,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,162
+Profildaten (Strom),SG8,,,,,,,Muss [492] ∧ [119],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",163,,,Profildaten (Strom),SG8,,,,,,,Muss [492] ∧ [119],"[119] Wenn in der SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",163
+Profildaten (Strom),SG8,SEQ,,,,,,Muss,,164,,,Profildaten (Strom),SG8,SEQ,,,,,,Muss,,164
+Profildaten (Strom),SG8,SEQ,1229,,Z21,,Profildaten,X,,165,,,Profildaten (Strom),SG8,SEQ,1229,,Z21,,Profildaten,X,,165
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,166,,,Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,166
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,167,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,167
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,168,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,168
+Normiertes Profil (Strom),SG10,,,,,,,Muss,,169,,,Normiertes Profil (Strom),SG10,,,,,,,Muss,,169
+Normiertes Profil (Strom),SG10,CCI,,,,,,Muss,,170,,,Normiertes Profil (Strom),SG10,CCI,,,,,,Muss,,170
+Normiertes Profil (Strom),SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],,171,,,Normiertes Profil (Strom),SG10,CCI,7059,,Z02,,Standardlastprofil,X [20],,171
+Normiertes Profil (Strom),SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",172,,,Normiertes Profil (Strom),SG10,CCI,7059,,Z04,,Standardeinspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",172
+Normiertes Profil (Strom),SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,173,,,Normiertes Profil (Strom),SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,173
+Normiertes Profil (Strom),SG10,CCI,7037,,Z10,,analytisches Verfahren,X [332],[332] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+6++ZA9 (Aggreg. verantw. ÜNB) nicht vorhanden,174,,,Normiertes Profil (Strom),SG10,CCI,7037,,Z10,,analytisches Verfahren,X [332],[332] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+6++ZA9 (Aggreg. verantw. ÜNB) nicht vorhanden,174
+Normiertes Profil (Strom),SG10,CAV,,,,,,Muss,,175,,,Normiertes Profil (Strom),SG10,CAV,,,,,,Muss,,175
+Normiertes Profil (Strom),SG10,CAV,7111,,,,Code des Normierten Profils,X,,176,,,Normiertes Profil (Strom),SG10,CAV,7111,,,,Code des Normierten Profils,X,,176
+Profilschardaten,SG8,,,,,,,Muss [492] ∧ [89],"[89] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14 (TLP/TEP) vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",177,,,Profilschardaten,SG8,,,,,,,Muss [492] ∧ [89],"[89] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14 (TLP/TEP) vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",177
+Profilschardaten,SG8,SEQ,,,,,,Muss,,178,,,Profilschardaten,SG8,SEQ,,,,,,Muss,,178
+Profilschardaten,SG8,SEQ,1229,,Z08,,Profilschardaten,X,,179,,,Profilschardaten,SG8,SEQ,1229,,Z08,,Profilschardaten,X,,179
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,180,,,Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,180
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,181,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,181
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,182,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,182
+Profilschar,SG10,,,,,,,Muss,,183,,,Profilschar,SG10,,,,,,,Muss,,183
+Profilschar,SG10,CCI,,,,,,Muss,,184,,,Profilschar,SG10,CCI,,,,,,Muss,,184
+Profilschar,SG10,CCI,7037,,Z12,,Profilschar,X,,185,,,Profilschar,SG10,CCI,7037,,Z12,,Profilschar,X,,185
+Profilschar,SG10,CAV,,,,,,Muss,,186,,,Profilschar,SG10,CAV,,,,,,Muss,,186
+Profilschar,SG10,CAV,7111,,,,Code der Profilschar,X,,187,,,Profilschar,SG10,CAV,7111,,,,Code der Profilschar,X,,187
+Normiertes Profil,SG10,,,,,,,Muss,,188,,,Normiertes Profil,SG10,,,,,,,Muss,,188
+Normiertes Profil,SG10,CCI,,,,,,Muss,,189,,,Normiertes Profil,SG10,CCI,,,,,,Muss,,189
+Normiertes Profil,SG10,CCI,7059,,Z03,,tagesparameterabhängig es Lastprofil,X [20],,190,,,Normiertes Profil,SG10,CCI,7059,,Z03,,tagesparameterabhängig es Lastprofil,X [20],,190
+Normiertes Profil,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",191,,,Normiertes Profil,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X [54],"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden",191
+Normiertes Profil,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,192,,,Normiertes Profil,SG10,CCI,7037,,E01,,synthetisches Verfahren,X,,192
+Normiertes Profil,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,193,,,Normiertes Profil,SG10,CCI,7037,,Z10,,analytisches Verfahren,X,,193
+Normiertes Profil,SG10,CAV,,,,,,Muss,,194,,,Normiertes Profil,SG10,CAV,,,,,,Muss,,194
+Normiertes Profil,SG10,CAV,7111,,,,Code des Normierten Profils (Strom),X,,195,,,Normiertes Profil,SG10,CAV,7111,,,,Code des Normierten Profils (Strom),X,,195
+Klimazone / Temperaturmessstelle,SG10,,,,,,,Kann,,196,,,Klimazone / Temperaturmessstelle,SG10,,,,,,,Kann,,196
+Klimazone / Temperaturmessstelle,SG10,CCI,,,,,,Muss,,197,,,Klimazone / Temperaturmessstelle,SG10,CCI,,,,,,Muss,,197
+Klimazone / Temperaturmessstelle,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,198,,,Klimazone / Temperaturmessstelle,SG10,CCI,7059,,Z99,,Messstelle des Tagesparameters (derzeit ist nur die Temperatur ein erlaubter Tagesparameter),X,,198
+Klimazone / Temperaturmessstelle,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,199,,,Klimazone / Temperaturmessstelle,SG10,CCI,7059,,ZA0,,Klimazone des Tagesparameters (derzeit ist Tagesparameter),X,,199
+Klimazone / Temperaturmessstelle,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,200,,,Klimazone / Temperaturmessstelle,SG10,CCI,7037,,,,ID Klimazone / Temperaturmessstelle,X,,200
+Klimazone / Temperaturmessstelle,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,201,,,Klimazone / Temperaturmessstelle,SG10,CCI,1131,,,,Dienstanbieter,X [58],[58] Wenn in diesem CCI das DE3055 mit dem Code 293 vorhanden,201
+Klimazone / Temperaturmessstelle,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,202,,,Klimazone / Temperaturmessstelle,SG10,CCI,3055,,89,,Vergeben vom Händler (hier Netzbetreiber),X,,202
+Klimazone / Temperaturmessstelle,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,203,,,Klimazone / Temperaturmessstelle,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,203
+Referenzprofildaten,SG8,,,,,,,Muss [54] ∧ [492] ∧ [265],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [265] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP m. Referenzmessung) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",,Referenzprofildaten,204,SG8,,,,,,,Muss [54] ∧ [492] ∧ [265],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",204,,,Referenzprofildaten,SG8,,,,,,,Muss [54] ∧ [492] ∧ [265],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [265] Wenn im SG8 SEQ+Z01 (Daten der Marktlokation) das SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+Z36 (TEP m. Referenzmessung) vorhanden
-[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom"
-Referenzprofildaten,205,SG8,SEQ,,,,,,Muss,,,Referenzprofildaten,205,SG8,SEQ,,,,,,Muss,
-Referenzprofildaten,206,SG8,SEQ,1229,,Z38,,Referenzprofildaten,X,,,Referenzprofildaten,206,SG8,SEQ,1229,,Z38,,Referenzprofildaten,X,
-Referenz auf die ID der Marktlokation,207,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,207,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Marktlokation,208,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,208,SG8,RFF,1153,,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,209,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Marktlokation,209,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID
-Referenzprofil,210,SG10,,,,,,,Muss,,,Referenzprofil,210,SG10,,,,,,,Muss,
-Referenzprofil,211,SG10,CCI,,,,,,Muss,,,Referenzprofil,211,SG10,CCI,,,,,,Muss,
-Referenzprofil,212,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X,,,Referenzprofil,212,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X,
-Referenzprofil,213,SG10,CAV,,,,,,Muss,,,Referenzprofil,213,SG10,CAV,,,,,,Muss,
-Referenzprofil,214,SG10,CAV,7111,,,,Code des Referenzprofils,X,,,Referenzprofil,214,SG10,CAV,7111,,,,Code des Referenzprofils,X,
-Nachrichten-Endesegment,215,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,215,,UNT,,,,,,Muss,
-Nachrichten-Endesegment,216,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,216,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,217,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,217,,UNT,0062,,,,Nachrichten-Referenznummer,X,
+[492] Wenn MP-ID in NAD+MR (Nachrichtenempfänger) aus Sparte Strom",204
+Referenzprofildaten,SG8,SEQ,,,,,,Muss,,205,,,Referenzprofildaten,SG8,SEQ,,,,,,Muss,,205
+Referenzprofildaten,SG8,SEQ,1229,,Z38,,Referenzprofildaten,X,,206,,,Referenzprofildaten,SG8,SEQ,1229,,Z38,,Referenzprofildaten,X,,206
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,207,,,Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,207
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,208,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,208
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,209,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,209
+Referenzprofil,SG10,,,,,,,Muss,,210,,,Referenzprofil,SG10,,,,,,,Muss,,210
+Referenzprofil,SG10,CCI,,,,,,Muss,,211,,,Referenzprofil,SG10,CCI,,,,,,Muss,,211
+Referenzprofil,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X,,212,,,Referenzprofil,SG10,CCI,7059,,Z05,,tagesparameterabhängig es Einspeiseprofil,X,,212
+Referenzprofil,SG10,CAV,,,,,,Muss,,213,,,Referenzprofil,SG10,CAV,,,,,,Muss,,213
+Referenzprofil,SG10,CAV,7111,,,,Code des Referenzprofils,X,,214,,,Referenzprofil,SG10,CAV,7111,,,,Code des Referenzprofils,X,,214
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,215,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,215
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,216,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,216
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,217,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,217
