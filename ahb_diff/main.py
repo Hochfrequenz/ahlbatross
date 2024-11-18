@@ -364,10 +364,11 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     exports the merged dataframe to .xlsx with highlighted differences.
     """
+    sheet_name = Path(output_path_xlsx).stem  # excel sheet name = <pruefid>
     df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:")]]
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
-        df_filtered.to_excel(writer, sheet_name="AHB-Diff", index=False)
+        df_filtered.to_excel(writer, sheet_name=sheet_name, index=False)
         sheet_name = Path(output_path_xlsx).stem
 
         workbook = writer.book
@@ -452,8 +453,26 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                 else:
                     worksheet.write(row_num, col_num, value, base_format)
 
-        for col_num in range(len(df_filtered.columns)):
-            worksheet.set_column(col_num, col_num, min(150 / 7, 21))  # cell width = 150 px.
+        column_widths = {
+            "#": 50,
+            "Segmentname_": 175,
+            "Segmentgruppe_": 100,
+            "Segment_": 100,
+            "Datenelement_": 100,
+            "Segment ID_": 100,
+            "Code_": 100,
+            "Qualifier_": 100,
+            "Beschreibung_": 150,
+            "Bedingungsausdruck_": 100,
+            "Bedingung_": 150,
+        }
+
+        for col_num, col_name in enumerate(df_filtered.columns):
+            width_px = next(
+                (width for prefix, width in column_widths.items() if col_name.startswith(prefix)), 150
+            )  # default = 150 px
+            excel_width = width_px / 7
+            worksheet.set_column(col_num, col_num, excel_width)
 
         logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
 
