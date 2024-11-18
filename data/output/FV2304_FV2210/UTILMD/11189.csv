@@ -1,145 +1,145 @@
-Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,Z38,,Synchronisation,X,,,Beginn der Nachricht,8,,BGM,1001,,Z38,,Synchronisation,X,
-Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
-MP-ID Absender,15,SG2,NAD,,,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,,,,,Muss,
-MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
-MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Absender,17,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
-MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,19,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
-Ansprechpartner,21,SG3,CTA,,,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,,,,,Muss,
-Ansprechpartner,22,SG3,CTA,3139,,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,,IC,,Informationskontakt,X,
-Ansprechpartner,23,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindung,24,SG3,COM,,,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,,,,,Muss,
-Kommunikationsverbindung,25,SG3,COM,3148,,,,Nummer / Adresse,X,,,Kommunikationsverbindung,25,SG3,COM,3148,,,,Nummer / Adresse,X,
-Kommunikationsverbindung,26,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
-MP-ID Empfänger,32,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,,,,,Muss,
-MP-ID Empfänger,33,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,34,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,,MP-ID Empfänger,34,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom
-MP-ID Empfänger,35,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
-Vorgang,38,SG4,IDE,,,,,,Muss,,,Vorgang,38,SG4,IDE,,,,,,Muss,
-Vorgang,39,SG4,IDE,7495,,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,,24,,Transaktion,X,
-Vorgang,40,SG4,IDE,7402,,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,,,,Vorgangsnummer,X,
-Verwendung der Daten bis,41,SG4,DTM,,,,,,Muss,[147] Wenn in Anfrage vorhanden,,Verwendung der Daten bis,41,SG4,DTM,,,,,,Muss,[147] Wenn in Anfrage vorhanden
-Verwendung der Daten bis,42,SG4,DTM,2005,,Z26,,Verwendung der Daten bis,X,,,Verwendung der Daten bis,42,SG4,DTM,2005,,Z26,,Verwendung der Daten bis,X,
-Verwendung der Daten bis,43,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Verwendung der Daten bis,43,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Verwendung der Daten bis,44,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Verwendung der Daten bis,44,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Transaktionsgrund,45,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,45,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,46,SG4,STS,9015,,7,,Transaktionsgrund,X,,,Transaktionsgrund,46,SG4,STS,9015,,7,,Transaktionsgrund,X,
-Transaktionsgrund,47,SG4,STS,9013,,E03,,Wechsel,X,,,Transaktionsgrund,47,SG4,STS,9013,,E03,,Wechsel,X,
-Transaktionsgrund,48,SG4,STS,9013,,Z33,,Auszug wegen Stilllegung,X,,,Transaktionsgrund,48,SG4,STS,9013,,Z33,,Auszug wegen Stilllegung,X,
-Transaktionsgrund,49,SG4,STS,9013,,ZF1,,Änderung der Prognosegrundlage,X,"[656] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ für die Änderung der Aggregationsverantwort ung vom ÜNB auf NB gegenüber LF und MSB durchgeführt hat
+Segmentname_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,Unnamed: 0_FV2210,Änderung,changed_entries,Segmentname_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304,Unnamed: 0_FV2304
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,,UTILMD,,Netzanschluss- Stammdaten,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,,5.2e,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,Z38,,Synchronisation,X,,8,,,Beginn der Nachricht,,BGM,1001,,Z38,,Synchronisation,X,,8
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,,,,,Muss,,10,,,Nachrichtendatum,,DTM,,,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,14
+MP-ID Absender,SG2,NAD,,,,,,Muss,,15,,,MP-ID Absender,SG2,NAD,,,,,,Muss,,15
+MP-ID Absender,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,,,MP-ID Absender,SG2,NAD,3035,,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,17,,,MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,17
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,18,,,MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,18
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19
+Ansprechpartner,SG3,,,,,,,Kann,,20,,,Ansprechpartner,SG3,,,,,,,Kann,,20
+Ansprechpartner,SG3,CTA,,,,,,Muss,,21,,,Ansprechpartner,SG3,CTA,,,,,,Muss,,21
+Ansprechpartner,SG3,CTA,3139,,IC,,Informationskontakt,X,,22,,,Ansprechpartner,SG3,CTA,3139,,IC,,Informationskontakt,X,,22
+Ansprechpartner,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,23,,,Ansprechpartner,SG3,CTA,3412,,,,Name vom Ansprechpartner,X,,23
+Kommunikationsverbindung,SG3,COM,,,,,,Muss,,24,,,Kommunikationsverbindung,SG3,COM,,,,,,Muss,,24
+Kommunikationsverbindung,SG3,COM,3148,,,,Nummer / Adresse,X,,25,,,Kommunikationsverbindung,SG3,COM,3148,,,,Nummer / Adresse,X,,25
+Kommunikationsverbindung,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,26,,,Kommunikationsverbindung,SG3,COM,3155,,EM,,Elektronische Post,X [1P0..1],,26
+Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,,,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27
+Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,,,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28
+Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,,,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29
+Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,,,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30
+MP-ID Empfänger,SG2,,,,,,,Muss,,31,,,MP-ID Empfänger,SG2,,,,,,,Muss,,31
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,32,,,MP-ID Empfänger,SG2,NAD,,,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,33,,,MP-ID Empfänger,SG2,NAD,3035,,MR,,Nachrichtenempfänger,X,,33
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,34,,,MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [280],[280] Nur MP-ID aus Sparte Strom,34
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,35,,,MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,35
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36
+Vorgang,SG4,,,,,,,Muss,,37,,,Vorgang,SG4,,,,,,,Muss,,37
+Vorgang,SG4,IDE,,,,,,Muss,,38,,,Vorgang,SG4,IDE,,,,,,Muss,,38
+Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,39,,,Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,39
+Vorgang,SG4,IDE,7402,,,,Vorgangsnummer,X,,40,,,Vorgang,SG4,IDE,7402,,,,Vorgangsnummer,X,,40
+Verwendung der Daten bis,SG4,DTM,,,,,,Muss,[147] Wenn in Anfrage vorhanden,41,,,Verwendung der Daten bis,SG4,DTM,,,,,,Muss,[147] Wenn in Anfrage vorhanden,41
+Verwendung der Daten bis,SG4,DTM,2005,,Z26,,Verwendung der Daten bis,X,,42,,,Verwendung der Daten bis,SG4,DTM,2005,,Z26,,Verwendung der Daten bis,X,,42
+Verwendung der Daten bis,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43,,,Verwendung der Daten bis,SG4,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43
+Verwendung der Daten bis,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,44,,,Verwendung der Daten bis,SG4,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,44
+Transaktionsgrund,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,45,,,Transaktionsgrund,SG4,STS,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,45
+Transaktionsgrund,SG4,STS,9015,,7,,Transaktionsgrund,X,,46,,,Transaktionsgrund,SG4,STS,9015,,7,,Transaktionsgrund,X,,46
+Transaktionsgrund,SG4,STS,9013,,E03,,Wechsel,X,,47,,,Transaktionsgrund,SG4,STS,9013,,E03,,Wechsel,X,,47
+Transaktionsgrund,SG4,STS,9013,,Z33,,Auszug wegen Stilllegung,X,,48,,,Transaktionsgrund,SG4,STS,9013,,Z33,,Auszug wegen Stilllegung,X,,48
+Transaktionsgrund,SG4,STS,9013,,ZF1,,Änderung der Prognosegrundlage,X,"[656] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ für die Änderung der Aggregationsverantwort ung vom ÜNB auf NB gegenüber LF und MSB durchgeführt hat
 [657] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ gegenüber LF und MSB wegen Stilllegung einer Marktlokation durchgeführt hat
-[658] Hinweis: Anzugeben wenn der NB den Use-Case „Weiterleitung der Stammdaten-änderung vom MSB (verantwortlich) ausgehend“ aufgrund einer Änderung des Bilanzierungsverfahrens von Bilanzierung auf Basis von Viertelstundenwerten auf Bilanzierung auf Basis von Profilen gegenüber LF und MSB durchgeführt hat und die Aggregationsverantwort ung liegt weiterhin beim NB",,Transaktionsgrund,49,SG4,STS,9013,,ZF1,,Änderung der Prognosegrundlage,X,"[656] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ für die Änderung der Aggregationsverantwort ung vom ÜNB auf NB gegenüber LF und MSB durchgeführt hat
+[658] Hinweis: Anzugeben wenn der NB den Use-Case „Weiterleitung der Stammdaten-änderung vom MSB (verantwortlich) ausgehend“ aufgrund einer Änderung des Bilanzierungsverfahrens von Bilanzierung auf Basis von Viertelstundenwerten auf Bilanzierung auf Basis von Profilen gegenüber LF und MSB durchgeführt hat und die Aggregationsverantwort ung liegt weiterhin beim NB",49,,,Transaktionsgrund,SG4,STS,9013,,ZF1,,Änderung der Prognosegrundlage,X,"[656] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ für die Änderung der Aggregationsverantwort ung vom ÜNB auf NB gegenüber LF und MSB durchgeführt hat
 [657] Hinweis: Anzugeben wenn der NB den Use-Case „Stammdatenänderung NB (verantwortlich) ausgehend“ gegenüber LF und MSB wegen Stilllegung einer Marktlokation durchgeführt hat
-[658] Hinweis: Anzugeben wenn der NB den Use-Case „Weiterleitung der Stammdaten-änderung vom MSB (verantwortlich) ausgehend“ aufgrund einer Änderung des Bilanzierungsverfahrens von Bilanzierung auf Basis von Viertelstundenwerten auf Bilanzierung auf Basis von Profilen gegenüber LF und MSB durchgeführt hat und die Aggregationsverantwort ung liegt weiterhin beim NB"
-Meldepunkt,50,SG5,,,,,,,Muss (([20] ∧ [2061]) ⊻ ([54] ∧ [2057] ∧ [2080])),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[658] Hinweis: Anzugeben wenn der NB den Use-Case „Weiterleitung der Stammdaten-änderung vom MSB (verantwortlich) ausgehend“ aufgrund einer Änderung des Bilanzierungsverfahrens von Bilanzierung auf Basis von Viertelstundenwerten auf Bilanzierung auf Basis von Profilen gegenüber LF und MSB durchgeführt hat und die Aggregationsverantwort ung liegt weiterhin beim NB",49
+Meldepunkt,SG5,,,,,,,Muss (([20] ∧ [2061]) ⊻ ([54] ∧ [2057] ∧ [2080])),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [2057] Segmentgruppe ist mindestens einmal je SG4 IDE+24 (Vorgang) anzugeben
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-[2080] Segmentgruppe ist max. zweimal je SG4 IDE+24 (Vorgang) anzugeben",,Meldepunkt,50,SG5,,,,,,,Muss (([20] ∧ [2061]) ⊻ ([54] ∧ [2057] ∧ [2080])),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[2080] Segmentgruppe ist max. zweimal je SG4 IDE+24 (Vorgang) anzugeben",50,,,Meldepunkt,SG5,,,,,,,Muss (([20] ∧ [2061]) ⊻ ([54] ∧ [2057] ∧ [2080])),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [2057] Segmentgruppe ist mindestens einmal je SG4 IDE+24 (Vorgang) anzugeben
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-[2080] Segmentgruppe ist max. zweimal je SG4 IDE+24 (Vorgang) anzugeben"
-Meldepunkt,51,SG5,LOC,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Meldepunkt,51,SG5,LOC,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Meldepunkt,52,SG5,LOC,3227,,172,,Meldepunkt,X,,,Meldepunkt,52,SG5,LOC,3227,,172,,Meldepunkt,X,
-Meldepunkt,53,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,,Meldepunkt,53,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID
-Prüfidentifikator,54,SG6,,,,,,,Muss,,,Prüfidentifikator,54,SG6,,,,,,,Muss,
-Prüfidentifikator,55,SG6,RFF,,,,,,Muss,,,Prüfidentifikator,55,SG6,RFF,,,,,,Muss,
-Prüfidentifikator,56,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,56,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,57,SG6,RFF,1154,,11189,,Beendigung der Aggregationsverantwortung vom LF,X,,,Prüfidentifikator,57,SG6,RFF,1154,,11189,,Beendigung der Aggregationsverantwortung vom LF,X,
-Referenz Vorgangsnummer (aus Anfragenachricht),58,SG6,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,,Referenz Vorgangsnummer (aus Anfragenachricht),58,SG6,,,,,,,Muss,[147] Wenn in Anfrage vorhanden
-Referenz Vorgangsnummer (aus Anfragenachricht),59,SG6,RFF,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),59,SG6,RFF,,,,,,Muss,
-Referenz Vorgangsnummer (aus Anfragenachricht),60,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),60,SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,
-Referenz Vorgangsnummer (aus Anfragenachricht),61,SG6,RFF,1154,,,,Vorgangsnummer,X,[603] Hinweis: Es ist die Vorgangsnummer aus dem RFF+TN (Referenz Vorgangsnummer aus Anfragenachricht) des LF zu übernehmen,,Referenz Vorgangsnummer (aus Anfragenachricht),61,SG6,RFF,1154,,,,Vorgangsnummer,X,[603] Hinweis: Es ist die Vorgangsnummer aus dem RFF+TN (Referenz Vorgangsnummer aus Anfragenachricht) des LF zu übernehmen
-Daten der Marktlokation,62,SG8,,,,,,,Muss [2061],"[147] Wenn in Anfrage vorhanden
+[2080] Segmentgruppe ist max. zweimal je SG4 IDE+24 (Vorgang) anzugeben",50
+Meldepunkt,SG5,LOC,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,51,,,Meldepunkt,SG5,LOC,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,51
+Meldepunkt,SG5,LOC,3227,,172,,Meldepunkt,X,,52,,,Meldepunkt,SG5,LOC,3227,,172,,Meldepunkt,X,,52
+Meldepunkt,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,53,,,Meldepunkt,SG5,LOC,3225,,,,Identifikator,X [950],[950] Format: Marktlokations-ID,53
+Prüfidentifikator,SG6,,,,,,,Muss,,54,,,Prüfidentifikator,SG6,,,,,,,Muss,,54
+Prüfidentifikator,SG6,RFF,,,,,,Muss,,55,,,Prüfidentifikator,SG6,RFF,,,,,,Muss,,55
+Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,56,,,Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,56
+Prüfidentifikator,SG6,RFF,1154,,11189,,Beendigung der Aggregationsverantwortung vom LF,X,,57,,,Prüfidentifikator,SG6,RFF,1154,,11189,,Beendigung der Aggregationsverantwortung vom LF,X,,57
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,58,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,58
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,,,,,Muss,,59,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,,,,,Muss,,59
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,60,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,,TN,,Transaktions- Referenznummer,X,,60
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,,,,Vorgangsnummer,X,[603] Hinweis: Es ist die Vorgangsnummer aus dem RFF+TN (Referenz Vorgangsnummer aus Anfragenachricht) des LF zu übernehmen,61,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,,,,Vorgangsnummer,X,[603] Hinweis: Es ist die Vorgangsnummer aus dem RFF+TN (Referenz Vorgangsnummer aus Anfragenachricht) des LF zu übernehmen,61
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],"[147] Wenn in Anfrage vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",,Daten der Marktlokation,62,SG8,,,,,,,Muss [2061],"[147] Wenn in Anfrage vorhanden
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",62,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],"[147] Wenn in Anfrage vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben"
-Daten der Marktlokation,63,SG8,SEQ,,,,,,Muss,,,Daten der Marktlokation,63,SG8,SEQ,,,,,,Muss,
-Daten der Marktlokation,64,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,,Daten der Marktlokation,64,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,
-Referenz auf die ID der Marktlokation,65,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Marktlokation,65,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Marktlokation,66,SG8,RFF,1153,,Z18,,Marktlokation,X,,,Referenz auf die ID der Marktlokation,66,SG8,RFF,1153,,Z18,,Marktlokation,X,
-Referenz auf die ID der Marktlokation,67,SG8,RFF,1154,,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-[950] Format: Marktlokations-ID",,Referenz auf die ID der Marktlokation,67,SG8,RFF,1154,,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-[950] Format: Marktlokations-ID"
-Lieferrichtung,68,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,,Lieferrichtung,68,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden
-Lieferrichtung,69,SG10,CCI,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Lieferrichtung,69,SG10,CCI,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Lieferrichtung,70,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,,Lieferrichtung,70,SG10,CCI,7059,,Z30,,Lieferrichtung,X,
-Lieferrichtung,71,SG10,CCI,7037,,Z06,,Erzeugung,X,,,Lieferrichtung,71,SG10,CCI,7037,,Z06,,Erzeugung,X,
-Lieferrichtung,72,SG10,CCI,7037,,Z07,,Verbrauch,X,,,Lieferrichtung,72,SG10,CCI,7037,,Z07,,Verbrauch,X,
-Zugeordnete Marktpartner,73,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,,Zugeordnete Marktpartner,73,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden
-Zugeordnete Marktpartner,74,SG10,CCI,,,,,,Muss,,,Zugeordnete Marktpartner,74,SG10,CCI,,,,,,Muss,
-Zugeordnete Marktpartner,75,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,,Zugeordnete Marktpartner,75,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,
-Netzbetreiber,76,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",,Netzbetreiber,76,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden"
-Netzbetreiber,77,SG10,CAV,7111,,Z88,,NB,X,,,Netzbetreiber,77,SG10,CAV,7111,,Z88,,NB,X,
-Netzbetreiber,78,SG10,CAV,1131,,,,MP-ID,X [615],"[38] ID des NB muss identisch mit der ID in NAD+MS (Nachrichtenabsender) sein.
+[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",62
+Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,63,,,Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,63
+Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,64,,,Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,64
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,65,,,Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,65
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,66,,,Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,66
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",67,,,Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],"[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
+[950] Format: Marktlokations-ID",67
+Lieferrichtung,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,68,,,Lieferrichtung,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,68
+Lieferrichtung,SG10,CCI,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,69,,,Lieferrichtung,SG10,CCI,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,69
+Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,70,,,Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,70
+Lieferrichtung,SG10,CCI,7037,,Z06,,Erzeugung,X,,71,,,Lieferrichtung,SG10,CCI,7037,,Z06,,Erzeugung,X,,71
+Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,72,,,Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,72
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,73,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,73
+Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,74,,,Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,74
+Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,75,,,Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,75
+Netzbetreiber,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",76,,,Netzbetreiber,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",76
+Netzbetreiber,SG10,CAV,7111,,Z88,,NB,X,,77,,,Netzbetreiber,SG10,CAV,7111,,Z88,,NB,X,,77
+Netzbetreiber,SG10,CAV,1131,,,,MP-ID,X [615],"[38] ID des NB muss identisch mit der ID in NAD+MS (Nachrichtenabsender) sein.
 [615] Hinweis: Es ist das Datum/Daten aus der eingehenden Nachricht zu verwenden.
-[616] Hinweis: Dient dazu, dass der ÜNB den NB kennt, von welchem der Ursprung ausgegangen ist",,Netzbetreiber,78,SG10,CAV,1131,,,,MP-ID,X [615],"[38] ID des NB muss identisch mit der ID in NAD+MS (Nachrichtenabsender) sein.
+[616] Hinweis: Dient dazu, dass der ÜNB den NB kennt, von welchem der Ursprung ausgegangen ist",78,,,Netzbetreiber,SG10,CAV,1131,,,,MP-ID,X [615],"[38] ID des NB muss identisch mit der ID in NAD+MS (Nachrichtenabsender) sein.
 [615] Hinweis: Es ist das Datum/Daten aus der eingehenden Nachricht zu verwenden.
-[616] Hinweis: Dient dazu, dass der ÜNB den NB kennt, von welchem der Ursprung ausgegangen ist"
-Lieferant,79,SG10,CAV,,,,,,Muss [20] ⊻ ([54] ∧ [300]),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[616] Hinweis: Dient dazu, dass der ÜNB den NB kennt, von welchem der Ursprung ausgegangen ist",78
+Lieferant,SG10,CAV,,,,,,Muss [20] ⊻ ([54] ∧ [300]),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",,Lieferant,79,SG10,CAV,,,,,,Muss [20] ⊻ ([54] ∧ [300]),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",79,,,Lieferant,SG10,CAV,,,,,,Muss [20] ⊻ ([54] ∧ [300]),"[20] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z07 (Verbrauch) vorhanden
 [54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [300] Wenn SG8 SEQ+Z15 (Daten der Tranche) nicht vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden"
-Lieferant,80,SG10,CAV,7111,,Z89,,LF,X,,,Lieferant,80,SG10,CAV,7111,,Z89,,LF,X,
-Lieferant,81,SG10,CAV,1131,,,,MP-ID,X [611],"[611] Hinweis: Wenn das Unternehmen NB die Aufgaben der Marktrolle LF wahrnimmt, ist die MP-ID des Unternehmens NB in der Marktrolle LF anzugeben",,Lieferant,81,SG10,CAV,1131,,,,MP-ID,X [611],"[611] Hinweis: Wenn das Unternehmen NB die Aufgaben der Marktrolle LF wahrnimmt, ist die MP-ID des Unternehmens NB in der Marktrolle LF anzugeben"
-Übertragungsnetzbetreiber,82,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",,Übertragungsnetzbetreiber,82,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
-[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden"
-Übertragungsnetzbetreiber,83,SG10,CAV,7111,,Z90,,ÜNB,X,,,Übertragungsnetzbetreiber,83,SG10,CAV,7111,,Z90,,ÜNB,X,
-Übertragungsnetzbetreiber,84,SG10,CAV,1131,,,,MP-ID,X,,,Übertragungsnetzbetreiber,84,SG10,CAV,1131,,,,MP-ID,X,
-Daten der Tranche,85,SG8,,,,,,,Muss [54] ∧ [2307],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",79
+Lieferant,SG10,CAV,7111,,Z89,,LF,X,,80,,,Lieferant,SG10,CAV,7111,,Z89,,LF,X,,80
+Lieferant,SG10,CAV,1131,,,,MP-ID,X [611],"[611] Hinweis: Wenn das Unternehmen NB die Aufgaben der Marktrolle LF wahrnimmt, ist die MP-ID des Unternehmens NB in der Marktrolle LF anzugeben",81,,,Lieferant,SG10,CAV,1131,,,,MP-ID,X [611],"[611] Hinweis: Wenn das Unternehmen NB die Aufgaben der Marktrolle LF wahrnimmt, ist die MP-ID des Unternehmens NB in der Marktrolle LF anzugeben",81
+Übertragungsnetzbetreiber,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",82,,,Übertragungsnetzbetreiber,SG10,CAV,,,,,,Muss [528],"[147] Wenn in Anfrage vorhanden
+[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden",82
+Übertragungsnetzbetreiber,SG10,CAV,7111,,Z90,,ÜNB,X,,83,,,Übertragungsnetzbetreiber,SG10,CAV,7111,,Z90,,ÜNB,X,,83
+Übertragungsnetzbetreiber,SG10,CAV,1131,,,,MP-ID,X,,84,,,Übertragungsnetzbetreiber,SG10,CAV,1131,,,,MP-ID,X,,84
+Daten der Tranche,SG8,,,,,,,Muss [54] ∧ [2307],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2307] Für jede 11- stellige ID im SG5 LOC+172 (Meldepunkt) DE3225 auf die das RFF+Z18 (Marktlokation) der SG8+Z01(Daten der Marktlokation) nicht referenziert genau einmal anzugeben",,Daten der Tranche,85,SG8,,,,,,,Muss [54] ∧ [2307],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
+[2307] Für jede 11- stellige ID im SG5 LOC+172 (Meldepunkt) DE3225 auf die das RFF+Z18 (Marktlokation) der SG8+Z01(Daten der Marktlokation) nicht referenziert genau einmal anzugeben",85,,,Daten der Tranche,SG8,,,,,,,Muss [54] ∧ [2307],"[54] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) SG10 CCI+Z30++Z06 (Lieferrichtung: Erzeugung) vorhanden
 [147] Wenn in Anfrage vorhanden
 [607] Hinweis: In diesem Segment bzw. SG sind die zwischen LF und NB im Rahmen der Marktkommunikation ausgetauschten Daten aus der Sicht des NB anzugeben
-[2307] Für jede 11- stellige ID im SG5 LOC+172 (Meldepunkt) DE3225 auf die das RFF+Z18 (Marktlokation) der SG8+Z01(Daten der Marktlokation) nicht referenziert genau einmal anzugeben"
-Daten der Tranche,86,SG8,SEQ,,,,,,Muss,,,Daten der Tranche,86,SG8,SEQ,,,,,,Muss,
-Daten der Tranche,87,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,,Daten der Tranche,87,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,
-Referenz auf die ID der Tranche,88,SG8,RFF,,,,,,Muss,,,Referenz auf die ID der Tranche,88,SG8,RFF,,,,,,Muss,
-Referenz auf die ID der Tranche,89,SG8,RFF,1153,,Z20,,Tranche,X,,,Referenz auf die ID der Tranche,89,SG8,RFF,1153,,Z20,,Tranche,X,
-Referenz auf die ID der Tranche,90,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,,Referenz auf die ID der Tranche,90,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID
-Zugeordnete Marktpartner,91,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,,Zugeordnete Marktpartner,91,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden
-Zugeordnete Marktpartner,92,SG10,CCI,,,,,,Muss,,,Zugeordnete Marktpartner,92,SG10,CCI,,,,,,Muss,
-Zugeordnete Marktpartner,93,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,,Zugeordnete Marktpartner,93,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,
-Lieferant,94,SG10,CAV,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Lieferant,94,SG10,CAV,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Lieferant,95,SG10,CAV,7111,,Z89,,LF,X,,,Lieferant,95,SG10,CAV,7111,,Z89,,LF,X,
-Lieferant,96,SG10,CAV,1131,,,,MP-ID,X,,,Lieferant,96,SG10,CAV,1131,,,,MP-ID,X,
-Nachrichten-Endesegment,97,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,97,,UNT,,,,,,Muss,
-Nachrichten-Endesegment,98,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,98,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,99,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,99,,UNT,0062,,,,Nachrichten-Referenznummer,X,
+[2307] Für jede 11- stellige ID im SG5 LOC+172 (Meldepunkt) DE3225 auf die das RFF+Z18 (Marktlokation) der SG8+Z01(Daten der Marktlokation) nicht referenziert genau einmal anzugeben",85
+Daten der Tranche,SG8,SEQ,,,,,,Muss,,86,,,Daten der Tranche,SG8,SEQ,,,,,,Muss,,86
+Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,87,,,Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,87
+Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,88,,,Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,88
+Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,89,,,Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,89
+Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,90,,,Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,90
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,91,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,[147] Wenn in Anfrage vorhanden,91
+Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,92,,,Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,92
+Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,93,,,Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,93
+Lieferant,SG10,CAV,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,94,,,Lieferant,SG10,CAV,,,,,,Muss [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,94
+Lieferant,SG10,CAV,7111,,Z89,,LF,X,,95,,,Lieferant,SG10,CAV,7111,,Z89,,LF,X,,95
+Lieferant,SG10,CAV,1131,,,,MP-ID,X,,96,,,Lieferant,SG10,CAV,1131,,,,MP-ID,X,,96
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,97,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,97
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,98,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,98
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,99,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,99

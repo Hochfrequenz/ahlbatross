@@ -1,58 +1,58 @@
-Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,,,Beginn der Nachricht,8,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,
-Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Betrachtungszeitintervall,14,,DTM,,,,,,Muss [514] ∧ [515],"[514] Hinweis: Das Abonnement kann frühestens ab dem aktuellen Liefermonat beim Netzbetreiber gestartet werden.
-[515] Hinweis: Das angegebene Betrachtungszeitintervall bestimmt beim Start Abo bzw. Ende Abo ab bzw. bis wann (einschließlich) das Abo laufen soll.",,Betrachtungszeitintervall,14,,DTM,,,,,,Muss [514] ∧ [515],"[514] Hinweis: Das Abonnement kann frühestens ab dem aktuellen Liefermonat beim Netzbetreiber gestartet werden.
-[515] Hinweis: Das angegebene Betrachtungszeitintervall bestimmt beim Start Abo bzw. Ende Abo ab bzw. bis wann (einschließlich) das Abo laufen soll."
-Betrachtungszeitintervall,15,,DTM,2005,,273,,Gültigkeitszeitspanne,X,,,Betrachtungszeitintervall,15,,DTM,2005,,273,,Gültigkeitszeitspanne,X,
-Betrachtungszeitintervall,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,,Betrachtungszeitintervall,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,
-Betrachtungszeitintervall,17,,DTM,2379,,610,,CCYYMM,X,,,Betrachtungszeitintervall,17,,DTM,2379,,610,,CCYYMM,X,
-Abonnement,18,,IMD,,,,,,Muss,,,Abonnement,18,,IMD,,,,,,Muss,
-Abonnement,19,,IMD,7081,,Z01,,Start Abo,X,,,Abonnement,19,,IMD,7081,,Z01,,Start Abo,X,
-Abonnement,20,,IMD,7081,,Z02,,Ende Abo,X,,,Abonnement,20,,IMD,7081,,Z02,,Ende Abo,X,
-Prüfidentifikator,21,SG1,,,,,,,Muss,,,Prüfidentifikator,21,SG1,,,,,,,Muss,
-Prüfidentifikator,22,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,22,SG1,RFF,,,,,,Muss,
-Prüfidentifikator,23,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,23,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,24,SG1,RFF,1154,,17110,,Anforderung Allokationsliste,X,,,Prüfidentifikator,24,SG1,RFF,1154,,17110,,Anforderung Allokationsliste,X,
-MP-ID Absender,25,SG2,,,,,,,Muss,,,MP-ID Absender,25,SG2,,,,,,,Muss,
-MP-ID Absender,26,SG2,NAD,,,,,,Muss,,,MP-ID Absender,26,SG2,NAD,,,,,,Muss,
-MP-ID Absender,27,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,27,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
-MP-ID Absender,28,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,,MP-ID Absender,28,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas
-MP-ID Absender,29,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,29,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Absender,30,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,30,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Ansprechpartner,31,SG5,,,,,,,Kann,,,Ansprechpartner,31,SG5,,,,,,,Kann,
-Ansprechpartner,32,SG5,CTA,,,,,,Muss,,,Ansprechpartner,32,SG5,CTA,,,,,,Muss,
-Ansprechpartner,33,SG5,CTA,3139,,,,,IC,,,Ansprechpartner,33,SG5,CTA,3139,,,,,IC,
-Ansprechpartner,34,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,34,SG5,CTA,3412,,,,Kontakt,X,
-Kommunikationsverbindung,35,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,35,SG5,COM,,,,,,Muss,
-Kommunikationsverbindung,36,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,36,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
-Kommunikationsverbindung,37,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,37,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,38,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,39,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,40,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,40,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,41,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,41,SG5,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,42,SG2,,,,,,,Muss,,,MP-ID Empfänger,42,SG2,,,,,,,Muss,
-MP-ID Empfänger,43,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,43,SG2,NAD,,,,,,Muss,
-MP-ID Empfänger,44,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,44,SG2,NAD,3035,,,,,MR,
-MP-ID Empfänger,45,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,,MP-ID Empfänger,45,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas
-MP-ID Empfänger,46,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,46,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Empfänger,47,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,47,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Abschnitts-Kontrollsegment,48,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,48,,UNS,,,,,,Muss,
-Abschnitts-Kontrollsegment,49,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,49,,UNS,0081,,und Summenteil,,,S,
-Nachrichten-Endesegment,50,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,50,,UNT,,,,,,Muss,
-Nachrichten-Endesegment,51,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,51,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,52,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,52,,UNT,0062,,,,Nachrichten-Referenznummer,X,
+Segmentname_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,Unnamed: 0_FV2210,Änderung,changed_entries,Segmentname_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304,Unnamed: 0_FV2304
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,ÄNDERUNG,Code_FV2210|Code_FV2304,Nachrichten-Kopfsegment,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,,8,,,Beginn der Nachricht,,BGM,1001,,Z24,,Allokationsliste (MMMA),X,,8
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,,,,,Muss,,10,,,Nachrichtendatum,,DTM,,,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13
+Betrachtungszeitintervall,,DTM,,,,,,Muss [514] ∧ [515],"[514] Hinweis: Das Abonnement kann frühestens ab dem aktuellen Liefermonat beim Netzbetreiber gestartet werden.
+[515] Hinweis: Das angegebene Betrachtungszeitintervall bestimmt beim Start Abo bzw. Ende Abo ab bzw. bis wann (einschließlich) das Abo laufen soll.",14,,,Betrachtungszeitintervall,,DTM,,,,,,Muss [514] ∧ [515],"[514] Hinweis: Das Abonnement kann frühestens ab dem aktuellen Liefermonat beim Netzbetreiber gestartet werden.
+[515] Hinweis: Das angegebene Betrachtungszeitintervall bestimmt beim Start Abo bzw. Ende Abo ab bzw. bis wann (einschließlich) das Abo laufen soll.",14
+Betrachtungszeitintervall,,DTM,2005,,273,,Gültigkeitszeitspanne,X,,15,,,Betrachtungszeitintervall,,DTM,2005,,273,,Gültigkeitszeitspanne,X,,15
+Betrachtungszeitintervall,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,16,,,Betrachtungszeitintervall,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X,,16
+Betrachtungszeitintervall,,DTM,2379,,610,,CCYYMM,X,,17,,,Betrachtungszeitintervall,,DTM,2379,,610,,CCYYMM,X,,17
+Abonnement,,IMD,,,,,,Muss,,18,,,Abonnement,,IMD,,,,,,Muss,,18
+Abonnement,,IMD,7081,,Z01,,Start Abo,X,,19,,,Abonnement,,IMD,7081,,Z01,,Start Abo,X,,19
+Abonnement,,IMD,7081,,Z02,,Ende Abo,X,,20,,,Abonnement,,IMD,7081,,Z02,,Ende Abo,X,,20
+Prüfidentifikator,SG1,,,,,,,Muss,,21,,,Prüfidentifikator,SG1,,,,,,,Muss,,21
+Prüfidentifikator,SG1,RFF,,,,,,Muss,,22,,,Prüfidentifikator,SG1,RFF,,,,,,Muss,,22
+Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,23,,,Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,23
+Prüfidentifikator,SG1,RFF,1154,,17110,,Anforderung Allokationsliste,X,,24,,,Prüfidentifikator,SG1,RFF,1154,,17110,,Anforderung Allokationsliste,X,,24
+MP-ID Absender,SG2,,,,,,,Muss,,25,,,MP-ID Absender,SG2,,,,,,,Muss,,25
+MP-ID Absender,SG2,NAD,,,,,,Muss,,26,,,MP-ID Absender,SG2,NAD,,,,,,Muss,,26
+MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,27,,,MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,27
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,28,,,MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,28
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,29,,,MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,29
+MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,30,,,MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,30
+Ansprechpartner,SG5,,,,,,,Kann,,31,,,Ansprechpartner,SG5,,,,,,,Kann,,31
+Ansprechpartner,SG5,CTA,,,,,,Muss,,32,,,Ansprechpartner,SG5,CTA,,,,,,Muss,,32
+Ansprechpartner,SG5,CTA,3139,,,,,IC,,33,,,Ansprechpartner,SG5,CTA,3139,,,,,IC,,33
+Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,34,,,Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,34
+Kommunikationsverbindung,SG5,COM,,,,,,Muss,,35,,,Kommunikationsverbindung,SG5,COM,,,,,,Muss,,35
+Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,36,,,Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,36
+Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,37,,,Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,37
+Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,38,,,Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,38
+Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,39,,,Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,39
+Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,40,,,Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,40
+Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,41,,,Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,41
+MP-ID Empfänger,SG2,,,,,,,Muss,,42,,,MP-ID Empfänger,SG2,,,,,,,Muss,,42
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,43,,,MP-ID Empfänger,SG2,NAD,,,,,,Muss,,43
+MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,44,,,MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,44
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,45,,,MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [60],[60] MP-ID nur aus Sparte Gas,45
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,46,,,MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,46
+MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,47,,,MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,47
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,48,,,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,48
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,49,,,Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,49
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,50,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,50
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,51,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,51
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,52,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,52

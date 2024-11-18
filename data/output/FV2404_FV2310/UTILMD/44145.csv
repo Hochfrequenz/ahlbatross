@@ -1,237 +1,237 @@
-Segmentname_FV2310,Unnamed: 0_FV2310,Segmentgruppe_FV2310,Segment_FV2310,Datenelement_FV2310,Segment ID_FV2310,Code_FV2310,Qualifier_FV2310,Beschreibung_FV2310,Bedingungsausdruck_FV2310,Bedingung_FV2310,diff,Segmentname_FV2404,Unnamed: 0_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404
-Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,00003,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,00003,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,00003,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,G1.0a,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,G1.0a,X,
-Beginn der Nachricht,7,,BGM,,00004,,,,Muss,,,Beginn der Nachricht,7,,BGM,,00004,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,,Beginn der Nachricht,8,,BGM,1001,00004,E03,,Änderungsmeldungen,X,
-Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,00004,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,00005,,,,Muss,,,Nachrichtendatum,10,,DTM,,00005,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,
-MP-ID Absender,14,SG2,,,,,,,Muss,,,MP-ID Absender,14,SG2,,,,,,,Muss,
-MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,,,MP-ID Absender,15,SG2,NAD,,00008,,,,Muss,
-MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,,MP-ID Absender,16,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,
-MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,,,MP-ID Absender,17,SG2,NAD,3039,00008,,,MP-ID,X,
-MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,,,MP-ID Absender,18,SG2,NAD,3055,00008,9,,GS1,X,
-MP-ID Absender,19,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Absender,19,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Ansprechpartner,20,SG3,,,,,,,Kann,,,Ansprechpartner,20,SG3,,,,,,,Kann,
-Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,,,Ansprechpartner,21,SG3,CTA,,00009,,,,Muss,
-Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,,Ansprechpartner,22,SG3,CTA,3139,00009,IC,,Informationskontakt,X,
-Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,,Ansprechpartner,23,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,
-Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,,,Kommunikationsverbindung,24,SG3,COM,,00010,,,,Muss,
-Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X,,,Kommunikationsverbindung,25,SG3,COM,3148,00010,,,Nummer / Adresse,X,
-Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,26,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,27,SG3,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,28,SG3,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,29,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,30,SG3,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,31,SG2,,,,,,,Muss,,,MP-ID Empfänger,31,SG2,,,,,,,Muss,
-MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,,,MP-ID Empfänger,32,SG2,NAD,,00011,,,,Muss,
-MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,,MP-ID Empfänger,33,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,
-MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,,,MP-ID Empfänger,34,SG2,NAD,3039,00011,,,MP-ID,X,
-MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,,,MP-ID Empfänger,35,SG2,NAD,3055,00011,9,,GS1,X,
-MP-ID Empfänger,36,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,,MP-ID Empfänger,36,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,
-Vorgang,37,SG4,,,,,,,Muss,,,Vorgang,37,SG4,,,,,,,Muss,
-Vorgang,38,SG4,IDE,,00012,,,,Muss,,,Vorgang,38,SG4,IDE,,00012,,,,Muss,
-Vorgang,39,SG4,IDE,7495,00012,24,,Transaktion,X,,,Vorgang,39,SG4,IDE,7495,00012,24,,Transaktion,X,
-Vorgang,40,SG4,IDE,7402,00012,,,Vorgangsnummer,X,,,Vorgang,40,SG4,IDE,7402,00012,,,Vorgangsnummer,X,
-Beginn zum,41,SG4,DTM,,00015,,,,Muss,,,Beginn zum,41,SG4,DTM,,00015,,,,Muss,
-Beginn zum,42,SG4,DTM,2005,00015,92,,Datum Vertragsbeginn,X,,,Beginn zum,42,SG4,DTM,2005,00015,92,,Datum Vertragsbeginn,X,
-Beginn zum,43,SG4,DTM,2380,00015,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,Beginn zum,43,SG4,DTM,2380,00015,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-Beginn zum,44,SG4,DTM,2379,00015,303,,CCYYMMDDHHMMZZZ,X,,,Beginn zum,44,SG4,DTM,2379,00015,303,,CCYYMMDDHHMMZZZ,X,
-"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00018,,,,Muss,,,"Änderung zum, Gültigkeit, Beginndatum",45,SG4,DTM,,00018,,,,Muss,
-"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00018,157,,"Gültigkeit, Beginndatum",X,,,"Änderung zum, Gültigkeit, Beginndatum",46,SG4,DTM,2005,00018,157,,"Gültigkeit, Beginndatum",X,
-"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,,"Änderung zum, Gültigkeit, Beginndatum",47,SG4,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden
-"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,,,"Änderung zum, Gültigkeit, Beginndatum",48,SG4,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,
-Transaktionsgrund,49,SG4,STS,,00026,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Transaktionsgrund,49,SG4,STS,,00026,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Transaktionsgrund,50,SG4,STS,9015,00026,7,,Transaktionsgrund,X,,,Transaktionsgrund,50,SG4,STS,9015,00026,7,,Transaktionsgrund,X,
-Transaktionsgrund,51,SG4,STS,9013,00026,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,,Transaktionsgrund,51,SG4,STS,9013,00026,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,
-Status der Antwort,52,SG4,STS,,00028,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,,Status der Antwort,52,SG4,STS,,00028,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten 
-Status der Antwort,53,SG4,STS,9015,00028,E01,,Status der Antwort,X,,,Status der Antwort,53,SG4,STS,9015,00028,E01,,Status der Antwort,X,
-Status der Antwort,54,SG4,STS,9013,00028,,,Code des Prüfschritts,X,,,Status der Antwort,54,SG4,STS,9013,00028,,,Code des Prüfschritts,X,
-Status der Antwort,55,SG4,STS,1131,00028,G_0047,,Codeliste Gas Nr. G_0047,X,,,Status der Antwort,55,SG4,STS,1131,00028,G_0047,,Codeliste Gas Nr. G_0047,X,
-Meldepunkt,56,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,,Meldepunkt,56,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
-Meldepunkt,57,SG5,LOC,,00035,,,,Muss,,,Meldepunkt,57,SG5,LOC,,00035,,,,Muss,
-Meldepunkt,58,SG5,LOC,3227,00035,172,,Meldepunkt,X,,,Meldepunkt,58,SG5,LOC,3227,00035,172,,Meldepunkt,X,
-Meldepunkt,59,SG5,LOC,3225,00035,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,,Meldepunkt,59,SG5,LOC,3225,00035,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung
-Prüfidentifikator,60,SG6,,,,,,,Muss,,,Prüfidentifikator,60,SG6,,,,,,,Muss,
-Prüfidentifikator,61,SG6,RFF,,00037,,,,Muss,,,Prüfidentifikator,61,SG6,RFF,,00037,,,,Muss,
-Prüfidentifikator,62,SG6,RFF,1153,00037,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,62,SG6,RFF,1153,00037,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,63,SG6,RFF,1154,,44145,,SDÄ Gas / Antwort auf Anfrage an MSB mit Abhängigkeiten NB an AF,X,,,Prüfidentifikator,63,SG6,RFF,1154,,44145,,SDÄ Gas / Antwort auf Anfrage an MSB mit Abhängigkeiten NB an AF,X,
-Referenz Vorgangsnummer (aus Anfragenachricht),64,SG6,,,,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),64,SG6,,,,,,,Muss,
-Referenz Vorgangsnummer (aus Anfragenachricht),65,SG6,RFF,,00038,,,,Muss,,,Referenz Vorgangsnummer (aus Anfragenachricht),65,SG6,RFF,,00038,,,,Muss,
-Referenz Vorgangsnummer (aus Anfragenachricht),66,SG6,RFF,1153,00038,TN,,Transaktions- Referenznummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),66,SG6,RFF,1153,00038,TN,,Transaktions- Referenznummer,X,
-Referenz Vorgangsnummer (aus Anfragenachricht),67,SG6,RFF,1154,00038,,,Vorgangsnummer,X,,,Referenz Vorgangsnummer (aus Anfragenachricht),67,SG6,RFF,1154,00038,,,Vorgangsnummer,X,
-Zähleinrichtungsdaten,68,SG8,,,,,,,Muss [345] ∧ [530],"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",,Zähleinrichtungsdaten,68,SG8,,,,,,,Muss [345] ∧ [530],"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind"
-Zähleinrichtungsdaten,69,SG8,SEQ,,00088,,,,Muss,,,Zähleinrichtungsdaten,69,SG8,SEQ,,00088,,,,Muss,
-Zähleinrichtungsdaten,70,SG8,SEQ,1229,00088,Z03,,Zähleinrichtungsdaten,X,,,Zähleinrichtungsdaten,70,SG8,SEQ,1229,00088,Z03,,Zähleinrichtungsdaten,X,
-Referenz auf die ID einer Messlokation,71,SG8,RFF,,00089,,,,Muss,,,Referenz auf die ID einer Messlokation,71,SG8,RFF,,00089,,,,Muss,
-Referenz auf die ID einer Messlokation,72,SG8,RFF,1153,00089,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,72,SG8,RFF,1153,00089,Z19,,Messlokation,X,
-Referenz auf die ID einer Messlokation,73,SG8,RFF,1154,00089,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,73,SG8,RFF,1154,00089,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Zählertyp,74,SG10,,,,,,,Muss,,,Zählertyp,74,SG10,,,,,,,Muss,
-Zählertyp,75,SG10,CCI,,00090,,,,Muss,,,Zählertyp,75,SG10,CCI,,00090,,,,Muss,
-Zählertyp,76,SG10,CCI,7037,00090,E13,,Zählertyp,X,,,Zählertyp,76,SG10,CCI,7037,00090,E13,,Zählertyp,X,
-Zählertyp,77,SG10,CAV,,00091,,,,Muss,,,Zählertyp,77,SG10,CAV,,00091,,,,Muss,
-Zählertyp,78,SG10,CAV,7111,00091,NMG,,neue Messeinrichtung Gas nach MsbG,X,,,Zählertyp,78,SG10,CAV,7111,00091,NMG,,neue Messeinrichtung Gas nach MsbG,X,
-Zählertyp,79,SG10,CAV,7111,,DKZ,,Drehkolbengaszähler,X,,,Zählertyp,79,SG10,CAV,7111,,DKZ,,Drehkolbengaszähler,X,
-Zählertyp,80,SG10,CAV,7111,,BGZ,,Balgengaszähler,X,,,Zählertyp,80,SG10,CAV,7111,,BGZ,,Balgengaszähler,X,
-Zählertyp,81,SG10,CAV,7111,,TRZ,,Turbinenradgaszähler,X,,,Zählertyp,81,SG10,CAV,7111,,TRZ,,Turbinenradgaszähler,X,
-Zählertyp,82,SG10,CAV,7111,,UGZ,,Ultraschallgaszähler,X,,,Zählertyp,82,SG10,CAV,7111,,UGZ,,Ultraschallgaszähler,X,
-Zählertyp,83,SG10,CAV,7111,,WGZ,,Wirbelgaszähler,X,,,Zählertyp,83,SG10,CAV,7111,,WGZ,,Wirbelgaszähler,X,
-Zählertyp,84,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X,,,Zählertyp,84,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X,
-Zählertyp,85,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,,Zählertyp,85,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,
-Zählergröße,86,SG10,CAV,,00092,,,,Muss,,,Zählergröße,86,SG10,CAV,,00092,,,,Muss,
-Zählergröße,87,SG10,CAV,7110,00092,G10,,Gaszähler G10,X,,,Zählergröße,87,SG10,CAV,7110,00092,G10,,Gaszähler G10,X,
-Zählergröße,88,SG10,CAV,7110,,G100,,Gaszähler G100,X,,,Zählergröße,88,SG10,CAV,7110,,G100,,Gaszähler G100,X,
-Zählergröße,89,SG10,CAV,7110,,G1000,,Gaszähler G1000,X,,,Zählergröße,89,SG10,CAV,7110,,G1000,,Gaszähler G1000,X,
-Zählergröße,90,SG10,CAV,7110,,G10000,,Gaszähler G10000,X,,,Zählergröße,90,SG10,CAV,7110,,G10000,,Gaszähler G10000,X,
-Zählergröße,91,SG10,CAV,7110,,G12500,,Gaszähler G12500,X,,,Zählergröße,91,SG10,CAV,7110,,G12500,,Gaszähler G12500,X,
-Zählergröße,92,SG10,CAV,7110,,G16,,Gaszähler G16,X,,,Zählergröße,92,SG10,CAV,7110,,G16,,Gaszähler G16,X,
-Zählergröße,93,SG10,CAV,7110,,G160,,Gaszähler G160,X,,,Zählergröße,93,SG10,CAV,7110,,G160,,Gaszähler G160,X,
-Zählergröße,94,SG10,CAV,7110,,G1600,,Gaszähler G1600,X,,,Zählergröße,94,SG10,CAV,7110,,G1600,,Gaszähler G1600,X,
-Zählergröße,95,SG10,CAV,7110,,G16000 G2.5,,Gaszähler G16000 Gaszähler G2.5,XX,,,Zählergröße,95,SG10,CAV,7110,,G16000 G2.5,,Gaszähler G16000 Gaszähler G2.5,XX,
-Zählergröße,96,SG10,CAV,7110,,G25,,Gaszähler G25,X,,,Zählergröße,96,SG10,CAV,7110,,G25,,Gaszähler G25,X,
-Zählergröße,97,SG10,CAV,7110,,G250,,Gaszähler G250,X,,,Zählergröße,97,SG10,CAV,7110,,G250,,Gaszähler G250,X,
-Zählergröße,98,SG10,CAV,7110,,G2500,,Gaszähler G2500,X,,,Zählergröße,98,SG10,CAV,7110,,G2500,,Gaszähler G2500,X,
-Zählergröße,99,SG10,CAV,7110,,G350,,Gaszähler G350,X,,,Zählergröße,99,SG10,CAV,7110,,G350,,Gaszähler G350,X,
-Zählergröße,100,SG10,CAV,7110,,G4,,Gaszähler G4,X,,,Zählergröße,100,SG10,CAV,7110,,G4,,Gaszähler G4,X,
-Zählergröße,101,SG10,CAV,7110,,G40,,Gaszähler G40,X,,,Zählergröße,101,SG10,CAV,7110,,G40,,Gaszähler G40,X,
-Zählergröße,102,SG10,CAV,7110,,G400,,Gaszähler G400,X,,,Zählergröße,102,SG10,CAV,7110,,G400,,Gaszähler G400,X,
-Zählergröße,103,SG10,CAV,7110,,G4000,,Gaszähler G4000,X,,,Zählergröße,103,SG10,CAV,7110,,G4000,,Gaszähler G4000,X,
-Zählergröße,104,SG10,CAV,7110,,G6,,Gaszähler G6,X,,,Zählergröße,104,SG10,CAV,7110,,G6,,Gaszähler G6,X,
-Zählergröße,105,SG10,CAV,7110,,G65,,Gaszähler G65,X,,,Zählergröße,105,SG10,CAV,7110,,G65,,Gaszähler G65,X,
-Zählergröße,106,SG10,CAV,7110,,G650,,Gaszähler G650,X,,,Zählergröße,106,SG10,CAV,7110,,G650,,Gaszähler G650,X,
-Zählergröße,107,SG10,CAV,7110,,G6500,,Gaszähler G6500,X,,,Zählergröße,107,SG10,CAV,7110,,G6500,,Gaszähler G6500,X,
-Identifikation / Nummer des Gerätes,108,SG10,CAV,,00093,,,,Muss,,,Identifikation / Nummer des Gerätes,108,SG10,CAV,,00093,,,,Muss,
-Identifikation / Nummer des Gerätes,109,SG10,CAV,7111,00093,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,109,SG10,CAV,7111,00093,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,110,SG10,CAV,7110,00093,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,110,SG10,CAV,7110,00093,,,Gerätenummer,X,
-Messwerterfassung an der Zähleinrichtung,111,SG10,,,,,,,Muss,,,Messwerterfassung an der Zähleinrichtung,111,SG10,,,,,,,Muss,
-Messwerterfassung an der Zähleinrichtung,112,SG10,CCI,,00097,,,,Muss,,,Messwerterfassung an der Zähleinrichtung,112,SG10,CCI,,00097,,,,Muss,
-Messwerterfassung an der Zähleinrichtung,113,SG10,CCI,7037,00097,E12,,Messwerterfassung an der Zähleinrichtung,X,,,Messwerterfassung an der Zähleinrichtung,113,SG10,CCI,7037,00097,E12,,Messwerterfassung an der Zähleinrichtung,X,
-Messwerterfassung an der Zähleinrichtung,114,SG10,CAV,,00098,,,,Muss,,,Messwerterfassung an der Zähleinrichtung,114,SG10,CAV,,00098,,,,Muss,
-Messwerterfassung an der Zähleinrichtung,115,SG10,CAV,7111,00098,AMR,,fernauslesbare Zähler,X,,,Messwerterfassung an der Zähleinrichtung,115,SG10,CAV,7111,00098,AMR,,fernauslesbare Zähler,X,
-Messwerterfassung an der Zähleinrichtung,116,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,,Messwerterfassung an der Zähleinrichtung,116,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,
-Messdatenregistriergeräted aten,117,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
+Segmentname_FV2310,Segmentgruppe_FV2310,Segment_FV2310,Datenelement_FV2310,Segment ID_FV2310,Code_FV2310,Qualifier_FV2310,Beschreibung_FV2310,Bedingungsausdruck_FV2310,Bedingung_FV2310,Unnamed: 0_FV2310,Änderung,changed_entries,Segmentname_FV2404,Segmentgruppe_FV2404,Segment_FV2404,Datenelement_FV2404,Segment ID_FV2404,Code_FV2404,Qualifier_FV2404,Beschreibung_FV2404,Bedingungsausdruck_FV2404,Bedingung_FV2404,Unnamed: 0_FV2404
+Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,00003,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,00003,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,00003,UTILMD,,Netzanschluss- Stammdaten,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,00003,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,00003,11A,,Ausgabe 2011 - A,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,00003,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,G1.0a,X,,6,,,Nachrichten-Kopfsegment,,UNH,0057,00003,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,,G1.0a,X,,6
+Beginn der Nachricht,,BGM,,00004,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,00004,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8,,,Beginn der Nachricht,,BGM,1001,00004,E03,,Änderungsmeldungen,X,,8
+Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,00005,,,,Muss,,10,,,Nachrichtendatum,,DTM,,00005,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,14
+MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15,,,MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15
+MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,,,MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16
+MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17,,,MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17
+MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18,,,MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18
+MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,19,,,MP-ID Absender,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,19
+Ansprechpartner,SG3,,,,,,,Kann,,20,,,Ansprechpartner,SG3,,,,,,,Kann,,20
+Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21,,,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21
+Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22,,,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22
+Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23,,,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23
+Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24,,,Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24
+Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X,,25,,,Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X,,25
+Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26,,,Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26
+Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,,,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27
+Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,,,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28
+Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,,,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29
+Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,,,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30
+MP-ID Empfänger,SG2,,,,,,,Muss,,31,,,MP-ID Empfänger,SG2,,,,,,,Muss,,31
+MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32,,,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33,,,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33
+MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34,,,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34
+MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35,,,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35
+MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,36
+Vorgang,SG4,,,,,,,Muss,,37,,,Vorgang,SG4,,,,,,,Muss,,37
+Vorgang,SG4,IDE,,00012,,,,Muss,,38,,,Vorgang,SG4,IDE,,00012,,,,Muss,,38
+Vorgang,SG4,IDE,7495,00012,24,,Transaktion,X,,39,,,Vorgang,SG4,IDE,7495,00012,24,,Transaktion,X,,39
+Vorgang,SG4,IDE,7402,00012,,,Vorgangsnummer,X,,40,,,Vorgang,SG4,IDE,7402,00012,,,Vorgangsnummer,X,,40
+Beginn zum,SG4,DTM,,00015,,,,Muss,,41,,,Beginn zum,SG4,DTM,,00015,,,,Muss,,41
+Beginn zum,SG4,DTM,2005,00015,92,,Datum Vertragsbeginn,X,,42,,,Beginn zum,SG4,DTM,2005,00015,92,,Datum Vertragsbeginn,X,,42
+Beginn zum,SG4,DTM,2380,00015,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43,,,Beginn zum,SG4,DTM,2380,00015,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,43
+Beginn zum,SG4,DTM,2379,00015,303,,CCYYMMDDHHMMZZZ,X,,44,,,Beginn zum,SG4,DTM,2379,00015,303,,CCYYMMDDHHMMZZZ,X,,44
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00018,,,,Muss,,45,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,,00018,,,,Muss,,45
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00018,157,,"Gültigkeit, Beginndatum",X,,46,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2005,00018,157,,"Gültigkeit, Beginndatum",X,,46
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,47,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2380,00018,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB2] ∧ [528],[528] Hinweis: Es ist das Datum/ Daten aus der Anfrage zu verwenden,47
+"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,,48,,,"Änderung zum, Gültigkeit, Beginndatum",SG4,DTM,2379,00018,303,,CCYYMMDDHHMMZZZ,X,,48
+Transaktionsgrund,SG4,STS,,00026,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49,,,Transaktionsgrund,SG4,STS,,00026,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,49
+Transaktionsgrund,SG4,STS,9015,00026,7,,Transaktionsgrund,X,,50,,,Transaktionsgrund,SG4,STS,9015,00026,7,,Transaktionsgrund,X,,50
+Transaktionsgrund,SG4,STS,9013,00026,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,51,,,Transaktionsgrund,SG4,STS,9013,00026,ZF5,,Anfrage an MSB mit Abhängigkeiten,X,,51
+Status der Antwort,SG4,STS,,00028,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,52,,,Status der Antwort,SG4,STS,,00028,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4 STS+E01 den identischen Wert enthalten ,52
+Status der Antwort,SG4,STS,9015,00028,E01,,Status der Antwort,X,,53,,,Status der Antwort,SG4,STS,9015,00028,E01,,Status der Antwort,X,,53
+Status der Antwort,SG4,STS,9013,00028,,,Code des Prüfschritts,X,,54,,,Status der Antwort,SG4,STS,9013,00028,,,Code des Prüfschritts,X,,54
+Status der Antwort,SG4,STS,1131,00028,G_0047,,Codeliste Gas Nr. G_0047,X,,55,,,Status der Antwort,SG4,STS,1131,00028,G_0047,,Codeliste Gas Nr. G_0047,X,,55
+Meldepunkt,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,56,,,Meldepunkt,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,56
+Meldepunkt,SG5,LOC,,00035,,,,Muss,,57,,,Meldepunkt,SG5,LOC,,00035,,,,Muss,,57
+Meldepunkt,SG5,LOC,3227,00035,172,,Meldepunkt,X,,58,,,Meldepunkt,SG5,LOC,3227,00035,172,,Meldepunkt,X,,58
+Meldepunkt,SG5,LOC,3225,00035,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,59,,,Meldepunkt,SG5,LOC,3225,00035,,,Identifikator,X [951],[951] Format: Zählpunktbezeichnung,59
+Prüfidentifikator,SG6,,,,,,,Muss,,60,,,Prüfidentifikator,SG6,,,,,,,Muss,,60
+Prüfidentifikator,SG6,RFF,,00037,,,,Muss,,61,,,Prüfidentifikator,SG6,RFF,,00037,,,,Muss,,61
+Prüfidentifikator,SG6,RFF,1153,00037,Z13,,Prüfidentifikator,X,,62,,,Prüfidentifikator,SG6,RFF,1153,00037,Z13,,Prüfidentifikator,X,,62
+Prüfidentifikator,SG6,RFF,1154,,44145,,SDÄ Gas / Antwort auf Anfrage an MSB mit Abhängigkeiten NB an AF,X,,63,,,Prüfidentifikator,SG6,RFF,1154,,44145,,SDÄ Gas / Antwort auf Anfrage an MSB mit Abhängigkeiten NB an AF,X,,63
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,64,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,64
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00038,,,,Muss,,65,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00038,,,,Muss,,65
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00038,TN,,Transaktions- Referenznummer,X,,66,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00038,TN,,Transaktions- Referenznummer,X,,66
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00038,,,Vorgangsnummer,X,,67,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00038,,,Vorgangsnummer,X,,67
+Zähleinrichtungsdaten,SG8,,,,,,,Muss [345] ∧ [530],"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",68,,,Zähleinrichtungsdaten,SG8,,,,,,,Muss [345] ∧ [530],"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",68
+Zähleinrichtungsdaten,SG8,SEQ,,00088,,,,Muss,,69,,,Zähleinrichtungsdaten,SG8,SEQ,,00088,,,,Muss,,69
+Zähleinrichtungsdaten,SG8,SEQ,1229,00088,Z03,,Zähleinrichtungsdaten,X,,70,,,Zähleinrichtungsdaten,SG8,SEQ,1229,00088,Z03,,Zähleinrichtungsdaten,X,,70
+Referenz auf die ID einer Messlokation,SG8,RFF,,00089,,,,Muss,,71,,,Referenz auf die ID einer Messlokation,SG8,RFF,,00089,,,,Muss,,71
+Referenz auf die ID einer Messlokation,SG8,RFF,1153,00089,Z19,,Messlokation,X,,72,,,Referenz auf die ID einer Messlokation,SG8,RFF,1153,00089,Z19,,Messlokation,X,,72
+Referenz auf die ID einer Messlokation,SG8,RFF,1154,00089,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,73,,,Referenz auf die ID einer Messlokation,SG8,RFF,1154,00089,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,73
+Zählertyp,SG10,,,,,,,Muss,,74,,,Zählertyp,SG10,,,,,,,Muss,,74
+Zählertyp,SG10,CCI,,00090,,,,Muss,,75,,,Zählertyp,SG10,CCI,,00090,,,,Muss,,75
+Zählertyp,SG10,CCI,7037,00090,E13,,Zählertyp,X,,76,,,Zählertyp,SG10,CCI,7037,00090,E13,,Zählertyp,X,,76
+Zählertyp,SG10,CAV,,00091,,,,Muss,,77,,,Zählertyp,SG10,CAV,,00091,,,,Muss,,77
+Zählertyp,SG10,CAV,7111,00091,NMG,,neue Messeinrichtung Gas nach MsbG,X,,78,,,Zählertyp,SG10,CAV,7111,00091,NMG,,neue Messeinrichtung Gas nach MsbG,X,,78
+Zählertyp,SG10,CAV,7111,,DKZ,,Drehkolbengaszähler,X,,79,,,Zählertyp,SG10,CAV,7111,,DKZ,,Drehkolbengaszähler,X,,79
+Zählertyp,SG10,CAV,7111,,BGZ,,Balgengaszähler,X,,80,,,Zählertyp,SG10,CAV,7111,,BGZ,,Balgengaszähler,X,,80
+Zählertyp,SG10,CAV,7111,,TRZ,,Turbinenradgaszähler,X,,81,,,Zählertyp,SG10,CAV,7111,,TRZ,,Turbinenradgaszähler,X,,81
+Zählertyp,SG10,CAV,7111,,UGZ,,Ultraschallgaszähler,X,,82,,,Zählertyp,SG10,CAV,7111,,UGZ,,Ultraschallgaszähler,X,,82
+Zählertyp,SG10,CAV,7111,,WGZ,,Wirbelgaszähler,X,,83,,,Zählertyp,SG10,CAV,7111,,WGZ,,Wirbelgaszähler,X,,83
+Zählertyp,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X,,84,,,Zählertyp,SG10,CAV,7111,,EHZ,,elektronischer Haushaltszähler,X,,84
+Zählertyp,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,85,,,Zählertyp,SG10,CAV,7111,,IVA,,Individuelle Abstimmung (Sonderausstattung),X,,85
+Zählergröße,SG10,CAV,,00092,,,,Muss,,86,,,Zählergröße,SG10,CAV,,00092,,,,Muss,,86
+Zählergröße,SG10,CAV,7110,00092,G10,,Gaszähler G10,X,,87,,,Zählergröße,SG10,CAV,7110,00092,G10,,Gaszähler G10,X,,87
+Zählergröße,SG10,CAV,7110,,G100,,Gaszähler G100,X,,88,,,Zählergröße,SG10,CAV,7110,,G100,,Gaszähler G100,X,,88
+Zählergröße,SG10,CAV,7110,,G1000,,Gaszähler G1000,X,,89,,,Zählergröße,SG10,CAV,7110,,G1000,,Gaszähler G1000,X,,89
+Zählergröße,SG10,CAV,7110,,G10000,,Gaszähler G10000,X,,90,,,Zählergröße,SG10,CAV,7110,,G10000,,Gaszähler G10000,X,,90
+Zählergröße,SG10,CAV,7110,,G12500,,Gaszähler G12500,X,,91,,,Zählergröße,SG10,CAV,7110,,G12500,,Gaszähler G12500,X,,91
+Zählergröße,SG10,CAV,7110,,G16,,Gaszähler G16,X,,92,,,Zählergröße,SG10,CAV,7110,,G16,,Gaszähler G16,X,,92
+Zählergröße,SG10,CAV,7110,,G160,,Gaszähler G160,X,,93,,,Zählergröße,SG10,CAV,7110,,G160,,Gaszähler G160,X,,93
+Zählergröße,SG10,CAV,7110,,G1600,,Gaszähler G1600,X,,94,,,Zählergröße,SG10,CAV,7110,,G1600,,Gaszähler G1600,X,,94
+Zählergröße,SG10,CAV,7110,,G16000 G2.5,,Gaszähler G16000 Gaszähler G2.5,XX,,95,,,Zählergröße,SG10,CAV,7110,,G16000 G2.5,,Gaszähler G16000 Gaszähler G2.5,XX,,95
+Zählergröße,SG10,CAV,7110,,G25,,Gaszähler G25,X,,96,,,Zählergröße,SG10,CAV,7110,,G25,,Gaszähler G25,X,,96
+Zählergröße,SG10,CAV,7110,,G250,,Gaszähler G250,X,,97,,,Zählergröße,SG10,CAV,7110,,G250,,Gaszähler G250,X,,97
+Zählergröße,SG10,CAV,7110,,G2500,,Gaszähler G2500,X,,98,,,Zählergröße,SG10,CAV,7110,,G2500,,Gaszähler G2500,X,,98
+Zählergröße,SG10,CAV,7110,,G350,,Gaszähler G350,X,,99,,,Zählergröße,SG10,CAV,7110,,G350,,Gaszähler G350,X,,99
+Zählergröße,SG10,CAV,7110,,G4,,Gaszähler G4,X,,100,,,Zählergröße,SG10,CAV,7110,,G4,,Gaszähler G4,X,,100
+Zählergröße,SG10,CAV,7110,,G40,,Gaszähler G40,X,,101,,,Zählergröße,SG10,CAV,7110,,G40,,Gaszähler G40,X,,101
+Zählergröße,SG10,CAV,7110,,G400,,Gaszähler G400,X,,102,,,Zählergröße,SG10,CAV,7110,,G400,,Gaszähler G400,X,,102
+Zählergröße,SG10,CAV,7110,,G4000,,Gaszähler G4000,X,,103,,,Zählergröße,SG10,CAV,7110,,G4000,,Gaszähler G4000,X,,103
+Zählergröße,SG10,CAV,7110,,G6,,Gaszähler G6,X,,104,,,Zählergröße,SG10,CAV,7110,,G6,,Gaszähler G6,X,,104
+Zählergröße,SG10,CAV,7110,,G65,,Gaszähler G65,X,,105,,,Zählergröße,SG10,CAV,7110,,G65,,Gaszähler G65,X,,105
+Zählergröße,SG10,CAV,7110,,G650,,Gaszähler G650,X,,106,,,Zählergröße,SG10,CAV,7110,,G650,,Gaszähler G650,X,,106
+Zählergröße,SG10,CAV,7110,,G6500,,Gaszähler G6500,X,,107,,,Zählergröße,SG10,CAV,7110,,G6500,,Gaszähler G6500,X,,107
+Identifikation / Nummer des Gerätes,SG10,CAV,,00093,,,,Muss,,108,,,Identifikation / Nummer des Gerätes,SG10,CAV,,00093,,,,Muss,,108
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,00093,Z30,,Gerätenummer,X,,109,,,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00093,Z30,,Gerätenummer,X,,109
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,00093,,,Gerätenummer,X,,110,,,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00093,,,Gerätenummer,X,,110
+Messwerterfassung an der Zähleinrichtung,SG10,,,,,,,Muss,,111,,,Messwerterfassung an der Zähleinrichtung,SG10,,,,,,,Muss,,111
+Messwerterfassung an der Zähleinrichtung,SG10,CCI,,00097,,,,Muss,,112,,,Messwerterfassung an der Zähleinrichtung,SG10,CCI,,00097,,,,Muss,,112
+Messwerterfassung an der Zähleinrichtung,SG10,CCI,7037,00097,E12,,Messwerterfassung an der Zähleinrichtung,X,,113,,,Messwerterfassung an der Zähleinrichtung,SG10,CCI,7037,00097,E12,,Messwerterfassung an der Zähleinrichtung,X,,113
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,,00098,,,,Muss,,114,,,Messwerterfassung an der Zähleinrichtung,SG10,CAV,,00098,,,,Muss,,114
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,00098,AMR,,fernauslesbare Zähler,X,,115,,,Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,00098,AMR,,fernauslesbare Zähler,X,,115
+Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,116,,,Messwerterfassung an der Zähleinrichtung,SG10,CAV,7111,,MMR,,manuell ausgelesene Zähler,X,,116
+Messdatenregistriergeräted aten,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",,Messdatenregistriergeräted aten,117,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",117,,,Messdatenregistriergeräted aten,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind"
-Messdatenregistriergeräted aten,118,SG8,SEQ,,00099,,,,Muss,,,Messdatenregistriergeräted aten,118,SG8,SEQ,,00099,,,,Muss,
-Messdatenregistriergeräted aten,119,SG8,SEQ,1229,00099,Z50,,Messdatenregistriergerät edaten,X,,,Messdatenregistriergeräted aten,119,SG8,SEQ,1229,00099,Z50,,Messdatenregistriergerät edaten,X,
-Messdatenregistriergerät,120,SG10,,,,,,,Muss,,,Messdatenregistriergerät,120,SG10,,,,,,,Muss,
-Messdatenregistriergerät,121,SG10,CCI,,00101,,,,Muss,,,Messdatenregistriergerät,121,SG10,CCI,,00101,,,,Muss,
-Messdatenregistriergerät,122,SG10,CCI,7037,00101,E13,,Zählertyp,X,,,Messdatenregistriergerät,122,SG10,CCI,7037,00101,E13,,Zählertyp,X,
-Identifikation / Nummer des Gerätes,123,SG10,CAV,,00102,,,,Muss,,,Identifikation / Nummer des Gerätes,123,SG10,CAV,,00102,,,,Muss,
-Identifikation / Nummer des Gerätes,124,SG10,CAV,7111,00102,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,124,SG10,CAV,7111,00102,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,125,SG10,CAV,7110,00102,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,125,SG10,CAV,7110,00102,,,Gerätenummer,X,
-Mengenumwerterdaten,126,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",117
+Messdatenregistriergeräted aten,SG8,SEQ,,00099,,,,Muss,,118,,,Messdatenregistriergeräted aten,SG8,SEQ,,00099,,,,Muss,,118
+Messdatenregistriergeräted aten,SG8,SEQ,1229,00099,Z50,,Messdatenregistriergerät edaten,X,,119,,,Messdatenregistriergeräted aten,SG8,SEQ,1229,00099,Z50,,Messdatenregistriergerät edaten,X,,119
+Messdatenregistriergerät,SG10,,,,,,,Muss,,120,,,Messdatenregistriergerät,SG10,,,,,,,Muss,,120
+Messdatenregistriergerät,SG10,CCI,,00101,,,,Muss,,121,,,Messdatenregistriergerät,SG10,CCI,,00101,,,,Muss,,121
+Messdatenregistriergerät,SG10,CCI,7037,00101,E13,,Zählertyp,X,,122,,,Messdatenregistriergerät,SG10,CCI,7037,00101,E13,,Zählertyp,X,,122
+Identifikation / Nummer des Gerätes,SG10,CAV,,00102,,,,Muss,,123,,,Identifikation / Nummer des Gerätes,SG10,CAV,,00102,,,,Muss,,123
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,00102,Z30,,Gerätenummer,X,,124,,,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00102,Z30,,Gerätenummer,X,,124
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,00102,,,Gerätenummer,X,,125,,,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00102,,,Gerätenummer,X,,125
+Mengenumwerterdaten,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",,Mengenumwerterdaten,126,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",126,,,Mengenumwerterdaten,SG8,,,,,,,Soll [133] ∧ [345] ∧ [530],"[133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
-[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind"
-Mengenumwerterdaten,127,SG8,SEQ,,00104,,,,Muss,,,Mengenumwerterdaten,127,SG8,SEQ,,00104,,,,Muss,
-Mengenumwerterdaten,128,SG8,SEQ,1229,00104,Z09,,Mengenumwerter-Daten,X,,,Mengenumwerterdaten,128,SG8,SEQ,1229,00104,Z09,,Mengenumwerter-Daten,X,
-Referenz auf die Gerätenummer,129,SG8,RFF,,00105,,,,Muss,,,Referenz auf die Gerätenummer,129,SG8,RFF,,00105,,,,Muss,
-Referenz auf die Gerätenummer,130,SG8,RFF,1153,00105,MG,,Gerätenummer des Zählers,X,,,Referenz auf die Gerätenummer,130,SG8,RFF,1153,00105,MG,,Gerätenummer des Zählers,X,
-Referenz auf die Gerätenummer,131,SG8,RFF,1154,00105,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,131,SG8,RFF,1154,00105,,,Gerätenummer,X,
-Mengenumwerter,132,SG10,,,,,,,Muss,,,Mengenumwerter,132,SG10,,,,,,,Muss,
-Mengenumwerter,133,SG10,CCI,,00106,,,,Muss,,,Mengenumwerter,133,SG10,CCI,,00106,,,,Muss,
-Mengenumwerter,134,SG10,CCI,7037,00106,Z64,,Mengenumwerter,X,,,Mengenumwerter,134,SG10,CCI,7037,00106,Z64,,Mengenumwerter,X,
-Identifikation / Nummer des Gerätes,135,SG10,CAV,,00107,,,,Muss,,,Identifikation / Nummer des Gerätes,135,SG10,CAV,,00107,,,,Muss,
-Identifikation / Nummer des Gerätes,136,SG10,CAV,7111,00107,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,136,SG10,CAV,7111,00107,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,137,SG10,CAV,7110,00107,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,137,SG10,CAV,7110,00107,,,Gerätenummer,X,
-Mengenumwertertyp,138,SG10,CAV,,00108,,,,Muss,,,Mengenumwertertyp,138,SG10,CAV,,00108,,,,Muss,
-Mengenumwertertyp,139,SG10,CAV,7111,00108,DMU,,Dichtemengenumwerter,X,,,Mengenumwertertyp,139,SG10,CAV,7111,00108,DMU,,Dichtemengenumwerter,X,
-Mengenumwertertyp,140,SG10,CAV,7111,,TMU,,Temperaturmengenumw erter,X,,,Mengenumwertertyp,140,SG10,CAV,7111,,TMU,,Temperaturmengenumw erter,X,
-Mengenumwertertyp,141,SG10,CAV,7111,,ZMU,,Zustandsmengenumwert er,X,,,Mengenumwertertyp,141,SG10,CAV,7111,,ZMU,,Zustandsmengenumwert er,X,
-OBIS-Daten der Zähleinrichtung / Mengenumwerter,142,SG8,,,,,,,Muss [345] ∧ [530] ∧ ([2287] ∨ [2353]),"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
+[530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind",126
+Mengenumwerterdaten,SG8,SEQ,,00104,,,,Muss,,127,,,Mengenumwerterdaten,SG8,SEQ,,00104,,,,Muss,,127
+Mengenumwerterdaten,SG8,SEQ,1229,00104,Z09,,Mengenumwerter-Daten,X,,128,,,Mengenumwerterdaten,SG8,SEQ,1229,00104,Z09,,Mengenumwerter-Daten,X,,128
+Referenz auf die Gerätenummer,SG8,RFF,,00105,,,,Muss,,129,,,Referenz auf die Gerätenummer,SG8,RFF,,00105,,,,Muss,,129
+Referenz auf die Gerätenummer,SG8,RFF,1153,00105,MG,,Gerätenummer des Zählers,X,,130,,,Referenz auf die Gerätenummer,SG8,RFF,1153,00105,MG,,Gerätenummer des Zählers,X,,130
+Referenz auf die Gerätenummer,SG8,RFF,1154,00105,,,Gerätenummer,X,,131,,,Referenz auf die Gerätenummer,SG8,RFF,1154,00105,,,Gerätenummer,X,,131
+Mengenumwerter,SG10,,,,,,,Muss,,132,,,Mengenumwerter,SG10,,,,,,,Muss,,132
+Mengenumwerter,SG10,CCI,,00106,,,,Muss,,133,,,Mengenumwerter,SG10,CCI,,00106,,,,Muss,,133
+Mengenumwerter,SG10,CCI,7037,00106,Z64,,Mengenumwerter,X,,134,,,Mengenumwerter,SG10,CCI,7037,00106,Z64,,Mengenumwerter,X,,134
+Identifikation / Nummer des Gerätes,SG10,CAV,,00107,,,,Muss,,135,,,Identifikation / Nummer des Gerätes,SG10,CAV,,00107,,,,Muss,,135
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,00107,Z30,,Gerätenummer,X,,136,,,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00107,Z30,,Gerätenummer,X,,136
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,00107,,,Gerätenummer,X,,137,,,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00107,,,Gerätenummer,X,,137
+Mengenumwertertyp,SG10,CAV,,00108,,,,Muss,,138,,,Mengenumwertertyp,SG10,CAV,,00108,,,,Muss,,138
+Mengenumwertertyp,SG10,CAV,7111,00108,DMU,,Dichtemengenumwerter,X,,139,,,Mengenumwertertyp,SG10,CAV,7111,00108,DMU,,Dichtemengenumwerter,X,,139
+Mengenumwertertyp,SG10,CAV,7111,,TMU,,Temperaturmengenumw erter,X,,140,,,Mengenumwertertyp,SG10,CAV,7111,,TMU,,Temperaturmengenumw erter,X,,140
+Mengenumwertertyp,SG10,CAV,7111,,ZMU,,Zustandsmengenumwert er,X,,141,,,Mengenumwertertyp,SG10,CAV,7111,,ZMU,,Zustandsmengenumwert er,X,,141
+OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,,,,,,,Muss [345] ∧ [530] ∧ ([2287] ∨ [2353]),"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
 [530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind
 [2287] Für jede SEQ+Z03 (Zähleinrichtungsdaten) mindestens einmal anzugeben
-[2353] Für jede SEQ+Z09 (Mengenumwerter- Daten) mindestens einmal anzugeben",,OBIS-Daten der Zähleinrichtung / Mengenumwerter,142,SG8,,,,,,,Muss [345] ∧ [530] ∧ ([2287] ∨ [2353]),"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
+[2353] Für jede SEQ+Z09 (Mengenumwerter- Daten) mindestens einmal anzugeben",142,,,OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,,,,,,,Muss [345] ∧ [530] ∧ ([2287] ∨ [2353]),"[345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
 [530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind
 [2287] Für jede SEQ+Z03 (Zähleinrichtungsdaten) mindestens einmal anzugeben
-[2353] Für jede SEQ+Z09 (Mengenumwerter- Daten) mindestens einmal anzugeben"
-OBIS-Daten der Zähleinrichtung / Mengenumwerter,143,SG8,SEQ,,00110,,,,Muss,,,OBIS-Daten der Zähleinrichtung / Mengenumwerter,143,SG8,SEQ,,00110,,,,Muss,
-OBIS-Daten der Zähleinrichtung / Mengenumwerter,144,SG8,SEQ,1229,00110,Z20,,OBIS-Daten der Zähleinrichtung,X,,,OBIS-Daten der Zähleinrichtung / Mengenumwerter,144,SG8,SEQ,1229,00110,Z20,,OBIS-Daten der Zähleinrichtung,X,
-Referenz auf die Gerätenummer,145,SG8,RFF,,00111,,,,Muss [655],[655] Hinweis: Wenn ein Zähler an einen Mengenumwerter angeschlossen ist werden an dem Zähler keine OBIS-Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom Mengenumwerter  ,,Referenz auf die Gerätenummer,145,SG8,RFF,,00111,,,,Muss [655],[655] Hinweis: Wenn ein Zähler an einen Mengenumwerter angeschlossen ist werden an dem Zähler keine OBIS-Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom Mengenumwerter  
-Referenz auf die Gerätenummer,146,SG8,RFF,1153,00111,MG,,Gerätenummer des Zählers,X [442],,,Referenz auf die Gerätenummer,146,SG8,RFF,1153,00111,MG,,Gerätenummer des Zählers,X [442],
-Referenz auf die Gerätenummer,147,SG8,RFF,1153,,Z11,,Gerätenummer des Mengenumwerters,X,[442] Wenn in keinem SG8+SEQ+Z09 Mengenumwerterdaten das RFF+MG (Referenz auf die Gerätenummer) der in diesem RFF DE1154 genannte Gerätenummer des Zählers vorhanden ist,,Referenz auf die Gerätenummer,147,SG8,RFF,1153,,Z11,,Gerätenummer des Mengenumwerters,X,[442] Wenn in keinem SG8+SEQ+Z09 Mengenumwerterdaten das RFF+MG (Referenz auf die Gerätenummer) der in diesem RFF DE1154 genannte Gerätenummer des Zählers vorhanden ist
-Referenz auf die Gerätenummer,148,SG8,RFF,1154,00111,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,148,SG8,RFF,1154,00111,,,Gerätenummer,X,
-Referenz auf die ID einer Messlokation,149,SG8,RFF,,00112,,,,Muss,,,Referenz auf die ID einer Messlokation,149,SG8,RFF,,00112,,,,Muss,
-Referenz auf die ID einer Messlokation,150,SG8,RFF,1153,00112,Z19,,Messlokation,X,,,Referenz auf die ID einer Messlokation,150,SG8,RFF,1153,00112,Z19,,Messlokation,X,
-Referenz auf die ID einer Messlokation,151,SG8,RFF,1154,00112,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf die ID einer Messlokation,151,SG8,RFF,1154,00112,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,152,SG8,PIA,,00113,,,,Muss,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,152,SG8,PIA,,00113,,,,Muss,
-OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,153,SG8,PIA,4347,00113,5,,Produktidentifikation,X,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,153,SG8,PIA,4347,00113,5,,Produktidentifikation,X,
-OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,154,SG8,PIA,7140,00113,,,OBIS-Kennzahl der Zähleinrichtung,X [324],"[324] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS Kennzahlen Kap. 4. anzugeben welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.2 des Dokumentes ""Codeliste der Konfigurationen""",,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,154,SG8,PIA,7140,00113,,,OBIS-Kennzahl der Zähleinrichtung,X [324],"[324] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS Kennzahlen Kap. 4. anzugeben welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.2 des Dokumentes ""Codeliste der Konfigurationen"""
-OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,155,SG8,PIA,7143,00113,SRW,,OBIS-Kennzahl,X,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,155,SG8,PIA,7143,00113,SRW,,OBIS-Kennzahl,X,
-Wertegranularität,156,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,,Wertegranularität,156,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden
-Wertegranularität,157,SG10,CCI,,00114,,,,Muss,,,Wertegranularität,157,SG10,CCI,,00114,,,,Muss,
-Wertegranularität,158,SG10,CCI,7037,00114,ZE4,,Wertegranularität,X,,,Wertegranularität,158,SG10,CCI,7037,00114,ZE4,,Wertegranularität,X,
-Wertegranularität,159,SG10,CAV,,00115,,,,Muss,,,Wertegranularität,159,SG10,CAV,,00115,,,,Muss,
-Wertegranularität,160,SG10,CAV,7111,00115,ZD9,,Jährlich,X,,,Wertegranularität,160,SG10,CAV,7111,00115,ZD9,,Jährlich,X,
-Wertegranularität,161,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,,Wertegranularität,161,SG10,CAV,7111,,ZE8,,Halbjährlich,X,
-Wertegranularität,162,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,,Wertegranularität,162,SG10,CAV,7111,,ZE9,,Quartalsweise,X,
-Wertegranularität,163,SG10,CAV,7111,,ZB7,,Monatlich,X,,,Wertegranularität,163,SG10,CAV,7111,,ZB7,,Monatlich,X,
-Vor- und Nachkommastellen des Zählwerks,164,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,,Vor- und Nachkommastellen des Zählwerks,164,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden
-Vor- und Nachkommastellen des Zählwerks,165,SG10,CCI,,00116,,,,Muss,,,Vor- und Nachkommastellen des Zählwerks,165,SG10,CCI,,00116,,,,Muss,
-Vor- und Nachkommastellen des Zählwerks,166,SG10,CCI,7059,00116,11,,Produkt,X,,,Vor- und Nachkommastellen des Zählwerks,166,SG10,CCI,7059,00116,11,,Produkt,X,
-Vor- und Nachkommastellen des Zählwerks,167,SG10,CCI,7037,00116,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,,Vor- und Nachkommastellen des Zählwerks,167,SG10,CCI,7037,00116,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,
-Vor- und Nachkommastellen des Zählwerks,168,SG10,CAV,,00117,,,,Muss,,,Vor- und Nachkommastellen des Zählwerks,168,SG10,CAV,,00117,,,,Muss,
-Vor- und Nachkommastellen des Zählwerks,169,SG10,CAV,7110,00117,,,Angabe der Vorkommastelle,X,,,Vor- und Nachkommastellen des Zählwerks,169,SG10,CAV,7110,00117,,,Angabe der Vorkommastelle,X,
-Vor- und Nachkommastellen des Zählwerks,170,SG10,CAV,7110,00117,,,Angabe der Nachkommastelle,X,,,Vor- und Nachkommastellen des Zählwerks,170,SG10,CAV,7110,00117,,,Angabe der Nachkommastelle,X,
-Bezeichnung des Zählwerks auf dem Gerät,171,SG10,,,,,,,Muss [4] ∧ [123] ∧ [274],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[2353] Für jede SEQ+Z09 (Mengenumwerter- Daten) mindestens einmal anzugeben",142
+OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,SEQ,,00110,,,,Muss,,143,,,OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,SEQ,,00110,,,,Muss,,143
+OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,SEQ,1229,00110,Z20,,OBIS-Daten der Zähleinrichtung,X,,144,,,OBIS-Daten der Zähleinrichtung / Mengenumwerter,SG8,SEQ,1229,00110,Z20,,OBIS-Daten der Zähleinrichtung,X,,144
+Referenz auf die Gerätenummer,SG8,RFF,,00111,,,,Muss [655],[655] Hinweis: Wenn ein Zähler an einen Mengenumwerter angeschlossen ist werden an dem Zähler keine OBIS-Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom Mengenumwerter  ,145,,,Referenz auf die Gerätenummer,SG8,RFF,,00111,,,,Muss [655],[655] Hinweis: Wenn ein Zähler an einen Mengenumwerter angeschlossen ist werden an dem Zähler keine OBIS-Kennzahlen angegeben Hier gibt es nur OBIS Kennzahlen vom Mengenumwerter  ,145
+Referenz auf die Gerätenummer,SG8,RFF,1153,00111,MG,,Gerätenummer des Zählers,X [442],,146,,,Referenz auf die Gerätenummer,SG8,RFF,1153,00111,MG,,Gerätenummer des Zählers,X [442],,146
+Referenz auf die Gerätenummer,SG8,RFF,1153,,Z11,,Gerätenummer des Mengenumwerters,X,[442] Wenn in keinem SG8+SEQ+Z09 Mengenumwerterdaten das RFF+MG (Referenz auf die Gerätenummer) der in diesem RFF DE1154 genannte Gerätenummer des Zählers vorhanden ist,147,,,Referenz auf die Gerätenummer,SG8,RFF,1153,,Z11,,Gerätenummer des Mengenumwerters,X,[442] Wenn in keinem SG8+SEQ+Z09 Mengenumwerterdaten das RFF+MG (Referenz auf die Gerätenummer) der in diesem RFF DE1154 genannte Gerätenummer des Zählers vorhanden ist,147
+Referenz auf die Gerätenummer,SG8,RFF,1154,00111,,,Gerätenummer,X,,148,,,Referenz auf die Gerätenummer,SG8,RFF,1154,00111,,,Gerätenummer,X,,148
+Referenz auf die ID einer Messlokation,SG8,RFF,,00112,,,,Muss,,149,,,Referenz auf die ID einer Messlokation,SG8,RFF,,00112,,,,Muss,,149
+Referenz auf die ID einer Messlokation,SG8,RFF,1153,00112,Z19,,Messlokation,X,,150,,,Referenz auf die ID einer Messlokation,SG8,RFF,1153,00112,Z19,,Messlokation,X,,150
+Referenz auf die ID einer Messlokation,SG8,RFF,1154,00112,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,151,,,Referenz auf die ID einer Messlokation,SG8,RFF,1154,00112,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,151
+OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,,00113,,,,Muss,,152,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,,00113,,,,Muss,,152
+OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,4347,00113,5,,Produktidentifikation,X,,153,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,4347,00113,5,,Produktidentifikation,X,,153
+OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,7140,00113,,,OBIS-Kennzahl der Zähleinrichtung,X [324],"[324] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS Kennzahlen Kap. 4. anzugeben welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.2 des Dokumentes ""Codeliste der Konfigurationen""",154,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,7140,00113,,,OBIS-Kennzahl der Zähleinrichtung,X [324],"[324] Es sind alle OBIS- Kennzahlen gem. EDI@Energy Codeliste der OBIS Kennzahlen Kap. 4. anzugeben welche an der Zähleinrichtung genutzt werden. Der Mindestumfang der OBIS-Kennzahlen ergibt sich aus den genannten Messprodukt-Codes dem Kap. 5.2 des Dokumentes ""Codeliste der Konfigurationen""",154
+OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,7143,00113,SRW,,OBIS-Kennzahl,X,,155,,,OBIS-Kennzahl der Zähleinrichtung / Mengenumwerter,SG8,PIA,7143,00113,SRW,,OBIS-Kennzahl,X,,155
+Wertegranularität,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,156,,,Wertegranularität,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,156
+Wertegranularität,SG10,CCI,,00114,,,,Muss,,157,,,Wertegranularität,SG10,CCI,,00114,,,,Muss,,157
+Wertegranularität,SG10,CCI,7037,00114,ZE4,,Wertegranularität,X,,158,,,Wertegranularität,SG10,CCI,7037,00114,ZE4,,Wertegranularität,X,,158
+Wertegranularität,SG10,CAV,,00115,,,,Muss,,159,,,Wertegranularität,SG10,CAV,,00115,,,,Muss,,159
+Wertegranularität,SG10,CAV,7111,00115,ZD9,,Jährlich,X,,160,,,Wertegranularität,SG10,CAV,7111,00115,ZD9,,Jährlich,X,,160
+Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,161,,,Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,161
+Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,162,,,Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,162
+Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,163,,,Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,163
+Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,164,,,Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss [274],[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden,164
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00116,,,,Muss,,165,,,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00116,,,,Muss,,165
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00116,11,,Produkt,X,,166,,,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00116,11,,Produkt,X,,166
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00116,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,167,,,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00116,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,167
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00117,,,,Muss,,168,,,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00117,,,,Muss,,168
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00117,,,Angabe der Vorkommastelle,X,,169,,,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00117,,,Angabe der Vorkommastelle,X,,169
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00117,,,Angabe der Nachkommastelle,X,,170,,,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00117,,,Angabe der Nachkommastelle,X,,170
+Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss [4] ∧ [123] ∧ [274],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [123] Wenn noch mindestens eine weitere SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) mit dem SG8 RFF+MG / Z11 (Gerätenummer des Zählers / Mengenumwerters) auf die gleiche Identifikation/Nummer des Gerätes referenziert
-[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden",,Bezeichnung des Zählwerks auf dem Gerät,171,SG10,,,,,,,Muss [4] ∧ [123] ∧ [274],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden",171,,,Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss [4] ∧ [123] ∧ [274],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [123] Wenn noch mindestens eine weitere SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) mit dem SG8 RFF+MG / Z11 (Gerätenummer des Zählers / Mengenumwerters) auf die gleiche Identifikation/Nummer des Gerätes referenziert
-[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden"
-Bezeichnung des Zählwerks auf dem Gerät,172,SG10,CCI,,00118,,,,Muss,,,Bezeichnung des Zählwerks auf dem Gerät,172,SG10,CCI,,00118,,,,Muss,
-Bezeichnung des Zählwerks auf dem Gerät,173,SG10,CCI,7037,00118,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,,Bezeichnung des Zählwerks auf dem Gerät,173,SG10,CCI,7037,00118,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,
-Bezeichnung des Zählwerks auf dem Gerät,174,SG10,CCI,7036,00118,,,Bezeichnung des Zählwerks auf dem Gerät,X,,,Bezeichnung des Zählwerks auf dem Gerät,174,SG10,CCI,7036,00118,,,Bezeichnung des Zählwerks auf dem Gerät,X,
-Kommunikationseinrichtun gsdaten,175,SG8,,,,,,,Muss [2119] Soll [4] ∧ [133] ∧ [345] ∧ [530],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[274] Wenn in derselben SG8 SEQ+Z20 (OBIS- Daten der Zähleinrichtung / Mengenumwerter) das PIA+5+7-b?:3.0.0 / 7- b?:6.0.0 / 7-b?:3.1.0 / 7-b?:6.1.0 / 7-b?:3.2.0 / 7-b?:6.2.0 / 7-b?:13.2.0 / 7-b?:16.2.0 / 7-b?:1.0.0 / 7-b?:2.0.0 / 7-b?:4.0.0 / 7-b?:5.0.0 / 7-b?:11.2.0 / 7-b?:12.2.0 / 7-b?:14.2.0 / 7-b?:15.2.0 vorhanden",171
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00118,,,,Muss,,172,,,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00118,,,,Muss,,172
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00118,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,173,,,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00118,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,173
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00118,,,Bezeichnung des Zählwerks auf dem Gerät,X,,174,,,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00118,,,Bezeichnung des Zählwerks auf dem Gerät,X,,174
+Kommunikationseinrichtun gsdaten,SG8,,,,,,,Muss [2119] Soll [4] ∧ [133] ∧ [345] ∧ [530],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
 [530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind
-[2119] Je SG8 SEQ+Z13 (Smartmeter-Gateway) ist genau einmal die Segmentgruppe anzugeben",,Kommunikationseinrichtun gsdaten,175,SG8,,,,,,,Muss [2119] Soll [4] ∧ [133] ∧ [345] ∧ [530],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[2119] Je SG8 SEQ+Z13 (Smartmeter-Gateway) ist genau einmal die Segmentgruppe anzugeben",175,,,Kommunikationseinrichtun gsdaten,SG8,,,,,,,Muss [2119] Soll [4] ∧ [133] ∧ [345] ∧ [530],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [133] Wenn an der übermittelten Marktlokation / Messlokation vorhanden
 [345] Wenn 33-stelliger Meldepunkt im SG5 LOC+172 (Meldepunkt) vorhanden
 [530] Hinweis: Es sind alle an dem Meldepunkt vorhandenen Daten, die mit dieser Segmentgruppe übermittelt werden und zum Datum „Änderung zum“ Gültigkeit haben, anzugeben. Dies kann zur Folge haben, dass Segmentgruppen bzw. Segmente zu wiederholen sind
-[2119] Je SG8 SEQ+Z13 (Smartmeter-Gateway) ist genau einmal die Segmentgruppe anzugeben"
-Kommunikationseinrichtun gsdaten,176,SG8,SEQ,,00119,,,,Muss,,,Kommunikationseinrichtun gsdaten,176,SG8,SEQ,,00119,,,,Muss,
-Kommunikationseinrichtun gsdaten,177,SG8,SEQ,1229,00119,Z05,,Kommunikationseinricht ungsdaten,X,,,Kommunikationseinrichtun gsdaten,177,SG8,SEQ,1229,00119,Z05,,Kommunikationseinricht ungsdaten,X,
-Referenz auf die Gerätenummer,178,SG8,RFF,,00120,,,,Muss,,,Referenz auf die Gerätenummer,178,SG8,RFF,,00120,,,,Muss,
-Referenz auf die Gerätenummer,179,SG8,RFF,1153,00120,MG,,Gerätenummer des Zählers,X,,,Referenz auf die Gerätenummer,179,SG8,RFF,1153,00120,MG,,Gerätenummer des Zählers,X,
-Referenz auf die Gerätenummer,180,SG8,RFF,1154,00120,,,Gerätenummer,X,,,Referenz auf die Gerätenummer,180,SG8,RFF,1154,00120,,,Gerätenummer,X,
-Kommunikationseinrichtun g,181,SG10,,,,,,,Muss,,,Kommunikationseinrichtun g,181,SG10,,,,,,,Muss,
-Kommunikationseinrichtun g,182,SG10,CCI,,00121,,,,Muss,,,Kommunikationseinrichtun g,182,SG10,CCI,,00121,,,,Muss,
-Kommunikationseinrichtun g,183,SG10,CCI,7037,00121,Z26,,Kommunikationseinricht ung,X,,,Kommunikationseinrichtun g,183,SG10,CCI,7037,00121,Z26,,Kommunikationseinricht ung,X,
-Identifikation / Nummer des Gerätes,184,SG10,CAV,,00122,,,,Muss,,,Identifikation / Nummer des Gerätes,184,SG10,CAV,,00122,,,,Muss,
-Identifikation / Nummer des Gerätes,185,SG10,CAV,7111,00122,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,185,SG10,CAV,7111,00122,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,186,SG10,CAV,7110,00122,,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,186,SG10,CAV,7110,00122,,,Gerätenummer,X,
-Kommunikationseinrichtun gstyp,187,SG10,CAV,,00123,,,,Muss,,,Kommunikationseinrichtun gstyp,187,SG10,CAV,,00123,,,,Muss,
-Kommunikationseinrichtun gstyp,188,SG10,CAV,7111,00123,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,,Kommunikationseinrichtun gstyp,188,SG10,CAV,7111,00123,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,
-Kommunikationseinrichtun gstyp,189,SG10,CAV,7111,,ETH,,Ethernet-Kom.-Einricht. LAN/WLAN,X,,,Kommunikationseinrichtun gstyp,189,SG10,CAV,7111,,ETH,,Ethernet-Kom.-Einricht. LAN/WLAN,X,
-Kommunikationseinrichtun gstyp,190,SG10,CAV,7111,,PLC,,PLC-Kom.-Einrichtung,X,,,Kommunikationseinrichtun gstyp,190,SG10,CAV,7111,,PLC,,PLC-Kom.-Einrichtung,X,
-Kommunikationseinrichtun gstyp,191,SG10,CAV,7111,,PST,,Festnetz-Kom.-Einricht. TAE,X,,,Kommunikationseinrichtun gstyp,191,SG10,CAV,7111,,PST,,Festnetz-Kom.-Einricht. TAE,X,
-Kommunikationseinrichtun gstyp,192,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,,Kommunikationseinrichtun gstyp,192,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,
-Kommunikationseinrichtun gstyp,193,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,,Kommunikationseinrichtun gstyp,193,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,
-Smartmeter-Gateway,194,SG8,,,,,,,Soll [130],[130] Wenn an Messlokation vorhanden,,Smartmeter-Gateway,194,SG8,,,,,,,Soll [130],[130] Wenn an Messlokation vorhanden
-Smartmeter-Gateway,195,SG8,SEQ,,00124,,,,Muss,,,Smartmeter-Gateway,195,SG8,SEQ,,00124,,,,Muss,
-Smartmeter-Gateway,196,SG8,SEQ,1229,00124,Z13,,Smartmeter-Gateway,X,,,Smartmeter-Gateway,196,SG8,SEQ,1229,00124,Z13,,Smartmeter-Gateway,X,
-Smartmeter-Gateway,197,SG10,,,,,,,Muss,,,Smartmeter-Gateway,197,SG10,,,,,,,Muss,
-Smartmeter-Gateway,198,SG10,CCI,,00125,,,,Muss,,,Smartmeter-Gateway,198,SG10,CCI,,00125,,,,Muss,
-Smartmeter-Gateway,199,SG10,CCI,7037,00125,Z75,,Smartmeter-Gateway,X,,,Smartmeter-Gateway,199,SG10,CCI,7037,00125,Z75,,Smartmeter-Gateway,X,
-Identifikation / Nummer des Gerätes,200,SG10,CAV,,00126,,,,Muss,,,Identifikation / Nummer des Gerätes,200,SG10,CAV,,00126,,,,Muss,
-Identifikation / Nummer des Gerätes,201,SG10,CAV,7111,00126,Z30,,Gerätenummer,X,,,Identifikation / Nummer des Gerätes,201,SG10,CAV,7111,00126,Z30,,Gerätenummer,X,
-Identifikation / Nummer des Gerätes,202,SG10,CAV,7110,00126,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,,Identifikation / Nummer des Gerätes,202,SG10,CAV,7110,00126,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5
-Nachrichten-Endesegment,203,,UNT,,00149,,,,Muss,,,Nachrichten-Endesegment,203,,UNT,,00149,,,,Muss,
-Nachrichten-Endesegment,204,,UNT,0074,00149,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,204,,UNT,0074,00149,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,205,,UNT,0062,00149,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,205,,UNT,0062,00149,,,Nachrichten-Referenznummer,X,
+[2119] Je SG8 SEQ+Z13 (Smartmeter-Gateway) ist genau einmal die Segmentgruppe anzugeben",175
+Kommunikationseinrichtun gsdaten,SG8,SEQ,,00119,,,,Muss,,176,,,Kommunikationseinrichtun gsdaten,SG8,SEQ,,00119,,,,Muss,,176
+Kommunikationseinrichtun gsdaten,SG8,SEQ,1229,00119,Z05,,Kommunikationseinricht ungsdaten,X,,177,,,Kommunikationseinrichtun gsdaten,SG8,SEQ,1229,00119,Z05,,Kommunikationseinricht ungsdaten,X,,177
+Referenz auf die Gerätenummer,SG8,RFF,,00120,,,,Muss,,178,,,Referenz auf die Gerätenummer,SG8,RFF,,00120,,,,Muss,,178
+Referenz auf die Gerätenummer,SG8,RFF,1153,00120,MG,,Gerätenummer des Zählers,X,,179,,,Referenz auf die Gerätenummer,SG8,RFF,1153,00120,MG,,Gerätenummer des Zählers,X,,179
+Referenz auf die Gerätenummer,SG8,RFF,1154,00120,,,Gerätenummer,X,,180,,,Referenz auf die Gerätenummer,SG8,RFF,1154,00120,,,Gerätenummer,X,,180
+Kommunikationseinrichtun g,SG10,,,,,,,Muss,,181,,,Kommunikationseinrichtun g,SG10,,,,,,,Muss,,181
+Kommunikationseinrichtun g,SG10,CCI,,00121,,,,Muss,,182,,,Kommunikationseinrichtun g,SG10,CCI,,00121,,,,Muss,,182
+Kommunikationseinrichtun g,SG10,CCI,7037,00121,Z26,,Kommunikationseinricht ung,X,,183,,,Kommunikationseinrichtun g,SG10,CCI,7037,00121,Z26,,Kommunikationseinricht ung,X,,183
+Identifikation / Nummer des Gerätes,SG10,CAV,,00122,,,,Muss,,184,,,Identifikation / Nummer des Gerätes,SG10,CAV,,00122,,,,Muss,,184
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,00122,Z30,,Gerätenummer,X,,185,,,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00122,Z30,,Gerätenummer,X,,185
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,00122,,,Gerätenummer,X,,186,,,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00122,,,Gerätenummer,X,,186
+Kommunikationseinrichtun gstyp,SG10,CAV,,00123,,,,Muss,,187,,,Kommunikationseinrichtun gstyp,SG10,CAV,,00123,,,,Muss,,187
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,00123,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,188,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,00123,GSM,,GSM/GPRS/UMTS- Kom.-Einr.,X,,188
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,,ETH,,Ethernet-Kom.-Einricht. LAN/WLAN,X,,189,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,,ETH,,Ethernet-Kom.-Einricht. LAN/WLAN,X,,189
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,,PLC,,PLC-Kom.-Einrichtung,X,,190,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,,PLC,,PLC-Kom.-Einrichtung,X,,190
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,,PST,,Festnetz-Kom.-Einricht. TAE,X,,191,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,,PST,,Festnetz-Kom.-Einricht. TAE,X,,191
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,192,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,,DSL,,DSL-Kom.Einr.,X,,192
+Kommunikationseinrichtun gstyp,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,193,,,Kommunikationseinrichtun gstyp,SG10,CAV,7111,,LTE,,LTE-Kom.-Einr.,X,,193
+Smartmeter-Gateway,SG8,,,,,,,Soll [130],[130] Wenn an Messlokation vorhanden,194,,,Smartmeter-Gateway,SG8,,,,,,,Soll [130],[130] Wenn an Messlokation vorhanden,194
+Smartmeter-Gateway,SG8,SEQ,,00124,,,,Muss,,195,,,Smartmeter-Gateway,SG8,SEQ,,00124,,,,Muss,,195
+Smartmeter-Gateway,SG8,SEQ,1229,00124,Z13,,Smartmeter-Gateway,X,,196,,,Smartmeter-Gateway,SG8,SEQ,1229,00124,Z13,,Smartmeter-Gateway,X,,196
+Smartmeter-Gateway,SG10,,,,,,,Muss,,197,,,Smartmeter-Gateway,SG10,,,,,,,Muss,,197
+Smartmeter-Gateway,SG10,CCI,,00125,,,,Muss,,198,,,Smartmeter-Gateway,SG10,CCI,,00125,,,,Muss,,198
+Smartmeter-Gateway,SG10,CCI,7037,00125,Z75,,Smartmeter-Gateway,X,,199,,,Smartmeter-Gateway,SG10,CCI,7037,00125,Z75,,Smartmeter-Gateway,X,,199
+Identifikation / Nummer des Gerätes,SG10,CAV,,00126,,,,Muss,,200,,,Identifikation / Nummer des Gerätes,SG10,CAV,,00126,,,,Muss,,200
+Identifikation / Nummer des Gerätes,SG10,CAV,7111,00126,Z30,,Gerätenummer,X,,201,,,Identifikation / Nummer des Gerätes,SG10,CAV,7111,00126,Z30,,Gerätenummer,X,,201
+Identifikation / Nummer des Gerätes,SG10,CAV,7110,00126,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,202,,,Identifikation / Nummer des Gerätes,SG10,CAV,7110,00126,,,Gerätenummer,X [952],[952] Format: Gerätenummer nach DIN 43863-5,202
+Nachrichten-Endesegment,,UNT,,00149,,,,Muss,,203,,,Nachrichten-Endesegment,,UNT,,00149,,,,Muss,,203
+Nachrichten-Endesegment,,UNT,0074,00149,,,Anzahl der Segmente in einer Nachricht,X,,204,,,Nachrichten-Endesegment,,UNT,0074,00149,,,Anzahl der Segmente in einer Nachricht,X,,204
+Nachrichten-Endesegment,,UNT,0062,00149,,,Nachrichten-Referenznummer,X,,205,,,Nachrichten-Endesegment,,UNT,0062,00149,,,Nachrichten-Referenznummer,X,,205

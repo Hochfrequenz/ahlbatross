@@ -1,168 +1,168 @@
-Segmentname_FV2210,Unnamed: 0_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,diff,Segmentname_FV2304,Unnamed: 0_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304
-Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,,,Nachrichten-Kopfsegment,0,,UNH,,,,,,Muss,
-Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Kopfsegment,1,,UNH,0062,,,,Nachrichten-Referenznummer,X,
-Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,,,Nachrichten-Kopfsegment,2,,UNH,0065,,ORDERS,,Bestellung,X,
-Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,,,Nachrichten-Kopfsegment,3,,UNH,0052,,D,,Entwurfs-Version,X,
-Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,,Nachrichten-Kopfsegment,4,,UNH,0054,,09B,,Ausgabe 2009 - B,X,
-Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,,,Nachrichten-Kopfsegment,5,,UNH,0051,,UN,,UN/CEFACT,X,
-Nachrichten-Kopfsegment,6,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,,Nachrichten-Kopfsegment,6,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,
-Beginn der Nachricht,7,,BGM,,,,,,Muss,,,Beginn der Nachricht,7,,BGM,,,,,,Muss,
-Beginn der Nachricht,8,,BGM,1001,,Z68,,Änderung,X,,,Beginn der Nachricht,8,,BGM,1001,,Z68,,Änderung,X,
-Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,,,Beginn der Nachricht,9,,BGM,1004,,,,Dokumentennummer,X,
-Nachrichtendatum,10,,DTM,,,,,,Muss,,,Nachrichtendatum,10,,DTM,,,,,,Muss,
-Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,,Nachrichtendatum,11,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,
-Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00",,Nachrichtendatum,12,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
-[931] Format: ZZZ = +00"
-Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Nachrichtendatum,13,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Ausführungsdatum,14,,DTM,,,,,,Muss,,,Ausführungsdatum,14,,DTM,,,,,,Muss,
-Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,,Ausführungsdatum,15,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,
-Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,,Ausführungsdatum,16,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],
-Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,,Ausführungsdatum,17,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,
-Lieferrichtung,18,,IMD,,,,,,Muss,,,Lieferrichtung,18,,IMD,,,,,,Muss,
-Lieferrichtung,19,,IMD,7081,,Z14,,Lieferrichtung,X,,,Lieferrichtung,19,,IMD,7081,,Z14,,Lieferrichtung,X,
-Lieferrichtung,20,,IMD,7009,,Z06,,Erzeugung,X,,,Lieferrichtung,20,,IMD,7009,,Z06,,Erzeugung,X,
-Lieferrichtung,21,,IMD,7009,,Z07,,Verbrauch,X,,,Lieferrichtung,21,,IMD,7009,,Z07,,Verbrauch,X,
-Prüfidentifikator,22,SG1,,,,,,,Muss,,,Prüfidentifikator,22,SG1,,,,,,,Muss,
-Prüfidentifikator,23,SG1,RFF,,,,,,Muss,,,Prüfidentifikator,23,SG1,RFF,,,,,,Muss,
-Prüfidentifikator,24,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,,Prüfidentifikator,24,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,
-Prüfidentifikator,25,SG1,RFF,1154,,17121,,Bestellung Änderung,X,,,Prüfidentifikator,25,SG1,RFF,1154,,17121,,Bestellung Änderung,X,
-MP-ID Absender,26,SG2,,,,,,,Muss,,,MP-ID Absender,26,SG2,,,,,,,Muss,
-MP-ID Absender,27,SG2,NAD,,,,,,Muss,,,MP-ID Absender,27,SG2,NAD,,,,,,Muss,
-MP-ID Absender,28,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,,MP-ID Absender,28,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,
-MP-ID Absender,29,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Absender,29,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
-MP-ID Absender,30,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Absender,30,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Absender,31,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Absender,31,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Ansprechpartner,32,SG5,,,,,,,Kann,,,Ansprechpartner,32,SG5,,,,,,,Kann,
-Ansprechpartner,33,SG5,CTA,,,,,,Muss,,,Ansprechpartner,33,SG5,CTA,,,,,,Muss,
-Ansprechpartner,34,SG5,CTA,3139,,,,,IC,,,Ansprechpartner,34,SG5,CTA,3139,,,,,IC,
-Ansprechpartner,35,SG5,CTA,3412,,,,Kontakt,X,,,Ansprechpartner,35,SG5,CTA,3412,,,,Kontakt,X,
-Kommunikationsverbindung,36,SG5,COM,,,,,,Muss,,,Kommunikationsverbindung,36,SG5,COM,,,,,,Muss,
-Kommunikationsverbindung,37,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,,Kommunikationsverbindung,37,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,
-Kommunikationsverbindung,38,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,,Kommunikationsverbindung,38,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],
-Kommunikationsverbindung,39,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,,Kommunikationsverbindung,39,SG5,COM,3155,,FX,,Telefax,X [1P0..1],
-Kommunikationsverbindung,40,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,,Kommunikationsverbindung,40,SG5,COM,3155,,TE,,Telefon,X [1P0..1],
-Kommunikationsverbindung,41,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,,Kommunikationsverbindung,41,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],
-Kommunikationsverbindung,42,SG5,COM,3155,,AL,,Handy,X [1P0..1],,,Kommunikationsverbindung,42,SG5,COM,3155,,AL,,Handy,X [1P0..1],
-MP-ID Empfänger,43,SG2,,,,,,,Muss,,,MP-ID Empfänger,43,SG2,,,,,,,Muss,
-MP-ID Empfänger,44,SG2,NAD,,,,,,Muss,,,MP-ID Empfänger,44,SG2,NAD,,,,,,Muss,
-MP-ID Empfänger,45,SG2,NAD,3035,,,,,MR,,,MP-ID Empfänger,45,SG2,NAD,3035,,,,,MR,
-MP-ID Empfänger,46,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,,MP-ID Empfänger,46,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom
-MP-ID Empfänger,47,SG2,NAD,3055,,9,,GS1,X,,,MP-ID Empfänger,47,SG2,NAD,3055,,9,,GS1,X,
-MP-ID Empfänger,48,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,,MP-ID Empfänger,48,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,
-Meldepunkt,49,SG2,,,,,,,Muss,,,Meldepunkt,49,SG2,,,,,,,Muss,
-Meldepunkt,50,SG2,NAD,,,,,,Muss,,,Meldepunkt,50,SG2,NAD,,,,,,Muss,
-Meldepunkt,51,SG2,NAD,3035,,,,,DP,,,Meldepunkt,51,SG2,NAD,3035,,,,,DP,
-Meldepunkt,52,SG2,LOC,,,,,,Muss,,,Meldepunkt,52,SG2,LOC,,,,,,Muss,
-Meldepunkt,53,SG2,LOC,3227,,,,,172,,,Meldepunkt,53,SG2,LOC,3227,,,,,172,
-Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
-[950] Format: Marktlokations-ID",,Meldepunkt,54,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
-[950] Format: Marktlokations-ID"
-Erforderliches Messprodukt der Marktlokation,55,SG29,,,,,,,Muss [2089] ∧ [93],"[93] Wenn in derselben Nachricht eine SG29 mit Z16 in LIN DE1229 nicht vorhanden
-[2089] Die SG29 ist so oft zu wiederholen, dass alle Messprodukte ab dem DTM+203 (Ausführungsdatum) zu der in der SG2 genannten Marktlokation genannt sind.",,Erforderliches Messprodukt der Marktlokation,55,SG29,,,,,,,Muss [2089] ∧ [93],"[93] Wenn in derselben Nachricht eine SG29 mit Z16 in LIN DE1229 nicht vorhanden
-[2089] Die SG29 ist so oft zu wiederholen, dass alle Messprodukte ab dem DTM+203 (Ausführungsdatum) zu der in der SG2 genannten Marktlokation genannt sind."
-Erforderliches Messprodukt der Marktlokation,56,SG29,LIN,,,,,,Muss,,,Erforderliches Messprodukt der Marktlokation,56,SG29,LIN,,,,,,Muss,
-Erforderliches Messprodukt der Marktlokation,57,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Erforderliches Messprodukt der Marktlokation,57,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
-Erforderliches Messprodukt der Marktlokation,58,SG29,LIN,1229,,Marktlokation,,,Z27,,,Erforderliches Messprodukt der Marktlokation,58,SG29,LIN,1229,,Marktlokation,,,Z27,
-Erforderliches Messprodukt der Marktlokation,59,SG29,PIA,,,,,,Muss,,,Erforderliches Messprodukt der Marktlokation,59,SG29,PIA,,,,,,Muss,
-Erforderliches Messprodukt der Marktlokation,60,SG29,PIA,4347,,,,,5,,,Erforderliches Messprodukt der Marktlokation,60,SG29,PIA,4347,,,,,5,
-Erforderliches Messprodukt der Marktlokation,61,SG29,PIA,7140,,,,Messprodukt-Code,X [95],"[95] Messprodukt-Code aus dem Kapitel 2.1 ""Standard- Messprodukte der Marktlokation"" der Codeliste der Messprodukte",,Erforderliches Messprodukt der Marktlokation,61,SG29,PIA,7140,,,,Messprodukt-Code,X [95],"[95] Messprodukt-Code aus dem Kapitel 2.1 ""Standard- Messprodukte der Marktlokation"" der Codeliste der Messprodukte"
-Erforderliches Messprodukt der Marktlokation,62,SG29,PIA,7143,,Z11,,Messprodukt,X,,,Erforderliches Messprodukt der Marktlokation,62,SG29,PIA,7143,,Z11,,Messprodukt,X,
-Zugeordnete Zählzeit,63,SG30,,,,,,,Muss [76],[76] Wenn in derselben SG29 mit Z27 in LIN DE1229 (Erforderliches Messprodukt der Marktlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.1.1 Standard-Messprodukt der Marktlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,,Zugeordnete Zählzeit,63,SG30,,,,,,,Muss [76],[76] Wenn in derselben SG29 mit Z27 in LIN DE1229 (Erforderliches Messprodukt der Marktlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.1.1 Standard-Messprodukt der Marktlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist
-Zugeordnete Zählzeit,64,SG30,CCI,,,,,,Muss,,,Zugeordnete Zählzeit,64,SG30,CCI,,,,,,Muss,
-Zugeordnete Zählzeit,65,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,,Zugeordnete Zählzeit,65,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird
-Zugeordnete Zählzeit,66,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,,Zugeordnete Zählzeit,66,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist
-Messprodukt für Netzbetreiber relevant,67,SG30,,,,,,,Muss,,,Messprodukt für Netzbetreiber relevant,67,SG30,,,,,,,Muss,
-Messprodukt für Netzbetreiber relevant,68,SG30,CCI,,,,,,Muss,,,Messprodukt für Netzbetreiber relevant,68,SG30,CCI,,,,,,Muss,
-Messprodukt für Netzbetreiber relevant,69,SG30,CCI,7037,,ZA8,,NB,X,,,Messprodukt für Netzbetreiber relevant,69,SG30,CCI,7037,,ZA8,,NB,X,
-Verwendungszweck der Werte,70,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,70,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,71,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P1..1] ⊻ [4P1..1] ⊻ [6P1..1] ⊻ [10P1..1],,,Verwendungszweck der Werte,71,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P1..1] ⊻ [4P1..1] ⊻ [6P1..1] ⊻ [10P1..1],
-Verwendungszweck der Werte,72,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,,Verwendungszweck der Werte,72,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],
-Verwendungszweck der Werte,73,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,,Verwendungszweck der Werte,73,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],
-Verwendungszweck der Werte,74,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [7P1..1] ⊻ [8P1..1],,,Verwendungszweck der Werte,74,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [7P1..1] ⊻ [8P1..1],
-Verwendungszweck der Werte,75,SG30,CAV,7111,,ZD1,,Blindarbeitsabrechnung/ Betriebsführung,X [2P1..1],,,Verwendungszweck der Werte,75,SG30,CAV,7111,,ZD1,,Blindarbeitsabrechnung/ Betriebsführung,X [2P1..1],
-Verwendungszweck der Werte,76,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,,Verwendungszweck der Werte,76,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],
-Messprodukt für Lieferant relevant,77,SG30,,,,,,,Muss,,,Messprodukt für Lieferant relevant,77,SG30,,,,,,,Muss,
-Messprodukt für Lieferant relevant,78,SG30,CCI,,,,,,Muss,,,Messprodukt für Lieferant relevant,78,SG30,CCI,,,,,,Muss,
-Messprodukt für Lieferant relevant,79,SG30,CCI,7037,,ZA7,,LF,X,,,Messprodukt für Lieferant relevant,79,SG30,CCI,7037,,ZA7,,LF,X,
-Verwendungszweck der Werte,80,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,80,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,81,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,,Verwendungszweck der Werte,81,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],
-Verwendungszweck der Werte,82,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,,Verwendungszweck der Werte,82,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],
-Verwendungszweck der Werte,83,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,,Verwendungszweck der Werte,83,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],
-Verwendungszweck der Werte,84,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,,Verwendungszweck der Werte,84,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],
-Verwendungszweck der Werte,85,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,,Verwendungszweck der Werte,85,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],
-Verwendungszweck der Werte,86,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,,Verwendungszweck der Werte,86,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],
-Messprodukt für Übertragungsnetzbetreiber relevant,87,SG30,,,,,,,Muss [112],"[112] Wenn in derselben SG29 LIN++Z27 (Erforderliches Messprodukt der Marktlokation), das PIA+5+9991000000078: Z11 (Wirkarbeit Lastgang 1/4 stündlich) vorhanden ist",,Messprodukt für Übertragungsnetzbetreiber relevant,87,SG30,,,,,,,Muss [112],"[112] Wenn in derselben SG29 LIN++Z27 (Erforderliches Messprodukt der Marktlokation), das PIA+5+9991000000078: Z11 (Wirkarbeit Lastgang 1/4 stündlich) vorhanden ist"
-Messprodukt für Übertragungsnetzbetreiber relevant,88,SG30,CCI,,,,,,Muss,,,Messprodukt für Übertragungsnetzbetreiber relevant,88,SG30,CCI,,,,,,Muss,
-Messprodukt für Übertragungsnetzbetreiber relevant,89,SG30,CCI,7037,,ZA9,,ÜNB,X,,,Messprodukt für Übertragungsnetzbetreiber relevant,89,SG30,CCI,7037,,ZA9,,ÜNB,X,
-Verwendungszweck der Werte,90,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,90,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,91,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,,Verwendungszweck der Werte,91,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],
-Verwendungszweck der Werte,92,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],,,Verwendungszweck der Werte,92,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],
-Erforderliches Messprodukt der Tranche,93,SG29,,,,,,,Muss [2001] ∧ [2002] ∧ [94],"[94] Wenn in derselben Nachricht eine SG29 mit Z27 in LIN DE1229 nicht vorhanden
+Segmentname_FV2210,Segmentgruppe_FV2210,Segment_FV2210,Datenelement_FV2210,Segment ID_FV2210,Code_FV2210,Qualifier_FV2210,Beschreibung_FV2210,Bedingungsausdruck_FV2210,Bedingung_FV2210,Unnamed: 0_FV2210,Änderung,changed_entries,Segmentname_FV2304,Segmentgruppe_FV2304,Segment_FV2304,Datenelement_FV2304,Segment ID_FV2304,Code_FV2304,Qualifier_FV2304,Beschreibung_FV2304,Bedingungsausdruck_FV2304,Bedingung_FV2304,Unnamed: 0_FV2304
+Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0,,,Nachrichten-Kopfsegment,,UNH,,,,,,Muss,,0
+Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1,,,Nachrichten-Kopfsegment,,UNH,0062,,,,Nachrichten-Referenznummer,X,,1
+Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2,,,Nachrichten-Kopfsegment,,UNH,0065,,ORDERS,,Bestellung,X,,2
+Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3,,,Nachrichten-Kopfsegment,,UNH,0052,,D,,Entwurfs-Version,X,,3
+Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4,,,Nachrichten-Kopfsegment,,UNH,0054,,09B,,Ausgabe 2009 - B,X,,4
+Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5,,,Nachrichten-Kopfsegment,,UNH,0051,,UN,,UN/CEFACT,X,,5
+Nachrichten-Kopfsegment,,UNH,0057,,1.2a,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6,ÄNDERUNG,Code_FV2210|Code_FV2304,Nachrichten-Kopfsegment,,UNH,0057,,1.2b,,Versionsnummer der zugrundeliegenden BDEW- Nachrichtenbeschreibung,X,,6
+Beginn der Nachricht,,BGM,,,,,,Muss,,7,,,Beginn der Nachricht,,BGM,,,,,,Muss,,7
+Beginn der Nachricht,,BGM,1001,,Z68,,Änderung,X,,8,,,Beginn der Nachricht,,BGM,1001,,Z68,,Änderung,X,,8
+Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9,,,Beginn der Nachricht,,BGM,1004,,,,Dokumentennummer,X,,9
+Nachrichtendatum,,DTM,,,,,,Muss,,10,,,Nachrichtendatum,,DTM,,,,,,Muss,,10
+Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11
+Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt.
+[931] Format: ZZZ = +00",12
+Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,13
+Ausführungsdatum,,DTM,,,,,,Muss,,14,,,Ausführungsdatum,,DTM,,,,,,Muss,,14
+Ausführungsdatum,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,15,,,Ausführungsdatum,,DTM,2005,,203,,Ausführungsdatum/-zeit,X,,15
+Ausführungsdatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,16,,,Ausführungsdatum,,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,16
+Ausführungsdatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,17,,,Ausführungsdatum,,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,17
+Lieferrichtung,,IMD,,,,,,Muss,,18,,,Lieferrichtung,,IMD,,,,,,Muss,,18
+Lieferrichtung,,IMD,7081,,Z14,,Lieferrichtung,X,,19,,,Lieferrichtung,,IMD,7081,,Z14,,Lieferrichtung,X,,19
+Lieferrichtung,,IMD,7009,,Z06,,Erzeugung,X,,20,,,Lieferrichtung,,IMD,7009,,Z06,,Erzeugung,X,,20
+Lieferrichtung,,IMD,7009,,Z07,,Verbrauch,X,,21,,,Lieferrichtung,,IMD,7009,,Z07,,Verbrauch,X,,21
+Prüfidentifikator,SG1,,,,,,,Muss,,22,,,Prüfidentifikator,SG1,,,,,,,Muss,,22
+Prüfidentifikator,SG1,RFF,,,,,,Muss,,23,,,Prüfidentifikator,SG1,RFF,,,,,,Muss,,23
+Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,24,,,Prüfidentifikator,SG1,RFF,1153,,Z13,,Prüfidentifikator,X,,24
+Prüfidentifikator,SG1,RFF,1154,,17121,,Bestellung Änderung,X,,25,,,Prüfidentifikator,SG1,RFF,1154,,17121,,Bestellung Änderung,X,,25
+MP-ID Absender,SG2,,,,,,,Muss,,26,,,MP-ID Absender,SG2,,,,,,,Muss,,26
+MP-ID Absender,SG2,NAD,,,,,,Muss,,27,,,MP-ID Absender,SG2,NAD,,,,,,Muss,,27
+MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,28,,,MP-ID Absender,SG2,NAD,3035,,Nachrichtenaussteller bzw. -absender,,,MS,,28
+MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,29,,,MP-ID Absender,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,29
+MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,30,,,MP-ID Absender,SG2,NAD,3055,,9,,GS1,X,,30
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,31,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,31
+Ansprechpartner,SG5,,,,,,,Kann,,32,,,Ansprechpartner,SG5,,,,,,,Kann,,32
+Ansprechpartner,SG5,CTA,,,,,,Muss,,33,,,Ansprechpartner,SG5,CTA,,,,,,Muss,,33
+Ansprechpartner,SG5,CTA,3139,,,,,IC,,34,,,Ansprechpartner,SG5,CTA,3139,,,,,IC,,34
+Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,35,,,Ansprechpartner,SG5,CTA,3412,,,,Kontakt,X,,35
+Kommunikationsverbindung,SG5,COM,,,,,,Muss,,36,,,Kommunikationsverbindung,SG5,COM,,,,,,Muss,,36
+Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,37,,,Kommunikationsverbindung,SG5,COM,3148,,,,"Kommunikationsadresse, Identifikation",X,,37
+Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,38,,,Kommunikationsverbindung,SG5,COM,3155,,EM,,Elektronische Post,X [1P0..1],,38
+Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,39,,,Kommunikationsverbindung,SG5,COM,3155,,FX,,Telefax,X [1P0..1],,39
+Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,40,,,Kommunikationsverbindung,SG5,COM,3155,,TE,,Telefon,X [1P0..1],,40
+Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,41,,,Kommunikationsverbindung,SG5,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,41
+Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,42,,,Kommunikationsverbindung,SG5,COM,3155,,AL,,Handy,X [1P0..1],,42
+MP-ID Empfänger,SG2,,,,,,,Muss,,43,,,MP-ID Empfänger,SG2,,,,,,,Muss,,43
+MP-ID Empfänger,SG2,NAD,,,,,,Muss,,44,,,MP-ID Empfänger,SG2,NAD,,,,,,Muss,,44
+MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,45,,,MP-ID Empfänger,SG2,NAD,3035,,,,,MR,,45
+MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,46,,,MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X [61],[61] MP-ID nur aus Sparte Strom,46
+MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,47,,,MP-ID Empfänger,SG2,NAD,3055,,9,,GS1,X,,47
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,48,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,48
+Meldepunkt,SG2,,,,,,,Muss,,49,,,Meldepunkt,SG2,,,,,,,Muss,,49
+Meldepunkt,SG2,NAD,,,,,,Muss,,50,,,Meldepunkt,SG2,NAD,,,,,,Muss,,50
+Meldepunkt,SG2,NAD,3035,,,,,DP,,51,,,Meldepunkt,SG2,NAD,3035,,,,,DP,,51
+Meldepunkt,SG2,LOC,,,,,,Muss,,52,,,Meldepunkt,SG2,LOC,,,,,,Muss,,52
+Meldepunkt,SG2,LOC,3227,,,,,172,,53,,,Meldepunkt,SG2,LOC,3227,,,,,172,,53
+Meldepunkt,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",54,,,Meldepunkt,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendung der ID der Marktlokation
+[950] Format: Marktlokations-ID",54
+Erforderliches Messprodukt der Marktlokation,SG29,,,,,,,Muss [2089] ∧ [93],"[93] Wenn in derselben Nachricht eine SG29 mit Z16 in LIN DE1229 nicht vorhanden
+[2089] Die SG29 ist so oft zu wiederholen, dass alle Messprodukte ab dem DTM+203 (Ausführungsdatum) zu der in der SG2 genannten Marktlokation genannt sind.",55,,,Erforderliches Messprodukt der Marktlokation,SG29,,,,,,,Muss [2089] ∧ [93],"[93] Wenn in derselben Nachricht eine SG29 mit Z16 in LIN DE1229 nicht vorhanden
+[2089] Die SG29 ist so oft zu wiederholen, dass alle Messprodukte ab dem DTM+203 (Ausführungsdatum) zu der in der SG2 genannten Marktlokation genannt sind.",55
+Erforderliches Messprodukt der Marktlokation,SG29,LIN,,,,,,Muss,,56,,,Erforderliches Messprodukt der Marktlokation,SG29,LIN,,,,,,Muss,,56
+Erforderliches Messprodukt der Marktlokation,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",57,,,Erforderliches Messprodukt der Marktlokation,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",57
+Erforderliches Messprodukt der Marktlokation,SG29,LIN,1229,,Marktlokation,,,Z27,,58,,,Erforderliches Messprodukt der Marktlokation,SG29,LIN,1229,,Marktlokation,,,Z27,,58
+Erforderliches Messprodukt der Marktlokation,SG29,PIA,,,,,,Muss,,59,,,Erforderliches Messprodukt der Marktlokation,SG29,PIA,,,,,,Muss,,59
+Erforderliches Messprodukt der Marktlokation,SG29,PIA,4347,,,,,5,,60,,,Erforderliches Messprodukt der Marktlokation,SG29,PIA,4347,,,,,5,,60
+Erforderliches Messprodukt der Marktlokation,SG29,PIA,7140,,,,Messprodukt-Code,X [95],"[95] Messprodukt-Code aus dem Kapitel 2.1 ""Standard- Messprodukte der Marktlokation"" der Codeliste der Messprodukte",61,,,Erforderliches Messprodukt der Marktlokation,SG29,PIA,7140,,,,Messprodukt-Code,X [95],"[95] Messprodukt-Code aus dem Kapitel 2.1 ""Standard- Messprodukte der Marktlokation"" der Codeliste der Messprodukte",61
+Erforderliches Messprodukt der Marktlokation,SG29,PIA,7143,,Z11,,Messprodukt,X,,62,,,Erforderliches Messprodukt der Marktlokation,SG29,PIA,7143,,Z11,,Messprodukt,X,,62
+Zugeordnete Zählzeit,SG30,,,,,,,Muss [76],[76] Wenn in derselben SG29 mit Z27 in LIN DE1229 (Erforderliches Messprodukt der Marktlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.1.1 Standard-Messprodukt der Marktlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,63,,,Zugeordnete Zählzeit,SG30,,,,,,,Muss [76],[76] Wenn in derselben SG29 mit Z27 in LIN DE1229 (Erforderliches Messprodukt der Marktlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.1.1 Standard-Messprodukt der Marktlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,63
+Zugeordnete Zählzeit,SG30,CCI,,,,,,Muss,,64,,,Zugeordnete Zählzeit,SG30,CCI,,,,,,Muss,,64
+Zugeordnete Zählzeit,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,65,,,Zugeordnete Zählzeit,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,65
+Zugeordnete Zählzeit,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,66,,,Zugeordnete Zählzeit,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,66
+Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,67,,,Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,67
+Messprodukt für Netzbetreiber relevant,SG30,CCI,,,,,,Muss,,68,,,Messprodukt für Netzbetreiber relevant,SG30,CCI,,,,,,Muss,,68
+Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,,ZA8,,NB,X,,69,,,Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,,ZA8,,NB,X,,69
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,70,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,70
+Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P1..1] ⊻ [4P1..1] ⊻ [6P1..1] ⊻ [10P1..1],,71,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P1..1] ⊻ [4P1..1] ⊻ [6P1..1] ⊻ [10P1..1],,71
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,72,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P0..1] ⊻ [6P0..1] ⊻ [7P0..1] ⊻ [8P0..1],,72
+Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,73,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,73
+Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [7P1..1] ⊻ [8P1..1],,74,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [7P1..1] ⊻ [8P1..1],,74
+Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitsabrechnung/ Betriebsführung,X [2P1..1],,75,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitsabrechnung/ Betriebsführung,X [2P1..1],,75
+Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,76,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,76
+Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,77,,,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,77
+Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,78,,,Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,78
+Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,79,,,Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,79
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,80,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,80
+Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,81,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [2P0..1] ⊻ [3P1..1] ⊻ [4P0..1] ⊻ [6P1..1] ⊻ [8P1..1] ⊻ [9P1..1] ⊻ [10P0..1] ⊻ [11P1..1],,81
+Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,82,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z84,,Netznutzungsabrechnung,X [3P0..1] ⊻ [4P0..1] ⊻ [6P0..1] ⊻ [10P0..1],,82
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,83,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [5P1..1] ⊻ [6P1..1] ⊻ [7P1..1] ⊻ [8P1..1],,83
+Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,84,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z86,,Mehrmindermengenabrech nung,X [4P1..1] ⊻ [11P1..1],,84
+Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,85,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZD1,,Blindarbeitabrechnung / Betriebsführung,X [2P1..1],,85
+Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,86,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZE1,,Es liegt kein Verwendungszweck vor,X [12P1..1],,86
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss [112],"[112] Wenn in derselben SG29 LIN++Z27 (Erforderliches Messprodukt der Marktlokation), das PIA+5+9991000000078: Z11 (Wirkarbeit Lastgang 1/4 stündlich) vorhanden ist",87,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss [112],"[112] Wenn in derselben SG29 LIN++Z27 (Erforderliches Messprodukt der Marktlokation), das PIA+5+9991000000078: Z11 (Wirkarbeit Lastgang 1/4 stündlich) vorhanden ist",87
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,,,,,Muss,,88,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,,,,,Muss,,88
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,,ZA9,,ÜNB,X,,89,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,,ZA9,,ÜNB,X,,89
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,90,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,90
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,91,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,91
+Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],,92,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P0..1],,92
+Erforderliches Messprodukt der Tranche,SG29,,,,,,,Muss [2001] ∧ [2002] ∧ [94],"[94] Wenn in derselben Nachricht eine SG29 mit Z27 in LIN DE1229 nicht vorhanden
 [2001] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Tranchen zu der in der SG2 genannten Marktlokation vorhanden sind.
-[2002] Ist mindestens zwei Mal anzugeben",,Erforderliches Messprodukt der Tranche,93,SG29,,,,,,,Muss [2001] ∧ [2002] ∧ [94],"[94] Wenn in derselben Nachricht eine SG29 mit Z27 in LIN DE1229 nicht vorhanden
+[2002] Ist mindestens zwei Mal anzugeben",93,,,Erforderliches Messprodukt der Tranche,SG29,,,,,,,Muss [2001] ∧ [2002] ∧ [94],"[94] Wenn in derselben Nachricht eine SG29 mit Z27 in LIN DE1229 nicht vorhanden
 [2001] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Tranchen zu der in der SG2 genannten Marktlokation vorhanden sind.
-[2002] Ist mindestens zwei Mal anzugeben"
-Erforderliches Messprodukt der Tranche,94,SG29,LIN,,,,,,Muss,,,Erforderliches Messprodukt der Tranche,94,SG29,LIN,,,,,,Muss,
-Erforderliches Messprodukt der Tranche,95,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Erforderliches Messprodukt der Tranche,95,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
-Erforderliches Messprodukt der Tranche,96,SG29,LIN,1229,,Tranche,,,Z16,,,Erforderliches Messprodukt der Tranche,96,SG29,LIN,1229,,Tranche,,,Z16,
-Erforderliches Messprodukt der Tranche,97,SG29,PIA,,,,,,Muss,,,Erforderliches Messprodukt der Tranche,97,SG29,PIA,,,,,,Muss,
-Erforderliches Messprodukt der Tranche,98,SG29,PIA,4347,,,,,5,,,Erforderliches Messprodukt der Tranche,98,SG29,PIA,4347,,,,,5,
-Erforderliches Messprodukt der Tranche,99,SG29,PIA,7140,,,,Messprodukt-Code,X [96],"[96] Messprodukt-Code aus dem Kapitel 2.2 ""Standard- Messprodukte der Tranche"" der Codeliste der Messprodukte",,Erforderliches Messprodukt der Tranche,99,SG29,PIA,7140,,,,Messprodukt-Code,X [96],"[96] Messprodukt-Code aus dem Kapitel 2.2 ""Standard- Messprodukte der Tranche"" der Codeliste der Messprodukte"
-Erforderliches Messprodukt der Tranche,100,SG29,PIA,7143,,Z11,,Messprodukt,X,,,Erforderliches Messprodukt der Tranche,100,SG29,PIA,7143,,Z11,,Messprodukt,X,
-Messprodukt für Netzbetreiber relevant,101,SG30,,,,,,,Muss,,,Messprodukt für Netzbetreiber relevant,101,SG30,,,,,,,Muss,
-Messprodukt für Netzbetreiber relevant,102,SG30,CCI,,,,,,Muss,,,Messprodukt für Netzbetreiber relevant,102,SG30,CCI,,,,,,Muss,
-Messprodukt für Netzbetreiber relevant,103,SG30,CCI,7037,,ZA8,,NB,X,,,Messprodukt für Netzbetreiber relevant,103,SG30,CCI,7037,,ZA8,,NB,X,
-Verwendungszweck der Werte,104,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,104,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,105,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,,Verwendungszweck der Werte,105,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],
-Verwendungszweck der Werte,106,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,,Verwendungszweck der Werte,106,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],
-Messprodukt für Lieferant relevant,107,SG30,,,,,,,Muss,,,Messprodukt für Lieferant relevant,107,SG30,,,,,,,Muss,
-Messprodukt für Lieferant relevant,108,SG30,CCI,,,,,,Muss,,,Messprodukt für Lieferant relevant,108,SG30,CCI,,,,,,Muss,
-Messprodukt für Lieferant relevant,109,SG30,CCI,7037,,ZA7,,LF,X,,,Messprodukt für Lieferant relevant,109,SG30,CCI,7037,,ZA7,,LF,X,
-Verwendungszweck der Werte,110,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,110,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,111,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [1P1..1],,,Verwendungszweck der Werte,111,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [1P1..1],
-Verwendungszweck der Werte,112,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],,,Verwendungszweck der Werte,112,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],
-Messprodukt für Übertragungsnetzbetreiber relevant,113,SG30,,,,,,,Muss,,,Messprodukt für Übertragungsnetzbetreiber relevant,113,SG30,,,,,,,Muss,
-Messprodukt für Übertragungsnetzbetreiber relevant,114,SG30,CCI,,,,,,Muss,,,Messprodukt für Übertragungsnetzbetreiber relevant,114,SG30,CCI,,,,,,Muss,
-Messprodukt für Übertragungsnetzbetreiber relevant,115,SG30,CCI,7037,,ZA9,,ÜNB,X,,,Messprodukt für Übertragungsnetzbetreiber relevant,115,SG30,CCI,7037,,ZA9,,ÜNB,X,
-Verwendungszweck der Werte,116,SG30,CAV,,,,,,Muss,,,Verwendungszweck der Werte,116,SG30,CAV,,,,,,Muss,
-Verwendungszweck der Werte,117,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,,Verwendungszweck der Werte,117,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],
-Verwendungszweck der Werte,118,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,,Verwendungszweck der Werte,118,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],
-Referenz auf ID der Tranche,119,SG34,,,,,,,Muss,,,Referenz auf ID der Tranche,119,SG34,,,,,,,Muss,
-Referenz auf ID der Tranche,120,SG34,RFF,,,,,,Muss,,,Referenz auf ID der Tranche,120,SG34,RFF,,,,,,Muss,
-Referenz auf ID der Tranche,121,SG34,RFF,1153,,Z20,,Tranche,X,,,Referenz auf ID der Tranche,121,SG34,RFF,1153,,Z20,,Tranche,X,
-Referenz auf ID der Tranche,122,SG34,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,,Referenz auf ID der Tranche,122,SG34,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID
-Erforderliches Messprodukt der Messlokation,123,SG29,,,,,,,Muss [2003] ∧ [545],"[545] Hinweis: Es werden nur die Messprodukte der Messlokationen angegeben, die für die in der SG2 genannte Marktlokation bzw. deren Tranchen erforderlich sind. Messprodukte an der Messlokation für weitere Marktlokationen bleiben unverändert.
-[2003] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Messlokationen zu der in der SG2 genannten Marktlokation vorhanden sind und für jede dieser Messlokationen müssen alle Messprodukte genannt sein, die ab dem DTM+203 (Ausführungsdatum) in der SG2 genannten Marktlokation bzw. deren Tranchen vorhanden sind.",,Erforderliches Messprodukt der Messlokation,123,SG29,,,,,,,Muss [2003] ∧ [545],"[545] Hinweis: Es werden nur die Messprodukte der Messlokationen angegeben, die für die in der SG2 genannte Marktlokation bzw. deren Tranchen erforderlich sind. Messprodukte an der Messlokation für weitere Marktlokationen bleiben unverändert.
-[2003] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Messlokationen zu der in der SG2 genannten Marktlokation vorhanden sind und für jede dieser Messlokationen müssen alle Messprodukte genannt sein, die ab dem DTM+203 (Ausführungsdatum) in der SG2 genannten Marktlokation bzw. deren Tranchen vorhanden sind."
-Erforderliches Messprodukt der Messlokation,124,SG29,LIN,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,124,SG29,LIN,,,,,,Muss,
-Erforderliches Messprodukt der Messlokation,125,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",,Erforderliches Messprodukt der Messlokation,125,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend"
-Erforderliches Messprodukt der Messlokation,126,SG29,LIN,1229,,Messlokation,,,Z19,,,Erforderliches Messprodukt der Messlokation,126,SG29,LIN,1229,,Messlokation,,,Z19,
-Erforderliches Messprodukt der Messlokation,127,SG29,PIA,,,,,,Muss,,,Erforderliches Messprodukt der Messlokation,127,SG29,PIA,,,,,,Muss,
-Erforderliches Messprodukt der Messlokation,128,SG29,PIA,4347,,,,,5,,,Erforderliches Messprodukt der Messlokation,128,SG29,PIA,4347,,,,,5,
-Erforderliches Messprodukt der Messlokation,129,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte",,Erforderliches Messprodukt der Messlokation,129,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte"
-Erforderliches Messprodukt der Messlokation,130,SG29,PIA,7143,,Z11,,Messprodukt,X,,,Erforderliches Messprodukt der Messlokation,130,SG29,PIA,7143,,Z11,,Messprodukt,X,
-Weitere Beschreibung erforderliches Messprodukt,131,SG30,,,,,,,Muss,,,Weitere Beschreibung erforderliches Messprodukt,131,SG30,,,,,,,Muss,
-Weitere Beschreibung erforderliches Messprodukt,132,SG30,CCI,,,,,,Muss,,,Weitere Beschreibung erforderliches Messprodukt,132,SG30,CCI,,,,,,Muss,
-Weitere Beschreibung erforderliches Messprodukt,133,SG30,CCI,7059,,erforderlicher Wert,,,Z35,,,Weitere Beschreibung erforderliches Messprodukt,133,SG30,CCI,7059,,erforderlicher Wert,,,Z35,
-Notwendigkeit einer zweiten Messung,134,SG30,CAV,,,,,,Muss,,,Notwendigkeit einer zweiten Messung,134,SG30,CAV,,,,,,Muss,
-Notwendigkeit einer zweiten Messung,135,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,,,Notwendigkeit einer zweiten Messung,135,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,
-Notwendigkeit einer zweiten Messung,136,SG30,CAV,7110,,Z06,,vorhanden,X,,,Notwendigkeit einer zweiten Messung,136,SG30,CAV,7110,,Z06,,vorhanden,X,
-Notwendigkeit einer zweiten Messung,137,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Notwendigkeit einer zweiten Messung,137,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
-Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,138,SG30,CAV,,,,,,Muss,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,138,SG30,CAV,,,,,,Muss,
-Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,139,SG30,CAV,7111,,Z88,,NB,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,139,SG30,CAV,7111,,Z88,,NB,X,
-Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,140,SG30,CAV,7110,,Z06,,vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,140,SG30,CAV,7110,,Z06,,vorhanden,X,
-Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,141,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,141,SG30,CAV,7110,,Z07,,nicht vorhanden,X,
-Zugeordnete Zählzeit,142,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,,Zugeordnete Zählzeit,142,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist
-Zugeordnete Zählzeit,143,SG30,CCI,,,,,,Muss,,,Zugeordnete Zählzeit,143,SG30,CCI,,,,,,Muss,
-Zugeordnete Zählzeit,144,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,,Zugeordnete Zählzeit,144,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird
-Zugeordnete Zählzeit,145,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,,Zugeordnete Zählzeit,145,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist
-Referenz auf ID der Messlokation,146,SG34,,,,,,,Muss,,,Referenz auf ID der Messlokation,146,SG34,,,,,,,Muss,
-Referenz auf ID der Messlokation,147,SG34,RFF,,,,,,Muss,,,Referenz auf ID der Messlokation,147,SG34,RFF,,,,,,Muss,
-Referenz auf ID der Messlokation,148,SG34,RFF,1153,,Z19,,Messlokation,X,,,Referenz auf ID der Messlokation,148,SG34,RFF,1153,,Z19,,Messlokation,X,
-Referenz auf ID der Messlokation,149,SG34,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,,Referenz auf ID der Messlokation,149,SG34,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung
-Abschnitts-Kontrollsegment,150,,UNS,,,,,,Muss,,,Abschnitts-Kontrollsegment,150,,UNS,,,,,,Muss,
-Abschnitts-Kontrollsegment,151,,UNS,0081,,und Summenteil,,,S,,,Abschnitts-Kontrollsegment,151,,UNS,0081,,und Summenteil,,,S,
-Nachrichten-Endesegment,152,,UNT,,,,,,Muss,,,Nachrichten-Endesegment,152,,UNT,,,,,,Muss,
-Nachrichten-Endesegment,153,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,,Nachrichten-Endesegment,153,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,
-Nachrichten-Endesegment,154,,UNT,0062,,,,Nachrichten-Referenznummer,X,,,Nachrichten-Endesegment,154,,UNT,0062,,,,Nachrichten-Referenznummer,X,
+[2002] Ist mindestens zwei Mal anzugeben",93
+Erforderliches Messprodukt der Tranche,SG29,LIN,,,,,,Muss,,94,,,Erforderliches Messprodukt der Tranche,SG29,LIN,,,,,,Muss,,94
+Erforderliches Messprodukt der Tranche,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",95,,,Erforderliches Messprodukt der Tranche,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",95
+Erforderliches Messprodukt der Tranche,SG29,LIN,1229,,Tranche,,,Z16,,96,,,Erforderliches Messprodukt der Tranche,SG29,LIN,1229,,Tranche,,,Z16,,96
+Erforderliches Messprodukt der Tranche,SG29,PIA,,,,,,Muss,,97,,,Erforderliches Messprodukt der Tranche,SG29,PIA,,,,,,Muss,,97
+Erforderliches Messprodukt der Tranche,SG29,PIA,4347,,,,,5,,98,,,Erforderliches Messprodukt der Tranche,SG29,PIA,4347,,,,,5,,98
+Erforderliches Messprodukt der Tranche,SG29,PIA,7140,,,,Messprodukt-Code,X [96],"[96] Messprodukt-Code aus dem Kapitel 2.2 ""Standard- Messprodukte der Tranche"" der Codeliste der Messprodukte",99,,,Erforderliches Messprodukt der Tranche,SG29,PIA,7140,,,,Messprodukt-Code,X [96],"[96] Messprodukt-Code aus dem Kapitel 2.2 ""Standard- Messprodukte der Tranche"" der Codeliste der Messprodukte",99
+Erforderliches Messprodukt der Tranche,SG29,PIA,7143,,Z11,,Messprodukt,X,,100,,,Erforderliches Messprodukt der Tranche,SG29,PIA,7143,,Z11,,Messprodukt,X,,100
+Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,101,,,Messprodukt für Netzbetreiber relevant,SG30,,,,,,,Muss,,101
+Messprodukt für Netzbetreiber relevant,SG30,CCI,,,,,,Muss,,102,,,Messprodukt für Netzbetreiber relevant,SG30,CCI,,,,,,Muss,,102
+Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,,ZA8,,NB,X,,103,,,Messprodukt für Netzbetreiber relevant,SG30,CCI,7037,,ZA8,,NB,X,,103
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,104,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,104
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,105,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,105
+Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,106,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z92,,Übermittlung an das HKNR,X [1P1..1],,106
+Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,107,,,Messprodukt für Lieferant relevant,SG30,,,,,,,Muss,,107
+Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,108,,,Messprodukt für Lieferant relevant,SG30,CCI,,,,,,Muss,,108
+Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,109,,,Messprodukt für Lieferant relevant,SG30,CCI,7037,,ZA7,,LF,X,,109
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,110,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,110
+Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [1P1..1],,111,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z47,,Endkundenabrechnung,X [1P1..1],,111
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],,112,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P1..1],,112
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss,,113,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,,,,,,,Muss,,113
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,,,,,Muss,,114,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,,,,,,Muss,,114
+Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,,ZA9,,ÜNB,X,,115,,,Messprodukt für Übertragungsnetzbetreiber relevant,SG30,CCI,7037,,ZA9,,ÜNB,X,,115
+Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,116,,,Verwendungszweck der Werte,SG30,CAV,,,,,,Muss,,116
+Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,117,,,Verwendungszweck der Werte,SG30,CAV,7111,,Z85,,Bilanzkreisabrechnung,X [1P0..1],,117
+Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,118,,,Verwendungszweck der Werte,SG30,CAV,7111,,ZB5,,Zur Ermittlung der Ausgeglichenheit von Bilanzkreisen,X [1P1..1],,118
+Referenz auf ID der Tranche,SG34,,,,,,,Muss,,119,,,Referenz auf ID der Tranche,SG34,,,,,,,Muss,,119
+Referenz auf ID der Tranche,SG34,RFF,,,,,,Muss,,120,,,Referenz auf ID der Tranche,SG34,RFF,,,,,,Muss,,120
+Referenz auf ID der Tranche,SG34,RFF,1153,,Z20,,Tranche,X,,121,,,Referenz auf ID der Tranche,SG34,RFF,1153,,Z20,,Tranche,X,,121
+Referenz auf ID der Tranche,SG34,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,122,,,Referenz auf ID der Tranche,SG34,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,122
+Erforderliches Messprodukt der Messlokation,SG29,,,,,,,Muss [2003] ∧ [545],"[545] Hinweis: Es werden nur die Messprodukte der Messlokationen angegeben, die für die in der SG2 genannte Marktlokation bzw. deren Tranchen erforderlich sind. Messprodukte an der Messlokation für weitere Marktlokationen bleiben unverändert.
+[2003] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Messlokationen zu der in der SG2 genannten Marktlokation vorhanden sind und für jede dieser Messlokationen müssen alle Messprodukte genannt sein, die ab dem DTM+203 (Ausführungsdatum) in der SG2 genannten Marktlokation bzw. deren Tranchen vorhanden sind.",123,,,Erforderliches Messprodukt der Messlokation,SG29,,,,,,,Muss [2003] ∧ [545],"[545] Hinweis: Es werden nur die Messprodukte der Messlokationen angegeben, die für die in der SG2 genannte Marktlokation bzw. deren Tranchen erforderlich sind. Messprodukte an der Messlokation für weitere Marktlokationen bleiben unverändert.
+[2003] Die SG29 ist so oft zu wiederholen, wie ab dem DTM+203 (Ausführungsdatum) Messlokationen zu der in der SG2 genannten Marktlokation vorhanden sind und für jede dieser Messlokationen müssen alle Messprodukte genannt sein, die ab dem DTM+203 (Ausführungsdatum) in der SG2 genannten Marktlokation bzw. deren Tranchen vorhanden sind.",123
+Erforderliches Messprodukt der Messlokation,SG29,LIN,,,,,,Muss,,124,,,Erforderliches Messprodukt der Messlokation,SG29,LIN,,,,,,Muss,,124
+Erforderliches Messprodukt der Messlokation,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",125,,,Erforderliches Messprodukt der Messlokation,SG29,LIN,1082,,,,Positionsnummer,X [911],"[911] Format: Mögliche Werte: 1 bis n, je Nachricht oder Segmentgruppe bei 1 beginnend und fortlaufend aufsteigend",125
+Erforderliches Messprodukt der Messlokation,SG29,LIN,1229,,Messlokation,,,Z19,,126,,,Erforderliches Messprodukt der Messlokation,SG29,LIN,1229,,Messlokation,,,Z19,,126
+Erforderliches Messprodukt der Messlokation,SG29,PIA,,,,,,Muss,,127,,,Erforderliches Messprodukt der Messlokation,SG29,PIA,,,,,,Muss,,127
+Erforderliches Messprodukt der Messlokation,SG29,PIA,4347,,,,,5,,128,,,Erforderliches Messprodukt der Messlokation,SG29,PIA,4347,,,,,5,,128
+Erforderliches Messprodukt der Messlokation,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte",129,,,Erforderliches Messprodukt der Messlokation,SG29,PIA,7140,,,,Messprodukt-Code,X [100],"[100] Messprodukt-Code aus dem Kapitel 2.3 ""Standard- Messprodukte der Messlokation"" der Codeliste der Messprodukte",129
+Erforderliches Messprodukt der Messlokation,SG29,PIA,7143,,Z11,,Messprodukt,X,,130,,,Erforderliches Messprodukt der Messlokation,SG29,PIA,7143,,Z11,,Messprodukt,X,,130
+Weitere Beschreibung erforderliches Messprodukt,SG30,,,,,,,Muss,,131,,,Weitere Beschreibung erforderliches Messprodukt,SG30,,,,,,,Muss,,131
+Weitere Beschreibung erforderliches Messprodukt,SG30,CCI,,,,,,Muss,,132,,,Weitere Beschreibung erforderliches Messprodukt,SG30,CCI,,,,,,Muss,,132
+Weitere Beschreibung erforderliches Messprodukt,SG30,CCI,7059,,erforderlicher Wert,,,Z35,,133,,,Weitere Beschreibung erforderliches Messprodukt,SG30,CCI,7059,,erforderlicher Wert,,,Z35,,133
+Notwendigkeit einer zweiten Messung,SG30,CAV,,,,,,Muss,,134,,,Notwendigkeit einer zweiten Messung,SG30,CAV,,,,,,Muss,,134
+Notwendigkeit einer zweiten Messung,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,,135,,,Notwendigkeit einer zweiten Messung,SG30,CAV,7111,,ZC9,,Zweite Messung für Vergleichsmessung erforderlich,X,,135
+Notwendigkeit einer zweiten Messung,SG30,CAV,7110,,Z06,,vorhanden,X,,136,,,Notwendigkeit einer zweiten Messung,SG30,CAV,7110,,Z06,,vorhanden,X,,136
+Notwendigkeit einer zweiten Messung,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,137,,,Notwendigkeit einer zweiten Messung,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,137
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,,,,,,Muss,,138,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,,,,,,Muss,,138
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7111,,Z88,,NB,X,,139,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7111,,Z88,,NB,X,,139
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7110,,Z06,,vorhanden,X,,140,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7110,,Z06,,vorhanden,X,,140
+Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,141,,,Werteübermittlung an den NB aufgrund weiterem Verwendungszweck,SG30,CAV,7110,,Z07,,nicht vorhanden,X,,141
+Zugeordnete Zählzeit,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,142,,,Zugeordnete Zählzeit,SG30,,,,,,,Muss [86],[86] Wenn in derselben SG29 mit Z19 in LIN DE1229 (Erforderliches Messprodukt der Messlokation) das PIA+5 DE7140 mit einem Messprodukt aus Codeliste der Messprodukte Kapitel 2.3.1 Standard-Messprodukt der Messlokation mit der Wahlmöglichkeit der Zuordnung einer Zählzeit vorhanden ist,142
+Zugeordnete Zählzeit,SG30,CCI,,,,,,Muss,,143,,,Zugeordnete Zählzeit,SG30,CCI,,,,,,Muss,,143
+Zugeordnete Zählzeit,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,144,,,Zugeordnete Zählzeit,SG30,CCI,7059,,Messprodukt erforderlich,,,Z39 Z41,[75] Wenn für den erforderlichen Wert keine Zählzeit benötigt wird,144
+Zugeordnete Zählzeit,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,145,,,Zugeordnete Zählzeit,SG30,CCI,7037,,,,Code der Zählzeit,X [77],[77] Wenn im selben CCI im DE7059 der Code Z39 (Code der Zählzeit) vorhanden ist,145
+Referenz auf ID der Messlokation,SG34,,,,,,,Muss,,146,,,Referenz auf ID der Messlokation,SG34,,,,,,,Muss,,146
+Referenz auf ID der Messlokation,SG34,RFF,,,,,,Muss,,147,,,Referenz auf ID der Messlokation,SG34,RFF,,,,,,Muss,,147
+Referenz auf ID der Messlokation,SG34,RFF,1153,,Z19,,Messlokation,X,,148,,,Referenz auf ID der Messlokation,SG34,RFF,1153,,Z19,,Messlokation,X,,148
+Referenz auf ID der Messlokation,SG34,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,149,,,Referenz auf ID der Messlokation,SG34,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,149
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,150,,,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,150
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,151,,,Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,151
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,152,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,152
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,153,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,153
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,154,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,154
