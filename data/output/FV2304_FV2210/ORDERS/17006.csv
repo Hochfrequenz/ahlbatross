@@ -64,8 +64,8 @@ Meldepunkt,SG2,LOC,3225,,,,Identifikator,X [950] [521],"[521] Hinweis: Verwendun
 ,,,,,,,,,,,NEU,,Grund der Anforderung,SG29,IMD,7081,,Z61,,Direkter Vertrag MSB - AN,X,,57
 ,,,,,,,,,,,NEU,,Grund der Anforderung,SG29,IMD,7081,,Z62,,Direkter Vertrag MSB - ANN,X,,58
 ,,,,,,,,,,,NEU,,Grund der Anforderung,SG29,IMD,7081,,Z63,,Änderung im Lokationsbündel,X,,59
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,53,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60
-Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,54,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,61
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,55,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,,,,,,Muss,,62
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,56,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,57,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,53,,,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60
+Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,54,,,Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,61
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,55,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,62
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,56,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,57,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64

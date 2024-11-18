@@ -178,6 +178,6 @@ Preisangaben,SG40,PRI,6411,00018,ANN,,Jahr,X [31] ∧ [32],"[31] wenn BGM DE1001
 [512] Hinweis: Der genannte Wert gehört zum Intervall
 [908] Format: Mögliche Werte: 1 bis n
 [937] Format: keine Nachkommastelle",105
-Nachrichten-Endesegment,,UNT,,00024,,,,Muss,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00026,,,,Muss,,106
-Nachrichten-Endesegment,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,,101,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00026,,,Anzahl der Segmente in einer Nachricht,X,,107
-Nachrichten-Endesegment,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,,102,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00026,,,Nachrichten-Referenznummer,X,,108
+Nachrichten-Endesegment,,UNT,,00024,,,,Muss,,100,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00026,,,,Muss,,106
+Nachrichten-Endesegment,,UNT,0074,00024,,,Anzahl der Segmente in einer Nachricht,X,,101,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00026,,,Anzahl der Segmente in einer Nachricht,X,,107
+Nachrichten-Endesegment,,UNT,0062,00024,,,Nachrichten-Referenznummer,X,,102,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00026,,,Nachrichten-Referenznummer,X,,108

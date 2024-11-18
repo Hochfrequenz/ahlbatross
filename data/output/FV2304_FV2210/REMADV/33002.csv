@@ -99,23 +99,23 @@ Abweichungsgrund,SG7,AJT,1082,,E_0506,,EBD Nr. E_0506,X [492],"[492] Wenn MP-ID 
 Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ([2] ∨ [8] ∨ [9] ∨ [59]) Kann,"[2] Wenn SG7 AJT+28 vorhanden
 [8] Wenn SG7 AJT+A01/ A02+E_0505 vorhanden
 [9] Wenn SG7 AJT+A32/ A99+E_0503 vorhanden
-[59] Wenn SG7 AJT+A99+E_0459 vorhanden",83,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ([2] ∨ [8] ∨ [9] ∨ [59] ∨ [60] ∨ [61]) Kann,"[2] Wenn SG7 AJT+28 vorhanden
+[59] Wenn SG7 AJT+A99+E_0459 vorhanden",83,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,,,,,,Muss ([2] ∨ [8] ∨ [9] ∨ [59] ∨ [60] ∨ [61]) Kann,"[2] Wenn SG7 AJT+28 vorhanden
 [8] Wenn SG7 AJT+A01/ A02+E_0505 vorhanden
 [9] Wenn SG7 AJT+A32/A99+E_0503 vorhanden
 [59] Wenn SG7 AJT+A99+E_0459 vorhanden
 [60] Wenn SG7 AJT+A99+E_0243 vorhanden
 [61] Wenn SG7 AJT+A99+E_0261 vorhanden",85
-Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,84,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,86
-Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X,,85,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X,,87
-Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,86,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,88
-Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,87,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,89
-Summenbetrag,,MOA,,,,,,Muss,,88,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,,,,,,Muss,,90
-Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,89,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,91
+Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,84,,,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4451,,ABO,,Information über Abweichung,X,,86
+Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X,,85,,,Nähere Erläuterung des Abweichungsgrundes,SG7,FTX,4440,,,,Freier Text,X,,87
+Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,86,,,Trennung von Positions- u. Summenteil,,UNS,,,,,,Muss,,88
+Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,87,,,Trennung von Positions- u. Summenteil,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,89
+Summenbetrag,,MOA,,,,,,Muss,,88,,,Summenbetrag,,MOA,,,,,,Muss,,90
+Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,89,,,Summenbetrag,,MOA,5025,,12,,Überweisungsbetrag,X,,91
 Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],"[502] Hinweis: Bei positivem Betrag ergibt sich eine Forderung des Rechnungsstellers. Bei negativem Betrag ergibt sich eine Forderung für den Rechnungsempfänger.
 [926] Format: Möglicher Wert: 0
-[930] Format: max. 2 Nachkommastellen",90,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],"[502] Hinweis: Bei positivem Betrag ergibt sich eine Forderung des Rechnungsstellers. Bei negativem Betrag ergibt sich eine Forderung für den Rechnungsempfänger.
+[930] Format: max. 2 Nachkommastellen",90,,,Summenbetrag,,MOA,5004,,,,Geldbetrag,X [926],"[502] Hinweis: Bei positivem Betrag ergibt sich eine Forderung des Rechnungsstellers. Bei negativem Betrag ergibt sich eine Forderung für den Rechnungsempfänger.
 [926] Format: Möglicher Wert: 0
 [930] Format: max. 2 Nachkommastellen",92
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,91,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,,,,,,Muss,,93
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,92,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,94
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,93,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,95
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,91,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,93
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,92,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,94
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,93,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,95

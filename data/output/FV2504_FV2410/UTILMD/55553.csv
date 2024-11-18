@@ -65,15 +65,15 @@ Zieladresse URI,SG4,FTX,,00045,,,,Soll ([4] ⊻ [233]) ∧ (([458] ∧ [590]) �
 [453] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Auslöser „Bei Schwellwertunter-/ - überschreitung“ mit selbständiger Änderungsmöglichkeit bestellt wurde
 [458] Wenn bei der Bestellung das Konfigurationsprodukte 9991 00000 073 9 bestellt wurde
 [590] Hinweis: Für den Empfang des Steuerbefehls
-[619] Hinweis: Für die selbständige Änderungsmöglichkeit der Schwellwertunter- / -über- schreitung",48,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zieladresse URI,SG4,FTX,,00040,,,,Soll ([4] ⊻ [233]) ∧ (([458] ∧ [590]) ⊻ ([453] ∧ [619])),"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[619] Hinweis: Für die selbständige Änderungsmöglichkeit der Schwellwertunter- / -über- schreitung",48,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504,Zieladresse URI,SG4,FTX,,00040,,,,Soll ([4] ⊻ [233]) ∧ (([458] ∧ [590]) ⊻ ([453] ∧ [619])),"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [8] Wenn für Datenclearing erforderlich
 [233] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle NB
 [453] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Auslöser „Bei Schwellwertunter-/ - überschreitung“ mit selbständiger Änderungsmöglichkeit bestellt wurde
 [458] Wenn bei der Bestellung das Konfigurationsprodukte 9991 00000 073 9 bestellt wurde
 [590] Hinweis: Für den Empfang des Steuerbefehls
 [619] Hinweis: Für die selbständige Änderungsmöglichkeit der Schwellwertunter- / -über- schreitung",44
-Zieladresse URI,SG4,FTX,4451,00045,Z17,,Zieladresse URI,X,,49,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zieladresse URI,SG4,FTX,4451,00040,Z17,,Zieladresse URI,X,,45
-Zieladresse URI,SG4,FTX,4440,00045,,,Zieladresse URI,X,,50,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zieladresse URI,SG4,FTX,4440,00040,,,Zieladresse URI,X,,46
+Zieladresse URI,SG4,FTX,4451,00045,Z17,,Zieladresse URI,X,,49,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zieladresse URI,SG4,FTX,4451,00040,Z17,,Zieladresse URI,X,,45
+Zieladresse URI,SG4,FTX,4440,00045,,,Zieladresse URI,X,,50,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zieladresse URI,SG4,FTX,4440,00040,,,Zieladresse URI,X,,46
 ,,,,,,,,,,,NEU,,IP-Adresse des Absenders,SG4,FTX,,00041,,,,Soll ([4] ⊻ [233]) ∧ [151] ∧ [152],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [8] Wenn für Datenclearing erforderlich
 [151] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Ü̈bertragungsweg ""aus dem SMGW"" bestellt wurde. Der Empfänger der Werte kann dadurch seine Firewall genau Konfigurieren
@@ -89,34 +89,34 @@ Zieladresse URI,SG4,FTX,4440,00045,,,Zieladresse URI,X,,50,ÄNDERUNG,Segment ID_
 ,,,,,,,,,,,NEU,,IP-Range des Absenders,SG4,FTX,4451,00042,Z28,,IP-Range des Absenders,X,,51
 ,,,,,,,,,,,NEU,,IP-Range des Absenders,SG4,FTX,4440,00042,,,untere Grenze der IP-Range des Absenders,X,,52
 ,,,,,,,,,,,NEU,,IP-Range des Absenders,SG4,FTX,4440,00042,,,obere Grenze der IP-Range des,X,,53
-Zertifikatsaussteller (Issuer),SG4,FTX,,00046,,,,Muss [26],[26] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden,51,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,,00043,,,,Muss [156],"[8] Wenn für Datenclearing erforderlich
+Zertifikatsaussteller (Issuer),SG4,FTX,,00046,,,,Muss [26],[26] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden,51,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,,00043,,,,Muss [156],"[8] Wenn für Datenclearing erforderlich
 [156] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden",54
-Zertifikatsaussteller (Issuer),SG4,FTX,4451,00046,Z24,,Aussteller (Issuer),X,,52,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,4451,00043,Z24,,Aussteller (Issuer),X,,55
-Zertifikatsaussteller (Issuer),SG4,FTX,4440,00046,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",53,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,4440,00043,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",56
-Zertifikatsnutzer (Subject),SG4,FTX,,00047,,,,Muss [26],[26] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden,54,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,,00044,,,,Muss [156],"[8] Wenn für Datenclearing erforderlich
+Zertifikatsaussteller (Issuer),SG4,FTX,4451,00046,Z24,,Aussteller (Issuer),X,,52,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,4451,00043,Z24,,Aussteller (Issuer),X,,55
+Zertifikatsaussteller (Issuer),SG4,FTX,4440,00046,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",53,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zertifikatsaussteller (Issuer),SG4,FTX,4440,00043,,,Zertifikatsaussteller,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",56
+Zertifikatsnutzer (Subject),SG4,FTX,,00047,,,,Muss [26],[26] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden,54,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,,00044,,,,Muss [156],"[8] Wenn für Datenclearing erforderlich
 [156] Wenn SG4 FTX+Z17 (Zieladresse URI) vorhanden",57
-Zertifikatsnutzer (Subject),SG4,FTX,4451,00047,Z23,,Zertifikatsnutzer (Subject),X,,55,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,4451,00044,Z23,,Zertifikatsnutzer (Subject),X,,58
-Zertifikatsnutzer (Subject),SG4,FTX,4440,00047,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",56,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,4440,00044,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",59
+Zertifikatsnutzer (Subject),SG4,FTX,4451,00047,Z23,,Zertifikatsnutzer (Subject),X,,55,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,4451,00044,Z23,,Zertifikatsnutzer (Subject),X,,58
+Zertifikatsnutzer (Subject),SG4,FTX,4440,00047,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",56,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zertifikatsnutzer (Subject),SG4,FTX,4440,00044,,,Zertifikatsnutzer,X [967],"[967] Format: Zertifikatskörper gemäß X509.1, BSI TR-03109-4",59
 IP-Adresse für das CLS- Device,SG4,FTX,,00048,,,,Soll ([4] ⊻ [233]) ∧ [459],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [233] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle NB
-[459] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Übertragungsweg ""CLS-Direkt aus dem SMGW"" bestellt wurde",57,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,,00045,,,,Soll ([4] ⊻ [233]) ∧ [459],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[459] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Übertragungsweg ""CLS-Direkt aus dem SMGW"" bestellt wurde",57,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,,00045,,,,Soll ([4] ⊻ [233]) ∧ [459],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [8] Wenn für Datenclearing erforderlich
 [233] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle NB
 [459] Wenn bei der Bestellung ein Messprodukt der Codeliste der Konfigurationen aus dem Kapitel 4.4 mit dem Übertragungsweg ""CLS-Direkt aus dem SMGW"" bestellt wurde",60
-IP-Adresse für das CLS- Device,SG4,FTX,4451,00048,Z18,,IP-Adresse für das CLS- Device,X,,58,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,4451,00045,Z18,,IP-Adresse für das CLS- Device,X,,61
-IP-Adresse für das CLS- Device,SG4,FTX,4440,00048,,,Freier Text,X,,59,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,4440,00045,,,Freier Text,X,,62
-Prüfidentifikator,SG6,,,,,,,Muss,,60,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,,,,,,,Muss,,63
-Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,64
-Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,65
-Prüfidentifikator,SG6,RFF,1154,00057,55553,,GPKE / Stammdaten auf individuelle Bestellung,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55553,,GPKE / Stammdaten auf individuelle Bestellung,X,,66
-Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,,,,,,,Muss,,64,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,,,,,,,Muss,,67
-Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,,00061,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,,00060,,,,Muss,,68
-Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1153,00061,Z42,,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1153,00060,Z42,,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,69
-Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1154,00061,,,"Referenz, Identifikation",X,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1154,00060,,,"Referenz, Identifikation",X,,70
-Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,,,,,,,Muss,,68,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,,,,,,,Muss,,71
-Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,,00062,,,,Muss,,69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,,00061,,,,Muss,,72
-Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1153,00062,Z43,,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,70,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1153,00061,Z43,,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,73
-Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1154,00062,,,"Referenz, Identifikation",X,,71,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1154,00061,,,"Referenz, Identifikation",X,,74
+IP-Adresse für das CLS- Device,SG4,FTX,4451,00048,Z18,,IP-Adresse für das CLS- Device,X,,58,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,4451,00045,Z18,,IP-Adresse für das CLS- Device,X,,61
+IP-Adresse für das CLS- Device,SG4,FTX,4440,00048,,,Freier Text,X,,59,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,IP-Adresse für das CLS- Device,SG4,FTX,4440,00045,,,Freier Text,X,,62
+Prüfidentifikator,SG6,,,,,,,Muss,,60,,,Prüfidentifikator,SG6,,,,,,,Muss,,63
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,64
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,62,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,65
+Prüfidentifikator,SG6,RFF,1154,00057,55553,,GPKE / Stammdaten auf individuelle Bestellung,X,,63,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55553,,GPKE / Stammdaten auf individuelle Bestellung,X,,66
+Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,,,,,,,Muss,,64,,,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,,,,,,,Muss,,67
+Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,,00061,,,,Muss,,65,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,,00060,,,,Muss,,68
+Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1153,00061,Z42,,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,66,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1153,00060,Z42,,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,69
+Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1154,00061,,,"Referenz, Identifikation",X,,67,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer der Nachricht der betroffenen Antwort auf Bestellung ,SG6,RFF,1154,00060,,,"Referenz, Identifikation",X,,70
+Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,,,,,,,Muss,,68,,,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,,,,,,,Muss,,71
+Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,,00062,,,,Muss,,69,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,,00061,,,,Muss,,72
+Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1153,00062,Z43,,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,70,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1153,00061,Z43,,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung (Bestellbestätigung),X,,73
+Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1154,00062,,,"Referenz, Identifikation",X,,71,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1154,00061,,,"Referenz, Identifikation",X,,74
 ,,,,,,,,,,,NEU,,Verwendungszeitraum der Daten,SG6,,,,,,,Muss [707],"[8] Wenn für Datenclearing erforderlich
 [301] Wenn BGM+E03 (Änderungsmeldung) vorhanden
 [315] Wenn BGM+Z88 (Datenclearing) vorhanden
@@ -143,34 +143,34 @@ Referenznummer des Vorgangs der betroffenen Antwort auf Bestellung,SG6,RFF,1154,
 ,,,,,,,,,,,NEU,,Verwendung der Daten bis,SG6,DTM,2380,00068,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,86
 ,,,,,,,,,,,NEU,,Verwendung der Daten bis,SG6,DTM,2379,00068,303,,CCYYMMDDHHMMZZZ,X,,87
 OBIS-Daten der Marktlokation,SG8,,,,,,,Soll [4] ∧ [457],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
-[457] Wenn bei der Bestellung das Messprodukten 9991 00000 149 8 bestellt wurde",72,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Daten der Marktlokation,SG8,,,,,,,Soll [4] ∧ [457],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
+[457] Wenn bei der Bestellung das Messprodukten 9991 00000 149 8 bestellt wurde",72,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,OBIS-Daten der Marktlokation,SG8,,,,,,,Soll [4] ∧ [457],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [8] Wenn für Datenclearing erforderlich
 [457] Wenn bei der Bestellung das Messprodukten 9991 00000 149 8 bestellt wurde",88
-OBIS-Daten der Marktlokation,SG8,SEQ,,00198,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Daten der Marktlokation,SG8,SEQ,,00195,,,,Muss,,89
-OBIS-Daten der Marktlokation,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Daten der Marktlokation,SG8,SEQ,1229,00195,Z02,,OBIS-Daten der Marktlokation,X,,90
+OBIS-Daten der Marktlokation,SG8,SEQ,,00198,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Daten der Marktlokation,SG8,SEQ,,00195,,,,Muss,,89
+OBIS-Daten der Marktlokation,SG8,SEQ,1229,00198,Z02,,OBIS-Daten der Marktlokation,X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Daten der Marktlokation,SG8,SEQ,1229,00195,Z02,,OBIS-Daten der Marktlokation,X,,90
 Referenz auf die ID der Marktlokation,SG8,RFF,,00199,,,,Muss,,75,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG8,RFF,1153,00199,Z18,,Marktlokation,X,,76,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG8,RFF,1154,00199,,,ID einer Marktlokation,X [950],[950] Format: Marktlokations-ID,77,ENTFÄLLT,,,,,,,,,,,,
 ,,,,,,,,,,,NEU,,OBIS-Daten der Marktlokation,SG8,SEQ,1050,00195,,,Referenz auf Zeitraum-ID,X [914] ∧ [937] [22],"[22] Es ist die Zeitraum-ID vom DE1156 aus einem passenden SG6 RFF+Z47/ Z48/ Z49 (Verwendungszeitraum der Daten) einzutragen
 [914] Format: Möglicher Wert: > 0
 [937] Format: keine Nachkommastelle",91
-OBIS-Kennzahl der Marktlokation,SG8,PIA,,00200,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,,00197,,,,Muss,,92
-OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00200,5,,Produktidentifikation,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00197,5,,Produktidentifikation,X,,93
-OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00197,,,OBIS-Kennzahl der Marktlokation,X,,94
-OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,,81,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00197,SRW,,OBIS-Kennzahl,X,,95
-Wertegranularität,SG10,,,,,,,Muss [257],[257] Wenn in derselben SG8 SEQ+Z02 (OBIS-Daten der Marktlokation) das PIA+5+1- b?:1.9.e vorhanden,82,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,,,,,,,Muss [257],[257] Wenn in derselben SG8 SEQ (OBIS-Daten der Marktlokation) das PIA+5+1- b?:1.9.e vorhanden,96
-Wertegranularität,SG10,CCI,,00201,,,,Muss,,83,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CCI,,00198,,,,Muss,,97
-Wertegranularität,SG10,CCI,7037,00201,ZE4,,Wertegranularität,X,,84,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CCI,7037,00198,ZE4,,Wertegranularität,X,,98
-Wertegranularität,SG10,CAV,,00202,,,,Muss,,85,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CAV,,00199,,,,Muss,,99
-Wertegranularität,SG10,CAV,7111,00202,ZD9,,Jährlich,X,,86,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CAV,7111,00199,ZD9,,Jährlich,X,,100
-Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,87,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,101
-Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,88,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,102
-Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,89,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,103
-Zugeordnete Zählzeitdefinition,SG10,,,,,,,Soll [113],[113] Wenn es sich um eine Antwort auf die Bestellung einer Zählzeit handelt,90,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Zählzeitdefinition,SG10,,,,,,,Soll [113],"[8] Wenn für Datenclearing erforderlich
+OBIS-Kennzahl der Marktlokation,SG8,PIA,,00200,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,,00197,,,,Muss,,92
+OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00200,5,,Produktidentifikation,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,4347,00197,5,,Produktidentifikation,X,,93
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00200,,,OBIS-Kennzahl der Marktlokation,X,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,7140,00197,,,OBIS-Kennzahl der Marktlokation,X,,94
+OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00200,SRW,,OBIS-Kennzahl,X,,81,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,OBIS-Kennzahl der Marktlokation,SG8,PIA,7143,00197,SRW,,OBIS-Kennzahl,X,,95
+Wertegranularität,SG10,,,,,,,Muss [257],[257] Wenn in derselben SG8 SEQ+Z02 (OBIS-Daten der Marktlokation) das PIA+5+1- b?:1.9.e vorhanden,82,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Wertegranularität,SG10,,,,,,,Muss [257],[257] Wenn in derselben SG8 SEQ (OBIS-Daten der Marktlokation) das PIA+5+1- b?:1.9.e vorhanden,96
+Wertegranularität,SG10,CCI,,00201,,,,Muss,,83,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Wertegranularität,SG10,CCI,,00198,,,,Muss,,97
+Wertegranularität,SG10,CCI,7037,00201,ZE4,,Wertegranularität,X,,84,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Wertegranularität,SG10,CCI,7037,00198,ZE4,,Wertegranularität,X,,98
+Wertegranularität,SG10,CAV,,00202,,,,Muss,,85,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Wertegranularität,SG10,CAV,,00199,,,,Muss,,99
+Wertegranularität,SG10,CAV,7111,00202,ZD9,,Jährlich,X,,86,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Wertegranularität,SG10,CAV,7111,00199,ZD9,,Jährlich,X,,100
+Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,87,,,Wertegranularität,SG10,CAV,7111,,ZE8,,Halbjährlich,X,,101
+Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,88,,,Wertegranularität,SG10,CAV,7111,,ZE9,,Quartalsweise,X,,102
+Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,89,,,Wertegranularität,SG10,CAV,7111,,ZB7,,Monatlich,X,,103
+Zugeordnete Zählzeitdefinition,SG10,,,,,,,Soll [113],[113] Wenn es sich um eine Antwort auf die Bestellung einer Zählzeit handelt,90,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Zugeordnete Zählzeitdefinition,SG10,,,,,,,Soll [113],"[8] Wenn für Datenclearing erforderlich
 [113] Wenn es sich um eine Antwort auf die Bestellung einer Zählzeit handelt",104
-Zugeordnete Zählzeitdefinition,SG10,CCI,,00203,,,,Muss,,91,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,,00200,,,,Muss,,105
-Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00203,Z39,,Code der Zählzeitdefinition,X,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00200,Z39,,Code der Zählzeitdefinition,X,,106
-Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00203,,,Code der Zählzeitdefinition,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00200,,,Code der Zählzeitdefinition,X,,107
+Zugeordnete Zählzeitdefinition,SG10,CCI,,00203,,,,Muss,,91,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,,00200,,,,Muss,,105
+Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00203,Z39,,Code der Zählzeitdefinition,X,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00200,Z39,,Code der Zählzeitdefinition,X,,106
+Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00203,,,Code der Zählzeitdefinition,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00200,,,Code der Zählzeitdefinition,X,,107
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 das SG10 CCI+Z39 (Zugeordnete Zählzeitdefinition) vorhanden ist,108
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister,SG10,CCI,,00201,,,,Muss,,109
 ,,,,,,,,,,,NEU,,Zugeordnetes Zählzeitregister,SG10,CCI,7059,00201,Z38,,Code des Zählzeitregisters,X,,110
@@ -227,10 +227,10 @@ Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00203,,,Code der Zählzeitdefiniti
 ,,,,,,,,,,,NEU,,Zugeordnete Zählzeitdefinition,SG10,CCI,,00332,,,,Muss,,148
 ,,,,,,,,,,,NEU,,Zugeordnete Zählzeitdefinition,SG10,CCI,7059,00332,Z39,,Code der Zählzeitdefinition,X,,149
 ,,,,,,,,,,,NEU,,Zugeordnete Zählzeitdefinition,SG10,CCI,7037,00332,,,Code der Zählzeitdefinition,X,,150
-Zugeordnetes Zählzeitregister ,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 das SG10 CCI+Z39 (Zugeordnete Zählzeitdefinition) vorhanden ist,94,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnetes Zählzeitregister ,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 das SG10 CCI+Z39 (Zugeordnete Zählzeitdefinition) vorhanden ist,151
-Zugeordnetes Zählzeitregister ,SG10,CCI,,00204,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,,00333,,,,Muss,,152
-Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00204,Z38,,Code des Zählzeitregisters,X,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00333,Z38,,Code des Zählzeitregisters,X,,153
-Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00204,,,Code des Zählzeitregisters,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00333,,,Code des Zählzeitregisters,X,,154
+Zugeordnetes Zählzeitregister ,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 das SG10 CCI+Z39 (Zugeordnete Zählzeitdefinition) vorhanden ist,94,,,Zugeordnetes Zählzeitregister ,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 das SG10 CCI+Z39 (Zugeordnete Zählzeitdefinition) vorhanden ist,151
+Zugeordnetes Zählzeitregister ,SG10,CCI,,00204,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,,00333,,,,Muss,,152
+Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00204,Z38,,Code des Zählzeitregisters,X,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00333,Z38,,Code des Zählzeitregisters,X,,153
+Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00204,,,Code des Zählzeitregisters,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00333,,,Code des Zählzeitregisters,X,,154
 Zähleinrichtungsdaten,SG8,,,,,,,Muss [241] Soll [4] ∧ [457],"[4] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle LF
 [241] Wenn MP-ID in SG2 NAD+MR (Nachrichtenempfänger) in der Rolle MSB
 [457] Wenn bei der Bestellung das Messprodukten 9991 00000 149 8 bestellt wurde",98,ENTFÄLLT,,,,,,,,,,,,
@@ -284,17 +284,17 @@ Zugeordnetes Zählzeitregister ,SG10,,,,,,,Muss [421],[421] Wenn in dieser SG8 d
 Zugeordnetes Zählzeitregister ,SG10,CCI,,00348,,,,Muss,,142,ENTFÄLLT,,,,,,,,,,,,
 Zugeordnetes Zählzeitregister ,SG10,CCI,7059,00348,Z38,,Code des Zählzeitregisters,X,,143,ENTFÄLLT,,,,,,,,,,,,
 Zugeordnetes Zählzeitregister ,SG10,CCI,7037,00348,,,Code des Zählzeitregisters,X,,144,ENTFÄLLT,,,,,,,,,,,,
-Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss,,145,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss,,155
-Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00349,,,,Muss,,146,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00334,,,,Muss,,156
-Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00349,11,,Produkt,X,,147,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00334,11,,Produkt,X,,157
-Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00349,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,148,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00334,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,158
-Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00350,,,,Muss,,149,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00335,,,,Muss,,159
-Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Vorkommastelle,X,,150,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00335,,,Angabe der Vorkommastelle,X,,160
-Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Nachkommastelle,X,,151,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00335,,,Angabe der Nachkommastelle,X,,161
-Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss,,152,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss,,162
-Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00351,,,,Muss,,153,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00336,,,,Muss,,163
-Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00351,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,154,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00336,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,164
-Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00351,,,Bezeichnung des Zählwerks auf dem Gerät,X,,155,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00336,,,Bezeichnung des Zählwerks auf dem Gerät,X,,165
-Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,156,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,166
-Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,157,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,167
-Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,158,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,168
+Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss,,145,,,Vor- und Nachkommastellen des Zählwerks,SG10,,,,,,,Muss,,155
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00349,,,,Muss,,146,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,,00334,,,,Muss,,156
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00349,11,,Produkt,X,,147,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7059,00334,11,,Produkt,X,,157
+Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00349,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,148,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CCI,7037,00334,Z33,,Vor- und Nachkommastellen des Zählwerkes,X,,158
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00350,,,,Muss,,149,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,,00335,,,,Muss,,159
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Vorkommastelle,X,,150,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00335,,,Angabe der Vorkommastelle,X,,160
+Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00350,,,Angabe der Nachkommastelle,X,,151,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Vor- und Nachkommastellen des Zählwerks,SG10,CAV,7110,00335,,,Angabe der Nachkommastelle,X,,161
+Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss,,152,,,Bezeichnung des Zählwerks auf dem Gerät,SG10,,,,,,,Muss,,162
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00351,,,,Muss,,153,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,,00336,,,,Muss,,163
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00351,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,154,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7037,00336,Z63,,Lokale Kennzeichnung zu Kontrollzwecken,X,,164
+Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00351,,,Bezeichnung des Zählwerks auf dem Gerät,X,,155,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Bezeichnung des Zählwerks auf dem Gerät,SG10,CCI,7036,00336,,,Bezeichnung des Zählwerks auf dem Gerät,X,,165
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,156,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,166
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,157,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,167
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,158,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,168

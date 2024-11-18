@@ -109,8 +109,8 @@ Erforderliches Messprodukt der Messlokation,SG27,PIA,7143,,Z11,,Messprodukt,X,,7
 ,,,,,,,,,,,NEU,,Erforderliches Messprodukt der Netzlokation,SG27,PIA,4347,00028,,,,5,,83
 ,,,,,,,,,,,NEU,,Erforderliches Messprodukt der Netzlokation,SG27,PIA,7140,00028,,,Messprodukt-Code,X [13],"[13] Es sind nur die Messprodukt-Codes erlaubt, die in der Codeliste der Konfigurationen im Kapitel 4.6 ""Codelisten der Messprodukte Strom für ESA"", in der Spalte ""Ebene"" das Objekt ""Netzlokation"" angegeben ist.",84
 ,,,,,,,,,,,NEU,,Erforderliches Messprodukt der Netzlokation,SG27,PIA,7143,00028,Z11,,Messprodukt,X,,85
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00049,,,,Muss,,86
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00049,,,,S,,87
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00050,,,,Muss,,88
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00050,,,Anzahl der Segmente in einer Nachricht,X,,89
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,82,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00050,,,Nachrichten-Referenznummer,X,,90
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00049,,,,Muss,,86
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,79,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00049,,,,S,,87
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00050,,,,Muss,,88
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,81,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00050,,,Anzahl der Segmente in einer Nachricht,X,,89
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,82,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00050,,,Nachrichten-Referenznummer,X,,90

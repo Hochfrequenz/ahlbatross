@@ -68,8 +68,8 @@ Name und Lieferadresse für Altgeräte,SG3,NAD,3251,,,,"Postleitzahl, Code",M [4
 Name und Lieferadresse für Altgeräte,SG3,NAD,3207,,,,"Ländername, Code",X,,59,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Name und Lieferadresse für Altgeräte,SG3,NAD,3251,00020,,,"Postleitzahl, Code",M [40] S [34],"[34] wenn vorhanden
 [40] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" enthält",59
 ,,,,,,,,,,,NEU,,Name und Lieferadresse für Altgeräte,SG3,NAD,3207,00020,,,"Ländername, Code",X,,60
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,61
-Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,61,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00030,S,,Trennung von Positions- und Summenteil,X,,62
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,63
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,64
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,65
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,60,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00030,,,,Muss,,61
+Abschnitts-Kontrollsegment,,UNS,0081,,S,,Trennung von Positions- und Summenteil,X,,61,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00030,S,,Trennung von Positions- und Summenteil,X,,62
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,62,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00034,,,,Muss,,63
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,63,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00034,,,Anzahl der Segmente in einer Nachricht,X,,64
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,64,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00034,,,Nachrichten-Referenznummer,X,,65

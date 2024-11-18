@@ -284,12 +284,12 @@ Grund der Ersatzwertbildung,SG10,STS,9013,,ZR3,,Wartungsarbeiten an eichrechtsko
 Grund der Ersatzwertbildung,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1],,180,,,Grund der Ersatzwertbildung,SG10,STS,9013,,ZR4,,Konsistenz- und Synchronprüfung,X [4P0..1],,180
 ,,,,,,,,,,,NEU,,Grund der Ersatzwertbildung,SG10,STS,9013,,ZT8,,"Anforderung in die Vergangenheit, zum angeforderten Zeitpunkt liegt kein Wert vor.",X [4P0..1],"[46] Wenn Wert in SG6 LOC+172 DE3225 genau 11 Stellen
 [570] Hinweis: Verwendung ist nur zulässig, wenn es sich um 1:n Beziehung zwischen Markt- und Messlokation handelt und auf Ebene der Messlokation unterschiedliche Gründe für die Ersatzwertbildung vorliegen und kommuniziert wurden.",181
-Gasqualität,SG10,STS,,,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt,181,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Gasqualität,SG10,STS,,,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt,182
-Gasqualität,SG10,STS,9015,,Z31,,Gasqualität,X,,182,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Gasqualität,SG10,STS,9015,,Z31,,Gasqualität,X,,183
-Gasqualität,SG10,STS,9013,,ZG3,,Umstellung Gasqualität,X,,183,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Gasqualität,SG10,STS,9013,,ZG3,,Umstellung Gasqualität,X,,184
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,184,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,,,,,Muss,,185
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,185,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,186
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,186,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,187
-Nutzdaten-Endesegment,,UNZ,,,,,,Muss,,187,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nutzdaten-Endesegment,,UNZ,,,,,,Muss,,188
-Nutzdaten-Endesegment,,UNZ,0036,,,,Datenaustauschzähler,X,,188,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nutzdaten-Endesegment,,UNZ,0036,,,,Datenaustauschzähler,X,,189
-Nutzdaten-Endesegment,,UNZ,0020,,,,Datenaustauschreferenz,X,,189,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nutzdaten-Endesegment,,UNZ,0020,,,,Datenaustauschreferenz,X,,190
+Gasqualität,SG10,STS,,,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt,181,,,Gasqualität,SG10,STS,,,,,,Soll [97],[97] Wenn es sich um die Übermittlung eines Wertes aufgrund der Umstellung der Gasqualität handelt,182
+Gasqualität,SG10,STS,9015,,Z31,,Gasqualität,X,,182,,,Gasqualität,SG10,STS,9015,,Z31,,Gasqualität,X,,183
+Gasqualität,SG10,STS,9013,,ZG3,,Umstellung Gasqualität,X,,183,,,Gasqualität,SG10,STS,9013,,ZG3,,Umstellung Gasqualität,X,,184
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,184,,,Nachrichten-Endesegment,,UNT,,,,,,Muss,,185
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,185,,,Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,186
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,186,,,Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,187
+Nutzdaten-Endesegment,,UNZ,,,,,,Muss,,187,,,Nutzdaten-Endesegment,,UNZ,,,,,,Muss,,188
+Nutzdaten-Endesegment,,UNZ,0036,,,,Datenaustauschzähler,X,,188,,,Nutzdaten-Endesegment,,UNZ,0036,,,,Datenaustauschzähler,X,,189
+Nutzdaten-Endesegment,,UNZ,0020,,,,Datenaustauschreferenz,X,,189,,,Nutzdaten-Endesegment,,UNZ,0020,,,,Datenaustauschreferenz,X,,190

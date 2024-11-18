@@ -61,8 +61,8 @@ MP-ID Empfänger,SG2,NAD,3039,,,,MP-ID,X,,34,ÄNDERUNG,Segment ID_FV2310|Segment
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9015,00037,7,,Transaktionsgrund,X,,50
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9013,00037,ZF3,,Nicht bila.rel. Anfrage an LF,X,,51
 ,,,,,,,,,,,NEU,,Status der Antwort,SG4,STS,,00039,,,,Muss [249],[249] Innerhalb eines SG4 IDE müssen alle DE1131 der SG4,52
-EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,53
-EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,54
+EDIFACT Struktur,SG2,NAD,3055,,9,,GS1,X,,35,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9015,00039,E01,,Status der Antwort,X,,53
+EDIFACT Struktur,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e. V.)",X,,36,ÄNDERUNG,Segmentgruppe_FV2310|Segmentgruppe_FV2404|Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,EDIFACT Struktur,SG4,STS,9013,00039,,,Code des Prüfschritts,X,,54
 Vorgang,SG4,,,,,,,Muss,,37,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,,,,,,Muss,,38,ENTFÄLLT,,,,,,,,,,,,
 Vorgang,SG4,IDE,7495,,24,,Transaktion,X,,39,ENTFÄLLT,,,,,,,,,,,,
@@ -118,7 +118,7 @@ Kunde des Lieferanten,SG12,NAD,3045,,Z01,,Struktur von Personennamen,X,,83,ÄNDE
 ,,,,,,,,,,,NEU,,Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,84
 ,,,,,,,,,,,NEU,,Referenz auf die ID der Marktlokation,SG12,RFF,,00521,,,,Muss,,85
 ,,,,,,,,,,,NEU,,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,86
-EDIFACT Struktur,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,84,ÄNDERUNG,Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,87
+EDIFACT Struktur,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,84,ÄNDERUNG,Segment_FV2310|Segment_FV2404|Datenelement_FV2310|Datenelement_FV2404|Segment ID_FV2310|Segment ID_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,EDIFACT Struktur,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,87
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Soll [336],"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
 [336] Wenn in Änderungsmeldung gefüllt",88
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00522,,,,Muss,,89
@@ -131,9 +131,9 @@ EDIFACT Struktur,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,84,ÄNDER
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",96
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,97
-Referenz auf die ID der Marktlokation,SG12,RFF,,,,,,Muss,,85,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,98
-Referenz auf die ID der Marktlokation,SG12,RFF,1153,,Z18,,Marktlokation,X,,86,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,99
-Referenz auf die ID der Marktlokation,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,87,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,100
+Referenz auf die ID der Marktlokation,SG12,RFF,,,,,,Muss,,85,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,98
+Referenz auf die ID der Marktlokation,SG12,RFF,1153,,Z18,,Marktlokation,X,,86,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,99
+Referenz auf die ID der Marktlokation,SG12,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,87,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,100
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Soll [336],"[202] Wenn SG4 STS+E01+ZG2 (Status der Antwort: Gültiges Ergebnis nach der Datenprüfung) vorhanden
 [336] Wenn in Änderungsmeldung gefüllt",88,ENTFÄLLT,,,,,,,,,,,,
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,,,,,Muss,,89,ENTFÄLLT,,,,,,,,,,,,

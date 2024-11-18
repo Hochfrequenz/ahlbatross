@@ -277,6 +277,85 @@ class TestMultiColumnDataFrames:
         )
         assert_frame_equal(output_df, expected_output)
 
+    def test_align_columns_multiple_entries_per_segmentname(self) -> None:
+        """
+        test that only rows with changes have an "ÄNDERUNG" label;
+        other rows of the same `Segmentname` should not be tagged with "ÄNDERUNG".
+        """
+        previous_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["1", "1", "1", "2", "2", "2"],
+                "Segmentgruppe": ["a", "a", "a", "b", "b", "b"],
+            }
+        )
+        subsequent_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["1", "1", "1", "2", "2", "2"],
+                "Segmentgruppe": ["x", "a", "x", "x", "b", "x"],
+            }
+        )
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "1",
+                    "1",
+                    "1",
+                    "2",
+                    "2",
+                    "2",
+                ],
+                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
+                    "a",
+                    "a",
+                    "a",
+                    "b",
+                    "b",
+                    "b",
+                ],
+                "Änderung": [
+                    "ÄNDERUNG",
+                    "",
+                    "ÄNDERUNG",
+                    "ÄNDERUNG",
+                    "",
+                    "ÄNDERUNG",
+                ],
+                "changed_entries": [
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                ],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "1",
+                    "1",
+                    "1",
+                    "2",
+                    "2",
+                    "2",
+                ],
+                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
+                    "x",
+                    "a",
+                    "x",
+                    "x",
+                    "b",
+                    "x",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
     def test_align_columns_empty_dataframes(self) -> None:
         previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
         subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})

@@ -31,37 +31,37 @@ Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,,00005,,,,Muss [3],[3] Wenn BGM+Z5
 Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,1153,00005,TN,,Transaktions- Referenznummer,X,,21,ÄNDERUNG,Datenelement_FV2310|Datenelement_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404,Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,,00005,,,,Muss,,21
 Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,1154,00005,,,Vorgangsnummer,X [502],[502] Hinweis: Vorgangsnummer aus CNI DE1490 der IFTSTA mit BGM+Z33 mit der die Information über den Entsperrauftrag übermittelt wurde,22,ÄNDERUNG,Datenelement_FV2310|Datenelement_FV2404|Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingungsausdruck_FV2310|Bedingungsausdruck_FV2404|Bedingung_FV2310|Bedingung_FV2404,Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,1153,00005,TN,,Transaktions- Referenznummer,X,,22
 ,,,,,,,,,,,NEU,,Vorgangsnummer der Anfrage/Bestellung,SG1,RFF,1154,00005,,,Vorgangsnummer,X [502],[502] Hinweis: Vorgangsnummer aus CNI DE1490 der IFTSTA mit BGM+Z33 mit der die Information über den Entsperrauftrag übermittelt wurde,23
-Prüfidentifikator,SG1,,,,,,,Muss,,23,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG1,,,,,,,Muss,,24
-Prüfidentifikator,SG1,RFF,,00006,,,,Muss,,24,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG1,RFF,,00006,,,,Muss,,25
-Prüfidentifikator,SG1,RFF,1153,00006,Z13,,Prüfidentifikator,X,,25,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG1,RFF,1153,00006,Z13,,Prüfidentifikator,X,,26
-Prüfidentifikator,SG1,RFF,1154,,39001,,Weiterleitung der Stornierung,X,,26,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG1,RFF,1154,,39001,,Weiterleitung der Stornierung,X,,27
-MP-ID Absender,SG3,,,,,,,Muss,,27,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,,,,,,,Muss,,28
-MP-ID Absender,SG3,NAD,,00007,,,,Muss,,28,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,,00007,,,,Muss,,29
-MP-ID Absender,SG3,NAD,3035,00007,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,29,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,3035,00007,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,30
-MP-ID Absender,SG3,NAD,3039,00007,,,MP-ID,X,,30,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,3039,00007,,,MP-ID,X,,31
-MP-ID Absender,SG3,NAD,3055,00007,9,,GS1,X,,31,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,3055,00007,9,,GS1,X,,32
-MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,32,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,33
-MP-ID Absender,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,33,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Absender,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,34
-Ansprechpartner,SG6,,,,,,,Kann,,34,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Ansprechpartner,SG6,,,,,,,Kann,,35
-Ansprechpartner,SG6,CTA,,00008,,,,Muss,,35,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Ansprechpartner,SG6,CTA,,00008,,,,Muss,,36
-Ansprechpartner,SG6,CTA,3139,00008,IC,,Informationskontakt,X,,36,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Ansprechpartner,SG6,CTA,3139,00008,IC,,Informationskontakt,X,,37
-Ansprechpartner,SG6,CTA,3412,00008,,,Kontakt,X,,37,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Ansprechpartner,SG6,CTA,3412,00008,,,Kontakt,X,,38
-Kommunikationsverbindung,SG6,COM,,00009,,,,Muss,,38,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,,00009,,,,Muss,,39
-Kommunikationsverbindung,SG6,COM,3148,00009,,,"Kommunikationsadresse, Identifikation",X,,39,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3148,00009,,,"Kommunikationsadresse, Identifikation",X,,40
-Kommunikationsverbindung,SG6,COM,3155,00009,EM,,Elektronische Post,X [1P0..1],,40,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3155,00009,EM,,Elektronische Post,X [1P0..1],,41
-Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,41,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,42
-Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,42,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,43
-Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,43,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,44
-Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,44,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,45
-MP-ID Empfänger,SG3,,,,,,,Muss,,45,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,,,,,,,Muss,,46
-MP-ID Empfänger,SG3,NAD,,00010,,,,Muss,,46,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,,00010,,,,Muss,,47
-MP-ID Empfänger,SG3,NAD,3035,00010,MR,,Nachrichtenempfänger,X,,47,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,3035,00010,MR,,Nachrichtenempfänger,X,,48
-MP-ID Empfänger,SG3,NAD,3039,00010,,,MP-ID,X,,48,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,3039,00010,,,MP-ID,X,,49
-MP-ID Empfänger,SG3,NAD,3055,00010,9,,GS1,X,,49,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,3055,00010,9,,GS1,X,,50
-MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,50,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,51
-MP-ID Empfänger,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,51,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,MP-ID Empfänger,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,52
-Abschnitts-Kontrollsegment,,UNS,,00011,,,,Muss,,52,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Abschnitts-Kontrollsegment,,UNS,,00011,,,,Muss,,53
-Abschnitts-Kontrollsegment,,UNS,0081,00011,S,,Trennung von Positions- und Summenteil,X,,53,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Abschnitts-Kontrollsegment,,UNS,0081,00011,S,,Trennung von Positions- und Summenteil,X,,54
-Nachrichten-Endesegment,,UNT,,00012,,,,Muss,,54,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,00012,,,,Muss,,55
-Nachrichten-Endesegment,,UNT,0074,00012,,,Anzahl der Segmente in einer Nachricht,X,,55,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,00012,,,Anzahl der Segmente in einer Nachricht,X,,56
-Nachrichten-Endesegment,,UNT,0062,00012,,,Nachrichten-Referenznummer,X,,56,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,00012,,,Nachrichten-Referenznummer,X,,57
+Prüfidentifikator,SG1,,,,,,,Muss,,23,,,Prüfidentifikator,SG1,,,,,,,Muss,,24
+Prüfidentifikator,SG1,RFF,,00006,,,,Muss,,24,,,Prüfidentifikator,SG1,RFF,,00006,,,,Muss,,25
+Prüfidentifikator,SG1,RFF,1153,00006,Z13,,Prüfidentifikator,X,,25,,,Prüfidentifikator,SG1,RFF,1153,00006,Z13,,Prüfidentifikator,X,,26
+Prüfidentifikator,SG1,RFF,1154,,39001,,Weiterleitung der Stornierung,X,,26,,,Prüfidentifikator,SG1,RFF,1154,,39001,,Weiterleitung der Stornierung,X,,27
+MP-ID Absender,SG3,,,,,,,Muss,,27,,,MP-ID Absender,SG3,,,,,,,Muss,,28
+MP-ID Absender,SG3,NAD,,00007,,,,Muss,,28,,,MP-ID Absender,SG3,NAD,,00007,,,,Muss,,29
+MP-ID Absender,SG3,NAD,3035,00007,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,29,,,MP-ID Absender,SG3,NAD,3035,00007,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,30
+MP-ID Absender,SG3,NAD,3039,00007,,,MP-ID,X,,30,,,MP-ID Absender,SG3,NAD,3039,00007,,,MP-ID,X,,31
+MP-ID Absender,SG3,NAD,3055,00007,9,,GS1,X,,31,,,MP-ID Absender,SG3,NAD,3055,00007,9,,GS1,X,,32
+MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,32,,,MP-ID Absender,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,33
+MP-ID Absender,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,33,,,MP-ID Absender,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,34
+Ansprechpartner,SG6,,,,,,,Kann,,34,,,Ansprechpartner,SG6,,,,,,,Kann,,35
+Ansprechpartner,SG6,CTA,,00008,,,,Muss,,35,,,Ansprechpartner,SG6,CTA,,00008,,,,Muss,,36
+Ansprechpartner,SG6,CTA,3139,00008,IC,,Informationskontakt,X,,36,,,Ansprechpartner,SG6,CTA,3139,00008,IC,,Informationskontakt,X,,37
+Ansprechpartner,SG6,CTA,3412,00008,,,Kontakt,X,,37,,,Ansprechpartner,SG6,CTA,3412,00008,,,Kontakt,X,,38
+Kommunikationsverbindung,SG6,COM,,00009,,,,Muss,,38,,,Kommunikationsverbindung,SG6,COM,,00009,,,,Muss,,39
+Kommunikationsverbindung,SG6,COM,3148,00009,,,"Kommunikationsadresse, Identifikation",X,,39,,,Kommunikationsverbindung,SG6,COM,3148,00009,,,"Kommunikationsadresse, Identifikation",X,,40
+Kommunikationsverbindung,SG6,COM,3155,00009,EM,,Elektronische Post,X [1P0..1],,40,,,Kommunikationsverbindung,SG6,COM,3155,00009,EM,,Elektronische Post,X [1P0..1],,41
+Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,41,,,Kommunikationsverbindung,SG6,COM,3155,,FX,,Telefax,X [1P0..1],,42
+Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,42,,,Kommunikationsverbindung,SG6,COM,3155,,TE,,Telefon,X [1P0..1],,43
+Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,43,,,Kommunikationsverbindung,SG6,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,44
+Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,44,,,Kommunikationsverbindung,SG6,COM,3155,,AL,,Handy,X [1P0..1],,45
+MP-ID Empfänger,SG3,,,,,,,Muss,,45,,,MP-ID Empfänger,SG3,,,,,,,Muss,,46
+MP-ID Empfänger,SG3,NAD,,00010,,,,Muss,,46,,,MP-ID Empfänger,SG3,NAD,,00010,,,,Muss,,47
+MP-ID Empfänger,SG3,NAD,3035,00010,MR,,Nachrichtenempfänger,X,,47,,,MP-ID Empfänger,SG3,NAD,3035,00010,MR,,Nachrichtenempfänger,X,,48
+MP-ID Empfänger,SG3,NAD,3039,00010,,,MP-ID,X,,48,,,MP-ID Empfänger,SG3,NAD,3039,00010,,,MP-ID,X,,49
+MP-ID Empfänger,SG3,NAD,3055,00010,9,,GS1,X,,49,,,MP-ID Empfänger,SG3,NAD,3055,00010,9,,GS1,X,,50
+MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,50,,,MP-ID Empfänger,SG3,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,51
+MP-ID Empfänger,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,51,,,MP-ID Empfänger,SG3,NAD,3055,,332,,"DE, DVGW Service & Consult GmbH",X,,52
+Abschnitts-Kontrollsegment,,UNS,,00011,,,,Muss,,52,,,Abschnitts-Kontrollsegment,,UNS,,00011,,,,Muss,,53
+Abschnitts-Kontrollsegment,,UNS,0081,00011,S,,Trennung von Positions- und Summenteil,X,,53,,,Abschnitts-Kontrollsegment,,UNS,0081,00011,S,,Trennung von Positions- und Summenteil,X,,54
+Nachrichten-Endesegment,,UNT,,00012,,,,Muss,,54,,,Nachrichten-Endesegment,,UNT,,00012,,,,Muss,,55
+Nachrichten-Endesegment,,UNT,0074,00012,,,Anzahl der Segmente in einer Nachricht,X,,55,,,Nachrichten-Endesegment,,UNT,0074,00012,,,Anzahl der Segmente in einer Nachricht,X,,56
+Nachrichten-Endesegment,,UNT,0062,00012,,,Nachrichten-Referenznummer,X,,56,,,Nachrichten-Endesegment,,UNT,0062,00012,,,Nachrichten-Referenznummer,X,,57

@@ -110,18 +110,18 @@ Erforderliches Messprodukt der Marktlokation,SG27,PIA,7143,,Z11,,Messprodukt,X,,
 ,,,,,,,,,,,NEU,,Artikel-ID,SG27,PIA,4347,00056,Artikel-ID,,,Z02,,84
 ,,,,,,,,,,,NEU,,Artikel-ID,SG27,PIA,7140,00056,,,Artikel-ID,X,,85
 ,,,,,,,,,,,NEU,,Artikel-ID,SG27,PIA,7143,00056,Z09,,Artikel-ID,X,,86
-Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,,,,,,Muss,,83,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,,00057,,,,Muss,,87
-Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,4347,,,,,5,,84,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,4347,00057,,,,5,,88
-Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7140,,,,Erforderliche OBIS-Kennzahl der Marktlokation,X,,85,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7140,00057,,,Erforderliche OBIS-Kennzahl der Marktlokation,X,,89
-Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7143,,SRW,,OBIS-Kennzahl,X,,86,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7143,00057,SRW,,OBIS-Kennzahl,X,,90
-Geldbetrag,SG29,,,,,,,Muss,,87,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,,,,,,,Muss,,91
-Geldbetrag,SG29,MOA,,,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,,00058,,,,Muss,,92
-Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,89,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5025,00058,203,,Positionsbetrag (ohne USt.),X,,93
-Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,90,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5004,00058,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,94
-Preisangaben,SG31,,,,,,,Muss,,91,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,,,,,,,Muss,,95
-Preisangaben,SG31,PRI,,,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,,00059,,,,Muss,,96
-Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,93,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5125,00059,CAL,,Berechnungspreis,X,,97
-Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,98
+Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,,,,,,Muss,,83,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,,00057,,,,Muss,,87
+Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,4347,,,,,5,,84,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,4347,00057,,,,5,,88
+Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7140,,,,Erforderliche OBIS-Kennzahl der Marktlokation,X,,85,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7140,00057,,,Erforderliche OBIS-Kennzahl der Marktlokation,X,,89
+Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7143,,SRW,,OBIS-Kennzahl,X,,86,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Erforderliche OBIS-Kennzahl der Marktlokation,SG27,PIA,7143,00057,SRW,,OBIS-Kennzahl,X,,90
+Geldbetrag,SG29,,,,,,,Muss,,87,,,Geldbetrag,SG29,,,,,,,Muss,,91
+Geldbetrag,SG29,MOA,,,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,,00058,,,,Muss,,92
+Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,89,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5025,00058,203,,Positionsbetrag (ohne USt.),X,,93
+Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,90,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5004,00058,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,94
+Preisangaben,SG31,,,,,,,Muss,,91,,,Preisangaben,SG31,,,,,,,Muss,,95
+Preisangaben,SG31,PRI,,,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,,00059,,,,Muss,,96
+Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,93,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5125,00059,CAL,,Berechnungspreis,X,,97
+Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,94,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5118,00059,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,98
 ,,,,,,,,,,,NEU,,Erforderliches Messprodukt der Tranche,SG27,,,,,,,Muss [32] ∧ [37] ∧ [64] ∧ [2065] ∧ [515],"[32] Wenn 11-stellige ID im SG11 LOC+172 (Meldepunkt) DE3225 vorhanden
 [37] Wenn in derselben Nachricht eine SG27 mit Z27 (Erforderliches Messprodukt der Marktlokation) in LIN DE1229 nicht vorhanden
 [64] Wenn in derselben Nachricht eine SG27 mit Z53 (Erforderliches Messprodukt der Netzlokation) in LIN DE1229 nicht vorhanden
@@ -147,8 +147,8 @@ Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachk
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,,00064,,,,Muss,,116
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,5025,00064,203,,Positionsbetrag (ohne USt.),X,,117
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,5004,00064,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,118
-Preisangaben,SG31,PRI,6411,,DAY,,Tag,X,,95,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,,,,,,,Muss,,119
-Preisangaben,SG31,PRI,6411,,H87,,Stück,X,,96,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,,00065,,,,Muss,,120
+Preisangaben,SG31,PRI,6411,,DAY,,Tag,X,,95,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Preisangaben,SG31,,,,,,,Muss,,119
+Preisangaben,SG31,PRI,6411,,H87,,Stück,X,,96,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Preisangaben,SG31,PRI,,00065,,,,Muss,,120
 Erforderliches Messprodukt der Tranche,SG27,,,,,,,Muss [32] ∧ [37] ∧ [2041] ∧ [510],"[32] Wenn 11-stellige ID im SG11 LOC+172 (Meldepunk) DE3225 vorhanden
 [37] Wenn in derselben Nachricht eine SG27 mit Z27 in LIN DE1229 nicht vorhanden
 [510] Hinweis: Ein Mal für die regelmäßige Übermittlung der Werte und ein Mal, wenn vorhanden, für die initiale Einrichtung der Wertübermittlung
@@ -186,14 +186,14 @@ Erforderliche OBIS-Kennzahl der Tranche,SG27,PIA,7143,,SRW,,OBIS-Kennzahl,X,,108
 ,,,,,,,,,,,NEU,,Erforderliche OBIS-Kennzahl der Messlokation,SG27,PIA,4347,00069,,,,5,,136
 ,,,,,,,,,,,NEU,,Erforderliche OBIS-Kennzahl der Messlokation,SG27,PIA,7140,00069,,,Erforderliche OBIS-Kennzahl der Messlokation,X,,137
 ,,,,,,,,,,,NEU,,Erforderliche OBIS-Kennzahl der Messlokation,SG27,PIA,7143,00069,SRW,,OBIS-Kennzahl,X,,138
-Geldbetrag,SG29,,,,,,,Muss,,109,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,,,,,,,Muss,,139
-Geldbetrag,SG29,MOA,,,,,,Muss,,110,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,,00070,,,,Muss,,140
-Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,111,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5025,00070,203,,Positionsbetrag (ohne USt.),X,,141
-Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,112,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Geldbetrag,SG29,MOA,5004,00070,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,142
-Preisangaben,SG31,,,,,,,Muss,,113,ÄNDERUNG,Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,,,,,,,Muss,,143
-Preisangaben,SG31,PRI,,,,,,Muss,,114,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,,00071,,,,Muss,,144
-Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,115,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5125,00071,CAL,,Berechnungspreis,X,,145
-Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,116,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5118,00071,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,146
+Geldbetrag,SG29,,,,,,,Muss,,109,,,Geldbetrag,SG29,,,,,,,Muss,,139
+Geldbetrag,SG29,MOA,,,,,,Muss,,110,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,,00070,,,,Muss,,140
+Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,111,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5025,00070,203,,Positionsbetrag (ohne USt.),X,,141
+Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,112,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Geldbetrag,SG29,MOA,5004,00070,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,142
+Preisangaben,SG31,,,,,,,Muss,,113,,,Preisangaben,SG31,,,,,,,Muss,,143
+Preisangaben,SG31,PRI,,,,,,Muss,,114,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,,00071,,,,Muss,,144
+Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,115,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5125,00071,CAL,,Berechnungspreis,X,,145
+Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,116,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Preisangaben,SG31,PRI,5118,00071,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,146
 ,,,,,,,,,,,NEU,,Erforderliches Messprodukt der Netzlokation,SG27,,,,,,,Muss [32] ∧ [36] ∧ [37] ∧ [2065] ∧ [515],"[32] Wenn 11-stellige ID im SG11 LOC+172 (Meldepunkt) DE3225 vorhanden
 [36] Wenn in derselben Nachricht eine SG27 mit Z16 (Erforderliches Messprodukt der Tranche) in LIN DE1229 nicht vorhanden
 [37] Wenn in derselben Nachricht eine SG27 mit Z27 (Erforderliches Messprodukt der Marktlokation) in LIN DE1229 nicht vorhanden
@@ -219,8 +219,8 @@ Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachk
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,,00076,,,,Muss,,164
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,5025,00076,203,,Positionsbetrag (ohne USt.),X,,165
 ,,,,,,,,,,,NEU,,Geldbetrag,SG29,MOA,5004,00076,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,166
-Preisangaben,SG31,PRI,6411,,DAY,,Tag,X,,117,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,,,,,,,Muss,,167
-Preisangaben,SG31,PRI,6411,,H87,,Stück,X,,118,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,,00077,,,,Muss,,168
+Preisangaben,SG31,PRI,6411,,DAY,,Tag,X,,117,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Preisangaben,SG31,,,,,,,Muss,,167
+Preisangaben,SG31,PRI,6411,,H87,,Stück,X,,118,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Preisangaben,SG31,PRI,,00077,,,,Muss,,168
 Erforderliches Messprodukt der Messlokation,SG27,,,,,,,Muss [33] ∧ [2041] ∧ [510],"[33] Wenn 33-stellige ID im SG11 LOC+172 (Meldepunk) DE3225 vorhanden
 [510] Hinweis: Ein Mal für die regelmäßige Übermittlung der Werte und ein Mal, wenn vorhanden, für die initiale Einrichtung der Wertübermittlung
 [2041] Pro Nachricht ist die SG27 bis zu zwei Mal anzugeben. Wird die SG27 zwei Mal angegeben, dann ist SG31 ein Mal mit Stückpreis und ein Mal mit Tagespreis anzugeben. Wird die SG27 ein Mal angegeben, dann ist SG31 ein Mal mit Tagespreis anzugeben.",119,ENTFÄLLT,,,,,,,,,,,,
@@ -241,14 +241,14 @@ Geldbetrag,SG29,,,,,,,Muss,,131,ENTFÄLLT,,,,,,,,,,,,
 Geldbetrag,SG29,MOA,,,,,,Muss,,132,ENTFÄLLT,,,,,,,,,,,,
 Geldbetrag,SG29,MOA,5025,,203,,Positionsbetrag (ohne USt.),X,,133,ENTFÄLLT,,,,,,,,,,,,
 Geldbetrag,SG29,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,134,ENTFÄLLT,,,,,,,,,,,,
-Preisangaben,SG31,,,,,,,Muss,,135,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5125,00077,CAL,,Berechnungspreis,X,,169
-Preisangaben,SG31,PRI,,,,,,Muss,,136,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Preisangaben,SG31,PRI,5118,00077,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,170
+Preisangaben,SG31,,,,,,,Muss,,135,ÄNDERUNG,Segment_FV2304|Segment_FV2310|Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Code_FV2304|Code_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310,Preisangaben,SG31,PRI,5125,00077,CAL,,Berechnungspreis,X,,169
+Preisangaben,SG31,PRI,,,,,,Muss,,136,ÄNDERUNG,Datenelement_FV2304|Datenelement_FV2310|Segment ID_FV2304|Segment ID_FV2310|Beschreibung_FV2304|Beschreibung_FV2310|Bedingungsausdruck_FV2304|Bedingungsausdruck_FV2310|Bedingung_FV2304|Bedingung_FV2310,Preisangaben,SG31,PRI,5118,00077,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,170
 Preisangaben,SG31,PRI,5125,,CAL,,Berechnungspreis,X,,137,ENTFÄLLT,,,,,,,,,,,,
 Preisangaben,SG31,PRI,5118,,,,"Preis, Betrag",X [912],[912] Format: max. 6 Nachkommastellen,138,ENTFÄLLT,,,,,,,,,,,,
 Preisangaben,SG31,PRI,6411,,DAY,,Tag,X,,139,ENTFÄLLT,,,,,,,,,,,,
 Preisangaben,SG31,PRI,6411,,H87,,Stück,X,,140,ENTFÄLLT,,,,,,,,,,,,
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,141,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,171
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,142,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,172
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,143,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,173
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,144,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,174
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,145,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310|Unnamed: 0_FV2304|Unnamed: 0_FV2310,Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,175
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,141,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,,00097,,,,Muss,,171
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,142,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Abschnitts-Kontrollsegment,,UNS,0081,00097,und Summenteil,,,S,,172
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,143,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,,00099,,,,Muss,,173
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,144,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0074,00099,,,Anzahl der Segmente in einer Nachricht,X,,174
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,145,ÄNDERUNG,Segment ID_FV2304|Segment ID_FV2310,Nachrichten-Endesegment,,UNT,0062,00099,,,Nachrichten-Referenznummer,X,,175

@@ -171,69 +171,69 @@ Adresse der Markt- oder Messlokation,SG2,NAD,3164,,,,Ort,M,,125,ÄNDERUNG,Datene
 Adresse der Markt- oder Messlokation,SG2,NAD,3251,,,,"Postleitzahl, Code",X,,126,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Beschreibung_FV2210|Beschreibung_FV2304|Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304,Adresse der Markt- oder Messlokation,SG2,NAD,3164,,,,Ort,M,,126
 Adresse der Markt- oder Messlokation,SG2,NAD,3207,,,,"Ländername, Code",X,,127,ÄNDERUNG,Datenelement_FV2210|Datenelement_FV2304|Beschreibung_FV2210|Beschreibung_FV2304,Adresse der Markt- oder Messlokation,SG2,NAD,3251,,,,"Postleitzahl, Code",X,,127
 ,,,,,,,,,,,NEU,,Adresse der Markt- oder Messlokation,SG2,NAD,3207,,,,"Ländername, Code",X,,128
-Meldepunkt,SG2,LOC,,,,,,Muss,,128,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,,,,,,Muss,,129
-Meldepunkt,SG2,LOC,3227,,,,,172,,129,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,3227,,,,,172,,130
+Meldepunkt,SG2,LOC,,,,,,Muss,,128,,,Meldepunkt,SG2,LOC,,,,,,Muss,,129
+Meldepunkt,SG2,LOC,3227,,,,,172,,129,,,Meldepunkt,SG2,LOC,3227,,,,,172,,130
 Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509]  X [951] [510],"[509] Hinweis: Verwendung der ID der Marktlokation
 [510] Hinweis: Verwendung der ID der Messlokation
 [950] Format: Marktlokations-ID
-[951] Format: Zählpunktbezeichnung",130,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509]  X [951] [510],"[509] Hinweis: Verwendung der ID der Marktlokation
+[951] Format: Zählpunktbezeichnung",130,,,Meldepunkt,SG2,LOC,3225,,,,"Ortsangabe, Nummer",X [950] [509]  X [951] [510],"[509] Hinweis: Verwendung der ID der Marktlokation
 [510] Hinweis: Verwendung der ID der Messlokation
 [950] Format: Marktlokations-ID
 [951] Format: Zählpunktbezeichnung",131
-Netzbetreiberkontonumme r,SG2,,,,,,,Muss [31],[31] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV,131,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Netzbetreiberkontonumme r,SG2,,,,,,,Muss [31],[31] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV,132
-Netzbetreiberkontonumme r,SG2,NAD,,,,,,Muss,,132,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Netzbetreiberkontonumme r,SG2,NAD,,,,,,Muss,,133
-Netzbetreiberkontonumme r,SG2,NAD,3035,,,,,ZSH,,133,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Netzbetreiberkontonumme r,SG2,NAD,3035,,,,,ZSH,,134
-Netzbetreiberkontonumme r,SG2,NAD,3039,,,,"Beteiligter, Identifikation",X,,134,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Netzbetreiberkontonumme r,SG2,NAD,3039,,,,"Beteiligter, Identifikation",X,,135
-Währungsangaben,SG7,,,,,,,Muss,,135,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,,,,,,,Muss,,136
-Währungsangaben,SG7,CUX,,,,,,Muss,,136,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,,,,,,Muss,,137
-Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,137,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,138
-Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,138,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,139
-Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,139,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,140
-Zahlungsbedingungen,SG8,,,,,,,Muss,,140,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,,,,,,,Muss,,141
-Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,141,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,142
-Zahlungsbedingungen,SG8,PYT,4279,,,,,3,,142,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Zahlungsbedingungen,SG8,PYT,4279,,,,,3,,143
-Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,143,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,144
-Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,144,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,145
-Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,145,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,146
-Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,146,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,147
-Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,147,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,148
-Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,148,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,149
-Rechnungsbetrag,SG50,,,,,,,Muss,,149,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,,,,,,,Muss,,150
-Rechnungsbetrag,SG50,MOA,,,,,,Muss,,150,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,,,,,,Muss,,151
-Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,151,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,152
-Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,152,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,153
-Vorausbezahlter Betrag,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,153,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,154
-Vorausbezahlter Betrag,SG50,MOA,,,,,,Muss,,154,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag,SG50,MOA,,,,,,Muss,,155
-Vorausbezahlter Betrag,SG50,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,155,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag,SG50,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,156
-Vorausbezahlter Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,156,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,157
-Gemeinderabatt,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,157,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Gemeinderabatt,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,158
-Gemeinderabatt,SG50,MOA,,,,,,Muss,,158,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Gemeinderabatt,SG50,MOA,,,,,,Muss,,159
-Gemeinderabatt,SG50,MOA,5025,,Z01,,Gemeinderabatt,X,,159,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Gemeinderabatt,SG50,MOA,5025,,Z01,,Gemeinderabatt,X,,160
-Gemeinderabatt,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,160,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Gemeinderabatt,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,161
-Fälliger Betrag,SG50,,,,,,,Muss,,161,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,,,,,,,Muss,,162
-Fälliger Betrag,SG50,MOA,,,,,,Muss,,162,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,,,,,,Muss,,163
-Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,163,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,164
-Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,164,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,165
-Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,165,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,166
-Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,166,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,167
-Umsatzsteuer der Rechnung,SG52,TAX,5283,,,,,7,,167,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5283,,,,,7,,168
-Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,168,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,169
+Netzbetreiberkontonumme r,SG2,,,,,,,Muss [31],[31] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV,131,,,Netzbetreiberkontonumme r,SG2,,,,,,,Muss [31],[31] Wenn MP-ID in SG2 NAD+MR in der Rolle MGV,132
+Netzbetreiberkontonumme r,SG2,NAD,,,,,,Muss,,132,,,Netzbetreiberkontonumme r,SG2,NAD,,,,,,Muss,,133
+Netzbetreiberkontonumme r,SG2,NAD,3035,,,,,ZSH,,133,,,Netzbetreiberkontonumme r,SG2,NAD,3035,,,,,ZSH,,134
+Netzbetreiberkontonumme r,SG2,NAD,3039,,,,"Beteiligter, Identifikation",X,,134,,,Netzbetreiberkontonumme r,SG2,NAD,3039,,,,"Beteiligter, Identifikation",X,,135
+Währungsangaben,SG7,,,,,,,Muss,,135,,,Währungsangaben,SG7,,,,,,,Muss,,136
+Währungsangaben,SG7,CUX,,,,,,Muss,,136,,,Währungsangaben,SG7,CUX,,,,,,Muss,,137
+Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,137,,,Währungsangaben,SG7,CUX,6347,,2,,Referenzwährung,X,,138
+Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,138,,,Währungsangaben,SG7,CUX,6345,,EUR,,Euro,X,,139
+Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,139,,,Währungsangaben,SG7,CUX,6343,,4,,Währung der Rechnung,X,,140
+Zahlungsbedingungen,SG8,,,,,,,Muss,,140,,,Zahlungsbedingungen,SG8,,,,,,,Muss,,141
+Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,141,,,Zahlungsbedingungen,SG8,PYT,,,,,,Muss,,142
+Zahlungsbedingungen,SG8,PYT,4279,,,,,3,,142,,,Zahlungsbedingungen,SG8,PYT,4279,,,,,3,,143
+Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,143,,,Fälligkeitsdatum,SG8,DTM,,,,,,Muss,,144
+Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,144,,,Fälligkeitsdatum,SG8,DTM,2005,,265,,Fälligkeitsdatum,X,,145
+Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,145,,,Fälligkeitsdatum,SG8,DTM,2380,,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,146
+Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,146,,,Fälligkeitsdatum,SG8,DTM,2379,,303,,CCYYMMDDHHMMZZZ,X,,147
+Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,147,,,Abschnitts-Kontrollsegment,,UNS,,,,,,Muss,,148
+Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,148,,,Abschnitts-Kontrollsegment,,UNS,0081,,und Summenteil,,,S,,149
+Rechnungsbetrag,SG50,,,,,,,Muss,,149,,,Rechnungsbetrag,SG50,,,,,,,Muss,,150
+Rechnungsbetrag,SG50,MOA,,,,,,Muss,,150,,,Rechnungsbetrag,SG50,MOA,,,,,,Muss,,151
+Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,151,,,Rechnungsbetrag,SG50,MOA,5025,,77,,Rechnungsbetrag,X,,152
+Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,152,,,Rechnungsbetrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,153
+Vorausbezahlter Betrag,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,153,,,Vorausbezahlter Betrag,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,154
+Vorausbezahlter Betrag,SG50,MOA,,,,,,Muss,,154,,,Vorausbezahlter Betrag,SG50,MOA,,,,,,Muss,,155
+Vorausbezahlter Betrag,SG50,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,155,,,Vorausbezahlter Betrag,SG50,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,156
+Vorausbezahlter Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,156,,,Vorausbezahlter Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,157
+Gemeinderabatt,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,157,,,Gemeinderabatt,SG50,,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,158
+Gemeinderabatt,SG50,MOA,,,,,,Muss,,158,,,Gemeinderabatt,SG50,MOA,,,,,,Muss,,159
+Gemeinderabatt,SG50,MOA,5025,,Z01,,Gemeinderabatt,X,,159,,,Gemeinderabatt,SG50,MOA,5025,,Z01,,Gemeinderabatt,X,,160
+Gemeinderabatt,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,160,,,Gemeinderabatt,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,161
+Fälliger Betrag,SG50,,,,,,,Muss,,161,,,Fälliger Betrag,SG50,,,,,,,Muss,,162
+Fälliger Betrag,SG50,MOA,,,,,,Muss,,162,,,Fälliger Betrag,SG50,MOA,,,,,,Muss,,163
+Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,163,,,Fälliger Betrag,SG50,MOA,5025,,9,,Fälliger Betrag (inkl. USt.),X,,164
+Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,164,,,Fälliger Betrag,SG50,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,165
+Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,165,,,Umsatzsteuer der Rechnung,SG52,,,,,,,Muss,,166
+Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,166,,,Umsatzsteuer der Rechnung,SG52,TAX,,,,,,Muss,,167
+Umsatzsteuer der Rechnung,SG52,TAX,5283,,,,,7,,167,,,Umsatzsteuer der Rechnung,SG52,TAX,5283,,,,,7,,168
+Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,168,,,Umsatzsteuer der Rechnung,SG52,TAX,5153,,VAT,,Umsatzsteuer,X,,169
 Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
-[930] Format: max. 2 Nachkommastellen",169,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
+[930] Format: max. 2 Nachkommastellen",169,,,Umsatzsteuer der Rechnung,SG52,TAX,5278,,,,Zoll-/Steuer-/Gebührenrate,X [902] ∧ [930],"[902] Format: Möglicher Wert: ≥ 0
 [930] Format: max. 2 Nachkommastellen",170
-Umsatzsteuer der Rechnung,SG52,TAX,5305,,Steuerschuldnerschaft des Leistungsempfängers,,,SO AE,,170,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Umsatzsteuer der Rechnung,SG52,TAX,5305,,Steuerschuldnerschaft des Leistungsempfängers,,,SO AE,,171
-Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,171,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,172
-Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,172,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,173
-Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,173,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,174
-Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,174,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304|Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,,,,,,Muss [58],[58] Wenn in dieser SG52 MOA+113 vorhanden,175
-Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5025,,115,,Vorausbezahlte Steuern (USt.-Anteil des vorausbezahlten Betrages),X,,175,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5025,,115,,Vorausbezahlte Steuern (USt.-Anteil des vorausbezahlten Betrages),X,,176
-Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,176,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,177
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,177,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,178
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundlage,X,,178,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundlage,X,,179
-Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,179,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,180
-Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,180,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,181
-Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/Gebühren-/ Abgabebetrag,X,,181,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/Gebühren-/ Abgabebetrag,X,,182
-Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,182,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,183
-Nachrichtenende,,UNT,,,,,,Muss,,183,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,,,,,,Muss,,184
-Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,184,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,185
-Nachrichtenende,,UNT,0062,,,,Nachrichten-Referenznummer,X,,185,ÄNDERUNG,Unnamed: 0_FV2210|Unnamed: 0_FV2304,Nachrichtenende,,UNT,0062,,,,Nachrichten-Referenznummer,X,,186
+Umsatzsteuer der Rechnung,SG52,TAX,5305,,Steuerschuldnerschaft des Leistungsempfängers,,,SO AE,,170,,,Umsatzsteuer der Rechnung,SG52,TAX,5305,,Steuerschuldnerschaft des Leistungsempfängers,,,SO AE,,171
+Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,171,,,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,172
+Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,172,,,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5025,,113,,Vorausbezahlter Betrag (inkl. USt.),X,,173
+Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,173,,,Vorausbezahlter Betrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,174
+Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,,,,,,Soll [34],[34] Wenn in Ursprungsrechnung vorhanden,174,ÄNDERUNG,Bedingungsausdruck_FV2210|Bedingungsausdruck_FV2304|Bedingung_FV2210|Bedingung_FV2304,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,,,,,,Muss [58],[58] Wenn in dieser SG52 MOA+113 vorhanden,175
+Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5025,,115,,Vorausbezahlte Steuern (USt.-Anteil des vorausbezahlten Betrages),X,,175,,,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5025,,115,,Vorausbezahlte Steuern (USt.-Anteil des vorausbezahlten Betrages),X,,176
+Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,176,,,Vorausbezahlte Steuern (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,177
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,177,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,,,,,,Muss,,178
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundlage,X,,178,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5025,,125,,Besteuerungsgrundlage,X,,179
+Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,179,,,Besteuerungsgrundlage (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,180
+Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,180,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,,,,,,Muss,,181
+Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/Gebühren-/ Abgabebetrag,X,,181,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,5025,,161,,Steuer-/Gebühren-/ Abgabebetrag,X,,182
+Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,182,,,Steuerbetrag (steuersatzbezogen),SG52,MOA,5004,,,,Geldbetrag,X [930],[930] Format: max. 2 Nachkommastellen,183
+Nachrichtenende,,UNT,,,,,,Muss,,183,,,Nachrichtenende,,UNT,,,,,,Muss,,184
+Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,184,,,Nachrichtenende,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,185
+Nachrichtenende,,UNT,0062,,,,Nachrichten-Referenznummer,X,,185,,,Nachrichtenende,,UNT,0062,,,,Nachrichten-Referenznummer,X,,186

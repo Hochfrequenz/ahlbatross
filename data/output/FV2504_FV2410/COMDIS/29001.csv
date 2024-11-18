@@ -131,12 +131,12 @@ Begründung Richtigkeit mit Angabe einer Nachrichtenreferenz,SG3,FTX,4440,,,,Dat
 Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,,,,,,Muss [9] ⊻ [12] ⊻ [18] ⊻ [19],"[9] wenn SG3 AJT+A05/A10/ A11/A14+E_0504 vorhanden
 [12] wenn SG3 AJT+A99+S_0109 vorhanden
 [18] wenn SG3 AJT+A05/ A10/A11+E_1008 vorhanden
-[19] wenn SG3 AJT+A99+E_0265/E_0516/ E_0520/E_0567 vorhanden",73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,,00014,,,,Muss [9] ⊻ [12] ⊻ [18] ⊻ [19],"[9] wenn SG3 AJT+A05/A10/ A11/A14+E_0504 vorhanden
+[19] wenn SG3 AJT+A99+E_0265/E_0516/ E_0520/E_0567 vorhanden",73,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,,00014,,,,Muss [9] ⊻ [12] ⊻ [18] ⊻ [19],"[9] wenn SG3 AJT+A05/A10/ A11/A14+E_0504 vorhanden
 [12] wenn SG3 AJT+A99+S_0109 vorhanden
 [18] wenn SG3 AJT+A05/ A10/A11+E_1008 vorhanden
 [19] wenn SG3 AJT+A99+E_0265/E_0516/ E_0520/E_0567 vorhanden",74
-Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4451,00014,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,75
-Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4440,,,,Freier Text,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4440,00014,,,Freier Text,X,,76
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00015,,,,Muss,,77
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00015,,,Anzahl der Segmente in einer Nachricht,X,,78
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00015,,,Nachrichten-Referenznummer,X,,79
+Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4451,00014,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,75
+Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4440,,,,Freier Text,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Begründung Richtigkeit mit Angabe von Freitext,SG3,FTX,4440,00014,,,Freier Text,X,,76
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00015,,,,Muss,,77
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00015,,,Anzahl der Segmente in einer Nachricht,X,,78
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00015,,,Nachrichten-Referenznummer,X,,79

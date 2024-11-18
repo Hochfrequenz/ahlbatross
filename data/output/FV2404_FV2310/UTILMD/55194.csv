@@ -63,14 +63,14 @@ Daten der Messlokation,SG8,SEQ,1229,,Z18,,Daten der Messlokation,X,,54,ÄNDERUNG
 Referenz auf die ID der Messlokation,SG8,RFF,,,,,,Muss,,55,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Messlokation,SG8,RFF,1153,,Z19,,Messlokation,X,,56,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Messlokation,SG8,RFF,1154,,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,57,ENTFÄLLT,,,,,,,,,,,,
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,58,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,55
-Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,59,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,CCI,,00310,,,,Muss,,56
-Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,60,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Zugeordnete Marktpartner,SG10,CCI,7037,00310,ZB3,,Zugeordneter Marktpartner,X,,57
-Messstellenbetreiber,SG10,CAV,,,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messstellenbetreiber,SG10,CAV,,00311,,,,Muss,,58
-Messstellenbetreiber,SG10,CAV,7111,,Z91,,MSB,X,,62,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messstellenbetreiber,SG10,CAV,7111,00311,Z91,,MSB,X,,59
-Messstellenbetreiber,SG10,CAV,1131,,,,MP-ID,X,,63,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messstellenbetreiber,SG10,CAV,1131,00311,,,MP-ID,X,,60
-Messstellenbetreiber,SG10,CAV,7110,,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,64,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messstellenbetreiber,SG10,CAV,7110,00311,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,61
-Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,65,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,62
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,58,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,55
+Zugeordnete Marktpartner,SG10,CCI,,,,,,Muss,,59,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Marktpartner,SG10,CCI,,00310,,,,Muss,,56
+Zugeordnete Marktpartner,SG10,CCI,7037,,ZB3,,Zugeordneter Marktpartner,X,,60,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Zugeordnete Marktpartner,SG10,CCI,7037,00310,ZB3,,Zugeordneter Marktpartner,X,,57
+Messstellenbetreiber,SG10,CAV,,,,,,Muss,,61,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messstellenbetreiber,SG10,CAV,,00311,,,,Muss,,58
+Messstellenbetreiber,SG10,CAV,7111,,Z91,,MSB,X,,62,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messstellenbetreiber,SG10,CAV,7111,00311,Z91,,MSB,X,,59
+Messstellenbetreiber,SG10,CAV,1131,,,,MP-ID,X,,63,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messstellenbetreiber,SG10,CAV,1131,00311,,,MP-ID,X,,60
+Messstellenbetreiber,SG10,CAV,7110,,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,64,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Messstellenbetreiber,SG10,CAV,7110,00311,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,61
+Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,65,,,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,62
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,00311,Z39,,Grundzuständiger Messstellenbetreiber,X,,63
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,64
 ,,,,,,,,,,,NEU,,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,65

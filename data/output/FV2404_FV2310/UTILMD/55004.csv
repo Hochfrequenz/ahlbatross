@@ -67,27 +67,27 @@ Transaktionsgrund,SG4,STS,9013,,ZH2,,Aufhebung einer zukünftigen Zuordnung wege
 Transaktionsgrund,SG4,STS,9013,,ZT4,,Ende wegen Kündigung durch LF,X,,57,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404,Transaktionsgrund,SG4,STS,9013,,ZD2,,Lieferbeginn und Abmeldung aus der Ersatzversorgung,X,,57
 Transaktionsgrund,SG4,STS,9013,,ZT5,,Ende wegen Kündigung durch Kunde/LFN,X,[510] Hinweis: Zu verwenden bei der Abmeldung der ESV,58,ÄNDERUNG,Code_FV2310|Code_FV2404|Beschreibung_FV2310|Beschreibung_FV2404|Bedingung_FV2310|Bedingung_FV2404,Transaktionsgrund,SG4,STS,9013,,ZT4,,Ende wegen Kündigung durch LF,X,,58
 ,,,,,,,,,,,NEU,,Transaktionsgrund,SG4,STS,9013,,ZT5,,Ende wegen Kündigung durch Kunde/LFN,X,,59
-Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,,,,,,Kann,,59,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,,00043,,,,Kann,,60
-Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,60,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4451,00043,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,61
-Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4440,,,,Text für allgemeine Information,X,,61,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4440,00043,,,Text für allgemeine Information,X,,62
-Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,62,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,63
-Marktlokation,SG5,LOC,,,,,,Muss,,63,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Marktlokation,SG5,LOC,,00051,,,,Muss,,64
-Marktlokation,SG5,LOC,3227,,Z16,,Marktlokation,X,,64,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,65
-Marktlokation,SG5,LOC,3225,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,66
-Prüfidentifikator,SG6,,,,,,,Muss,,66,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG6,,,,,,,Muss,,67
-Prüfidentifikator,SG6,RFF,,,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,68
-Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,68,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,69
-Prüfidentifikator,SG6,RFF,1154,,55004,,GPKE / Abmeldung NN,X,,69,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Prüfidentifikator,SG6,RFF,1154,00057,55004,,GPKE / Abmeldung NN,X,,70
-Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,70,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,71
-Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,71,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,72
-Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,72,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,73
-Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,74
-Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,74,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,75
-Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,75,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,76
-Lieferrichtung,SG10,,,,,,,Muss,,76,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferrichtung,SG10,,,,,,,Muss,,77
-Lieferrichtung,SG10,CCI,,,,,,Muss,,77,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferrichtung,SG10,CCI,,00110,,,,Muss,,78
-Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,78,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,79
-Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,79,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Lieferrichtung,SG10,CCI,7037,00110,Z07,,Verbrauch,X,,80
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,81
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,81,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,82
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,82,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,83
+Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,,,,,,Kann,,59,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,,00043,,,,Kann,,60
+Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4451,,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,60,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4451,00043,ACB,,Zusätzliche Informationen (für allgemeine Hinweise),X,,61
+Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4440,,,,Text für allgemeine Information,X,,61,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4440,00043,,,Text für allgemeine Information,X,,62
+Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,62,,,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,63
+Marktlokation,SG5,LOC,,,,,,Muss,,63,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,,00051,,,,Muss,,64
+Marktlokation,SG5,LOC,3227,,Z16,,Marktlokation,X,,64,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,65
+Marktlokation,SG5,LOC,3225,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,65,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,66
+Prüfidentifikator,SG6,,,,,,,Muss,,66,,,Prüfidentifikator,SG6,,,,,,,Muss,,67
+Prüfidentifikator,SG6,RFF,,,,,,Muss,,67,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,68
+Prüfidentifikator,SG6,RFF,1153,,Z13,,Prüfidentifikator,X,,68,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,69
+Prüfidentifikator,SG6,RFF,1154,,55004,,GPKE / Abmeldung NN,X,,69,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Prüfidentifikator,SG6,RFF,1154,00057,55004,,GPKE / Abmeldung NN,X,,70
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,70,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,71
+Daten der Marktlokation,SG8,SEQ,,,,,,Muss,,71,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,72
+Daten der Marktlokation,SG8,SEQ,1229,,Z01,,Daten der Marktlokation,X,,72,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,73
+Referenz auf die ID der Marktlokation,SG8,RFF,,,,,,Muss,,73,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,74
+Referenz auf die ID der Marktlokation,SG8,RFF,1153,,Z18,,Marktlokation,X,,74,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,75
+Referenz auf die ID der Marktlokation,SG8,RFF,1154,,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,75,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,76
+Lieferrichtung,SG10,,,,,,,Muss,,76,,,Lieferrichtung,SG10,,,,,,,Muss,,77
+Lieferrichtung,SG10,CCI,,,,,,Muss,,77,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,,00110,,,,Muss,,78
+Lieferrichtung,SG10,CCI,7059,,Z30,,Lieferrichtung,X,,78,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,79
+Lieferrichtung,SG10,CCI,7037,,Z07,,Verbrauch,X,,79,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Lieferrichtung,SG10,CCI,7037,00110,Z07,,Verbrauch,X,,80
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,81
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,81,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,82
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,82,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,83

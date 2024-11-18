@@ -100,22 +100,22 @@ Status der erzeugenden Marktlokation,SG10,CCI,7037,,Z93,,Vermarktung ohne gesetz
 [696] Hinweis: Verwendung, nur wenn die Rolle LF nicht einem Unternehmen NB zugeordnet ist",85
 Status der erzeugenden Marktlokation,SG10,CCI,7037,,Z94,,KWKG-Vergütung,X,,86,ENTFÄLLT,,,,,,,,,,,,
 Status der erzeugenden Marktlokation,SG10,CCI,7037,,Z95,,Veräußerungsform nach § 20 Abs. 1 Nr. 4 EEG 2014 („Einspeisevergütung nach § 38“) bzw. § 21b Abs. 1 Nr. 2 EEG 2017 (Ausfallvergütung),X,,87,ENTFÄLLT,,,,,,,,,,,,
-Land der Förderung,SG10,,,,,,,Muss [240],[240] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) CCI+Z22++Z91 (Status der erzeugenden Marktlokation: Veräußerungsform Geförderte Direktvermarktung bzw. Marktprämie) vorhanden,88,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,,,,,,,Muss [240],[240] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) CCI+Z22++Z91 (Status der erzeugenden Marktlokation: Veräußerungsform Geförderte Direktvermarktung bzw. Marktprämie) vorhanden,86
-Land der Förderung,SG10,CCI,,,,,,Muss,,89,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,CCI,,00149,,,,Muss,,87
-Land der Förderung,SG10,CCI,7059,,Z23,,Land der Förderung,X,,90,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,CCI,7059,00149,Z23,,Land der Förderung,X,,88
-Land der Förderung,SG10,CCI,7037,,,,Land der Förderung,X,,91,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,CCI,7037,00149,,,Land der Förderung,X,,89
-Land der Förderung,SG10,CCI,1131,,LAND,,EDI@Energy Codeliste der europäischen Ländercodes,X,,92,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,CCI,1131,00149,LAND,,EDI@Energy Codeliste der europäischen Ländercodes,X,,90
-Land der Förderung,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,93,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Land der Förderung,SG10,CCI,3055,00149,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,91
-Daten der Tranche,SG8,,,,,,,Muss [167],[167] Wenn SG5 LOC+Z21 (Tranche) vorhanden,94,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,,,,,,,Muss [167],[167] Wenn SG5 LOC+Z21 (Tranche) vorhanden,92
-Daten der Tranche,SG8,SEQ,,,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,SEQ,,00238,,,,Muss,,93
-Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,96,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Daten der Tranche,SG8,SEQ,1229,00238,Z15,,Daten der Tranche,X,,94
-Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,97,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,,00239,,,,Muss,,95
-Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,98,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1153,00239,Z20,,Tranche,X,,96
-Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,99,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1154,00239,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,97
-Bilanzkreis,SG10,,,,,,,Muss,,100,ÄNDERUNG,Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,,,,,,,Muss,,98
-Bilanzkreis,SG10,CCI,,,,,,Muss,,101,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,,00245,,,,Muss,,99
-Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7059,00245,Z19,,Bilanzkreis,X,,100
-Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Bilanzkreis,SG10,CCI,7037,00245,,,Bilanzkreis,X,,101
-Nachrichten-Endesegment,,UNT,,,,,,Muss,,104,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,102
-Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,105,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,103
-Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,106,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404|Unnamed: 0_FV2310|Unnamed: 0_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,104
+Land der Förderung,SG10,,,,,,,Muss [240],[240] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) CCI+Z22++Z91 (Status der erzeugenden Marktlokation: Veräußerungsform Geförderte Direktvermarktung bzw. Marktprämie) vorhanden,88,,,Land der Förderung,SG10,,,,,,,Muss [240],[240] Wenn SG8 SEQ+Z01 (Daten der Marktlokation) CCI+Z22++Z91 (Status der erzeugenden Marktlokation: Veräußerungsform Geförderte Direktvermarktung bzw. Marktprämie) vorhanden,86
+Land der Förderung,SG10,CCI,,,,,,Muss,,89,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Land der Förderung,SG10,CCI,,00149,,,,Muss,,87
+Land der Förderung,SG10,CCI,7059,,Z23,,Land der Förderung,X,,90,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Land der Förderung,SG10,CCI,7059,00149,Z23,,Land der Förderung,X,,88
+Land der Förderung,SG10,CCI,7037,,,,Land der Förderung,X,,91,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Land der Förderung,SG10,CCI,7037,00149,,,Land der Förderung,X,,89
+Land der Förderung,SG10,CCI,1131,,LAND,,EDI@Energy Codeliste der europäischen Ländercodes,X,,92,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Land der Förderung,SG10,CCI,1131,00149,LAND,,EDI@Energy Codeliste der europäischen Ländercodes,X,,90
+Land der Förderung,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,93,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Land der Förderung,SG10,CCI,3055,00149,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,91
+Daten der Tranche,SG8,,,,,,,Muss [167],[167] Wenn SG5 LOC+Z21 (Tranche) vorhanden,94,,,Daten der Tranche,SG8,,,,,,,Muss [167],[167] Wenn SG5 LOC+Z21 (Tranche) vorhanden,92
+Daten der Tranche,SG8,SEQ,,,,,,Muss,,95,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Tranche,SG8,SEQ,,00238,,,,Muss,,93
+Daten der Tranche,SG8,SEQ,1229,,Z15,,Daten der Tranche,X,,96,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Daten der Tranche,SG8,SEQ,1229,00238,Z15,,Daten der Tranche,X,,94
+Referenz auf die ID der Tranche,SG8,RFF,,,,,,Muss,,97,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,,00239,,,,Muss,,95
+Referenz auf die ID der Tranche,SG8,RFF,1153,,Z20,,Tranche,X,,98,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1153,00239,Z20,,Tranche,X,,96
+Referenz auf die ID der Tranche,SG8,RFF,1154,,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,99,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Referenz auf die ID der Tranche,SG8,RFF,1154,00239,,,ID der Tranche,X [950],[950] Format: Marktlokations-ID,97
+Bilanzkreis,SG10,,,,,,,Muss,,100,,,Bilanzkreis,SG10,,,,,,,Muss,,98
+Bilanzkreis,SG10,CCI,,,,,,Muss,,101,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,,00245,,,,Muss,,99
+Bilanzkreis,SG10,CCI,7059,,Z19,,Bilanzkreis,X,,102,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7059,00245,Z19,,Bilanzkreis,X,,100
+Bilanzkreis,SG10,CCI,7037,,,,Bilanzkreis,X,,103,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Bilanzkreis,SG10,CCI,7037,00245,,,Bilanzkreis,X,,101
+Nachrichten-Endesegment,,UNT,,,,,,Muss,,104,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,102
+Nachrichten-Endesegment,,UNT,0074,,,,Anzahl der Segmente in einer Nachricht,X,,105,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,103
+Nachrichten-Endesegment,,UNT,0062,,,,Nachrichten-Referenznummer,X,,106,ÄNDERUNG,Segment ID_FV2310|Segment ID_FV2404,Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,104

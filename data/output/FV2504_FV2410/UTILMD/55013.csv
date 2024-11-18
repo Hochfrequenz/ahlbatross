@@ -11,55 +11,55 @@ Beginn der Nachricht,,BGM,1001,00004,E01,,Anmeldungen,X,,8,ÄNDERUNG,Bedingungsa
 Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,9,ÄNDERUNG,Datenelement_FV2410|Datenelement_FV2504|Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Beginn der Nachricht,,BGM,1001,,Z89,,Zuordnung zur Lokation,X [709],"[708] Hinweis: Wenn die Aktion ""Ankündigung der Zuordnung des E/G zur Marktlokation"" durchgeführt wird
 [709] Hinweis: Wenn die Aktion ""Zuordnung des E/G zur Marktlokation aufgrund fehlender Antwort"" durchgeführt wird",9
 ,,,,,,,,,,,NEU,,Beginn der Nachricht,,BGM,1004,00004,,,Dokumentennummer,X,,10
-Nachrichtendatum,,DTM,,00005,,,,Muss,,10,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichtendatum,,DTM,,00005,,,,Muss,,11
-Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,12
+Nachrichtendatum,,DTM,,00005,,,,Muss,,10,,,Nachrichtendatum,,DTM,,00005,,,,Muss,,11
+Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,11,,,Nachrichtendatum,,DTM,2005,00005,137,,Dokumenten-/ Nachrichtendatum/-zeit,X,,12
 Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
-[931] Format: ZZZ = +00",12,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
+[931] Format: ZZZ = +00",12,,,Nachrichtendatum,,DTM,2380,00005,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [931] [494],"[494] Das hier genannte Datum muss der Zeitpunkt sein, zu dem das Dokument erstellt wurde, oder ein Zeitpunkt, der davor liegt
 [931] Format: ZZZ = +00",13
-Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,14
-MP-ID Absender,SG2,,,,,,,Muss,,14,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,,,,,,,Muss,,15
-MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,NAD,,00008,,,,Muss,,16
-MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,17
-MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,18
-MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,19
-MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,20
-Ansprechpartner,SG3,,,,,,,Kann,,20,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ansprechpartner,SG3,,,,,,,Kann,,21
-Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,22
-Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,23
-Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,24
-Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,25
+Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,13,,,Nachrichtendatum,,DTM,2379,00005,303,,CCYYMMDDHHMMZZZ,X,,14
+MP-ID Absender,SG2,,,,,,,Muss,,14,,,MP-ID Absender,SG2,,,,,,,Muss,,15
+MP-ID Absender,SG2,NAD,,00008,,,,Muss,,15,,,MP-ID Absender,SG2,NAD,,00008,,,,Muss,,16
+MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,16,,,MP-ID Absender,SG2,NAD,3035,00008,MS,,Dokumenten-/ Nachrichtenaussteller bzw. -absender,X,,17
+MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,17,,,MP-ID Absender,SG2,NAD,3039,00008,,,MP-ID,X,,18
+MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,18,,,MP-ID Absender,SG2,NAD,3055,00008,9,,GS1,X,,19
+MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,19,,,MP-ID Absender,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,20
+Ansprechpartner,SG3,,,,,,,Kann,,20,,,Ansprechpartner,SG3,,,,,,,Kann,,21
+Ansprechpartner,SG3,CTA,,00009,,,,Muss,,21,,,Ansprechpartner,SG3,CTA,,00009,,,,Muss,,22
+Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,22,,,Ansprechpartner,SG3,CTA,3139,00009,IC,,Informationskontakt,X,,23
+Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,23,,,Ansprechpartner,SG3,CTA,3412,00009,,,Name vom Ansprechpartner,X,,24
+Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,24,,,Kommunikationsverbindung,SG3,COM,,00010,,,,Muss,,25
 Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
-[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",25,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
+[940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",25,,,Kommunikationsverbindung,SG3,COM,3148,00010,,,Nummer / Adresse,X (([939] [321]) ∨ ([940] [322])) ∧ [514],"[321] Wenn im DE3155 in demselben COM der Code EM vorhanden ist
 [322] Wenn im DE3155 in demselben COM der Code TE / FX / AJ / AL vorhanden ist
 [514] Hinweis: Es darf nur eine Information im DE3148 übermittelt werden
 [939] Format: Die Zeichenkette muss die Zeichen @ und . enthalten
 [940] Format: Die Zeichenkette muss mit dem Zeichen + beginnen und danach dürfen nur noch Ziffern folgen",26
-Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,27
-Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,28
-Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,29
-Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,30
-Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,31
-MP-ID Empfänger,SG2,,,,,,,Muss,,31,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,,,,,,,Muss,,32
-MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,33
-MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,34
-MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,35
-MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,36
-MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,37
-Vorgang,SG4,,,,,,,Muss,,37,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vorgang,SG4,,,,,,,Muss,,38
-Vorgang,SG4,IDE,,00020,,,,Muss,,38,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vorgang,SG4,IDE,,00020,,,,Muss,,39
-Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,40
-Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,41
-Beginn zum,SG4,DTM,,00024,,,,Muss,,41,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn zum,SG4,DTM,,00023,,,,Muss,,42
-Beginn zum,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn zum,SG4,DTM,2005,00023,92,,Datum Vertragsbeginn,X,,43
-Beginn zum,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,43,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn zum,SG4,DTM,2380,00023,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,44
-Beginn zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Beginn zum,SG4,DTM,2379,00023,303,,CCYYMMDDHHMMZZZ,X,,45
-Ende zum,SG4,DTM,,00025,,,,Muss [10],[10] Wenn SG4 STS+Z17 (Transaktionsgrund für befristete Anmeldung) vorhanden,45,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende zum,SG4,DTM,,00024,,,,Muss [10],[10] Wenn SG4 STS+7++xxx+xxx+E01/ E03 (Transaktionsgrund befristete Anmeldung) vorhanden,46
-Ende zum,SG4,DTM,2005,00025,93,,Datum Vertragsende,X,,46,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende zum,SG4,DTM,2005,00024,93,,Datum Vertragsende,X,,47
-Ende zum,SG4,DTM,2380,00025,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,47,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende zum,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,48
-Ende zum,SG4,DTM,2379,00025,303,,CCYYMMDDHHMMZZZ,X,,48,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Ende zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,49
+Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,26,,,Kommunikationsverbindung,SG3,COM,3155,00010,EM,,Elektronische Post,X [1P0..1],,27
+Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,27,,,Kommunikationsverbindung,SG3,COM,3155,,FX,,Telefax,X [1P0..1],,28
+Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,28,,,Kommunikationsverbindung,SG3,COM,3155,,TE,,Telefon,X [1P0..1],,29
+Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,29,,,Kommunikationsverbindung,SG3,COM,3155,,AJ,,weiteres Telefon,X [1P0..1],,30
+Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,30,,,Kommunikationsverbindung,SG3,COM,3155,,AL,,Handy,X [1P0..1],,31
+MP-ID Empfänger,SG2,,,,,,,Muss,,31,,,MP-ID Empfänger,SG2,,,,,,,Muss,,32
+MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,32,,,MP-ID Empfänger,SG2,NAD,,00011,,,,Muss,,33
+MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,33,,,MP-ID Empfänger,SG2,NAD,3035,00011,MR,,Nachrichtenempfänger,X,,34
+MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,34,,,MP-ID Empfänger,SG2,NAD,3039,00011,,,MP-ID,X,,35
+MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,35,,,MP-ID Empfänger,SG2,NAD,3055,00011,9,,GS1,X,,36
+MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,36,,,MP-ID Empfänger,SG2,NAD,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,37
+Vorgang,SG4,,,,,,,Muss,,37,,,Vorgang,SG4,,,,,,,Muss,,38
+Vorgang,SG4,IDE,,00020,,,,Muss,,38,,,Vorgang,SG4,IDE,,00020,,,,Muss,,39
+Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,39,,,Vorgang,SG4,IDE,7495,00020,24,,Transaktion,X,,40
+Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,40,,,Vorgang,SG4,IDE,7402,00020,,,Vorgangsnummer,X,,41
+Beginn zum,SG4,DTM,,00024,,,,Muss,,41,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Beginn zum,SG4,DTM,,00023,,,,Muss,,42
+Beginn zum,SG4,DTM,2005,00024,92,,Datum Vertragsbeginn,X,,42,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Beginn zum,SG4,DTM,2005,00023,92,,Datum Vertragsbeginn,X,,43
+Beginn zum,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,43,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Beginn zum,SG4,DTM,2380,00023,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,44
+Beginn zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,44,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Beginn zum,SG4,DTM,2379,00023,303,,CCYYMMDDHHMMZZZ,X,,45
+Ende zum,SG4,DTM,,00025,,,,Muss [10],[10] Wenn SG4 STS+Z17 (Transaktionsgrund für befristete Anmeldung) vorhanden,45,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingung_FV2410|Bedingung_FV2504,Ende zum,SG4,DTM,,00024,,,,Muss [10],[10] Wenn SG4 STS+7++xxx+xxx+E01/ E03 (Transaktionsgrund befristete Anmeldung) vorhanden,46
+Ende zum,SG4,DTM,2005,00025,93,,Datum Vertragsende,X,,46,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Ende zum,SG4,DTM,2005,00024,93,,Datum Vertragsende,X,,47
+Ende zum,SG4,DTM,2380,00025,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,47,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Ende zum,SG4,DTM,2380,00024,,,"Datum oder Uhrzeit oder Zeitspanne, Wert",X [UB1],,48
+Ende zum,SG4,DTM,2379,00025,303,,CCYYMMDDHHMMZZZ,X,,48,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Ende zum,SG4,DTM,2379,00024,303,,CCYYMMDDHHMMZZZ,X,,49
 Bilanzierungsbeginn,SG4,DTM,,00029,,,,Muss [18] Soll [28] ∧ [29],"[18] Wenn SG4 DTM+93 (Ende zum) nicht vorhanden
 [28] Wenn SG4 DTM+93 (Ende zum) vorhanden
 [29] Wenn eine Bilanzierung stattfindet",49,ENTFÄLLT,,,,,,,,,,,,
@@ -105,39 +105,39 @@ Bemerkung (Feld für allgemeine Hinweise),SG4,FTX,4440,00043,,,Text für allgeme
 ,,,,,,,,,,,NEU,,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,SG4,STS,9013,00035,E01,,Ein-/Auszug (Umzug),S [9P0..1],,63
 ,,,,,,,,,,,NEU,,Transaktionsgrund / Ergänzung / Transaktionsgrund befristete Anmeldung,SG4,STS,9013,,E03,,Wechsel,S [9P0..1],,64
 Netzlokation,SG5,,,,,,,Soll [46] ∧ [688],"[46] Wenn ID für Objekt vergeben wurde
-[688] Hinweis: Es sind alle ID der Netzlokationen, welche der im LOC+Z16 angegebenen Marktlokation vorgelagert sind anzugeben",75,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,,,,,,,Soll [46] ∧ [688],"[46] Wenn ID für Objekt vergeben wurde
+[688] Hinweis: Es sind alle ID der Netzlokationen, welche der im LOC+Z16 angegebenen Marktlokation vorgelagert sind anzugeben",75,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Netzlokation,SG5,,,,,,,Soll [46] ∧ [688],"[46] Wenn ID für Objekt vergeben wurde
 [688] Hinweis: Es sind alle ID der Netzlokationen, welche der im LOC+Z16 angegebenen Marktlokation vorgelagert sind, anzugeben",65
-Netzlokation,SG5,LOC,,00050,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,,00048,,,,Muss,,66
-Netzlokation,SG5,LOC,3227,00050,Z18,,Netzlokation,X,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,3227,00048,Z18,,Netzlokation,X,,67
-Netzlokation,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Netzlokation,SG5,LOC,3225,00048,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,68
-Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,79,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,69
-Marktlokation,SG5,LOC,,00051,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokation,SG5,LOC,,00049,,,,Muss,,70
-Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,81,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokation,SG5,LOC,3227,00049,Z16,,Marktlokation,X,,71
-Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,82,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokation,SG5,LOC,3225,00049,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,72
+Netzlokation,SG5,LOC,,00050,,,,Muss,,76,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,,00048,,,,Muss,,66
+Netzlokation,SG5,LOC,3227,00050,Z18,,Netzlokation,X,,77,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,3227,00048,Z18,,Netzlokation,X,,67
+Netzlokation,SG5,LOC,3225,00050,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Netzlokation,SG5,LOC,3225,00048,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,68
+Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,79,,,Marktlokation,SG5,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,69
+Marktlokation,SG5,LOC,,00051,,,,Muss,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokation,SG5,LOC,,00049,,,,Muss,,70
+Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,81,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokation,SG5,LOC,3227,00049,Z16,,Marktlokation,X,,71
+Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,82,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokation,SG5,LOC,3225,00049,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,72
 Technische Ressource,SG5,,,,,,,Soll [46] ∧ [689] ∧ [694],"[46] Wenn ID für Objekt vergeben wurde
 [689] Hinweis: Es sind alle ID der Technischen Ressourcen, welche der im LOC+Z16 angegebenen Marktlokation zugehören anzugeben
-[694] Hinweis: Wenn in einer Marktlokation eine ID für eine Technischen Ressource vergeben wird, müssen für alle ggf. weitere Technische Ressourcen in der Marktlokation ID vergeben werden. Hintergrund: MSB und LF benötigen einen vollständigen Überblick auf die Art und Nutzung der Technischen Ressourcen in einer Marktlokation für die Plausibilisierung, Ersatzwertbildung, Produktauswahl bzw. Prognose",83,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Technische Ressource,SG5,,,,,,,Soll [46] ∧ [689] ∧ [694],"[46] Wenn ID für Objekt vergeben wurde
+[694] Hinweis: Wenn in einer Marktlokation eine ID für eine Technischen Ressource vergeben wird, müssen für alle ggf. weitere Technische Ressourcen in der Marktlokation ID vergeben werden. Hintergrund: MSB und LF benötigen einen vollständigen Überblick auf die Art und Nutzung der Technischen Ressourcen in einer Marktlokation für die Plausibilisierung, Ersatzwertbildung, Produktauswahl bzw. Prognose",83,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Technische Ressource,SG5,,,,,,,Soll [46] ∧ [689] ∧ [694],"[46] Wenn ID für Objekt vergeben wurde
 [689] Hinweis: Es sind alle ID der Technischen Ressourcen, welche der im LOC+Z16 angegebenen Marktlokation zugehören, anzugeben
 [694] Hinweis: Wenn in einer Marktlokation eine ID für eine Technischen Ressource vergeben wird, müssen für alle ggf. weitere Technische Ressourcen in der Marktlokation ID vergeben werden. Hintergrund: MSB und LF benötigen einen vollständigen Überblick auf die Art und Nutzung der Technischen Ressourcen in einer Marktlokation für die Plausibilisierung, Ersatzwertbildung, Produktauswahl bzw. Prognose",73
-Technische Ressource,SG5,LOC,,00052,,,,Muss,,84,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Technische Ressource,SG5,LOC,,00051,,,,Muss,,74
-Technische Ressource,SG5,LOC,3227,00052,Z20,,Technische Ressource,X,,85,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Technische Ressource,SG5,LOC,3227,00051,Z20,,Technische Ressource,X,,75
-Technische Ressource,SG5,LOC,3225,00052,,,ID der Technischen Ressource,X [922],[922] Format: TR-ID,86,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Technische Ressource,SG5,LOC,3225,00051,,,ID der Technischen Ressource,X [922],[922] Format: TR-ID,76
+Technische Ressource,SG5,LOC,,00052,,,,Muss,,84,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Technische Ressource,SG5,LOC,,00051,,,,Muss,,74
+Technische Ressource,SG5,LOC,3227,00052,Z20,,Technische Ressource,X,,85,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Technische Ressource,SG5,LOC,3227,00051,Z20,,Technische Ressource,X,,75
+Technische Ressource,SG5,LOC,3225,00052,,,ID der Technischen Ressource,X [922],[922] Format: TR-ID,86,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Technische Ressource,SG5,LOC,3225,00051,,,ID der Technischen Ressource,X [922],[922] Format: TR-ID,76
 Steuerbare Ressource,SG5,,,,,,,Soll [46] ∧ [690],"[46] Wenn ID für Objekt vergeben wurde
-[690] Hinweis: Es sind alle ID der Steuerbaren Ressourcen, welche der im LOC+Z20 angegebenen Technischen Ressourcen zugeordnet sind anzugeben",87,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Steuerbare Ressource,SG5,,,,,,,Soll [46] ∧ [690],"[46] Wenn ID für Objekt vergeben wurde
+[690] Hinweis: Es sind alle ID der Steuerbaren Ressourcen, welche der im LOC+Z20 angegebenen Technischen Ressourcen zugeordnet sind anzugeben",87,ÄNDERUNG,Bedingung_FV2410|Bedingung_FV2504,Steuerbare Ressource,SG5,,,,,,,Soll [46] ∧ [690],"[46] Wenn ID für Objekt vergeben wurde
 [690] Hinweis: Es sind alle ID der Steuerbaren Ressourcen, welche der im LOC+Z20 angegebenen Technischen Ressourcen zugeordnet sind, anzugeben",77
-Steuerbare Ressource,SG5,LOC,,00053,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Steuerbare Ressource,SG5,LOC,,00052,,,,Muss,,78
-Steuerbare Ressource,SG5,LOC,3227,00053,Z19,,Steuerbare Ressource,X,,89,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Steuerbare Ressource,SG5,LOC,3227,00052,Z19,,Steuerbare Ressource,X,,79
-Steuerbare Ressource,SG5,LOC,3225,00053,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,90,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Steuerbare Ressource,SG5,LOC,3225,00052,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,80
+Steuerbare Ressource,SG5,LOC,,00053,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Steuerbare Ressource,SG5,LOC,,00052,,,,Muss,,78
+Steuerbare Ressource,SG5,LOC,3227,00053,Z19,,Steuerbare Ressource,X,,89,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Steuerbare Ressource,SG5,LOC,3227,00052,Z19,,Steuerbare Ressource,X,,79
+Steuerbare Ressource,SG5,LOC,3225,00053,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,90,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Steuerbare Ressource,SG5,LOC,3225,00052,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,80
 Messlokation,SG5,,,,,,,Soll [166] ∧ [527],"[166] Wenn vorhanden
-[527] Hinweis: Es sind alle Identifikatoren der Messlokationen anzugeben",91,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messlokation,SG5,,,,,,,Muss [483] ∧ [623],"[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden
+[527] Hinweis: Es sind alle Identifikatoren der Messlokationen anzugeben",91,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Messlokation,SG5,,,,,,,Muss [483] ∧ [623],"[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden
 [623] Hinweis: Es sind alle Identifikatoren der Messlokationen anzugeben, die zur Ermittlung der Energiemenge der im Vorgang genannten Marktlokation benötigt werden",81
-Messlokation,SG5,LOC,,00055,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messlokation,SG5,LOC,,00054,,,,Muss,,82
-Messlokation,SG5,LOC,3227,00055,Z17,,Messlokation,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messlokation,SG5,LOC,3227,00054,Z17,,Messlokation,X,,83
-Messlokation,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,94,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messlokation,SG5,LOC,3225,00054,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,84
-Prüfidentifikator,SG6,,,,,,,Muss,,95,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,,,,,,,Muss,,85
-Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,86
-Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,87
-Prüfidentifikator,SG6,RFF,1154,00057,55013,,GPKE / Anmeldung EoG,X,,98,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55013,,GPKE / Anmeldung EoG,X,,88
+Messlokation,SG5,LOC,,00055,,,,Muss,,92,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messlokation,SG5,LOC,,00054,,,,Muss,,82
+Messlokation,SG5,LOC,3227,00055,Z17,,Messlokation,X,,93,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messlokation,SG5,LOC,3227,00054,Z17,,Messlokation,X,,83
+Messlokation,SG5,LOC,3225,00055,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,94,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messlokation,SG5,LOC,3225,00054,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,84
+Prüfidentifikator,SG6,,,,,,,Muss,,95,,,Prüfidentifikator,SG6,,,,,,,Muss,,85
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,96,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,86
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,97,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,87
+Prüfidentifikator,SG6,RFF,1154,00057,55013,,GPKE / Anmeldung EoG,X,,98,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1154,00056,55013,,GPKE / Anmeldung EoG,X,,88
 Referenz auf die ID der Marktlokation für Termine der Marktlokation,SG6,,,,,,,Muss,,99,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation für Termine der Marktlokation,SG6,RFF,,00066,,,,Muss [636],[636] Hinweis: Dieses RFF klassifiziert mit einem Code im DE1153 die in derselben Segmentgruppe enthaltenen DTM zu einem Markt- bzw. Messlokation relevanten Inhalt,100,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation für Termine der Marktlokation,SG6,RFF,1153,00066,Z18,,Marktlokation,X,,101,ENTFÄLLT,,,,,,,,,,,,
@@ -220,27 +220,27 @@ Referenz auf die der Technischen Ressource zugeordneten Marktlokation ,SG8,RFF,1
 ,,,,,,,,,,,NEU,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00057,TN,,Transaktions- Referenznummer,X,,91
 ,,,,,,,,,,,NEU,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00057,,,Vorgangsnummer,X,,92
 Daten der Netzlokation,SG8,,,,,,,Muss [294] ∧ [2356],"[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden
-[2356] Je SG5 LOC+Z18 (Netzlokation) ist genau einmal die Segmentgruppe anzugeben",149,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Netzlokation,SG8,,,,,,,Muss [294] ∧ [2356],"[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden
+[2356] Je SG5 LOC+Z18 (Netzlokation) ist genau einmal die Segmentgruppe anzugeben",149,,,Daten der Netzlokation,SG8,,,,,,,Muss [294] ∧ [2356],"[294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden
 [2356] Je SG5 LOC+Z18 (Netzlokation) ist genau einmal die Segmentgruppe anzugeben",93
-Daten der Netzlokation,SG8,SEQ,,00078,,,,Muss,,150,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Netzlokation,SG8,SEQ,,00089,,,,Muss,,94
-Daten der Netzlokation,SG8,SEQ,1229,00078,Z51,,Daten der Netzlokation,X,,151,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Netzlokation,SG8,SEQ,1229,00089,ZD7,,Informative Daten der Netzlokation,X,,95
-Referenz auf die ID der Netzlokation,SG8,RFF,,00079,,,,Muss,,152,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,,00090,,,,Muss,,96
-Referenz auf die ID der Netzlokation,SG8,RFF,1153,00079,Z32,,Netzlokation,X,,153,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,1153,00090,Z32,,Netzlokation,X,,97
-Referenz auf die ID der Netzlokation,SG8,RFF,1154,00079,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,154,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,1154,00090,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,98
+Daten der Netzlokation,SG8,SEQ,,00078,,,,Muss,,150,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Daten der Netzlokation,SG8,SEQ,,00089,,,,Muss,,94
+Daten der Netzlokation,SG8,SEQ,1229,00078,Z51,,Daten der Netzlokation,X,,151,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Daten der Netzlokation,SG8,SEQ,1229,00089,ZD7,,Informative Daten der Netzlokation,X,,95
+Referenz auf die ID der Netzlokation,SG8,RFF,,00079,,,,Muss,,152,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,,00090,,,,Muss,,96
+Referenz auf die ID der Netzlokation,SG8,RFF,1153,00079,Z32,,Netzlokation,X,,153,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,1153,00090,Z32,,Netzlokation,X,,97
+Referenz auf die ID der Netzlokation,SG8,RFF,1154,00079,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,154,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Netzlokation,SG8,RFF,1154,00090,,,ID der Netzlokation,X [960],[960] Format: Netzlokations-ID,98
 Steuerkanal,SG10,,,,,,,Muss,,155,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,,00080,,,,Muss,,156,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,7059,00080,Z49,,Steuerkanal,X,,157,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,7037,00080,ZF2,,Kein Steuerkanal vorhanden,X,,158,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,7037,,ZF3,,Steuerkanal vorhanden,X,,159,ENTFÄLLT,,,,,,,,,,,,
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,160,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,99
-Zugeordnete Marktpartner,SG10,CCI,,00081,,,,Muss,,161,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00092,,,,Muss,,100
-Zugeordnete Marktpartner,SG10,CCI,7037,00081,ZB3,,Zugeordneter Marktpartner,X,,162,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00092,ZB3,,Zugeordneter Marktpartner,X,,101
-Messstellenbetreiber,SG10,CAV,,00082,,,,Muss,,163,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,,00093,,,,Muss,,102
-Messstellenbetreiber,SG10,CAV,7111,00082,Z91,,MSB,X,,164,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7111,00093,Z91,,MSB,X,,103
-Messstellenbetreiber,SG10,CAV,1131,00082,,,MP-ID,X,,165,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,1131,00093,,,MP-ID,X,,104
-Messstellenbetreiber,SG10,CAV,7110,00082,Z39,,Grundzuständiger Messstellenbetreiber,X,,166,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00093,Z39,,Grundzuständiger Messstellenbetreiber,X,,105
-Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,167,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,106
-Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,168,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,107
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,160,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,99
+Zugeordnete Marktpartner,SG10,CCI,,00081,,,,Muss,,161,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00092,,,,Muss,,100
+Zugeordnete Marktpartner,SG10,CCI,7037,00081,ZB3,,Zugeordneter Marktpartner,X,,162,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00092,ZB3,,Zugeordneter Marktpartner,X,,101
+Messstellenbetreiber,SG10,CAV,,00082,,,,Muss,,163,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,,00093,,,,Muss,,102
+Messstellenbetreiber,SG10,CAV,7111,00082,Z91,,MSB,X,,164,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7111,00093,Z91,,MSB,X,,103
+Messstellenbetreiber,SG10,CAV,1131,00082,,,MP-ID,X,,165,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,1131,00093,,,MP-ID,X,,104
+Messstellenbetreiber,SG10,CAV,7110,00082,Z39,,Grundzuständiger Messstellenbetreiber,X,,166,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7110,00093,Z39,,Grundzuständiger Messstellenbetreiber,X,,105
+Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,167,,,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,106
+Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,168,,,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,107
 OBIS-Daten der Netzlokation,SG8,,,,,,,Soll [166] ∧ [294],"[166] Wenn vorhanden
 [294] Wenn SG5 LOC+Z18 (Netzlokation) vorhanden",169,ENTFÄLLT,,,,,,,,,,,,
 OBIS-Daten der Netzlokation,SG8,SEQ,,00088,,,,Muss,,170,ENTFÄLLT,,,,,,,,,,,,
@@ -283,49 +283,49 @@ Auftraggebender Marktpartner,SG10,CAV,1131,00101,,,MP-ID,X,,205,ENTFÄLLT,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,,,,,,,Muss,,206,ENTFÄLLT,,,,,,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,CCI,,00102,,,,Muss,,207,ENTFÄLLT,,,,,,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,00102,ZA7,,LF,X,,208,ENTFÄLLT,,,,,,,,,,,,
-Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,209,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,108
-Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,210,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Marktlokation,SG8,SEQ,,00114,,,,Muss,,109
-Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,211,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Marktlokation,SG8,SEQ,1229,,Z98,,Informative Daten der Marktlokation,X,,110
+Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,209,,,Daten der Marktlokation,SG8,,,,,,,Muss [2061],[2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben,108
+Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,210,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Daten der Marktlokation,SG8,SEQ,,00114,,,,Muss,,109
+Daten der Marktlokation,SG8,SEQ,1229,00103,Z01,,Daten der Marktlokation,X,,211,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Daten der Marktlokation,SG8,SEQ,1229,,Z98,,Informative Daten der Marktlokation,X,,110
 Referenz auf die ID der Marktlokation,SG8,RFF,,00104,,,,Muss,,212,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG8,RFF,1153,00104,Z18,,Marktlokation,X,,213,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG8,RFF,1154,00104,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,214,ENTFÄLLT,,,,,,,,,,,,
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Muss [101],[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref.messung) in dieser SG8 vorhanden,215,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Muss [101],[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref.messung) in dieser SG8 vorhanden,111
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,00105,,,,Muss,,216,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,00116,,,,Muss,,112
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,00105,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,217,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,00116,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,113
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,,218,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,,114
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,00105,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,219,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,00116,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,115
-Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,00105,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,220,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,00116,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,116
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Muss [101],[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref.messung) in dieser SG8 vorhanden,215,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,,,,,,,Muss [101],[101] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E14/ Z36 (TLP/ TEP/ TEP mit Ref.messung) in dieser SG8 vorhanden,111
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,00105,,,,Muss,,216,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,,00116,,,,Muss,,112
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,00105,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,217,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,00116,265,,Veranschlagte Jahresmenge Gesamt/ Jahresverbrauchsprogno se für spezifische Arbeit für tagesparameterabhängig e Marktlokation,X,,113
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,,218,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6063,,Z08,,"Angepasste elektrische Arbeit nach Anhang D der VDN-Richtlinie ""Lastprofile für unterbrechbare Verbrauchseinrichtungen""",X,,114
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,00105,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,219,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6060,00116,,,Menge,X [902],[902] Format: Möglicher Wert: ≥ 0,115
+Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,00105,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,220,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,00116,Z16,,kWh/K (Kilowatt- Stunde/Kelvin),X [103],,116
 Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
-[104] Wenn SG9 QTY+Z08 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: angepasste elektrische Arbeit nach Anhang D) in dieser SG8 vorhanden",221,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
+[104] Wenn SG9 QTY+Z08 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: angepasste elektrische Arbeit nach Anhang D) in dieser SG8 vorhanden",221,,,Arbeit / Leistung für tagesparameterabhängige Marktlokation,SG9,QTY,6411,,KWH,,Kilowattstunde,X [104],"[103] Wenn SG9 QTY+265 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: Veranschlagte Jahresmenge Gesamt) in dieser SG8 vorhanden
 [104] Wenn SG9 QTY+Z08 (Arbeit / Leistung für tagesparameterabhängig e Marktlokation: angepasste elektrische Arbeit nach Anhang D) in dieser SG8 vorhanden",117
 Veranschlagte Jahresmenge gesamt,SG9,,,,,,,Muss [106] ∨ ([232] ∧ [598]),"[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden
 [232] Wenn SG10 CCI+++Z83 CAV+Z52 (Messtechnische Einordnung der Marktlokation: iMS) vorhanden
-[598] Hinweis: Die Übermittlung dieser Angabe dient dazu, dass der LF auch bei iMS gemessenen Marktlokationen mit Prognosegrundlage auf Basis von Werten einen belastbare Information für die Energiebeschaffung hat",222,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Veranschlagte Jahresmenge gesamt,SG9,,,,,,,Muss [106],[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden,118
-Veranschlagte Jahresmenge gesamt,SG9,QTY,,00106,,,,Muss,,223,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,,00117,,,,Muss,,119
-Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,00106,31,,Veranschlagte Jahresmenge Gesamt,X,,224,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,00117,31,,Veranschlagte Jahresmenge Gesamt,X,,120
+[598] Hinweis: Die Übermittlung dieser Angabe dient dazu, dass der LF auch bei iMS gemessenen Marktlokationen mit Prognosegrundlage auf Basis von Werten einen belastbare Information für die Energiebeschaffung hat",222,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Veranschlagte Jahresmenge gesamt,SG9,,,,,,,Muss [106],[106] Wenn in dieser SG8 SEQ+Z01 SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) CAV+E02 (SLP/SEP) vorhanden,118
+Veranschlagte Jahresmenge gesamt,SG9,QTY,,00106,,,,Muss,,223,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,,00117,,,,Muss,,119
+Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,00106,31,,Veranschlagte Jahresmenge Gesamt,X,,224,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6063,00117,31,,Veranschlagte Jahresmenge Gesamt,X,,120
 Veranschlagte Jahresmenge gesamt,SG9,QTY,6060,00106,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
-[937] Format: keine Nachkommastelle",225,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6060,00117,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
+[937] Format: keine Nachkommastelle",225,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6060,00117,,,Mengenangabe,X [902] ∧ [937],"[902] Format: Möglicher Wert: ≥ 0
 [937] Format: keine Nachkommastelle",121
-Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,00106,KWH,,Kilowattstunde,X,,226,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,00117,KWH,,Kilowattstunde,X,,122
+Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,00106,KWH,,Kilowattstunde,X,,226,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Veranschlagte Jahresmenge gesamt,SG9,QTY,6411,00117,KWH,,Kilowattstunde,X,,122
 Lieferrichtung,SG10,,,,,,,Muss,,227,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,,00110,,,,Muss,,228,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,229,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7037,00110,Z07,,Verbrauch,X,,230,ENTFÄLLT,,,,,,,,,,,,
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,231,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,,,,,,,Muss [483],[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden,123
-Zugeordnete Marktpartner,SG10,CCI,,00111,,,,Muss,,232,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00122,,,,Muss,,124
-Zugeordnete Marktpartner,SG10,CCI,7037,00111,ZB3,,Zugeordneter Marktpartner,X,,233,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00122,ZB3,,Zugeordneter Marktpartner,X,,125
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,231,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Zugeordnete Marktpartner,SG10,,,,,,,Muss [483],[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden,123
+Zugeordnete Marktpartner,SG10,CCI,,00111,,,,Muss,,232,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00122,,,,Muss,,124
+Zugeordnete Marktpartner,SG10,CCI,7037,00111,ZB3,,Zugeordneter Marktpartner,X,,233,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00122,ZB3,,Zugeordneter Marktpartner,X,,125
 Übertragungsnetzbetreiber,SG10,CAV,,00114,,,,Muss,,234,ENTFÄLLT,,,,,,,,,,,,
 Übertragungsnetzbetreiber,SG10,CAV,7111,00114,Z90,,ÜNB,X,,235,ENTFÄLLT,,,,,,,,,,,,
 Übertragungsnetzbetreiber,SG10,CAV,1131,00114,,,MP-ID,X,,236,ENTFÄLLT,,,,,,,,,,,,
 Messstellenbetreiber,SG10,CAV,,00115,,,,Muss [232] ⊻ [234],"[232] Wenn SG10 CCI+++Z83 CAV+Z52 (Messtechnische Einordnung der Marktlokation: iMS) vorhanden
-[234] Wenn SG10 CCI+++Z83 (Messtechnische Einordnung der Marktlokation) CAV+Z53 (kME/ mME) vorhanden",237,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,,00125,,,,Muss,,126
-Messstellenbetreiber,SG10,CAV,7111,00115,Z91,,MSB,X,,238,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7111,00125,Z91,,MSB,X,,127
-Messstellenbetreiber,SG10,CAV,1131,00115,,,MP-ID,X,,239,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,1131,00125,,,MP-ID,X,,128
-Messstellenbetreiber,SG10,CAV,7110,00115,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,240,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00125,Z39,,Grundzuständiger Messstellenbetreiber,X,,129
-Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,241,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,130
-Messstellenbetreiber,SG10,CAV,7110,00115,Z39,,Grundzuständiger Messstellenbetreiber,X,,242,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,131
-Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,243,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00125,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,132
-Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,244,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,133
+[234] Wenn SG10 CCI+++Z83 (Messtechnische Einordnung der Marktlokation) CAV+Z53 (kME/ mME) vorhanden",237,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Messstellenbetreiber,SG10,CAV,,00125,,,,Muss,,126
+Messstellenbetreiber,SG10,CAV,7111,00115,Z91,,MSB,X,,238,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7111,00125,Z91,,MSB,X,,127
+Messstellenbetreiber,SG10,CAV,1131,00115,,,MP-ID,X,,239,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,1131,00125,,,MP-ID,X,,128
+Messstellenbetreiber,SG10,CAV,7110,00115,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,240,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,00125,Z39,,Grundzuständiger Messstellenbetreiber,X,,129
+Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,241,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,130
+Messstellenbetreiber,SG10,CAV,7110,00115,Z39,,Grundzuständiger Messstellenbetreiber,X,,242,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,131
+Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,243,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,00125,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,132
+Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,244,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,133
 Regelzone,SG10,,,,,,,Muss,,245,ENTFÄLLT,,,,,,,,,,,,
 Regelzone,SG10,CCI,,00116,,,,Muss,,246,ENTFÄLLT,,,,,,,,,,,,
 Regelzone,SG10,CCI,7059,00116,Z18,,Regelzone,X,,247,ENTFÄLLT,,,,,,,,,,,,
@@ -349,14 +349,14 @@ Zeitreihentyp,SG10,CCI,7059,00121,15,,Struktur,X,,261,ENTFÄLLT,,,,,,,,,,,,
 Zeitreihentyp,SG10,CCI,7037,00121,Z21,,Summenzeitreihentyp,X,,262,ENTFÄLLT,,,,,,,,,,,,
 Zeitreihentyp,SG10,CAV,,00122,,,,Muss,,263,ENTFÄLLT,,,,,,,,,,,,
 Zeitreihentyp,SG10,CAV,7111,00122,,,Code des Zeitreihentyps,X,,264,ENTFÄLLT,,,,,,,,,,,,
-Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,265,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,134
-Spannungsebene der Marktlokation,SG10,CCI,,00123,,,,Muss,,266,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CCI,,00133,,,,Muss,,135
-Spannungsebene der Marktlokation,SG10,CCI,7037,00123,E03,,Spannungsebene der Marktlokation,X,,267,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CCI,7037,00133,E03,,Spannungsebene der Marktlokation,X,,136
-Spannungsebene der Marktlokation,SG10,CAV,,00124,,,,Muss,,268,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CAV,,00134,,,,Muss,,137
-Spannungsebene der Marktlokation,SG10,CAV,7111,00124,E03,,Höchstspannung,X,,269,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CAV,7111,00134,E03,,Höchstspannung,X,,138
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,270,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,139
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,271,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,140
-Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,272,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,141
+Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,265,,,Spannungsebene der Marktlokation,SG10,,,,,,,Muss,,134
+Spannungsebene der Marktlokation,SG10,CCI,,00123,,,,Muss,,266,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Spannungsebene der Marktlokation,SG10,CCI,,00133,,,,Muss,,135
+Spannungsebene der Marktlokation,SG10,CCI,7037,00123,E03,,Spannungsebene der Marktlokation,X,,267,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Spannungsebene der Marktlokation,SG10,CCI,7037,00133,E03,,Spannungsebene der Marktlokation,X,,136
+Spannungsebene der Marktlokation,SG10,CAV,,00124,,,,Muss,,268,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Spannungsebene der Marktlokation,SG10,CAV,,00134,,,,Muss,,137
+Spannungsebene der Marktlokation,SG10,CAV,7111,00124,E03,,Höchstspannung,X,,269,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Spannungsebene der Marktlokation,SG10,CAV,7111,00134,E03,,Höchstspannung,X,,138
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,270,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E04,,Hochspannung,X,,139
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,271,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E05,,Mittelspannung,X,,140
+Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,272,,,Spannungsebene der Marktlokation,SG10,CAV,7111,,E06,,Niederspannung,X,,141
 Umspannung der Marktlokation,SG10,CAV,,00125,,,,Soll [166],[166] Wenn vorhanden,273,ENTFÄLLT,,,,,,,,,,,,
 Umspannung der Marktlokation,SG10,CAV,7111,00125,E07,,Hös/HS Umspannung,X [116],,274,ENTFÄLLT,,,,,,,,,,,,
 Umspannung der Marktlokation,SG10,CAV,7111,,E08,,HS/MS Umspannung,X [115],,275,ENTFÄLLT,,,,,,,,,,,,
@@ -375,19 +375,19 @@ Aggregationsverantwortung in MaBiS,SG10,CCI,,00128,,,,Muss,,285,ENTFÄLLT,,,,,,,
 Aggregationsverantwortung in MaBiS,SG10,CCI,7059,00128,6,,Verantwortlicher,X,,286,ENTFÄLLT,,,,,,,,,,,,
 Aggregationsverantwortung in MaBiS,SG10,CCI,7037,00128,ZA8,,NB,X,,287,ENTFÄLLT,,,,,,,,,,,,
 Aggregationsverantwortung in MaBiS,SG10,CCI,7037,,ZA9,,ÜNB,X,,288,ENTFÄLLT,,,,,,,,,,,,
-Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,289,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,142
-Prognosegrundlage der Marktlokation,SG10,CCI,,00130,,,,Muss,,290,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prognosegrundlage der Marktlokation,SG10,CCI,,00140,,,,Muss,,143
-Prognosegrundlage der Marktlokation,SG10,CCI,7037,00130,ZC0,,Prognose auf Basis von Werten,X,,291,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prognosegrundlage der Marktlokation,SG10,CCI,7037,00140,ZC0,,Prognose auf Basis von Werten,X,,144
-Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,292,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,145
+Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,289,,,Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss,,142
+Prognosegrundlage der Marktlokation,SG10,CCI,,00130,,,,Muss,,290,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prognosegrundlage der Marktlokation,SG10,CCI,,00140,,,,Muss,,143
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,00130,ZC0,,Prognose auf Basis von Werten,X,,291,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prognosegrundlage der Marktlokation,SG10,CCI,7037,00140,ZC0,,Prognose auf Basis von Werten,X,,144
+Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,292,,,Prognosegrundlage der Marktlokation,SG10,CCI,7037,,ZA6,,Prognose auf Basis von Profilen,X,,145
 Details der Prognosegrundlage,SG10,CAV,,00131,,,,Muss [21] ∧ ([2182] ⊻ ([90] ∧ [2183])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [2182] Segmentgruppe ist genau einmal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben
-[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",293,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Details der Prognosegrundlage,SG10,CAV,,00141,,,,Muss [21] ∧ ([2061] ⊻ ([90] ∧ [2096])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
+[2183] Segmentgruppe ist genau zweimal je SG8 SEQ+Z01 (Daten der Marktlokation) anzugeben",293,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Details der Prognosegrundlage,SG10,CAV,,00141,,,,Muss [21] ∧ ([2061] ⊻ ([90] ∧ [2096])),"[21] Wenn SG10 CCI+++ZA6 (Prognose auf Basis von Profilen) in dieser SG8 vorhanden
 [90] Wenn SG10 CCI+++ZA6 (Prognosegrundlage der Marktlokation: Prognose auf Basis von Profilen) einmal mit CAV+E14 (TLP/TEP) und einmal mit CAV+E02 (SLP/SEP) in dieser SG8 vorhanden
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben
 [2096] Segmentgruppe ist genau zweimal je SG4 IDE anzugeben",146
-Details der Prognosegrundlage,SG10,CAV,7111,00131,E02,,SLP/SEP,X [6P0..1] ⊻ [7P1..1],,294,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Details der Prognosegrundlage,SG10,CAV,7111,00141,E02,,SLP/SEP,X [1P0..1],,147
-Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],,295,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [1P0..1],,148
+Details der Prognosegrundlage,SG10,CAV,7111,00131,E02,,SLP/SEP,X [6P0..1] ⊻ [7P1..1],,294,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504,Details der Prognosegrundlage,SG10,CAV,7111,00141,E02,,SLP/SEP,X [1P0..1],,147
+Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [6P0..1],,295,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504,Details der Prognosegrundlage,SG10,CAV,7111,,E14,,TLP/TEP,X [1P0..1],,148
 Wahlrecht der Prognosegrundlage der Marktlokation,SG10,,,,,,,Muss [244],[244] Wenn SG10 CCI+6++ZA9 (Aggreg. verantw. ÜNB) in dieser SG8 vorhanden,296,ENTFÄLLT,,,,,,,,,,,,
 Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,,00134,,,,Muss,,297,ENTFÄLLT,,,,,,,,,,,,
 Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CCI,7037,00134,Z84,,Wahlrecht der Prognosegrundlage,X,,298,ENTFÄLLT,,,,,,,,,,,,
@@ -399,10 +399,10 @@ Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,S
 Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZC1,,Wahlrecht nicht vorhanden wegen Eigenverbrauch,X [1P0..1],,304,ENTFÄLLT,,,,,,,,,,,,
 Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZD2,,Wahlrecht nicht vorhanden wegen tagesparameterabhängig em Verbrauch,X [1P0..1],,305,ENTFÄLLT,,,,,,,,,,,,
 Grund für nicht vorhandenes Wahlrecht der Prognosegrundlage der Marktlokation,SG10,CAV,7111,,ZE3,,Wahlrecht nicht vorhanden wegen § 14a EnWG,X [1P0..1],,306,ENTFÄLLT,,,,,,,,,,,,
-Gruppenzuordnung (nach EnWG) ,SG10,,,,,,,Muss,,307,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,,,,,,,Muss [501],[501] Hinweis: Es sind zur Unterstützung die Daten des LFA anzugeben,149
-Gruppenzuordnung (nach EnWG) ,SG10,CCI,,00139,,,,Muss,,308,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,CCI,,00144,,,,Muss,,150
-Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,00139,Z15,,Haushaltskunde gem. EnWG,X,,309,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,00144,Z15,,Haushaltskunde gem. EnWG,X,,151
-Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,,310,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,,152
+Gruppenzuordnung (nach EnWG) ,SG10,,,,,,,Muss,,307,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,,,,,,,Muss [501],[501] Hinweis: Es sind zur Unterstützung die Daten des LFA anzugeben,149
+Gruppenzuordnung (nach EnWG) ,SG10,CCI,,00139,,,,Muss,,308,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,CCI,,00144,,,,Muss,,150
+Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,00139,Z15,,Haushaltskunde gem. EnWG,X,,309,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,00144,Z15,,Haushaltskunde gem. EnWG,X,,151
+Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,,310,,,Gruppenzuordnung (nach EnWG) ,SG10,CCI,7037,,Z18,,Kein Haushaltskunde gem. EnWG,X,,152
 Netznutzung,SG10,,,,,,,Muss,,311,ENTFÄLLT,,,,,,,,,,,,
 Netznutzung,SG10,CCI,,00140,,,,Muss,,312,ENTFÄLLT,,,,,,,,,,,,
 Netznutzung,SG10,CCI,7037,00140,Z88,,Netznutzung,X,,313,ENTFÄLLT,,,,,,,,,,,,
@@ -422,11 +422,11 @@ Grundlage der Lieferscheinprüfung,SG10,CAV,,00144,,,,Muss,,326,ENTFÄLLT,,,,,,,
 Grundlage der Lieferscheinprüfung,SG10,CAV,7111,00144,ZA7,,Grundlage für Lieferscheinprüfung,X,,327,ENTFÄLLT,,,,,,,,,,,,
 Grundlage der Lieferscheinprüfung,SG10,CAV,7110,00144,Z12,,In der Marktkommunikation ausgetauschte Daten,X,,328,ENTFÄLLT,,,,,,,,,,,,
 Grundlage der Lieferscheinprüfung,SG10,CAV,7110,,Z13,,Abweichend vertraglich mit Anschlussnutzer vereinbarte Grundlage,X,,329,ENTFÄLLT,,,,,,,,,,,,
-Betriebszustand der Marktlokation,SG10,,,,,,,Muss,,330,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Betriebszustand der Marktlokation,SG10,,,,,,,Muss,,153
-Betriebszustand der Marktlokation,SG10,CCI,,00152,,,,Muss,,331,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Betriebszustand der Marktlokation,SG10,CCI,,00155,,,,Muss,,154
-Betriebszustand der Marktlokation,SG10,CCI,7059,00152,Z42,,Betriebszustand der Marktlokation,X,,332,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Betriebszustand der Marktlokation,SG10,CCI,7059,00155,Z42,,Betriebszustand der Marktlokation,X,,155
-Betriebszustand der Marktlokation,SG10,CCI,7037,00152,ZB9,,Marktlokation gesperrt,X,,333,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Betriebszustand der Marktlokation,SG10,CCI,7037,00155,ZB9,,Marktlokation gesperrt,X,,156
-Betriebszustand der Marktlokation,SG10,CCI,7037,,ZD3,,Marktlokation im Regelbetrieb,X,,334,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Betriebszustand der Marktlokation,SG10,CCI,7037,,ZD3,,Marktlokation im Regelbetrieb,X,,157
+Betriebszustand der Marktlokation,SG10,,,,,,,Muss,,330,,,Betriebszustand der Marktlokation,SG10,,,,,,,Muss,,153
+Betriebszustand der Marktlokation,SG10,CCI,,00152,,,,Muss,,331,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Betriebszustand der Marktlokation,SG10,CCI,,00155,,,,Muss,,154
+Betriebszustand der Marktlokation,SG10,CCI,7059,00152,Z42,,Betriebszustand der Marktlokation,X,,332,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Betriebszustand der Marktlokation,SG10,CCI,7059,00155,Z42,,Betriebszustand der Marktlokation,X,,155
+Betriebszustand der Marktlokation,SG10,CCI,7037,00152,ZB9,,Marktlokation gesperrt,X,,333,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Betriebszustand der Marktlokation,SG10,CCI,7037,00155,ZB9,,Marktlokation gesperrt,X,,156
+Betriebszustand der Marktlokation,SG10,CCI,7037,,ZD3,,Marktlokation im Regelbetrieb,X,,334,,,Betriebszustand der Marktlokation,SG10,CCI,7037,,ZD3,,Marktlokation im Regelbetrieb,X,,157
 Abwicklungsmodell,SG10,,,,,,,Muss,,335,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,,00153,,,,Muss,,336,ENTFÄLLT,,,,,,,,,,,,
 Abwicklungsmodell,SG10,CCI,7059,00153,ZA2,,Abwicklungsmodell,X,,337,ENTFÄLLT,,,,,,,,,,,,
@@ -666,13 +666,13 @@ Information zu weiteren technischen Einrichtungen,SG10,CAV,,00292,,,,Muss,,528,E
 Information zu weiteren technischen Einrichtungen,SG10,CAV,7111,00292,ZH7,,Weitere technische Einrichtungen vorhanden,X,,529,ENTFÄLLT,,,,,,,,,,,,
 Information zu weiteren technischen Einrichtungen,SG10,CAV,7111,,ZH8,,Keine weitere technische Einrichtung vorhanden,X,,530,ENTFÄLLT,,,,,,,,,,,,
 Daten der Steuerbaren Ressource,SG8,,,,,,,Muss [205] ∧ [2358],"[205] Wenn SG5 LOC+Z19 (Steuerbare Ressource) vorhanden
-[2358] Je SG5 LOC+Z19 (Steuerbare Ressource) ist genau einmal die Segmentgruppe anzugeben",531,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Steuerbaren Ressource,SG8,,,,,,,Muss [205] ∧ [2358],"[205] Wenn SG5 LOC+Z19 (Steuerbare Ressource) vorhanden
+[2358] Je SG5 LOC+Z19 (Steuerbare Ressource) ist genau einmal die Segmentgruppe anzugeben",531,,,Daten der Steuerbaren Ressource,SG8,,,,,,,Muss [205] ∧ [2358],"[205] Wenn SG5 LOC+Z19 (Steuerbare Ressource) vorhanden
 [2358] Je SG5 LOC+Z19 (Steuerbare Ressource) ist genau einmal die Segmentgruppe anzugeben",158
-Daten der Steuerbaren Ressource,SG8,SEQ,,00293,,,,Muss,,532,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Steuerbaren Ressource,SG8,SEQ,,00278,,,,Muss,,159
-Daten der Steuerbaren Ressource,SG8,SEQ,1229,00293,Z62,,Daten der Steuerbaren Ressource,X,,533,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Steuerbaren Ressource,SG8,SEQ,1229,00278,ZF1,,Informative Daten der Steuerbaren Ressource,X,,160
-Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00294,,,,Muss,,534,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00279,,,,Muss,,161
-Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00294,Z38,,Steuerbare Ressource,X,,535,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00279,Z38,,Steuerbare Ressource,X,,162
-Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00294,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,536,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00279,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,163
+Daten der Steuerbaren Ressource,SG8,SEQ,,00293,,,,Muss,,532,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Daten der Steuerbaren Ressource,SG8,SEQ,,00278,,,,Muss,,159
+Daten der Steuerbaren Ressource,SG8,SEQ,1229,00293,Z62,,Daten der Steuerbaren Ressource,X,,533,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Daten der Steuerbaren Ressource,SG8,SEQ,1229,00278,ZF1,,Informative Daten der Steuerbaren Ressource,X,,160
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00294,,,,Muss,,534,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,,00279,,,,Muss,,161
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00294,Z38,,Steuerbare Ressource,X,,535,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1153,00279,Z38,,Steuerbare Ressource,X,,162
+Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00294,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,536,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Steuerbaren Ressource,SG8,RFF,1154,00279,,,ID der Steuerbaren Ressource,X [961],[961] Format: SR-ID,163
 Steuerkanal,SG10,,,,,,,Muss,,537,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,,00295,,,,Muss,,538,ENTFÄLLT,,,,,,,,,,,,
 Steuerkanal,SG10,CCI,7059,00295,Z49,,Steuerkanal,X,,539,ENTFÄLLT,,,,,,,,,,,,
@@ -680,15 +680,15 @@ Leistungsbeschreibung des Steuerkanals,SG10,CAV,,00296,,,,Muss,,540,ENTFÄLLT,,,
 Leistungsbeschreibung des Steuerkanals,SG10,CAV,7111,00296,ZF2,,Leistungsbeschreibung des Steuerkanals,X,,541,ENTFÄLLT,,,,,,,,,,,,
 Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,00296,Z14,,An/Aus,X,,542,ENTFÄLLT,,,,,,,,,,,,
 Leistungsbeschreibung des Steuerkanals,SG10,CAV,1131,,Z15,,Gestuft,X,,543,ENTFÄLLT,,,,,,,,,,,,
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,544,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,164
-Zugeordnete Marktpartner,SG10,CCI,,00297,,,,Muss,,545,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00282,,,,Muss,,165
-Zugeordnete Marktpartner,SG10,CCI,7037,00297,ZB3,,Zugeordneter Marktpartner,X,,546,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00282,ZB3,,Zugeordneter Marktpartner,X,,166
-Messstellenbetreiber,SG10,CAV,,00298,,,,Muss,,547,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,,00283,,,,Muss,,167
-Messstellenbetreiber,SG10,CAV,7111,00298,Z91,,MSB,X,,548,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7111,00283,Z91,,MSB,X,,168
-Messstellenbetreiber,SG10,CAV,1131,00298,,,MP-ID,X,,549,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,1131,00283,,,MP-ID,X,,169
-Messstellenbetreiber,SG10,CAV,7110,00298,Z39,,Grundzuständiger Messstellenbetreiber,X,,550,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00283,Z39,,Grundzuständiger Messstellenbetreiber,X,,170
-Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,551,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,171
-Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,552,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,172
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,544,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,164
+Zugeordnete Marktpartner,SG10,CCI,,00297,,,,Muss,,545,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00282,,,,Muss,,165
+Zugeordnete Marktpartner,SG10,CCI,7037,00297,ZB3,,Zugeordneter Marktpartner,X,,546,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00282,ZB3,,Zugeordneter Marktpartner,X,,166
+Messstellenbetreiber,SG10,CAV,,00298,,,,Muss,,547,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,,00283,,,,Muss,,167
+Messstellenbetreiber,SG10,CAV,7111,00298,Z91,,MSB,X,,548,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7111,00283,Z91,,MSB,X,,168
+Messstellenbetreiber,SG10,CAV,1131,00298,,,MP-ID,X,,549,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,1131,00283,,,MP-ID,X,,169
+Messstellenbetreiber,SG10,CAV,7110,00298,Z39,,Grundzuständiger Messstellenbetreiber,X,,550,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7110,00283,Z39,,Grundzuständiger Messstellenbetreiber,X,,170
+Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,551,,,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,171
+Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,552,,,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,172
 Produkt-Daten der Steuerbaren Ressource,SG8,,,,,,,Soll [166] ∧ [205],"[166] Wenn vorhanden
 [205] Wenn SG5 LOC+Z19 (Steuerbare Ressource) vorhanden",553,ENTFÄLLT,,,,,,,,,,,,
 Produkt-Daten der Steuerbaren Ressource,SG8,SEQ,,00299,,,,Muss,,554,ENTFÄLLT,,,,,,,,,,,,
@@ -715,30 +715,30 @@ Auftraggebender Marktpartner,SG10,CAV,1131,00304,,,MP-ID,X,,574,ENTFÄLLT,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,,,,,,,Muss,,575,ENTFÄLLT,,,,,,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,CCI,,00305,,,,Muss,,576,ENTFÄLLT,,,,,,,,,,,,
 Produkt-Daten für Marktrolle relevant,SG10,CCI,7037,00305,ZA7,,LF,X,,577,ENTFÄLLT,,,,,,,,,,,,
-Daten der Messlokation,SG8,,,,,,,Muss [2284],[2284] Für jede Messlokations-ID im SG5 LOC+Z17 (Messlokation) DE3225 genau einmal anzugeben,578,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Messlokation,SG8,,,,,,,Muss [483] ∧ [2284],"[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden
+Daten der Messlokation,SG8,,,,,,,Muss [2284],[2284] Für jede Messlokations-ID im SG5 LOC+Z17 (Messlokation) DE3225 genau einmal anzugeben,578,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Daten der Messlokation,SG8,,,,,,,Muss [483] ∧ [2284],"[483] Wenn SG4 STS+7++xxx+ZW7 (Transaktionsgrundergän zung Gemessene Marktlokation) vorhanden
 [2284] Für jede Messlokations-ID im SG5 LOC+Z17 (Messlokation) DE3225 genau einmal anzugeben",173
-Daten der Messlokation,SG8,SEQ,,00306,,,,Muss,,579,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Messlokation,SG8,SEQ,,00291,,,,Muss,,174
-Daten der Messlokation,SG8,SEQ,1229,00306,Z18,,Daten der Messlokation,X,,580,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Daten der Messlokation,SG8,SEQ,1229,00291,ZF3,,Informative Daten der Messlokation,X,,175
-Referenz auf die ID der Messlokation,SG8,RFF,,00307,,,,Muss,,581,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,,00292,,,,Muss,,176
-Referenz auf die ID der Messlokation,SG8,RFF,1153,00307,Z19,,Messlokation,X,,582,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,1153,00292,Z19,,Messlokation,X,,177
-Referenz auf die ID der Messlokation,SG8,RFF,1154,00307,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,583,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,1154,00292,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,178
+Daten der Messlokation,SG8,SEQ,,00306,,,,Muss,,579,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Daten der Messlokation,SG8,SEQ,,00291,,,,Muss,,174
+Daten der Messlokation,SG8,SEQ,1229,00306,Z18,,Daten der Messlokation,X,,580,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Daten der Messlokation,SG8,SEQ,1229,00291,ZF3,,Informative Daten der Messlokation,X,,175
+Referenz auf die ID der Messlokation,SG8,RFF,,00307,,,,Muss,,581,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,,00292,,,,Muss,,176
+Referenz auf die ID der Messlokation,SG8,RFF,1153,00307,Z19,,Messlokation,X,,582,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,1153,00292,Z19,,Messlokation,X,,177
+Referenz auf die ID der Messlokation,SG8,RFF,1154,00307,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,583,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz auf die ID der Messlokation,SG8,RFF,1154,00292,,,ID der Messlokation,X [951],[951] Format: Zählpunktbezeichnung,178
 Abrechnung des Messstellenbetriebs über NNE für kME,SG8,RFF,,00309,,,,Muss [235],"[235] Wenn das RFF+Z19 (Messlokation) aus dieser SG8 auf das gleiche SG5 LOC+Z17 (Messlokation), wie ein RFF+Z19 (Messlokation) aus einer SG8 SEQ+Z03 (Zähleinrichtungsdaten), in dem SG10 CCI+++E13 CAV+MME (Zählertyp: mME) nicht vorhanden ist, referenziert",584,ENTFÄLLT,,,,,,,,,,,,
 Abrechnung des Messstellenbetriebs über NNE für kME,SG8,RFF,1153,00309,Z05,,Abrechnung des Messstellenbetriebs über NNE für kME,X,,585,ENTFÄLLT,,,,,,,,,,,,
 Abrechnung des Messstellenbetriebs über NNE für kME,SG8,RFF,1154,00309,,,Abrechnung über NNE (Ja/Nein),X,,586,ENTFÄLLT,,,,,,,,,,,,
-Zugeordnete Marktpartner,SG10,,,,,,,Muss,,587,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,179
-Zugeordnete Marktpartner,SG10,CCI,,00310,,,,Muss,,588,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00295,,,,Muss,,180
-Zugeordnete Marktpartner,SG10,CCI,7037,00310,ZB3,,Zugeordneter Marktpartner,X,,589,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00295,ZB3,,Zugeordneter Marktpartner,X,,181
-Messstellenbetreiber,SG10,CAV,,00311,,,,Muss,,590,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,,00296,,,,Muss,,182
-Messstellenbetreiber,SG10,CAV,7111,00311,Z91,,MSB,X,,591,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7111,00296,Z91,,MSB,X,,183
-Messstellenbetreiber,SG10,CAV,1131,00311,,,MP-ID,X,,592,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,1131,00296,,,MP-ID,X,,184
-Messstellenbetreiber,SG10,CAV,7110,00311,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,593,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00296,Z39,,Grundzuständiger Messstellenbetreiber,X,,185
-Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,594,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,186
-Messstellenbetreiber,SG10,CAV,7110,00311,Z39,,Grundzuständiger Messstellenbetreiber,X,,595,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,187
-Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,596,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,00296,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,188
-Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,597,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,189
-Grundzuständiger Messstellenbetreiber,SG10,CAV,,00312,,,,Muss,,598,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,,00297,,,,Muss,,190
-Grundzuständiger Messstellenbetreiber,SG10,CAV,7111,00312,ZF0,,gMSB,X,,599,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,7111,00297,ZF0,,gMSB,X,,191
-Grundzuständiger Messstellenbetreiber,SG10,CAV,1131,00312,,,MP-ID,X,,600,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,1131,00297,,,MP-ID,X,,192
+Zugeordnete Marktpartner,SG10,,,,,,,Muss,,587,,,Zugeordnete Marktpartner,SG10,,,,,,,Muss,,179
+Zugeordnete Marktpartner,SG10,CCI,,00310,,,,Muss,,588,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,,00295,,,,Muss,,180
+Zugeordnete Marktpartner,SG10,CCI,7037,00310,ZB3,,Zugeordneter Marktpartner,X,,589,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Zugeordnete Marktpartner,SG10,CCI,7037,00295,ZB3,,Zugeordneter Marktpartner,X,,181
+Messstellenbetreiber,SG10,CAV,,00311,,,,Muss,,590,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,,00296,,,,Muss,,182
+Messstellenbetreiber,SG10,CAV,7111,00311,Z91,,MSB,X,,591,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,7111,00296,Z91,,MSB,X,,183
+Messstellenbetreiber,SG10,CAV,1131,00311,,,MP-ID,X,,592,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Messstellenbetreiber,SG10,CAV,1131,00296,,,MP-ID,X,,184
+Messstellenbetreiber,SG10,CAV,7110,00311,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,593,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,00296,Z39,,Grundzuständiger Messstellenbetreiber,X,,185
+Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,594,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,186
+Messstellenbetreiber,SG10,CAV,7110,00311,Z39,,Grundzuständiger Messstellenbetreiber,X,,595,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,187
+Messstellenbetreiber,SG10,CAV,7110,,Z40,,Wettbewerblicher Messstellenbetreiber,X,,596,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,00296,Z19,,Auf vertraglicher Grundlage gegenüber Anschlussnutzer / Anschlussnehmer,X,,188
+Messstellenbetreiber,SG10,CAV,7110,,Z41,,Auffangmessstellenbetre iber,X,,597,ÄNDERUNG,Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Messstellenbetreiber,SG10,CAV,7110,,Z20,,In der Ausübung der Weiterverpflichtung durch den gMSB,X,,189
+Grundzuständiger Messstellenbetreiber,SG10,CAV,,00312,,,,Muss,,598,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,,00297,,,,Muss,,190
+Grundzuständiger Messstellenbetreiber,SG10,CAV,7111,00312,ZF0,,gMSB,X,,599,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,7111,00297,ZF0,,gMSB,X,,191
+Grundzuständiger Messstellenbetreiber,SG10,CAV,1131,00312,,,MP-ID,X,,600,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Grundzuständiger Messstellenbetreiber,SG10,CAV,1131,00297,,,MP-ID,X,,192
 Spannungsebene der Messlokation,SG10,,,,,,,Muss,,601,ENTFÄLLT,,,,,,,,,,,,
 Spannungsebene der Messlokation,SG10,CCI,,00314,,,,Muss,,602,ENTFÄLLT,,,,,,,,,,,,
 Spannungsebene der Messlokation,SG10,CCI,7037,00314,E04,,Spannungsebene der Messlokation,X,,603,ENTFÄLLT,,,,,,,,,,,,
@@ -966,39 +966,39 @@ Klimazone / Temperaturmessstelle,SG10,CCI,1131,00403,,,Dienstanbieter,X [58],[58
 Klimazone / Temperaturmessstelle,SG10,CCI,3055,00403,89,,Vergeben vom Händler (hier Netzbetreiber),X,,811,ENTFÄLLT,,,,,,,,,,,,
 Klimazone / Temperaturmessstelle,SG10,CCI,3055,,293,,"DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)",X,,812,ENTFÄLLT,,,,,,,,,,,,
 Kunde des Lieferanten,SG12,,,,,,,Muss [203]  Soll [165],"[165] Wenn bekannt
-[203] Wenn STS+7++E06 / Z39 / ZC6 / ZC7/ ZT6/ ZT7 vorhanden",813,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,,,,,,,Muss [203]  Soll [165],"[165] Wenn bekannt
+[203] Wenn STS+7++E06 / Z39 / ZC6 / ZC7/ ZT6/ ZT7 vorhanden",813,,,Kunde des Lieferanten,SG12,,,,,,,Muss [203]  Soll [165],"[165] Wenn bekannt
 [203] Wenn STS+7++E06 / Z39 / ZC6 / ZC7/ ZT6/ ZT7 vorhanden",193
-Kunde des Lieferanten,SG12,NAD,,00518,,,,Muss,,814,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,NAD,,00494,,,,Muss,,194
-Kunde des Lieferanten,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,,815,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,NAD,3035,,Z65,,Informativer Kunde des LF,X,,195
-Kunde des Lieferanten,SG12,NAD,3036,00518,,,Name,X,,816,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,NAD,3036,00494,,,Name,X,,196
-Kunde des Lieferanten,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,,817,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,NAD,3045,00494,Z01,,Struktur von Personennamen,X,,197
-Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,818,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,198
+Kunde des Lieferanten,SG12,NAD,,00518,,,,Muss,,814,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Lieferanten,SG12,NAD,,00494,,,,Muss,,194
+Kunde des Lieferanten,SG12,NAD,3035,00518,Z09,,Kunde des LF,X,,815,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Kunde des Lieferanten,SG12,NAD,3035,,Z65,,Informativer Kunde des LF,X,,195
+Kunde des Lieferanten,SG12,NAD,3036,00518,,,Name,X,,816,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Lieferanten,SG12,NAD,3036,00494,,,Name,X,,196
+Kunde des Lieferanten,SG12,NAD,3045,00518,Z01,,Struktur von Personennamen,X,,817,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Lieferanten,SG12,NAD,3045,00494,Z01,,Struktur von Personennamen,X,,197
+Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,818,,,Kunde des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,198
 Referenz auf die ID der Marktlokation,SG12,RFF,,00521,,,,Muss,,819,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1153,00521,Z18,,Marktlokation,X,,820,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1154,00521,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,821,ENTFÄLLT,,,,,,,,,,,,
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Muss [213] ∧ [559],"[213] Wenn SG12 NAD+Z09 (Kunde des Lieferanten) vorhanden
-[559] Hinweis: Die Korrespondenzanschrift des Endverbrauchers/ Kunden wird nicht zur Identifikation genutzt",822,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Muss [219],"[213] Wenn SG12 NAD+Z09 (Kunde des Lieferanten) vorhanden
+[559] Hinweis: Die Korrespondenzanschrift des Endverbrauchers/ Kunden wird nicht zur Identifikation genutzt",822,ÄNDERUNG,Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Bedingung_FV2410|Bedingung_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,,,,,,,Muss [219],"[213] Wenn SG12 NAD+Z09 (Kunde des Lieferanten) vorhanden
 [219] Wenn SG12 NAD+Z65 (Informativer Kunde des Lieferanten) vorhanden",199
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00522,,,,Muss,,823,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00498,,,,Muss,,200
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,,824,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,,Z66,,Informative Korrespondenzanschrift des Kunden des LF,X,,201
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00522,,,Name,X,,825,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00498,,,Name,X,,202
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,,826,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00498,Z01,,Struktur von Personennamen,X,,203
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,827,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,204
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,,828,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00498,,,Straße und Hausnummer oder Postfach,X,,205
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00522,,,Ort,X,,829,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00498,,,Ort,X,,206
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00522,,,,Muss,,823,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,,00498,,,,Muss,,200
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,00522,Z04,,Korrespondenzanschrift des Kunden des LF,X,,824,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3035,,Z66,,Informative Korrespondenzanschrift des Kunden des LF,X,,201
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00522,,,Name,X,,825,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3036,00498,,,Name,X,,202
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00522,Z01,,Struktur von Personennamen,X,,826,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,00498,Z01,,Struktur von Personennamen,X,,203
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,827,,,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,204
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00522,,,Straße und Hausnummer oder Postfach,X,,828,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3042,00498,,,Straße und Hausnummer oder Postfach,X,,205
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00522,,,Ort,X,,829,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3164,00498,,,Ort,X,,206
 Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00522,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
-[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",830,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00498,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",830,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3251,00498,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",207
-Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,831,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00498,,,"Ländername, Code",X,,208
+Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00522,,,"Ländername, Code",X,,831,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Korrespondenzanschrift des Kunden des Lieferanten,SG12,NAD,3207,00498,,,"Ländername, Code",X,,208
 Referenz auf die ID der Marktlokation,SG12,RFF,,00523,,,,Muss,,832,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1153,00523,Z18,,Marktlokation,X,,833,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1154,00523,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,834,ENTFÄLLT,,,,,,,,,,,,
-Kunde des Netzbetreibers,SG12,,,,,,,Kann,,835,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,,,,,,,Kann,,209
-Kunde des Netzbetreibers,SG12,NAD,,00527,,,,Muss,,836,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,NAD,,00506,,,,Muss,,210
-Kunde des Netzbetreibers,SG12,NAD,3035,00527,Z25,,Kunde des NB,X,,837,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,NAD,3035,00506,Z67,,Informativer Kundenname des NB,X,,211
-Kunde des Netzbetreibers,SG12,NAD,3036,00527,,,Name,X,,838,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,NAD,3036,00506,,,Name,X,,212
-Kunde des Netzbetreibers,SG12,NAD,3045,00527,Z01,,Struktur von Personennamen,X,,839,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,NAD,3045,00506,Z01,,Struktur von Personennamen,X,,213
-Kunde des Netzbetreibers,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,840,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Kunde des Netzbetreibers,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,214
+Kunde des Netzbetreibers,SG12,,,,,,,Kann,,835,,,Kunde des Netzbetreibers,SG12,,,,,,,Kann,,209
+Kunde des Netzbetreibers,SG12,NAD,,00527,,,,Muss,,836,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Netzbetreibers,SG12,NAD,,00506,,,,Muss,,210
+Kunde des Netzbetreibers,SG12,NAD,3035,00527,Z25,,Kunde des NB,X,,837,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Kunde des Netzbetreibers,SG12,NAD,3035,00506,Z67,,Informativer Kundenname des NB,X,,211
+Kunde des Netzbetreibers,SG12,NAD,3036,00527,,,Name,X,,838,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Netzbetreibers,SG12,NAD,3036,00506,,,Name,X,,212
+Kunde des Netzbetreibers,SG12,NAD,3045,00527,Z01,,Struktur von Personennamen,X,,839,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Kunde des Netzbetreibers,SG12,NAD,3045,00506,Z01,,Struktur von Personennamen,X,,213
+Kunde des Netzbetreibers,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,840,,,Kunde des Netzbetreibers,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,214
 Referenz auf die ID der Marktlokation,SG12,RFF,,00528,,,,Muss,,841,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1153,00528,Z18,,Marktlokation,X,,842,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID der Marktlokation,SG12,RFF,1154,00528,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,843,ENTFÄLLT,,,,,,,,,,,,
@@ -1027,40 +1027,40 @@ Referenz auf die ID der Marktlokation,SG12,RFF,1154,00530,,,ID der Marktlokation
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Netzbetreibers,SG12,NAD,3251,00509,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",223
 ,,,,,,,,,,,NEU,,Korrespondenzanschrift des Kunden des Netzbetreibers,SG12,NAD,3207,00509,,,"Ländername, Code",X,,224
-Anschlussnehmer,SG12,,,,,,,Kann,,857,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,,,,,,,Kann,,225
-Anschlussnehmer,SG12,NAD,,00531,,,,Muss,,858,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,,00512,,,,Muss,,226
-Anschlussnehmer,SG12,NAD,3035,00531,EO,,Anschlussnehmer,X,,859,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3035,00512,Z69,,Informative Daten des Anschlussnehmers,X,,227
-Anschlussnehmer,SG12,NAD,3036,00531,,,Name,X,,860,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3036,00512,,,Name,X,,228
-Anschlussnehmer,SG12,NAD,3045,00531,Z01,,Struktur von Personennamen,X,,861,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3045,00512,Z01,,Struktur von Personennamen,X,,229
-Anschlussnehmer,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,862,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,230
-Anschlussnehmer,SG12,NAD,3042,00531,,,Straße und Hausnummer oder Postfach,X,,863,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3042,00512,,,Straße und Hausnummer oder Postfach,X,,231
-Anschlussnehmer,SG12,NAD,3164,00531,,,Ort,X,,864,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3164,00512,,,Ort,X,,232
+Anschlussnehmer,SG12,,,,,,,Kann,,857,,,Anschlussnehmer,SG12,,,,,,,Kann,,225
+Anschlussnehmer,SG12,NAD,,00531,,,,Muss,,858,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,,00512,,,,Muss,,226
+Anschlussnehmer,SG12,NAD,3035,00531,EO,,Anschlussnehmer,X,,859,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Anschlussnehmer,SG12,NAD,3035,00512,Z69,,Informative Daten des Anschlussnehmers,X,,227
+Anschlussnehmer,SG12,NAD,3036,00531,,,Name,X,,860,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,3036,00512,,,Name,X,,228
+Anschlussnehmer,SG12,NAD,3045,00531,Z01,,Struktur von Personennamen,X,,861,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,3045,00512,Z01,,Struktur von Personennamen,X,,229
+Anschlussnehmer,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,862,,,Anschlussnehmer,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,230
+Anschlussnehmer,SG12,NAD,3042,00531,,,Straße und Hausnummer oder Postfach,X,,863,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,3042,00512,,,Straße und Hausnummer oder Postfach,X,,231
+Anschlussnehmer,SG12,NAD,3164,00531,,,Ort,X,,864,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,3164,00512,,,Ort,X,,232
 Anschlussnehmer,SG12,NAD,3251,00531,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
-[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",865,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3251,00512,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",865,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Anschlussnehmer,SG12,NAD,3251,00512,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",233
-Anschlussnehmer,SG12,NAD,3207,00531,,,"Ländername, Code",Muss,,866,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Anschlussnehmer,SG12,NAD,3207,00512,,,"Ländername, Code",M,,234
-Hausverwalter,SG12,,,,,,,Kann,,867,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,,,,,,,Kann,,235
-Hausverwalter,SG12,NAD,,00532,,,,Muss,,868,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,,00514,,,,Muss,,236
-Hausverwalter,SG12,NAD,3035,00532,DDO,,Location manager,X,,869,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3035,00514,Z70,,Informative Daten des Hausverwalters,X,,237
-Hausverwalter,SG12,NAD,3036,00532,,,Name,X,,870,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3036,00514,,,Name,X,,238
-Hausverwalter,SG12,NAD,3045,00532,Z01,,Struktur von Personennamen,X,,871,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3045,00514,Z01,,Struktur von Personennamen,X,,239
-Hausverwalter,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,872,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,240
-Hausverwalter,SG12,NAD,3042,00532,,,Straße und Hausnummer oder Postfach,X,,873,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3042,00514,,,Straße und Hausnummer oder Postfach,X,,241
-Hausverwalter,SG12,NAD,3164,00532,,,Ort,X,,874,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3164,00514,,,Ort,X,,242
+Anschlussnehmer,SG12,NAD,3207,00531,,,"Ländername, Code",Muss,,866,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504,Anschlussnehmer,SG12,NAD,3207,00512,,,"Ländername, Code",M,,234
+Hausverwalter,SG12,,,,,,,Kann,,867,,,Hausverwalter,SG12,,,,,,,Kann,,235
+Hausverwalter,SG12,NAD,,00532,,,,Muss,,868,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,,00514,,,,Muss,,236
+Hausverwalter,SG12,NAD,3035,00532,DDO,,Location manager,X,,869,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Hausverwalter,SG12,NAD,3035,00514,Z70,,Informative Daten des Hausverwalters,X,,237
+Hausverwalter,SG12,NAD,3036,00532,,,Name,X,,870,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,3036,00514,,,Name,X,,238
+Hausverwalter,SG12,NAD,3045,00532,Z01,,Struktur von Personennamen,X,,871,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,3045,00514,Z01,,Struktur von Personennamen,X,,239
+Hausverwalter,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,872,,,Hausverwalter,SG12,NAD,3045,,Z02,,Struktur der Firmenbezeichnung,X,,240
+Hausverwalter,SG12,NAD,3042,00532,,,Straße und Hausnummer oder Postfach,X,,873,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,3042,00514,,,Straße und Hausnummer oder Postfach,X,,241
+Hausverwalter,SG12,NAD,3164,00532,,,Ort,X,,874,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,3164,00514,,,Ort,X,,242
 Hausverwalter,SG12,NAD,3251,00532,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
-[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",875,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3251,00514,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
+[268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",875,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Hausverwalter,SG12,NAD,3251,00514,,,Postleitzahl,M [268] S [166],"[166] Wenn vorhanden
 [268] Wenn der Code im DE3207 in der ""EDI@Energy Codeliste der europäischen Ländercodes"" in der Spalte ""PLZ vorhanden"" ein ""X"" aufgeführt ist",243
-Hausverwalter,SG12,NAD,3207,00532,,,"Ländername, Code",Muss,,876,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Hausverwalter,SG12,NAD,3207,00514,,,"Ländername, Code",M,,244
-Marktlokationsanschrift,SG12,,,,,,,Muss,,877,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,,,,,,,Muss,,245
-Marktlokationsanschrift,SG12,NAD,,00535,,,,Muss,,878,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,,00518,,,,Muss,,246
-Marktlokationsanschrift,SG12,NAD,3035,00535,DP,,Lieferanschrift,X,,879,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3035,00518,Z63,,Informative Marktlokationsanschrift,X,,247
-Marktlokationsanschrift,SG12,NAD,3124,00535,,,Zusatzinformation zur Identifizierung,K,,880,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3124,00518,,,Zusatzinformation zur Identifizierung,K,,248
+Hausverwalter,SG12,NAD,3207,00532,,,"Ländername, Code",Muss,,876,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Bedingungsausdruck_FV2410|Bedingungsausdruck_FV2504,Hausverwalter,SG12,NAD,3207,00514,,,"Ländername, Code",M,,244
+Marktlokationsanschrift,SG12,,,,,,,Muss,,877,,,Marktlokationsanschrift,SG12,,,,,,,Muss,,245
+Marktlokationsanschrift,SG12,NAD,,00535,,,,Muss,,878,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,,00518,,,,Muss,,246
+Marktlokationsanschrift,SG12,NAD,3035,00535,DP,,Lieferanschrift,X,,879,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Code_FV2410|Code_FV2504|Beschreibung_FV2410|Beschreibung_FV2504,Marktlokationsanschrift,SG12,NAD,3035,00518,Z63,,Informative Marktlokationsanschrift,X,,247
+Marktlokationsanschrift,SG12,NAD,3124,00535,,,Zusatzinformation zur Identifizierung,K,,880,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,3124,00518,,,Zusatzinformation zur Identifizierung,K,,248
 Marktlokationsanschrift,SG12,NAD,3042,00535,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
-[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",881,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3042,00518,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
+[212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",881,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,3042,00518,,,Straße und Hausnummer oder Postfach,S [166] M [212],"[166] Wenn vorhanden
 [212] Wenn im selben SG12 NAD DE3124 nicht vorhanden",249
-Marktlokationsanschrift,SG12,NAD,3164,00535,,,Ort,X,,882,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3164,00518,,,Ort,X,,250
-Marktlokationsanschrift,SG12,NAD,3251,00535,,,Postleitzahl,X,,883,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3251,00518,,,Postleitzahl,X,,251
-Marktlokationsanschrift,SG12,NAD,3207,00535,,,"Ländername, Code",X,,884,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Marktlokationsanschrift,SG12,NAD,3207,00518,,,"Ländername, Code",X,,252
+Marktlokationsanschrift,SG12,NAD,3164,00535,,,Ort,X,,882,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,3164,00518,,,Ort,X,,250
+Marktlokationsanschrift,SG12,NAD,3251,00535,,,Postleitzahl,X,,883,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,3251,00518,,,Postleitzahl,X,,251
+Marktlokationsanschrift,SG12,NAD,3207,00535,,,"Ländername, Code",X,,884,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Marktlokationsanschrift,SG12,NAD,3207,00518,,,"Ländername, Code",X,,252
 Name und Adresse für die Ablesekarte,SG12,,,,,,,Muss [213] ∧ [234] ∧ [560] ∧ [573],"[213] Wenn SG12 NAD+Z09 (Kunde des Lieferanten) vorhanden
 [234] Wenn SG10 CCI+++Z83 (Messtechnische Einordnung der Marktlokation) CAV+Z53 (kME/ mME) vorhanden
 [560] Hinweis: Die Angabe Name und Adresse für die Ablesekarte wird nicht zur Identifikation genutzt
@@ -1078,6 +1078,6 @@ Name und Adresse für die Ablesekarte,SG12,NAD,3207,00538,,,"Ländername, Code",
 Referenz auf die ID einer Messlokation,SG12,RFF,,00539,,,,Muss,,895,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID einer Messlokation,SG12,RFF,1153,00539,Z19,,Messlokation,X,,896,ENTFÄLLT,,,,,,,,,,,,
 Referenz auf die ID einer Messlokation,SG12,RFF,1154,00539,,,ID einer Messlokation,X [951],[951] Format: Zählpunktbezeichnung,897,ENTFÄLLT,,,,,,,,,,,,
-Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,898,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,253
-Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,899,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,254
-Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,900,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,255
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,898,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,253
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,899,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,254
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,900,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,255

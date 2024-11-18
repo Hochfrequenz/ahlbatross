@@ -96,14 +96,14 @@ Marktlokation,SG5,,,,,,,Muss [2061] ∧ [350],"[165] Wenn bekannt
 Marktlokation,SG5,LOC,,00051,,,,Muss,,70,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,3227,00051,Z16,,Marktlokation,X,,71,ENTFÄLLT,,,,,,,,,,,,
 Marktlokation,SG5,LOC,3225,00051,,,ID der Marktlokation,X [950],[950] Format: Marktlokations-ID,72,ENTFÄLLT,,,,,,,,,,,,
-Prüfidentifikator,SG6,,,,,,,Muss,,73,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,,,,,,,Muss,,69
-Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,70
-Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,71
-Prüfidentifikator,SG6,RFF,1154,,55018,,GPKE / Ablehnung Kündigung,X,,76,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Prüfidentifikator,SG6,RFF,1154,,55018,,GPKE / Ablehnung Kündigung,X,,72
-Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,77,ÄNDERUNG,Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,73
-Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00058,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00057,,,,Muss,,74
-Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00058,TN,,Transaktions- Referenznummer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00057,TN,,Transaktions- Referenznummer,X,,75
-Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00058,,,Vorgangsnummer,X,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00057,,,Vorgangsnummer,X,,76
+Prüfidentifikator,SG6,,,,,,,Muss,,73,,,Prüfidentifikator,SG6,,,,,,,Muss,,69
+Prüfidentifikator,SG6,RFF,,00057,,,,Muss,,74,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,,00056,,,,Muss,,70
+Prüfidentifikator,SG6,RFF,1153,00057,Z13,,Prüfidentifikator,X,,75,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Prüfidentifikator,SG6,RFF,1153,00056,Z13,,Prüfidentifikator,X,,71
+Prüfidentifikator,SG6,RFF,1154,,55018,,GPKE / Ablehnung Kündigung,X,,76,,,Prüfidentifikator,SG6,RFF,1154,,55018,,GPKE / Ablehnung Kündigung,X,,72
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,77,,,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,,,,,,,Muss,,73
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00058,,,,Muss,,78,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,,00057,,,,Muss,,74
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00058,TN,,Transaktions- Referenznummer,X,,79,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1153,00057,TN,,Transaktions- Referenznummer,X,,75
+Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00058,,,Vorgangsnummer,X,,80,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Referenz Vorgangsnummer (aus Anfragenachricht),SG6,RFF,1154,00057,,,Vorgangsnummer,X,,76
 Daten der Marktlokation,SG8,,,,,,,Muss [2061] ∧ [25],"[25] Wenn SG5 LOC+Z16 (Marktlokation) vorhanden
 [2061] Segment bzw. Segmentgruppe ist genau einmal je SG4 IDE (Vorgang) anzugeben",81,ENTFÄLLT,,,,,,,,,,,,
 Daten der Marktlokation,SG8,SEQ,,00103,,,,Muss,,82,ENTFÄLLT,,,,,,,,,,,,
@@ -112,6 +112,6 @@ Lieferrichtung,SG10,,,,,,,Muss,,84,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,,00110,,,,Muss,,85,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7059,00110,Z30,,Lieferrichtung,X,,86,ENTFÄLLT,,,,,,,,,,,,
 Lieferrichtung,SG10,CCI,7037,00110,Z07,,Verbrauch,X,,87,ENTFÄLLT,,,,,,,,,,,,
-Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,77
-Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,89,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,78
-Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,90,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504|Unnamed: 0_FV2410|Unnamed: 0_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,79
+Nachrichten-Endesegment,,UNT,,00540,,,,Muss,,88,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,,00526,,,,Muss,,77
+Nachrichten-Endesegment,,UNT,0074,00540,,,Anzahl der Segmente in einer Nachricht,X,,89,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0074,00526,,,Anzahl der Segmente in einer Nachricht,X,,78
+Nachrichten-Endesegment,,UNT,0062,00540,,,Nachrichten-Referenznummer,X,,90,ÄNDERUNG,Segment ID_FV2410|Segment ID_FV2504,Nachrichten-Endesegment,,UNT,0062,00526,,,Nachrichten-Referenznummer,X,,79

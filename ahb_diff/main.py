@@ -364,6 +364,11 @@ def align_columns(
 
             # compare all columns except `Segmentname`.
             for col in columns_without_segmentname:
+                # prevent "Unnamed" columns from being flagged with the "ÄNDERUNG" label.
+                # "Unnamed" columns purpose is only to index through the rows (hidden in the XLSX output).
+                if col.startswith("Unnamed:"):
+                    continue
+
                 prev_val = str(df_of_previous_formatversion.iloc[i][col])
                 subs_val = str(df_of_subsequent_formatversion.iloc[j][col])
 
