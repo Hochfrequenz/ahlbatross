@@ -52,7 +52,7 @@ def test_empty_dataframe_export() -> None:
     subsequent_formatversion = "FV2504"
 
     df = pd.DataFrame(
-        columns=[f"Segmentname_{previous_formatversion}", "diff", f"Segmentname_{subsequent_formatversion}"]
+        columns=[f"Segmentname_{previous_formatversion}", "Änderung", f"Segmentname_{subsequent_formatversion}"]
     )
 
     with tempfile.TemporaryDirectory() as temp_dir:

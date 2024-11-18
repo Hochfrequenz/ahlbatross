@@ -365,6 +365,12 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     exports the merged dataframe to .xlsx with highlighted differences.
     """
     sheet_name = Path(output_path_xlsx).stem  # excel sheet name = <pruefid>
+
+    # add column for indexing through all rows
+    df = df.reset_index()
+    df["index"] = df["index"] + 1
+    df = df.rename(columns={"index": "#"})
+    # remove duplicate columns that index through the rows
     df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:")]]
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
@@ -499,7 +505,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                         worksheet.write(row_num, col_num, value, base_format)
 
         column_widths = {
-            "#": 50,
+            "#": 25,
             "Segmentname_": 175,
             "Segmentgruppe_": 100,
             "Segment_": 100,
