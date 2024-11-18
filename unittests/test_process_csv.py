@@ -37,6 +37,7 @@ class TestSingleColumnDataframes:
                     "10",
                 ],
                 "Änderung": ["", "", "", "ENTFÄLLT", "", "", "NEU", "NEU", "", ""],
+                "changed_entries": ["", "", "", "", "", "", "", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": [
                     "1",
                     "2",
@@ -68,6 +69,7 @@ class TestSingleColumnDataframes:
             {
                 f"Segmentname_{self.formatversions.previous_formatversion}": pd.Series([], dtype="float64"),
                 "Änderung": pd.Series([], dtype="float64"),
+                "changed_entries": [],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": pd.Series([], dtype="float64"),
             }
         )
@@ -88,6 +90,7 @@ class TestSingleColumnDataframes:
             {
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3"],
                 "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT"],
+                "changed_entries": ["", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", ""],
             }
         )
@@ -108,6 +111,7 @@ class TestSingleColumnDataframes:
             {
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "", "", ""],
                 "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT", "NEU", "NEU", "NEU"],
+                "changed_entries": ["", "", "", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", "", "4", "5", "6"],
             }
         )
@@ -128,6 +132,7 @@ class TestSingleColumnDataframes:
             {
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "2", ""],
                 "Änderung": ["", "", "ENTFÄLLT", "NEU"],
+                "changed_entries": ["", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "", "4"],
             }
         )
@@ -148,6 +153,7 @@ class TestSingleColumnDataframes:
             {
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "3", "2", ""],
                 "Änderung": ["", "", "", "ENTFÄLLT", "ENTFÄLLT", "NEU"],
+                "changed_entries": ["", "", "", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "3", "", "", "4"],
             }
         )
@@ -212,7 +218,30 @@ class TestMultiColumnDataFrames:
                     "g",
                     "h",
                 ],
-                "Änderung": ["", "", "", "ENTFÄLLT", "", "", "NEU", "NEU", "", ""],
+                "Änderung": [
+                    "",
+                    "",
+                    "ÄNDERUNG",
+                    "ENTFÄLLT",
+                    "ÄNDERUNG",
+                    "ÄNDERUNG",
+                    "NEU",
+                    "NEU",
+                    "ÄNDERUNG",
+                    "ÄNDERUNG",
+                ],
+                "changed_entries": [
+                    "",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                ],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": [
                     "1",
                     "2",
@@ -257,6 +286,7 @@ class TestMultiColumnDataFrames:
                 f"Segmentname_{self.formatversions.previous_formatversion}": [],
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": [],
                 "Änderung": [],
+                "changed_entries": [],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": [],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [],
             }
@@ -279,6 +309,7 @@ class TestMultiColumnDataFrames:
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3"],
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c"],
                 "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT"],
+                "changed_entries": ["", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", ""],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "", ""],
             }
@@ -301,6 +332,7 @@ class TestMultiColumnDataFrames:
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "", "", ""],
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", "", "", ""],
                 "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT", "NEU", "NEU", "NEU"],
+                "changed_entries": ["", "", "", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", "", "4", "5", "6"],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "", "", "d", "e", "f"],
             }
@@ -323,6 +355,7 @@ class TestMultiColumnDataFrames:
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "2", ""],
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", ""],
                 "Änderung": ["", "", "ENTFÄLLT", "NEU"],
+                "changed_entries": ["", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "", "4"],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["a", "b", "", "d"],
             }
@@ -349,6 +382,7 @@ class TestMultiColumnDataFrames:
                 f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "3", "2", ""],
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", "d", "e", ""],
                 "Änderung": ["", "", "", "ENTFÄLLT", "ENTFÄLLT", "NEU"],
+                "changed_entries": ["", "", "", "", "", ""],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "3", "", "", "4"],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["a", "b", "c", "", "", "d"],
             }
@@ -386,7 +420,12 @@ class TestMultiColumnDataFrames:
                 f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", ""],
                 f"Datenelement_{self.formatversions.previous_formatversion}": ["x", "y", ""],
                 f"Qualifier_{self.formatversions.previous_formatversion}": ["XY", "YZ", ""],
-                "Änderung": ["ENTFÄLLT", "", "NEU"],
+                "Änderung": ["ENTFÄLLT", "ÄNDERUNG", "NEU"],
+                "changed_entries": [
+                    "",
+                    "Datenelement_FV2410|Datenelement_FV2504|Qualifier_FV2410|Qualifier_FV2504",
+                    "",
+                ],
                 f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "2", "3"],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "b", "c"],
                 f"Datenelement_{self.formatversions.subsequent_formatversion}": ["", "m", "n"],
