@@ -3,7 +3,8 @@ from pathlib import Path
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
 
-from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files, parse_formatversions
+from ahlbatross.format_version_helpers import parse_formatversions
+from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files
 
 
 def test_parse_valid_formatversions() -> None:
