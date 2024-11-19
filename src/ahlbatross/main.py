@@ -464,6 +464,17 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             "": workbook.add_format({"border": 1, "text_wrap": True}),
         }
 
+        # applies bold font to `Segmentname` entries every time the value changes.
+        highlight_segmentname = {
+            "NEU": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
+            "ENTFÄLLT": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
+            "ÄNDERUNG": workbook.add_format({"bold": True, "bg_color": "#F5DC98", "border": 1, "text_wrap": True}),
+            "segmentname_changed": workbook.add_format(
+                {"bold": True, "bg_color": "#D9D9D9", "border": 1, "text_wrap": True}
+            ),
+            "": workbook.add_format({"bold": True, "border": 1, "text_wrap": True}),
+        }
+
         # formatting 'Änderung' column.
         diff_text_formats = {
             "NEU": workbook.add_format(
@@ -499,8 +510,6 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             "": workbook.add_format({"border": 1, "bg_color": "#D9D9D9", "align": "center", "text_wrap": True}),
         }
 
-        segment_name_bold = workbook.add_format({"bold": True, "border": 1, "text_wrap": True, "bg_color": "#D9D9D9"})
-
         for col_num, value in enumerate(df_filtered.columns.values):
             worksheet.write(0, col_num, value, header_format)
 
@@ -530,14 +539,12 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
             # check if current `Segmentname` changed.
             current_segmentname = None
-            segmentname_col = None
             for col_name in df_filtered.columns:
                 if col_name.startswith("Segmentname_"):
                     idx = df_filtered.columns.get_loc(col_name)
                     value = str(row_data[idx])
                     if value:
                         current_segmentname = value
-                        segmentname_col = col_name
                         break
 
             is_new_segment = current_segmentname and current_segmentname != previous_segmentname
@@ -545,6 +552,8 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
             for col_num, (value, col_name) in enumerate(zip(row_data, df_filtered.columns)):
                 value = str(value) if value != "" else ""
+
+                is_segmentname = col_name.startswith("Segmentname_")
 
                 if col_name == "Änderung":
                     worksheet.write(row_num, col_num, value, diff_text_formats[diff_value])
@@ -554,23 +563,47 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                     and isinstance(col_name, str)
                     and col_name.endswith(previous_formatversion)
                 ):
-                    worksheet.write(row_num, col_num, value, diff_formats["ENTFÄLLT"])
+                    format_to_use = (
+                        highlight_segmentname["ENTFÄLLT"]
+                        if is_segmentname and is_new_segment
+                        else diff_formats["ENTFÄLLT"]
+                    )
+                    worksheet.write(row_num, col_num, value, format_to_use)
                 elif (
                     diff_value == "NEU"
                     and subsequent_formatversion is not None
                     and isinstance(col_name, str)
                     and col_name.endswith(subsequent_formatversion)
                 ):
-                    worksheet.write(row_num, col_num, value, diff_formats["NEU"])
-                elif diff_value == "ÄNDERUNG" and col_name in changed_entries:
-                    worksheet.write(row_num, col_num, value, diff_formats["ÄNDERUNG"])
-                elif is_new_segment and diff_value == "":
-                    if col_name == segmentname_col:
-                        worksheet.write(row_num, col_num, value, segment_name_bold)
+                    format_to_use = (
+                        highlight_segmentname["NEU"] if is_segmentname and is_new_segment else diff_formats["NEU"]
+                    )
+                    worksheet.write(row_num, col_num, value, format_to_use)
+                elif diff_value == "ÄNDERUNG":
+                    if col_name in changed_entries:
+                        format_to_use = (
+                            highlight_segmentname["ÄNDERUNG"]
+                            if is_segmentname and is_new_segment
+                            else diff_formats["ÄNDERUNG"]
+                        )
                     else:
-                        worksheet.write(row_num, col_num, value, diff_formats["segmentname_changed"])
+                        format_to_use = (
+                            highlight_segmentname["segmentname_changed"]
+                            if is_segmentname and is_new_segment
+                            else (diff_formats["segmentname_changed"] if is_new_segment else base_format)
+                        )
+                    worksheet.write(row_num, col_num, value, format_to_use)
                 else:
-                    worksheet.write(row_num, col_num, value, base_format)
+                    # only apply grey background if the row is not affected by NEU/ENTFÄLLT highlighting
+                    if is_new_segment and diff_value == "":
+                        format_to_use = (
+                            highlight_segmentname["segmentname_changed"]
+                            if is_segmentname
+                            else diff_formats["segmentname_changed"]
+                        )
+                        worksheet.write(row_num, col_num, value, format_to_use)
+                    else:
+                        worksheet.write(row_num, col_num, value, base_format)
 
         column_widths = {
             "#": 25,
