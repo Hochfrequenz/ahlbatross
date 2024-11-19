@@ -2,20 +2,22 @@ name: "Test CLI Environment"
 # Checks that the package is usable as CLI tool.
 
 on:
- workflow_run:
-   workflows:
-     - "Commit Message Title Validation"
-     - "Coverage"
-     - "Formatting"
-     - "Linting"
-     - "Prevent ByteOrderMarks"
-     - "Test Dev Environment"
-     - "Unittests"
-   types: [completed]
-   branches: [main]
-
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  workflow_run:
+    workflows:
+      - "Commit Message Title Validation"
+      - "Coverage"
+      - "Formatting"
+      - "Linting"
+      - "Prevent ByteOrderMarks"
+      - "Test Dev Environment"
+      - "Unittests"
+    types: [completed]
+    branches: [main]
 jobs:
  check:
+   # abort if above-mentioned workflows fail
    if: ${{ github.event.workflow_run.conclusion == 'success' }}
    runs-on: ${{ matrix.os }}
    strategy:
