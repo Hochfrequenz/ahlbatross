@@ -71,9 +71,10 @@ profile = "black"
 [tool.pylint."MESSAGES CONTROL"]
 max-line-length = 120
 
+[mypy]
+truethy-bool = true
 [tool.mypy]
 disable_error_code = []
-truthy-bool = true
 
 [build-system]
 requires = ["hatchling>=1.8.0"]
