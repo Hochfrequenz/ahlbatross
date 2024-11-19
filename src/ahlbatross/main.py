@@ -539,14 +539,12 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
 
             # check if current `Segmentname` changed.
             current_segmentname = None
-            segmentname_col = None
             for col_name in df_filtered.columns:
                 if col_name.startswith("Segmentname_"):
                     idx = df_filtered.columns.get_loc(col_name)
                     value = str(row_data[idx])
                     if value:
                         current_segmentname = value
-                        segmentname_col = col_name
                         break
 
             is_new_segment = current_segmentname and current_segmentname != previous_segmentname
@@ -581,21 +579,28 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                         highlight_segmentname["NEU"] if is_segmentname and is_new_segment else diff_formats["NEU"]
                     )
                     worksheet.write(row_num, col_num, value, format_to_use)
-                elif diff_value == "ÄNDERUNG" and col_name in changed_entries:
-                    format_to_use = (
-                        highlight_segmentname["ÄNDERUNG"]
-                        if is_segmentname and is_new_segment
-                        else diff_formats["ÄNDERUNG"]
-                    )
-                    worksheet.write(row_num, col_num, value, format_to_use)
-                elif is_new_segment and diff_value == "":
-                    if col_name == segmentname_col:
-                        worksheet.write(row_num, col_num, value, highlight_segmentname["segmentname_changed"])
+                elif diff_value == "ÄNDERUNG":
+                    if col_name in changed_entries:
+                        format_to_use = (
+                            highlight_segmentname["ÄNDERUNG"]
+                            if is_segmentname and is_new_segment
+                            else diff_formats["ÄNDERUNG"]
+                        )
                     else:
-                        worksheet.write(row_num, col_num, value, diff_formats["segmentname_changed"])
+                        format_to_use = (
+                            highlight_segmentname["segmentname_changed"]
+                            if is_segmentname and is_new_segment
+                            else (diff_formats["segmentname_changed"] if is_new_segment else base_format)
+                        )
+                    worksheet.write(row_num, col_num, value, format_to_use)
                 else:
-                    if is_segmentname and is_new_segment:
-                        worksheet.write(row_num, col_num, value, highlight_segmentname["segmentname_changed"])
+                    if is_new_segment:
+                        format_to_use = (
+                            highlight_segmentname["segmentname_changed"]
+                            if is_segmentname
+                            else diff_formats["segmentname_changed"]
+                        )
+                        worksheet.write(row_num, col_num, value, format_to_use)
                     else:
                         worksheet.write(row_num, col_num, value, base_format)
 
