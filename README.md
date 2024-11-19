@@ -5,15 +5,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?labelColor=30363D&color=fccccc)](LICENSE)
 ![Pypi status badge](https://img.shields.io/pypi/v/ahlbatross?labelColor=30363D&color=fccccc)
 ![Python Versions (officially) supported](https://img.shields.io/pypi/pyversions/ahlbatross.svg?labelColor=30363D&color=fccccc)
+
 ![Unittests status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Unittests/badge.svg)
 ![Coverage status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Coverage/badge.svg)
 ![Pylint status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Linting/badge.svg)
 ![Formatting status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Formatting/badge.svg)
 
-Tool for **automatic AHB comparison** of consecutive `Formatversionen` provided by 
-[machine-readable-anwendungshandbücher](https://github.com/Hochfrequenz/machine-readable_anwendungshandbuecher/).<br>
-Highlighted changes between `PruefIDs` of various `Nachrichtenformate` are stored in the `.xlsx` files located inside 
-the `./data/output/` [directory](https://github.com/Hochfrequenz/ahlbatross/tree/main/data/output).
+Tool for automatic AHB comparison of consecutive `Formatversionen`. Highlighted changes between `PruefIDs` of various 
+`Nachrichtenformate` are provided by already formatted `.xlsx` files or raw `.csv` files located inside the 
+[machine-readable-anwendungshandbücher](https://github.com/Hochfrequenz/machine-readable_anwendungshandbuecher/tree/main/diff) 
+repository.
 
 <img src="https://raw.githubusercontent.com/Hochfrequenz/ahlbatross/main/output.png" alt="output.png">
 
