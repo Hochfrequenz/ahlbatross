@@ -2,6 +2,12 @@ name: "Test CLI Environment"
 # Checks that the package is usable as CLI tool.
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_run:
     workflows:
       - "Commit Message Title Validation"
@@ -14,9 +20,18 @@ on:
     types: [completed]
 
 jobs:
+  # this dummy job is only added in order for this workflow to be listed in the pull request checks
+  wait-for-other-workflows:
+    name: Wait until other workflows have finished
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Start of Workflow
+        run: echo "Workflow triggered for visibility in pull request checks."
+
   check:
+    name: Run CLI Test
     # abort if above-mentioned workflows fail
-    if: ${{ !contains(github.event.workflow.pull_requests.*.state, 'closed') && github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -30,7 +45,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Try to install the script, then run the cli
+      - name: Try to install the script, then run the CLI
         run: |
           pip install .
           ahlbatross
