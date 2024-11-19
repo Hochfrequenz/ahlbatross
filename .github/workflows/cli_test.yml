@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Try to install the script
+      - name: Try to install the script, then run the cli
         run: |
           pip install .
+          ahlbatross
