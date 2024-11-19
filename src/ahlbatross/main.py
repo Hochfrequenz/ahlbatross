@@ -11,7 +11,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.csv import _get_csv_content
+from ahlbatross.csv import _get_csv_content, _get_pruefid_files
 from ahlbatross.excel import export_to_excel
 from ahlbatross.format_version_helpers import parse_formatversions
 
@@ -86,15 +86,6 @@ def determine_consecutive_formatversions() -> list[Tuple[str, str]]:
         consecutive_formatversions.append((subsequent_formatversion, previous_formatversion))
 
     return consecutive_formatversions
-
-
-def _get_pruefid_files(csv_dir: Path) -> list[Path]:
-    """
-    get all ahb/<pruefid>.csv files in a given directory.
-    """
-    if not csv_dir.exists():
-        return []
-    return sorted(csv_dir.glob("*.csv"))
 
 
 # pylint:disable=too-many-locals
