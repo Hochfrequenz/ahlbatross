@@ -135,3 +135,5 @@ dmypy.json
 
 # vscode settings
 .vscode/
+
+src/_ahlbatross_version.py

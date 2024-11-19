@@ -1,7 +1,6 @@
 [project]
 name = "ahlbatross"
 description = ""
-version = "0.1.0"
 license = { text = "MIT" }
 requires-python = ">=3.11"
 authors = [{ name = "Hochfrequenz Unternehmensberatung GmbH", email = "info@hochfrequenz.de" }]
@@ -24,6 +23,7 @@ dependencies = [
     "pandas-stubs>=2.2.3.241009",
     "xlsxwriter>=3.2.0"
 ]
+dynamic = ["version"]
 
 [project.scripts]
 ahlbatross = "ahlbatross.main:main"
@@ -76,9 +76,19 @@ truethy-bool = true
 [tool.mypy]
 disable_error_code = []
 
+
 [build-system]
-requires = ["hatchling>=1.8.0"]
+requires = ["hatchling>=1.8.0", "hatch-vcs"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/_ahlbatross_version.py"
+template = '''
+version = "{version}"
+'''
 
 [tool.hatch.build.targets.sdist]
 exclude = ["/unittests"]
