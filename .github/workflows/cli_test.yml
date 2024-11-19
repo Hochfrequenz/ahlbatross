@@ -6,6 +6,8 @@ on:
   pull_request: {}
 jobs:
   check:
+    needs: [black, bom-check, coverage, pylint, pytest, validate-pr-title]
+    if: ${{ !failure() }} # abort if above-mentioned workflows fail
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
