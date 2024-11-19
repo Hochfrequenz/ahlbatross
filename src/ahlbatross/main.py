@@ -594,7 +594,8 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                         )
                     worksheet.write(row_num, col_num, value, format_to_use)
                 else:
-                    if is_new_segment:
+                    # only apply grey background if the row is not affected by NEU/ENTFÄLLT highlighting
+                    if is_new_segment and diff_value == "":
                         format_to_use = (
                             highlight_segmentname["segmentname_changed"]
                             if is_segmentname
