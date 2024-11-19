@@ -5,7 +5,8 @@ from pathlib import Path
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
-from ahlbatross.main import align_columns, export_to_excel
+from ahlbatross.excel import export_to_excel
+from ahlbatross.main import align_columns
 
 
 def test_export() -> None:
