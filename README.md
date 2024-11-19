@@ -24,7 +24,7 @@ Install it from [PyPI](https://pypi.org/project/ahlbatross/):
 pip install ahlbatross
 ```
 
-## Development setup
+## Development Setup
 
 To set up the python development environment, install the required dependencies via
 
