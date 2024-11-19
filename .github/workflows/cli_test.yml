@@ -5,8 +5,12 @@ on:
     branches: [main]
   pull_request: {}
 jobs:
+  base:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
   check:
-    needs: [black, bom-check, coverage, pylint, pytest, validate-pr-title]
+    needs: [base, black, bom-check, coverage, pylint, pytest, validate-pr-title]
     if: ${{ !failure() }} # abort if above-mentioned workflows fail
     runs-on: ${{ matrix.os }}
     strategy:
