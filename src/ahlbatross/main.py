@@ -9,7 +9,7 @@ from typing import Any, Optional, Tuple, TypeAlias
 
 import pandas as pd
 from pandas.core.frame import DataFrame
-from xlsxwriter.format import Format # type:ignore[import-untyped]
+from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
