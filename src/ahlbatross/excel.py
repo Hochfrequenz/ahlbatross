@@ -1,3 +1,7 @@
+"""
+contains excel export logic
+"""
+
 import logging
 from pathlib import Path
 
@@ -7,7 +11,7 @@ from pandas import DataFrame
 logger = logging.getLogger(__name__)
 
 
-# pylint:disable=too-many-branches, too-many-locals
+# pylint:disable=too-many-branches, too-many-locals, too-many-statements
 def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
     exports the merged dataframe to .xlsx with highlighted differences.
