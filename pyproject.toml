@@ -1,5 +1,5 @@
 [project]
-name = "ahb-diff"
+name = "ahlbatross"
 description = ""
 version = "0.1.0"
 license = { text = "MIT" }
@@ -24,6 +24,13 @@ dependencies = [
     "pandas-stubs>=2.2.3.241009",
     "xlsxwriter>=3.2.0"
 ]
+
+[project.scripts]
+ahlbatross = "ahlbatross.main:main"
+
+[project.urls]
+Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"
+Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [project.optional-dependencies]
 tests = [
@@ -53,13 +60,9 @@ dev = [
     "pip-tools"
 ]
 
-[project.urls]
-Changelog = "https://github.com/Hochfrequenz/ahb-diff/releases"
-Homepage = "https://github.com/Hochfrequenz/ahb-diff"
-
 [tool.black]
 line-length = 120
-target_version = ["py312", "py313"]
+target_version = ["py311", "py312", "py313"]
 
 [tool.isort]
 line_length = 120
@@ -70,7 +73,6 @@ max-line-length = 120
 
 [mypy]
 truethy-bool = true
-
 [tool.mypy]
 disable_error_code = []
 

@@ -5,17 +5,17 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Tuple, TypeAlias
+from typing import Any, Optional, Tuple, TypeAlias
 
 import pandas as pd
 from pandas.core.frame import DataFrame
-from xlsxwriter.format import Format  # type: ignore
+from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
-OUTPUT_DIR = Path("data/output")
+DEFAULT_OUTPUT_DIR = Path("data/output")
 
 XlsxFormat: TypeAlias = Format
 
@@ -596,7 +596,9 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
         logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
 
 
-def _process_files(previous_formatversion: str, subsequent_formatversion: str) -> None:
+def _process_files(
+    previous_formatversion: str, subsequent_formatversion: str, output_dir: Path = DEFAULT_OUTPUT_DIR
+) -> None:
     """
     process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
     """
@@ -606,7 +608,7 @@ def _process_files(previous_formatversion: str, subsequent_formatversion: str) -
         logger.warning("No matching files found to compare")
         return
 
-    output_base = OUTPUT_DIR / f"{subsequent_formatversion}_{previous_formatversion}"
+    output_base = output_dir / f"{subsequent_formatversion}_{previous_formatversion}"
 
     for previous_pruefid, subsequent_pruefid, nachrichtentyp, pruefid in matching_files:
         logger.info("Processing %s - %s", nachrichtentyp, pruefid)
@@ -641,7 +643,7 @@ def _process_files(previous_formatversion: str, subsequent_formatversion: str) -
             logger.error("❌data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
-def _process_submodule() -> None:
+def _process_submodule(output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
     """
     processes all valid consecutive <formatversion> subdirectories.
     """
@@ -656,7 +658,7 @@ def _process_submodule() -> None:
             "⌛processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
         )
         try:
-            _process_files(previous_formatversion, subsequent_formatversion)
+            _process_files(previous_formatversion, subsequent_formatversion, output_dir)
         except (OSError, pd.errors.EmptyDataError, ValueError) as e:
             logger.error(
                 "❌error processing formatversions %s -> %s: %s",
@@ -667,5 +669,17 @@ def _process_submodule() -> None:
             continue
 
 
+def main(output_dir: Optional[Path] = None) -> None:
+    """
+    main entrypoint for AHlBatross.
+    """
+    try:
+        _process_submodule(output_dir or DEFAULT_OUTPUT_DIR)
+    except (OSError, pd.errors.EmptyDataError, ValueError) as e:
+        logger.error("❌error processing AHB files: %s", str(e))
+        sys.exit(1)
+
+
+# run locally using $ PYTHONPATH=src python -m ahlbatross.main
 if __name__ == "__main__":
-    _process_submodule()
+    main()
