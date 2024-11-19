@@ -647,6 +647,7 @@ def _process_submodule(output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
     """
     processes all valid consecutive <formatversion> subdirectories.
     """
+    logger.info("The output dir is %s", output_dir.absolute())
     consecutive_formatversions = determine_consecutive_formatversions()
 
     if not consecutive_formatversions:
