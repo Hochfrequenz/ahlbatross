@@ -3,8 +3,8 @@
 # AHlBatross
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?labelColor=30363D&color=fccccc)](LICENSE)
-![Python Versions (officially) supported](https://img.shields.io/pypi/pyversions/ahlbatross.svg)
-![Pypi status badge](https://img.shields.io/pypi/v/ahlbatross)
+![Pypi status badge](https://img.shields.io/pypi/v/ahlbatross?labelColor=30363D&color=fccccc)
+![Python Versions (officially) supported](https://img.shields.io/pypi/pyversions/ahlbatross.svg?labelColor=30363D&color=fccccc)
 ![Unittests status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Unittests/badge.svg)
 ![Coverage status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Coverage/badge.svg)
 ![Pylint status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Linting/badge.svg)
@@ -15,10 +15,10 @@ Tool for **automatic AHB comparison** of consecutive `Formatversionen` provided 
 Highlighted changes between `PruefIDs` of various `Nachrichtenformate` are stored in the `.xlsx` files located inside 
 the `./data/output/` [directory](https://github.com/Hochfrequenz/ahlbatross/tree/main/data/output).
 
-<img width="75%" src="https://raw.githubusercontent.com/Hochfrequenz/ahlbatross/main/output.png" alt="output.png">
+<img src="https://raw.githubusercontent.com/Hochfrequenz/ahlbatross/main/output.png" alt="output.png">
 
 ## Installation
-Install it from [PyPI](https://pypi.org/project/ahlbatross/):
+Install this package from [PyPI](https://pypi.org/project/ahlbatross/) using
 
 ```shell
 pip install ahlbatross
