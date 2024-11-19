@@ -11,6 +11,8 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
+from ahlbatross.format_version_helpers import parse_formatversions
+
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
@@ -18,23 +20,6 @@ SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 DEFAULT_OUTPUT_DIR = Path("data/output")
 
 XlsxFormat: TypeAlias = Format
-
-
-def parse_formatversions(formatversion: str) -> Tuple[int, int]:
-    """
-    parse <formatversion> string (e.g., "FV2504") into year and month.
-    """
-    if not formatversion.startswith("FV") or len(formatversion) != 6:
-        raise ValueError(f"invalid formatversion: {formatversion}")
-
-    year = int(formatversion[2:4])
-    month = int(formatversion[4:6])
-    year = 2000 + year
-
-    if not 1 <= month <= 12:
-        raise ValueError(f"invalid formatversion: {formatversion}")
-
-    return year, month
 
 
 def _get_available_formatversions() -> list[str]:
