@@ -5,7 +5,7 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Optional, Tuple, TypeAlias
+from typing import Any, Tuple, TypeAlias
 
 import pandas as pd
 from pandas.core.frame import DataFrame
@@ -668,19 +668,3 @@ def _process_submodule(output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
                 str(e),
             )
             continue
-
-
-def main(output_dir: Optional[Path] = None) -> None:
-    """
-    main entrypoint for AHlBatross.
-    """
-    try:
-        _process_submodule(output_dir or DEFAULT_OUTPUT_DIR)
-    except (OSError, pd.errors.EmptyDataError, ValueError) as e:
-        logger.error("❌error processing AHB files: %s", str(e))
-        sys.exit(1)
-
-
-# run locally using $ PYTHONPATH=src python -m ahlbatross.main
-if __name__ == "__main__":
-    main()
