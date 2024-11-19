@@ -2,8 +2,6 @@ name: "Test CLI Environment"
 # Checks that the package is usable as CLI tool.
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
   workflow_run:
     workflows:
       - "Commit Message Title Validation"
@@ -14,27 +12,25 @@ on:
       - "Test Dev Environment"
       - "Unittests"
     types: [completed]
-    branches: [main]
+
 jobs:
- check:
-   # abort if above-mentioned workflows fail
-   if: |
-     (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
-     github.event_name == 'pull_request'
-   runs-on: ${{ matrix.os }}
-   strategy:
-     matrix:
-       python-version: ["3.12"]
-       os: [ubuntu-latest]
-   steps:
-     - uses: actions/checkout@v4
-       with:
-         submodules: 'true'
-     - name: Set up Python ${{ matrix.python-version }}
-       uses: actions/setup-python@v5
-       with:
-         python-version: ${{ matrix.python-version }}
-     - name: Try to install the script, then run the cli
-       run: |
-         pip install .
-         ahlbatross
+  check:
+    # abort if above-mentioned workflows fail
+    if: ${{ !contains(github.event.workflow.pull_requests.*.state, 'closed') && github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Try to install the script, then run the cli
+        run: |
+          pip install .
+          ahlbatross
