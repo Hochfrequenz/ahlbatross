@@ -1,9 +1,10 @@
+import logging
 from pathlib import Path
 
 import pandas as pd
 from pandas import DataFrame
 
-from ahlbatross.main import logger
+logger = logging.getLogger(__name__)
 
 
 # pylint:disable=too-many-branches, too-many-locals
