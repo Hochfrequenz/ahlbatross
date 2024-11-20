@@ -85,11 +85,11 @@ def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
 
 
 # pylint:disable=too-many-locals
-def get_matching_pruefid_files(
+def get_matching_csv_files(
     root_dir: Path, previous_formatversion: str, subsequent_formatversion: str
 ) -> list[tuple[Path, Path, str, str]]:
     """
-    find matching ahb/<pruefid>.csv files across <formatversion> and <nachrichtenformat> directories.
+    find matching <pruefid>.csv files across <formatversion>/<nachrichtenformat> directories.
     """
     previous_formatversion_dir = root_dir / previous_formatversion
     subsequent_formatversion_dir = root_dir / subsequent_formatversion
@@ -408,7 +408,7 @@ def _process_files(
     """
     process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
     """
-    matching_files = get_matching_pruefid_files(root_dir, previous_formatversion, subsequent_formatversion)
+    matching_files = get_matching_csv_files(root_dir, previous_formatversion, subsequent_formatversion)
 
     if not matching_files:
         logger.warning("No matching files found to compare")

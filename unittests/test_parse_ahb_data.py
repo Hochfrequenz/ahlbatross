@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from typer.testing import CliRunner
 
-from ahlbatross.core import get_formatversion_pairs, get_matching_pruefid_files
+from ahlbatross.core import get_formatversion_pairs, get_matching_csv_files
 from ahlbatross.main import app
 from ahlbatross.utils import parse_formatversions
 
@@ -61,7 +61,7 @@ def test_get_matching_files(tmp_path: Path) -> None:
             for file, content in files.items():
                 (nachrichtenformat_dir / file).write_text(content)
 
-    matches = get_matching_pruefid_files(
+    matches = get_matching_csv_files(
         root_dir=tmp_path, previous_formatversion="FV2410", subsequent_formatversion="FV2504"
     )
 
