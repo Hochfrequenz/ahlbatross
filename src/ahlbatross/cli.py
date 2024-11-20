@@ -38,7 +38,7 @@ def main(
             sys.exit(1)
         process_ahb_data(root_dir, output_dir or DEFAULT_OUTPUT_DIR)
     except (OSError, pd.errors.EmptyDataError, ValueError) as e:
-        _logger.error("❌ error processing AHB files: %s", str(e))
+        _logger.exception("❌ error processing AHB files")
         sys.exit(1)
 
 
