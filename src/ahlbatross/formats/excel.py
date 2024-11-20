@@ -219,4 +219,4 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             excel_width = width_px / 7
             worksheet.set_column(col_num, col_num, excel_width)
 
-        logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
+        logger.info("✅ Successfully exported XLSX file to: %s", {output_path_xlsx})

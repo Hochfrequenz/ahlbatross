@@ -51,6 +51,6 @@ def cli() -> None:
 
 
 # to run the script during local development, execute the following command:
-# PYTHONPATH=src python -m ahlbatross.cli -i data/machine-readable_anwendungshandbuecher -o data/output
+# PYTHONPATH=src python -m ahlbatross.main -i data/machine-readable_anwendungshandbuecher -o data/output
 if __name__ == "__main__":
-    main()
+    cli()
