@@ -1,14 +1,13 @@
 """
-contains excel export logic
+contains excel export logic.
 """
 
-import logging
 from pathlib import Path
 
 import pandas as pd
 from pandas import DataFrame
 
-logger = logging.getLogger(__name__)
+from ahlbatross.logger import logger
 
 
 # pylint:disable=too-many-branches, too-many-locals, too-many-statements
@@ -220,4 +219,4 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             excel_width = width_px / 7
             worksheet.set_column(col_num, col_num, excel_width)
 
-        logger.info("✅successfully exported XLSX file to: %s", {output_path_xlsx})
+        logger.info("✅ Successfully exported XLSX file to: %s", {output_path_xlsx})

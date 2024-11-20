@@ -1,13 +1,23 @@
 """
-utility functions for parsing strings like 'FV2504' as 'April 2025'
+utility functions.
 """
 
+import re
 from typing import Tuple
+
+
+def normalize_entries(value: str | None) -> str:
+    """
+    normalizes strings of AHB parameters like `Segmentname` by removing all whitespaces, tabs, newlines, etc.
+    """
+    if value is None:
+        return ""
+    return re.sub(r"\s+", "", value)
 
 
 def parse_formatversions(formatversion: str) -> Tuple[int, int]:
     """
-    parse <formatversion> string (e.g., "FV2504") into year and month.
+    parses <formatversion> strings (e.g., "FV2504") into year and month.
     """
     if not formatversion.startswith("FV") or len(formatversion) != 6:
         raise ValueError(f"invalid formatversion: {formatversion}")

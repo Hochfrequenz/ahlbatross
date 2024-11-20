@@ -1,12 +1,9 @@
-import logging
 from pathlib import Path
 
 import pytest
-from typer.testing import CliRunner
 
-from ahlbatross.cli import app
-from ahlbatross.format_version_helpers import parse_formatversions
-from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files
+from ahlbatross.core import get_formatversion_pairs, get_matching_csv_files
+from ahlbatross.utils import parse_formatversions
 
 
 def test_parse_valid_formatversions() -> None:
@@ -61,7 +58,7 @@ def test_get_matching_files(tmp_path: Path) -> None:
             for file, content in files.items():
                 (nachrichtenformat_dir / file).write_text(content)
 
-    matches = get_matching_pruefid_files(
+    matches = get_matching_csv_files(
         root_dir=tmp_path, previous_formatversion="FV2410", subsequent_formatversion="FV2504"
     )
 
@@ -94,42 +91,5 @@ def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
                 csv_dir.mkdir()
                 (csv_dir / "test.csv").write_text("test")
 
-    result = determine_consecutive_formatversions(root_dir=tmp_path)
+    result = get_formatversion_pairs(root_dir=tmp_path)
     assert result == [("FV2504", "FV2410")]
-
-
-def test_cli_with_custom_input_directory(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
-    """
-    test CLI handling of custom --input-dir.
-    """
-    caplog.set_level(logging.INFO)
-
-    input_dir = tmp_path / "custom_input"
-    input_dir.mkdir()
-    fv_dir = input_dir / "FV2504" / "Nachrichtenformat_1"
-    fv_dir.mkdir(parents=True)
-    csv_dir = fv_dir / "csv"
-    csv_dir.mkdir()
-    (csv_dir / "test.csv").write_text("test data")
-
-    runner = CliRunner()
-    result = runner.invoke(app, ["--input-dir", str(input_dir), "--output-dir", str(tmp_path)], catch_exceptions=False)
-
-    assert result.exit_code == 0
-    assert "No valid consecutive formatversion subdirectories found to compare." in caplog.text
-
-
-def test_cli_with_invalid_input_directory(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
-    """
-    test CLI handling of invalid --input-dir.
-    """
-    caplog.set_level(logging.INFO)
-    invalid_dir = tmp_path / "does_not_exist"
-    runner = CliRunner()
-    result = runner.invoke(
-        app, ["--input-dir", str(invalid_dir), "--output-dir", str(tmp_path)], catch_exceptions=False
-    )
-
-    assert "❌ Input directory does not exist:" in caplog.text
-    assert str(invalid_dir) in caplog.text
-    assert result.exit_code == 1
