@@ -3,7 +3,6 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 """
 
 import logging
-import re
 import sys
 from pathlib import Path
 from typing import Any, TypeAlias
@@ -14,7 +13,7 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
 from ahlbatross.csv import _get_csv_content, _get_pruefid_files
 from ahlbatross.excel import export_to_excel
-from ahlbatross.format_version_helpers import parse_formatversions
+from ahlbatross.utils import parse_formatversions, normalize
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
@@ -182,15 +181,6 @@ def create_row(
     _populate_row_values(subsequent_df, row, j, subsequent_formatversion, is_segmentname=False)
 
     return row
-
-
-def normalize(value: str | None) -> str:
-    """
-    normalizes strings like `Segmentname` values by removing all whitespaces, tabs, newlines, etc.
-    """
-    if value is None:
-        return ""
-    return re.sub(r"\s+", "", value)
 
 
 # pylint:disable=too-many-branches, too-many-statements

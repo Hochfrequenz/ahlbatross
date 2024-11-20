@@ -5,7 +5,7 @@ import pytest
 from typer.testing import CliRunner
 
 from ahlbatross.cli import app
-from ahlbatross.format_version_helpers import parse_formatversions
+from ahlbatross.utils import parse_formatversions
 from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files
 
 

@@ -1,8 +1,18 @@
 """
-utility functions for parsing strings like 'FV2504' as 'April 2025'
+utility functions.
 """
 
+import re
 from typing import Tuple
+
+
+def normalize(value: str | None) -> str:
+    """
+    normalizes strings like `Segmentname` values by removing all whitespaces, tabs, newlines, etc.
+    """
+    if value is None:
+        return ""
+    return re.sub(r"\s+", "", value)
 
 
 def parse_formatversions(formatversion: str) -> Tuple[int, int]:
