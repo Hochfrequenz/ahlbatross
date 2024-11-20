@@ -33,8 +33,17 @@ def main(
             _logger.error("❌ Input directory does not exist: %s", input_dir.absolute())
             sys.exit(1)
         process_ahb_data(input_dir, output_dir)
-    except (OSError, pd.errors.EmptyDataError, ValueError) as _:
-        _logger.exception("❌ Error processing AHB files.")
+    except FileNotFoundError as e:
+        _logger.error("❌ Path error: %s", str(e))
+        sys.exit(1)
+    except PermissionError as e:
+        _logger.error("❌ Permission denied: %s", str(e))
+        sys.exit(1)
+    except (OSError, pd.errors.EmptyDataError, ValueError) as e:
+        _logger.exception("❌ Error processing AHB files: %s", str(e))
+        sys.exit(1)
+    except (RuntimeError, TypeError, AttributeError) as e:
+        _logger.exception("❌ Unexpected error: %s", str(e))
         sys.exit(1)
 
 
