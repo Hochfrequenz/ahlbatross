@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from typer.testing import CliRunner
 
-from ahlbatross.core import determine_consecutive_formatversions, get_matching_pruefid_files
+from ahlbatross.core import get_formatversion_pairs, get_matching_pruefid_files
 from ahlbatross.main import app
 from ahlbatross.utils import parse_formatversions
 
@@ -94,7 +94,7 @@ def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
                 csv_dir.mkdir()
                 (csv_dir / "test.csv").write_text("test")
 
-    result = determine_consecutive_formatversions(root_dir=tmp_path)
+    result = get_formatversion_pairs(root_dir=tmp_path)
     assert result == [("FV2504", "FV2410")]
 
 

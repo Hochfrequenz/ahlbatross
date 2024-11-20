@@ -57,18 +57,18 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
 
-def determine_consecutive_formatversions(root_dir: Path) -> list[tuple[str, str]]:
+def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
     """
-    generate pairs of consecutive <formatversion> directories to compare and skip empty directories.
+    generate pairs of consecutive <formatversion> directories.
     """
     formatversion_list = _get_formatversion_dirs(root_dir)
-    consecutive_formatversions = []
+    formatversion_pairs = []
 
     for i in range(len(formatversion_list) - 1):
         subsequent_formatversion = formatversion_list[i]
         previous_formatversion = formatversion_list[i + 1]
 
-        # skip if either directory is empty.
+        # skip if at least one <formatversion> directory is empty.
         if _is_formatversion_dir_empty(root_dir, subsequent_formatversion) or _is_formatversion_dir_empty(
             root_dir, previous_formatversion
         ):
@@ -79,9 +79,9 @@ def determine_consecutive_formatversions(root_dir: Path) -> list[tuple[str, str]
             )
             continue
 
-        consecutive_formatversions.append((subsequent_formatversion, previous_formatversion))
+        formatversion_pairs.append((subsequent_formatversion, previous_formatversion))
 
-    return consecutive_formatversions
+    return formatversion_pairs
 
 
 # pylint:disable=too-many-locals
@@ -456,7 +456,7 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
     logger.info("Found AHB root directory at: %s", input_dir.absolute())
     logger.info("The output dir is %s", output_dir.absolute())
 
-    consecutive_formatversions = determine_consecutive_formatversions(input_dir)
+    consecutive_formatversions = get_formatversion_pairs(input_dir)
 
     if not consecutive_formatversions:
         logger.warning("❗️ No valid consecutive formatversion subdirectories found to compare.")
