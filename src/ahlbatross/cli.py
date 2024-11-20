@@ -10,7 +10,7 @@ import pandas as pd
 import typer
 from rich.console import Console
 
-from ahlbatross.main import process_ahb_data
+from ahlbatross.core import process_ahb_data
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
 _logger = logging.getLogger(__name__)

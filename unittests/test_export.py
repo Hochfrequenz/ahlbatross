@@ -10,7 +10,7 @@ from typer.testing import CliRunner
 
 from ahlbatross.cli import app
 from ahlbatross.excel import export_to_excel
-from ahlbatross.main import align_columns
+from ahlbatross.core import align_columns
 
 
 def test_export() -> None:
