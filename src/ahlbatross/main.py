@@ -482,7 +482,12 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
             "⌛processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
         )
         try:
-            _process_files(input_dir, previous_formatversion, subsequent_formatversion, output_dir)
+            _process_files(
+                root_dir=input_dir,
+                previous_formatversion=previous_formatversion,
+                subsequent_formatversion=subsequent_formatversion,
+                output_dir=output_dir,
+            )
         except (OSError, pd.errors.EmptyDataError, ValueError) as e:
             logger.error(
                 "❌ error processing formatversions %s -> %s: %s",
