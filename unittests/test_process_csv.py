@@ -18,7 +18,7 @@ class TestSingleColumnDataframes:
     def setup(self, formatversions: FormatVersions) -> None:
         self.formatversions = formatversions
 
-    def test_remove_whitespace_during_comparison(self) -> None:
+    def test_remove_whitespace_space(self) -> None:
         """
         this test case should not detect any since whitespace is removed during the comparison process
         """
@@ -40,6 +40,74 @@ class TestSingleColumnDataframes:
                     "Segment",
                     "Seg ment",
                     "Seg ment",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
+    def test_remove_whitespace_newline(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg\nment", "Seg\nment", "Segment", "Segment"]})
+        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg\nment", "Seg\nment"]})
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg\nment",
+                    "Seg\nment",
+                    "Segment",
+                    "Segment",
+                ],
+                "Änderung": ["", "", "", ""],
+                "changed_entries": ["", "", "", ""],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg\nment",
+                    "Seg\nment",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
+    def test_remove_whitespace_tab(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg\tment", "Seg\tment", "Segment", "Segment"]})
+        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg\tment", "Seg\tment"]})
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg\tment",
+                    "Seg\tment",
+                    "Segment",
+                    "Segment",
+                ],
+                "Änderung": ["", "", "", ""],
+                "changed_entries": ["", "", "", ""],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg\tment",
+                    "Seg\tment",
                 ],
             }
         )
@@ -212,7 +280,7 @@ class TestMultiColumnDataFrames:
     def setup(self, formatversions: FormatVersions) -> None:
         self.formatversions = formatversions
 
-    def test_remove_whitespace_during_comparison(self) -> None:
+    def test_remove_whitespace_space(self) -> None:
         """
         this test case should not detect any since whitespace is removed during the comparison process
         """
@@ -255,6 +323,128 @@ class TestMultiColumnDataFrames:
                     "Segment",
                     "Seg ment",
                     "Seg ment",
+                ],
+                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
+                    "a",
+                    "b",
+                    "d",
+                    "d",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
+    def test_remove_whitespace_newline(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Seg\nment", "Seg\nment", "Segment", "Segment"],
+                "Segmentgruppe": ["a", "b", "c", ""],
+            }
+        )
+        subsequent_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Segment", "Segment", "Seg\nment", "Seg\nment"],
+                "Segmentgruppe": ["a", "b", "d", "d"],
+            }
+        )
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg\nment",
+                    "Seg\nment",
+                    "Segment",
+                    "Segment",
+                ],
+                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
+                    "a",
+                    "b",
+                    "c",
+                    "",
+                ],
+                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
+                "changed_entries": [
+                    "",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                ],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg\nment",
+                    "Seg\nment",
+                ],
+                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
+                    "a",
+                    "b",
+                    "d",
+                    "d",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
+    def test_remove_whitespace_tab(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Seg\tment", "Seg\tment", "Segment", "Segment"],
+                "Segmentgruppe": ["a", "b", "c", ""],
+            }
+        )
+        subsequent_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Segment", "Segment", "Seg\tment", "Seg\tment"],
+                "Segmentgruppe": ["a", "b", "d", "d"],
+            }
+        )
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg\tment",
+                    "Seg\tment",
+                    "Segment",
+                    "Segment",
+                ],
+                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
+                    "a",
+                    "b",
+                    "c",
+                    "",
+                ],
+                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
+                "changed_entries": [
+                    "",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                ],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg\tment",
+                    "Seg\tment",
                 ],
                 f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
                     "a",
