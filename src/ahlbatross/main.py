@@ -22,6 +22,13 @@ logger = logging.getLogger(__name__)
 XlsxFormat: TypeAlias = Format
 
 
+def _is_formatversion_dir(path: Path) -> bool:
+    """
+    confirm if path is a formatversion directory - for instance "FV2504/".
+    """
+    return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
+
+
 def _get_available_formatversions(root_dir: Path) -> list[str]:
     """
     get all available <formatversion> directories, sorted from latest to oldest.
@@ -30,12 +37,7 @@ def _get_available_formatversions(root_dir: Path) -> list[str]:
         logger.error("❌ submodule / base directory does not exist: %s", root_dir)
         return []
 
-    formatversion_dirs = [
-        d.name
-        for d in root_dir.iterdir()
-        if d.is_dir() and d.name.startswith("FV") and len(d.name) == 6 and d.name != "diff"
-    ]
-
+    formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
     formatversion_dirs.sort(key=parse_formatversions, reverse=True)
 
     return formatversion_dirs
