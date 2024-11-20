@@ -402,7 +402,7 @@ def align_columns(
     return result_df[column_order]
 
 
-def _process_csv_files(
+def _process_files(
     root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path
 ) -> None:
     """
@@ -449,9 +449,9 @@ def _process_csv_files(
             logger.error("❌ Data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
-def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
+def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
     """
-    processes all valid consecutive <formatversion> subdirectories.
+    processes subdirectories of all valid consecutive <formatversion> pairs.
     """
     logger.info("Found AHB root directory at: %s", input_dir.absolute())
     logger.info("The output dir is %s", output_dir.absolute())
@@ -464,10 +464,10 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
 
     for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
         logger.info(
-            "⌛Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
+            "⌛ Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
         )
         try:
-            _process_csv_files(
+            _process_files(
                 root_dir=input_dir,
                 previous_formatversion=previous_formatversion,
                 subsequent_formatversion=subsequent_formatversion,
