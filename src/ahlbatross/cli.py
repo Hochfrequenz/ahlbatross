@@ -20,8 +20,10 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 
 @app.command()
 def main(
-    input_dir: Path = typer.Option(..., help="Directory containing AHB data."),
-    output_dir: Path = typer.Option(..., help="Destination path to output directory containing processed files."),
+    input_dir: Path = typer.Option(..., "--input-dir", "-i", help="Directory containing AHB data."),
+    output_dir: Path = typer.Option(
+        ..., "--output-dir", "-o", help="Destination path to output directory containing processed files."
+    ),
 ) -> None:
     """
     main entrypoint for AHlBatross.
@@ -43,6 +45,7 @@ def cli() -> None:
     app()
 
 
-# PYTHONPATH=src python -m ahlbatross.cli --input-dir data/machine-readable-anwendungshandbuecher --output-dir data/output
+# to run the script during local development, execute the following command:
+# PYTHONPATH=src python -m ahlbatross.cli -i data/machine-readable-anwendungshandbuecher -o data/output
 if __name__ == "__main__":
     main()
