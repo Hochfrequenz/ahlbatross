@@ -133,7 +133,7 @@ def _populate_row_entries(
     is_segmentname: bool = True,
 ) -> None:
     """
-    utility function to populate row values for a given dataframe segment.
+    populate row entries for a given dataframe segment.
     """
     if df is not None and idx is not None:
         segmentname_col = f"Segmentname_{formatversion}"
@@ -402,7 +402,7 @@ def align_columns(
     return result_df[column_order]
 
 
-def _process_files(
+def _process_csv_files(
     root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path
 ) -> None:
     """
@@ -464,10 +464,10 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
 
     for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
         logger.info(
-            "⌛processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
+            "⌛Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
         )
         try:
-            _process_files(
+            _process_csv_files(
                 root_dir=input_dir,
                 previous_formatversion=previous_formatversion,
                 subsequent_formatversion=subsequent_formatversion,
