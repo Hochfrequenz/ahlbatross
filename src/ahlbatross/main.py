@@ -48,7 +48,7 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     get all <nachrichtenformat> directories that contain a csv subdirectory.
     """
     if not formatversion_dir.exists():
-        logger.warning("❌ formatversion directory not found: %s", formatversion_dir)
+        logger.warning("❌ formatversion directory not found: %s", formatversion_dir.absolute())
         return []
 
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
