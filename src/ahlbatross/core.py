@@ -9,7 +9,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.formats.csv import load_csv_dataframes, _get_pruefid_files
+from ahlbatross.formats.csv import load_csv_dataframes, get_csv_files
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.logger import logger
 from ahlbatross.utils import normalize_entries, parse_formatversions
@@ -114,8 +114,8 @@ def get_matching_csv_files(
         previous_csv_dir = previous_nachrichtenformat_names[nachrichtentyp] / "csv"
         subsequent_csv_dir = subsequent_nachrichtenformat_names[nachrichtentyp] / "csv"
 
-        previous_files = {f.stem: f for f in _get_pruefid_files(previous_csv_dir)}
-        subsequent_files = {f.stem: f for f in _get_pruefid_files(subsequent_csv_dir)}
+        previous_files = {f.stem: f for f in get_csv_files(previous_csv_dir)}
+        subsequent_files = {f.stem: f for f in get_csv_files(subsequent_csv_dir)}
 
         common_ahbs = set(previous_files.keys()) & set(subsequent_files.keys())
 

@@ -17,9 +17,9 @@ def load_csv_dataframes(previous_ahb_path: Path, subsequent_ahb_path: Path) -> t
     return previous_ahb, subsequent_ahb
 
 
-def _get_pruefid_files(csv_dir: Path) -> list[Path]:
+def get_csv_files(csv_dir: Path) -> list[Path]:
     """
-    get all ahb/<pruefid>.csv files in a given directory.
+    find and return all <pruefid>.csv files in a given directory.
     """
     if not csv_dir.exists():
         return []
