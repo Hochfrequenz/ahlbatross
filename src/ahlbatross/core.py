@@ -11,8 +11,8 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.csv import _get_csv_content, _get_pruefid_files
-from ahlbatross.excel import export_to_excel
+from ahlbatross.formats.csv import _get_csv_content, _get_pruefid_files
+from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.utils import parse_formatversions, normalize
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
