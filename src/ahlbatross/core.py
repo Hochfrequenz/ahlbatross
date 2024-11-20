@@ -125,7 +125,7 @@ def get_matching_csv_files(
     return matching_files
 
 
-def _populate_row_values(
+def _populate_row_entries(
     df: DataFrame | None,
     row: dict[str, Any],
     idx: int | None,
@@ -170,11 +170,11 @@ def create_row(
             if col != f"Segmentname_{subsequent_formatversion}":
                 row[f"{col}_{subsequent_formatversion}"] = ""
 
-    _populate_row_values(previous_df, row, i, previous_formatversion, is_segmentname=True)
-    _populate_row_values(subsequent_df, row, j, subsequent_formatversion, is_segmentname=True)
+    _populate_row_entries(previous_df, row, i, previous_formatversion, is_segmentname=True)
+    _populate_row_entries(subsequent_df, row, j, subsequent_formatversion, is_segmentname=True)
 
-    _populate_row_values(previous_df, row, i, previous_formatversion, is_segmentname=False)
-    _populate_row_values(subsequent_df, row, j, subsequent_formatversion, is_segmentname=False)
+    _populate_row_entries(previous_df, row, i, previous_formatversion, is_segmentname=False)
+    _populate_row_entries(subsequent_df, row, j, subsequent_formatversion, is_segmentname=False)
 
     return row
 
