@@ -9,7 +9,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.formats.csv import load_csv_dataframes, get_csv_files
+from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.logger import logger
 from ahlbatross.utils import normalize_entries, parse_formatversions
@@ -454,7 +454,7 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
     processes subdirectories of all valid consecutive <formatversion> pairs.
     """
     logger.info("Found AHB root directory at: %s", input_dir.absolute())
-    logger.info("The output dir is %s", output_dir.absolute())
+    logger.info("Output directory: %s", output_dir.absolute())
 
     consecutive_formatversions = get_formatversion_pairs(input_dir)
 
