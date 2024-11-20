@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import pytest
-from _pytest.monkeypatch import MonkeyPatch
 
 from ahlbatross.format_version_helpers import parse_formatversions
 from ahlbatross.main import determine_consecutive_formatversions, get_matching_pruefid_files
@@ -34,11 +33,10 @@ def test_parse_invalid_formatversions() -> None:
             parse_formatversions(invalid_input)
 
 
-def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
+def test_get_matching_files(tmp_path: Path) -> None:
     """
     test find matching files across formatversions.
     """
-    monkeypatch.setattr("ahlbatross.main.SUBMODULE", tmp_path)
 
     submodule: dict[str, dict[str, dict[str, str]]] = {
         "FV2504": {
@@ -60,7 +58,9 @@ def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
             for file, content in files.items():
                 (nachrichtenformat_dir / file).write_text(content)
 
-    matches = get_matching_pruefid_files("FV2410", "FV2504")
+    matches = get_matching_pruefid_files(
+        root_dir=tmp_path, previous_formatversion="FV2410", subsequent_formatversion="FV2504"
+    )
 
     assert len(matches) == 2
     assert matches[0][2] == "nachrichtenformat_1"
@@ -68,12 +68,11 @@ def test_get_matching_files(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     assert matches[1][3] == "pruefid_2"
 
 
-def test_determine_consecutive_formatversions(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
+def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
     """
     test successful determination of consecutive formatversions.
     """
-    monkeypatch.setattr("ahlbatross.main.SUBMODULE", tmp_path)
-
+    # Create test directory structure with formatversions and add dummy file
     submodule: dict[str, dict[str, bool | dict[str, str]]] = {
         "FV2504": {"nachrichtenformat_1": True},
         "FV2410": {"nachrichtenformat_1": True},
@@ -92,5 +91,5 @@ def test_determine_consecutive_formatversions(tmp_path: Path, monkeypatch: Monke
                 csv_dir.mkdir()
                 (csv_dir / "test.csv").write_text("test")
 
-    result = determine_consecutive_formatversions()
+    result = determine_consecutive_formatversions(root_dir=tmp_path)
     assert result == [("FV2504", "FV2410")]
