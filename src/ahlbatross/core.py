@@ -12,7 +12,7 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 from ahlbatross.formats.csv import _get_csv_content, _get_pruefid_files
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.logger import logger
-from ahlbatross.utils import normalize, parse_formatversions
+from ahlbatross.utils import normalize_entries, parse_formatversions
 
 XlsxFormat: TypeAlias = Format
 
@@ -281,11 +281,11 @@ def align_columns(
 
     # normalize `Segmentname` columns values by removing any whitespace
     segments_of_previous_formatversion_normalized = [
-        normalize(s) if isinstance(s, str) else s
+        normalize_entries(s) if isinstance(s, str) else s
         for s in df_of_previous_formatversion[f"Segmentname_{previous_formatversion}"].tolist()
     ]
     segments_of_subsequent_formatversion_normalized = [
-        normalize(s) if isinstance(s, str) else s
+        normalize_entries(s) if isinstance(s, str) else s
         for s in df_of_subsequent_formatversion[f"Segmentname_{subsequent_formatversion}"].tolist()
     ]
 
