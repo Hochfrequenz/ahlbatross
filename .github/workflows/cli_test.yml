@@ -22,4 +22,4 @@ jobs:
       - name: Try to install the script, then run the cli
         run: |
           pip install .
-          ahlbatross
+          ahlbatross --output-dir data/output
