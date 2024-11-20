@@ -34,7 +34,7 @@ def main(
     try:
         root_dir = input_dir if input_dir else SUBMODULE
         if not root_dir.exists():
-            _logger.error("❌ input directory does not exist: %s", root_dir)
+            _logger.error("❌ input directory does not exist: %s", root_dir.absolute())
             sys.exit(1)
         process_ahb_data(root_dir, output_dir or DEFAULT_OUTPUT_DIR)
     except (OSError, pd.errors.EmptyDataError, ValueError) as e:
