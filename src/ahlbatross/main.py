@@ -34,12 +34,10 @@ def _get_available_formatversions(root_dir: Path) -> list[str]:
     get all available <formatversion> directories, sorted from latest to oldest.
     """
     if not root_dir.exists():
-        logger.error("❌ submodule / base directory does not exist: %s", root_dir)
-        return []
+        raise FileNotFoundError(f"❌ submodule / base directory does not exist: {root_dir}")
 
     formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
     formatversion_dirs.sort(key=parse_formatversions, reverse=True)
-
     return formatversion_dirs
 
 
@@ -48,8 +46,7 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     get all <nachrichtenformat> directories that contain a csv subdirectory.
     """
     if not formatversion_dir.exists():
-        logger.warning("❌ formatversion directory not found: %s", formatversion_dir.absolute())
-        return []
+        raise FileNotFoundError(f"❌ formatversion directory not found: {formatversion_dir.absolute()}")
 
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
