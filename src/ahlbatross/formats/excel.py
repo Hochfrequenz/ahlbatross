@@ -1,5 +1,5 @@
 """
-contains excel export logic
+contains excel export logic.
 """
 
 from pathlib import Path

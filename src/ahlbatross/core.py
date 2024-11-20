@@ -9,7 +9,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.formats.csv import _get_csv_content, _get_pruefid_files
+from ahlbatross.formats.csv import load_csv_dataframes, _get_pruefid_files
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.logger import logger
 from ahlbatross.utils import normalize_entries, parse_formatversions
@@ -420,7 +420,7 @@ def _process_files(
         logger.info("Processing %s - %s", nachrichtentyp, pruefid)
 
         try:
-            df_of_previous_formatversion, df_of_subsequent_formatversion = _get_csv_content(
+            df_of_previous_formatversion, df_of_subsequent_formatversion = load_csv_dataframes(
                 previous_pruefid, subsequent_pruefid
             )
             merged_df = align_columns(
