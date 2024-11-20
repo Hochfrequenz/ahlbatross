@@ -11,7 +11,7 @@ import pandas as pd
 import typer
 from rich.console import Console
 
-from ahlbatross.main import DEFAULT_OUTPUT_DIR, process_ahb_data
+from ahlbatross.main import process_ahb_data
 
 RELATIVE_PATH_TO_SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 
@@ -26,7 +26,7 @@ def main(
     input_dir: Optional[Path] = typer.Option(
         None, help="directory containing AHB data, defaults to data/machine-readable_anwendungshandbuecher"
     ),
-    output_dir: Optional[Path] = typer.Option(None, help="directory for output files"),
+    output_dir: Path = typer.Option(..., help="destination path to output directory containing processed files"),
 ) -> None:
     """
     main entrypoint for AHlBatross.
@@ -36,7 +36,7 @@ def main(
         if not root_dir.exists():
             _logger.error("❌ input directory does not exist: %s", root_dir.absolute())
             sys.exit(1)
-        process_ahb_data(root_dir, output_dir or DEFAULT_OUTPUT_DIR)
+        process_ahb_data(root_dir, output_dir)
     except (OSError, pd.errors.EmptyDataError, ValueError) as _:
         _logger.exception("❌ error processing AHB files")
         sys.exit(1)

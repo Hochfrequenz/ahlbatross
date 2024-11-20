@@ -113,7 +113,7 @@ def test_cli_with_custom_input_directory(tmp_path: Path, caplog: pytest.LogCaptu
     (csv_dir / "test.csv").write_text("test data")
 
     runner = CliRunner()
-    result = runner.invoke(app, ["--input-dir", str(input_dir)], catch_exceptions=False)
+    result = runner.invoke(app, ["--input-dir", str(input_dir), "--output-dir", str(tmp_path)], catch_exceptions=False)
 
     assert result.exit_code == 0
     assert "no valid consecutive formatversion subdirectories found to compare" in caplog.text
@@ -126,7 +126,9 @@ def test_cli_with_invalid_input_directory(tmp_path: Path, caplog: pytest.LogCapt
     caplog.set_level(logging.INFO)
     invalid_dir = tmp_path / "does_not_exist"
     runner = CliRunner()
-    result = runner.invoke(app, ["--input-dir", str(invalid_dir)], catch_exceptions=False)
+    result = runner.invoke(
+        app, ["--input-dir", str(invalid_dir), "--output-dir", str(tmp_path)], catch_exceptions=False
+    )
 
     assert "❌ input directory does not exist:" in caplog.text
     assert str(invalid_dir) in caplog.text

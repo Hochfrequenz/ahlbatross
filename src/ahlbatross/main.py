@@ -19,8 +19,6 @@ from ahlbatross.format_version_helpers import parse_formatversions
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
-DEFAULT_OUTPUT_DIR = Path("data/output")
-
 XlsxFormat: TypeAlias = Format
 
 
@@ -420,7 +418,7 @@ def align_columns(
 
 
 def _process_files(
-    root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path = DEFAULT_OUTPUT_DIR
+    root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path
 ) -> None:
     """
     process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
@@ -466,7 +464,7 @@ def _process_files(
             logger.error("❌ data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
-def process_ahb_data(input_dir: Path, output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
+def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
     """
     processes all valid consecutive <formatversion> subdirectories.
     """
