@@ -18,6 +18,40 @@ class TestSingleColumnDataframes:
     def setup(self, formatversions: FormatVersions) -> None:
         self.formatversions = formatversions
 
+    def test_remove_whitespace_during_comparison(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg ment", "Seg ment", "Segment", "Segment"]})
+        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg ment", "Seg ment"]})
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg ment",
+                    "Seg ment",
+                    "Segment",
+                    "Segment",
+                ],
+                "Änderung": ["", "", "", ""],
+                "changed_entries": ["", "", "", ""],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg ment",
+                    "Seg ment",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
+
     def test_align_columns(self) -> None:
         previous_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"]})
         subsequent_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"]})
@@ -177,6 +211,67 @@ class TestMultiColumnDataFrames:
     @pytest.fixture(autouse=True)
     def setup(self, formatversions: FormatVersions) -> None:
         self.formatversions = formatversions
+
+    def test_remove_whitespace_during_comparison(self) -> None:
+        """
+        this test case should not detect any since whitespace is removed during the comparison process
+        """
+        previous_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Seg ment", "Seg ment", "Segment", "Segment"],
+                "Segmentgruppe": ["a", "b", "c", ""],
+            }
+        )
+        subsequent_pruefid = pd.DataFrame(
+            {
+                "Segmentname": ["Segment", "Segment", "Seg ment", "Seg ment"],
+                "Segmentgruppe": ["a", "b", "d", "d"],
+            }
+        )
+
+        expected_output: DataFrame = pd.DataFrame(
+            {
+                f"Segmentname_{self.formatversions.previous_formatversion}": [
+                    "Seg ment",
+                    "Seg ment",
+                    "Segment",
+                    "Segment",
+                ],
+                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
+                    "a",
+                    "b",
+                    "c",
+                    "",
+                ],
+                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
+                "changed_entries": [
+                    "",
+                    "",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
+                ],
+                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
+                    "Segment",
+                    "Segment",
+                    "Seg ment",
+                    "Seg ment",
+                ],
+                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
+                    "a",
+                    "b",
+                    "d",
+                    "d",
+                ],
+            }
+        )
+
+        output_df = align_columns(
+            previous_pruefid,
+            subsequent_pruefid,
+            previous_formatversion=self.formatversions.previous_formatversion,
+            subsequent_formatversion=self.formatversions.subsequent_formatversion,
+        )
+        assert_frame_equal(output_df, expected_output)
 
     def test_align_columns(self) -> None:
         previous_pruefid = pd.DataFrame(
