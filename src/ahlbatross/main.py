@@ -6,7 +6,7 @@ import logging
 import re
 import sys
 from pathlib import Path
-from typing import Any, Tuple, TypeAlias
+from typing import Any, TypeAlias
 
 import pandas as pd
 from pandas.core.frame import DataFrame
@@ -63,7 +63,7 @@ def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
     return len(_get_nachrichtenformat_dirs(formatversion_dir)) == 0
 
 
-def determine_consecutive_formatversions(root_dir: Path) -> list[Tuple[str, str]]:
+def determine_consecutive_formatversions(root_dir: Path) -> list[tuple[str, str]]:
     """
     generate pairs of consecutive <formatversion> directories to compare and skip empty directories.
     """
