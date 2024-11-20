@@ -13,7 +13,7 @@ from rich.console import Console
 
 from ahlbatross.main import DEFAULT_OUTPUT_DIR, process_ahb_data
 
-SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
+RELATIVE_PATH_TO_SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
 _logger = logging.getLogger(__name__)
@@ -32,7 +32,7 @@ def main(
     main entrypoint for AHlBatross.
     """
     try:
-        root_dir = input_dir if input_dir else SUBMODULE
+        root_dir = input_dir if input_dir else RELATIVE_PATH_TO_SUBMODULE
         if not root_dir.exists():
             _logger.error("❌ input directory does not exist: %s", root_dir.absolute())
             sys.exit(1)
