@@ -5,15 +5,12 @@ entrypoint for typer and the command line interface (CLI)
 import logging
 import sys
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 import typer
 from rich.console import Console
 
 from ahlbatross.main import process_ahb_data
-
-RELATIVE_PATH_TO_SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
 _logger = logging.getLogger(__name__)
@@ -23,20 +20,17 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 
 @app.command()
 def main(
-    input_dir: Optional[Path] = typer.Option(
-        None, help="Directory containing AHB data, defaults to data/machine-readable_anwendungshandbuecher."
-    ),
+    input_dir: Path = typer.Option(..., help="Directory containing AHB data."),
     output_dir: Path = typer.Option(..., help="Destination path to output directory containing processed files."),
 ) -> None:
     """
     main entrypoint for AHlBatross.
     """
     try:
-        root_dir = input_dir if input_dir else RELATIVE_PATH_TO_SUBMODULE
-        if not root_dir.exists():
-            _logger.error("❌ Input directory does not exist: %s", root_dir.absolute())
+        if not input_dir.exists():
+            _logger.error("❌ Input directory does not exist: %s", input_dir.absolute())
             sys.exit(1)
-        process_ahb_data(root_dir, output_dir)
+        process_ahb_data(input_dir, output_dir)
     except (OSError, pd.errors.EmptyDataError, ValueError) as _:
         _logger.exception("❌ Error processing AHB files.")
         sys.exit(1)
@@ -49,6 +43,6 @@ def cli() -> None:
     app()
 
 
-# run locally using $ PYTHONPATH=src python -m ahlbatross.cli
+# PYTHONPATH=src python -m ahlbatross.cli --input-dir data/machine-readable-anwendungshandbuecher --output-dir data/output
 if __name__ == "__main__":
     main()
