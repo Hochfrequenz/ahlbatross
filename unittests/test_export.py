@@ -13,7 +13,7 @@ from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.main import app
 
 
-def test_export() -> None:
+def test_dataframe_export_formats() -> None:
     """
     test csv and xlsx exports with example pruefid files.
     """
