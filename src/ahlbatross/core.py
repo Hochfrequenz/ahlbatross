@@ -19,31 +19,9 @@ XlsxFormat: TypeAlias = Format
 
 def _is_formatversion_dir(path: Path) -> bool:
     """
-    confirm if path is a formatversion directory - for instance "FV2504/".
+    confirm if path is a <formatversion> directory - for instance "FV2504/".
     """
     return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
-
-
-def _get_available_formatversions(root_dir: Path) -> list[str]:
-    """
-    get all available <formatversion> directories, sorted from latest to oldest.
-    """
-    if not root_dir.exists():
-        raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
-
-    formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
-    formatversion_dirs.sort(key=parse_formatversions, reverse=True)
-    return formatversion_dirs
-
-
-def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
-    """
-    get all <nachrichtenformat> directories that contain a csv subdirectory.
-    """
-    if not formatversion_dir.exists():
-        raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
-
-    return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
 
 def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
@@ -57,11 +35,33 @@ def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
     return len(_get_nachrichtenformat_dirs(formatversion_dir)) == 0
 
 
+def _get_formatversion_dirs(root_dir: Path) -> list[str]:
+    """
+    fetch all available <formatversion> directories, sorted from latest to oldest.
+    """
+    if not root_dir.exists():
+        raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
+
+    formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
+    formatversion_dirs.sort(key=parse_formatversions, reverse=True)
+    return formatversion_dirs
+
+
+def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
+    """
+    fetch all <nachrichtenformat> directories that contain actual csv files.
+    """
+    if not formatversion_dir.exists():
+        raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
+
+    return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
+
+
 def determine_consecutive_formatversions(root_dir: Path) -> list[tuple[str, str]]:
     """
     generate pairs of consecutive <formatversion> directories to compare and skip empty directories.
     """
-    formatversion_list = _get_available_formatversions(root_dir)
+    formatversion_list = _get_formatversion_dirs(root_dir)
     consecutive_formatversions = []
 
     for i in range(len(formatversion_list) - 1):
