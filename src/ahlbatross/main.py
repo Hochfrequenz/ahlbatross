@@ -34,7 +34,7 @@ def _get_available_formatversions(root_dir: Path) -> list[str]:
     get all available <formatversion> directories, sorted from latest to oldest.
     """
     if not root_dir.exists():
-        raise FileNotFoundError(f"❌ submodule / base directory does not exist: {root_dir}")
+        raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
 
     formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
     formatversion_dirs.sort(key=parse_formatversions, reverse=True)
@@ -46,7 +46,7 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     get all <nachrichtenformat> directories that contain a csv subdirectory.
     """
     if not formatversion_dir.exists():
-        raise FileNotFoundError(f"❌ formatversion directory not found: {formatversion_dir.absolute()}")
+        raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
 
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
@@ -78,7 +78,7 @@ def determine_consecutive_formatversions(root_dir: Path) -> list[tuple[str, str]
             root_dir, previous_formatversion
         ):
             logger.warning(
-                "⚠️ skipping empty consecutive formatversions: %s -> %s",
+                "❗️Skipping empty consecutive formatversions: %s -> %s",
                 subsequent_formatversion,
                 previous_formatversion,
             )
@@ -100,7 +100,7 @@ def get_matching_pruefid_files(
     subsequent_formatversion_dir = root_dir / subsequent_formatversion
 
     if not all(d.exists() for d in [previous_formatversion_dir, subsequent_formatversion_dir]):
-        logger.error("❌ at least one formatversion directory does not exist.")
+        logger.error("❌ At least one formatversion directory does not exist.")
         return []
 
     matching_files = []
@@ -453,14 +453,14 @@ def _process_files(
             merged_df.to_csv(csv_path, index=False)
             export_to_excel(merged_df, str(xlsx_path))
 
-            logger.info("✅ successfully processed %s/%s", nachrichtentyp, pruefid)
+            logger.info("✅ Successfully processed %s/%s", nachrichtentyp, pruefid)
 
         except pd.errors.EmptyDataError:
-            logger.error("❌ empty or corrupted CSV file for %s/%s", nachrichtentyp, pruefid)
+            logger.error("❌ Empty or corrupted CSV file for %s/%s", nachrichtentyp, pruefid)
         except OSError as e:
-            logger.error("❌ file system error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
+            logger.error("❌ File system error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
         except ValueError as e:
-            logger.error("❌ data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
+            logger.error("❌ Data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
 def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
@@ -473,7 +473,7 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
     consecutive_formatversions = determine_consecutive_formatversions(input_dir)
 
     if not consecutive_formatversions:
-        logger.warning("⚠️ no valid consecutive formatversion subdirectories found to compare")
+        logger.warning("❗️ No valid consecutive formatversion subdirectories found to compare.")
         return
 
     for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
@@ -489,7 +489,7 @@ def process_ahb_data(input_dir: Path, output_dir: Path) -> None:
             )
         except (OSError, pd.errors.EmptyDataError, ValueError) as e:
             logger.error(
-                "❌ error processing formatversions %s -> %s: %s",
+                "❌ Error processing formatversions %s -> %s: %s",
                 subsequent_formatversion,
                 previous_formatversion,
                 str(e),

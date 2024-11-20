@@ -24,9 +24,9 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 @app.command()
 def main(
     input_dir: Optional[Path] = typer.Option(
-        None, help="directory containing AHB data, defaults to data/machine-readable_anwendungshandbuecher"
+        None, help="Directory containing AHB data, defaults to data/machine-readable_anwendungshandbuecher."
     ),
-    output_dir: Path = typer.Option(..., help="destination path to output directory containing processed files"),
+    output_dir: Path = typer.Option(..., help="Destination path to output directory containing processed files."),
 ) -> None:
     """
     main entrypoint for AHlBatross.
@@ -34,11 +34,11 @@ def main(
     try:
         root_dir = input_dir if input_dir else RELATIVE_PATH_TO_SUBMODULE
         if not root_dir.exists():
-            _logger.error("❌ input directory does not exist: %s", root_dir.absolute())
+            _logger.error("❌ Input directory does not exist: %s", root_dir.absolute())
             sys.exit(1)
         process_ahb_data(root_dir, output_dir)
     except (OSError, pd.errors.EmptyDataError, ValueError) as _:
-        _logger.exception("❌ error processing AHB files")
+        _logger.exception("❌ Error processing AHB files.")
         sys.exit(1)
 
 

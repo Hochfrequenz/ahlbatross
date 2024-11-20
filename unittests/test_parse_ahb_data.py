@@ -116,7 +116,7 @@ def test_cli_with_custom_input_directory(tmp_path: Path, caplog: pytest.LogCaptu
     result = runner.invoke(app, ["--input-dir", str(input_dir), "--output-dir", str(tmp_path)], catch_exceptions=False)
 
     assert result.exit_code == 0
-    assert "no valid consecutive formatversion subdirectories found to compare" in caplog.text
+    assert "No valid consecutive formatversion subdirectories found to compare." in caplog.text
 
 
 def test_cli_with_invalid_input_directory(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
@@ -130,6 +130,6 @@ def test_cli_with_invalid_input_directory(tmp_path: Path, caplog: pytest.LogCapt
         app, ["--input-dir", str(invalid_dir), "--output-dir", str(tmp_path)], catch_exceptions=False
     )
 
-    assert "❌ input directory does not exist:" in caplog.text
+    assert "❌ Input directory does not exist:" in caplog.text
     assert str(invalid_dir) in caplog.text
     assert result.exit_code == 1
