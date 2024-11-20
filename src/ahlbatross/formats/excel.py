@@ -2,13 +2,12 @@
 contains excel export logic
 """
 
-import logging
 from pathlib import Path
 
 import pandas as pd
 from pandas import DataFrame
 
-logger = logging.getLogger(__name__)
+from ahlbatross.logger import logger
 
 
 # pylint:disable=too-many-branches, too-many-locals, too-many-statements

@@ -2,8 +2,6 @@
 AHB data fetching and parsing as well as csv imports, processing and exports.
 """
 
-import logging
-import sys
 from pathlib import Path
 from typing import Any, TypeAlias
 
@@ -13,10 +11,8 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
 from ahlbatross.formats.csv import _get_csv_content, _get_pruefid_files
 from ahlbatross.formats.excel import export_to_excel
-from ahlbatross.utils import parse_formatversions, normalize
-
-logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
-logger = logging.getLogger(__name__)
+from ahlbatross.logger import logger
+from ahlbatross.utils import normalize, parse_formatversions
 
 XlsxFormat: TypeAlias = Format
 
