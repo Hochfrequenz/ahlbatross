@@ -3,6 +3,7 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 """
 
 import logging
+import re
 import sys
 from pathlib import Path
 from typing import Any, Tuple, TypeAlias
@@ -183,6 +184,15 @@ def create_row(
     return row
 
 
+def normalize(value: str | None) -> str:
+    """
+    normalizes strings like `Segmentname` values by removing all whitespaces, tabs, newlines, etc.
+    """
+    if value is None:
+        return ""
+    return re.sub(r"\s+", "", value)
+
+
 # pylint:disable=too-many-branches, too-many-statements
 def align_columns(
     previous_pruefid: DataFrame,
@@ -285,11 +295,11 @@ def align_columns(
 
     # normalize `Segmentname` columns values by removing any whitespace
     segments_of_previous_formatversion_normalized = [
-        s.replace(" ", "") if isinstance(s, str) else s
+        normalize(s) if isinstance(s, str) else s
         for s in df_of_previous_formatversion[f"Segmentname_{previous_formatversion}"].tolist()
     ]
     segments_of_subsequent_formatversion_normalized = [
-        s.replace(" ", "") if isinstance(s, str) else s
+        normalize(s) if isinstance(s, str) else s
         for s in df_of_subsequent_formatversion[f"Segmentname_{subsequent_formatversion}"].tolist()
     ]
 
