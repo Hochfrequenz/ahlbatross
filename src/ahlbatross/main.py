@@ -24,23 +24,6 @@ DEFAULT_OUTPUT_DIR = Path("data/output")
 XlsxFormat: TypeAlias = Format
 
 
-def _find_ahb_data_root() -> Path:
-    """
-    to find the root directory containing machine-readable-AHB data, check both
-    (1) the submodule at ./data/machine-readable-anwendungshandbücher &
-    (2) the project root in case `ahlbatross` is run in workflows of the machine-readable-AHBs GitHub CI action.
-    """
-    possible_paths = [Path("data/machine-readable_anwendungshandbuecher"), Path(".")]
-
-    for path in possible_paths:
-        if path.exists() and any(
-            d.name.startswith("FV") and len(d.name) == 6 and d.name != "diff" for d in path.iterdir() if d.is_dir()
-        ):
-            return path
-
-    raise ValueError("❌ no machine-readable-AHB data found.")
-
-
 def _get_available_formatversions(root_dir: Path) -> list[str]:
     """
     get all available <formatversion> directories, sorted from latest to oldest.
@@ -483,19 +466,14 @@ def _process_files(
             logger.error("❌ data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
-def _process_submodule(output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
+def process_ahb_data(input_dir: Path, output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
     """
     processes all valid consecutive <formatversion> subdirectories.
     """
-    try:
-        root_dir = _find_ahb_data_root()
-        logger.info("Found AHB root directory at: %s", root_dir.absolute())
-    except ValueError as e:
-        logger.error(str(e))
-        return
-
+    logger.info("Found AHB root directory at: %s", input_dir.absolute())
     logger.info("The output dir is %s", output_dir.absolute())
-    consecutive_formatversions = determine_consecutive_formatversions(root_dir)
+
+    consecutive_formatversions = determine_consecutive_formatversions(input_dir)
 
     if not consecutive_formatversions:
         logger.warning("⚠️ no valid consecutive formatversion subdirectories found to compare")
@@ -506,7 +484,7 @@ def _process_submodule(output_dir: Path = DEFAULT_OUTPUT_DIR) -> None:
             "⌛processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
         )
         try:
-            _process_files(root_dir, previous_formatversion, subsequent_formatversion, output_dir)
+            _process_files(input_dir, previous_formatversion, subsequent_formatversion, output_dir)
         except (OSError, pd.errors.EmptyDataError, ValueError) as e:
             logger.error(
                 "❌ error processing formatversions %s -> %s: %s",

@@ -11,7 +11,9 @@ import pandas as pd
 import typer
 from rich.console import Console
 
-from ahlbatross.main import DEFAULT_OUTPUT_DIR, _process_submodule
+from ahlbatross.main import DEFAULT_OUTPUT_DIR, process_ahb_data
+
+SUBMODULE = Path("data/machine-readable_anwendungshandbuecher")
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
 _logger = logging.getLogger(__name__)
@@ -20,14 +22,23 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 
 
 @app.command()
-def main(output_dir: Optional[Path] = None) -> None:
+def main(
+    input_dir: Optional[Path] = typer.Option(
+        None, help="directory containing AHB data, defaults to data/machine-readable_anwendungshandbuecher"
+    ),
+    output_dir: Optional[Path] = typer.Option(None, help="directory for output files"),
+) -> None:
     """
     main entrypoint for AHlBatross.
     """
     try:
-        _process_submodule(output_dir or DEFAULT_OUTPUT_DIR)
+        root_dir = input_dir if input_dir else SUBMODULE
+        if not root_dir.exists():
+            _logger.error("❌ input directory does not exist: %s", root_dir)
+            sys.exit(1)
+        process_ahb_data(root_dir, output_dir or DEFAULT_OUTPUT_DIR)
     except (OSError, pd.errors.EmptyDataError, ValueError) as e:
-        _logger.error("❌error processing AHB files: %s", str(e))
+        _logger.error("❌ error processing AHB files: %s", str(e))
         sys.exit(1)
 
 
