@@ -1,10 +1,14 @@
+import logging
 import os
 import tempfile
 from pathlib import Path
 
 import pandas as pd
+import pytest
 from pandas.testing import assert_frame_equal
+from typer.testing import CliRunner
 
+from ahlbatross.cli import app
 from ahlbatross.excel import export_to_excel
 from ahlbatross.main import align_columns
 
@@ -62,3 +66,29 @@ def test_empty_dataframe_export() -> None:
 
         assert os.path.exists(xlsx_path)
         assert os.path.getsize(xlsx_path) > 0
+
+
+def test_cli_with_custom_output_directory(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
+    """
+    test CLI handling of custom --output-dir.
+    """
+    caplog.set_level(logging.INFO)
+
+    input_dir = tmp_path / "input"
+    input_dir.mkdir()
+    fv_dir = input_dir / "FV2504" / "Nachrichtenformat_1"
+    fv_dir.mkdir(parents=True)
+    csv_dir = fv_dir / "csv"
+    csv_dir.mkdir()
+    (csv_dir / "test.csv").write_text("test data")
+
+    output_dir = tmp_path / "custom_output"
+    output_dir.mkdir()
+
+    runner = CliRunner()
+    result = runner.invoke(
+        app, ["--input-dir", str(input_dir), "--output-dir", str(output_dir)], catch_exceptions=False
+    )
+
+    assert result.exit_code == 0
+    assert str(output_dir.absolute()) in caplog.text
