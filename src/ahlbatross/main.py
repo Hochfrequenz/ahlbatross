@@ -3,6 +3,7 @@ AHB data fetching and parsing as well as csv imports, processing and exports.
 """
 
 import logging
+import re
 import sys
 from pathlib import Path
 from typing import Any, Tuple, TypeAlias
@@ -183,6 +184,15 @@ def create_row(
     return row
 
 
+def normalize(value: str | None) -> str:
+    """
+    normalizes strings like `Segmentname` values by removing all whitespaces, tabs, newlines, etc.
+    """
+    if value is None:
+        return ""
+    return re.sub(r"\s+", "", value)
+
+
 # pylint:disable=too-many-branches, too-many-statements
 def align_columns(
     previous_pruefid: DataFrame,
@@ -192,6 +202,7 @@ def align_columns(
 ) -> DataFrame:
     """
     aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
+    during comparison, whitespaces are removed while preserving original values for the output.
     """
 
     default_column_order = [
@@ -282,6 +293,17 @@ def align_columns(
         result_df = pd.DataFrame(result_rows)
         return result_df[column_order]
 
+    # normalize `Segmentname` columns values by removing any whitespace
+    segments_of_previous_formatversion_normalized = [
+        normalize(s) if isinstance(s, str) else s
+        for s in df_of_previous_formatversion[f"Segmentname_{previous_formatversion}"].tolist()
+    ]
+    segments_of_subsequent_formatversion_normalized = [
+        normalize(s) if isinstance(s, str) else s
+        for s in df_of_subsequent_formatversion[f"Segmentname_{subsequent_formatversion}"].tolist()
+    ]
+
+    # keep original `Segmentname` values for output
     segments_of_previous_formatversion = df_of_previous_formatversion[f"Segmentname_{previous_formatversion}"].tolist()
     segments_of_subsequent_formatversion = df_of_subsequent_formatversion[
         f"Segmentname_{subsequent_formatversion}"
@@ -317,7 +339,7 @@ def align_columns(
             row["changed_entries"] = ""
             result_rows.append(row)
             i += 1
-        elif segments_of_previous_formatversion[i] == segments_of_subsequent_formatversion[j]:
+        elif segments_of_previous_formatversion_normalized[i] == segments_of_subsequent_formatversion_normalized[j]:
             row = create_row(
                 previous_df=df_of_previous_formatversion,
                 subsequent_df=df_of_subsequent_formatversion,
@@ -341,8 +363,8 @@ def align_columns(
                 prev_val = str(df_of_previous_formatversion.iloc[i][col])
                 subs_val = str(df_of_subsequent_formatversion.iloc[j][col])
 
-                # only consider cells/entries that are not empty for both formatversions.
-                if prev_val.strip() and subs_val.strip() and prev_val != subs_val:
+                # consider a change when (1) at least one value is non-empty AND (2) the values are different
+                if (prev_val.strip() or subs_val.strip()) and prev_val != subs_val:
                     has_changes = True
                     changed_entries.extend([f"{col}_{previous_formatversion}", f"{col}_{subsequent_formatversion}"])
 
@@ -354,19 +376,27 @@ def align_columns(
         else:
             try:
                 # try to find next matching value.
-                next_match = segments_of_subsequent_formatversion[j:].index(segments_of_previous_formatversion[i])
-                for k in range(next_match):
-                    row = create_row(
-                        previous_df=df_of_previous_formatversion,
-                        subsequent_df=df_of_subsequent_formatversion,
-                        j=j + k,
-                        previous_formatversion=previous_formatversion,
-                        subsequent_formatversion=subsequent_formatversion,
-                    )
-                    row["Änderung"] = "NEU"
-                    row["changed_entries"] = ""
-                    result_rows.append(row)
-                j += next_match
+                next_match = -1
+                for k, subsequent_value in enumerate(segments_of_subsequent_formatversion_normalized[j:], start=j):
+                    if subsequent_value == segments_of_previous_formatversion_normalized[i]:
+                        next_match = k - j
+                        break
+
+                if next_match >= 0:
+                    for k in range(next_match):
+                        row = create_row(
+                            previous_df=df_of_previous_formatversion,
+                            subsequent_df=df_of_subsequent_formatversion,
+                            j=j + k,
+                            previous_formatversion=previous_formatversion,
+                            subsequent_formatversion=subsequent_formatversion,
+                        )
+                        row["Änderung"] = "NEU"
+                        row["changed_entries"] = ""
+                        result_rows.append(row)
+                    j += next_match
+                else:
+                    raise ValueError("no match found.")
             except ValueError:
                 # no match found: add old value and empty new cell.
                 row = create_row(
