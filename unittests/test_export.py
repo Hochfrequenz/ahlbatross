@@ -8,7 +8,7 @@ import pytest
 from pandas.testing import assert_frame_equal
 from typer.testing import CliRunner
 
-from ahlbatross.cli import app
+from ahlbatross.main import app
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.core import align_columns
 

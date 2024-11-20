@@ -49,8 +49,6 @@ def main(
 
 def cli() -> None:
     """entry point of the script defined in pyproject.toml"""
-    # ⚠ If you ever change the name of this module (cli.py) or this function (def cli), be
-    # sure to update pyproject.toml
     app()
 
 

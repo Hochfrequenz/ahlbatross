@@ -27,7 +27,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.scripts]
-ahlbatross = "ahlbatross.cli:cli"
+ahlbatross = "ahlbatross.main:cli"
 
 [project.urls]
 Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"

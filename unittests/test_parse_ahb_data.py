@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from typer.testing import CliRunner
 
-from ahlbatross.cli import app
+from ahlbatross.main import app
 from ahlbatross.utils import parse_formatversions
 from ahlbatross.core import determine_consecutive_formatversions, get_matching_pruefid_files
 
