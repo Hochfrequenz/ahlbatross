@@ -1,5 +1,5 @@
 """
-entrypoint for typer and the command line interface.
+Entrypoint for typer and the command line interface.
 """
 
 import sys
@@ -24,7 +24,7 @@ def main(
     ),
 ) -> None:
     """
-    main entrypoint for AHlBatross.
+    Main entrypoint for AHlBatross.
     """
     try:
         if not input_dir.exists():
@@ -46,7 +46,9 @@ def main(
 
 
 def cli() -> None:
-    """entry point of the script defined in pyproject.toml"""
+    """
+    Entry point of the script defined in pyproject.toml
+    """
     app()
 
 
