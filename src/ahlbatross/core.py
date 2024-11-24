@@ -19,14 +19,14 @@ XlsxFormat: TypeAlias = Format
 
 def _is_formatversion_dir(path: Path) -> bool:
     """
-    confirm if path is a <formatversion> directory - for instance "FV2504/".
+    Confirm if path is a <formatversion> directory - for instance "FV2504/".
     """
     return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
 
 
 def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
     """
-    check if a <formatversion> directory does not contain any <nachrichtenformat> directories.
+    Check if a <formatversion> directory does not contain any <nachrichtenformat> directories.
     """
     formatversion_dir = root_dir / formatversion
     if not formatversion_dir.exists():
@@ -37,7 +37,7 @@ def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
 
 def _get_formatversion_dirs(root_dir: Path) -> list[str]:
     """
-    fetch all available <formatversion> directories, sorted from latest to oldest.
+    Fetch all available <formatversion> directories, sorted from latest to oldest.
     """
     if not root_dir.exists():
         raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
@@ -49,7 +49,7 @@ def _get_formatversion_dirs(root_dir: Path) -> list[str]:
 
 def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     """
-    fetch all <nachrichtenformat> directories that contain actual csv files.
+    Fetch all <nachrichtenformat> directories that contain actual csv files.
     """
     if not formatversion_dir.exists():
         raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
@@ -59,7 +59,7 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
 
 def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
     """
-    generate pairs of consecutive <formatversion> directories.
+    Generate pairs of consecutive <formatversion> directories.
     """
     formatversion_list = _get_formatversion_dirs(root_dir)
     formatversion_pairs = []
@@ -89,7 +89,7 @@ def get_matching_csv_files(
     root_dir: Path, previous_formatversion: str, subsequent_formatversion: str
 ) -> list[tuple[Path, Path, str, str]]:
     """
-    find matching <pruefid>.csv files across <formatversion>/<nachrichtenformat> directories.
+    Find matching <pruefid>.csv files across <formatversion>/<nachrichtenformat> directories.
     """
     previous_formatversion_dir = root_dir / previous_formatversion
     subsequent_formatversion_dir = root_dir / subsequent_formatversion
@@ -133,7 +133,7 @@ def _populate_row_entries(
     is_segmentname: bool = True,
 ) -> None:
     """
-    populate row entries for a given dataframe segment.
+    Populate row entries for a given dataframe segment.
     """
     if df is not None and idx is not None:
         segmentname_col = f"Segmentname_{formatversion}"
@@ -156,7 +156,7 @@ def create_row(
     subsequent_formatversion: str = "",
 ) -> dict[str, Any]:
     """
-    fills rows for all columns that belong to one dataframe depending on whether previous/subsequent segments exist.
+    Fills rows for all columns that belong to one dataframe depending on whether previous/subsequent segments exist.
     """
     row = {f"Segmentname_{previous_formatversion}": "", "Änderung": "", f"Segmentname_{subsequent_formatversion}": ""}
 
@@ -187,8 +187,8 @@ def align_columns(
     subsequent_formatversion: str,
 ) -> DataFrame:
     """
-    aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
-    during comparison, whitespaces are removed while preserving original values for the output.
+    Aligns `Segmentname` columns by adding empty cells each time the cell values do not match.
+    During comparison, whitespaces are removed while preserving original values for the output.
     """
 
     default_column_order = [
@@ -204,7 +204,7 @@ def align_columns(
         "Bedingung",
     ]
 
-    # get all unique columns from both dataframes.
+    # get all unique columns from both dataframes
     all_columns = set(previous_pruefid.columns) | set(subsequent_pruefid.columns)
 
     columns_without_segmentname = []
@@ -222,7 +222,7 @@ def align_columns(
         if col not in subsequent_pruefid.columns:
             subsequent_pruefid[col] = ""
 
-    # add corresponding formatversions as suffixes to columns.
+    # add corresponding formatversions as suffixes to columns
     df_of_previous_formatversion = previous_pruefid.copy()
     df_of_subsequent_formatversion = subsequent_pruefid.copy()
 
@@ -299,7 +299,7 @@ def align_columns(
     i = 0
     j = 0
 
-    # iterate through both lists until reaching their ends.
+    # iterate through both lists until reaching their ends
     while i < len(segments_of_previous_formatversion) or j < len(segments_of_subsequent_formatversion):
         if i >= len(segments_of_previous_formatversion):
             row = create_row(
@@ -335,14 +335,14 @@ def align_columns(
                 subsequent_formatversion=subsequent_formatversion,
             )
 
-            # check for changes within one row.
+            # check for changes within one row
             changed_entries = []
             has_changes = False
 
-            # compare all columns except `Segmentname`.
+            # compare all columns except `Segmentname`
             for col in columns_without_segmentname:
-                # prevent "Unnamed" columns from being flagged with the "ÄNDERUNG" label.
-                # "Unnamed" columns purpose is only to index through the rows (hidden in the XLSX output).
+                # prevent "Unnamed" columns from being flagged with the "ÄNDERUNG" label
+                # "unnamed" columns purpose is only to index through the rows (hidden in the XLSX output)
                 if col.startswith("Unnamed:"):
                     continue
 
@@ -361,7 +361,7 @@ def align_columns(
             j += 1
         else:
             try:
-                # try to find next matching value.
+                # try to find next matching value
                 next_match = -1
                 for k, subsequent_value in enumerate(segments_of_subsequent_formatversion_normalized[j:], start=j):
                     if subsequent_value == segments_of_previous_formatversion_normalized[i]:
@@ -384,7 +384,7 @@ def align_columns(
                 else:
                     raise ValueError("no match found.")
             except ValueError:
-                # no match found: add old value and empty new cell.
+                # no match found: add old value and empty new cell
                 row = create_row(
                     previous_df=df_of_previous_formatversion,
                     subsequent_df=df_of_subsequent_formatversion,
@@ -397,7 +397,7 @@ def align_columns(
                 result_rows.append(row)
                 i += 1
 
-    # create dataframe with NaN being replaced by empty strings.
+    # create dataframe with NaN being replaced by empty strings
     result_df = pd.DataFrame(result_rows).astype(str).replace("nan", "")
     return result_df[column_order]
 
@@ -406,7 +406,7 @@ def _process_files(
     root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path
 ) -> None:
     """
-    process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
+    Process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
     """
     matching_files = get_matching_csv_files(root_dir, previous_formatversion, subsequent_formatversion)
 
@@ -451,7 +451,7 @@ def _process_files(
 
 def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
     """
-    processes subdirectories of all valid consecutive <formatversion> pairs.
+    Processes subdirectories of all valid consecutive <formatversion> pairs.
     """
     logger.info("Found AHB root directory at: %s", input_dir.absolute())
     logger.info("Output directory: %s", output_dir.absolute())

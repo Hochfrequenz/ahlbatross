@@ -1,5 +1,5 @@
 """
-logger instance for ahlbatross.
+Logger instance for ahlbatross.
 """
 
 import logging.config

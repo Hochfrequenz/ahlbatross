@@ -25,7 +25,7 @@ class AhbRow(AhbLine):
     (9) conditions == "Bedingung" (e.g. "[2] Wenn SG7 STS+Z06+Z10+ZC1 vorhanden.")
     """
 
-    format_version: str = Field(..., description="Formatversion of an AHB (suffix for properties (1)-(9)).")
+    format_version: str = Field(..., description="Formatversion of an AHB: suffix for properties (1)-(9).")
 
 
 class AhbRowDiff(BaseModel):
@@ -47,7 +47,6 @@ class AhbRowComparison(BaseModel):
     Output table assembly.
     """
 
-    index: int = Field(description="Indexing through rows according to segment appearances in the original AHB.", ge=0)
     previous_formatversion: AhbRow
     diff: AhbRowDiff
     subsequent_formatversion: AhbRow

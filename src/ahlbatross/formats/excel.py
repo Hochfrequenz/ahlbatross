@@ -1,5 +1,5 @@
 """
-contains excel export logic.
+Contains excel export logic.
 """
 
 from pathlib import Path
@@ -13,18 +13,18 @@ from ahlbatross.logger import logger
 # pylint:disable=too-many-branches, too-many-locals, too-many-statements
 def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
     """
-    exports the merged dataframe to .xlsx with highlighted differences.
+    Exports the merged dataframe to .xlsx with highlighted differences.
     """
     sheet_name = Path(output_path_xlsx).stem  # excel sheet name = <pruefid>
 
-    # add column for indexing through all rows.
+    # add column for indexing through all rows
     df = df.reset_index()
     df["index"] = df["index"] + 1
     df = df.rename(columns={"index": "#"})
 
     changed_entries_series = df["changed_entries"] if "changed_entries" in df.columns else pd.Series([""] * len(df))
 
-    # remove duplicate columns that index through the rows.
+    # remove duplicate columns that index through the rows
     df_filtered = df[[col for col in df.columns if not col.startswith("Unnamed:") and col != "changed_entries"]]
 
     with pd.ExcelWriter(output_path_xlsx, engine="xlsxwriter") as writer:
@@ -42,13 +42,13 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             }
             worksheet.add_table(0, 0, len(df_filtered), len(df_filtered.columns) - 1, table_options)
 
-        # base formatting.
+        # base formatting
         header_format = workbook.add_format(
             {"bold": True, "bg_color": "#D9D9D9", "border": 1, "align": "center", "text_wrap": True}
         )
         base_format = workbook.add_format({"border": 1, "text_wrap": True})
 
-        # formatting highlighted/changed cells.
+        # formatting highlighted/changed cells
         diff_formats = {
             "NEU": workbook.add_format({"bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
             "ENTFÄLLT": workbook.add_format({"bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
@@ -57,7 +57,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             "": workbook.add_format({"border": 1, "text_wrap": True}),
         }
 
-        # applies bold font to `Segmentname` entries every time the value changes.
+        # applies bold font to `Segmentname` entries every time the value changes
         highlight_segmentname = {
             "NEU": workbook.add_format({"bold": True, "bg_color": "#C6EFCE", "border": 1, "text_wrap": True}),
             "ENTFÄLLT": workbook.add_format({"bold": True, "bg_color": "#FFC7CE", "border": 1, "text_wrap": True}),
@@ -68,7 +68,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
             "": workbook.add_format({"bold": True, "border": 1, "text_wrap": True}),
         }
 
-        # formatting 'Änderung' column.
+        # formatting 'Änderung' column
         diff_text_formats = {
             "NEU": workbook.add_format(
                 {
@@ -130,7 +130,7 @@ def export_to_excel(df: DataFrame, output_path_xlsx: str) -> None:
                 if changed_entries_value != "nan":
                     changed_entries = changed_entries_value.split("|")
 
-            # check if current `Segmentname` changed.
+            # check if current `Segmentname` changed
             current_segmentname = None
             for col_name in df_filtered.columns:
                 if col_name.startswith("Segmentname_"):

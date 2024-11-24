@@ -13,4 +13,4 @@ class DiffType(StrEnum):
     UNCHANGED = ""
     MODIFIED = "ÄNDERUNG"
     REMOVED = "ENTFÄLLT"
-    NEW = "NEU"
+    ADDED = "NEU"
