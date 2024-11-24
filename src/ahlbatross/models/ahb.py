@@ -2,12 +2,24 @@
 Classes that are used to compare AHBs between two formatversions row by row and assemble the output table.
 """
 
-from typing import List
+from dataclasses import dataclass
+from typing import List, Optional
 
 from kohlrahbi.models.anwendungshandbuch import AhbLine
 from pydantic import BaseModel, Field
 
 from ahlbatross.enums.diff_types import DiffType
+
+
+@dataclass(frozen=True)
+class AhbRowKey:
+    """
+    Business key to identify corresponding AhbRow's between formatversions.
+    """
+
+    segment_group_key: Optional[str]
+    segment_code: Optional[str]
+    data_element: Optional[str]
 
 
 class AhbRow(AhbLine):
@@ -26,6 +38,14 @@ class AhbRow(AhbLine):
     """
 
     format_version: str = Field(..., description="Formatversion of an AHB: suffix for properties (1)-(9).")
+
+    def get_key(self) -> AhbRowKey:
+        """
+        Returns the business key to identify rows.
+        """
+        return AhbRowKey(
+            segment_group_key=self.segment_group_key, segment_code=self.segment_code, data_element=self.data_element
+        )
 
 
 class AhbRowDiff(BaseModel):
@@ -50,3 +70,10 @@ class AhbRowComparison(BaseModel):
     previous_formatversion: AhbRow
     diff: AhbRowDiff
     subsequent_formatversion: AhbRow
+
+    @property
+    def key(self) -> AhbRowKey:
+        """
+        Returns the business key for a given AhbRowComparison (previous_FV key should be equivalent to subsequent_FV).
+        """
+        return self.previous_formatversion.get_key()
