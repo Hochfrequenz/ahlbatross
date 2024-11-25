@@ -13,7 +13,6 @@ updates:
       prefix: "build(deps): "
     reviewers:
       - "OLILHR"
-      - "@Hochfrequenz/python-developers-review-team"
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
