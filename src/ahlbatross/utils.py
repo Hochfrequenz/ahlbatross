@@ -1,5 +1,5 @@
 """
-utility functions.
+Utility functions.
 """
 
 import re
@@ -8,7 +8,7 @@ from typing import Tuple
 
 def normalize_entries(value: str | None) -> str:
     """
-    normalizes strings of AHB parameters like `Segmentname` by removing all whitespaces, tabs, newlines, etc.
+    Normalizes strings of AHB parameters like `Segmentname` by removing all whitespaces, tabs, newlines, etc.
     """
     if value is None:
         return ""
@@ -17,7 +17,7 @@ def normalize_entries(value: str | None) -> str:
 
 def parse_formatversions(formatversion: str) -> Tuple[int, int]:
     """
-    parses <formatversion> strings (e.g., "FV2504") into year and month.
+    Parses <formatversion> strings (e.g., "FV2504") into year and month.
     """
     if not formatversion.startswith("FV") or len(formatversion) != 6:
         raise ValueError(f"invalid formatversion: {formatversion}")
