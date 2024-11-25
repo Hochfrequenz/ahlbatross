@@ -8,7 +8,7 @@ from pathlib import Path
 import typer
 from rich.console import Console
 
-from ahlbatross.core.core import process_ahb_files
+from ahlbatross.core.ahb_processing import process_ahb_files
 from ahlbatross.logger import logger
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
