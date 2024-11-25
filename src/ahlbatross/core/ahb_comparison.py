@@ -1,128 +1,15 @@
 """
-AHB data fetching and parsing as well as csv imports, processing and exports.
+AHB csv comparison logic.
 """
 
-from pathlib import Path
-from typing import Any, TypeAlias
+from typing import Any, List, Tuple
 
 import pandas as pd
 from pandas.core.frame import DataFrame
-from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
-from ahlbatross.formats.excel import export_to_excel
-from ahlbatross.logger import logger
-from ahlbatross.utils import normalize_entries, parse_formatversions
-
-XlsxFormat: TypeAlias = Format
-
-
-def _is_formatversion_dir(path: Path) -> bool:
-    """
-    Confirm if path is a <formatversion> directory - for instance "FV2504/".
-    """
-    return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
-
-
-def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
-    """
-    Check if a <formatversion> directory does not contain any <nachrichtenformat> directories.
-    """
-    formatversion_dir = root_dir / formatversion
-    if not formatversion_dir.exists():
-        return True
-
-    return len(_get_nachrichtenformat_dirs(formatversion_dir)) == 0
-
-
-def _get_formatversion_dirs(root_dir: Path) -> list[str]:
-    """
-    Fetch all available <formatversion> directories, sorted from latest to oldest.
-    """
-    if not root_dir.exists():
-        raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
-
-    formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
-    formatversion_dirs.sort(key=parse_formatversions, reverse=True)
-    return formatversion_dirs
-
-
-def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
-    """
-    Fetch all <nachrichtenformat> directories that contain actual csv files.
-    """
-    if not formatversion_dir.exists():
-        raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
-
-    return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
-
-
-def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
-    """
-    Generate pairs of consecutive <formatversion> directories.
-    """
-    formatversion_list = _get_formatversion_dirs(root_dir)
-    formatversion_pairs = []
-
-    for i in range(len(formatversion_list) - 1):
-        subsequent_formatversion = formatversion_list[i]
-        previous_formatversion = formatversion_list[i + 1]
-
-        # skip if at least one <formatversion> directory is empty.
-        if _is_formatversion_dir_empty(root_dir, subsequent_formatversion) or _is_formatversion_dir_empty(
-            root_dir, previous_formatversion
-        ):
-            logger.warning(
-                "❗️Skipping empty consecutive formatversions: %s -> %s",
-                subsequent_formatversion,
-                previous_formatversion,
-            )
-            continue
-
-        formatversion_pairs.append((subsequent_formatversion, previous_formatversion))
-
-    return formatversion_pairs
-
-
-# pylint:disable=too-many-locals
-def get_matching_csv_files(
-    root_dir: Path, previous_formatversion: str, subsequent_formatversion: str
-) -> list[tuple[Path, Path, str, str]]:
-    """
-    Find matching <pruefid>.csv files across <formatversion>/<nachrichtenformat> directories.
-    """
-    previous_formatversion_dir = root_dir / previous_formatversion
-    subsequent_formatversion_dir = root_dir / subsequent_formatversion
-
-    if not all(d.exists() for d in [previous_formatversion_dir, subsequent_formatversion_dir]):
-        logger.error("❌ At least one formatversion directory does not exist.")
-        return []
-
-    matching_files = []
-
-    previous_nachrichtenformat_dirs = _get_nachrichtenformat_dirs(previous_formatversion_dir)
-    subsequent_nachrichtenformat_dirs = _get_nachrichtenformat_dirs(subsequent_formatversion_dir)
-
-    previous_nachrichtenformat_names = {d.name: d for d in previous_nachrichtenformat_dirs}
-    subsequent_nachrichtenformat_names = {d.name: d for d in subsequent_nachrichtenformat_dirs}
-
-    common_nachrichtentyp = set(previous_nachrichtenformat_names.keys()) & set(
-        subsequent_nachrichtenformat_names.keys()
-    )
-
-    for nachrichtentyp in sorted(common_nachrichtentyp):
-        previous_csv_dir = previous_nachrichtenformat_names[nachrichtentyp] / "csv"
-        subsequent_csv_dir = subsequent_nachrichtenformat_names[nachrichtentyp] / "csv"
-
-        previous_files = {f.stem: f for f in get_csv_files(previous_csv_dir)}
-        subsequent_files = {f.stem: f for f in get_csv_files(subsequent_csv_dir)}
-
-        common_ahbs = set(previous_files.keys()) & set(subsequent_files.keys())
-
-        for pruefid in sorted(common_ahbs):
-            matching_files.append((previous_files[pruefid], subsequent_files[pruefid], nachrichtentyp, pruefid))
-
-    return matching_files
+from ahlbatross.enums.diff_types import DiffType
+from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
+from ahlbatross.utils.formatting import normalize_entries
 
 
 def _populate_row_entries(
@@ -179,7 +66,7 @@ def create_row(
     return row
 
 
-# pylint:disable=too-many-branches, too-many-statements
+# pylint:disable=too-many-branches, too-many-statements, too-many-locals
 def align_columns(
     previous_pruefid: DataFrame,
     subsequent_pruefid: DataFrame,
@@ -402,82 +289,139 @@ def align_columns(
     return result_df[column_order]
 
 
-def _process_files(
-    root_dir: Path, previous_formatversion: str, subsequent_formatversion: str, output_dir: Path
-) -> None:
+def compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> AhbRowDiff:
     """
-    Process all matching ahb/<pruefid>.csv files between two <formatversion> directories.
+    Compare two AhbRow objects to identify changes.
     """
-    matching_files = get_matching_csv_files(root_dir, previous_formatversion, subsequent_formatversion)
+    changed_entries = []
 
-    if not matching_files:
-        logger.warning("No matching files found to compare")
-        return
+    # consider all AHB properties except `section_name` (Segmentname) and `formatversion`
+    ahb_properties = [
+        "segment_group_key",
+        "segment_code",
+        "data_element",
+        "segment_id",
+        "value_pool_entry",
+        "name",
+        "ahb_expression",
+        "conditions",
+    ]
 
-    output_base = output_dir / f"{subsequent_formatversion}_{previous_formatversion}"
+    for entry in ahb_properties:
+        previous_ahb_entry = getattr(previous_ahb_row, entry, "") or ""
+        subsequent_ahb_entry = getattr(subsequent_ahb_row, entry, "") or ""
 
-    for previous_pruefid, subsequent_pruefid, nachrichtentyp, pruefid in matching_files:
-        logger.info("Processing %s - %s", nachrichtentyp, pruefid)
-
-        try:
-            df_of_previous_formatversion, df_of_subsequent_formatversion = load_csv_dataframes(
-                previous_pruefid, subsequent_pruefid
+        if (previous_ahb_entry.strip() or subsequent_ahb_entry.strip()) and previous_ahb_entry != subsequent_ahb_entry:
+            changed_entries.extend(
+                [f"{entry}_{previous_ahb_row.formatversion}", f"{entry}_{subsequent_ahb_row.formatversion}"]
             )
-            merged_df = align_columns(
-                df_of_previous_formatversion,
-                df_of_subsequent_formatversion,
-                previous_formatversion,
-                subsequent_formatversion,
-            )
 
-            output_dir = output_base / nachrichtentyp
-            output_dir.mkdir(parents=True, exist_ok=True)
-
-            csv_path = output_dir / f"{pruefid}.csv"
-            xlsx_path = output_dir / f"{pruefid}.xlsx"
-
-            merged_df.to_csv(csv_path, index=False)
-            export_to_excel(merged_df, str(xlsx_path))
-
-            logger.info("✅ Successfully processed %s/%s", nachrichtentyp, pruefid)
-
-        except pd.errors.EmptyDataError:
-            logger.error("❌ Empty or corrupted CSV file for %s/%s", nachrichtentyp, pruefid)
-        except OSError as e:
-            logger.error("❌ File system error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
-        except ValueError as e:
-            logger.error("❌ Data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
+    return AhbRowDiff(
+        diff_type=DiffType.MODIFIED if changed_entries else DiffType.UNCHANGED, changed_entries=changed_entries
+    )
 
 
-def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
+def add_empty_row(formatversion: str) -> AhbRow:
     """
-    Processes subdirectories of all valid consecutive <formatversion> pairs.
+    Create an empty row.
     """
-    logger.info("Found AHB root directory at: %s", input_dir.absolute())
-    logger.info("Output directory: %s", output_dir.absolute())
+    return AhbRow(
+        formatversion=formatversion,
+        section_name="",
+        segment_group_key=None,
+        segment_code=None,
+        data_element=None,
+        segment_id=None,
+        value_pool_entry=None,
+        name=None,
+        ahb_expression=None,
+        conditions=None,
+    )
 
-    consecutive_formatversions = get_formatversion_pairs(input_dir)
 
-    if not consecutive_formatversions:
-        logger.warning("❗️ No valid consecutive formatversion subdirectories found to compare.")
-        return
+def find_matching_subsequent_row(
+    current_ahb_row: AhbRow, subsequent_ahb_rows: List[AhbRow], start_idx: int
+) -> Tuple[int, AhbRow | None]:
+    """
+    Find matching row in subsequent version starting from given index.
+    """
+    normalized_current = normalize_entries(current_ahb_row.section_name)
 
-    for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
-        logger.info(
-            "⌛ Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
-        )
-        try:
-            _process_files(
-                root_dir=input_dir,
-                previous_formatversion=previous_formatversion,
-                subsequent_formatversion=subsequent_formatversion,
-                output_dir=output_dir,
+    for idx, row in enumerate(subsequent_ahb_rows[start_idx:], start_idx):
+        if normalize_entries(row.section_name) == normalized_current:
+            return idx, row
+    return -1, None
+
+
+def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[AhbRow]) -> List[AhbRowComparison]:
+    """
+    Align AHB rows while comparing two formatversions.
+    """
+    result = []
+    i = 0
+    j = 0
+
+    while i < len(previous_ahb_rows) or j < len(subsequent_ahb_rows):
+        if i >= len(previous_ahb_rows):
+            row = subsequent_ahb_rows[j]
+            result.append(
+                AhbRowComparison(
+                    previous_formatversion=add_empty_row(row.formatversion),
+                    # label remaining rows of subsequent AHB as NEW
+                    diff=AhbRowDiff(diff_type=DiffType.ADDED),
+                    subsequent_formatversion=row,
+                )
             )
-        except (OSError, pd.errors.EmptyDataError, ValueError) as e:
-            logger.error(
-                "❌ Error processing formatversions %s -> %s: %s",
-                subsequent_formatversion,
-                previous_formatversion,
-                str(e),
+            j += 1
+
+        elif j >= len(subsequent_ahb_rows):
+            row = previous_ahb_rows[i]
+            result.append(
+                AhbRowComparison(
+                    previous_formatversion=row,
+                    # label remaining rows of previous AHB as REMOVED
+                    diff=AhbRowDiff(diff_type=DiffType.REMOVED),
+                    subsequent_formatversion=add_empty_row(row.formatversion),
+                )
             )
-            continue
+            i += 1
+
+        else:
+            current_row = previous_ahb_rows[i]
+            next_match_idx, matching_row = find_matching_subsequent_row(current_row, subsequent_ahb_rows, j)
+
+            if next_match_idx >= 0 and matching_row is not None:
+                # add new rows until `section_name` (Segmentname) matches
+                for k in range(j, next_match_idx):
+                    new_row = subsequent_ahb_rows[k]
+                    result.append(
+                        AhbRowComparison(
+                            previous_formatversion=add_empty_row(new_row.formatversion),
+                            diff=AhbRowDiff(diff_type=DiffType.ADDED),
+                            subsequent_formatversion=new_row,
+                        )
+                    )
+
+                # add matching rows with comparison
+                diff = compare_ahb_rows(current_row, matching_row)
+                result.append(
+                    AhbRowComparison(
+                        previous_formatversion=current_row, diff=diff, subsequent_formatversion=matching_row
+                    )
+                )
+
+                i += 1
+                j = next_match_idx + 1
+
+            else:
+                # if no match found - label as REMOVED
+                result.append(
+                    AhbRowComparison(
+                        previous_formatversion=current_row,
+                        diff=AhbRowDiff(diff_type=DiffType.REMOVED),
+                        subsequent_formatversion=add_empty_row(current_row.formatversion),
+                    )
+                )
+                i += 1
+
+    return result
