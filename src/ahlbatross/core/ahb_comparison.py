@@ -313,7 +313,7 @@ def compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> Ah
 
         if (previous_ahb_entry.strip() or subsequent_ahb_entry.strip()) and previous_ahb_entry != subsequent_ahb_entry:
             changed_entries.extend(
-                [f"{property}_{previous_ahb_row.formatversion}", f"{property}_{subsequent_ahb_row.formatversion}"]
+                [f"{entry}_{previous_ahb_row.formatversion}", f"{entry}_{subsequent_ahb_row.formatversion}"]
             )
 
     return AhbRowDiff(
