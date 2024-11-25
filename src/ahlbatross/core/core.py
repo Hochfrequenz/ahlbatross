@@ -12,7 +12,8 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
 from ahlbatross.formats.excel import export_to_excel
 from ahlbatross.logger import logger
-from ahlbatross.utils import normalize_entries, parse_formatversions
+from ahlbatross.utils.formatversion_parser import parse_formatversions
+from ahlbatross.utils.formatter import normalize_entries
 
 XlsxFormat: TypeAlias = Format
 
