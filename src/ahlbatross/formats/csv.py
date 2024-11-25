@@ -30,7 +30,7 @@ def get_csv_files(csv_dir: Path) -> list[Path]:
     return sorted(csv_dir.glob("*.csv"))
 
 
-def read_csv_content(file_path: Path, format_version: str) -> List[AhbRow]:
+def read_csv_content(file_path: Path, formatversion: str) -> List[AhbRow]:
     """
     Read and convert AHB csv content to AhbRow models.
     """
@@ -39,7 +39,7 @@ def read_csv_content(file_path: Path, format_version: str) -> List[AhbRow]:
         reader = csv.DictReader(csvfile)
         for row in reader:
             ahb_row = AhbRow(
-                format_version=format_version,
+                formatversion=formatversion,
                 section_name=row["Segmentname"],
                 segment_group_key=row.get("Segmentgruppe"),
                 segment_code=row.get("Segment"),

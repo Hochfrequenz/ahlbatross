@@ -37,7 +37,7 @@ class AhbRow(AhbLine):
     (9) conditions == "Bedingung" (e.g. "[2] Wenn SG7 STS+Z06+Z10+ZC1 vorhanden.")
     """
 
-    format_version: str = Field(..., description="Formatversion of an AHB: suffix for properties (1)-(9).")
+    formatversion: str = Field(..., description="Formatversion of an AHB: suffix for properties (1)-(9).")
 
     def get_key(self) -> AhbRowKey:
         """

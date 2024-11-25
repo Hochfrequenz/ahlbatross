@@ -48,7 +48,7 @@ def test_load_csv_files() -> None:
         assert previous_ahb_rows[0].name == "Description 1"
         assert previous_ahb_rows[0].ahb_expression == "Muss"
         assert previous_ahb_rows[0].conditions == "[1] Condition"
-        assert previous_ahb_rows[0].format_version == "FV2410"
+        assert previous_ahb_rows[0].formatversion == "FV2410"
 
         assert subsequent_ahb_rows[0].section_name == "Nachrichten-Kopfsegment"
         assert subsequent_ahb_rows[0].segment_group_key == "SG2"
@@ -59,7 +59,7 @@ def test_load_csv_files() -> None:
         assert subsequent_ahb_rows[0].name == "Description 2"
         assert subsequent_ahb_rows[0].ahb_expression == "Muss"
         assert subsequent_ahb_rows[0].conditions == "[2] Condition"
-        assert subsequent_ahb_rows[0].format_version == "FV2504"
+        assert subsequent_ahb_rows[0].formatversion == "FV2504"
 
 
 def test_load_empty_csv() -> None:
