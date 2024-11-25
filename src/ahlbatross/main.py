@@ -5,7 +5,6 @@ Entrypoint for typer and the command line interface.
 import sys
 from pathlib import Path
 
-import pandas as pd
 import typer
 from rich.console import Console
 
@@ -37,7 +36,7 @@ def main(
     except PermissionError as e:
         logger.error("❌ Permission denied: %s", str(e))
         sys.exit(1)
-    except (OSError, pd.errors.EmptyDataError, ValueError) as e:
+    except (OSError, ValueError, IOError) as e:
         logger.exception("❌ Error processing AHB files: %s", str(e))
         sys.exit(1)
     except (RuntimeError, TypeError, AttributeError) as e:

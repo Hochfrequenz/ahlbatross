@@ -441,12 +441,10 @@ def _process_files(
 
             logger.info("✅ Successfully processed %s/%s", nachrichtentyp, pruefid)
 
-        except pd.errors.EmptyDataError:
-            logger.error("❌ Empty or corrupted CSV file for %s/%s", nachrichtentyp, pruefid)
+        except (ValueError, EOFError) as e:
+            logger.error("❌ Empty or corrupted data file for %s/%s: %s", nachrichtentyp, pruefid, str(e))
         except OSError as e:
             logger.error("❌ File system error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
-        except ValueError as e:
-            logger.error("❌ Data processing error for %s/%s: %s", nachrichtentyp, pruefid, str(e))
 
 
 def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
@@ -473,7 +471,7 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
                 subsequent_formatversion=subsequent_formatversion,
                 output_dir=output_dir,
             )
-        except (OSError, pd.errors.EmptyDataError, ValueError) as e:
+        except (OSError, IOError, ValueError) as e:
             logger.error(
                 "❌ Error processing formatversions %s -> %s: %s",
                 subsequent_formatversion,
