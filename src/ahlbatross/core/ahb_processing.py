@@ -2,6 +2,7 @@
 AHB file handling as well as data fetching and parsing logic.
 """
 
+import logging
 from pathlib import Path
 from typing import TypeAlias
 
@@ -10,7 +11,8 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 from ahlbatross.core.ahb_comparison import align_columns
 from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
 from ahlbatross.formats.excel import export_to_excel
-from ahlbatross.logger import logger
+
+logger = logging.getLogger(__name__)
 from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 XlsxFormat: TypeAlias = Format

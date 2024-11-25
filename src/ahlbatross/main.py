@@ -2,6 +2,7 @@
 Entrypoint for typer and the command line interface.
 """
 
+import logging
 import sys
 from pathlib import Path
 
@@ -9,7 +10,8 @@ import typer
 from rich.console import Console
 
 from ahlbatross.core.ahb_processing import process_ahb_files
-from ahlbatross.logger import logger
+
+logger = logging.getLogger(__name__)
 
 app = typer.Typer(help="ahlbatross diffs machine-readable AHBs")
 err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printing/#printing-to-standard-error
