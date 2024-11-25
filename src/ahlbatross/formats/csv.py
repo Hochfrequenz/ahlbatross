@@ -57,7 +57,7 @@ def load_csv_files(
                 rows.append(ahb_row)
         return rows
 
-    previous_rows = read_csv_content(previous_ahb_path, previous_formatversion)
-    subsequent_rows = read_csv_content(subsequent_ahb_path, subsequent_formatversion)
+    previous_ahb_rows = read_csv_content(previous_ahb_path, previous_formatversion)
+    subsequent_ahb_rows = read_csv_content(subsequent_ahb_path, subsequent_formatversion)
 
-    return previous_rows, subsequent_rows
+    return previous_ahb_rows, subsequent_ahb_rows
