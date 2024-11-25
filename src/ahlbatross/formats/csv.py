@@ -30,32 +30,33 @@ def get_csv_files(csv_dir: Path) -> list[Path]:
     return sorted(csv_dir.glob("*.csv"))
 
 
+def read_csv_content(file_path: Path, format_version: str) -> List[AhbRow]:
+    rows = []
+    with open(file_path, "r", encoding="utf-8") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            ahb_row = AhbRow(
+                format_version=format_version,
+                section_name=row["Segmentname"],
+                segment_group_key=row.get("Segmentgruppe"),
+                segment_code=row.get("Segment"),
+                data_element=row.get("Datenelement"),
+                segment_id=row.get("Segment ID"),
+                value_pool_entry=row.get("Code") or row.get("Qualifier"),
+                name=row.get("Beschreibung"),
+                ahb_expression=row.get("Bedingungsausdruck"),
+                conditions=row.get("Bedingung"),
+            )
+            rows.append(ahb_row)
+    return rows
+
+
 def load_csv_files(
     previous_ahb_path: Path, subsequent_ahb_path: Path, previous_formatversion: str, subsequent_formatversion: str
 ) -> Tuple[List[AhbRow], List[AhbRow]]:
     """
     Read and convert AHB csv content to AhbRow models.
     """
-
-    def read_csv_content(file_path: Path, format_version: str) -> List[AhbRow]:
-        rows = []
-        with open(file_path, "r", encoding="utf-8") as csvfile:
-            reader = csv.DictReader(csvfile)
-            for row in reader:
-                ahb_row = AhbRow(
-                    format_version=format_version,
-                    section_name=row["Segmentname"],
-                    segment_group_key=row.get("Segmentgruppe"),
-                    segment_code=row.get("Segment"),
-                    data_element=row.get("Datenelement"),
-                    segment_id=row.get("Segment ID"),
-                    value_pool_entry=row.get("Code") or row.get("Qualifier"),
-                    name=row.get("Beschreibung"),
-                    ahb_expression=row.get("Bedingungsausdruck"),
-                    conditions=row.get("Bedingung"),
-                )
-                rows.append(ahb_row)
-        return rows
 
     previous_ahb_rows = read_csv_content(previous_ahb_path, previous_formatversion)
     subsequent_ahb_rows = read_csv_content(subsequent_ahb_path, subsequent_formatversion)
