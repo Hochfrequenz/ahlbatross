@@ -6,7 +6,7 @@ import pandas as pd
 from pandas.testing import assert_frame_equal
 
 from ahlbatross.core.ahb_comparison import align_columns
-from ahlbatross.formats.excel import export_to_excel
+from ahlbatross.formats.xlsx import export_to_excel
 
 
 def test_dataframe_export_formats() -> None:
