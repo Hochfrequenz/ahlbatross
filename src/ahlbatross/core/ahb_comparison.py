@@ -9,7 +9,7 @@ from pandas.core.frame import DataFrame
 
 from ahlbatross.enums.diff_types import DiffType
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
-from ahlbatross.utils.formatting import normalize_entries
+from ahlbatross.utils.string_formatting import normalize_entries
 
 
 def _populate_row_entries(
@@ -289,7 +289,7 @@ def align_columns(
     return result_df[column_order]
 
 
-def compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> AhbRowDiff:
+def _compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> AhbRowDiff:
     """
     Compare two AhbRow objects to identify changes.
     """
@@ -321,7 +321,7 @@ def compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> Ah
     )
 
 
-def add_empty_row(formatversion: str) -> AhbRow:
+def _add_empty_row(formatversion: str) -> AhbRow:
     """
     Create an empty row.
     """
@@ -339,7 +339,7 @@ def add_empty_row(formatversion: str) -> AhbRow:
     )
 
 
-def find_matching_subsequent_row(
+def _find_matching_subsequent_row(
     current_ahb_row: AhbRow, subsequent_ahb_rows: List[AhbRow], start_idx: int
 ) -> Tuple[int, AhbRow | None]:
     """
@@ -366,7 +366,7 @@ def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[Ah
             row = subsequent_ahb_rows[j]
             result.append(
                 AhbRowComparison(
-                    previous_formatversion=add_empty_row(row.formatversion),
+                    previous_formatversion=_add_empty_row(row.formatversion),
                     # label remaining rows of subsequent AHB as NEW
                     diff=AhbRowDiff(diff_type=DiffType.ADDED),
                     subsequent_formatversion=row,
@@ -381,14 +381,14 @@ def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[Ah
                     previous_formatversion=row,
                     # label remaining rows of previous AHB as REMOVED
                     diff=AhbRowDiff(diff_type=DiffType.REMOVED),
-                    subsequent_formatversion=add_empty_row(row.formatversion),
+                    subsequent_formatversion=_add_empty_row(row.formatversion),
                 )
             )
             i += 1
 
         else:
             current_row = previous_ahb_rows[i]
-            next_match_idx, matching_row = find_matching_subsequent_row(current_row, subsequent_ahb_rows, j)
+            next_match_idx, matching_row = _find_matching_subsequent_row(current_row, subsequent_ahb_rows, j)
 
             if next_match_idx >= 0 and matching_row is not None:
                 # add new rows until `section_name` (Segmentname) matches
@@ -396,14 +396,14 @@ def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[Ah
                     new_row = subsequent_ahb_rows[k]
                     result.append(
                         AhbRowComparison(
-                            previous_formatversion=add_empty_row(new_row.formatversion),
+                            previous_formatversion=_add_empty_row(new_row.formatversion),
                             diff=AhbRowDiff(diff_type=DiffType.ADDED),
                             subsequent_formatversion=new_row,
                         )
                     )
 
                 # add matching rows with comparison
-                diff = compare_ahb_rows(current_row, matching_row)
+                diff = _compare_ahb_rows(current_row, matching_row)
                 result.append(
                     AhbRowComparison(
                         previous_formatversion=current_row, diff=diff, subsequent_formatversion=matching_row
@@ -419,7 +419,7 @@ def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[Ah
                     AhbRowComparison(
                         previous_formatversion=current_row,
                         diff=AhbRowDiff(diff_type=DiffType.REMOVED),
-                        subsequent_formatversion=add_empty_row(current_row.formatversion),
+                        subsequent_formatversion=_add_empty_row(current_row.formatversion),
                     )
                 )
                 i += 1

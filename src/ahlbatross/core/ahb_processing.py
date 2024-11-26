@@ -10,7 +10,7 @@ from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
 from ahlbatross.core.ahb_comparison import align_columns
 from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
-from ahlbatross.formats.excel import export_to_excel
+from ahlbatross.formats.xlsx import export_to_excel
 from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 logger = logging.getLogger(__name__)
