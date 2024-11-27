@@ -7,7 +7,7 @@ from pathlib import Path
 
 from ahlbatross.core.ahb_comparison import align_ahb_rows
 from ahlbatross.formats.csv import export_to_csv, get_csv_files, load_csv_files
-from ahlbatross.formats.xlsx_new import export_to_xlsx
+from ahlbatross.formats.xlsx import export_to_xlsx
 from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 logger = logging.getLogger(__name__)

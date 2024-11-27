@@ -8,7 +8,7 @@ from typing import List, NamedTuple
 import openpyxl  # type: ignore
 
 from ahlbatross.enums.diff_types import DiffType
-from ahlbatross.formats.xlsx_new import export_to_xlsx
+from ahlbatross.formats.xlsx import export_to_xlsx
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
 
 

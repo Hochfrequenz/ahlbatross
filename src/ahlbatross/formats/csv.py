@@ -6,19 +6,7 @@ import csv
 from pathlib import Path
 from typing import List, Tuple
 
-import pandas as pd
-from pandas import DataFrame
-
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison
-
-
-def load_csv_dataframes(previous_ahb_path: Path, subsequent_ahb_path: Path) -> tuple[DataFrame, DataFrame]:
-    """
-    Read csv input files.
-    """
-    previous_ahb: DataFrame = pd.read_csv(previous_ahb_path, dtype=str)
-    subsequent_ahb: DataFrame = pd.read_csv(subsequent_ahb_path, dtype=str)
-    return previous_ahb, subsequent_ahb
 
 
 def get_csv_files(csv_dir: Path) -> list[Path]:
