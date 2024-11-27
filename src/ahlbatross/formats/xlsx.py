@@ -30,69 +30,6 @@ from ahlbatross.utils.xlsx_formatting import (
 FormatDict = Dict[str, Format]
 
 
-# pylint:disable=too-many-locals
-def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -> None:
-    """
-    Exports the merged AHBs as xlsx with highlighted differences.
-    """
-    sheet_name = Path(output_path_xlsx).stem
-
-    with Workbook(output_path_xlsx) as workbook:
-        worksheet = workbook.add_worksheet(sheet_name)
-
-        header_format = workbook.add_format(HEADER_FORMAT)
-        base_format = workbook.add_format(CELL_FORMAT)
-        diff_formats = _create_diff_label_highlighting_formats(workbook)
-        highlight_segmentname = _create_segmentname_highlight_formats(workbook)
-        diff_text_formats = _create_diff_label_text_formats(workbook)
-
-        headers = _create_headers(comparisons[0])
-        for col, header in enumerate(headers):
-            worksheet.write(0, col, header, header_format)
-
-        last_segmentname: Optional[str] = None
-        for row_num, comp in enumerate(comparisons, start=1):
-            current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
-            is_new_segment = bool(current_segmentname and current_segmentname != last_segmentname)
-            last_segmentname = current_segmentname
-
-            # AHB: previous formatversion - columns
-            _write_row_entries(
-                worksheet=worksheet,
-                row_num=row_num,
-                start_col=0,
-                row=comp.previous_formatversion,
-                diff=comp.diff,
-                is_new_segment=is_new_segment,
-                diff_formats=diff_formats,
-                highlight_segmentname=highlight_segmentname,
-                base_format=base_format,
-            )
-
-            # DIFF column
-            diff_value = comp.diff.diff_type.value if comp.diff.diff_type.value else ""
-            worksheet.write(row_num, 9, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
-
-            # AHB: subsequent formatversion - columns
-            _write_row_entries(
-                worksheet=worksheet,
-                row_num=row_num,
-                start_col=10,
-                row=comp.subsequent_formatversion,
-                diff=comp.diff,
-                is_new_segment=is_new_segment,
-                diff_formats=diff_formats,
-                highlight_segmentname=highlight_segmentname,
-                base_format=base_format,
-            )
-
-        _set_column_widths(worksheet, headers)
-        if comparisons:
-            worksheet.freeze_panes(1, 0)
-
-        logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)
-
-
 def _create_headers(sample: AhbRowComparison) -> List[str]:
     """
     Create a list of available headers from merged <pruefid>.csv files.
@@ -234,3 +171,66 @@ def _set_column_widths(worksheet: Worksheet, headers: List[str]) -> None:
             (width for prefix, width in CUSTOM_COLUMN_WIDTHS.items() if header.startswith(prefix)), DEFAULT_COLUMN_WIDTH
         )
         worksheet.set_column(col_num, col_num, width_px / 7)
+
+
+# pylint:disable=too-many-locals
+def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -> None:
+    """
+    Exports the merged AHBs as xlsx with highlighted differences.
+    """
+    sheet_name = Path(output_path_xlsx).stem
+
+    with Workbook(output_path_xlsx) as workbook:
+        worksheet = workbook.add_worksheet(sheet_name)
+
+        header_format = workbook.add_format(HEADER_FORMAT)
+        base_format = workbook.add_format(CELL_FORMAT)
+        diff_formats = _create_diff_label_highlighting_formats(workbook)
+        highlight_segmentname = _create_segmentname_highlight_formats(workbook)
+        diff_text_formats = _create_diff_label_text_formats(workbook)
+
+        headers = _create_headers(comparisons[0])
+        for col, header in enumerate(headers):
+            worksheet.write(0, col, header, header_format)
+
+        last_segmentname: Optional[str] = None
+        for row_num, comp in enumerate(comparisons, start=1):
+            current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
+            is_new_segment = bool(current_segmentname and current_segmentname != last_segmentname)
+            last_segmentname = current_segmentname
+
+            # AHB: previous formatversion - columns
+            _write_row_entries(
+                worksheet=worksheet,
+                row_num=row_num,
+                start_col=0,
+                row=comp.previous_formatversion,
+                diff=comp.diff,
+                is_new_segment=is_new_segment,
+                diff_formats=diff_formats,
+                highlight_segmentname=highlight_segmentname,
+                base_format=base_format,
+            )
+
+            # DIFF column
+            diff_value = comp.diff.diff_type.value if comp.diff.diff_type.value else ""
+            worksheet.write(row_num, 9, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
+
+            # AHB: subsequent formatversion - columns
+            _write_row_entries(
+                worksheet=worksheet,
+                row_num=row_num,
+                start_col=10,
+                row=comp.subsequent_formatversion,
+                diff=comp.diff,
+                is_new_segment=is_new_segment,
+                diff_formats=diff_formats,
+                highlight_segmentname=highlight_segmentname,
+                base_format=base_format,
+            )
+
+        _set_column_widths(worksheet, headers)
+        if comparisons:
+            worksheet.freeze_panes(1, 0)
+
+        logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)
