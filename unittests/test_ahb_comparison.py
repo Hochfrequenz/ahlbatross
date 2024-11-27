@@ -1,277 +1,16 @@
-import pandas as pd
-import pytest
-from pandas.core.frame import DataFrame
-from pandas.testing import assert_frame_equal
+# pylint:disable=too-many-lines
 
-from ahlbatross.core.ahb_comparison import align_columns
+import pytest
+
+from ahlbatross.core.ahb_comparison import align_ahb_rows
+from ahlbatross.enums.diff_types import DiffType
+from ahlbatross.models.ahb import AhbRow
 from unittests.conftest import FormatVersions
 
 
-class TestSingleColumnDataframes:
+class TestSingleColumnComparisons:
     """
-    test cases for dataframes containing only a `Segmentname` column.
-    """
-
-    formatversions: FormatVersions
-
-    @pytest.fixture(autouse=True)
-    def setup(self, formatversions: FormatVersions) -> None:
-        self.formatversions = formatversions
-
-    def test_remove_whitespace_space(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg ment", "Seg ment", "Segment", "Segment"]})
-        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg ment", "Seg ment"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg ment",
-                    "Seg ment",
-                    "Segment",
-                    "Segment",
-                ],
-                "Änderung": ["", "", "", ""],
-                "changed_entries": ["", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg ment",
-                    "Seg ment",
-                ],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_remove_whitespace_newline(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg\nment", "Seg\nment", "Segment", "Segment"]})
-        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg\nment", "Seg\nment"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg\nment",
-                    "Seg\nment",
-                    "Segment",
-                    "Segment",
-                ],
-                "Änderung": ["", "", "", ""],
-                "changed_entries": ["", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg\nment",
-                    "Seg\nment",
-                ],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_remove_whitespace_tab(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame({"Segmentname": ["Seg\tment", "Seg\tment", "Segment", "Segment"]})
-        subsequent_pruefid = pd.DataFrame({"Segmentname": ["Segment", "Segment", "Seg\tment", "Seg\tment"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg\tment",
-                    "Seg\tment",
-                    "Segment",
-                    "Segment",
-                ],
-                "Änderung": ["", "", "", ""],
-                "changed_entries": ["", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg\tment",
-                    "Seg\tment",
-                ],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns(self) -> None:
-        previous_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"]})
-        subsequent_pruefid = pd.DataFrame({"Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "",
-                    "",
-                    "9",
-                    "10",
-                ],
-                "Änderung": ["", "", "", "ENTFÄLLT", "", "", "NEU", "NEU", "", ""],
-                "changed_entries": ["", "", "", "", "", "", "", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "1",
-                    "2",
-                    "3",
-                    "",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10",
-                ],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns_empty_dataframes(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": pd.Series([], dtype="float64"),
-                "Änderung": pd.Series([], dtype="float64"),
-                "changed_entries": [],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": pd.Series([], dtype="float64"),
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns_one_empty_dataframe(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": []})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3"],
-                "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT"],
-                "changed_entries": ["", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", ""],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns_full_offset(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "", "", ""],
-                "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT", "NEU", "NEU", "NEU"],
-                "changed_entries": ["", "", "", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", "", "4", "5", "6"],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns_duplicate_segments(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "2", ""],
-                "Änderung": ["", "", "ENTFÄLLT", "NEU"],
-                "changed_entries": ["", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "", "4"],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-    def test_align_columns_repeating_segments(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "3", "2"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3", "4"]})
-
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "3", "2", ""],
-                "Änderung": ["", "", "", "ENTFÄLLT", "ENTFÄLLT", "NEU"],
-                "changed_entries": ["", "", "", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "3", "", "", "4"],
-            }
-        )
-
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
-
-
-class TestMultiColumnDataFrames:
-    """
-    test cases for dataframes containing multiple columns in addition to `Segmentname`.
+    Test cases for AHBs containing only `section_name` entries (Segmentname).
     """
 
     formatversions: FormatVersions
@@ -281,526 +20,1071 @@ class TestMultiColumnDataFrames:
         self.formatversions = formatversions
 
     def test_remove_whitespace_space(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Seg ment", "Seg ment", "Segment", "Segment"],
-                "Segmentgruppe": ["a", "b", "c", ""],
-            }
-        )
-        subsequent_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Segment", "Segment", "Seg ment", "Seg ment"],
-                "Segmentgruppe": ["a", "b", "d", "d"],
-            }
-        )
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg ment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg ment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg ment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg ment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg ment",
-                    "Seg ment",
-                    "Segment",
-                    "Segment",
-                ],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
-                    "a",
-                    "b",
-                    "c",
-                    "",
-                ],
-                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
-                "changed_entries": [
-                    "",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg ment",
-                    "Seg ment",
-                ],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
-                    "a",
-                    "b",
-                    "d",
-                    "d",
-                ],
-            }
-        )
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        assert len(result) == 4
+        for comparison in result:
+            assert comparison.diff.diff_type == DiffType.UNCHANGED
+            assert not comparison.diff.changed_entries
 
     def test_remove_whitespace_newline(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Seg\nment", "Seg\nment", "Segment", "Segment"],
-                "Segmentgruppe": ["a", "b", "c", ""],
-            }
-        )
-        subsequent_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Segment", "Segment", "Seg\nment", "Seg\nment"],
-                "Segmentgruppe": ["a", "b", "d", "d"],
-            }
-        )
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\nment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\nment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\nment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\nment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg\nment",
-                    "Seg\nment",
-                    "Segment",
-                    "Segment",
-                ],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
-                    "a",
-                    "b",
-                    "c",
-                    "",
-                ],
-                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
-                "changed_entries": [
-                    "",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg\nment",
-                    "Seg\nment",
-                ],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
-                    "a",
-                    "b",
-                    "d",
-                    "d",
-                ],
-            }
-        )
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        assert len(result) == 4
+        for comparison in result:
+            assert comparison.diff.diff_type == DiffType.UNCHANGED
+            assert not comparison.diff.changed_entries
 
     def test_remove_whitespace_tab(self) -> None:
-        """
-        this test case should not detect any since whitespace is removed during the comparison process
-        """
-        previous_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Seg\tment", "Seg\tment", "Segment", "Segment"],
-                "Segmentgruppe": ["a", "b", "c", ""],
-            }
-        )
-        subsequent_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["Segment", "Segment", "Seg\tment", "Seg\tment"],
-                "Segmentgruppe": ["a", "b", "d", "d"],
-            }
-        )
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\tment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\tment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\tment",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\tment",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "Seg\tment",
-                    "Seg\tment",
-                    "Segment",
-                    "Segment",
-                ],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
-                    "a",
-                    "b",
-                    "c",
-                    "",
-                ],
-                "Änderung": ["", "", "ÄNDERUNG", "ÄNDERUNG"],
-                "changed_entries": [
-                    "",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "Segment",
-                    "Segment",
-                    "Seg\tment",
-                    "Seg\tment",
-                ],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
-                    "a",
-                    "b",
-                    "d",
-                    "d",
-                ],
-            }
-        )
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        assert len(result) == 4
+        for comparison in result:
+            assert comparison.diff.diff_type == DiffType.UNCHANGED
+            assert not comparison.diff.changed_entries
 
-    def test_align_columns(self) -> None:
-        previous_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["1", "2", "3", "4", "5", "6", "9", "10"],
-                "Segmentgruppe": ["a", "b", "c", "", "e", "f", "g", "h"],
-            }
-        )
-        subsequent_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["1", "2", "3", "5", "6", "7", "8", "9", "10"],
-                "Segmentgruppe": ["a", "b", "d", "d", "d", "e", "f", "a", "b"],
-            }
-        )
+    def test_align_rows(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="4",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="5",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "",
-                    "",
-                    "9",
-                    "10",
-                ],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
-                    "a",
-                    "b",
-                    "c",
-                    "",
-                    "e",
-                    "f",
-                    "",
-                    "",
-                    "g",
-                    "h",
-                ],
-                "Änderung": [
-                    "",
-                    "",
-                    "ÄNDERUNG",
-                    "ENTFÄLLT",
-                    "ÄNDERUNG",
-                    "ÄNDERUNG",
-                    "NEU",
-                    "NEU",
-                    "ÄNDERUNG",
-                    "ÄNDERUNG",
-                ],
-                "changed_entries": [
-                    "",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "1",
-                    "2",
-                    "3",
-                    "",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10",
-                ],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
-                    "a",
-                    "b",
-                    "d",
-                    "",
-                    "d",
-                    "d",
-                    "e",
-                    "f",
-                    "a",
-                    "b",
-                ],
-            }
-        )
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        assert len(result) == 5
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.REMOVED
+        assert result[2].diff.diff_type == DiffType.UNCHANGED
+        assert result[3].diff.diff_type == DiffType.REMOVED
+        assert result[4].diff.diff_type == DiffType.ADDED
 
-    def test_align_columns_multiple_entries_per_segmentname(self) -> None:
-        """
-        test that only rows with changes have an "ÄNDERUNG" label;
-        other rows of the same `Segmentname` should not be tagged with "ÄNDERUNG".
-        """
-        previous_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["1", "1", "1", "2", "2", "2"],
-                "Segmentgruppe": ["a", "a", "a", "b", "b", "b"],
-            }
-        )
-        subsequent_pruefid = pd.DataFrame(
-            {
-                "Segmentname": ["1", "1", "1", "2", "2", "2"],
-                "Segmentgruppe": ["x", "a", "x", "x", "b", "x"],
-            }
-        )
+    def test_align_rows_empty_ahbs(self) -> None:
+        result = align_ahb_rows([], [])
+        assert len(result) == 0
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [
-                    "1",
-                    "1",
-                    "1",
-                    "2",
-                    "2",
-                    "2",
-                ],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [
-                    "a",
-                    "a",
-                    "a",
-                    "b",
-                    "b",
-                    "b",
-                ],
-                "Änderung": [
-                    "ÄNDERUNG",
-                    "",
-                    "ÄNDERUNG",
-                    "ÄNDERUNG",
-                    "",
-                    "ÄNDERUNG",
-                ],
-                "changed_entries": [
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                    "",
-                    "Segmentgruppe_FV2410|Segmentgruppe_FV2504",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [
-                    "1",
-                    "1",
-                    "1",
-                    "2",
-                    "2",
-                    "2",
-                ],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [
-                    "x",
-                    "a",
-                    "x",
-                    "x",
-                    "b",
-                    "x",
-                ],
-            }
-        )
+    def test_align_rows_one_empty_ahb(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        result = align_ahb_rows(previous_ahb_rows, [])
 
-    def test_align_columns_empty_dataframes(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
+        assert len(result) == 2
+        assert all(comp.diff.diff_type == DiffType.REMOVED for comp in result)
+        assert all(comp.subsequent_formatversion.section_name == "" for comp in result)
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": [],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": [],
-                "Änderung": [],
-                "changed_entries": [],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": [],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": [],
-            }
-        )
+    def test_align_rows_full_offset(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="4",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="5",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="6",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-    def test_align_columns_one_empty_dataframe(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": [], "Segmentgruppe": []})
+        assert len(result) == 6
+        assert result[0].diff.diff_type == DiffType.REMOVED
+        assert result[1].diff.diff_type == DiffType.REMOVED
+        assert result[2].diff.diff_type == DiffType.REMOVED
+        assert result[3].diff.diff_type == DiffType.ADDED
+        assert result[4].diff.diff_type == DiffType.ADDED
+        assert result[5].diff.diff_type == DiffType.ADDED
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3"],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c"],
-                "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT"],
-                "changed_entries": ["", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", ""],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "", ""],
-            }
-        )
+    def test_align_rows_duplicate_segments(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="4",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-    def test_align_columns_full_offset(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "3"], "Segmentgruppe": ["a", "b", "c"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["4", "5", "6"], "Segmentgruppe": ["d", "e", "f"]})
+        assert len(result) == 4
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.REMOVED
+        assert result[3].diff.diff_type == DiffType.ADDED
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "", "", ""],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", "", "", ""],
-                "Änderung": ["ENTFÄLLT", "ENTFÄLLT", "ENTFÄLLT", "NEU", "NEU", "NEU"],
-                "changed_entries": ["", "", "", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "", "", "4", "5", "6"],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "", "", "d", "e", "f"],
-            }
-        )
+    def test_align_rows_repeating_segments(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="3",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="4",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-    def test_align_columns_duplicate_segments(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "2"], "Segmentgruppe": ["a", "b", "c"]})
-        subsequent_pruefid: DataFrame = pd.DataFrame({"Segmentname": ["1", "2", "4"], "Segmentgruppe": ["a", "b", "d"]})
+        assert len(result) == 6
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.UNCHANGED
+        assert result[3].diff.diff_type == DiffType.REMOVED
+        assert result[4].diff.diff_type == DiffType.REMOVED
+        assert result[5].diff.diff_type == DiffType.ADDED
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "2", ""],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", ""],
-                "Änderung": ["", "", "ENTFÄLLT", "NEU"],
-                "changed_entries": ["", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "", "4"],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["a", "b", "", "d"],
-            }
-        )
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+class TestMultiColumnComparisons:
+    """
+    Test cases for AHBs containing multiple columns.
+    """
 
-    def test_align_columns_repeating_segments(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame(
-            {"Segmentname": ["1", "2", "3", "3", "2"], "Segmentgruppe": ["a", "b", "c", "d", "e"]}
-        )
-        subsequent_pruefid: DataFrame = pd.DataFrame(
-            {"Segmentname": ["1", "2", "3", "4"], "Segmentgruppe": ["a", "b", "c", "d"]}
-        )
+    formatversions: FormatVersions
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", "3", "3", "2", ""],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", "c", "d", "e", ""],
-                "Änderung": ["", "", "", "ENTFÄLLT", "ENTFÄLLT", "NEU"],
-                "changed_entries": ["", "", "", "", "", ""],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["1", "2", "3", "", "", "4"],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["a", "b", "c", "", "", "d"],
-            }
-        )
+    @pytest.fixture(autouse=True)
+    def setup(self, formatversions: FormatVersions) -> None:
+        self.formatversions = formatversions
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+    def test_remove_whitespace_space(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg ment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg ment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="c",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg ment",
+                segment_group_key="d",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg ment",
+                segment_group_key="d",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
 
-    def test_align_columns_different_column_sets(self) -> None:
-        previous_pruefid: DataFrame = pd.DataFrame(
-            {
-                "Segmentname": ["1", "2"],
-                "Segmentgruppe": ["a", "b"],
-                "Datenelement": ["x", "y"],
-                "Qualifier": ["XY", "YZ"],
-            }
-        )
-        subsequent_pruefid: DataFrame = pd.DataFrame(
-            {
-                "Segmentname": ["2", "3"],
-                "Segmentgruppe": ["b", "c"],
-                "Datenelement": ["m", "n"],
-                "Qualifier": ["XY", ""],
-            }
-        )
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
 
-        expected_output: DataFrame = pd.DataFrame(
-            {
-                f"Segmentname_{self.formatversions.previous_formatversion}": ["1", "2", ""],
-                f"Segmentgruppe_{self.formatversions.previous_formatversion}": ["a", "b", ""],
-                f"Datenelement_{self.formatversions.previous_formatversion}": ["x", "y", ""],
-                f"Qualifier_{self.formatversions.previous_formatversion}": ["XY", "YZ", ""],
-                "Änderung": ["ENTFÄLLT", "ÄNDERUNG", "NEU"],
-                "changed_entries": [
-                    "",
-                    "Datenelement_FV2410|Datenelement_FV2504|Qualifier_FV2410|Qualifier_FV2504",
-                    "",
-                ],
-                f"Segmentname_{self.formatversions.subsequent_formatversion}": ["", "2", "3"],
-                f"Segmentgruppe_{self.formatversions.subsequent_formatversion}": ["", "b", "c"],
-                f"Datenelement_{self.formatversions.subsequent_formatversion}": ["", "m", "n"],
-                f"Qualifier_{self.formatversions.subsequent_formatversion}": ["", "XY", ""],
-            }
-        )
+        assert len(result) == 4
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert result[3].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[3].diff.changed_entries)
 
-        output_df = align_columns(
-            previous_pruefid,
-            subsequent_pruefid,
-            previous_formatversion=self.formatversions.previous_formatversion,
-            subsequent_formatversion=self.formatversions.subsequent_formatversion,
-        )
-        assert_frame_equal(output_df, expected_output)
+    def test_remove_whitespace_newline(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\nment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\nment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="c",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\nment",
+                segment_group_key="d",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\nment",
+                segment_group_key="d",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 4
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert result[3].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[3].diff.changed_entries)
+
+    def test_remove_whitespace_tab(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\tment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Seg\tment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="c",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Segment",
+                segment_group_key="",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Segment",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\tment",
+                segment_group_key="d",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Seg\tment",
+                segment_group_key="d",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 4
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert result[3].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[3].diff.changed_entries)
+
+    def test_align_rows(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="3",
+                segment_group_key="c",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="4",
+                segment_group_key="",
+                segment_code="W",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="5",
+                segment_group_key="e",
+                segment_code="V",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="6",
+                segment_group_key="f",
+                segment_code="U",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="9",
+                segment_group_key="g",
+                segment_code="T",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="10",
+                segment_group_key="h",
+                segment_code="S",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                segment_code="X",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                segment_code="Y",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="3",
+                segment_group_key="d",
+                segment_code="Z",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="5",
+                segment_group_key="d",
+                segment_code="V",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="6",
+                segment_group_key="d",
+                segment_code="U",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="7",
+                segment_group_key="e",
+                segment_code="R",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="8",
+                segment_group_key="f",
+                segment_code="Q",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="9",
+                segment_group_key="a",
+                segment_code="T",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="10",
+                segment_group_key="b",
+                segment_code="S",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 10
+        assert result[0].diff.diff_type == DiffType.UNCHANGED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert result[3].diff.diff_type == DiffType.REMOVED
+        assert result[4].diff.diff_type == DiffType.MODIFIED
+        assert result[5].diff.diff_type == DiffType.MODIFIED
+        assert result[6].diff.diff_type == DiffType.ADDED
+        assert result[7].diff.diff_type == DiffType.ADDED
+        assert result[8].diff.diff_type == DiffType.MODIFIED
+        assert result[9].diff.diff_type == DiffType.MODIFIED
+
+        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert "segment_group_key" in str(result[4].diff.changed_entries)
+        assert "segment_group_key" in str(result[5].diff.changed_entries)
+        assert "segment_group_key" in str(result[8].diff.changed_entries)
+        assert "segment_group_key" in str(result[9].diff.changed_entries)
+
+    def test_align_rows_multiple_entries_per_section_name(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                segment_group_key="x",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="1",
+                segment_group_key="x",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                segment_group_key="x",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                segment_group_key="x",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 6
+        assert result[0].diff.diff_type == DiffType.MODIFIED
+        assert result[1].diff.diff_type == DiffType.UNCHANGED
+        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert result[3].diff.diff_type == DiffType.MODIFIED
+        assert result[4].diff.diff_type == DiffType.UNCHANGED
+        assert result[5].diff.diff_type == DiffType.MODIFIED
+
+        assert "segment_group_key" in str(result[0].diff.changed_entries)
+        assert not result[1].diff.changed_entries
+        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert "segment_group_key" in str(result[3].diff.changed_entries)
+        assert not result[4].diff.changed_entries
+        assert "segment_group_key" in str(result[5].diff.changed_entries)
+
+    def test_align_rows_different_column_sets(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="1",
+                segment_group_key="a",
+                data_element="x",
+                value_pool_entry="XY",
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                data_element="y",
+                value_pool_entry="YZ",
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="2",
+                segment_group_key="b",
+                data_element="m",
+                value_pool_entry="XY",
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="3",
+                segment_group_key="c",
+                data_element="n",
+                value_pool_entry="",
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 3
+        # Check sequence: removed, modified, added
+        assert result[0].diff.diff_type == DiffType.REMOVED
+        assert result[1].diff.diff_type == DiffType.MODIFIED
+        assert result[2].diff.diff_type == DiffType.ADDED
+
+        # Verify specific changes in the modified row
+        changed_entries = str(result[1].diff.changed_entries)
+        assert "data_element" in changed_entries
+        assert "value_pool_entry" in changed_entries
+        assert "segment_group_key" not in changed_entries
+
+    def test_single_changed_ahb_property(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Nachrichten-Kopfsegment",
+                segment_group_key="AAA",
+                segment_code="XXX",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Nachrichten-Kopfsegment",
+                segment_group_key="BBB",
+                segment_code="XXX",
+                value_pool_entry=None,
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 1
+        assert result[0].diff.diff_type == DiffType.MODIFIED
+        assert "segment_group_key" in str(result[0].diff.changed_entries)
+
+    def test_multiple_changed_ahb_properties(self) -> None:
+        previous_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="Nachrichten-Kopfsegment",
+                segment_group_key="AAA",
+                data_element="111",
+                value_pool_entry="XXX",
+                name=None,
+            ),
+        ]
+        subsequent_ahb_rows = [
+            AhbRow(
+                formatversion=self.formatversions.subsequent_formatversion,
+                section_name="Nachrichten-Kopfsegment",
+                segment_group_key="BBB",
+                data_element="222",
+                value_pool_entry="XXX",
+                name=None,
+            ),
+        ]
+
+        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
+
+        assert len(result) == 1
+        assert result[0].diff.diff_type == DiffType.MODIFIED
+        changed_entries = result[0].diff.changed_entries
+        assert "segment_group_key" in str(changed_entries)
+        assert "data_element" in str(changed_entries)
+        assert "value_pool_entry" not in str(changed_entries)
