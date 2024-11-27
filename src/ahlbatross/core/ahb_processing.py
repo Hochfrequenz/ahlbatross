@@ -8,9 +8,10 @@ from typing import TypeAlias
 
 from xlsxwriter.format import Format  # type:ignore[import-untyped]
 
-from ahlbatross.core.ahb_comparison import align_columns
-from ahlbatross.formats.csv import get_csv_files, load_csv_dataframes
+from ahlbatross.core.ahb_comparison import align_ahb_rows, align_columns
+from ahlbatross.formats.csv import export_to_csv, get_csv_files, load_csv_dataframes, load_csv_files
 from ahlbatross.formats.xlsx import export_to_excel
+from ahlbatross.formats.xlsx_new import export_to_xlsx
 from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 logger = logging.getLogger(__name__)
@@ -63,16 +64,24 @@ def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
     Generate pairs of consecutive <formatversion> directories.
     """
     formatversion_list = _get_formatversion_dirs(root_dir)
-    formatversion_pairs = []
+    logger.debug("Found formatversions: %s", formatversion_list)  # Debug all found versions
 
+    consecutive_formatversions = []
     for i in range(len(formatversion_list) - 1):
         subsequent_formatversion = formatversion_list[i]
         previous_formatversion = formatversion_list[i + 1]
 
-        # skip if at least one <formatversion> directory is empty.
-        if _is_formatversion_dir_empty(root_dir, subsequent_formatversion) or _is_formatversion_dir_empty(
-            root_dir, previous_formatversion
-        ):
+        is_subsequent_empty = _is_formatversion_dir_empty(root_dir, subsequent_formatversion)
+        is_previous_empty = _is_formatversion_dir_empty(root_dir, previous_formatversion)
+        logger.debug(
+            "⌛ Checking pair %s -> %s (empty: %s, %s)",
+            subsequent_formatversion,
+            previous_formatversion,
+            is_subsequent_empty,
+            is_previous_empty,
+        )
+
+        if is_subsequent_empty or is_previous_empty:
             logger.warning(
                 "❗️Skipping empty consecutive formatversions: %s -> %s",
                 subsequent_formatversion,
@@ -80,9 +89,10 @@ def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
             )
             continue
 
-        formatversion_pairs.append((subsequent_formatversion, previous_formatversion))
+        consecutive_formatversions.append((subsequent_formatversion, previous_formatversion))
 
-    return formatversion_pairs
+    logger.debug("Consecutive formatversions: %s", consecutive_formatversions)
+    return consecutive_formatversions
 
 
 # pylint:disable=too-many-locals
@@ -195,6 +205,68 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
                 subsequent_formatversion=subsequent_formatversion,
                 output_dir=output_dir,
             )
+        except (OSError, IOError, ValueError) as e:
+            logger.error(
+                "❌ Error processing formatversions %s -> %s: %s",
+                subsequent_formatversion,
+                previous_formatversion,
+                str(e),
+            )
+            continue
+
+
+def process_ahb_files_new(input_dir: Path, output_dir: Path) -> None:
+    """
+    Process all matching ahb/<pruefid>.csv files between two <formatversion> directories including respective
+    subdirectories of all valid consecutive <formatversion> pairs.
+    """
+    logger.info("Found AHB root directory at: %s", input_dir.absolute())
+    logger.info("Output directory: %s", output_dir.absolute())
+
+    consecutive_formatversions = get_formatversion_pairs(input_dir)
+    if not consecutive_formatversions:
+        logger.warning("❗️ No valid consecutive formatversion subdirectories found to compare.")
+        return
+
+    for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
+        logger.info(
+            "⌛ Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
+        )
+
+        try:
+            matching_files = get_matching_csv_files(input_dir, previous_formatversion, subsequent_formatversion)
+
+            if not matching_files:
+                logger.warning("No matching files found to compare")
+                continue
+
+            for previous_pruefid, subsequent_pruefid, nachrichtentyp, pruefid in matching_files:
+                logger.info("Processing %s - %s", nachrichtentyp, pruefid)
+
+                try:
+                    previous_rows, subsequent_rows = load_csv_files(
+                        previous_pruefid, subsequent_pruefid, previous_formatversion, subsequent_formatversion
+                    )
+
+                    comparisons = align_ahb_rows(previous_rows, subsequent_rows)
+
+                    output_dir_path = (
+                        output_dir / f"{subsequent_formatversion}_{previous_formatversion}" / nachrichtentyp
+                    )
+                    output_dir_path.mkdir(parents=True, exist_ok=True)
+
+                    csv_path = output_dir_path / f"{pruefid}.csv"
+                    xlsx_path = output_dir_path / f"{pruefid}.xlsx"
+
+                    export_to_csv(comparisons, csv_path)
+                    export_to_xlsx(comparisons, str(xlsx_path))
+
+                    logger.info("✅ Successfully processed %s/%s", nachrichtentyp, pruefid)
+
+                except (OSError, IOError, ValueError) as e:
+                    logger.error("❌ Error processing %s/%s: %s", nachrichtentyp, pruefid, str(e))
+                    continue
+
         except (OSError, IOError, ValueError) as e:
             logger.error(
                 "❌ Error processing formatversions %s -> %s: %s",

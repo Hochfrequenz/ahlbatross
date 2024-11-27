@@ -72,7 +72,6 @@ def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
     """
     test successful determination of consecutive formatversions.
     """
-    # Create test directory structure with formatversions and add dummy file
     submodule: dict[str, dict[str, bool | dict[str, str]]] = {
         "FV2504": {"nachrichtenformat_1": True},
         "FV2410": {"nachrichtenformat_1": True},

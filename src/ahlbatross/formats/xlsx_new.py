@@ -33,7 +33,7 @@ FormatDict = Dict[str, Format]
 # pylint:disable=too-many-locals
 def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -> None:
     """
-    Exports the merged AHBs to xlsx with highlighted differences.
+    Exports the merged AHBs as xlsx with highlighted differences.
     """
     sheet_name = Path(output_path_xlsx).stem
 

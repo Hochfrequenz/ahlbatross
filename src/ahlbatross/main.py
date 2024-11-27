@@ -9,7 +9,7 @@ from pathlib import Path
 import typer
 from rich.console import Console
 
-from ahlbatross.core.ahb_processing import process_ahb_files
+from ahlbatross.core.ahb_processing import process_ahb_files_new
 
 logger = logging.getLogger(__name__)
 
@@ -31,7 +31,7 @@ def main(
         if not input_dir.exists():
             logger.error("❌ Input directory does not exist: %s", input_dir.absolute())
             sys.exit(1)
-        process_ahb_files(input_dir, output_dir)
+        process_ahb_files_new(input_dir, output_dir)
     except FileNotFoundError as e:
         logger.error("❌ Path error: %s", str(e))
         sys.exit(1)
