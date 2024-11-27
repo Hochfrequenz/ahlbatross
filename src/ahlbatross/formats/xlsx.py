@@ -15,6 +15,7 @@ from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
 from ahlbatross.utils.xlsx_formatting import (
     ADDED_LABEL_FORMAT,
     ADDED_LABEL_HIGHLIGHTING,
+    AHB_COLUMN_NAMES,
     ALTERING_SEGMENTNAME_FORMAT,
     CELL_FORMAT,
     CUSTOM_COLUMN_WIDTHS,
@@ -60,7 +61,7 @@ def _create_headers(sample: AhbRowComparison) -> List[str]:
     ]
 
 
-# pylint:disable=too-many-arguments, too-many-positional-arguments
+# pylint:disable=too-many-arguments, too-many-positional-arguments, too-many-locals
 def _write_row_entries(
     worksheet: Worksheet,
     row_num: int,
@@ -71,10 +72,12 @@ def _write_row_entries(
     diff_formats: FormatDict,
     highlight_segmentname: FormatDict,
     base_format: Format,
+    _is_previous_formatversion: bool = True,
 ) -> None:
     """
     Writes entries to cells row by row.
     """
+
     values = [
         row.section_name or "",
         row.segment_group_key or "",
@@ -87,7 +90,7 @@ def _write_row_entries(
         row.conditions or "",
     ]
 
-    for col_offset, value in enumerate(values):
+    for col_offset, (column_name, value) in enumerate(zip(AHB_COLUMN_NAMES, values)):
         col = start_col + col_offset
         is_segmentname = col_offset == 0
         format_to_use = _determine_segmentname_format(
@@ -97,11 +100,14 @@ def _write_row_entries(
             diff_formats=diff_formats,
             highlight_segmentname=highlight_segmentname,
             base_format=base_format,
+            is_previous_formatversion=_is_previous_formatversion,
+            column_name=f"{column_name}_{row.formatversion}",
+            changed_entries=diff.changed_entries,
         )
         worksheet.write(row_num, col, str(value), format_to_use)
 
 
-# pylint:disable=too-many-arguments, too-many-positional-arguments
+# pylint:disable=too-many-arguments, too-many-positional-arguments, too-many-return-statements
 def _determine_segmentname_format(
     diff_type: str,
     is_segmentname: bool,
@@ -109,15 +115,31 @@ def _determine_segmentname_format(
     diff_formats: FormatDict,
     highlight_segmentname: FormatDict,
     base_format: Format,
+    is_previous_formatversion: bool = True,
+    column_name: str = "",
+    changed_entries: list[str] | None = None,
 ) -> Format:
     """
     Determines the appropriate format for `Segmentname` cells depending on whether they are affected by DIFFs
     or the `Segmentname` has changed.
     """
-    if diff_type in [DiffType.ADDED.value, DiffType.REMOVED.value, DiffType.MODIFIED.value]:
+    if diff_type == DiffType.ADDED.value and not is_previous_formatversion:
         if is_segmentname and is_new_segment:
             return highlight_segmentname[diff_type]
         return diff_formats[diff_type]
+
+    if diff_type == DiffType.REMOVED.value and is_previous_formatversion:
+        if is_segmentname and is_new_segment:
+            return highlight_segmentname[diff_type]
+        return diff_formats[diff_type]
+
+    if diff_type == DiffType.MODIFIED.value:
+        changed_entries = changed_entries or []
+        if column_name in changed_entries:
+            if is_segmentname and is_new_segment:
+                return highlight_segmentname[diff_type]
+            return diff_formats[diff_type]
+        return base_format
 
     if is_new_segment:
         return highlight_segmentname["segmentname_changed"] if is_segmentname else diff_formats["segmentname_changed"]
@@ -210,6 +232,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
                 diff_formats=diff_formats,
                 highlight_segmentname=highlight_segmentname,
                 base_format=base_format,
+                _is_previous_formatversion=True,
             )
 
             # DIFF column
@@ -227,6 +250,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
                 diff_formats=diff_formats,
                 highlight_segmentname=highlight_segmentname,
                 base_format=base_format,
+                _is_previous_formatversion=False,
             )
 
         _set_column_widths(worksheet, headers)

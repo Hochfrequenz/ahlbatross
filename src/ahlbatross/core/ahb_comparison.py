@@ -7,6 +7,7 @@ from typing import List, Tuple
 from ahlbatross.enums.diff_types import DiffType
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
 from ahlbatross.utils.string_formatting import normalize_entries
+from ahlbatross.utils.xlsx_formatting import AHB_PROPERTIES
 
 
 def _compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> AhbRowDiff:
@@ -16,18 +17,7 @@ def _compare_ahb_rows(previous_ahb_row: AhbRow, subsequent_ahb_row: AhbRow) -> A
     changed_entries = []
 
     # consider all AHB properties except `section_name` (Segmentname) and `formatversion`
-    ahb_properties = [
-        "segment_group_key",
-        "segment_code",
-        "data_element",
-        "segment_id",
-        "value_pool_entry",
-        "name",
-        "ahb_expression",
-        "conditions",
-    ]
-
-    for entry in ahb_properties:
+    for entry in AHB_PROPERTIES:
         previous_ahb_entry = getattr(previous_ahb_row, entry, "") or ""
         subsequent_ahb_entry = getattr(subsequent_ahb_row, entry, "") or ""
 

@@ -80,4 +80,19 @@ DEFAULT_COLUMN_WIDTH = 100
 CUSTOM_COLUMN_WIDTHS = {
     "Segmentname_": 175,
     "Beschreibung_": 150,
+    "Bedingung_": 250,
 }
+
+AHB_COLUMN_NAMES = [
+    "section_name",
+    "segment_group_key",
+    "segment_code",
+    "data_element",
+    "segment_id",
+    "value_pool_entry",
+    "name",
+    "ahb_expression",
+    "conditions",
+]
+
+AHB_PROPERTIES = [name for name in AHB_COLUMN_NAMES if name != "section_name"]
