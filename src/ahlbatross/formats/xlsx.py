@@ -135,14 +135,16 @@ def _determine_segmentname_format(
 
     if diff_type == DiffType.MODIFIED.value:
         changed_entries = changed_entries or []
+        # always highlighted modified cells yellow, regardless of whether it's a new segment or not
         if column_name in changed_entries:
-            if is_segmentname and is_new_segment:
-                return highlight_segmentname[diff_type]
             return diff_formats[diff_type]
-        return base_format
 
     if is_new_segment:
-        return highlight_segmentname["segmentname_changed"] if is_segmentname else diff_formats["segmentname_changed"]
+        # always apply "new segment" highlighting (including rows with MODIFIED cells) except for ADDED/REMOVED rows
+        if is_segmentname:
+            return highlight_segmentname["segmentname_changed"]
+        return diff_formats["segmentname_changed"]
+
     return base_format
 
 
