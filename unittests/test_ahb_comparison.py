@@ -871,7 +871,7 @@ class TestMultiColumnComparisons:
         assert "segment_group_key" in str(result[8].diff.changed_entries)
         assert "segment_group_key" in str(result[9].diff.changed_entries)
 
-    def test_align_rows_multiple_entries_per_section_name(self) -> None:
+    def test_align_rows_multiple_rows_per_section_name(self) -> None:
         previous_ahb_rows = [
             AhbRow(
                 formatversion=self.formatversions.previous_formatversion,
