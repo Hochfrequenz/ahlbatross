@@ -36,10 +36,10 @@ Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [project.optional-dependencies]
 tests = [
-    "pytest==8.3.3"
+    "pytest==8.3.4"
 ]
 linting = [
-    "pylint==3.3.1"
+    "pylint==3.3.2"
 ]
 type_check = [
     "mypy==1.13.0"
@@ -56,7 +56,7 @@ formatting = [
 ]
 packaging = [
     "build==1.2.2.post1",
-    "twine==5.1.1"
+    "twine==6.0.1"
 ]
 dev = [
     "pip-tools"

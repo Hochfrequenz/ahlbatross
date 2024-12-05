@@ -33,25 +33,25 @@ def test_xlsx_export_single_column_comparison(
 def test_xlsx_export_multiple_column_comparison(
     temp_excel_file: Path, ahb_row_comparison_multiple_columns: List[AhbRowComparison]
 ) -> None:
-    """Test export of complex data with all fields populated."""
+    """
+    Test export of data with all columns populated.
+    """
     export_to_xlsx(ahb_row_comparison_multiple_columns, str(temp_excel_file))
     workbook = openpyxl.load_workbook(temp_excel_file)
     sheet = workbook.active
 
-    # Check that all fields are present in the first data row
-    row = 2  # First data row (after header)
+    row = 2
     comp = ahb_row_comparison_multiple_columns[0]
 
-    # Check previous version fields
-    assert sheet.cell(row=row, column=1).value == comp.previous_formatversion.section_name
-    assert sheet.cell(row=row, column=2).value == comp.previous_formatversion.segment_group_key
-    assert sheet.cell(row=row, column=3).value == comp.previous_formatversion.segment_code
-    assert sheet.cell(row=row, column=4).value == comp.previous_formatversion.data_element
-    assert sheet.cell(row=row, column=5).value == comp.previous_formatversion.segment_id
-    assert sheet.cell(row=row, column=6).value == comp.previous_formatversion.value_pool_entry
-    assert sheet.cell(row=row, column=7).value == comp.previous_formatversion.name
-    assert sheet.cell(row=row, column=8).value == comp.previous_formatversion.ahb_expression
-    assert sheet.cell(row=row, column=9).value == comp.previous_formatversion.conditions
+    assert sheet.cell(row=row, column=2).value == comp.previous_formatversion.section_name
+    assert sheet.cell(row=row, column=3).value == comp.previous_formatversion.segment_group_key
+    assert sheet.cell(row=row, column=4).value == comp.previous_formatversion.segment_code
+    assert sheet.cell(row=row, column=5).value == comp.previous_formatversion.data_element
+    assert sheet.cell(row=row, column=6).value == comp.previous_formatversion.segment_id
+    assert sheet.cell(row=row, column=7).value == comp.previous_formatversion.value_pool_entry
+    assert sheet.cell(row=row, column=8).value == comp.previous_formatversion.name
+    assert sheet.cell(row=row, column=9).value == comp.previous_formatversion.ahb_expression
+    assert sheet.cell(row=row, column=10).value == comp.previous_formatversion.conditions
 
 
 def test_xlsx_export_all_diff_types(
@@ -67,7 +67,7 @@ def test_xlsx_export_all_diff_types(
     # check correct number of rows: data + 1 (header)
     assert sheet.max_row == len(all_diff_types_ahb_row_comparisons) + 1
 
-    diff_values = [sheet.cell(row=i, column=10).value or "" for i in range(2, sheet.max_row + 1)]
+    diff_values = [sheet.cell(row=i, column=11).value or "" for i in range(2, sheet.max_row + 1)]
     expected_diffs = [comp.diff.diff_type.value for comp in all_diff_types_ahb_row_comparisons]
     assert diff_values == expected_diffs
 
@@ -103,7 +103,7 @@ def test_export_handles_none_values(temp_excel_file: Path, formatversions: Forma
     sheet = workbook.active
 
     # check None values are exported as empty strings
-    for col in range(1, 10):
+    for col in range(2, 11):
         assert sheet.cell(row=2, column=col).value == "" or sheet.cell(row=2, column=col).value is None
 
 
@@ -119,8 +119,8 @@ def test_export_header_formatting(
 
     assert sheet.max_row >= 1
 
-    assert "Segmentname" in sheet.cell(row=1, column=1).value
-    assert "Änderung" in sheet.cell(row=1, column=10).value
+    assert "Segmentname" in sheet.cell(row=1, column=2).value
+    assert "Änderung" in sheet.cell(row=1, column=11).value
 
 
 def test_xlsx_export_with_single_row(temp_excel_file: Path, basic_ahb_row: AhbRow) -> None:

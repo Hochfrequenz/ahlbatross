@@ -64,7 +64,7 @@ class AhbRowDiff(BaseModel):
 
 class AhbRowComparison(BaseModel):
     """
-    Output table assembly.
+    Output table assembly (a separate "row numbering" column is added directly in the CSV/XLSX export functions).
     """
 
     previous_formatversion: AhbRow
