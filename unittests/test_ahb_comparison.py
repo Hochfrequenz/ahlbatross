@@ -883,13 +883,20 @@ class TestMultiColumnComparisons:
             AhbRow(
                 formatversion=self.formatversions.previous_formatversion,
                 section_name="1",
-                segment_group_key="a",
+                segment_group_key="b",
                 value_pool_entry=None,
                 name=None,
             ),
             AhbRow(
                 formatversion=self.formatversions.previous_formatversion,
                 section_name="1",
+                segment_group_key="c",
+                value_pool_entry=None,
+                name=None,
+            ),
+            AhbRow(
+                formatversion=self.formatversions.previous_formatversion,
+                section_name="2",
                 segment_group_key="a",
                 value_pool_entry=None,
                 name=None,
@@ -904,14 +911,7 @@ class TestMultiColumnComparisons:
             AhbRow(
                 formatversion=self.formatversions.previous_formatversion,
                 section_name="2",
-                segment_group_key="b",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="b",
+                segment_group_key="c",
                 value_pool_entry=None,
                 name=None,
             ),
@@ -927,14 +927,14 @@ class TestMultiColumnComparisons:
             AhbRow(
                 formatversion=self.formatversions.subsequent_formatversion,
                 section_name="1",
-                segment_group_key="a",
+                segment_group_key="b",
                 value_pool_entry=None,
                 name=None,
             ),
             AhbRow(
                 formatversion=self.formatversions.subsequent_formatversion,
                 section_name="1",
-                segment_group_key="x",
+                segment_group_key="c",
                 value_pool_entry=None,
                 name=None,
             ),
@@ -955,7 +955,7 @@ class TestMultiColumnComparisons:
             AhbRow(
                 formatversion=self.formatversions.subsequent_formatversion,
                 section_name="2",
-                segment_group_key="x",
+                segment_group_key="c",
                 value_pool_entry=None,
                 name=None,
             ),
@@ -966,17 +966,17 @@ class TestMultiColumnComparisons:
         assert len(result) == 6
         assert result[0].diff.diff_type == DiffType.MODIFIED
         assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.MODIFIED
+        assert result[2].diff.diff_type == DiffType.UNCHANGED
         assert result[3].diff.diff_type == DiffType.MODIFIED
         assert result[4].diff.diff_type == DiffType.UNCHANGED
-        assert result[5].diff.diff_type == DiffType.MODIFIED
+        assert result[5].diff.diff_type == DiffType.UNCHANGED
 
         assert "segment_group_key" in str(result[0].diff.changed_entries)
         assert not result[1].diff.changed_entries
-        assert "segment_group_key" in str(result[2].diff.changed_entries)
+        assert not result[2].diff.changed_entries
         assert "segment_group_key" in str(result[3].diff.changed_entries)
         assert not result[4].diff.changed_entries
-        assert "segment_group_key" in str(result[5].diff.changed_entries)
+        assert not result[5].diff.changed_entries
 
     def test_align_rows_all_ahb_properties_within_section_name(self) -> None:
         # to handle rows that have been inserted at arbitrary positions within the same `section_name` group
