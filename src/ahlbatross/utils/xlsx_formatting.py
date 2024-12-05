@@ -76,8 +76,14 @@ MODIFIED_LABEL_FORMAT: FormattingOptions = {
     "color": "#B8860B",
 }
 
+ROW_NUMBERING_FORMAT: FormattingOptions = {
+    **CELL_FORMAT,
+    "align": "center",
+}
+
 DEFAULT_COLUMN_WIDTH = 100
 CUSTOM_COLUMN_WIDTHS = {
+    "#": 25,
     "Segmentname_": 175,
     "Beschreibung_": 150,
     "Bedingung_": 250,

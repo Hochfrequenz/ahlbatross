@@ -66,6 +66,7 @@ def export_to_csv(comparisons: list[AhbRowComparison], csv_path: Path) -> None:
         subsequent_fv = first_comp.subsequent_formatversion.formatversion
 
         headers = [
+            "#",  # column for row numbering to preserve the AHB properties order
             f"Segmentname_{previous_fv}",
             f"Segmentgruppe_{previous_fv}",
             f"Segment_{previous_fv}",
@@ -88,8 +89,9 @@ def export_to_csv(comparisons: list[AhbRowComparison], csv_path: Path) -> None:
         ]
         writer.writerow(headers)
 
-        for comp in comparisons:
+        for row_num, comp in enumerate(comparisons, start=1):
             row = [
+                str(row_num),  # column for row numbering to preserve the AHB properties order
                 comp.previous_formatversion.section_name or "",
                 comp.previous_formatversion.segment_group_key or "",
                 comp.previous_formatversion.segment_code or "",

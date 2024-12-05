@@ -26,6 +26,7 @@ from ahlbatross.utils.xlsx_formatting import (
     MODIFIED_LABEL_HIGHLIGHTING,
     REMOVED_LABEL_FORMAT,
     REMOVED_LABEL_HIGHLIGHTING,
+    ROW_NUMBERING_FORMAT,
 )
 
 FormatDict = Dict[str, Format]
@@ -39,6 +40,7 @@ def _create_headers(sample: AhbRowComparison) -> List[str]:
     subsequent_formatversion_headers = sample.subsequent_formatversion.formatversion
 
     return [
+        "#",  # column for row numbering to preserve the AHB properties order
         f"Segmentname_{previous_formatversion_headers}",
         f"Segmentgruppe_{previous_formatversion_headers}",
         f"Segment_{previous_formatversion_headers}",
@@ -209,6 +211,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
         header_format = workbook.add_format(HEADER_FORMAT)
         base_format = workbook.add_format(CELL_FORMAT)
+        row_number_format = workbook.add_format(ROW_NUMBERING_FORMAT)
         diff_formats = _create_diff_label_highlighting_formats(workbook)
         highlight_segmentname = _create_segmentname_highlight_formats(workbook)
         diff_text_formats = _create_diff_label_text_formats(workbook)
@@ -219,6 +222,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
         last_segmentname: Optional[str] = None
         for row_num, comp in enumerate(comparisons, start=1):
+            worksheet.write(row_num, 0, row_num, row_number_format)
             current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
             is_new_segment = bool(current_segmentname and current_segmentname != last_segmentname)
             last_segmentname = current_segmentname
@@ -227,7 +231,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
             _write_row_entries(
                 worksheet=worksheet,
                 row_num=row_num,
-                start_col=0,
+                start_col=1,  # offset by 1 due to additional "row numbering" column
                 row=comp.previous_formatversion,
                 diff=comp.diff,
                 is_new_segment=is_new_segment,
@@ -239,13 +243,13 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
             # DIFF column
             diff_value = comp.diff.diff_type.value if comp.diff.diff_type.value else ""
-            worksheet.write(row_num, 9, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
+            worksheet.write(row_num, 10, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
 
             # AHB: subsequent formatversion - columns
             _write_row_entries(
                 worksheet=worksheet,
                 row_num=row_num,
-                start_col=10,
+                start_col=11,
                 row=comp.subsequent_formatversion,
                 diff=comp.diff,
                 is_new_segment=is_new_segment,
