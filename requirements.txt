@@ -34,7 +34,7 @@ openpyxl==3.1.5
     # via kohlrahbi
 pandas==2.2.3
     # via kohlrahbi
-pydantic==2.10.2
+pydantic==2.10.3
     # via
     #   ahlbatross (pyproject.toml)
     #   kohlrahbi
