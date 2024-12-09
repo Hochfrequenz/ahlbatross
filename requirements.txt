@@ -55,7 +55,7 @@ rich==13.9.4
     # via typer
 shellingham==1.5.4
     # via typer
-six==1.16.0
+six==1.17.0
     # via python-dateutil
 tomlkit==0.13.2
     # via kohlrahbi
