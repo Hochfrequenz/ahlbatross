@@ -38,7 +38,7 @@ pydantic==2.10.3
     # via
     #   ahlbatross (pyproject.toml)
     #   kohlrahbi
-pydantic-core==2.27.1
+pydantic-core==2.27.2
     # via pydantic
 pygments==2.18.0
     # via rich
