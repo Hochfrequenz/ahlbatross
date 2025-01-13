@@ -40,7 +40,7 @@ pydantic==2.10.5
     #   kohlrahbi
 pydantic-core==2.27.2
     # via pydantic
-pygments==2.19.0
+pygments==2.19.1
     # via rich
 python-dateutil==2.9.0.post0
     # via pandas
