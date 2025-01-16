@@ -5,10 +5,11 @@ AHB file handling as well as data fetching and parsing logic.
 import logging
 from pathlib import Path
 
+from efoli import EdifactFormatVersion
+
 from ahlbatross.core.ahb_comparison import align_ahb_rows
 from ahlbatross.formats.csv import export_to_csv, get_csv_files, load_csv_files
 from ahlbatross.formats.xlsx import export_to_xlsx
-from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 logger = logging.getLogger(__name__)
 
@@ -20,18 +21,18 @@ def _is_formatversion_dir(path: Path) -> bool:
     return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
 
 
-def _is_formatversion_dir_empty(root_dir: Path, formatversion: str) -> bool:
+def _is_formatversion_dir_empty(root_dir: Path, formatversion: EdifactFormatVersion) -> bool:
     """
     Check if a <formatversion> directory does not contain any <nachrichtenformat> directories.
     """
-    formatversion_dir = root_dir / formatversion
+    formatversion_dir = root_dir / str(formatversion)
     if not formatversion_dir.exists():
         return True
 
     return len(_get_nachrichtenformat_dirs(formatversion_dir)) == 0
 
 
-def _get_formatversion_dirs(root_dir: Path) -> list[str]:
+def _get_formatversion_dirs(root_dir: Path) -> list[EdifactFormatVersion]:
     """
     Fetch all available <formatversion> directories, sorted from latest to oldest.
     """
@@ -39,8 +40,7 @@ def _get_formatversion_dirs(root_dir: Path) -> list[str]:
         raise FileNotFoundError(f"❌ Submodule / base directory does not exist: {root_dir}")
 
     formatversion_dirs = [d.name for d in root_dir.iterdir() if _is_formatversion_dir(d)]
-    formatversion_dirs.sort(key=parse_formatversions, reverse=True)
-    return formatversion_dirs
+    return sorted([EdifactFormatVersion(fv) for fv in formatversion_dirs], reverse=True)
 
 
 def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
@@ -53,12 +53,12 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
 
-def get_formatversion_pairs(root_dir: Path) -> list[tuple[str, str]]:
+def get_formatversion_pairs(root_dir: Path) -> list[tuple[EdifactFormatVersion, EdifactFormatVersion]]:
     """
     Generate pairs of consecutive <formatversion> directories.
     """
     formatversion_list = _get_formatversion_dirs(root_dir)
-    logger.debug("Found formatversions: %s", formatversion_list)  # Debug all found versions
+    logger.debug("Found formatversions: %s", formatversion_list)
 
     consecutive_formatversions = []
     for i in range(len(formatversion_list) - 1):
