@@ -1,18 +1,18 @@
 from pathlib import Path
 
 import pytest
+from efoli import EdifactFormatVersion
 
 from ahlbatross.core.ahb_processing import get_formatversion_pairs, get_matching_csv_files
-from ahlbatross.utils.formatversion_parsing import parse_formatversions
 
 
 def test_parse_valid_formatversions() -> None:
     """
-    test parsing of valid format version strings.
+    test parsing of valid format version strings using efoli.
     """
-    assert parse_formatversions("FV2504") == (2025, 4)
-    assert parse_formatversions("FV2310") == (2023, 10)
-    assert parse_formatversions("FV2104") == (2021, 4)
+    assert EdifactFormatVersion("FV2504") == EdifactFormatVersion.FV2504
+    assert EdifactFormatVersion("FV2310") == EdifactFormatVersion.FV2310
+    assert EdifactFormatVersion("FV2104") == EdifactFormatVersion.FV2104
 
 
 def test_parse_invalid_formatversions() -> None:
@@ -20,24 +20,23 @@ def test_parse_invalid_formatversions() -> None:
     test parsing of invalid formatversion strings.
     """
     test_cases = [
-        ("FV250", "invalid month"),
-        ("FV25044", "invalid month"),
-        ("FV2513", "invalid month"),
-        ("FV2500", "invalid month"),
-        ("XX2504", "wrong prefix"),
-        ("", "empty string"),
+        "FV250",  # too short
+        "FV25044",  # too long
+        "FV2513",  # invalid month
+        "FV2500",  # invalid month
+        "XX2504",  # wrong prefix
+        "",  # empty string
     ]
 
-    for invalid_input, _ in test_cases:
-        with pytest.raises(ValueError, match=f"invalid formatversion: {invalid_input}"):
-            parse_formatversions(invalid_input)
+    for invalid_input in test_cases:
+        with pytest.raises(ValueError):
+            EdifactFormatVersion(invalid_input)
 
 
 def test_get_matching_files(tmp_path: Path) -> None:
     """
     test find matching files across formatversions.
     """
-
     submodule: dict[str, dict[str, dict[str, str]]] = {
         "FV2504": {
             "nachrichtenformat_1": {"pruefid_1.csv": "content_1", "pruefid_2.csv": "content_2"},
@@ -59,7 +58,9 @@ def test_get_matching_files(tmp_path: Path) -> None:
                 (nachrichtenformat_dir / file).write_text(content)
 
     matches = get_matching_csv_files(
-        root_dir=tmp_path, previous_formatversion="FV2410", subsequent_formatversion="FV2504"
+        root_dir=tmp_path,
+        previous_formatversion=EdifactFormatVersion.FV2410,
+        subsequent_formatversion=EdifactFormatVersion.FV2504,
     )
 
     assert len(matches) == 2
@@ -91,4 +92,5 @@ def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
                 (csv_dir / "test.csv").write_text("test")
 
     result = get_formatversion_pairs(root_dir=tmp_path)
-    assert result == [("FV2504", "FV2410")]
+    expected = [(EdifactFormatVersion.FV2504, EdifactFormatVersion.FV2410)]
+    assert result == expected
