@@ -15,7 +15,7 @@ class FormattingOptions(TypedDict, total=False):
     border: int
     align: str
     text_wrap: bool
-    color: str
+    font_color: str
 
 
 CELL_FORMAT: FormattingOptions = {
@@ -63,17 +63,17 @@ TEXT_FORMAT_BASE: FormattingOptions = {
 
 ADDED_LABEL_FORMAT: FormattingOptions = {
     **TEXT_FORMAT_BASE,
-    "color": "#7AAB8A",
+    "font_color": "#7AAB8A",
 }
 
 REMOVED_LABEL_FORMAT: FormattingOptions = {
     **TEXT_FORMAT_BASE,
-    "color": "#E94C74",
+    "font_color": "#E94C74",
 }
 
 MODIFIED_LABEL_FORMAT: FormattingOptions = {
     **TEXT_FORMAT_BASE,
-    "color": "#B8860B",
+    "font_color": "#B8860B",
 }
 
 ROW_NUMBERING_FORMAT: FormattingOptions = {
