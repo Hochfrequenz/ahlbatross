@@ -16,7 +16,7 @@ from rich.prompt import Prompt
 from ahlbatross.core.ahb_comparison import align_ahb_rows
 from ahlbatross.core.ahb_processing import _get_formatversion_dirs, _get_nachrichtenformat_dirs
 from ahlbatross.formats.csv import get_csv_files, load_csv_files
-from ahlbatross.formats.xlsx import export_to_xlsx
+from ahlbatross.formats.xlsx import export_to_xlsx_multicompare
 
 logger = logging.getLogger(__name__)
 console = Console()
@@ -91,79 +91,103 @@ def multicompare_command(
         formatversions_list = ", ".join(str(fv) for fv in formatversions)
         console.print(f"\nAVAILABLE FVs: {formatversions_list}")
 
+        # get first FV
         while True:
-            selected_fv = Prompt.ask("\nSELECT FV")
-            if selected_fv in [str(fv) for fv in formatversions]:
+            first_fv = Prompt.ask("\nSELECT FV")
+            if first_fv in [str(fv) for fv in formatversions]:
                 break
             console.print("❌ Invalid FV.")
 
-        available_pids = get_available_pids(input_dir, selected_fv)
-        if not available_pids:
-            logger.error("❌ No PIDs found in format version %s", selected_fv)
+        # get first PID
+        first_available_pids = get_available_pids(input_dir, first_fv)
+        if not first_available_pids:
+            logger.error("❌ No PIDs found in format version %s", first_fv)
             sys.exit(1)
 
         # show available PIDs
-        pids_list = ", ".join(available_pids)
-        console.print(f"\nAVAILABLE PIDs: {pids_list}")
+        first_pids_list = ", ".join(first_available_pids)
+        console.print(f"\nAVAILABLE PIDs: {first_pids_list}")
 
         while True:
             first_pruefid = Prompt.ask("\nSELECT PID #1")
-            if first_pruefid in available_pids:
+            if first_pruefid in first_available_pids:
                 break
             console.print("❌ Invalid PID.")
 
-        # show available FVs
-        formatversions_list = ", ".join(str(fv) for fv in formatversions)
-        console.print(f"\nAVAILABLE FVs: {formatversions_list}")
+        first_file = find_pruefid_file(input_dir, first_fv, first_pruefid)
+        if not first_file:
+            logger.error("❌ Could not find PID file for %s in %s", first_pruefid, first_fv)
+            sys.exit(1)
 
+        first_file_path, _ = first_file
+
+        comparison_groups = []
+        comparison_names = []
+
+        comparison_number = 2
         while True:
-            second_fv = Prompt.ask("\nSELECT FV #2")
-            if second_fv in [str(fv) for fv in formatversions]:
+            # show available FVs
+            formatversions_list = ", ".join(str(fv) for fv in formatversions)
+            console.print(f"\nAVAILABLE FVs (🏁 PRESS ENTER TO FINISH): {formatversions_list}")
+
+            next_fv = Prompt.ask(f"\nSELECT FV #{comparison_number}", default="")
+            if not next_fv:
+                # hitting enter aborts the process.
                 break
-            console.print("❌ Invalid format version.")
 
-        second_available_pids = get_available_pids(input_dir, second_fv)
-        if not second_available_pids:
-            logger.error("❌ No PIDs found for format version %s", second_fv)
-            sys.exit(1)
+            if next_fv not in [str(fv) for fv in formatversions]:
+                console.print("❌ Invalid FV.")
+                continue
 
-        # show available PIDs
-        second_pids_list = ", ".join(second_available_pids)
-        console.print(f"\nAVAILABLE PIDs (FV{second_fv}): {second_pids_list}")
+            next_available_pids = get_available_pids(input_dir, next_fv)
+            if not next_available_pids:
+                logger.error("❌ No PIDs found for format version %s", next_fv)
+                continue
 
-        while True:
-            second_pruefid = Prompt.ask("\nSELECT PID #2")
-            # allow same PIDs only if FVs are different
-            if second_pruefid in second_available_pids:
-                if second_pruefid == first_pruefid and selected_fv == second_fv:
+            # show available PIDs
+            next_pids_list = ", ".join(next_available_pids)
+            console.print(f"\nAVAILABLE PIDs (FV{next_fv}): {next_pids_list}")
+
+            while True:
+                next_pruefid = Prompt.ask(f"\nSELECT PID #{comparison_number}")
+                if next_pruefid == first_pruefid and next_fv == first_fv:
                     console.print("❌ Cannot compare identical PIDs of the same format version.")
-                else:
+                elif next_pruefid in next_available_pids:
                     break
-            else:
-                console.print("❌ Invalid PID.")
+                else:
+                    console.print("❌ Invalid PID.")
 
-        first_file = find_pruefid_file(input_dir, selected_fv, first_pruefid)
-        second_file = find_pruefid_file(input_dir, selected_fv, second_pruefid)
+            next_file = find_pruefid_file(input_dir, next_fv, next_pruefid)
+            if not next_file:
+                logger.error("❌ Could not find PID file for %s in %s", next_pruefid, next_fv)
+                continue
 
-        if not first_file or not second_file:
-            logger.error("❌ Could not find any <PID>.json files.")
+            next_file_path, _ = next_file
+
+            try:
+                first_rows, next_rows = load_csv_files(first_file_path, next_file_path, first_fv, next_fv)
+                comparisons = align_ahb_rows(first_rows, next_rows)
+
+                comparison_groups.append(comparisons)
+                comparison_names.append(f"{first_pruefid}_{next_pruefid}")
+
+                comparison_number += 1
+            except (OSError, IOError, ValueError) as e:
+                logger.error(
+                    "❌ Error comparing %s/%s with %s/%s: %s", first_fv, first_pruefid, next_fv, next_pruefid, str(e)
+                )
+                continue
+
+        if not comparison_groups:
             sys.exit(1)
 
-        first_file_path, first_nf = first_file
-        second_file_path, second_nf = second_file
-
-        previous_rows, subsequent_rows = load_csv_files(first_file_path, second_file_path, selected_fv, second_fv)
-        comparisons = align_ahb_rows(previous_rows, subsequent_rows)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        output_basename = f"{first_pruefid}_{second_pruefid}"
-        xlsx_path = output_dir / f"{output_basename}.xlsx"
+        xlsx_path = output_dir / f"{first_pruefid}_comparisons.xlsx"
+        export_to_xlsx_multicompare(comparison_groups, comparison_names, str(xlsx_path))
 
-        export_to_xlsx(comparisons, str(xlsx_path))
+        logger.info("✅ Successfully processed: %s", xlsx_path)
 
-        logger.info("✅ Successfully merged PIDs")
-        logger.info("XLSX output: %s", xlsx_path)
-
-    except Exception as e:
+    except (OSError, IOError, ValueError, TypeError) as e:
         logger.exception("❌ Error: %s", str(e))
         sys.exit(1)

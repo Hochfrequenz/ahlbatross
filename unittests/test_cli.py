@@ -26,9 +26,9 @@ def test_input_output_path(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> 
 
     runner = CliRunner()
     long_form_flag = runner.invoke(
-        app, ["--input-dir", str(input_dir), "--output-dir", str(output_dir)], catch_exceptions=False
+        app, ["main", "--input-dir", str(input_dir), "--output-dir", str(output_dir)], catch_exceptions=False
     )
-    short_form_flag = runner.invoke(app, ["-i", str(input_dir), "-o", str(output_dir)], catch_exceptions=False)
+    short_form_flag = runner.invoke(app, ["main", "-i", str(input_dir), "-o", str(output_dir)], catch_exceptions=False)
 
     assert long_form_flag.exit_code == 0
     assert short_form_flag.exit_code == 0
@@ -43,7 +43,7 @@ def test_invalid_input_output_path(tmp_path: Path, caplog: pytest.LogCaptureFixt
     invalid_dir = tmp_path / "does_not_exist"
     runner = CliRunner()
     result = runner.invoke(
-        app, ["--input-dir", str(invalid_dir), "--output-dir", str(tmp_path)], catch_exceptions=False
+        app, ["main", "--input-dir", str(invalid_dir), "--output-dir", str(tmp_path)], catch_exceptions=False
     )
 
     assert "❌ Input directory does not exist:" in caplog.text
