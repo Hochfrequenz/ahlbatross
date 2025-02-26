@@ -9,6 +9,7 @@ from pathlib import Path
 import typer
 from rich.console import Console
 
+from ahlbatross.core.ahb_multicomparison import multicompare_command
 from ahlbatross.core.ahb_processing import process_ahb_files
 
 logger = logging.getLogger(__name__)
@@ -46,6 +47,19 @@ def main(
         sys.exit(1)
 
 
+@app.command()
+def multicompare(
+    input_dir: Path = typer.Option(..., "--input-dir", "-i", help="Directory containing AHB data."),
+    output_dir: Path = typer.Option(
+        ..., "--output-dir", "-o", help="Destination path to output directory containing processed files."
+    ),
+) -> None:
+    """
+    Interactive command to compare two PIDs within the same format version.
+    """
+    multicompare_command(input_dir, output_dir)
+
+
 def cli() -> None:
     """
     Entry point of the script defined in pyproject.toml
@@ -53,7 +67,8 @@ def cli() -> None:
     app()
 
 
-# to run the script during local development, execute the following command:
+# to run the script during local development, execute one of the following commands:
 # PYTHONPATH=src python -m ahlbatross.main -i data/machine-readable_anwendungshandbuecher -o data/output
+# PYTHONPATH=src python -m ahlbatross.main multicompare -i data/machine-readable_anwendungshandbuecher -o data/output
 if __name__ == "__main__":
     cli()
