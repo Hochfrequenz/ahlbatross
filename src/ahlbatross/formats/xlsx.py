@@ -266,6 +266,37 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
         logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)
 
 
+def _create_column_headers(sample: AhbRowComparison, first_pruefid: str, second_pruefid: str) -> List[str]:
+    """
+    Create a list of available headers from merged <pruefid>.csv files with PID information.
+    """
+    previous_formatversion_headers = sample.previous_formatversion.formatversion
+    subsequent_formatversion_headers = sample.subsequent_formatversion.formatversion
+
+    return [
+        "#",  # column for row numbering to preserve the AHB properties order
+        f"Segmentname_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segmentgruppe_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segment_{previous_formatversion_headers}_{first_pruefid}",
+        f"Datenelement_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segment ID_{previous_formatversion_headers}_{first_pruefid}",
+        f"Code_{previous_formatversion_headers}_{first_pruefid}",
+        f"Beschreibung_{previous_formatversion_headers}_{first_pruefid}",
+        f"Bedingungsausdruck_{previous_formatversion_headers}_{first_pruefid}",
+        f"Bedingung_{previous_formatversion_headers}_{first_pruefid}",
+        "Änderung",
+        f"Segmentname_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segmentgruppe_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segment_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Datenelement_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segment ID_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Code_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Beschreibung_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Bedingungsausdruck_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Bedingung_{subsequent_formatversion_headers}_{second_pruefid}",
+    ]
+
+
 def export_to_xlsx_multicompare(
     comparison_groups: List[List[AhbRowComparison]], sheet_names: List[str], output_path_xlsx: str
 ) -> None:
@@ -274,6 +305,11 @@ def export_to_xlsx_multicompare(
     """
     with Workbook(output_path_xlsx) as workbook:
         for _, (comparisons, sheet_name) in enumerate(zip(comparison_groups, sheet_names)):
+            # extract PIDs from sheet_name
+            pids = sheet_name.split("_")
+            first_pid = pids[0] if len(pids) > 0 else ""
+            second_pid = pids[1] if len(pids) > 1 else ""
+
             safe_sheet_name = (
                 sheet_name[:31]
                 .replace(":", "_")
@@ -293,7 +329,7 @@ def export_to_xlsx_multicompare(
             highlight_segmentname = _create_segmentname_highlight_formats(workbook)
             diff_text_formats = _create_diff_label_text_formats(workbook)
 
-            headers = _create_headers(comparisons[0])
+            headers = _create_column_headers(comparisons[0], first_pid, second_pid)
             for col, header in enumerate(headers):
                 worksheet.write(0, col, header, header_format)
 
