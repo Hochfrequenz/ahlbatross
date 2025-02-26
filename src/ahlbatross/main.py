@@ -19,7 +19,7 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 
 
 @app.command()
-def main(
+def compare(
     input_dir: Path = typer.Option(..., "--input-dir", "-i", help="Directory containing AHB data."),
     output_dir: Path = typer.Option(
         ..., "--output-dir", "-o", help="Destination path to output directory containing processed files."
