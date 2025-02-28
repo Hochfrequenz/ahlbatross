@@ -232,20 +232,18 @@ def _set_column_widths(worksheet: Worksheet, headers: List[str]) -> None:
         worksheet.set_column(col_num, col_num, width_px / 7)
 
 
-def _create_safe_sheet_name(sheet_name: str) -> str:
+def _set_sheet_name(sheet_name: str) -> str:
     """
-    Creates a safe sheet name by removing invalid characters and truncating to allowed length.
+    Creates a safe sheet name by removing invalid characters and limiting length to 31 characters.
     """
-    return (
-        sheet_name[:31]
-        .replace(":", "_")
-        .replace("\\", "_")
-        .replace("/", "_")
-        .replace("?", "_")
-        .replace("*", "_")
-        .replace("[", "_")
-        .replace("]", "_")
-    )
+    max_excel_sheet_name_length = 31
+    safe_sheet_name = sheet_name[:max_excel_sheet_name_length]
+
+    forbidden_sheet_name_characters = (":", "\\", "/", "?", "*", "[", "]")
+    for forbidden_character in forbidden_sheet_name_characters:
+        safe_sheet_name = safe_sheet_name.replace(forbidden_character, "_")
+
+    return safe_sheet_name
 
 
 def _process_worksheet(
@@ -343,7 +341,7 @@ def export_to_xlsx_multicompare(
             first_pid = pids[0] if len(pids) > 0 else ""
             second_pid = pids[1] if len(pids) > 1 else ""
 
-            safe_sheet_name = _create_safe_sheet_name(sheet_name)
+            safe_sheet_name = _set_sheet_name(sheet_name)
             worksheet = workbook.add_worksheet(safe_sheet_name)
 
             headers = _format_headers_during_multi_comparison(comparisons[0], first_pid, second_pid)
