@@ -7,7 +7,6 @@ Multiple comparisons PID_A <-> PID_B, PID_A <-> PID_C, PID_A <-> PID_D, ... are 
 import logging
 import sys
 from pathlib import Path
-from typing import List, Optional, Tuple
 
 import typer
 from rich.console import Console
@@ -22,7 +21,7 @@ logger = logging.getLogger(__name__)
 console = Console()
 
 
-def find_pruefid_file(root_dir: Path, formatversion: str, pruefid: str) -> Optional[Tuple[Path, str]]:
+def find_pruefid_file(root_dir: Path, formatversion: str, pruefid: str) -> tuple[Path, str] | None:
     """
     Find a PID file across all "Nachrichtenformat" directories in a given FV.
     """
@@ -44,7 +43,7 @@ def find_pruefid_file(root_dir: Path, formatversion: str, pruefid: str) -> Optio
     return None
 
 
-def get_available_pids(root_dir: Path, formatversion: str) -> List[str]:
+def get_available_pids(root_dir: Path, formatversion: str) -> list[str]:
     """
     Get all available PIDs across all nachrichtenformat directories in a given FV.
     """
