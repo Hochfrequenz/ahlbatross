@@ -3,7 +3,7 @@ Contains excel export logic.
 """
 
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Callable, Dict, List, Optional
 
 from xlsxwriter import Workbook  # type: ignore
 from xlsxwriter.format import Format  # type: ignore
@@ -32,9 +32,9 @@ from ahlbatross.utils.xlsx_formatting import (
 FormatDict = Dict[str, Format]
 
 
-def _create_headers(sample: AhbRowComparison) -> List[str]:
+def _format_headers_during_comparison(sample: AhbRowComparison) -> List[str]:
     """
-    Create a list of available headers from merged <pruefid>.csv files.
+    Create a list of available headers from merged <pruefid>.csv files when executing "ahlbatross compare".
     """
     previous_formatversion_headers = sample.previous_formatversion.formatversion
     subsequent_formatversion_headers = sample.subsequent_formatversion.formatversion
@@ -60,6 +60,39 @@ def _create_headers(sample: AhbRowComparison) -> List[str]:
         f"Beschreibung_{subsequent_formatversion_headers}",
         f"Bedingungsausdruck_{subsequent_formatversion_headers}",
         f"Bedingung_{subsequent_formatversion_headers}",
+    ]
+
+
+def _format_headers_during_multi_comparison(
+    sample: AhbRowComparison, first_pruefid: str, second_pruefid: str
+) -> list[str]:
+    """
+    Create a list of available headers from merged <pruefid>.csv files with PID information during multi comparison.
+    """
+    previous_formatversion_headers = sample.previous_formatversion.formatversion
+    subsequent_formatversion_headers = sample.subsequent_formatversion.formatversion
+
+    return [
+        "#",  # column for row numbering to preserve the AHB properties order
+        f"Segmentname_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segmentgruppe_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segment_{previous_formatversion_headers}_{first_pruefid}",
+        f"Datenelement_{previous_formatversion_headers}_{first_pruefid}",
+        f"Segment ID_{previous_formatversion_headers}_{first_pruefid}",
+        f"Code_{previous_formatversion_headers}_{first_pruefid}",
+        f"Beschreibung_{previous_formatversion_headers}_{first_pruefid}",
+        f"Bedingungsausdruck_{previous_formatversion_headers}_{first_pruefid}",
+        f"Bedingung_{previous_formatversion_headers}_{first_pruefid}",
+        "Änderung",
+        f"Segmentname_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segmentgruppe_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segment_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Datenelement_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Segment ID_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Code_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Beschreibung_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Bedingungsausdruck_{subsequent_formatversion_headers}_{second_pruefid}",
+        f"Bedingung_{subsequent_formatversion_headers}_{second_pruefid}",
     ]
 
 
@@ -199,6 +232,86 @@ def _set_column_widths(worksheet: Worksheet, headers: List[str]) -> None:
         worksheet.set_column(col_num, col_num, width_px / 7)
 
 
+def _set_sheet_name(sheet_name: str) -> str:
+    """
+    Creates a safe sheet name by removing invalid characters and limiting length to 31 characters.
+    """
+    max_excel_sheet_name_length = 31
+    safe_sheet_name = sheet_name[:max_excel_sheet_name_length]
+
+    forbidden_sheet_name_characters = (":", "\\", "/", "?", "*", "[", "]")
+    for forbidden_character in forbidden_sheet_name_characters:
+        safe_sheet_name = safe_sheet_name.replace(forbidden_character, "_")
+
+    return safe_sheet_name
+
+
+def _process_worksheet(
+    workbook: Workbook,
+    worksheet: Worksheet,
+    comparisons: List[AhbRowComparison],
+    headers: List[str],
+    _: Callable[[int], bool] = lambda col: col < 10,
+) -> None:
+    """
+    Common worksheet processing logic extracted from both export functions.
+    """
+    header_format = workbook.add_format(HEADER_FORMAT)
+    base_format = workbook.add_format(CELL_FORMAT)
+    row_number_format = workbook.add_format(ROW_NUMBERING_FORMAT)
+    diff_formats = _create_diff_label_highlighting_formats(workbook)
+    highlight_segmentname = _create_segmentname_highlight_formats(workbook)
+    diff_text_formats = _create_diff_label_text_formats(workbook)
+
+    # Write headers
+    for col, header in enumerate(headers):
+        worksheet.write(0, col, header, header_format)
+
+    # Process rows
+    last_segmentname: Optional[str] = None
+    for row_num, comp in enumerate(comparisons, start=1):
+        worksheet.write(row_num, 0, row_num, row_number_format)
+        current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
+        is_new_segment = bool(current_segmentname and current_segmentname != last_segmentname)
+        last_segmentname = current_segmentname
+
+        # AHB: previous formatversion - columns
+        _write_row_entries(
+            worksheet=worksheet,
+            row_num=row_num,
+            start_col=1,  # offset by 1 due to additional "row numbering" column
+            row=comp.previous_formatversion,
+            diff=comp.diff,
+            is_new_segment=is_new_segment,
+            diff_formats=diff_formats,
+            highlight_segmentname=highlight_segmentname,
+            base_format=base_format,
+            _is_previous_formatversion=True,
+        )
+
+        # DIFF column
+        diff_value = comp.diff.diff_type.value if comp.diff.diff_type.value else ""
+        worksheet.write(row_num, 10, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
+
+        # AHB: subsequent formatversion - columns
+        _write_row_entries(
+            worksheet=worksheet,
+            row_num=row_num,
+            start_col=11,
+            row=comp.subsequent_formatversion,
+            diff=comp.diff,
+            is_new_segment=is_new_segment,
+            diff_formats=diff_formats,
+            highlight_segmentname=highlight_segmentname,
+            base_format=base_format,
+            _is_previous_formatversion=False,
+        )
+
+    _set_column_widths(worksheet, headers)
+    if comparisons:
+        worksheet.freeze_panes(1, 0)
+
+
 # pylint:disable=too-many-locals
 def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -> None:
     """
@@ -208,59 +321,34 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
     with Workbook(output_path_xlsx) as workbook:
         worksheet = workbook.add_worksheet(sheet_name)
+        headers = _format_headers_during_comparison(comparisons[0])
 
-        header_format = workbook.add_format(HEADER_FORMAT)
-        base_format = workbook.add_format(CELL_FORMAT)
-        row_number_format = workbook.add_format(ROW_NUMBERING_FORMAT)
-        diff_formats = _create_diff_label_highlighting_formats(workbook)
-        highlight_segmentname = _create_segmentname_highlight_formats(workbook)
-        diff_text_formats = _create_diff_label_text_formats(workbook)
+        _process_worksheet(workbook, worksheet, comparisons, headers)
 
-        headers = _create_headers(comparisons[0])
-        for col, header in enumerate(headers):
-            worksheet.write(0, col, header, header_format)
+        logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)
 
-        last_segmentname: Optional[str] = None
-        for row_num, comp in enumerate(comparisons, start=1):
-            worksheet.write(row_num, 0, row_num, row_number_format)
-            current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
-            is_new_segment = bool(current_segmentname and current_segmentname != last_segmentname)
-            last_segmentname = current_segmentname
 
-            # AHB: previous formatversion - columns
-            _write_row_entries(
-                worksheet=worksheet,
-                row_num=row_num,
-                start_col=1,  # offset by 1 due to additional "row numbering" column
-                row=comp.previous_formatversion,
-                diff=comp.diff,
-                is_new_segment=is_new_segment,
-                diff_formats=diff_formats,
-                highlight_segmentname=highlight_segmentname,
-                base_format=base_format,
-                _is_previous_formatversion=True,
-            )
+def export_to_xlsx_multicompare(
+    comparison_groups: List[List[AhbRowComparison]],
+    sheet_names: List[str],
+    output_path_xlsx: Path,
+    strict: bool = True,
+) -> None:
+    """
+    Exports multiple PID comparisons as different tabs in a single XLSX file.
+    """
+    with Workbook(output_path_xlsx) as workbook:
+        for comparisons, sheet_name in zip(comparison_groups, sheet_names, strict=strict):
+            # extract PIDs from sheet_name based on `comparison_names.append(f"{first_pruefid}_{next_pruefid}")`
+            # for example worksheet/tab names: `55001_55001`, `55001_55002`, `55001_55003`, ...
+            pids = sheet_name.split("_")
+            first_pid = pids[0] if len(pids) > 0 else ""
+            second_pid = pids[1] if len(pids) > 1 else ""
 
-            # DIFF column
-            diff_value = comp.diff.diff_type.value if comp.diff.diff_type.value else ""
-            worksheet.write(row_num, 10, diff_value, diff_text_formats.get(diff_value, diff_text_formats[""]))
+            safe_sheet_name = _set_sheet_name(sheet_name)
+            worksheet = workbook.add_worksheet(safe_sheet_name)
 
-            # AHB: subsequent formatversion - columns
-            _write_row_entries(
-                worksheet=worksheet,
-                row_num=row_num,
-                start_col=11,
-                row=comp.subsequent_formatversion,
-                diff=comp.diff,
-                is_new_segment=is_new_segment,
-                diff_formats=diff_formats,
-                highlight_segmentname=highlight_segmentname,
-                base_format=base_format,
-                _is_previous_formatversion=False,
-            )
-
-        _set_column_widths(worksheet, headers)
-        if comparisons:
-            worksheet.freeze_panes(1, 0)
+            headers = _format_headers_during_multi_comparison(comparisons[0], first_pid, second_pid)
+            _process_worksheet(workbook, worksheet, comparisons, headers)
 
         logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)

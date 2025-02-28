@@ -48,7 +48,7 @@ def _get_nachrichtenformat_dirs(formatversion_dir: Path) -> list[Path]:
     Fetch all <nachrichtenformat> directories that contain actual csv files.
     """
     if not formatversion_dir.exists():
-        raise FileNotFoundError(f"❌ Formatversion directory not found: {formatversion_dir.absolute()}")
+        raise FileNotFoundError(f"❌ FV directory not found: {formatversion_dir.absolute()}")
 
     return [d for d in formatversion_dir.iterdir() if d.is_dir() and (d / "csv").exists() and (d / "csv").is_dir()]
 
@@ -77,7 +77,7 @@ def get_formatversion_pairs(root_dir: Path) -> list[tuple[EdifactFormatVersion, 
 
         if is_subsequent_empty or is_previous_empty:
             logger.warning(
-                "❗️Skipping empty consecutive formatversions: %s -> %s",
+                "❗️Skipping empty consecutive FVs: %s -> %s",
                 subsequent_formatversion,
                 previous_formatversion,
             )
@@ -85,7 +85,7 @@ def get_formatversion_pairs(root_dir: Path) -> list[tuple[EdifactFormatVersion, 
 
         consecutive_formatversions.append((subsequent_formatversion, previous_formatversion))
 
-    logger.debug("Consecutive formatversions: %s", consecutive_formatversions)
+    logger.debug("Consecutive FVs: %s", consecutive_formatversions)
     return consecutive_formatversions
 
 
@@ -100,7 +100,7 @@ def get_matching_csv_files(
     subsequent_formatversion_dir = root_dir / subsequent_formatversion
 
     if not all(d.exists() for d in [previous_formatversion_dir, subsequent_formatversion_dir]):
-        logger.error("❌ At least one formatversion directory does not exist.")
+        logger.error("❌ At least one FV directory does not exist.")
         return []
 
     matching_files = []
@@ -140,13 +140,11 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
 
     consecutive_formatversions = get_formatversion_pairs(input_dir)
     if not consecutive_formatversions:
-        logger.warning("❗️ No valid consecutive formatversion subdirectories found to compare.")
+        logger.warning("❗️ No valid consecutive FVs subdirectories found to compare.")
         return
 
     for subsequent_formatversion, previous_formatversion in consecutive_formatversions:
-        logger.info(
-            "⌛ Processing consecutive formatversions: %s -> %s", subsequent_formatversion, previous_formatversion
-        )
+        logger.info("⌛ Processing consecutive FVs: %s -> %s", subsequent_formatversion, previous_formatversion)
 
         try:
             matching_files = get_matching_csv_files(input_dir, previous_formatversion, subsequent_formatversion)
@@ -184,7 +182,7 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
 
         except (OSError, IOError, ValueError) as e:
             logger.error(
-                "❌ Error processing formatversions %s -> %s: %s",
+                "❌ Error processing FVs %s -> %s: %s",
                 subsequent_formatversion,
                 previous_formatversion,
                 str(e),
