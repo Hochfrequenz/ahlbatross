@@ -20,50 +20,41 @@ from ahlbatross.formats.xlsx import export_to_xlsx_multicompare
 logger = logging.getLogger(__name__)
 console = Console()
 
+_FORMATVERSION_PID_CACHE: dict[str, dict[str, tuple[Path, str]]] = {}
 
-def find_pruefid_file(root_dir: Path, formatversion: str, pruefid: str) -> tuple[Path, str] | None:
+
+def find_pid(root_dir: Path, formatversion: str, pruefid: str) -> tuple[Path, str] | None:
     """
-    Find a PID file across all "Nachrichtenformat" directories in a given FV.
+    Find a PID file across all nachrichtenformat directories in a given FV.
     """
-    formatversion_dir = root_dir / formatversion
-    if not formatversion_dir.exists():
-        return None
+    # Store the locations of all PIDs after the initial scan/prompt of a FV directory
+    if formatversion not in _FORMATVERSION_PID_CACHE:
+        formatversion_dir = root_dir / formatversion
+        if not formatversion_dir.exists():
+            return None
 
-    nachrichtenformat_dirs = _get_nachrichtenformat_dirs(formatversion_dir)
+        nachrichtenformat_dirs = _get_nachrichtenformat_dirs(formatversion_dir)
+        _FORMATVERSION_PID_CACHE[formatversion] = {}
 
-    for nf_dir in nachrichtenformat_dirs:
-        csv_dir = nf_dir / "csv"
-        if not csv_dir.exists():
-            continue
+        for nf_dir in nachrichtenformat_dirs:
+            csv_dir = nf_dir / "csv"
+            if not csv_dir.exists():
+                continue
 
-        for file in get_csv_files(csv_dir):
-            if file.stem == pruefid:
-                return file, nf_dir.name
+            for file in get_csv_files(csv_dir):
+                _FORMATVERSION_PID_CACHE[formatversion][file.stem] = (file, nf_dir.name)
 
-    return None
+    return _FORMATVERSION_PID_CACHE[formatversion].get(pruefid)
 
 
-def get_available_pids(root_dir: Path, formatversion: str) -> list[str]:
+def get_pids(root_dir: Path, formatversion: str) -> list[str]:
     """
-    Get all available PIDs across all nachrichtenformat directories in a given FV.
+    Get all available PIDs across all nachrichtenformat directories for a given FV.
     """
-    pids = set()
-    formatversion_dir = root_dir / formatversion
+    if formatversion not in _FORMATVERSION_PID_CACHE:
+        find_pid(root_dir, formatversion, "")
 
-    if not formatversion_dir.exists():
-        return []
-
-    nachrichtenformat_dirs = _get_nachrichtenformat_dirs(formatversion_dir)
-
-    for nf_dir in nachrichtenformat_dirs:
-        csv_dir = nf_dir / "csv"
-        if not csv_dir.exists():
-            continue
-
-        for file in get_csv_files(csv_dir):
-            pids.add(file.stem)
-
-    return sorted(list(pids))
+    return sorted(list(_FORMATVERSION_PID_CACHE.get(formatversion, {}).keys()))
 
 
 # pylint:disable=too-many-locals, too-many-branches, too-many-statements
@@ -98,7 +89,7 @@ def multicompare_command(
             console.print("❌ Invalid FV.")
 
         # get first PID
-        first_available_pids = get_available_pids(input_dir, first_fv)
+        first_available_pids = get_pids(input_dir, first_fv)
         if not first_available_pids:
             logger.error("❌ No PIDs found in format version %s", first_fv)
             sys.exit(1)
@@ -113,7 +104,7 @@ def multicompare_command(
                 break
             console.print("❌ Invalid PID.")
 
-        first_file = find_pruefid_file(input_dir, first_fv, first_pruefid)
+        first_file = find_pid(input_dir, first_fv, first_pruefid)
         if not first_file:
             logger.error("❌ Could not find PID file for %s in %s", first_pruefid, first_fv)
             sys.exit(1)
@@ -138,7 +129,7 @@ def multicompare_command(
                 console.print("❌ Invalid FV.")
                 continue
 
-            next_available_pids = get_available_pids(input_dir, next_fv)
+            next_available_pids = get_pids(input_dir, next_fv)
             if not next_available_pids:
                 logger.error("❌ No PIDs found for format version %s", next_fv)
                 continue
@@ -156,7 +147,7 @@ def multicompare_command(
                 else:
                     console.print("❌ Invalid PID.")
 
-            next_file = find_pruefid_file(input_dir, next_fv, next_pruefid)
+            next_file = find_pid(input_dir, next_fv, next_pruefid)
             if not next_file:
                 logger.error("❌ Could not find PID file for %s in %s", next_pruefid, next_fv)
                 continue
