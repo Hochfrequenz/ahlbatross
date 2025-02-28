@@ -266,7 +266,7 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
         logger.info("✅ Successfully exported XLSX file to: %s", output_path_xlsx)
 
 
-def _create_column_headers(sample: AhbRowComparison, first_pruefid: str, second_pruefid: str) -> List[str]:
+def _create_column_headers(sample: AhbRowComparison, first_pruefid: str, second_pruefid: str) -> list[str]:
     """
     Create a list of available headers from merged <pruefid>.csv files with PID information.
     """
