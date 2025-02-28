@@ -50,6 +50,7 @@ def find_pid(root_dir: Path, formatversion: str, pruefid: str) -> tuple[Path, st
 def get_pids(root_dir: Path, formatversion: str) -> list[str]:
     """
     Get all available PIDs across all nachrichtenformat directories for a given FV.
+    The result is sorted and contains every PID once at max.
     """
     if formatversion not in _FORMATVERSION_PID_CACHE:
         find_pid(root_dir, formatversion, "")
