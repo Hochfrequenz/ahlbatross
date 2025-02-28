@@ -336,7 +336,8 @@ def export_to_xlsx_multicompare(
     """
     with Workbook(output_path_xlsx) as workbook:
         for comparisons, sheet_name in zip(comparison_groups, sheet_names):
-            # extract PIDs from sheet_name
+            # extract PIDs from sheet_name based on `comparison_names.append(f"{first_pruefid}_{next_pruefid}")`
+            # for example worksheet/tab names: `55001_55001`, `55001_55002`, `55001_55003`, ...
             pids = sheet_name.split("_")
             first_pid = pids[0] if len(pids) > 0 else ""
             second_pid = pids[1] if len(pids) > 1 else ""
