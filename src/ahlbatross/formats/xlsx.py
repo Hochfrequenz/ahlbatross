@@ -329,13 +329,16 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
 
 def export_to_xlsx_multicompare(
-    comparison_groups: List[List[AhbRowComparison]], sheet_names: List[str], output_path_xlsx: Path
+    comparison_groups: List[List[AhbRowComparison]],
+    sheet_names: List[str],
+    output_path_xlsx: Path,
+    strict: bool = True,
 ) -> None:
     """
     Exports multiple PID comparisons as different tabs in a single XLSX file.
     """
     with Workbook(output_path_xlsx) as workbook:
-        for comparisons, sheet_name in zip(comparison_groups, sheet_names):
+        for comparisons, sheet_name in zip(comparison_groups, sheet_names, strict=strict):
             # extract PIDs from sheet_name based on `comparison_names.append(f"{first_pruefid}_{next_pruefid}")`
             # for example worksheet/tab names: `55001_55001`, `55001_55002`, `55001_55003`, ...
             pids = sheet_name.split("_")
