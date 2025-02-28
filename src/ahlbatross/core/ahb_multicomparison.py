@@ -175,7 +175,7 @@ def multicompare_command(
         output_dir.mkdir(parents=True, exist_ok=True)
 
         xlsx_path = output_dir / f"{first_pruefid}_comparisons.xlsx"
-        export_to_xlsx_multicompare(comparison_groups, comparison_names, str(xlsx_path))
+        export_to_xlsx_multicompare(comparison_groups, comparison_names, Path(xlsx_path))
 
         logger.info("✅ Successfully processed: %s", xlsx_path)
 

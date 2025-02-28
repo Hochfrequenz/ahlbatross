@@ -331,13 +331,13 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
 
 def export_to_xlsx_multicompare(
-    comparison_groups: List[List[AhbRowComparison]], sheet_names: List[str], output_path_xlsx: str
+    comparison_groups: List[List[AhbRowComparison]], sheet_names: List[str], output_path_xlsx: Path
 ) -> None:
     """
     Exports multiple PID comparisons as different tabs in a single XLSX file.
     """
     with Workbook(output_path_xlsx) as workbook:
-        for _, (comparisons, sheet_name) in enumerate(zip(comparison_groups, sheet_names)):
+        for comparisons, sheet_name in zip(comparison_groups, sheet_names):
             # extract PIDs from sheet_name
             pids = sheet_name.split("_")
             first_pid = pids[0] if len(pids) > 0 else ""
