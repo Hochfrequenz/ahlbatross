@@ -90,7 +90,7 @@ six==1.17.0
     # via python-dateutil
 tomlkit==0.13.2
     # via kohlrahbi
-typer==0.15.1
+typer==0.15.2
     # via ahlbatross (pyproject.toml)
 typing-extensions==4.12.2
     # via
