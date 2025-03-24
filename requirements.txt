@@ -98,7 +98,7 @@ typing-extensions==4.12.2
     #   pydantic-core
     #   python-docx
     #   typer
-tzdata==2025.1
+tzdata==2025.2
     # via pandas
 xlsxwriter==3.2.2
     # via
