@@ -57,7 +57,7 @@ openpyxl==3.1.5
     # via kohlrahbi
 pandas==2.2.3
     # via kohlrahbi
-propcache==0.3.0
+propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
