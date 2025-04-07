@@ -61,7 +61,7 @@ propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.10.6
+pydantic==2.11.2
     # via
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
@@ -98,6 +98,9 @@ typing-extensions==4.13.1
     #   pydantic-core
     #   python-docx
     #   typer
+    #   typing-inspection
+typing-inspection==0.4.0
+    # via pydantic
 tzdata==2025.2
     # via pandas
 xlsxwriter==3.2.2
