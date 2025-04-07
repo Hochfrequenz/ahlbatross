@@ -66,7 +66,7 @@ pydantic==2.11.2
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
     #   kohlrahbi
-pydantic-core==2.27.2
+pydantic-core==2.33.1
     # via pydantic
 pygments==2.19.1
     # via rich
@@ -98,6 +98,9 @@ typing-extensions==4.13.1
     #   pydantic-core
     #   python-docx
     #   typer
+    #   typing-inspection
+typing-inspection==0.4.0
+    # via pydantic
 tzdata==2025.2
     # via pandas
 xlsxwriter==3.2.2
