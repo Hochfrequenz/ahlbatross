@@ -14,10 +14,6 @@ annotated-types==0.7.0
     # via pydantic
 attrs==25.3.0
     # via aiohttp
-click==8.2.0
-    # via
-    #   kohlrahbi
-    #   typer
 colorlog==6.9.0
     # via kohlrahbi
 edi-energy-scraper==2.1.0
@@ -90,7 +86,7 @@ six==1.17.0
     # via python-dateutil
 tomlkit==0.13.2
     # via kohlrahbi
-typer==0.15.3
+typer==0.15.4
     # via ahlbatross (pyproject.toml)
 typing-extensions==4.13.2
     # via
