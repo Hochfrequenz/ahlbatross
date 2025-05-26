@@ -18,7 +18,7 @@ colorlog==6.9.0
     # via kohlrahbi
 edi-energy-scraper==2.1.0
     # via kohlrahbi
-efoli==1.4.0
+efoli==2.0.0
     # via
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
@@ -43,7 +43,7 @@ more-itertools==10.7.0
     # via
     #   edi-energy-scraper
     #   kohlrahbi
-multidict==6.4.3
+multidict==6.4.4
     # via
     #   aiohttp
     #   yarl
