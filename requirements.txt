@@ -57,12 +57,12 @@ propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.11.3
+pydantic==2.11.5
     # via
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
     #   kohlrahbi
-pydantic-core==2.33.1
+pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.1
     # via rich
