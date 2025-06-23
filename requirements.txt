@@ -70,7 +70,7 @@ pypdf==5.6.1
     # via edi-energy-scraper
 python-dateutil==2.9.0.post0
     # via pandas
-python-docx==1.1.2
+python-docx==1.2.0
     # via kohlrahbi
 pytz==2025.2
     # via
