@@ -99,7 +99,7 @@ typing-inspection==0.4.1
     # via pydantic
 tzdata==2025.2
     # via pandas
-xlsxwriter==3.2.3
+xlsxwriter==3.2.5
     # via
     #   ahlbatross (pyproject.toml)
     #   kohlrahbi
