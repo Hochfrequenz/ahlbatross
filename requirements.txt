@@ -64,7 +64,7 @@ pydantic==2.11.7
     #   kohlrahbi
 pydantic-core==2.33.2
     # via pydantic
-pygments==2.19.1
+pygments==2.19.2
     # via rich
 pypdf==5.7.0
     # via edi-energy-scraper
