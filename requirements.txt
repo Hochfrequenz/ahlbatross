@@ -47,7 +47,7 @@ multidict==6.6.2
     # via
     #   aiohttp
     #   yarl
-numpy==2.3.0
+numpy==2.3.1
     # via pandas
 openpyxl==3.1.5
     # via kohlrahbi
