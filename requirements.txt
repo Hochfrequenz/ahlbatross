@@ -88,7 +88,7 @@ tomlkit==0.13.3
     # via kohlrahbi
 typer==0.16.0
     # via ahlbatross (pyproject.toml)
-typing-extensions==4.14.0
+typing-extensions==4.14.1
     # via
     #   pydantic
     #   pydantic-core
