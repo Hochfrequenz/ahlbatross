@@ -14,6 +14,10 @@ annotated-types==0.7.0
     # via pydantic
 attrs==25.3.0
     # via aiohttp
+click==8.2.1
+    # via
+    #   kohlrahbi
+    #   typer
 colorlog==6.9.0
     # via kohlrahbi
 edi-energy-scraper==2.1.0
