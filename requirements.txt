@@ -47,7 +47,7 @@ more-itertools==10.7.0
     # via
     #   edi-energy-scraper
     #   kohlrahbi
-multidict==6.6.3
+multidict==6.6.4
     # via
     #   aiohttp
     #   yarl
