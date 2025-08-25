@@ -39,7 +39,7 @@ kohlrahbi==1.13.0
     # via ahlbatross (pyproject.toml)
 lxml==6.0.1
     # via python-docx
-markdown-it-py==3.0.0
+markdown-it-py==4.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
