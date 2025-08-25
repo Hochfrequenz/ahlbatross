@@ -37,7 +37,7 @@ idna==3.10
     # via yarl
 kohlrahbi==1.13.0
     # via ahlbatross (pyproject.toml)
-lxml==6.0.0
+lxml==6.0.1
     # via python-docx
 markdown-it-py==3.0.0
     # via rich
