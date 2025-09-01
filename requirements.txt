@@ -55,7 +55,7 @@ numpy==2.3.2
     # via pandas
 openpyxl==3.1.5
     # via kohlrahbi
-pandas==2.3.1
+pandas==2.3.2
     # via kohlrahbi
 propcache==0.3.2
     # via
@@ -92,7 +92,7 @@ tomlkit==0.13.3
     # via kohlrahbi
 typer==0.16.0
     # via ahlbatross (pyproject.toml)
-typing-extensions==4.14.1
+typing-extensions==4.15.0
     # via
     #   pydantic
     #   pydantic-core
