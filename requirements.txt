@@ -37,9 +37,9 @@ idna==3.10
     # via yarl
 kohlrahbi==1.13.0
     # via ahlbatross (pyproject.toml)
-lxml==6.0.0
+lxml==6.0.1
     # via python-docx
-markdown-it-py==3.0.0
+markdown-it-py==4.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
@@ -47,7 +47,7 @@ more-itertools==10.7.0
     # via
     #   edi-energy-scraper
     #   kohlrahbi
-multidict==6.6.3
+multidict==6.6.4
     # via
     #   aiohttp
     #   yarl
@@ -55,7 +55,7 @@ numpy==2.3.2
     # via pandas
 openpyxl==3.1.5
     # via kohlrahbi
-pandas==2.3.1
+pandas==2.3.2
     # via kohlrahbi
 propcache==0.3.2
     # via
@@ -70,7 +70,7 @@ pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.2
     # via rich
-pypdf==5.9.0
+pypdf==6.0.0
     # via edi-energy-scraper
 python-dateutil==2.9.0.post0
     # via pandas
@@ -92,7 +92,7 @@ tomlkit==0.13.3
     # via kohlrahbi
 typer==0.16.0
     # via ahlbatross (pyproject.toml)
-typing-extensions==4.14.1
+typing-extensions==4.15.0
     # via
     #   pydantic
     #   pydantic-core
