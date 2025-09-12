@@ -43,7 +43,7 @@ markdown-it-py==4.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.7.0
+more-itertools==10.8.0
     # via
     #   edi-energy-scraper
     #   kohlrahbi
@@ -90,7 +90,7 @@ six==1.17.0
     # via python-dateutil
 tomlkit==0.13.3
     # via kohlrahbi
-typer==0.16.0
+typer==0.17.3
     # via ahlbatross (pyproject.toml)
 typing-extensions==4.15.0
     # via
