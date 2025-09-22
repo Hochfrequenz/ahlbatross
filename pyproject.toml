@@ -42,16 +42,16 @@ linting = [
     "pylint==3.3.8"
 ]
 type_check = [
-    "mypy==1.18.1"
+    "mypy==1.18.2"
 ]
 spell_check = [
     "codespell==2.4.1"
 ]
 coverage = [
-    "coverage==7.10.6"
+    "coverage==7.10.7"
 ]
 formatting = [
-    "black==25.1.0",
+    "black==25.9.0",
     "isort==6.0.1"
 ]
 packaging = [
