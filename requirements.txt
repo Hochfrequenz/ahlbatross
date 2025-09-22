@@ -70,7 +70,7 @@ pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.2
     # via rich
-pypdf==6.0.0
+pypdf==6.1.0
     # via edi-energy-scraper
 python-dateutil==2.9.0.post0
     # via pandas
