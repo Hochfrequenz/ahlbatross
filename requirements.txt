@@ -29,7 +29,7 @@ efoli==2.1.0
     #   kohlrahbi
 et-xmlfile==2.0.0
     # via openpyxl
-frozenlist==1.7.0
+frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
