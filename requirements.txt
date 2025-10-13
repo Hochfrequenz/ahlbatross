@@ -33,7 +33,7 @@ frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
-idna==3.10
+idna==3.11
     # via yarl
 kohlrahbi==1.13.0
     # via ahlbatross (pyproject.toml)
