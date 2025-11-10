@@ -61,7 +61,7 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.11.10
+pydantic==2.12.4
     # via
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
