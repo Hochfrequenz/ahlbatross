@@ -15,6 +15,8 @@ jobs:
   tests:
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ${{ matrix.os }}
+    env:
+      SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
     strategy:
       matrix:
         python-version: ["3.14"]
@@ -34,7 +36,7 @@ jobs:
           tox
 
   build-n-publish:
-    name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+    name: Build and publish Python distributions to PyPI and TestPyPI
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -60,6 +62,6 @@ jobs:
       - name: Build wheel and source distributions
         run: |
           python -m build
-      - name: Publish distribution 📦 to PyPI
+      - name: Publish distribution to PyPI
         if: startsWith(github.ref, 'refs/tags/v')
         uses: pypa/gh-action-pypi-publish@release/v1
