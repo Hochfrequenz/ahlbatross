@@ -20,11 +20,11 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "efoli>=1.4.0",
-    "kohlrahbi>=1.11.2",
+    "efoli>=2.1.0",
     "pydantic>=2.10.6",
     "xlsxwriter>=3.2.0",
-    "typer>=0.15.4"
+    "typer>=0.15.4",
+    "fundamend[sqlmodel]>=0.27.0"
 ]
 dynamic = ["version"]
 
