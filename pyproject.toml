@@ -20,11 +20,11 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "efoli>=1.4.0",
-    "kohlrahbi>=1.11.2",
+    "efoli>=2.1.0",
     "pydantic>=2.10.6",
-    "xlsxwriter>=3.2.0",
-    "typer>=0.15.4"
+    "typer>=0.15.4",
+    "fundamend[sqlmodels]>=0.27.0",
+    "py7zr"
 ]
 dynamic = ["version"]
 
@@ -37,7 +37,8 @@ Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [project.optional-dependencies]
 tests = [
-    "pytest==9.0.1"
+    "pytest==9.0.1",
+    "syrupy==5.0.0"
 ]
 linting = [
     "pylint==4.0.2"
@@ -73,6 +74,13 @@ profile = "black"
 
 [tool.pylint."MESSAGES CONTROL"]
 max-line-length = 120
+extension-pkg-whitelist = "pydantic"
+
+
+[tool.pytest.ini_options]
+markers = [
+    "snapshot: marks tests as snapshot tests (deselect with '-m \"not snapshot\"')",
+]
 
 [mypy]
 truethy-bool = true
