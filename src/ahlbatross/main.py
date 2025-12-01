@@ -20,7 +20,7 @@ err_console = Console(stderr=True)  # https://typer.tiangolo.com/tutorial/printi
 
 @app.command()
 def compare(
-    input_dir: Path = typer.Option(..., "--input-dir", "-i", help="Directory containing AHB data."),
+    input_dir: Path = typer.Option(..., "--input-dir", "-i", help="Directory containing AHB data.", exists=True, dir_okay=True, file_okay=False),
     output_dir: Path = typer.Option(
         ..., "--output-dir", "-o", help="Destination path to output directory containing processed files."
     ),
@@ -29,9 +29,6 @@ def compare(
     Main entrypoint for AHlBatross.
     """
     try:
-        if not input_dir.exists():
-            logger.error("❌ Input directory does not exist: %s", input_dir.absolute())
-            sys.exit(1)
         process_ahb_files(input_dir, output_dir)
     except FileNotFoundError as e:
         logger.error("❌ Path error: %s", str(e))
