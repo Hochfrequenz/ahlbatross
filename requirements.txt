@@ -61,12 +61,12 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.11.10
+pydantic==2.12.5
     # via
     #   ahlbatross (pyproject.toml)
     #   edi-energy-scraper
     #   kohlrahbi
-pydantic-core==2.33.2
+pydantic-core==2.41.5
     # via pydantic
 pygments==2.19.2
     # via rich
@@ -94,6 +94,7 @@ typer==0.20.0
     # via ahlbatross (pyproject.toml)
 typing-extensions==4.15.0
     # via
+    #   aiosignal
     #   pydantic
     #   pydantic-core
     #   python-docx
