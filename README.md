@@ -11,12 +11,8 @@
 ![Pylint status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Linting/badge.svg)
 ![Formatting status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Formatting/badge.svg)
 
-Tool for automatic AHB comparison of consecutive `Formatversionen`. Highlighted changes between `PruefIDs` of various 
-`Nachrichtenformate` are provided by already formatted `.xlsx` files or raw `.csv` files located inside the 
-[machine-readable-anwendungshandbücher](https://github.com/Hochfrequenz/machine-readable_anwendungshandbuecher/tree/main/diff) 
-repository.
-
-<img src="https://raw.githubusercontent.com/Hochfrequenz/ahlbatross/main/output.png" alt="output.png">
+Tool for comparing AHB (Anwendungshandbuch) documents across different format versions.
+Compares Prüfidentifikators and stores the results in a SQLite database for further analysis.
 
 ## Installation
 Install this package from [PyPI](https://pypi.org/project/ahlbatross/) using
@@ -24,6 +20,35 @@ Install this package from [PyPI](https://pypi.org/project/ahlbatross/) using
 ```shell
 pip install ahlbatross
 ```
+
+## Usage
+
+### Populate Comparison Database
+
+To create comparison tables for all format version pairs in an existing AHB database:
+
+```shell
+ahlbatross populate-db path/to/ahb.db
+```
+
+For encrypted `.7z` archives, provide the password via `--password` or environment variable:
+
+```shell
+ahlbatross populate-db path/to/ahb.db.7z --password YOUR_PASSWORD
+
+# Or via environment variable
+export SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD=YOUR_PASSWORD
+ahlbatross populate-db path/to/ahb.db.7z
+```
+
+This command:
+- Finds all format versions present in the database
+- Compares all Prüfidentifikators across all pairs of format versions
+- Creates and populates `ahb_line_comparison` and `ahb_comparison_summary` tables
+- Vacuums the database for optimal performance
+- For encrypted archives: decrypts, processes, and re-encrypts with the same password
+
+The comparison tables can then be queried to find changes between any two format versions.
 
 ## Development Setup
 

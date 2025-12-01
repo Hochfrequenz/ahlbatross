@@ -1,1193 +1,282 @@
-# pylint:disable=too-many-lines
+import shutil
+from pathlib import Path
+from typing import Any, Callable, ContextManager
 
+import py7zr
 import pytest
+from efoli import EdifactFormatVersion
+from fundamend.sqlmodels import AhbTabellenLine
+from sqlalchemy.engine import Engine
+from sqlmodel import Session, func, select
+from syrupy.assertion import SnapshotAssertion
+from typer.testing import CliRunner
 
-from ahlbatross.core.ahb_comparison import align_ahb_rows
+from ahlbatross.core.ahb_diff import (
+    compare_ahb_across_format_versions,
+    compare_all_pruefidentifikators,
+    get_all_comparison_candidates,
+    get_common_pruefidentifikators,
+    populate_comparison_tables,
+)
+from ahlbatross.db import get_anwendungsfall_from_db
+from ahlbatross.db.sqlmodels import AhbComparisonSummaryTable, AhbLineComparisonTable
 from ahlbatross.enums.diff_types import DiffType
-from ahlbatross.models.ahb import AhbRow
-from unittests.conftest import FormatVersions
-
-
-class TestSingleColumnComparisons:
-    """
-    Test cases for AHBs containing only `section_name` entries (Segmentname).
-    """
-
-    formatversions: FormatVersions
-
-    @pytest.fixture(autouse=True)
-    def setup(self, formatversions: FormatVersions) -> None:
-        self.formatversions = formatversions
-
-    def test_remove_whitespace_space(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg ment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg ment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg ment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg ment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        for comparison in result:
-            assert comparison.diff.diff_type == DiffType.UNCHANGED
-            assert not comparison.diff.changed_entries
-
-    def test_remove_whitespace_newline(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\nment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\nment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\nment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\nment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        for comparison in result:
-            assert comparison.diff.diff_type == DiffType.UNCHANGED
-            assert not comparison.diff.changed_entries
-
-    def test_remove_whitespace_tab(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\tment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\tment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\tment",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\tment",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        for comparison in result:
-            assert comparison.diff.diff_type == DiffType.UNCHANGED
-            assert not comparison.diff.changed_entries
-
-    def test_align_rows(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="4",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="5",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 5
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.REMOVED
-        assert result[2].diff.diff_type == DiffType.UNCHANGED
-        assert result[3].diff.diff_type == DiffType.REMOVED
-        assert result[4].diff.diff_type == DiffType.ADDED
-
-    def test_align_rows_empty_ahbs(self) -> None:
-        result = align_ahb_rows([], [])
-        assert len(result) == 0
-
-    def test_align_rows_one_empty_ahb(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, [])
-
-        assert len(result) == 2
-        assert all(comp.diff.diff_type == DiffType.REMOVED for comp in result)
-        assert all(comp.subsequent_formatversion.section_name == "" for comp in result)
-
-    def test_align_rows_full_offset(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="4",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="5",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="6",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 6
-        assert result[0].diff.diff_type == DiffType.REMOVED
-        assert result[1].diff.diff_type == DiffType.REMOVED
-        assert result[2].diff.diff_type == DiffType.REMOVED
-        assert result[3].diff.diff_type == DiffType.ADDED
-        assert result[4].diff.diff_type == DiffType.ADDED
-        assert result[5].diff.diff_type == DiffType.ADDED
-
-    def test_align_rows_duplicate_segments(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="4",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.REMOVED
-        assert result[3].diff.diff_type == DiffType.ADDED
-
-    def test_align_rows_repeating_segments(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="3",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="4",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 6
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.UNCHANGED
-        assert result[3].diff.diff_type == DiffType.REMOVED
-        assert result[4].diff.diff_type == DiffType.REMOVED
-        assert result[5].diff.diff_type == DiffType.ADDED
-
-
-class TestMultiColumnComparisons:
-    """
-    Test cases for AHBs containing multiple columns.
-    """
-
-    formatversions: FormatVersions
-
-    @pytest.fixture(autouse=True)
-    def setup(self, formatversions: FormatVersions) -> None:
-        self.formatversions = formatversions
-
-    def test_remove_whitespace_space(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg ment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg ment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="c",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg ment",
-                segment_group_key="d",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg ment",
-                segment_group_key="d",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[2].diff.changed_entries)
-        assert result[3].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[3].diff.changed_entries)
-
-    def test_remove_whitespace_newline(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\nment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\nment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="c",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\nment",
-                segment_group_key="d",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\nment",
-                segment_group_key="d",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[2].diff.changed_entries)
-        assert result[3].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[3].diff.changed_entries)
-
-    def test_remove_whitespace_tab(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\tment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Seg\tment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="c",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Segment",
-                segment_group_key="",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Segment",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\tment",
-                segment_group_key="d",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Seg\tment",
-                segment_group_key="d",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[2].diff.changed_entries)
-        assert result[3].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[3].diff.changed_entries)
-
-    def test_align_rows(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="3",
-                segment_group_key="c",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="4",
-                segment_group_key="",
-                segment_code="W",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="5",
-                segment_group_key="e",
-                segment_code="V",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="6",
-                segment_group_key="f",
-                segment_code="U",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="9",
-                segment_group_key="g",
-                segment_code="T",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="10",
-                segment_group_key="h",
-                segment_code="S",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                segment_group_key="a",
-                segment_code="X",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                segment_code="Y",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="3",
-                segment_group_key="d",
-                segment_code="Z",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="5",
-                segment_group_key="d",
-                segment_code="V",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="6",
-                segment_group_key="d",
-                segment_code="U",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="7",
-                segment_group_key="e",
-                segment_code="R",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="8",
-                segment_group_key="f",
-                segment_code="Q",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="9",
-                segment_group_key="a",
-                segment_code="T",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="10",
-                segment_group_key="b",
-                segment_code="S",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 10
-        assert result[0].diff.diff_type == DiffType.UNCHANGED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.MODIFIED
-        assert result[3].diff.diff_type == DiffType.REMOVED
-        assert result[4].diff.diff_type == DiffType.MODIFIED
-        assert result[5].diff.diff_type == DiffType.MODIFIED
-        assert result[6].diff.diff_type == DiffType.ADDED
-        assert result[7].diff.diff_type == DiffType.ADDED
-        assert result[8].diff.diff_type == DiffType.MODIFIED
-        assert result[9].diff.diff_type == DiffType.MODIFIED
-
-        assert "segment_group_key" in str(result[2].diff.changed_entries)
-        assert "segment_group_key" in str(result[4].diff.changed_entries)
-        assert "segment_group_key" in str(result[5].diff.changed_entries)
-        assert "segment_group_key" in str(result[8].diff.changed_entries)
-        assert "segment_group_key" in str(result[9].diff.changed_entries)
-
-    def test_align_rows_multiple_rows_per_section_name(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                segment_group_key="a",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                segment_group_key="b",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                segment_group_key="c",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="a",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="c",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                segment_group_key="x",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                segment_group_key="b",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="1",
-                segment_group_key="c",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                segment_group_key="x",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                value_pool_entry=None,
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                segment_group_key="c",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 6
-        assert result[0].diff.diff_type == DiffType.MODIFIED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.UNCHANGED
-        assert result[3].diff.diff_type == DiffType.MODIFIED
-        assert result[4].diff.diff_type == DiffType.UNCHANGED
-        assert result[5].diff.diff_type == DiffType.UNCHANGED
-
-        assert "segment_group_key" in str(result[0].diff.changed_entries)
-        assert not result[1].diff.changed_entries
-        assert not result[2].diff.changed_entries
-        assert "segment_group_key" in str(result[3].diff.changed_entries)
-        assert not result[4].diff.changed_entries
-        assert not result[5].diff.changed_entries
-
-    def test_align_rows_all_ahb_properties_within_section_name(self) -> None:
-        # to handle rows that have been inserted at arbitrary positions within the same `section_name` group
-        # for example FV2504 UTILMD 55078 (SG3 Ansprechpartner):
-        # `previous_ahb_rows` should add an empty row at the top (NEW) for AhbRow's to align properly
-        previous_ahb_rows = [
-            AhbRow(  # equivalent to second AhbRow of `subsequent_ahb_rows`
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element=None,
-                segment_id="00009",
-                value_pool_entry=None,
-                name=None,
-                ahb_expression="Muss",
-                conditions=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element="3139",
-                segment_id="00009",
-                value_pool_entry="IC",
-                name="Informationskontakt",
-                ahb_expression="X",
-                conditions=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element="3412",
-                segment_id="00009",
-                value_pool_entry=None,
-                name="Name vom Ansprechpartner",
-                ahb_expression="X",
-                conditions=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(  # NEW
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code=None,
-                data_element=None,
-                segment_id=None,
-                value_pool_entry=None,
-                name=None,
-                ahb_expression="Kann",
-                conditions=None,
-            ),
-            AhbRow(  # equivalent to first AhbRow of `previous_ahb_rows`
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element=None,
-                segment_id="00009",
-                value_pool_entry=None,
-                name=None,
-                ahb_expression="Muss",
-                conditions=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element="3139",
-                segment_id="00009",
-                value_pool_entry="IC",
-                name="Informationskontakt",
-                ahb_expression="X",
-                conditions=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Ansprechpartner",
-                segment_group_key="SG3",
-                segment_code="CTA",
-                data_element="3412",
-                segment_id="00009",
-                value_pool_entry=None,
-                name="Name vom Ansprechpartner",
-                ahb_expression="X",
-                conditions=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 4
-        assert result[0].diff.diff_type == DiffType.ADDED
-        assert result[1].diff.diff_type == DiffType.UNCHANGED
-        assert result[2].diff.diff_type == DiffType.UNCHANGED
-        assert result[3].diff.diff_type == DiffType.UNCHANGED
-
-        assert not result[1].diff.changed_entries
-        assert not result[2].diff.changed_entries
-        assert not result[3].diff.changed_entries
-
-    def test_align_rows_different_column_sets(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="1",
-                segment_group_key="a",
-                data_element="x",
-                value_pool_entry="XY",
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                data_element="y",
-                value_pool_entry="YZ",
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="2",
-                segment_group_key="b",
-                data_element="m",
-                value_pool_entry="XY",
-                name=None,
-            ),
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="3",
-                segment_group_key="c",
-                data_element="n",
-                value_pool_entry="",
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 3
-        assert result[0].diff.diff_type == DiffType.REMOVED
-        assert result[1].diff.diff_type == DiffType.MODIFIED
-        assert result[2].diff.diff_type == DiffType.ADDED
-
-        changed_entries = str(result[1].diff.changed_entries)
-        assert "data_element" in changed_entries
-        assert "value_pool_entry" in changed_entries
-        assert "segment_group_key" not in changed_entries
-
-    def test_single_changed_ahb_property(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Nachrichten-Kopfsegment",
-                segment_group_key="AAA",
-                segment_code="XXX",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Nachrichten-Kopfsegment",
-                segment_group_key="BBB",
-                segment_code="XXX",
-                value_pool_entry=None,
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 1
-        assert result[0].diff.diff_type == DiffType.MODIFIED
-        assert "segment_group_key" in str(result[0].diff.changed_entries)
-
-    def test_multiple_changed_ahb_properties(self) -> None:
-        previous_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.previous_formatversion,
-                section_name="Nachrichten-Kopfsegment",
-                segment_group_key="AAA",
-                data_element="111",
-                value_pool_entry="XXX",
-                name=None,
-            ),
-        ]
-        subsequent_ahb_rows = [
-            AhbRow(
-                formatversion=self.formatversions.subsequent_formatversion,
-                section_name="Nachrichten-Kopfsegment",
-                segment_group_key="BBB",
-                data_element="222",
-                value_pool_entry="XXX",
-                name=None,
-            ),
-        ]
-
-        result = align_ahb_rows(previous_ahb_rows, subsequent_ahb_rows)
-
-        assert len(result) == 1
-        assert result[0].diff.diff_type == DiffType.MODIFIED
-        changed_entries = result[0].diff.changed_entries
-        assert "segment_group_key" in str(changed_entries)
-        assert "data_element" in str(changed_entries)
-        assert "value_pool_entry" not in str(changed_entries)
+from ahlbatross.main import app
+from ahlbatross.models.ahb import AhbLineComparison
+
+
+def test_ahb_database_can_be_opened(
+    unencrypted_ahb_database: Path,
+    create_disposed_engine: Callable[[Path], ContextManager[Engine]],
+) -> None:
+    """Test that the decrypted AHB database can be opened and queried."""
+    with create_disposed_engine(unencrypted_ahb_database) as engine:
+        with Session(engine) as session:
+            row_count = session.exec(select(func.count()).select_from(AhbTabellenLine)).one()
+            assert row_count > 0
+
+
+def test_read_single_ahb_from_database(unencrypted_ahb_database: Path) -> None:
+    """Test that we can read AHB lines from the database using get_anwendungsfall_from_db."""
+    ahb_lines = get_anwendungsfall_from_db(
+        db_path=unencrypted_ahb_database,
+        edifact_format_version=EdifactFormatVersion.FV2504,
+        pruefidentifikator="55001",
+    )
+    assert len(ahb_lines) > 0
+
+    segment_codes = [line.segment_code for line in ahb_lines if line.segment_code]
+    unh_index = segment_codes.index("UNH")
+    unt_index = segment_codes.index("UNT")
+    assert unh_index < unt_index
+
+
+def test_compare_ahb_across_format_versions(unencrypted_ahb_database: Path) -> None:
+    """Test comparing the same Prüfidentifikator across different format versions."""
+    pruefidentifikator = "55001"
+
+    comparison = compare_ahb_across_format_versions(
+        db_path=unencrypted_ahb_database,
+        previous_format_version=EdifactFormatVersion.FV2410,
+        subsequent_format_version=EdifactFormatVersion.FV2504,
+        pruefidentifikator=pruefidentifikator,
+    )
+
+    assert comparison.pruefidentifikator == pruefidentifikator
+    assert comparison.previous_format_version == EdifactFormatVersion.FV2410
+    assert comparison.subsequent_format_version == EdifactFormatVersion.FV2504
+
+    summary = comparison.summary
+    expected_total = summary.unchanged_count + summary.modified_count + summary.added_count + summary.removed_count
+    assert summary.total_lines == expected_total
+    assert summary.total_lines > 0
+
+    assert len(comparison.line_comparisons) == summary.total_lines
+
+    for line_comp in comparison.line_comparisons:
+        if line_comp.diff_type == DiffType.ADDED:
+            assert line_comp.previous_line is None
+            assert line_comp.subsequent_line is not None
+        elif line_comp.diff_type == DiffType.REMOVED:
+            assert line_comp.previous_line is not None
+            assert line_comp.subsequent_line is None
+        else:
+            assert line_comp.previous_line is not None
+            assert line_comp.subsequent_line is not None
+            if line_comp.diff_type == DiffType.MODIFIED:
+                assert len(line_comp.changed_fields) > 0
+
+
+def test_get_common_pruefidentifikators(unencrypted_ahb_database: Path) -> None:
+    """Test finding common Prüfidentifikators across format versions."""
+    common_pruefis = get_common_pruefidentifikators(
+        db_path=unencrypted_ahb_database,
+        previous_format_version=EdifactFormatVersion.FV2410,
+        subsequent_format_version=EdifactFormatVersion.FV2504,
+    )
+    assert len(common_pruefis) > 0
+    assert "55001" in common_pruefis
+
+
+def test_compare_all_pruefidentifikators(
+    unencrypted_ahb_database: Path,
+    tmp_path: Path,
+    create_disposed_engine: Callable[[Path], ContextManager[Engine]],
+) -> None:
+    """Test comparing all Prüfidentifikators and storing results in database."""
+    output_db_path = tmp_path / "comparison_results.db"
+
+    comparison_count = compare_all_pruefidentifikators(
+        db_path=unencrypted_ahb_database,
+        previous_format_version=EdifactFormatVersion.FV2410,
+        subsequent_format_version=EdifactFormatVersion.FV2504,
+        output_db_path=output_db_path,
+    )
+
+    assert comparison_count > 0
+    assert output_db_path.exists()
+
+    with create_disposed_engine(output_db_path) as engine:
+        with Session(engine) as session:
+            summaries = session.exec(select(AhbComparisonSummaryTable)).all()
+            assert len(summaries) == comparison_count
+
+            line_comparisons = session.exec(select(AhbLineComparisonTable)).all()
+            assert len(line_comparisons) > 0
+
+            valid_diff_types = [d.value for d in DiffType]
+            for line_comp in line_comparisons[:10]:
+                assert line_comp.id_path is not None
+                assert line_comp.diff_type in valid_diff_types
+
+
+def test_populate_comparison_tables(
+    unencrypted_ahb_database: Path,
+    tmp_path: Path,
+    create_disposed_engine: Callable[[Path], ContextManager[Engine]],
+) -> None:
+    """Test populating comparison tables for all format version pairs."""
+    test_db_path = tmp_path / "ahb_with_comparisons.db"
+    shutil.copy(unencrypted_ahb_database, test_db_path)
+
+    total_comparisons = populate_comparison_tables(test_db_path)
+
+    assert total_comparisons > 0
+
+    with create_disposed_engine(test_db_path) as engine:
+        with Session(engine) as session:
+            summaries = session.exec(select(AhbComparisonSummaryTable)).all()
+            assert len(summaries) == total_comparisons
+
+            line_comparisons = session.exec(select(AhbLineComparisonTable)).all()
+            assert len(line_comparisons) > 0
+
+            distinct_version_pairs = session.exec(
+                select(
+                    AhbComparisonSummaryTable.previous_format_version,
+                    AhbComparisonSummaryTable.subsequent_format_version,
+                ).distinct()
+            ).all()
+            assert len(distinct_version_pairs) >= 1
+
+            modified_lines = session.exec(
+                select(AhbLineComparisonTable).where(AhbLineComparisonTable.diff_type == DiffType.MODIFIED.value)
+            ).all()
+            assert modified_lines is not None
+
+
+@pytest.mark.snapshot
+def test_compare_ahb_snapshot(unencrypted_ahb_database: Path, snapshot: SnapshotAssertion) -> None:
+    """Snapshot test for AHB comparison output."""
+    comparison = compare_ahb_across_format_versions(
+        db_path=unencrypted_ahb_database,
+        previous_format_version=EdifactFormatVersion.FV2410,
+        subsequent_format_version=EdifactFormatVersion.FV2504,
+        pruefidentifikator="55001",
+    )
+
+    def build_comparison_entry(lc: AhbLineComparison) -> dict[str, Any]:
+        """Build a detailed comparison entry including field changes."""
+        entry: dict[str, Any] = {
+            "id_path": lc.id_path,
+            "diff_type": lc.diff_type.value,
+        }
+        if lc.diff_type == DiffType.MODIFIED and lc.changed_fields and lc.previous_line and lc.subsequent_line:
+            entry["field_changes"] = {
+                field: {
+                    "previous": getattr(lc.previous_line, field, None),
+                    "subsequent": getattr(lc.subsequent_line, field, None),
+                }
+                for field in lc.changed_fields
+            }
+        elif lc.diff_type == DiffType.ADDED and lc.subsequent_line:
+            # Show what was added
+            entry["added_values"] = {
+                "segment_code": lc.subsequent_line.segment_code,
+                "data_element": lc.subsequent_line.data_element,
+                "description": lc.subsequent_line.description,
+            }
+        elif lc.diff_type == DiffType.REMOVED and lc.previous_line:
+            # Show what was removed
+            entry["removed_values"] = {
+                "segment_code": lc.previous_line.segment_code,
+                "data_element": lc.previous_line.data_element,
+                "description": lc.previous_line.description,
+            }
+        return entry
+
+    snapshot_data = {
+        "pruefidentifikator": comparison.pruefidentifikator,
+        "previous_format_version": comparison.previous_format_version.value,
+        "subsequent_format_version": comparison.subsequent_format_version.value,
+        "summary": {
+            "total_lines": comparison.summary.total_lines,
+            "unchanged_count": comparison.summary.unchanged_count,
+            "modified_count": comparison.summary.modified_count,
+            "added_count": comparison.summary.added_count,
+            "removed_count": comparison.summary.removed_count,
+        },
+        "sample_comparisons": [build_comparison_entry(lc) for lc in comparison.line_comparisons],
+    }
+
+    assert snapshot_data == snapshot
+
+
+@pytest.mark.snapshot
+def test_comparison_candidates_snapshot(unencrypted_ahb_database: Path, snapshot: SnapshotAssertion) -> None:
+    """Snapshot test for all comparison candidates (format version pairs with their Prüfidentifikators)."""
+    # Group candidates by format version pair since the generator now yields individual pruefis
+    grouped: dict[tuple[str, str], list[str]] = {}
+    for prev_fv, subseq_fv, pruefi in get_all_comparison_candidates(unencrypted_ahb_database):
+        key = (prev_fv.value, subseq_fv.value)
+        if key not in grouped:
+            grouped[key] = []
+        grouped[key].append(pruefi)
+
+    snapshot_data = {
+        "total_comparisons": sum(len(pruefis) for pruefis in grouped.values()),
+        "format_version_pairs": [
+            {
+                "previous_format_version": prev_fv,
+                "subsequent_format_version": subseq_fv,
+                "pruefidentifikators": pruefis,
+                "count": len(pruefis),
+            }
+            for (prev_fv, subseq_fv), pruefis in sorted(grouped.items())
+        ],
+    }
+
+    assert snapshot_data == snapshot
+
+
+def test_populate_db_cli(
+    tmp_path: Path,
+    create_disposed_engine: Callable[[Path], ContextManager[Engine]],
+) -> None:
+    """Test the populate-db CLI command with a copy of the unencrypted 7z archive."""
+    source_7z = Path(__file__).parent / "test_data" / "ahb.db.7z"
+    if not source_7z.exists():
+        pytest.skip("ahb.db.7z not found in test_data")
+
+    test_7z = tmp_path / "ahb.db.7z"
+    shutil.copy(source_7z, test_7z)
+
+    runner = CliRunner()
+    result = runner.invoke(app, [str(test_7z)])
+
+    assert result.exit_code == 0
+    assert "Successfully" in result.stdout or "Created" in result.stdout
+
+    with py7zr.SevenZipFile(test_7z, mode="r") as archive:
+        archive.extractall(path=tmp_path / "extracted")
+
+    extracted_db = tmp_path / "extracted" / "ahb.db"
+    assert extracted_db.exists()
+
+    with create_disposed_engine(extracted_db) as engine:
+        with Session(engine) as session:
+            summaries = session.exec(select(AhbComparisonSummaryTable)).all()
+            assert len(summaries) > 0
+
+            line_comparisons = session.exec(select(AhbLineComparisonTable)).all()
+            assert len(line_comparisons) > 0

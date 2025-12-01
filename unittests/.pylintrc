@@ -7,5 +7,7 @@ disable =
     R0903,  # disable too-few-public-methods
     W0621,  # disable redefined-outer-name (this is for the use of pytest fixtures)
     R0801,  # disable duplicate-code (we prefer our test to be explicit rather than perfectly redundancy free)
+    E1101,  # disable no-member (false positives with pydantic models)
+    E1102,  # disable not-callable (false positives with sqlalchemy func)
 [pylint."MESSAGES CONTROL"]
 max-line-length = 120
