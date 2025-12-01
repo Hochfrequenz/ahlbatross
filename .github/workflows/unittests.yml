@@ -3,7 +3,9 @@ name: "Unittests"
 on:
   push:
     branches: [main]
-  pull_request_target: {}
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
 jobs:
   pytest:
     runs-on: ${{ matrix.os }}
@@ -15,8 +17,6 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v6
         with:

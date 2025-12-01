@@ -3,7 +3,9 @@ name: "Coverage"
 on:
   push:
     branches: [main]
-  pull_request_target: {}
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
 jobs:
   coverage:
     runs-on: ubuntu-latest
@@ -11,12 +13,10 @@ jobs:
       SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: 3.14
+          python-version: "3.14"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
