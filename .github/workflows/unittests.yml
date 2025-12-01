@@ -7,6 +7,8 @@ on:
 jobs:
   pytest:
     runs-on: ${{ matrix.os }}
+    env:
+      SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
     strategy:
       matrix:
         python-version: ["3.11", "3.12", "3.13", "3.14"]
@@ -22,7 +24,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install tox
       - name: Run the Unit Tests via Tox
-        env:
-          SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
         run: |
           tox -e tests
