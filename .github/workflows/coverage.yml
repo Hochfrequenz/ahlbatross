@@ -11,8 +11,6 @@ jobs:
       SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v6
         with:
