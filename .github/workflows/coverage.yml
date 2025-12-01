@@ -18,5 +18,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install tox
       - name: Run Tests and Record Coverage
+        env:
+          SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
         run: |
           tox -e coverage
