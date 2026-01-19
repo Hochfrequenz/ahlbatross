@@ -88,7 +88,7 @@ shellingham==1.5.4
     # via typer
 six==1.17.0
     # via python-dateutil
-tomlkit==0.13.3
+tomlkit==0.14.0
     # via kohlrahbi
 typer==0.21.1
     # via ahlbatross (pyproject.toml)
