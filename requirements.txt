@@ -55,7 +55,7 @@ numpy==2.4.1
     # via pandas
 openpyxl==3.1.5
     # via kohlrahbi
-pandas==2.3.3
+pandas==3.0.0
     # via kohlrahbi
 propcache==0.4.1
     # via
