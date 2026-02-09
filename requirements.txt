@@ -20,7 +20,7 @@ click==8.3.1
     #   typer
 colorlog==6.10.1
     # via kohlrahbi
-edi-energy-scraper==2.2.3
+edi-energy-scraper==2.3.0
     # via kohlrahbi
 efoli==2.1.1
     # via
