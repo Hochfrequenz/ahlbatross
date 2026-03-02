@@ -108,5 +108,5 @@ xlsxwriter==3.2.9
     # via
     #   ahlbatross (pyproject.toml)
     #   kohlrahbi
-yarl==1.22.0
+yarl==1.23.0
     # via aiohttp
