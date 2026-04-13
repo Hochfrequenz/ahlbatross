@@ -82,7 +82,7 @@ pytz==2026.1.post1
     #   efoli
     #   kohlrahbi
     #   pandas
-rich==14.3.3
+rich==15.0.0
     # via typer
 shellingham==1.5.4
     # via typer
