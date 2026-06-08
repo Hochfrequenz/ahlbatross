@@ -4,7 +4,7 @@
 #
 #    pip-compile pyproject.toml
 #
-aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.6.2
     # via aiohttp
 aiohttp==3.14.0
     # via edi-energy-scraper
