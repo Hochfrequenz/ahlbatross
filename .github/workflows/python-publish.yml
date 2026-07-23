@@ -23,17 +23,32 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v7
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v7
+      - name: Install uv
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install tox
+      - name: Install Dependencies
+        run: uv sync --group dev
+      - name: Run Tests
+        run: uv run pytest
+      - name: Run Linting
         run: |
-          python -m pip install --upgrade pip
-          pip install tox
-      - name: Run tox
+          uv run pylint ahlbatross
+          uv run pylint unittests --rcfile=unittests/.pylintrc
+      - name: Run Coverage
         run: |
-          tox
+          cd unittests
+          uv run coverage run -m pytest
+          uv run coverage html --omit .venv/*,unittests/*
+          uv run coverage report --fail-under 80 --omit .venv/*,unittests/*
+      - name: Run Spell Check
+        run: |
+          uv run codespell src
+          uv run codespell README.md
+      - name: Run Type Check
+        run: |
+          uv run mypy --show-error-codes src/ahlbatross --strict
+          uv run mypy --show-error-codes unittests --strict
 
   build-n-publish:
     name: Build and publish Python distributions to PyPI and TestPyPI
@@ -51,17 +66,12 @@ jobs:
     needs: tests
     steps:
       - uses: actions/checkout@v7
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v7
+      - name: Install uv
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install .[packaging]
       - name: Build wheel and source distributions
-        run: |
-          python -m build
+        run: uv build
       - name: Publish distribution to PyPI
         if: startsWith(github.ref, 'refs/tags/v')
         uses: pypa/gh-action-pypi-publish@release/v1

@@ -35,33 +35,40 @@ ahlbatross = "ahlbatross.main:cli"
 Changelog = "https://github.com/Hochfrequenz/ahlbatross/releases"
 Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
-[project.optional-dependencies]
+[dependency-groups]
 tests = [
     "pytest==9.0.3"
 ]
 linting = [
-    "pylint==4.0.5"
+    "pylint==4.0.5",
+    {include-group = "tests"},
 ]
 type_check = [
-    "mypy==2.1.0"
+    "mypy==2.1.0",
+    {include-group = "tests"},
 ]
 spell_check = [
     "codespell==2.4.2"
 ]
 coverage = [
-    "coverage==7.14.1"
+    "coverage==7.14.1",
+    {include-group = "tests"},
 ]
 formatting = [
     "black==26.5.1",
     "isort==8.0.1"
 ]
-packaging = [
-    "build==1.5.0",
-    "twine==6.2.0"
-]
 dev = [
-    "pip-tools"
+    {include-group = "tests"},
+    {include-group = "linting"},
+    {include-group = "type_check"},
+    {include-group = "coverage"},
+    {include-group = "spell_check"},
+    {include-group = "formatting"},
 ]
+
+[tool.uv]
+default-groups = []
 
 [tool.black]
 line-length = 120
