@@ -1,9 +1,23 @@
+import logging
 from pathlib import Path
 
 import pytest
 from efoli import EdifactFormatVersion
 
-from ahlbatross.core.ahb_processing import get_formatversion_pairs, get_matching_csv_files
+from ahlbatross.core.ahb_processing import (
+    _get_formatversion_dirs,
+    _get_nachrichtenformat_dirs,
+    _is_formatversion_dir_empty,
+    get_formatversion_pairs,
+    get_matching_csv_files,
+    process_ahb_files,
+)
+
+AHB_CSV_HEADER = (
+    "Segmentname,Segmentgruppe,Segment,Datenelement,Segment ID,"
+    "Code,Qualifier,Beschreibung,Bedingungsausdruck,Bedingung\n"
+)
+AHB_CSV_ROW = "Nachrichten-Kopfsegment,SG1,TST,0001,00001,E_0001,,Description,Muss,[1] Condition"
 
 
 def test_parse_valid_formatversions() -> None:
@@ -94,3 +108,79 @@ def test_determine_consecutive_formatversions(tmp_path: Path) -> None:
     result = get_formatversion_pairs(root_dir=tmp_path)
     expected = [(EdifactFormatVersion.FV2504, EdifactFormatVersion.FV2410)]
     assert result == expected
+
+
+def test_get_formatversion_dirs_missing_root(tmp_path: Path) -> None:
+    """
+    test that a missing root directory raises FileNotFoundError.
+    """
+    with pytest.raises(FileNotFoundError):
+        _get_formatversion_dirs(tmp_path / "does_not_exist")
+
+
+def test_get_nachrichtenformat_dirs_missing_dir(tmp_path: Path) -> None:
+    """
+    test that a missing formatversion directory raises FileNotFoundError.
+    """
+    with pytest.raises(FileNotFoundError):
+        _get_nachrichtenformat_dirs(tmp_path / "FV2504")
+
+
+def test_is_formatversion_dir_empty_missing_dir(tmp_path: Path) -> None:
+    """
+    test that a missing formatversion directory is treated as empty.
+    """
+    assert _is_formatversion_dir_empty(tmp_path, EdifactFormatVersion.FV2504) is True
+
+
+def _write_ahb_csv(csv_dir: Path, pruefid: str) -> None:
+    csv_dir.mkdir(parents=True, exist_ok=True)
+    (csv_dir / f"{pruefid}.csv").write_text(AHB_CSV_HEADER + AHB_CSV_ROW)
+
+
+def test_process_ahb_files_exports_matching_pairs(tmp_path: Path) -> None:
+    """
+    test that process_ahb_files writes csv/xlsx output for matching pruefids across consecutive FVs.
+    """
+    input_dir = tmp_path / "input"
+    output_dir = tmp_path / "output"
+
+    _write_ahb_csv(input_dir / "FV2410" / "nachrichtenformat_1" / "csv", "pruefid_1")
+    _write_ahb_csv(input_dir / "FV2504" / "nachrichtenformat_1" / "csv", "pruefid_1")
+
+    process_ahb_files(input_dir, output_dir)
+
+    result_dir = output_dir / "FV2504_FV2410" / "nachrichtenformat_1"
+    assert (result_dir / "pruefid_1.csv").exists()
+    assert (result_dir / "pruefid_1.xlsx").exists()
+
+
+def test_process_ahb_files_no_matching_files(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
+    """
+    test that process_ahb_files logs a warning and continues when no pruefids match between consecutive FVs.
+    """
+    caplog.set_level(logging.WARNING)
+    input_dir = tmp_path / "input"
+    output_dir = tmp_path / "output"
+
+    _write_ahb_csv(input_dir / "FV2410" / "nachrichtenformat_1" / "csv", "pruefid_1")
+    _write_ahb_csv(input_dir / "FV2504" / "nachrichtenformat_1" / "csv", "pruefid_2")
+
+    process_ahb_files(input_dir, output_dir)
+
+    assert "No matching files found to compare" in caplog.text
+    assert not output_dir.exists()
+
+
+def test_process_ahb_files_no_consecutive_formatversions(tmp_path: Path, caplog: pytest.LogCaptureFixture) -> None:
+    """
+    test that process_ahb_files logs a warning and returns early when no consecutive FVs are found.
+    """
+    caplog.set_level(logging.WARNING)
+    input_dir = tmp_path / "input"
+    input_dir.mkdir()
+    output_dir = tmp_path / "output"
+
+    process_ahb_files(input_dir, output_dir)
+
+    assert "No valid consecutive FVs subdirectories found to compare." in caplog.text

@@ -30,13 +30,18 @@ pip install ahlbatross
 To set up the python development environment, install the required dependencies via
 
 ```shell
-$ tox -e dev
+$ uv sync --group dev
 ```
 
 For local testing and code quality maintenance, run 
 
 ```shell
-tox
+uv run pytest
+uv run pylint ahlbatross
+uv run mypy --show-error-codes src/ahlbatross --strict
+uv run codespell src
+uv run black . --check
+uv run isort . --check
 ```
 
 Check out our [Python Template Repository](https://github.com/Hochfrequenz/python_template_repository#how-to-use-this-repository-on-your-machine) 
