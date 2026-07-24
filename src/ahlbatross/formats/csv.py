@@ -23,7 +23,7 @@ def read_csv_content(file_path: Path, formatversion: str) -> List[AhbRow]:
     Read and convert AHB csv content to AhbRow models.
     """
     rows = []
-    with open(file_path, "r", encoding="utf-8") as csvfile:
+    with open(file_path, "r", encoding="utf-8", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             ahb_row = AhbRow(
@@ -59,7 +59,7 @@ def export_to_csv(comparisons: list[AhbRowComparison], csv_path: Path) -> None:
     """
     Exports the merged AHBs as csv.
     """
-    with open(csv_path, "w", encoding="utf-8") as f:
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         first_comp = comparisons[0]
         previous_fv = first_comp.previous_formatversion.formatversion
