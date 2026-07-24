@@ -1,15 +1,86 @@
+import csv
 import tempfile
 from pathlib import Path
+from typing import List
 
 import pytest
 
-from ahlbatross.formats.csv import load_csv_files
-from ahlbatross.models.ahb import AhbRow
+from ahlbatross.enums.diff_types import DiffType
+from ahlbatross.formats.csv import export_to_csv, get_csv_files, load_csv_files
+from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
 
 AHB_CSV_HEADER = (
     "Segmentname,Segmentgruppe,Segment,Datenelement,Segment ID,"
     "Code,Qualifier,Beschreibung,Bedingungsausdruck,Bedingung\n"
 )
+
+
+def test_get_csv_files_nonexistent_dir(tmp_path: Path) -> None:
+    """
+    test that a non-existent csv directory returns an empty list instead of raising.
+    """
+    assert get_csv_files(tmp_path / "does_not_exist") == []
+
+
+def test_get_csv_files_returns_sorted_csvs(tmp_path: Path) -> None:
+    """
+    test that only *.csv files are returned, sorted by name.
+    """
+    (tmp_path / "b.csv").write_text("b")
+    (tmp_path / "a.csv").write_text("a")
+    (tmp_path / "ignored.txt").write_text("ignored")
+
+    files = get_csv_files(tmp_path)
+
+    assert [f.name for f in files] == ["a.csv", "b.csv"]
+
+
+def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: List[AhbRowComparison]) -> None:
+    """
+    test that comparisons are exported to csv with correct headers and row content.
+    """
+    csv_path = tmp_path / "export.csv"
+
+    export_to_csv(ahb_row_comparison_single_column, csv_path)
+
+    assert csv_path.exists()
+
+    with open(csv_path, "r", encoding="utf-8") as f:
+        rows = list(csv.reader(f))
+
+    header = rows[0]
+    assert header[0] == "#"
+    assert "Änderung" in header
+    assert len(rows) == len(ahb_row_comparison_single_column) + 1
+
+    first_data_row = rows[1]
+    first_comp = ahb_row_comparison_single_column[0]
+    assert first_data_row[0] == "1"
+    assert first_data_row[1] == first_comp.previous_formatversion.section_name
+    assert first_data_row[9] == first_comp.diff.diff_type.value
+
+
+def test_export_to_csv_handles_none_values(tmp_path: Path) -> None:
+    """
+    test that None values on AhbRow are exported as empty strings.
+    """
+    comparisons = [
+        AhbRowComparison(
+            previous_formatversion=AhbRow(formatversion="FV2410", section_name=None, value_pool_entry=None, name=None),
+            diff=AhbRowDiff(diff_type=DiffType.UNCHANGED),
+            subsequent_formatversion=AhbRow(
+                formatversion="FV2504", section_name=None, value_pool_entry=None, name=None
+            ),
+        )
+    ]
+    csv_path = tmp_path / "export.csv"
+
+    export_to_csv(comparisons, csv_path)
+
+    with open(csv_path, "r", encoding="utf-8") as f:
+        rows = list(csv.reader(f))
+
+    assert rows[1][1] == ""
 
 
 def test_load_csv_files() -> None:
