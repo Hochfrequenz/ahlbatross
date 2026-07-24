@@ -22,6 +22,6 @@ jobs:
       - name: Run Tests and Record Coverage
         run: |
           cd unittests
-          uv run coverage run -m pytest
-          uv run coverage html --omit .venv/*,unittests/*
-          uv run coverage report --fail-under 80 --omit .venv/*,unittests/*
+          uv run coverage run --source=../src -m pytest
+          uv run coverage html
+          uv run coverage report --fail-under 80
