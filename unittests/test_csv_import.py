@@ -45,7 +45,7 @@ def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: List[Ah
 
     assert csv_path.exists()
 
-    with open(csv_path, "r", encoding="utf-8") as f:
+    with open(csv_path, "r", encoding="utf-8", newline="") as f:
         rows = list(csv.reader(f))
 
     header = rows[0]
@@ -57,7 +57,13 @@ def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: List[Ah
     first_comp = ahb_row_comparison_single_column[0]
     assert first_data_row[0] == "1"
     assert first_data_row[1] == first_comp.previous_formatversion.section_name
-    assert first_data_row[9] == first_comp.diff.diff_type.value
+    assert first_data_row[10] == first_comp.diff.diff_type.value
+
+    # second row has a non-empty diff type (MODIFIED), making the column index assertion meaningful
+    second_data_row = rows[2]
+    second_comp = ahb_row_comparison_single_column[1]
+    assert second_comp.diff.diff_type.value
+    assert second_data_row[10] == second_comp.diff.diff_type.value
 
 
 def test_export_to_csv_handles_none_values(tmp_path: Path) -> None:
@@ -77,7 +83,7 @@ def test_export_to_csv_handles_none_values(tmp_path: Path) -> None:
 
     export_to_csv(comparisons, csv_path)
 
-    with open(csv_path, "r", encoding="utf-8") as f:
+    with open(csv_path, "r", encoding="utf-8", newline="") as f:
         rows = list(csv.reader(f))
 
     assert rows[1][1] == ""
