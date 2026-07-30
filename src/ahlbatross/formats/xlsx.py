@@ -127,7 +127,7 @@ def _write_row_entries(
         row.conditions or "",
     ]
 
-    for col_offset, (column_name, value) in enumerate(zip(AHB_COLUMN_NAMES, values, strict=False)):
+    for col_offset, (column_name, value) in enumerate(zip(AHB_COLUMN_NAMES, values, strict=True)):
         col = start_col + col_offset
         is_segmentname = col_offset == 0
         format_to_use = _determine_segmentname_format(
