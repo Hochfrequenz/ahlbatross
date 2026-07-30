@@ -163,7 +163,7 @@ def multicompare_command(
                 comparison_names.append(f"{first_pruefid}_{next_pruefid}")
 
                 comparison_number += 1
-            except (OSError, IOError, ValueError) as e:
+            except (OSError, ValueError) as e:
                 logger.error(
                     "❌ Error comparing %s/%s with %s/%s: %s", first_fv, first_pruefid, next_fv, next_pruefid, str(e)
                 )
@@ -179,6 +179,6 @@ def multicompare_command(
 
         logger.info("✅ Successfully processed: %s", xlsx_path)
 
-    except (OSError, IOError, ValueError, TypeError) as e:
+    except (OSError, ValueError, TypeError) as e:
         logger.exception("❌ Error: %s", str(e))
         sys.exit(1)

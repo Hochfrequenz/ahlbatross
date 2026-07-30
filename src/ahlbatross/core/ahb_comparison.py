@@ -2,8 +2,6 @@
 AHB csv comparison logic.
 """
 
-from typing import List, Tuple
-
 from ahlbatross.enums.diff_types import DiffType
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison, AhbRowDiff
 from ahlbatross.utils.string_formatting import normalize_entries
@@ -50,8 +48,8 @@ def _add_empty_row(formatversion: str) -> AhbRow:
 
 
 def _find_matching_subsequent_row(
-    current_ahb_row: AhbRow, subsequent_ahb_rows: List[AhbRow], start_idx: int, duplicate_indices: set[int]
-) -> Tuple[int, AhbRow | None]:
+    current_ahb_row: AhbRow, subsequent_ahb_rows: list[AhbRow], start_idx: int, duplicate_indices: set[int]
+) -> tuple[int, AhbRow | None]:
     """
     Find matching row in subsequent version starting from given index by consider all AHB properties
     within the same `section_name` group.
@@ -83,7 +81,7 @@ def _find_matching_subsequent_row(
     return -1, None
 
 
-def align_ahb_rows(previous_ahb_rows: List[AhbRow], subsequent_ahb_rows: List[AhbRow]) -> List[AhbRowComparison]:
+def align_ahb_rows(previous_ahb_rows: list[AhbRow], subsequent_ahb_rows: list[AhbRow]) -> list[AhbRowComparison]:
     """
     Align AHB rows while comparing two formatversions.
     """

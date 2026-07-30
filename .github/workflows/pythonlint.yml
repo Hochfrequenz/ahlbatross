@@ -14,8 +14,7 @@ jobs:
           - linter-env: linting
             group: linting
             commands: |
-              uv run pylint ahlbatross
-              uv run pylint unittests --rcfile=unittests/.pylintrc
+              uv run ruff check src unittests
           - linter-env: type_check
             group: type_check
             commands: |

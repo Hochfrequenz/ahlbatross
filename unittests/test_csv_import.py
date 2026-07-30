@@ -1,7 +1,6 @@
 import csv
 import tempfile
 from pathlib import Path
-from typing import List
 
 import pytest
 
@@ -35,7 +34,7 @@ def test_get_csv_files_returns_sorted_csvs(tmp_path: Path) -> None:
     assert [f.name for f in files] == ["a.csv", "b.csv"]
 
 
-def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: List[AhbRowComparison]) -> None:
+def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: list[AhbRowComparison]) -> None:
     """
     test that comparisons are exported to csv with correct headers and row content.
     """
@@ -45,7 +44,7 @@ def test_export_to_csv(tmp_path: Path, ahb_row_comparison_single_column: List[Ah
 
     assert csv_path.exists()
 
-    with open(csv_path, "r", encoding="utf-8", newline="") as f:
+    with open(csv_path, encoding="utf-8", newline="") as f:
         rows = list(csv.reader(f))
 
     header = rows[0]
@@ -83,7 +82,7 @@ def test_export_to_csv_handles_none_values(tmp_path: Path) -> None:
 
     export_to_csv(comparisons, csv_path)
 
-    with open(csv_path, "r", encoding="utf-8", newline="") as f:
+    with open(csv_path, encoding="utf-8", newline="") as f:
         rows = list(csv.reader(f))
 
     assert rows[1][1] == ""

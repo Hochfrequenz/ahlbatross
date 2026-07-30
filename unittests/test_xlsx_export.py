@@ -3,7 +3,7 @@ Tests for Excel export functionality.
 """
 
 from pathlib import Path
-from typing import List, NamedTuple
+from typing import NamedTuple
 
 import openpyxl  # type: ignore
 
@@ -20,7 +20,7 @@ class Formatversions(NamedTuple):
 
 
 def test_xlsx_export_single_column_comparison(
-    temp_excel_file: Path, ahb_row_comparison_single_column: List[AhbRowComparison]
+    temp_excel_file: Path, ahb_row_comparison_single_column: list[AhbRowComparison]
 ) -> None:
     """
     Test output file exists.
@@ -31,7 +31,7 @@ def test_xlsx_export_single_column_comparison(
 
 
 def test_xlsx_export_multiple_column_comparison(
-    temp_excel_file: Path, ahb_row_comparison_multiple_columns: List[AhbRowComparison]
+    temp_excel_file: Path, ahb_row_comparison_multiple_columns: list[AhbRowComparison]
 ) -> None:
     """
     Test export of data with all columns populated.
@@ -55,7 +55,7 @@ def test_xlsx_export_multiple_column_comparison(
 
 
 def test_xlsx_export_all_diff_types(
-    temp_excel_file: Path, all_diff_types_ahb_row_comparisons: List[AhbRowComparison]
+    temp_excel_file: Path, all_diff_types_ahb_row_comparisons: list[AhbRowComparison]
 ) -> None:
     """
     Test that all DIFF types are exported correctly.
@@ -108,7 +108,7 @@ def test_export_handles_none_values(temp_excel_file: Path, formatversions: Forma
 
 
 def test_export_header_formatting(
-    temp_excel_file: Path, ahb_row_comparison_single_column: List[AhbRowComparison]
+    temp_excel_file: Path, ahb_row_comparison_single_column: list[AhbRowComparison]
 ) -> None:
     """
     Test headers are formatted correctly.

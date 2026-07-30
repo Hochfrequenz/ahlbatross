@@ -8,7 +8,7 @@
 
 ![Unittests status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Unittests/badge.svg)
 ![Coverage status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Coverage/badge.svg)
-![Pylint status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Linting/badge.svg)
+![Ruff status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Linting/badge.svg)
 ![Formatting status badge](https://github.com/Hochfrequenz/ahlbatross/workflows/Formatting/badge.svg)
 
 Tool for automatic AHB comparison of consecutive `Formatversionen`. Highlighted changes between `PruefIDs` of various 
@@ -37,11 +37,10 @@ For local testing and code quality maintenance, run
 
 ```shell
 uv run pytest
-uv run pylint ahlbatross
+uv run ruff check src unittests
 uv run mypy --show-error-codes src/ahlbatross --strict
 uv run codespell src
-uv run black . --check
-uv run isort . --check
+uv run ruff format . --check
 ```
 
 Check out our [Python Template Repository](https://github.com/Hochfrequenz/python_template_repository#how-to-use-this-repository-on-your-machine) 

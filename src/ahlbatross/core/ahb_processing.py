@@ -13,12 +13,14 @@ from ahlbatross.formats.xlsx import export_to_xlsx
 
 logger = logging.getLogger(__name__)
 
+_FORMATVERSION_DIR_NAME_LENGTH = 6  # e.g. "FV2504"
+
 
 def _is_formatversion_dir(path: Path) -> bool:
     """
     Confirm if path is a <formatversion> directory - for instance "FV2504/".
     """
-    return path.is_dir() and path.name.startswith("FV") and len(path.name) == 6
+    return path.is_dir() and path.name.startswith("FV") and len(path.name) == _FORMATVERSION_DIR_NAME_LENGTH
 
 
 def _is_formatversion_dir_empty(root_dir: Path, formatversion: EdifactFormatVersion) -> bool:
@@ -176,11 +178,11 @@ def process_ahb_files(input_dir: Path, output_dir: Path) -> None:
 
                     logger.info("✅ Successfully processed %s/%s", nachrichtentyp, pruefid)
 
-                except (OSError, IOError, ValueError) as e:
+                except (OSError, ValueError) as e:
                     logger.error("❌ Error processing %s/%s: %s", nachrichtentyp, pruefid, str(e))
                     continue
 
-        except (OSError, IOError, ValueError) as e:
+        except (OSError, ValueError) as e:
             logger.error(
                 "❌ Error processing FVs %s -> %s: %s",
                 subsequent_formatversion,
