@@ -3,7 +3,6 @@ Classes that are used to compare AHBs between two formatversions row by row and 
 """
 
 from dataclasses import dataclass
-from typing import List, Optional
 
 from kohlrahbi.models.anwendungshandbuch import AhbLine
 from pydantic import BaseModel, Field
@@ -17,9 +16,9 @@ class AhbRowKey:
     Business key to identify corresponding AhbRow's between formatversions.
     """
 
-    segment_group_key: Optional[str]
-    segment_code: Optional[str]
-    data_element: Optional[str]
+    segment_group_key: str | None
+    segment_code: str | None
+    data_element: str | None
 
 
 class AhbRow(AhbLine):
@@ -56,7 +55,7 @@ class AhbRowDiff(BaseModel):
     diff_type: DiffType = Field(
         default=DiffType.UNCHANGED, description="Type of difference between two formatversions within a single row."
     )
-    changed_entries: List[str] = Field(
+    changed_entries: list[str] = Field(
         default_factory=list,
         description="List of entries (single cells) that changed between two formatversions within a single row.",
     )

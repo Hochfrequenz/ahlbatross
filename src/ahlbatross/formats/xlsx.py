@@ -2,8 +2,8 @@
 Contains excel export logic.
 """
 
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable, Dict, List, Optional
 
 from xlsxwriter import Workbook  # type: ignore
 from xlsxwriter.format import Format  # type: ignore
@@ -29,10 +29,12 @@ from ahlbatross.utils.xlsx_formatting import (
     ROW_NUMBERING_FORMAT,
 )
 
-FormatDict = Dict[str, Format]
+FormatDict = dict[str, Format]
+
+_DEFAULT_COLUMN_INDEX_THRESHOLD = 10
 
 
-def _format_headers_during_comparison(sample: AhbRowComparison) -> List[str]:
+def _format_headers_during_comparison(sample: AhbRowComparison) -> list[str]:
     """
     Create a list of available headers from merged <pruefid>.csv files when executing "ahlbatross compare".
     """
@@ -125,7 +127,7 @@ def _write_row_entries(
         row.conditions or "",
     ]
 
-    for col_offset, (column_name, value) in enumerate(zip(AHB_COLUMN_NAMES, values)):
+    for col_offset, (column_name, value) in enumerate(zip(AHB_COLUMN_NAMES, values, strict=False)):
         col = start_col + col_offset
         is_segmentname = col_offset == 0
         format_to_use = _determine_segmentname_format(
@@ -221,7 +223,7 @@ def _create_segmentname_highlight_formats(workbook: Workbook) -> FormatDict:
     }
 
 
-def _set_column_widths(worksheet: Worksheet, headers: List[str]) -> None:
+def _set_column_widths(worksheet: Worksheet, headers: list[str]) -> None:
     """
     Sets column width for a given header.
     """
@@ -249,9 +251,9 @@ def _set_sheet_name(sheet_name: str) -> str:
 def _process_worksheet(
     workbook: Workbook,
     worksheet: Worksheet,
-    comparisons: List[AhbRowComparison],
-    headers: List[str],
-    _: Callable[[int], bool] = lambda col: col < 10,
+    comparisons: list[AhbRowComparison],
+    headers: list[str],
+    _: Callable[[int], bool] = lambda col: col < _DEFAULT_COLUMN_INDEX_THRESHOLD,
 ) -> None:
     """
     Common worksheet processing logic extracted from both export functions.
@@ -268,7 +270,7 @@ def _process_worksheet(
         worksheet.write(0, col, header, header_format)
 
     # Process rows
-    last_segmentname: Optional[str] = None
+    last_segmentname: str | None = None
     for row_num, comp in enumerate(comparisons, start=1):
         worksheet.write(row_num, 0, row_num, row_number_format)
         current_segmentname = comp.previous_formatversion.section_name or comp.subsequent_formatversion.section_name
@@ -313,7 +315,7 @@ def _process_worksheet(
 
 
 # pylint:disable=too-many-locals
-def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -> None:
+def export_to_xlsx(comparisons: list[AhbRowComparison], output_path_xlsx: str) -> None:
     """
     Exports the merged AHBs as xlsx with highlighted differences.
     """
@@ -329,8 +331,8 @@ def export_to_xlsx(comparisons: List[AhbRowComparison], output_path_xlsx: str) -
 
 
 def export_to_xlsx_multicompare(
-    comparison_groups: List[List[AhbRowComparison]],
-    sheet_names: List[str],
+    comparison_groups: list[list[AhbRowComparison]],
+    sheet_names: list[str],
     output_path_xlsx: Path,
     strict: bool = True,
 ) -> None:

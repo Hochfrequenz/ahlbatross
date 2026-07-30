@@ -4,7 +4,6 @@ Functions for reading and writing csv files.
 
 import csv
 from pathlib import Path
-from typing import List, Tuple
 
 from ahlbatross.models.ahb import AhbRow, AhbRowComparison
 
@@ -18,12 +17,12 @@ def get_csv_files(csv_dir: Path) -> list[Path]:
     return sorted(csv_dir.glob("*.csv"))
 
 
-def read_csv_content(file_path: Path, formatversion: str) -> List[AhbRow]:
+def read_csv_content(file_path: Path, formatversion: str) -> list[AhbRow]:
     """
     Read and convert AHB csv content to AhbRow models.
     """
     rows = []
-    with open(file_path, "r", encoding="utf-8", newline="") as csvfile:
+    with open(file_path, encoding="utf-8", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             ahb_row = AhbRow(
@@ -44,7 +43,7 @@ def read_csv_content(file_path: Path, formatversion: str) -> List[AhbRow]:
 
 def load_csv_files(
     previous_ahb_path: Path, subsequent_ahb_path: Path, previous_formatversion: str, subsequent_formatversion: str
-) -> Tuple[List[AhbRow], List[AhbRow]]:
+) -> tuple[list[AhbRow], list[AhbRow]]:
     """
     Load AHB csv content.
     """

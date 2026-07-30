@@ -33,8 +33,7 @@ jobs:
         run: uv run pytest
       - name: Run Linting
         run: |
-          uv run pylint ahlbatross
-          uv run pylint unittests --rcfile=unittests/.pylintrc
+          uv run ruff check src unittests
       - name: Run Coverage
         run: |
           cd unittests

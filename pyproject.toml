@@ -40,7 +40,7 @@ tests = [
     "pytest==9.1.1"
 ]
 linting = [
-    "pylint==4.0.6",
+    "ruff==0.16.0",
     {include-group = "tests"},
 ]
 type_check = [
@@ -54,32 +54,41 @@ coverage = [
     "coverage==7.15.2",
     {include-group = "tests"},
 ]
-formatting = [
-    "black==26.5.1",
-    "isort==8.0.1"
-]
 dev = [
     {include-group = "tests"},
     {include-group = "linting"},
     {include-group = "type_check"},
     {include-group = "coverage"},
     {include-group = "spell_check"},
-    {include-group = "formatting"},
 ]
 
 [tool.uv]
 default-groups = []
 
-[tool.black]
+[tool.ruff]
 line-length = 120
-target_version = ["py311", "py312", "py313", "py314"]
+extend-exclude = ["*.md"]
 
-[tool.isort]
-line_length = 120
-profile = "black"
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B", "N", "PL", "RUF"]
+ignore = [
+    "PLR0913", # too-many-arguments
+    "PLR0917", # too-many-positional-arguments
+    "PLR0912", # too-many-branches
+    "PLR0915", # too-many-statements
+    "RUF001", # ambiguous-unicode-character-string
+    "RUF002", # ambiguous-unicode-character-docstring
+    "RUF003", # ambiguous-unicode-character-comment
+]
 
-[tool.pylint."MESSAGES CONTROL"]
-max-line-length = 120
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["typer.Option", "typer.Argument"]
+
+[tool.ruff.lint.per-file-ignores]
+"unittests/**" = ["PLR2004"] # magic-value-comparison is noisy in test assertions
+"src/ahlbatross/core/ahb_processing.py" = ["PLR0914"] # too-many-locals, previously accepted via pylint pragma
+"src/ahlbatross/core/ahb_multicomparison.py" = ["PLR0914"] # too-many-locals, previously accepted via pylint pragma
+"src/ahlbatross/formats/xlsx.py" = ["PLR0914", "PLR0911"] # too-many-locals / too-many-return-statements, previously accepted via pylint pragmas
 
 [mypy]
 truethy-bool = true

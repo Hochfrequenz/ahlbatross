@@ -39,7 +39,7 @@ def compare(
     except PermissionError as e:
         logger.error("❌ Permission denied: %s", str(e))
         sys.exit(1)
-    except (OSError, ValueError, IOError) as e:
+    except (OSError, ValueError) as e:
         logger.exception("❌ Error processing AHB files: %s", str(e))
         sys.exit(1)
     except (RuntimeError, TypeError, AttributeError) as e:
