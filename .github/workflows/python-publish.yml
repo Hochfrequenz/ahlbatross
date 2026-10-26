@@ -19,7 +19,7 @@ jobs:
       SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD: ${{ secrets.SQLITE_AHB_DB_7Z_ARCHIVE_PASSWORD }}
     strategy:
       matrix:
-        python-version: ["3.14"]
+        python-version: ["3.15"]
         os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v7
@@ -54,7 +54,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ["3.14"]
+        python-version: ["3.15"]
         os: [ubuntu-latest]
     # Specifying a GitHub environment, # Specifying a GitHub environment, which is strongly recommended by PyPI: https://docs.pypi.org/trusted-publishers/adding-a-publisher/
     # you have to create an environment in your repository settings and add the environment name here
