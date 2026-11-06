@@ -37,7 +37,7 @@ Homepage = "https://github.com/Hochfrequenz/ahlbatross"
 
 [dependency-groups]
 tests = [
-    "pytest==9.1.1"
+    "pytest==9.2.0"
 ]
 linting = [
     "ruff==0.17.3",
