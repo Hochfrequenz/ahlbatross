@@ -40,7 +40,7 @@ tests = [
     "pytest==9.2.0"
 ]
 linting = [
-    "ruff==0.17.3",
+    "ruff==0.17.4",
     {include-group = "tests"},
 ]
 type_check = [
