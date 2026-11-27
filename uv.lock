@@ -968,7 +968,7 @@ wheels = [
 
 [[package]]
 name = "kohlrahbi"
-version = "1.13.1"
+version = "1.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -982,13 +982,14 @@ dependencies = [
     { name = "pydantic" },
     { name = "python-docx" },
     { name = "pytz" },
+    { name = "rich" },
     { name = "tomlkit" },
     { name = "typer" },
     { name = "xlsxwriter" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f4/bd/f8d7b7d82a36d16043f8155a2c648e27f11aa3e4a78ac8b6e75b8a8ac37e/kohlrahbi-1.13.1.tar.gz", hash = "sha256:ea1f5796ecf369560e84993428051b6c011eada4be037a24223b94388805a178", size = 505559, upload-time = "2026-07-31T20:53:32.947Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/86/bb/af754a3740b78b35cad0de21160cab60513ba9bcc1587a97cbf014cf5949/kohlrahbi-1.14.0.tar.gz", hash = "sha256:4ab653acc4e7ccb2434879b30469ed2ba65bd512abbd12da9cd52c91b1e79f12", size = 536512, upload-time = "2026-11-17T17:17:29Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ae/b3/88a3d9d62f8bd4db24ee7204356c838cc478f65a483e789379f456dfb63b/kohlrahbi-1.13.1-py3-none-any.whl", hash = "sha256:2faa8c873afc5508d6ec939dbdd4f3ed28286685c366983bebe923f4b48e5448", size = 116710, upload-time = "2026-07-31T20:53:31.378Z" },
+    { url = "https://files.pythonhosted.org/packages/40/1c/587f2e4d8c968d247ebe476f2e354e5bcdfe4dd7ddd99e73364322d2d9c2/kohlrahbi-1.14.0-py3-none-any.whl", hash = "sha256:27ce204e4215878ae1500ffa0c61a648256f831ad2f033dbc03e883cd294d6bf", size = 123668, upload-time = "2026-11-17T17:17:27.512Z" },
 ]
 
 [[package]]
